@@ -154,12 +154,13 @@ body.layout-single-column {
 .layout-single-column .confirmation-modal,
 .layout-single-column .mute-modal,
 .layout-single-column .report-modal,
-.column-header__collapsible-inner {
+.layout-single-column .column-header__collapsible-inner {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
   color: var(--color-light-text);
 }
 
+.layout-single-column .dropdown-menu__separator,
 .layout-single-column .status,
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .setting-text__wrapper {
@@ -1206,5 +1207,9 @@ body.layout-single-column {
 
   .layout-single-column .column > .scrollable {
     padding-bottom: 53px;
+  }
+
+  .layout-single-column .actions-modal ul li:not(:empty) a {
+    color: var(--color-light-text);
   }
 }
