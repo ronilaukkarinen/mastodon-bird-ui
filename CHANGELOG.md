@@ -5,6 +5,7 @@
 * Add `--color-brand-mastodon-threaded-line`
 * Fix badge border color
 * Fix mobile icon size consistency
+* Add heart to column-link icon
 
 ### 1.0.1: 2023-03-08
 
