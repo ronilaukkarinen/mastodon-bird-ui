@@ -625,8 +625,14 @@ body.layout-single-column {
   overflow: visible;
 }
 
+/* Hack to show follow notification more minimal way */
 .layout-single-column .notification.notification-follow .account__wrapper {
   position: relative;
+}
+
+/* Hack to show follow notification more minimal way */
+.layout-single-column .notification.notification-follow .display-name__html {
+  visibility: hidden;
 }
 
 .layout-single-column .notification.notification-follow .account__avatar-wrapper,
