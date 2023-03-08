@@ -10,10 +10,11 @@ See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
 Let's face it, we're kinda used to it, it already resembles Twitter. But. This is why I have defaulted Mastodon colors in this "theme", if you will. If you really want the Twitter-look, please modify the colors yourself.
 
+## [Live demo on mementomori.social](https://mementomori.social)
+
 _Mastodon colors:_
 
-![mementomori social_notifications (4)](https://user-images.githubusercontent.com/1534150/223775421-e1fa0b00-f794-4599-b2fe-60f4190d6044.png)
-
+![image](https://user-images.githubusercontent.com/1534150/223853493-9aded9fd-01fb-4428-9045-b458606482a6.png)
 
 _Twitter colors:_
 
