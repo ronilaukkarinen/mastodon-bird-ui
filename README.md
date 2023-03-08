@@ -6,6 +6,8 @@ Please note that this is a personal experiment _for fun_, but as far as I know c
 
 See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
+![mementomori social_notifications (3)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png)
+
 ### Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/mementomori.social/admin/settings/appearance}
