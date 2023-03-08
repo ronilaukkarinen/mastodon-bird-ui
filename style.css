@@ -1203,4 +1203,8 @@ body.layout-single-column {
   .layout-single-column .columns-area.columns-area--mobile {
     top: 16px;
   }
+
+  .layout-single-column .column > .scrollable {
+    padding-bottom: 53px;
+  }
 }
