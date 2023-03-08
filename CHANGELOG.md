@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Fix like icon and boost icon on detailed post
+
 ### 1.0.1: 2023-03-08
 
 * Add `--color-accent-dark`
