@@ -2,7 +2,7 @@
 
 Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to look exactly like Twitter.
 
-Please note that this is a personal experiment _for fun_, but as far as I know colors can't be trademarked. No logos or other elements have been used without permission. Twitter reuses [FontAwesome](https://github.com/FortAwesome/Font-Awesome) for icons.
+Please note that this is a personal experiment _for fun_, but as far as I know colors can't be trademarked. No logos or other elements have been used without permission.
 
 See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
