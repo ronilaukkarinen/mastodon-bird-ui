@@ -6,11 +6,13 @@
   --color-brand-twitter-bg: #15202b;
   --color-brand-twitter-dim: #8b98a5;
   --color-brand-twitter-mud: #273340;
+  --color-brand-twitter-dark: #232543;
   --color-brand-mastodon: #595aff;
   --color-brand-mastodon-links: #8c8dff;
   --color-brand-mastodon-bg: #1e2028;
   --color-brand-mastodon-dim: #717c9b;
   --color-brand-mastodon-mud: #272c40;
+  --color-brand-mastodon-dark: #232543;
 
   /* Colors */
   --color-bg: var(--color-brand-mastodon-bg);
@@ -27,7 +29,7 @@
   --color-profile-button-hover: #eff3f41a;
   --color-column-link-hover: #f7f9f91a;
   --color-modal-overlay: #5b708366;
-  --color-dark: #15202b;
+  --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: #425364;
 
   /* Font related */
@@ -896,17 +898,25 @@ body.layout-single-column {
 }
 
 /* Compose hover and focus fix */
-.ui__header__links .button,
+.layout-single-column .server-banner .button,
+.layout-single-column .sign-in-banner .button,
+.layout-single-column .ui__header__links .button,
 .layout-single-column .compose-form__publish-button-wrapper button {
   background-color: var(--color-brand-mastodon);
+  color: var(--color-light-text);
   transition: all 200ms;
 }
 
-.ui__header__links .button:hover,
-.ui__header__links .button:focus,
+.layout-single-column .server-banner .button:hover,
+.layout-single-column .server-banner .button:focus,
+.layout-single-column .sign-in-banner .button:hover,
+.layout-single-column .sign-in-banner .button:hover:focus,
+.layout-single-column .ui__header__links .button:hover,
+.layout-single-column .ui__header__links .button:focus,
 .layout-single-column .compose-form__publish-button-wrapper button:hover,
 .layout-single-column .compose-form__publish-button-wrapper button:focus {
   background-color: var(--color-brand-mastodon-links);
+  color: var(--color-light-text);
 }
 
 /* Smaller icon for back button */
