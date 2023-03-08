@@ -440,9 +440,6 @@ body.layout-single-column {
 
 /* Media inside status update tinted to right */
 .layout-single-column .status .media-gallery {
-  /* Need to override inline styles */
-  /* stylelint-disable-next-line */
-  height: auto !important;
   margin-left: auto;
   width: calc(100% - calc(var(--size-avatar) + var(--gap-default)));
 }
