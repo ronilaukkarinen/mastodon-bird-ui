@@ -366,7 +366,8 @@ body.layout-single-column {
 }
 
 /* Panels and things that should be transparent */
-.columns-area__panels__pane--navigational .navigation-panel,
+.layout-single-column .column-link,
+.layout-single-column .columns-area__panels__pane--navigational .navigation-panel,
 .layout-single-column .tabs-bar__wrapper .column-back-button,
 .layout-single-column .account__header,
 .layout-single-column .column-header__back-button,
