@@ -934,7 +934,7 @@ body.layout-single-column {
 
 /* Threaded replies */
 .layout-single-column .status.status-reply {
-  border: 0;
+  border-color: transparent;
   position: relative;
 }
 
@@ -954,4 +954,9 @@ body.layout-single-column {
 
 .layout-single-column .scrollable > div > div:last-child .status.status-reply .status__avatar::before {
   height: 60px;
+}
+
+.layout-single-column .scrollable > div > div:only-of-type .status.status-reply .status__avatar::before {
+  border-color: var(--color-border);
+  display: none;
 }
