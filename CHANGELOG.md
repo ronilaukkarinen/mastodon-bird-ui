@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Change button secondary color dimmer
+
 ### 1.0.2: 2023-03-08
 
 * Fix like icon and boost icon on detailed post
