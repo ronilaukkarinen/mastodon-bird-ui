@@ -3,6 +3,7 @@
 * Fix like icon and boost icon on detailed post
 * Fix like icon hover when already active
 * Add `--color-brand-mastodon-threaded-line`
+* Fix badge border color
 
 ### 1.0.1: 2023-03-08
 

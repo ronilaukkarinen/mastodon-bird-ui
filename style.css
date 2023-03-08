@@ -234,8 +234,10 @@ body.layout-single-column {
   background-color: var(--color-accent);
 }
 
+.column-link--transparent .icon-with-badge__badge,
 .layout-single-column .icon-with-badge__badge {
   background-color: var(--color-accent-dark);
+  border-color: var(--color-bg);
 }
 
 /* Accented strokes */
