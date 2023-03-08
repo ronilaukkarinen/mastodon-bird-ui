@@ -1263,6 +1263,11 @@ body.layout-single-column {
     font-size: 20px;
   }
 
+  .columns-area__panels__pane--navigational .column-link__icon.fa-bookmark,
+  .columns-area__panels__pane--navigational .column-link__icon.fa-bell {
+    font-size: 18px;
+  }
+
   .layout-single-column .columns-area__panels__main > div,
   .layout-single-column .columns-area__panels__main > div.columns-area.columns-area--mobile {
     border: 0;
