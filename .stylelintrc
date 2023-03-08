@@ -67,7 +67,7 @@
     "font-weight-notation": "numeric",
     "number-max-precision": 3,
     "selector-class-pattern": null,
-    "selector-max-class": 5,
+    "selector-max-class": 6,
     "selector-max-combinators": 5,
     "selector-max-compound-selectors": 5,
     "selector-max-pseudo-class": 2,
