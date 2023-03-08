@@ -930,7 +930,7 @@ body.layout-single-column {
 }
 
 /* Threaded replies */
-.layout-single-column .status.status-reply {
+.layout-single-column .scrollable > div > div .status.status-reply {
   border-color: transparent;
   position: relative;
 }
