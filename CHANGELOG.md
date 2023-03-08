@@ -1,10 +1,11 @@
-### [Unreleased]
+### 1.0.3: 2023-03-08
 
 * Change button secondary color dimmer
 * Fix dim account name
 * Slightly less padding after status-prepend
 * Fix icon size leaking to link svg
 * Mobile: Fix horizontal scrollbars
+* Replace icons for detailed view
 
 ### 1.0.2: 2023-03-08
 
