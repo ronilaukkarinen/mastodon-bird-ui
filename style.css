@@ -1283,10 +1283,6 @@ body.layout-single-column {
     width: calc(100% - 4px);
   }
 
-  .layout-single-column .status__info .status__display-name .display-name__account {
-    max-width: 40%;
-  }
-
   .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
     background-color: var(--color-bg);
     border-top: 1px solid var(--color-border);
