@@ -384,12 +384,20 @@ body.layout-single-column {
 
 /* Status update tinted to right */
 .layout-single-column .status__action-bar,
-.layout-single-column .media-gallery,
 .layout-single-column .attachment-list,
 .layout-single-column .status__content__read-more-button,
 .layout-single-column .status .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Media inside status update tinted to right */
+.layout-single-column .status .media-gallery {
+  /* Need to override inline styles */
+  /* stylelint-disable-next-line */
+  height: auto !important;
+  margin-left: auto;
+  width: calc(100% - calc(var(--size-avatar) + var(--gap-default)));
 }
 
 .layout-single-column .status-card {
