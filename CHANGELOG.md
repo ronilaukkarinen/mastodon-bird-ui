@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Fix like icon and boost icon on detailed post
+* Fix like icon hover when already active
 
 ### 1.0.1: 2023-03-08
 
