@@ -1271,6 +1271,8 @@ body.layout-single-column {
 
 /* Mobile */
 @media screen and (max-width: 889px) {
+  .app-holder,
+  .app-holder > div,
   body.app-body.layout-single-column {
     overflow-x: hidden;
   }
@@ -1279,6 +1281,10 @@ body.layout-single-column {
     order: 1;
     position: absolute;
     width: 100%;
+  }
+
+  .layout-single-column .status__info .status__display-name .display-name__account {
+    max-width: 40%;
   }
 
   .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
