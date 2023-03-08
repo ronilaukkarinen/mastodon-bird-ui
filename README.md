@@ -6,6 +6,13 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 
 See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
+_Mastodon colors:_
+
+![mementomori social_notifications (4)](https://user-images.githubusercontent.com/1534150/223775421-e1fa0b00-f794-4599-b2fe-60f4190d6044.png)
+
+
+_Twitter colors:_
+
 ![mementomori social_notifications (3)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png)
 
 ### Goals
