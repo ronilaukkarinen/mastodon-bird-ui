@@ -767,6 +767,8 @@ body.layout-single-column {
 .layout-single-column .account__header__bio .account__header__fields dt:not([title]) {
   display: inline-flex;
   gap: calc(var(--gap-default) / 2);
+  text-transform: unset;
+  font-weight: 400;
 }
 
 .layout-single-column .account__header__bio .account__header__fields dt:not([title])::before {
