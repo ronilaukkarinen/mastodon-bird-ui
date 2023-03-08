@@ -258,6 +258,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .timeline-hint,
 .layout-single-column .status__display-name.muted,
 .layout-single-column .setting-text-label,
 .layout-single-column .account__header__bio .account__header__fields dt,
@@ -380,6 +381,8 @@ body.layout-single-column {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .empty-column-indicator,
+.follow_requests-unlocked_explanation,
 .layout-single-column .column-link,
 .layout-single-column .columns-area__panels__pane--navigational .navigation-panel,
 .layout-single-column .tabs-bar__wrapper .column-back-button,
@@ -909,6 +912,41 @@ body.layout-single-column {
   transition: all 200ms;
 }
 
+.layout-single-column .account__header__tabs__buttons .icon-button {
+  align-items: center;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.layout-single-column .account__header__tabs__buttons .icon-button.active {
+  color: var(--color-light-text);
+}
+
+.layout-single-column .account__header__tabs__buttons .icon-button .fa::before {
+  font-size: 17px;
+}
+
+.layout-single-column .account__header__tabs__buttons .icon-button .fa-bell-o::before,
+.layout-single-column .account__header__tabs__buttons .icon-button .fa-bell::before {
+  /* Change the fill in this manually if you want to change colors */
+  content: url('data:image/svg+xml,%0A%3Csvg viewBox="0 0 24 24" color="inherit" width="18" height="18" xmlns="http://www.w3.org/2000/svg" %3E%3Cpath fill="%238b98a5" d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z"/%3E%3C/svg%3E');
+}
+
+.layout-single-column .account__header__tabs__buttons .icon-button.active .fa-bell-o::before,
+.layout-single-column .account__header__tabs__buttons .icon-button.active .fa-bell::before {
+  /* Change the fill in this manually if you want to change colors */
+  content: url('data:image/svg+xml,%0A%3Csvg viewBox="0 0 24 24" color="inherit" width="18" height="18" xmlns="http://www.w3.org/2000/svg" %3E%3Cpath fill="%23f7f9f9" d="m20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z"/%3E%3C/svg%3E');
+}
+
+.layout-single-column .account__header__tabs__buttons .icon-button .fa-ellipsis-v::before {
+  position: relative;
+  top: -2px;
+}
+
 .layout-single-column .account__header__tabs__buttons .button:focus,
 .layout-single-column .account__header__tabs__buttons .button:hover {
   background-color: var(--color-profile-button-hover);
@@ -917,6 +955,15 @@ body.layout-single-column {
 /* Misc UI fixes */
 .layout-single-column .setting-text__toolbar {
   align-items: center;
+}
+
+.layout-single-column .timeline-hint strong {
+  display: block;
+  margin-bottom: var(--gap-default);
+}
+
+.layout-single-column .timeline-hint br {
+  display: none;
 }
 
 /* Compose hover and focus fix */
