@@ -1,4 +1,4 @@
-### [Unreleased]
+### 1.0.2: 2023-03-08
 
 * Fix like icon and boost icon on detailed post
 * Fix like icon hover when already active
@@ -10,6 +10,7 @@
 * Fix polls
 * Fix search icon
 * Fix follow hashtag button not visible
+* Fix account relationship icon size
 
 ### 1.0.1: 2023-03-08
 
