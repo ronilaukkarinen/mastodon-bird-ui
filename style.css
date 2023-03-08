@@ -7,14 +7,14 @@
   --color-brand-twitter-dim: #8b98a5;
   --color-brand-twitter-mud: #273340;
   --color-brand-twitter-dark: #232543;
-  --color-brand-twitter-threaded-line: #434264;
+  --color-brand-twitter-threaded-line: #425364;
   --color-brand-mastodon: #595aff;
   --color-brand-mastodon-links: #8c8dff;
   --color-brand-mastodon-bg: #1e2028;
   --color-brand-mastodon-dim: #717c9b;
   --color-brand-mastodon-mud: #272c40;
   --color-brand-mastodon-dark: #232543;
-  --color-brand-mastodon-threaded-line: #425364;
+  --color-brand-mastodon-threaded-line: #434264;
 
   /* Colors */
   --color-bg: var(--color-brand-mastodon-bg);
