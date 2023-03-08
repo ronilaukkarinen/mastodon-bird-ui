@@ -2,6 +2,7 @@
 
 * Change button secondary color dimmer
 * Fix dim account name
+* Slightly less padding after status-prepend
 
 ### 1.0.2: 2023-03-08
 

@@ -970,6 +970,10 @@ body.layout-single-column {
   opacity: .6;
 }
 
+.layout-single-column .status__prepend + .status {
+  padding-top: 10px;
+}
+
 .layout-single-column .search__icon .fa-times-circle {
   top: 14px;
 }
@@ -1267,6 +1271,10 @@ body.layout-single-column {
 
 /* Mobile */
 @media screen and (max-width: 889px) {
+  body.app-body.layout-single-column {
+    overflow-x: hidden;
+  }
+
   .layout-single-column .columns-area__panels__main {
     order: 1;
     position: absolute;
