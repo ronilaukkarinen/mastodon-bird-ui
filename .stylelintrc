@@ -1,0 +1,159 @@
+{
+  "defaultSeverity": "warning",
+  "plugins": [
+    "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties",
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss"
+  ],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "order/order": [
+      {
+        "type": "at-rule",
+        "name": "import"
+      },
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      {
+        "type": "at-rule",
+        "name": "extend"
+      },
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      {
+        "type": "at-rule",
+        "name": "media"
+      }
+    ],
+    "declaration-property-value-no-unknown": null,
+    "scss/at-mixin-argumentless-call-parentheses": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/at-rule-conditional-no-parentheses": null,
+    "scss/dollar-variable-pattern": null,
+    "order/properties-alphabetical-order": true,
+    "alpha-value-notation": "number",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "custom-property-empty-line-before": "never",
+    "color-no-invalid-hex": true,
+    "color-function-notation": null,
+    "color-hex-length": "short",
+    "selector-type-case": "lower",
+    "function-name-case": "lower",
+    "selector-attribute-quotes": "always",
+    "comment-whitespace-inside": "always",
+    "selector-max-specificity": "0,6,6",
+    "block-no-empty": true,
+    "max-line-length": null,
+    "declaration-empty-line-before": null,
+    "font-family-no-missing-generic-family-keyword": true,
+    "font-family-name-quotes": "always-where-required",
+    "at-rule-no-unknown": null,
+    "no-invalid-position-at-import-rule": null,
+    "declaration-no-important": true,
+    "comment-empty-line-before": null,
+    "scss/at-else-empty-line-before": "never",
+    "function-url-quotes": "always",
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "no-duplicate-selectors": true,
+    "length-zero-no-unit": true,
+    "font-weight-notation": "numeric",
+    "number-max-precision": 3,
+    "selector-class-pattern": null,
+    "selector-max-class": 5,
+    "selector-max-combinators": 5,
+    "selector-max-compound-selectors": 5,
+    "selector-max-pseudo-class": 2,
+    "selector-max-universal": 1,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "selector-no-qualifying-type": null,
+    "declaration-block-no-duplicate-properties": true,
+    "no-unknown-animations": true,
+    "shorthand-property-no-redundant-values": true,
+    "declaration-block-single-line-max-declarations": 1,
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true
+      }
+    ],
+    "csstools/value-no-unknown-custom-properties": [
+      true,
+      {
+        "importFrom": [
+          "style.css"
+        ]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "first-nested",
+          "after-single-line-comment"
+        ],
+        "ignore": [
+          "inside-block"
+        ]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "ignoreAtRules": [
+          "if",
+          "else"
+        ],
+        "except": [
+          "first-nested",
+          "blockless-after-same-name-blockless",
+          "blockless-after-blockless"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "max-nesting-depth": [
+      3,
+      {
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes"
+        ]
+      }
+    ],
+    "declaration-property-unit-allowed-list": [
+      {
+        "font-size": [
+          "rem",
+          "em",
+          "px"
+        ],
+        "/^animation/": [
+          "ms",
+          "s"
+        ],
+        "line-height": [
+          "px",
+          "%",
+          ""
+        ]
+      }
+    ],
+    "property-disallowed-list": [
+      "font",
+      "animation",
+      "background"
+    ]
+  }
+}

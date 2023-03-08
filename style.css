@@ -1,0 +1,770 @@
+/* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social */
+/* CSS variables */
+:root {
+  /* Colors */
+  --color-bg: #15202b;
+  --color-bg-75: rgba(21, 32, 43, .75);
+  --color-border: rgb(56 68 77);
+  --color-dim: rgb(139 152 165);
+  --color-accent: rgb(29 155 240);
+  --color-dim-hex: #8b98a5;
+  --color-accent-hex: #1d9bf0;
+  --color-green: rgb(0 186 124);
+  --color-green-hex: #00ba7c;
+  --color-red: rgb(249 24 128);
+  --color-light-shade: rgb(255 255 255 / .03);
+  --color-light-text: rgb(247 249 249);
+  --color-mud: rgb(39, 51, 64);
+  --color-black-coral: rgb(83, 100, 113);
+  --color-profile-button-hover: rgba(239, 243, 244, .1);
+  --color-column-link-hover: rgba(247, 249, 249, .1);
+  --color-modal-overlay: rgba(91, 112, 131, .4);
+  --color-dark: rgb(21, 32, 43);
+
+  /* Font related */
+  --font-size: 15px;
+  --font-size-smaller: 13px;
+  --font-size-bigger: 17px;
+  --font-size-heading: 20px;
+  --font-weight-bold: 700;
+
+  /* Grids and gaps */
+  --gap-default: 12px;
+
+  /* Element sizes */
+  --size-avatar: 48px;
+  --size-avatar-small: 32px;
+  --size-icon-notification: 30px;
+  --width-main-panel: 600px;
+}
+
+body.layout-single-column {
+  background-color: var(--color-bg);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+/* Logo */
+.layout-single-column .column-link.column-link--logo {
+  /* Change the fill in this manually if you want to change colors */
+  background-image: url('data:image/svg+xml, %3Csvg class="mastodon-logo" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 216.4144 232.00976"%3E%3Cdefs xmlns="http://www.w3.org/2000/svg"%3E%3ClinearGradient xmlns="http://www.w3.org/2000/svg" id="gradient" x2="0%25" y2="100%25" gradientUnits="userSpaceOnUse"%3E%3Cstop offset="0%25" stop-color="%231d9bf0"%3E%3C/stop%3E%3Cstop offset="100%25" stop-color="%231d9bf0"%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath xmlns="http://www.w3.org/2000/svg" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="url(%23gradient)"%3E%3C/path%3E%3Cpath d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="%23fff"%3E%3C/path%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+  height: 50px;
+  padding: 0;
+  width: 50px;
+}
+
+/* Things that should have default font-size */
+.layout-single-column .account__section-headline a,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar a,
+.layout-single-column .notification__filter-bar button {
+  font-size: var(--font-size);
+}
+
+/* Modal overlay */
+.layout-single-column .modal-root__overlay {
+  background-color: var(--color-modal-overlay);
+}
+
+/* Dark panels like modal boxes */
+.layout-single-column .emoji-mart-category-label span,
+.layout-single-column body .emoji-mart-bar:first-child,
+.layout-single-column .emoji-picker-dropdown__menu,
+.layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
+.layout-single-column .emoji-mart-search input,
+.layout-single-column .emoji-mart-scroll,
+.layout-single-column .emoji-mart-search,
+.layout-single-column .follow_requests-unlocked_explanation,
+.layout-single-column .dismissable-banner,
+.layout-single-column .block-modal__action-bar,
+.layout-single-column .boost-modal__action-bar,
+.layout-single-column .confirmation-modal__action-bar,
+.layout-single-column .mute-modal__action-bar,
+.layout-single-column .setting-text__wrapper,
+.layout-single-column .setting-text,
+.layout-single-column .report-modal__comment,
+.layout-single-column .report-modal__container,
+.layout-single-column .actions-modal,
+.layout-single-column .block-modal,
+.layout-single-column .boost-modal,
+.layout-single-column .compare-history-modal,
+.layout-single-column .confirmation-modal,
+.layout-single-column .mute-modal,
+.layout-single-column .report-modal {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light-text);
+}
+
+.layout-single-column .emoji-mart-search input,
+.layout-single-column .setting-text__wrapper {
+  border-color: var(--color-border);
+}
+
+/* Change panel order */
+.layout-single-column .columns-area__panels__pane {
+  order: 3;
+}
+
+.layout-single-column .columns-area__panels__main {
+  max-width: calc(var(--width-main-panel) + calc(var(--gap-default) * 4));
+  order: 2;
+  padding-left: calc(var(--gap-default) * 2);
+  padding-right: calc(var(--gap-default) * 2);
+}
+
+.layout-single-column .columns-area__panels__pane.columns-area__panels__pane--start.columns-area__panels__pane--navigational {
+  order: 1;
+}
+
+.layout-single-column .emoji-mart-anchor-bar,
+.layout-single-column .column-link.column-link--logo svg {
+  display: none;
+}
+
+/* Accented items like links */
+.layout-single-column .column-back-button,
+.layout-single-column .emoji-mart-anchor.emoji-mart-anchor-selected,
+.layout-single-column .text-icon-button.active,
+.layout-single-column .empty-column-indicator a,
+.layout-single-column .follow_requests-unlocked_explanation a,
+.layout-single-column .column-header__back-button,
+.layout-single-column .link-button,
+.layout-single-column .reply-indicator__content a.unhandled-link,
+.layout-single-column .status__content a.unhandled-link,
+.layout-single-column .column-header > .column-header__back-button,
+.layout-single-column .reply-indicator__content a,
+.layout-single-column .status__content a,
+.layout-single-column .column-link--transparent.active,
+.layout-single-column .status__content__read-more-button {
+  color: var(--color-accent);
+}
+
+/* Accented background colors */
+.layout-single-column .language-dropdown__dropdown__results__item.active,
+.layout-single-column .icon-with-badge__badge,
+.layout-single-column .button {
+  background-color: var(--color-accent);
+}
+
+/* Accented strokes */
+.layout-single-column .trends__item__sparkline path:last-child {
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  stroke: var(--color-accent) !important;
+}
+
+/* Mud background colors */
+.layout-single-column .language-dropdown__dropdown__results__item:hover,
+.layout-single-column .language-dropdown__dropdown__results__item:focus,
+.layout-single-column .reply-indicator {
+  background-color: var(--color-mud);
+  color: var(--color-light-text);
+}
+
+/* Accented border colors */
+.layout-single-column .notification.unread::before,
+.layout-single-column .status__wrapper.unread::before {
+  border-color: var(--color-accent);
+}
+
+/* Things like notification status update text that should be dim */
+.layout-single-column .account__header__bio .account__header__fields dt,
+.layout-single-column .account__header__bio .account__header__fields dd,
+.layout-single-column .link-footer p,
+.layout-single-column .account__header__extra__links a,
+.layout-single-column .trends__item__current,
+.layout-single-column .emoji-mart-anchor,
+.layout-single-column .emoji-mart,
+.layout-single-column .emoji-mart-anchors,
+.layout-single-column .reply-indicator .display-name *,
+.layout-single-column .status__display-name,
+.layout-single-column .status__prepend .status__display-name strong,
+.layout-single-column .status__prepend,
+.layout-single-column .compose-form .compose-form__modifiers,
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .compose-panel .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper,
+.layout-single-column .account__section-headline a,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar a,
+.layout-single-column .notification__filter-bar button,
+.layout-single-column .attachment-list.compact .fa,
+.layout-single-column .attachment-list__list a,
+.layout-single-column .notification__message .fa-user-plus,
+.layout-single-column .notification__message .fa-home,
+.layout-single-column .notification__message .fa-retweet,
+.layout-single-column .link-footer p a,
+.layout-single-column .trends__item__name,
+.layout-single-column .muted .status__content,
+.layout-single-column .muted .status__content a,
+.layout-single-column .muted .status__content p,
+.layout-single-column .muted .status__display-name strong {
+  color: var(--color-dim);
+}
+
+/* White things */
+.getting-started__trends h4 a,
+.trends__item__name a,
+.layout-single-column .emoji-mart-search input,
+.layout-single-column .language-dropdown__dropdown__results__item,
+.layout-single-column .reply-indicator__content,
+.layout-single-column .compose-form .compose-form__modifiers:focus,
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input:focus,
+.layout-single-column .compose-panel .compose-form__autosuggest-wrapper:focus,
+.layout-single-column .compose-form .compose-form__buttons-wrapper:focus,
+.layout-single-column .autosuggest-textarea .autosuggest-textarea__textarea:focus,
+.layout-single-column .account__section-headline a.active,
+.layout-single-column .account__section-headline button.active,
+.layout-single-column .notification__filter-bar a.active,
+.layout-single-column .notification__filter-bar button.active {
+  color: var(--color-light-text);
+}
+
+.layout-single-column .muted .status__info *,
+.layout-single-column .muted .status__info .display-name * {
+  color: var(--color-light-text);
+}
+
+/* Account names */
+.layout-single-column .display-name__account {
+  color: var(--color-dim);
+}
+
+/* Main panel column */
+.layout-single-column .columns-area__panels__main > div {
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+
+/* Status header */
+.layout-single-column .status .status__info {
+  align-items: flex-start;
+  gap: var(--gap-default);
+  height: calc(var(--gap-default) * 2);
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.layout-single-column .status__info * {
+  color: var(--color-dim);
+}
+
+/* Display name */
+.layout-single-column .status__info .status__display-name {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: var(--gap-default);
+  order: 1;
+}
+
+.layout-single-column .status__info .display-name {
+  display: flex;
+  gap: calc(var(--gap-default) / 2);
+}
+
+/* The separator dot */
+.layout-single-column .status__info::before {
+  color: var(--color-dim);
+  content: "·";
+  display: inline-block;
+  font-size: var(--font-size);
+  font-weight: 400;
+  height: 20px;
+  margin-left: -6px;
+  margin-right: -10px;
+  order: 2;
+  position: relative;
+}
+
+.layout-single-column .status__info .status__relative-time {
+  height: unset;
+  order: 3;
+}
+
+/* Visibility icon */
+.layout-single-column .status .status__visibility-icon {
+  font-size: 14px;
+}
+
+/* Panels and things that should be transparent */
+.layout-single-column .tabs-bar__wrapper .column-back-button,
+.layout-single-column .account__header,
+.layout-single-column .column-header__back-button,
+.layout-single-column .compose-form .compose-form__modifiers,
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .compose-panel .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper,
+.layout-single-column .column-header__button,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar button,
+.layout-single-column .account__section-headline,
+.layout-single-column .notification__filter-bar,
+.layout-single-column .tabs-bar__wrapper,
+.layout-single-column .column-header,
+.layout-single-column .detailed-status,
+.layout-single-column .detailed-status__action-bar,
+.layout-single-column .column > .scrollable {
+  background-color: transparent;
+}
+
+.layout-single-column .detailed-status__meta {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+/* Avatar */
+.layout-single-column .status__avatar {
+  height: var(--size-avatar);
+  width: var(--size-avatar);
+}
+
+.layout-single-column .account__avatar > img,
+.layout-single-column .column > .scrollable .status__avatar img {
+  border-radius: 50%;
+  box-shadow: rgb(255 255 255 / 0.03) 0 0 2px inset;
+}
+
+.layout-single-column .status__prepend,
+.layout-single-column .notification__message,
+.layout-single-column .status {
+  transition: all 200ms;
+}
+
+.layout-single-column article:focus .status__prepend,
+.layout-single-column article:hover .status__prepend,
+.layout-single-column article:focus .status,
+.layout-single-column article:hover .status,
+.layout-single-column .column > .scrollable .status:hover,
+.layout-single-column .column > .scrollable .status:focus,
+.layout-single-column article:focus .notification__message,
+.layout-single-column article:hover .notification__message {
+  background-color: var(--color-light-shade);
+}
+
+/* URL preview cards */
+.layout-single-column a.status-card,
+.layout-single-column a.status-card.compact:hover,
+.layout-single-column a.status-card.compact:focus,
+.layout-single-column a.status-card.compact {
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+/* URL preview card summary text */
+.layout-single-column a.status-card .status-card__host,
+.layout-single-column a.status-card.compact .status-card__host,
+.layout-single-column a.status-card .status-card__description,
+.layout-single-column a.status-card.compact .status-card__description {
+  color: var(--color-dim);
+}
+
+/* URL preview card box */
+.layout-single-column a.status-card .status-card__content,
+.layout-single-column a.status-card.compact .status-card__content {
+  display: grid;
+  gap: calc(var(--gap-default) / 2);
+  padding: var(--gap-default);
+}
+
+/* URL preview card fonts */
+.layout-single-column a.status-card .status-card__host,
+.layout-single-column a.status-card.compact .status-card__host,
+.layout-single-column a.status-card .status-card__title,
+.layout-single-column a.status-card.compact .status-card__title {
+  font-size: var(--font-size);
+  margin: 0;
+}
+
+/* Status update tinted to right */
+.layout-single-column .status__action-bar,
+.layout-single-column .media-gallery,
+.layout-single-column .attachment-list,
+.layout-single-column .status__content__read-more-button,
+.layout-single-column .status .status__content {
+  font-size: var(--font-size);
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+.layout-single-column .status-card {
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Detailed status update */
+.layout-single-column .detailed-status .status__content {
+  font-size: var(--font-size-bigger);
+}
+
+/* Icon buttons */
+.layout-single-column .icon-button {
+  color: var(--color-dim);
+}
+
+.layout-single-column .icon-button:hover,
+.layout-single-column .icon-button:focus {
+  color: var(--color-accent);
+}
+
+/* "Retweet" button by default */
+.layout-single-column button.icon-button i.fa-retweet {
+  /* Change the fill in this manually if you want to change colors */
+  background-image: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" width="22" height="209"%3E%3Cpath d="M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%238b98a5" stroke-width="0"/%3E%3Cpath d="M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%238b98a5" stroke-width="0"/%3E%3C/svg%3E');
+}
+
+/* "Retweet" button when hovered or focused upon */
+.layout-single-column button.icon-button:focus i.fa-retweet,
+.layout-single-column button.icon-button:hover i.fa-retweet {
+  /* Change the fill in this manually if you want to change colors */
+  background-image: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" width="22" height="209"%3E%3Cpath d="M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%231d9Bf0" stroke-width="0"/%3E%3Cpath d="M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%231d9Bf0" stroke-width="0"/%3E%3C/svg%3E');
+}
+
+/* "Retweet" button when already boosted */
+.layout-single-column button.icon-button.active .fa-retweet {
+  color: var(--color-green);
+}
+
+.layout-single-column button.icon-button.active i.fa-retweet {
+  /* Change the fill in this manually if you want to change colors */
+  background-image: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" width="22" height="209"%3E%3Cpath d="M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%2300ba7c" stroke-width="0"/%3E%3Cpath d="M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="%2300ba7c" stroke-width="0"/%3E%3C/svg%3E');
+}
+
+/* Bars on panels */
+.layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+.layout-single-column .tabs-bar__wrapper {
+  backdrop-filter: blur(12px);
+  background-color: var(--color-bg-75);
+  margin-right: -2px;
+  padding: 0;
+}
+
+/* Hidden things */
+.layout-single-column .column-header .column-header__icon:not(.fa-hashtag) {
+  display: none;
+}
+
+/* Column headers */
+.layout-single-column .column-header {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Notifications */
+.layout-single-column .notification__message {
+  display: grid;
+  gap: var(--gap-default);
+  grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
+  height: calc(var(--gap-default) * 2);
+}
+
+.layout-single-column .notification__message i {
+  font-size: var(--size-icon-notification);
+}
+
+.layout-single-column .notification__message > span {
+  margin-top: calc(var(--size-avatar-small) + 4px);
+  overflow: visible;
+}
+
+.layout-single-column .notification__message > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.layout-single-column .muted .status__avatar {
+  opacity: 1;
+}
+
+.layout-single-column .notification .account__avatar-overlay-base {
+  display: none;
+}
+
+.layout-single-column .notification .account__avatar,
+.layout-single-column .notification .account__avatar-overlay-overlay .account__avatar,
+.layout-single-column .notification .account__avatar-overlay-overlay {
+  /* Need to override inline styles */
+  /* stylelint-disable-next-line */
+  height: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
+  width: var(--size-avatar-small) !important;
+}
+
+.layout-single-column .notification .status__info .status__display-name {
+  overflow: visible;
+}
+
+.layout-single-column .notification.notification-follow .account__wrapper {
+  position: relative;
+}
+
+.layout-single-column .notification.notification-follow .account__avatar-wrapper,
+.layout-single-column .notification .account__avatar-overlay {
+  left: calc(var(--size-avatar-small) + var(--gap-default) + 18px);
+  margin-top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default)));
+  position: absolute;
+  top: 4px;
+}
+
+.layout-single-column .notification.notification-status .notification__message > span {
+  display: none;
+}
+
+.layout-single-column .notification.notification-reblog .display-name,
+.layout-single-column .notification.notification-favourite .display-name {
+  display: none;
+}
+
+.layout-single-column .status__prepend {
+  padding-left: calc(var(--size-avatar) - 4px);
+}
+
+.layout-single-column .notification.notification.notification-follow .account__display-name {
+  display: inline-flex;
+  gap: var(--gap-default);
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Hide things in notifications */
+.layout-single-column .notification .status__relative-time,
+.layout-single-column .notification .status__info::before {
+  display: none;
+}
+
+/* Right side panel */
+.layout-single-column .navigation-panel hr {
+  /* Hide but reserve space */
+  visibility: hidden;
+}
+
+.layout-single-column .column-link {
+  border-radius: 32px;
+  color: var(--color-light-text);
+  display: inline-flex;
+  font-size: var(--font-size-heading);
+  gap: var(--gap-default);
+  margin-bottom: 4px;
+  margin-right: auto;
+  margin-top: 4px;
+  padding-bottom: var(--gap-default);
+  padding-left: var(--gap-default);
+  padding-right: calc(var(--gap-default) * 1.5);
+  padding-top: var(--gap-default);
+  transition: all 100ms;
+}
+
+.layout-single-column .column-link:hover,
+.layout-single-column .column-link:focus {
+  background-color: var(--color-column-link-hover);
+}
+
+.layout-single-column .account__section-headline a {
+  transition: all 200ms;
+}
+
+.layout-single-column .account__section-headline a:hover {
+  background-color: var(--color-column-link-hover);
+}
+
+.layout-single-column .column-link__icon {
+  margin: 0;
+}
+
+/* Notification badge on side panel */
+.layout-single-column .icon-with-badge__badge {
+  border-radius: 50%;
+  left: 12px;
+  top: -6px;
+}
+
+.layout-single-column .column-link--transparent.active {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Top panel */
+.layout-single-column .account__section-headline a.active::after,
+.layout-single-column .account__section-headline button.active::after,
+.layout-single-column .notification__filter-bar a.active::after,
+.layout-single-column .notification__filter-bar button.active::after {
+  background-color: var(--color-accent);
+  border: 0;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  height: 4px;
+  min-width: 56px;
+}
+
+.layout-single-column .account__section-headline a.active::before,
+.layout-single-column .account__section-headline button.active::before,
+.layout-single-column .notification__filter-bar a.active::before,
+.layout-single-column .notification__filter-bar button.active::before {
+  display: none;
+}
+
+.layout-single-column .notification .status__action-bar {
+  display: none;
+}
+
+.layout-single-column .search .search__icon .fa-search::before {
+  content: '';
+}
+
+.layout-single-column .fa-retweet::before {
+  content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-o6sn0f r-4qtqp9 r-yyyyoo r-yucp9h r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath fill="%2300ba7c" d="M4.75 3.79l4.603 4.3-1.706 1.82L6 8.38v7.37c0 .97.784 1.75 1.75 1.75H13V20H7.75c-2.347 0-4.25-1.9-4.25-4.25V8.38L1.853 9.91.147 8.09l4.603-4.3zm11.5 2.71H11V4h5.25c2.347 0 4.25 1.9 4.25 4.25v7.37l1.647-1.53 1.706 1.82-4.603 4.3-4.603-4.3 1.706-1.82L18 15.62V8.25c0-.97-.784-1.75-1.75-1.75z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+}
+
+.layout-single-column .notification .fa-retweet {
+  margin-right: 4px;
+  max-width: 30px;
+}
+
+.layout-single-column .search .search__icon .fa-search {
+  background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%238b98a5" class="r-115tad6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  display: inline-block;
+  height: 24px;
+  top: 10px;
+  width: 24px;
+}
+
+.layout-single-column .search__input {
+  background-color: var(--color-mud);
+  border-radius: 32px;
+  color: var(--color-dim);
+  font-size: var(--font-size);
+  height: 42px;
+  padding: 0 20px;
+}
+
+/* Profile */
+.layout-single-column .getting-started__trends h4,
+.layout-single-column .layout-single-column .account__header__bar {
+  border-color: var(--color-border);
+}
+
+.layout-single-column .account__header__bio .account__header__fields {
+  background-color: transparent;
+  color: var(--color-dim);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-default);
+  padding: 0;
+}
+
+/* Hide label */
+.layout-single-column .account__header__bio .account__header__fields dt {
+  display: none;
+}
+
+/* Joined label */
+.layout-single-column .account__header__bio .account__header__fields dt:not([title]) {
+  display: inline-flex;
+  gap: calc(var(--gap-default) / 2);
+}
+
+.layout-single-column .account__header__bio .account__header__fields dt:not([title])::before {
+  content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%238b98a5" class="r-115tad6 r-4qtqp9 r-yyyyoo r-1xvli5t r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  height: 18.5px;
+  width: 18.5px;
+}
+
+.layout-single-column .account__header__bio .account__header__fields dd,
+.layout-single-column .account__header__bio .account__header__fields dt {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+.layout-single-column .account__header__bio .account__header__fields dl {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  display: inline-flex;
+  font-size: var(--font-size);
+  font-weight: 400;
+  gap: calc(var(--gap-default) / 2);
+  padding: 0;
+}
+
+.layout-single-column .getting-started__trends h4 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  text-transform: unset;
+}
+
+.layout-single-column .trends__item__name a {
+  font-size: var(--font-size);
+}
+
+.layout-single-column .trends__item__name {
+  display: grid;
+  gap: 4px;
+}
+
+.layout-single-column .account__header__image {
+  height: 200px;
+}
+
+.layout-single-column .account__header__bar .avatar .account__avatar {
+  background-color: transparent;
+  border: 0;
+
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  height: 133.5px !important;
+
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  width: 133.5px !important;
+}
+
+.layout-single-column .account__header__tabs {
+  overflow: visible;
+}
+
+.layout-single-column .account__header__tabs .account-role {
+  display: none;
+  width: 133.5px;
+}
+
+.layout-single-column .account__header__tabs__buttons .button {
+  background-color: transparent;
+  border: 1px solid var(--color-black-coral);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-light-text);
+  font-size: var(--font-size);
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 200ms;
+}
+
+.layout-single-column .account__header__tabs__buttons .button:focus,
+.layout-single-column .account__header__tabs__buttons .button:hover {
+  background-color: var(--color-profile-button-hover);
+}
+
+/* Misc UI fixes */
+.layout-single-column .setting-text__toolbar {
+  align-items: center;
+}
+
+/* Smaller icon for back button */
+.layout-single-column .column-back-button i,
+.layout-single-column .column-header__back-button i {
+  font-size: 12px;
+}
+
+.layout-single-column .icon-button__counter {
+  font-size: var(--font-size-smaller);
+}
