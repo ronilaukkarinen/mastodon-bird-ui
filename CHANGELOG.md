@@ -5,6 +5,7 @@
 * Slightly less padding after status-prepend
 * Fix icon size leaking to link svg
 * Mobile: Make the name fit better
+* Mobile: Fix horizontal scrollbars
 
 ### 1.0.2: 2023-03-08
 
