@@ -878,7 +878,7 @@ body.layout-single-column {
   position: relative;
 }
 
-.layout-single-column .status.status-reply .status__avatar::before {
+.layout-single-column .scrollable > div > div .status.status-reply .status__avatar::before {
   background-color: var(--color-thread-line);
   content: '';
   height: 100%;
