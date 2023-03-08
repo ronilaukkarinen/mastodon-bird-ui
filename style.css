@@ -895,6 +895,20 @@ body.layout-single-column {
   align-items: center;
 }
 
+/* Compose hover and focus fix */
+.ui__header__links .button,
+.layout-single-column .compose-form__publish-button-wrapper button {
+  background-color: var(--color-brand-mastodon);
+  transition: all 200ms;
+}
+
+.ui__header__links .button:hover,
+.ui__header__links .button:focus,
+.layout-single-column .compose-form__publish-button-wrapper button:hover,
+.layout-single-column .compose-form__publish-button-wrapper button:focus {
+  background-color: var(--color-brand-mastodon-links);
+}
+
 /* Smaller icon for back button */
 .layout-single-column .column-back-button i,
 .layout-single-column .column-header__back-button i {
