@@ -244,6 +244,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .status__display-name.muted,
 .layout-single-column .setting-text-label,
 .layout-single-column .account__header__bio .account__header__fields dt,
 .layout-single-column .account__header__bio .account__header__fields dd,
@@ -281,7 +282,8 @@ body.layout-single-column {
 }
 
 /* White things */
-.layout-single-column .reply-indicator .display-name strong,
+.layout-single-column .status__info .display-name strong.display-name__html
+.layout-single-column .reply-indicator .display-name strong.display-name__html,
 .layout-single-column .notification__message,
 .getting-started__trends h4 a,
 .trends__item__name a,
@@ -324,10 +326,6 @@ body.layout-single-column {
   height: calc(var(--gap-default) * 2);
   justify-content: flex-start;
   margin-bottom: 0;
-}
-
-.layout-single-column .status__info * {
-  color: var(--color-dim);
 }
 
 /* Display name */
