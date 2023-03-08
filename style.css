@@ -131,7 +131,7 @@ body.layout-single-column {
 
 /* Dark panels like modal boxes */
 .layout-single-column .emoji-mart-category-label span,
-.layout-single-column body .emoji-mart-bar:first-child,
+.layout-single-column .emoji-mart-bar:first-child,
 .layout-single-column .emoji-picker-dropdown__menu,
 .layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
 .layout-single-column .emoji-mart-search input,
