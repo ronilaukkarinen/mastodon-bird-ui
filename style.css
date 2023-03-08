@@ -3,24 +3,24 @@
 :root {
   /* Colors */
   --color-bg: #15202b;
-  --color-bg-75: rgba(21, 32, 43, .75);
-  --color-border: rgb(56 68 77);
-  --color-dim: rgb(139 152 165);
-  --color-accent: rgb(29 155 240);
-  --color-dim-hex: #8b98a5;
+  --color-bg-75: #15202bbf;
+  --color-border: #38444d;
+  --color-dim: #8b98a5;
+  --color-accent: #1d9bf0;
+  --color-dim-hex: #8c99a6;
   --color-accent-hex: #1d9bf0;
-  --color-green: rgb(0 186 124);
+  --color-green: #00ba7c;
   --color-green-hex: #00ba7c;
-  --color-red: rgb(249 24 128);
-  --color-light-shade: rgb(255 255 255 / .03);
-  --color-light-text: rgb(247 249 249);
-  --color-mud: rgb(39, 51, 64);
-  --color-black-coral: rgb(83, 100, 113);
-  --color-profile-button-hover: rgba(239, 243, 244, .1);
-  --color-column-link-hover: rgba(247, 249, 249, .1);
-  --color-modal-overlay: rgba(91, 112, 131, .4);
-  --color-dark: rgb(21, 32, 43);
-  --color-thread-line: rgb(66, 83, 100);
+  --color-red: #f91880;
+  --color-light-shade: #ffffff08;
+  --color-light-text: #f7f9f9;
+  --color-mud: #273340;
+  --color-black-coral: #536471;
+  --color-profile-button-hover: #eff3f41a;
+  --color-column-link-hover: #f7f9f91a;
+  --color-modal-overlay: #5b708366;
+  --color-dark: #15202b;
+  --color-thread-line: #425364;
 
   /* Font related */
   --font-size: 15px;
