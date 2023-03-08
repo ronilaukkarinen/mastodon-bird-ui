@@ -994,12 +994,27 @@ body.layout-single-column {
   color: var(--color-light-text);
 }
 
-/* Tertiary button fix */
+/* Tertiary button */
 .layout-single-column .button.button-tertiary {
   /* stylelint-disable-next-line */
   background-color: transparent !important;
   /* stylelint-disable-next-line */
   border-color: var(--color-accent-dark) !important;
+}
+
+/* Secondary button */
+.layout-single-column .button.button-secondary {
+  /* stylelint-disable-next-line */
+  background-color: transparent !important;
+  border-color: var(--color-light-text);
+  color: var(--color-light-text);
+}
+
+.layout-single-column .button.button-secondary:hover {
+  /* stylelint-disable-next-line */
+  background-color: var(--color-light-text) !important;
+  border-color: var(--color-light-text);
+  color: var(--color-bg);
 }
 
 .layout-single-column .button.button-tertiary:focus,
