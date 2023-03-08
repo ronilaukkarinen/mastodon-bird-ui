@@ -707,7 +707,7 @@ body.layout-single-column {
   content: '';
 }
 
-.layout-single-column .fa-retweet::before {
+.layout-single-column .status__prepend .fa-retweet::before {
   content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-o6sn0f r-4qtqp9 r-yyyyoo r-yucp9h r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath fill="%2300ba7c" d="M4.75 3.79l4.603 4.3-1.706 1.82L6 8.38v7.37c0 .97.784 1.75 1.75 1.75H13V20H7.75c-2.347 0-4.25-1.9-4.25-4.25V8.38L1.853 9.91.147 8.09l4.603-4.3zm11.5 2.71H11V4h5.25c2.347 0 4.25 1.9 4.25 4.25v7.37l1.647-1.53 1.706 1.82-4.603 4.3-4.603-4.3 1.706-1.82L18 15.62V8.25c0-.97-.784-1.75-1.75-1.75z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
 }
 
