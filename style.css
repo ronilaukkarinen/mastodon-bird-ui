@@ -165,6 +165,7 @@ body.layout-single-column {
 }
 
 /* Accented items like links */
+.account__header__bio .account__header__fields a,
 .layout-single-column .column-back-button,
 .layout-single-column .emoji-mart-anchor.emoji-mart-anchor-selected,
 .layout-single-column .text-icon-button.active,
