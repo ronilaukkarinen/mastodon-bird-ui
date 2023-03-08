@@ -390,6 +390,7 @@ body.layout-single-column {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .explore__search-header,
 .layout-single-column .empty-column-indicator,
 .follow_requests-unlocked_explanation,
 .layout-single-column .column-link,

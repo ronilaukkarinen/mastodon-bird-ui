@@ -3,6 +3,7 @@
 * Change server stats label to lowercase and dim
 * Increase notification home icon size
 * Make counter a bit closer to the icon
+* Fix explore__search-header background on mobile
 
 ### 1.0.3: 2023-03-08
 
