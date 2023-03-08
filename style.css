@@ -20,6 +20,7 @@
   --color-column-link-hover: rgba(247, 249, 249, .1);
   --color-modal-overlay: rgba(91, 112, 131, .4);
   --color-dark: rgb(21, 32, 43);
+  --color-thread-line: rgb(66, 83, 100);
 
   /* Font related */
   --font-size: 15px;
@@ -172,6 +173,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .setting-text-label,
 .layout-single-column .account__header__bio .account__header__fields dt,
 .layout-single-column .account__header__bio .account__header__fields dd,
 .layout-single-column .link-footer p,
@@ -316,9 +318,15 @@ body.layout-single-column {
 }
 
 /* Avatar */
+.account__avatar[style="width: 46px; height: 46px;"],
 .layout-single-column .status__avatar {
-  height: var(--size-avatar);
-  width: var(--size-avatar);
+  /* Need to override inline styles */
+  /* stylelint-disable-next-line */
+  height: var(--size-avatar) !important;
+
+  /* Need to override inline styles */
+  /* stylelint-disable-next-line */
+  width: var(--size-avatar) !important;
 }
 
 .layout-single-column .account__avatar > img,
@@ -859,6 +867,31 @@ body.layout-single-column {
 
 /* Replace reply icon */
 .layout-single-column .status .fa-mail-reply::before,
-.layout-single-column .status .fa-reply::before {
+.layout-single-column .status .fa-reply::before,
+.layout-single-column .status .fa-reply-all::before {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238b98a5' aria-hidden='true' class='r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi'%3E%3Cg%3E%3Cpath d='M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Threaded replies */
+.layout-single-column .status.status-reply {
+  border: 0;
+  position: relative;
+}
+
+.layout-single-column .status.status-reply .status__avatar::before {
+  background-color: var(--color-thread-line);
+  content: '';
+  height: 100%;
+  left: calc(calc(calc(var(--size-avatar) / 2) + 16px) - 1px);
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.layout-single-column .scrollable > div > div:first-child .status.status-reply .status__avatar::before {
+  top: 60px;
+}
+
+.layout-single-column .scrollable > div > div:last-child .status.status-reply .status__avatar::before {
+  height: 60px;
 }
