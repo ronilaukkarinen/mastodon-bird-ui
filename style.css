@@ -475,7 +475,7 @@ body.layout-single-column {
   width: calc(100% - calc(var(--size-avatar) + var(--gap-default)));
 }
 
-.layout-single-column .status-card {
+.layout-single-column .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
