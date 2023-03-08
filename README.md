@@ -16,7 +16,7 @@ See the [original post](https://mementomori.social/@rolle/109984108360395822).
 ### Roadmap
 
 - [x] Desktop views
-- [ ] Mobile views
+- [x] Mobile views
 - [ ] Star to like heart with animation
 
 ## Installation
