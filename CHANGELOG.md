@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Change server stats label to lowercase and dim
+
 ### 1.0.3: 2023-03-08
 
 * Change button secondary color dimmer

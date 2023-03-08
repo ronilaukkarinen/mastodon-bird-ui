@@ -262,6 +262,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .server-banner h4,
 .layout-single-column .column-header__button,
 .layout-single-column .search__icon .fa-times-circle,
 .layout-single-column .poll__chart,
@@ -843,6 +844,10 @@ body.layout-single-column {
   display: inline-flex;
   font-weight: 400;
   gap: calc(var(--gap-default) / 2);
+  text-transform: unset;
+}
+
+.layout-single-column .server-banner h4 {
   text-transform: unset;
 }
 
