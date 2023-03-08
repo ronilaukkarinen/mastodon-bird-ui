@@ -465,6 +465,12 @@ body.layout-single-column {
   font-size: var(--size-icon-notification);
 }
 
+/* Make sure notification user is clickable */
+.layout-single-column .notification__display-name {
+  position: relative;
+  z-index: 99;
+}
+
 .layout-single-column .notification__message > span {
   margin-top: calc(var(--size-avatar-small) + 4px);
   overflow: visible;
