@@ -788,7 +788,7 @@ body.layout-single-column {
   max-width: 30px;
 }
 
-.layout-single-column .notification .fa::before {
+.layout-single-column .notification .fa:not(.fa-link)::before {
   font-size: 22px;
   height: 27px;
 }
