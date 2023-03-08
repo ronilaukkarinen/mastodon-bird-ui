@@ -98,6 +98,7 @@ body.layout-single-column {
   color: var(--color-light-text);
 }
 
+.layout-single-column .status,
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .setting-text__wrapper {
   border-color: var(--color-border);
