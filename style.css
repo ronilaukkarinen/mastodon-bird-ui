@@ -20,6 +20,7 @@
   --color-border: #38444d;
   --color-dim: var(--color-brand-mastodon-dim);
   --color-accent: var(--color-brand-mastodon-links);
+  --color-accent-dark: var(--color-brand-mastodon);
   --color-green: #00ba7c;
   --color-red: #f91880;
   --color-light-shade: #ffffff08;
@@ -220,6 +221,10 @@ body.layout-single-column {
 .layout-single-column .icon-with-badge__badge,
 .layout-single-column .button {
   background-color: var(--color-accent);
+}
+
+.layout-single-column .icon-with-badge__badge {
+  background-color: var(--color-accent-dark);
 }
 
 /* Accented strokes */
@@ -904,8 +909,8 @@ body.layout-single-column {
 .layout-single-column .sign-in-banner .button,
 .layout-single-column .ui__header__links .button,
 .layout-single-column .compose-form__publish-button-wrapper button {
-  background-color: var(--color-brand-mastodon);
-  border-color: var(--color-brand-mastodon);
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
   color: var(--color-light-text);
   transition: all 200ms;
 }
@@ -928,7 +933,7 @@ body.layout-single-column {
   /* stylelint-disable-next-line */
   background-color: transparent !important;
   /* stylelint-disable-next-line */
-  border-color: var(--color-brand-mastodon) !important;
+  border-color: var(--color-accent-dark) !important;
 }
 
 .layout-single-column .button.button-tertiary:focus,
