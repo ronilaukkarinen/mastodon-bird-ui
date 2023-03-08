@@ -131,6 +131,10 @@ body.layout-single-column {
 }
 
 /* Dark panels like modal boxes */
+.layout-single-column .dropdown-menu__arrow::before,
+.layout-single-column .dropdown-menu,
+.layout-single-column .dropdown-menu__item a,
+.layout-single-column .dropdown-menu__item button,
 .layout-single-column .emoji-mart-category-label span,
 .layout-single-column .emoji-mart-bar:first-child,
 .layout-single-column .emoji-picker-dropdown__menu,
@@ -159,6 +163,11 @@ body.layout-single-column {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
   color: var(--color-light-text);
+}
+
+/* More subtle box-shadow for dropdown-menu */
+.layout-single-column .dropdown-menu {
+  box-shadow: 2px 4px 16px rgb(0 0 0 / .01);
 }
 
 .layout-single-column .dropdown-menu__separator,
