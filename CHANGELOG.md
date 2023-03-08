@@ -8,6 +8,7 @@
 * Add heart to column-link icon
 * Fix secondary button
 * Fix polls
+* Fix search icon
 
 ### 1.0.1: 2023-03-08
 

@@ -262,6 +262,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .search__icon .fa-times-circle,
 .layout-single-column .poll__chart,
 .layout-single-column .timeline-hint,
 .layout-single-column .status__display-name.muted,
@@ -958,6 +959,14 @@ body.layout-single-column {
 }
 
 /* Misc UI fixes */
+.layout-single-column .search__icon .fa.active {
+  opacity: .6;
+}
+
+.layout-single-column .search__icon .fa-times-circle {
+  top: 14px;
+}
+
 .layout-single-column .setting-text__toolbar {
   align-items: center;
 }
