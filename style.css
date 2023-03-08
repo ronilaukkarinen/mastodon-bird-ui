@@ -262,6 +262,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .poll__chart,
 .layout-single-column .timeline-hint,
 .layout-single-column .status__display-name.muted,
 .layout-single-column .setting-text-label,
