@@ -314,11 +314,6 @@ body.layout-single-column {
   background-color: transparent;
 }
 
-.layout-single-column .detailed-status__meta {
-  color: var(--color-dim);
-  font-size: var(--font-size);
-}
-
 /* Avatar */
 .layout-single-column .status__avatar {
   height: var(--size-avatar);
@@ -407,6 +402,40 @@ body.layout-single-column {
 /* Detailed status update */
 .layout-single-column .detailed-status .status__content {
   font-size: var(--font-size-bigger);
+}
+
+.layout-single-column .detailed-status__meta {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+.layout-single-column .detailed-status__favorites,
+.layout-single-column .detailed-status__reblogs {
+  display: inline-flex;
+  font-size: var(--font-size);
+  gap: 4px;
+}
+
+.layout-single-column .detailed-status__meta .animated-number {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+.layout-single-column .detailed-status__reblogs {
+  font-size: var(--font-size);
+}
+
+.layout-single-column .detailed-status__reblogs::after {
+  content: 'Boosts';
+}
+
+.layout-single-column .detailed-status__favorites::after {
+  content: 'Favourites';
+}
+
+.layout-single-column .detailed-status__meta .detailed-status__link .fa-star,
+.layout-single-column .detailed-status__meta .detailed-status__link .fa-retweet {
+  display: none;
 }
 
 /* Icon buttons */
@@ -591,6 +620,7 @@ body.layout-single-column {
 /* Notification badge on side panel */
 .layout-single-column .icon-with-badge__badge {
   border-radius: 50%;
+  font-size: 11px;
   left: 12px;
   top: -6px;
 }
