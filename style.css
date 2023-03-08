@@ -1029,6 +1029,8 @@ body.layout-single-column {
 /* Mobile */
 @media screen and (max-width: 889px) {
   .layout-single-column .columns-area__panels__main {
+    order: 1;
+    position: fixed;
     width: 100%;
   }
 
@@ -1055,5 +1057,28 @@ body.layout-single-column {
 
   .columns-area__panels__pane--navigational .column-link__icon {
     font-size: 22px;
+  }
+
+  .layout-single-column .columns-area__panels__main > div,
+  .layout-single-column .columns-area__panels__main > div.columns-area.columns-area--mobile {
+    border: 0;
+  }
+
+  .layout-single-column .ui__header {
+    border-bottom: 0;
+  }
+
+  .layout-single-column .account__header__bar .avatar .account__avatar {
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    height: 106px !important;
+
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    width: 106px !important;
+  }
+
+  .layout-single-column .account__header__image {
+    height: 157px;
   }
 }
