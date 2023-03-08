@@ -280,6 +280,7 @@ body.layout-single-column {
 }
 
 /* White things */
+.layout-single-column .reply-indicator .display-name strong,
 .layout-single-column .notification__message,
 .getting-started__trends h4 a,
 .trends__item__name a,
