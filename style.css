@@ -654,6 +654,7 @@ body.layout-single-column {
   transition: all 200ms;
 }
 
+.layout-single-column .notification__filter-bar button:hover,
 .layout-single-column .account__section-headline a:hover {
   background-color: var(--color-column-link-hover);
 }
