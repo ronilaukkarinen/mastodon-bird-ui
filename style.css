@@ -1059,6 +1059,14 @@ body.layout-single-column {
   background-repeat: no-repeat;
 }
 
+/* Replace notification retweet icon */
+.layout-single-column .notification__favourite-icon-wrapper .fa-retweet::before {
+  /* Change the fill in this manually if you want to change colors */
+  content: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='24' height='24' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%2300ba7c' d='M6 4h15a1 1 0 0 1 1 1v7h-2V6H6v3L1 5l5-4v3zm12 16H3a1 1 0 0 1-1-1v-7h2v6h14v-3l5 4l-5 4v-3z'/%3E%3C/svg%3E");
+  position: relative;
+  top: 2px;
+}
+
 /* stylelint-disable-next-line */
 .layout-single-column button.icon-button:hover i.fa-retweet,
 .layout-single-column button.icon-button.active i.fa-retweet {
@@ -1125,7 +1133,7 @@ body.layout-single-column {
 @media screen and (max-width: 889px) {
   .layout-single-column .columns-area__panels__main {
     order: 1;
-    position: fixed;
+    position: absolute;
     width: 100%;
   }
 
@@ -1142,6 +1150,7 @@ body.layout-single-column {
     flex-direction: row;
     height: unset;
     overflow-x: auto;
+    padding: 0 var(--gap-default);
   }
 
   .layout-single-column .column-link {
@@ -1150,8 +1159,14 @@ body.layout-single-column {
     padding-top: 0;
   }
 
+  .layout-single-column .column-link:hover,
+  .layout-single-column .column-link:focus {
+    /* stylelint-disable-next-line */
+    background-color: transparent !important;
+  }
+
   .columns-area__panels__pane--navigational .column-link__icon {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .layout-single-column .columns-area__panels__main > div,
