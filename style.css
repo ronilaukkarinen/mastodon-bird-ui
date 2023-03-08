@@ -794,6 +794,10 @@ body.layout-single-column {
   height: 27px;
 }
 
+.layout-single-column .notification .fa.fa-home:not(.fa-link)::before {
+  font-size: 24px;
+}
+
 .layout-single-column .notification .account__relationship .fa::before {
   font-size: 20px;
 }
@@ -1075,7 +1079,7 @@ body.layout-single-column {
 .layout-single-column .status__action-bar .icon-button--with-counter {
   align-items: center;
   display: inline-flex;
-  gap: var(--gap-default);
+  gap: 6px;
 }
 
 .layout-single-column .status__action-bar .icon-button {
