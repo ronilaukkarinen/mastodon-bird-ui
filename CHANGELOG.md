@@ -9,6 +9,7 @@
 * Fix secondary button
 * Fix polls
 * Fix search icon
+* Fix follow hashtag button not visible
 
 ### 1.0.1: 2023-03-08
 

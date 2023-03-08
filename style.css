@@ -262,6 +262,7 @@ body.layout-single-column {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .column-header__button,
 .layout-single-column .search__icon .fa-times-circle,
 .layout-single-column .poll__chart,
 .layout-single-column .timeline-hint,
@@ -583,7 +584,8 @@ body.layout-single-column {
 }
 
 /* Hidden things */
-.layout-single-column .column-header .column-header__icon:not(.fa-hashtag) {
+/* stylelint-disable-next-line */
+.layout-single-column .column-header .column-header__icon:not(.fa-hashtag):not(.fa-user-plus):not(.fa-user-times) {
   display: none;
 }
 
