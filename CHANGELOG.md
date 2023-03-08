@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Change button secondary color dimmer
+* Fix dim account name
 
 ### 1.0.2: 2023-03-08
 

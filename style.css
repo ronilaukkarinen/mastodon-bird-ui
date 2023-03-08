@@ -331,6 +331,7 @@ body.layout-single-column {
 }
 
 /* Account names */
+.layout-single-column .status__info .display-name .display-name__account,
 .layout-single-column .display-name__account {
   color: var(--color-dim);
 }
