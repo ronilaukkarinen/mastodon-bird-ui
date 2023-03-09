@@ -1,6 +1,7 @@
-### [Unreleased 1.1.1rc]
+### [Unreleased 1.1.1rc2]
 
 * Fix always spinning boost button
+* Improve alignment of the bottom items on mobile
 
 ### 1.1.0: 2023-03-09
 
