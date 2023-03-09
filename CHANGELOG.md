@@ -1,4 +1,4 @@
-### [Unreleased]
+### 1.1.0: 2023-03-09
 
 * Add .account to color-border section
 * Fix hover on account type of notifications
@@ -6,6 +6,7 @@
 * Fix hover bubble dimension under actions
 * Fix action buttons alignment on mobile
 * Disable action focus bubble on mobile
+* Fix retweet focus color on mobile
 
 ### 1.0.9: 2023-03-09
 
