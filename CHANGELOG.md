@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Add .account to color-border section
+* Fix hover on account type of notifications
 
 ### 1.0.9: 2023-03-09
 
