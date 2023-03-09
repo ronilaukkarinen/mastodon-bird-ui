@@ -3,6 +3,7 @@
 * Add .account to color-border section
 * Fix hover on account type of notifications
 * Fix top margin on mobile
+* Fix hover bubble dimension under actions
 
 ### 1.0.9: 2023-03-09
 

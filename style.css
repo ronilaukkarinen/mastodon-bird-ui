@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.0rc3 */
+   v1.1.0rc4 */
 
 /* CSS variables */
 :root {
@@ -1118,6 +1118,36 @@ a.status-card.compact .status-card__description {
   background-color: var(--color-profile-button-hover);
 }
 
+.layout-single-column .detailed-status__action-bar .icon-button:hover,
+.layout-single-column .status__action-bar .icon-button:hover {
+  background-color: transparent;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button:hover::after,
+.layout-single-column .status__action-bar .icon-button:hover::after {
+  opacity: 1;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button::after,
+.layout-single-column .status__action-bar .icon-button::after {
+  background-color: rgba(96, 105, 132, .15);
+  border-radius: 50%;
+  content: '';
+  height: 36px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -8px;
+  transform: translateX(8px);
+  width: 36px;
+  z-index: -1;
+}
+
+.layout-single-column .status__action-bar .icon-button.icon-button--with-counter::after {
+  transform: translateX(-6px);
+}
+
 /* Misc UI fixes */
 .layout-single-column .search__icon .fa.active {
   opacity: .6;
@@ -1275,13 +1305,13 @@ a.status-card.compact .status-card__description {
 }
 
 .layout-single-column .status__action-bar .icon-button {
-
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   height: unset !important;
+  position: relative;
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
-  width: unset !important;
+  width: 50px !important;
 }
 
 /* Replace bookmark icon */
