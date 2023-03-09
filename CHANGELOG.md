@@ -1,10 +1,12 @@
-### 1.1.2rc5: 2023-03-09
+### 1.1.2: 2023-03-09
 
 * Fix the heart animation on the icons with counter
 * Fix notification title overlapping with polls
 * Fix avatar space alignment with long usernames
 * Reset padding from attachment-list on reply indicator
 * Fix boost animation
+* Fix detailed status button bubbles
+* Fix gap between list-adder list item and icon
 
 ### 1.1.1: 2023-03-09 
 

@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.2rc5 */
+   v1.1.2 */
 
 /* CSS variables */
 :root {
@@ -142,6 +142,11 @@ body.layout-single-column {
   background-color: transparent;
   border-color: var(--color-black-coral);
   height: 38px;
+}
+
+.layout-single-column .list-adder .list__display-name {
+  display: flex;
+  gap: var(--gap-default);
 }
 
 /* Default to full-width images in link previews
@@ -1167,6 +1172,18 @@ a.status-card.compact .status-card__description {
   transform: translateX(8px);
   width: 36px;
   z-index: -1;
+}
+
+.layout-single-column .detailed-status__button {
+  position: relative;
+}
+
+.layout-single-column .detailed-status__button .icon-button::after {
+  transform: translateX(30px);
+}
+
+.layout-single-column .detailed-status__button .icon-button.star-icon::after {
+  transform: translateX(3px);
 }
 
 .layout-single-column .status__action-bar .icon-button.icon-button--with-counter::after {
