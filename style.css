@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.6 */
+   v1.0.6rc */
 
 /* CSS variables */
 :root {
@@ -1627,5 +1627,9 @@ a.status-card.compact .status-card__description {
   .layout-single-column .column-subheading ~ article {
     padding-bottom: calc(var(--gap-default) / 2);
     padding-top: calc(var(--gap-default) / 2);
+  }
+
+  .layout-single-column .compose-form {
+    padding-bottom: calc(3.5rem + calc(var(--gap-default) * 2));
   }
 }
