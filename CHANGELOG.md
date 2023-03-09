@@ -4,7 +4,8 @@
 * Fix hover on account type of notifications
 * Fix top margin on mobile
 * Fix hover bubble dimension under actions
-* Fix action button focus
+* Fix action buttons alignment on mobile
+* Disable action focus bubble on mobile
 
 ### 1.0.9: 2023-03-09
 

@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.0rc6 */
+   v1.1.0rc7 */
 
 /* CSS variables */
 :root {
@@ -1310,10 +1310,18 @@ a.status-card.compact .status-card__description {
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   height: unset !important;
-  position: relative;
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
-  width: 50px !important;
+  width: unset !important;
+}
+
+@media screen and (min-width: 890px) {
+  .layout-single-column .status__action-bar .icon-button {
+    position: relative;
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    width: 50px !important;
+  }
 }
 
 /* Replace bookmark icon */
@@ -1697,8 +1705,7 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .detailed-status__action-bar .icon-button::after,
   .layout-single-column .status__action-bar .icon-button::after {
-    top: -7px;
-    transform: translateX(2px);
+    display: none;
   }
 }
 
