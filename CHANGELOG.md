@@ -1,7 +1,8 @@
-### 1.1.2rc2: 2023-03-09
+### 1.1.2rc3: 2023-03-09
 
 * Fix the heart animation on the icons with counter
 * Fix notification title overlapping with polls
+* Fix avatar space alignment with long usernames
 
 ### 1.1.1: 2023-03-09 
 
