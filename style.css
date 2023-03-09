@@ -1498,13 +1498,15 @@ a.status-card.compact .status-card__description {
     background-color: var(--color-bg);
     border-top: 1px solid var(--color-border);
     bottom: 0;
-    height: 52.5px;
+    height: 3.5rem;
     left: 0;
+    max-height: 16vh;
     width: 100vw;
   }
 
   .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
     flex-direction: row;
+    gap: var(--gap-default);
     height: unset;
     overflow-x: auto;
     padding: 0 var(--gap-default);
@@ -1524,6 +1526,16 @@ a.status-card.compact .status-card__description {
 
   .columns-area__panels__pane--navigational .column-link__icon.fa-home {
     font-size: 27px;
+  }
+
+  .columns-area__panels__pane--navigational .column-link__icon.fa-bell::before {
+    position: relative;
+    top: 2px;
+  }
+
+  .columns-area__panels__pane--navigational .column-link__icon.fa-ellipsis-h {
+    position: relative;
+    top: -9px;
   }
 
   .columns-area__panels__pane--navigational .column-link__icon.fa-users,
