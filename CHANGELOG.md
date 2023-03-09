@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Add .account to color-border section
+
 ### 1.0.9: 2023-03-09
 
 * Fix hover colors on boost and star buttons
