@@ -45,7 +45,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 2. Copy the contents of style.css
 3. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
 
-## Twitter-like link previews
+### Twitter-like link previews
 
 If you like bigger link previews, please implement [this](https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018).
 
