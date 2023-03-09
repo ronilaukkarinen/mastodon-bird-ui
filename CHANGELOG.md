@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Fix hover colors on boost and star buttons
+* Fix 1px jump on activating the spark animation
 
 ### 1.0.8: 2023-03-09
 

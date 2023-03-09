@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.9rc1 */
+   v1.0.9rc2 */
 
 /* CSS variables */
 :root {
@@ -1659,6 +1659,7 @@ a.status-card.compact .status-card__description {
 
 /* Heart animation */
 .layout-single-column.no-reduce-motion .icon-button.star-icon {
+  min-height: 23px;
   position: relative;
 }
 
