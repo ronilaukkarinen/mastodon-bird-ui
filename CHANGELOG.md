@@ -1,3 +1,7 @@
+### [Unreleased 1.1.1rc]
+
+* Fix always spinning boost button
+
 ### 1.1.0: 2023-03-09
 
 * Add .account to color-border section

@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.0 */
+   v1.1.1rc */
 
 /* CSS variables */
 :root {
@@ -1708,7 +1708,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Retweet animation */
-.layout-single-column.no-reduce-motion .icon-button .fa-retweet {
+.layout-single-column.no-reduce-motion .icon-button.active:not([aria-label="Unboost"]) .fa-retweet {
   /* stylelint-disable-next-line */
   animation: spring-rotate-in 1s linear;
 }
