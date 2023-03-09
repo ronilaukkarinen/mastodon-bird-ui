@@ -20,6 +20,7 @@
   /* Colors */
   --color-bg: var(--color-brand-mastodon-bg);
   --color-bg-75: #1e2028bf;
+  --color-fg: #fff;
   --color-border: #38444d;
   --color-dim: var(--color-brand-mastodon-dim);
   --color-accent: var(--color-brand-mastodon-links);
@@ -62,6 +63,7 @@
 
 body.layout-single-column {
   background-color: var(--color-bg);
+  color: var(--color-fg);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
 }
 
@@ -466,6 +468,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .column-inline-form,
 .layout-single-column .scrollable .account-card,
 .layout-single-column .scrollable .account-card__title__avatar .account__avatar,
 .layout-single-column .scrollable .account-card__title__avatar img,
@@ -679,6 +682,21 @@ a.status-card.compact .status-card__description {
 .layout-single-column .column-header {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
+}
+
+/* Column sub-headers */
+.layout-single-column .column-subheading {
+  background-color: transparent;
+  color: var(--color-fg);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+  text-transform: unset;
+}
+
+/* "Your lists" view */
+.layout-single-column .column-subheading ~ article {
+  padding-left: var(--gap-default);
+  padding-right: var(--gap-default);
 }
 
 /* Notifications */
@@ -902,6 +920,7 @@ a.status-card.compact .status-card__description {
   font-size: 20px;
 }
 
+/* Search */
 .layout-single-column .search .search__icon .fa-search {
   /* Change the fill in this manually if you want to change colors */
   background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%238b98a5"%3E%3Cg%3E%3Cpath d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
@@ -914,6 +933,7 @@ a.status-card.compact .status-card__description {
   width: 24px;
 }
 
+.layout-single-column input.setting-text,
 .layout-single-column .search__input {
   background-color: var(--color-mud);
   border-radius: 32px;
@@ -921,6 +941,12 @@ a.status-card.compact .status-card__description {
   font-size: var(--font-size);
   height: 42px;
   padding: 0 20px;
+}
+
+.layout-single-column input::placeholder,
+.layout-single-column input.setting-text::placeholder {
+  color: var(--color-dim);
+  opacity: 1;
 }
 
 /* Profile */
@@ -1024,6 +1050,7 @@ a.status-card.compact .status-card__description {
   width: 133.5px;
 }
 
+.layout-single-column .column-inline-form button,
 .layout-single-column .explore__suggestions .account-card__actions__button button,
 .layout-single-column .account__header__tabs__buttons .button {
   background-color: transparent;
@@ -1049,6 +1076,7 @@ a.status-card.compact .status-card__description {
   justify-content: center;
 }
 
+.layout-single-column .column-inline-form button:hover,
 .layout-single-column .explore__suggestions .account-card__actions__button button:hover,
 .layout-single-column .account__header__tabs__buttons .icon-button.active {
   color: var(--color-light-text);
@@ -1591,5 +1619,11 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .actions-modal ul li:not(:empty) a {
     color: var(--color-light-text);
+  }
+
+  /* "Your lists" view */
+  .layout-single-column .column-subheading ~ article {
+    padding-bottom: calc(var(--gap-default) / 2);
+    padding-top: calc(var(--gap-default) / 2);
   }
 }

@@ -2,6 +2,7 @@
 
 * Fix video-player alignment
 * Improve mobile bottom bar spacing
+* Lists view styles
 
 ### 1.0.5: 2023-03-09
 
