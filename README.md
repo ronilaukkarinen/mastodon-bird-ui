@@ -34,6 +34,20 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Tinted deep purple, subtle beautiness
 - Action bar in the bottom on mobile
 
+
+## Installation
+
+1. Make sure _Mastodon (Dark)_ is enabled in the **Site theme** setting
+2. Copy the contents of style.css
+3. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
+
+## Contributing / testing
+
+1. Install [live-css-editor](https://github.com/webextensions/live-css-editor) (or any other extension that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
+2. Get style.css from this repo
+3. Open extension and paste the CSS into the editor
+4. Click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+
 ### Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/mementomori.social/admin/settings/appearance}
@@ -44,15 +58,3 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - [x] Desktop views
 - [x] Mobile views
 - [x] Star to heart
-
-## Installation
-
-1. Copy the contents of style.css
-2. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
-
-## Contributing / testing
-
-1. Install [live-css-editor](https://github.com/webextensions/live-css-editor) (or any other extension that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
-2. Get style.css from this repo
-3. Open extension and paste the CSS into the editor
-4. Click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
