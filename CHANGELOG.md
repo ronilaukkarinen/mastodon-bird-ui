@@ -3,6 +3,9 @@
 * Improve unread notification style to be more subtle without left border
 * Add accent color to home icon in notifications
 * Fix wrapping issues of the notification title
+* Add more space between trends
+* Remove side bar scrolling bar while retaining scrollability
+* Hack to display notification message title on one line
 
 ### 1.0.4: 2023-03-09
 

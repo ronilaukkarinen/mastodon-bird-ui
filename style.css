@@ -686,9 +686,15 @@ a.status-card.compact .status-card__description {
   z-index: 99;
 }
 
+/* Hack to display notification message title on one line */
 .layout-single-column .notification__message > span {
   display: block;
   margin-top: calc(var(--size-avatar-small) + 4px);
+  overflow: visible;
+}
+
+.layout-single-column .notification__message > span > span {
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -772,6 +778,12 @@ a.status-card.compact .status-card__description {
 
 .columns-area__panels__pane--navigational .navigation-panel {
   border: 0;
+}
+
+/* Hide scrollbars for .navigation-panel */
+.layout-single-column .navigation-panel::-webkit-scrollbar {
+  display: none;
+  width: 3px;
 }
 
 .layout-single-column .column-link {
@@ -958,6 +970,10 @@ a.status-card.compact .status-card__description {
   font-weight: var(--font-weight-bold);
   line-height: 24px;
   text-transform: unset;
+}
+
+.layout-single-column .getting-started__trends {
+  margin-top: calc(var(--gap-default) * 2);
 }
 
 .layout-single-column .trends__item__name a {
