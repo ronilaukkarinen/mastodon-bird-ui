@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.2rc1 */
+   v1.1.2rc2 */
 
 /* CSS variables */
 :root {
@@ -784,6 +784,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Hack to show follow notification more minimal way */
+.layout-single-column .notification.notification-poll .display-name,
 .layout-single-column .notification.notification-follow .display-name__html {
   visibility: hidden;
 }
