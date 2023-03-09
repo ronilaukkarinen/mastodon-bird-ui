@@ -15,6 +15,7 @@
   --color-brand-mastodon-mud: #272c40;
   --color-brand-mastodon-dark: #232543;
   --color-brand-mastodon-threaded-line: #434264;
+  --color-brand-mastodon-text-light: #8493a7;
 
   /* Colors */
   --color-bg: var(--color-brand-mastodon-bg);
@@ -265,7 +266,6 @@ body.layout-single-column {
 .layout-single-column .server-banner h4,
 .layout-single-column .column-header__button,
 .layout-single-column .search__icon .fa-times-circle,
-.layout-single-column .poll__chart,
 .layout-single-column .timeline-hint,
 .layout-single-column .status__display-name.muted,
 .layout-single-column .setting-text-label,
@@ -304,8 +304,13 @@ body.layout-single-column {
   color: var(--color-dim);
 }
 
+/* Dim backgrounds */
+.layout-single-column .poll__chart {
+  background-color: var(--color-dim);
+}
+
 /* White things */
-.layout-single-column .status__info .display-name strong.display-name__html
+.layout-single-column .status__info .display-name strong.display-name__html,
 .layout-single-column .reply-indicator .display-name strong.display-name__html,
 .layout-single-column .notification__message,
 .getting-started__trends h4 a,
@@ -1001,6 +1006,34 @@ body.layout-single-column {
   display: none;
 }
 
+/* General fixes */
+.account__header__bar .avatar {
+  /* stylelint-disable-next-line */
+  margin-left: 0 !important;
+}
+
+/* stylelint-disable-next-line */
+::webkit-scrollbar {
+  width: 3px;
+}
+
+/* Fix for button line-height */
+.button.logo-button {
+  line-height: 22px;
+}
+
+/* Visual indicator about direct messages
+   @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
+
+.status__wrapper-direct,
+.detailed-status-direct {
+  background-image: linear-gradient(
+    0.375turn,
+    #8c8dff 3.5rem,
+    transparent 3rem
+  );
+}
+
 /* Compose hover and focus fix */
 .layout-single-column .server-banner .button,
 .layout-single-column .sign-in-banner .button,
@@ -1037,8 +1070,8 @@ body.layout-single-column {
 .layout-single-column .button.button-secondary {
   /* stylelint-disable-next-line */
   background-color: transparent !important;
-  border-color: var(--color-dim);
-  color: var(--color-dim);
+  border-color: var(--color-brand-mastodon-text-light);
+  color: var(--color-brand-mastodon-text-light);
 }
 
 .layout-single-column .button.button-secondary:hover {

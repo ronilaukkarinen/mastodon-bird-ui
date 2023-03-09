@@ -4,6 +4,9 @@
 * Increase notification home icon size
 * Make counter a bit closer to the icon
 * Fix explore__search-header background on mobile
+* Fix general avatars
+* Fix line-height on buttons
+* Visual indicator about direct messages [#22158](https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031)
 
 ### 1.0.3: 2023-03-08
 
