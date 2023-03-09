@@ -8,7 +8,7 @@ See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
 ## Why would anyone want Mastodon to look like Twitter?
 
-Let's face it, we're kinda used to it, Mastodon already resembles Twitter. Twitter UI is not bad, it's just that it's not for everyone. Twitter made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
+Because you can? Let's face it, we're kinda used to it, Mastodon already resembles Twitter. Twitter UI is not bad, it's just that it's not for everyone. Twitter made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
 
 This is why I have defaulted Mastodon deep purple colors in this "theme", if you will. If you really want the vanilla Twitter-look, please modify the colors yourself. Or go to the hellsite if you really love it so much.
 
