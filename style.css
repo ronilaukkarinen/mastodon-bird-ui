@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.1rc3 */
+   v1.1.1rc5 */
 
 /* CSS variables */
 :root {
@@ -952,6 +952,11 @@ a.status-card.compact .status-card__description {
   padding: 0 20px;
 }
 
+.layout-single-column input.setting-text:focus,
+.layout-single-column .search__input:focus {
+  color: var(--color-light-text);
+}
+
 .layout-single-column input::placeholder,
 .layout-single-column input.setting-text::placeholder {
   color: var(--color-dim);
@@ -1619,7 +1624,7 @@ a.status-card.compact .status-card__description {
     padding-left: var(--gap-default);
     padding-right: var(--gap-default);
     padding-top: 0;
-    width: 37px;
+    width: 38px;
   }
 
   .layout-single-column .column-link:hover,
