@@ -1,4 +1,4 @@
-### [Unreleased]
+### 1.0.6: 2023-03-09
 
 * Fix video-player alignment
 * Improve mobile bottom bar spacing
