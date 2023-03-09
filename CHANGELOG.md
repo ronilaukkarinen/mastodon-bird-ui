@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Fix hover colors on boost and star buttons
+
 ### 1.0.8: 2023-03-09
 
 * Replicate animated heart with sparkles

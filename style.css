@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.8 */
+   v1.0.9rc1 */
 
 /* CSS variables */
 :root {
@@ -1406,8 +1406,14 @@ a.status-card.compact .status-card__description {
   background-repeat: no-repeat;
 }
 
+.layout-single-column button.icon-button:hover i.fa-retweet ~ span,
 .layout-single-column button.icon-button.active i.fa-retweet ~ span {
   color: var(--color-green);
+}
+
+.layout-single-column button.icon-button:hover i.fa-star ~ span,
+.layout-single-column button.icon-button.active i.fa-star ~ span {
+  color: var(--color-red);
 }
 
 /* Replace reply icon */
