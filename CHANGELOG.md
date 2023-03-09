@@ -1,4 +1,4 @@
-### [Unreleased]
+### 1.0.5: 2023-03-09
 
 * Improve unread notification style to be more subtle without left border
 * Add accent color to home icon in notifications
@@ -9,6 +9,7 @@
 * Fix direct message indicator on detailed status
 * Poll color improvements
 * Fix profile suggestion styles
+* More consistent icon sizes for mobile bar
 
 ### 1.0.4: 2023-03-09
 

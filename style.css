@@ -1521,8 +1521,17 @@ a.status-card.compact .status-card__description {
     background-color: transparent !important;
   }
 
-  .columns-area__panels__pane--navigational .column-link__icon {
+  .columns-area__panels__pane--navigational .column-link__icon.fa-home {
+    font-size: 27px;
+  }
+
+  .columns-area__panels__pane--navigational .column-link__icon.fa-users,
+  .columns-area__panels__pane--navigational .column-link__icon.fa-bell {
     font-size: 20px;
+  }
+
+  .columns-area__panels__pane--navigational .column-link__icon {
+    font-size: 24px;
   }
 
   .columns-area__panels__pane--navigational .column-link__icon.fa-star,
