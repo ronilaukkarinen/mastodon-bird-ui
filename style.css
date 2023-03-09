@@ -310,6 +310,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification.unread::before,
 .layout-single-column .status__wrapper.unread::before {
   border-color: var(--color-accent);
+  display: none;
 }
 
 /* Unread message */
