@@ -1398,6 +1398,10 @@ a.status-card.compact .status-card__description {
   background-repeat: no-repeat;
 }
 
+.layout-single-column button.icon-button.active i.fa-retweet ~ span {
+  color: var(--color-green);
+}
+
 /* Replace reply icon */
 .layout-single-column .detailed-status .fa-mail-reply::before,
 .layout-single-column .detailed-status .fa-reply::before,
