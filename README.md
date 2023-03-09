@@ -1,6 +1,6 @@
-## Mastodon, but it's Twitter
+## Mastodon with modern birdsite-like UI
 
-Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to look exactly like Twitter.
+Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to look like Twitter.
 
 **Please note** that this is a personal experiment _for fun_, but as far as I know colors can't be trademarked. No logos or other elements have been used without permission.
 
@@ -8,9 +8,9 @@ See the [original post](https://mementomori.social/@rolle/109984108360395822).
 
 ## Why would anyone want Mastodon to look like Twitter?
 
-Because you can? Let's face it, we're kinda used to it, Mastodon already resembles Twitter. Twitter UI is not bad, it's just that it's not for everyone. Twitter made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
+Because you can? Let's face it, we're kinda used to it, Mastodon already resembles the birdsite. Twitter UI is not bad, it's just that it's not for everyone. Twitter (in my opinion) made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
 
-This is why I have defaulted Mastodon deep purple colors in this "theme", if you will. If you really want the vanilla Twitter-look, please modify the colors yourself. Or go to the hellsite if you really love it so much.
+This is why I have defaulted Mastodon deep purple colors in this "theme", if you will. If you really want the vanilla birdsite-look, please modify the colors yourself. Or go to the hellsite if you really love it so much.
 
 ## [Live demo on mementomori.social](https://mementomori.social)
 
