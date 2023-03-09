@@ -7,6 +7,7 @@
 * Remove side bar scrolling bar while retaining scrollability
 * Hack to display notification message title on one line
 * Fix direct message indicator on detailed status
+* Poll color improvements
 
 ### 1.0.4: 2023-03-09
 

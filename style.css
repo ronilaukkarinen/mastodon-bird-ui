@@ -323,6 +323,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__wrapper.unread
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .poll__footer,
 .layout-single-column .server-banner h4,
 .layout-single-column .column-header__button,
 .layout-single-column .search__icon .fa-times-circle,
@@ -372,6 +373,11 @@ a.status-card.compact .status-card__description {
 /* Border colors */
 .layout-single-column .status {
   border-color: var(--color-border);
+}
+
+/* Lighter border colors */
+.layout-single-column .poll__input {
+  border-color: var(--color-brand-mastodon-text-light);
 }
 
 /* White things */
@@ -1167,8 +1173,8 @@ a.status-card.compact .status-card__description {
 .layout-single-column .button.button-secondary {
   /* stylelint-disable-next-line */
   background-color: transparent !important;
-  border-color: var(--color-brand-mastodon-text-light);
-  color: var(--color-brand-mastodon-text-light);
+  border-color: var(--color-dim);
+  color: var(--color-dim);
 }
 
 .layout-single-column .button.button-secondary:hover {
