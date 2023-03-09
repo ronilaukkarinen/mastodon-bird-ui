@@ -1,7 +1,9 @@
-### [Unreleased 1.1.1rc2]
+### [Unreleased 1.1.1rc3]
 
 * Fix always spinning boost button
 * Improve alignment of the bottom items on mobile
+* Fix empty-column-indicator on mobile
+* Add more dim colors to variable scope
 
 ### 1.1.0: 2023-03-09
 

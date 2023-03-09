@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.1rc2 */
+   v1.1.1rc3 */
 
 /* CSS variables */
 :root {
@@ -331,7 +331,9 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification.unread,
 .layout-single-column .status__wrapper.unread
 
-/* Things like notification status update text that should be dim */
+
+.empty-column-indicator,
+.follow_requests-unlocked_explanation,
 .layout-single-column .poll__footer,
 .layout-single-column .server-banner h4,
 .layout-single-column .column-header__button,
@@ -1151,6 +1153,11 @@ a.status-card.compact .status-card__description {
 /* Misc UI fixes */
 .layout-single-column .search__icon .fa.active {
   opacity: .6;
+}
+
+/* Empty column */
+.layout-single-column .empty-column-indicator {
+  min-height: 120px;
 }
 
 .layout-single-column .status__prepend + .status {
