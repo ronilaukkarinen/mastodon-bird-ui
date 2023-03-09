@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Fix video-player alignment
+
 ### 1.0.5: 2023-03-09
 
 * Improve unread notification style to be more subtle without left border

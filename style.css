@@ -582,6 +582,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Media inside status update tinted to right */
+.layout-single-column .status .video-player,
 .layout-single-column .status .media-gallery {
   margin-left: auto;
   width: calc(100% - calc(var(--size-avatar) + var(--gap-default)));
