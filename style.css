@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.6rc */
+   v1.0.7 */
 
 /* CSS variables */
 :root {
@@ -1174,6 +1174,14 @@ a.status-card.compact .status-card__description {
 
 .layout-single-column .notification .status__wrapper-direct::after {
   top: -40px;
+}
+
+/* Default buttons */
+.layout-single-column .button {
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
 }
 
 /* Compose hover and focus fix */

@@ -1,8 +1,9 @@
-### [Unreleased]
+### 1.0.7: 2023-03-09
 
 * Fix Publish button not reachable on mobile if file is attached to the post
 * Fix column-link background sticking too long
 * Fix active retweet counter color
+* Make default buttons round
 
 ### 1.0.6: 2023-03-09
 
