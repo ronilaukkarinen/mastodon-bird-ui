@@ -30,7 +30,7 @@ _Twitter colors:_
 
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
-- CSS variables for evertyhing
+- CSS variables for everything
 - Threaded replies
 - Avatars on the left in feed view
 - Unified transparent backgrounds
