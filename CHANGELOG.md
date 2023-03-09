@@ -7,6 +7,7 @@
 * Fix general avatars
 * Fix line-height on buttons
 * Visual indicator about direct messages [#22158](https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031)
+* Default to full-width images in link previews [#21874](https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018)
 
 ### 1.0.3: 2023-03-08
 
