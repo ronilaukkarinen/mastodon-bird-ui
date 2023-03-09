@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Fix Publish button not reachable on mobile if file is attached to the post
+* Fix column-link background sticking too long
 
 ### 1.0.6: 2023-03-09
 

@@ -836,8 +836,7 @@ a.status-card.compact .status-card__description {
   transition: all 100ms;
 }
 
-.layout-single-column .column-link:hover,
-.layout-single-column .column-link:focus {
+.layout-single-column .column-link:hover {
   background-color: var(--color-column-link-hover);
 }
 
