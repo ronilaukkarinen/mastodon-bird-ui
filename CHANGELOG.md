@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Replicate animated heart with sparkles
+* Add retweet icon animation
 
 ### 1.0.7: 2023-03-09
 

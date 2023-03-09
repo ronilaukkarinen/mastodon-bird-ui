@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.8rc1 */
+   v1.0.8rc2 */
 
 /* CSS variables */
 :root {
@@ -1643,6 +1643,12 @@ a.status-card.compact .status-card__description {
   .layout-single-column .compose-form {
     padding-bottom: calc(3.5rem + calc(var(--gap-default) * 2));
   }
+}
+
+/* Retweet animation */
+.layout-single-column.no-reduce-motion .icon-button.active .fa-retweet {
+  /* stylelint-disable-next-line */
+  animation: spring-rotate-in 1s linear;
 }
 
 /* Heart animation */
