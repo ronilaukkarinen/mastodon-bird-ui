@@ -1,9 +1,10 @@
-### [Unreleased]
+### 1.1.0: 2023-03-09
 
 * Fix hover colors on boost and star buttons
 * Fix 1px jump on activating the spark animation
 * Fix horizontal 1px jump on animation
 * Fix retweet button animating on each load
+* Fix unread notification background color on hover
 
 ### 1.0.8: 2023-03-09
 

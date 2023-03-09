@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.0.9rc4 */
+   v1.1.0 */
 
 /* CSS variables */
 :root {
@@ -318,9 +318,14 @@ a.status-card.compact .status-card__description {
 }
 
 /* Unread message */
+.layout-single-column .notification.unread:hover,
 .layout-single-column .notification.unread,
 .layout-single-column .status__wrapper.unread {
   background-color: var(--color-dark);
+}
+
+.layout-single-column .notification:hover ..notification__message {
+  background-color: transparent;
 }
 
 .layout-single-column .notification.unread,
@@ -1695,6 +1700,11 @@ a.status-card.compact .status-card__description {
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .fa-star::before {
   left: -28px;
+}
+
+/* stylelint-disable-next-line */
+.layout-single-column.no-reduce-motion .detailed-status__action-bar .icon-button.star-icon.activate .fa-star::before {
+  left: -29px;
 }
 
 @keyframes heart-animate {
