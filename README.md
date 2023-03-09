@@ -14,9 +14,13 @@ This is why I have defaulted Mastodon deep purple colors in this "theme", if you
 
 ## [Live demo on mementomori.social](https://mementomori.social)
 
+_Mobile:_
+
+![mobile](https://user-images.githubusercontent.com/1534150/224066558-b838fb1d-6edb-4b98-8cb3-cff2dd75bd7f.png)
+
 _Mastodon colors:_
 
-![image](https://user-images.githubusercontent.com/1534150/223853493-9aded9fd-01fb-4428-9045-b458606482a6.png)
+![mementomori social_home](https://user-images.githubusercontent.com/1534150/224062983-302bcc7b-06b5-4155-ba18-1ef9e9392999.png)
 
 _Twitter colors:_
 
