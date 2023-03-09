@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.2rc3 */
+   v1.1.2rc4 */
 
 /* CSS variables */
 :root {
@@ -601,6 +601,11 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Reset padding from attachment-list on reply indicator */
+.layout-single-column .reply-indicator .attachment-list {
+  padding-left: 0;
 }
 
 .layout-single-column .status__action-bar button,
