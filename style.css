@@ -466,6 +466,9 @@ a.status-card.compact .status-card__description {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .scrollable .account-card,
+.layout-single-column .scrollable .account-card__title__avatar .account__avatar,
+.layout-single-column .scrollable .account-card__title__avatar img,
 .layout-single-column .explore__search-header,
 .layout-single-column .empty-column-indicator,
 .follow_requests-unlocked_explanation,
@@ -504,8 +507,11 @@ a.status-card.compact .status-card__description {
   width: var(--size-avatar) !important;
 }
 
+.layout-single-column .account-card__title__avatar .account__avatar,
+.layout-single-column .account-card__title__avatar img,
 .layout-single-column .account__avatar > img,
 .layout-single-column .column > .scrollable .status__avatar img {
+  border: 0;
   border-radius: 50%;
   box-shadow: rgb(255 255 255 / 0.03) 0 0 2px inset;
 }
@@ -1017,6 +1023,7 @@ a.status-card.compact .status-card__description {
   width: 133.5px;
 }
 
+.layout-single-column .explore__suggestions .account-card__actions__button button,
 .layout-single-column .account__header__tabs__buttons .button {
   background-color: transparent;
   border: 1px solid var(--color-black-coral);
@@ -1041,6 +1048,7 @@ a.status-card.compact .status-card__description {
   justify-content: center;
 }
 
+.layout-single-column .explore__suggestions .account-card__actions__button button:hover,
 .layout-single-column .account__header__tabs__buttons .icon-button.active {
   color: var(--color-light-text);
 }
@@ -1066,6 +1074,7 @@ a.status-card.compact .status-card__description {
   top: -2px;
 }
 
+.layout-single-column .explore__suggestions .account-card__actions__button button:hover,
 .layout-single-column .account__header__tabs__buttons .button:focus,
 .layout-single-column .account__header__tabs__buttons .button:hover {
   background-color: var(--color-profile-button-hover);

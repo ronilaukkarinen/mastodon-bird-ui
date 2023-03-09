@@ -8,6 +8,7 @@
 * Hack to display notification message title on one line
 * Fix direct message indicator on detailed status
 * Poll color improvements
+* Fix profile suggestion styles
 
 ### 1.0.4: 2023-03-09
 
