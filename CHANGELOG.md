@@ -7,6 +7,8 @@
 * Add focused text color to inputs
 * Add list adder modal styles
 * Fix heart animation in profile feed
+* Fix incorrect preview card title color
+* Fix list item width on mobile
 
 ### 1.1.0: 2023-03-09
 

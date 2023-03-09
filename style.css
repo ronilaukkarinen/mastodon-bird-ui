@@ -150,30 +150,30 @@ body.layout-single-column {
    @source https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018
 */
 
-a.status-card,
-a.status-card.compact {
-  background-color: #191b22;
+.layout-single-column a.status-card,
+.layout-single-column a.status-card.compact {
+  background-color: var(--color-bg);
   border-radius: 10px;
   display: block;
 }
 
-.fa-file-text::before {
+.layout-single-column .fa-file-text::before {
   content: "";
 }
 
-a.status-card .status-card__image-image,
-a.status-card .status-card__image-image.compact {
+.layout-single-column a.status-card .status-card__image-image,
+.layout-single-column a.status-card .status-card__image-image.compact {
   border-radius: 0;
 }
 
-a.status-card .status-card__content,
-a.status-card.compact .status-card__content {
+.layout-single-column a.status-card .status-card__content,
+.layout-single-column a.status-card.compact .status-card__content {
   padding: 15px;
 }
 
-a.status-card .status-card__title,
-a.status-card.compact .status-card__title {
-  color: var(--color-bg);
+.layout-single-column a.status-card .status-card__title,
+.layout-single-column a.status-card.compact .status-card__title {
+  color: var(--color-fg);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
@@ -1635,6 +1635,12 @@ a.status-card.compact .status-card__description {
     padding-right: var(--gap-default);
     padding-top: 0;
     width: 38px;
+  }
+
+  .layout-single-column .item-list .column-link {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: unset;
   }
 
   .layout-single-column .column-link:hover,
