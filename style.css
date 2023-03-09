@@ -1118,6 +1118,8 @@ a.status-card.compact .status-card__description {
   background-color: var(--color-profile-button-hover);
 }
 
+.layout-single-column .detailed-status__action-bar .icon-button:focus,
+.layout-single-column .status__action-bar .icon-button:focus,
 .layout-single-column .detailed-status__action-bar .icon-button:hover,
 .layout-single-column .status__action-bar .icon-button:hover {
   background-color: transparent;
