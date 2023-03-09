@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.1rc6 */
+   v1.1.1 */
 
 /* CSS variables */
 :root {
@@ -1776,7 +1776,7 @@ a.status-card.compact .status-card__description {
 
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .fa-star::before {
-  left: -28px;
+  left: -24px;
 }
 
 /* stylelint-disable-next-line */

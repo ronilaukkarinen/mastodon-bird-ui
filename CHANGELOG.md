@@ -1,4 +1,4 @@
-### [Unreleased 1.1.1rc6]
+### 1.1.1: 2023-03-09 
 
 * Fix always spinning boost button
 * Improve alignment of the bottom items on mobile
@@ -6,6 +6,7 @@
 * Add more dim colors to variable scope
 * Add focused text color to inputs
 * Add list adder modal styles
+* Fix heart animation in profile feed
 
 ### 1.1.0: 2023-03-09
 
