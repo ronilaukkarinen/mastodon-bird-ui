@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.1rc5 */
+   v1.1.1rc6 */
 
 /* CSS variables */
 :root {
@@ -137,6 +137,13 @@ body.layout-single-column {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgb(247 249 249)' aria-hidden='true' class='r-jwli3a r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03'%3E%3Cg%3E%3Cpath d='M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* List adder input */
+.layout-single-column .list-adder input.setting-text {
+  background-color: transparent;
+  border-color: var(--color-black-coral);
+  height: 38px;
+}
+
 /* Default to full-width images in link previews
    Needs implementation from the source below
 
@@ -166,7 +173,7 @@ a.status-card.compact .status-card__content {
 
 a.status-card .status-card__title,
 a.status-card.compact .status-card__title {
-  color: white;
+  color: var(--color-bg);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
@@ -176,7 +183,7 @@ a.status-card.compact .status-card__title {
 
 a.status-card .status-card__host,
 a.status-card.compact .status-card__host {
-  color: #71767b;
+  color: var(--color-dim);
   font-size: 14px;
   margin-bottom: 5px;
   margin-top: 0;
@@ -184,10 +191,13 @@ a.status-card.compact .status-card__host {
 
 a.status-card .status-card__description,
 a.status-card.compact .status-card__description {
-  color: #71767b;
+  color: var(--color-dim);
 }
 
 /* Dark panels like modal boxes */
+.layout-single-column .list-adder__account,
+.layout-single-column .list-adder,
+.layout-single-column .list-adder__lists,
 .layout-single-column .dropdown-menu__arrow::before,
 .layout-single-column .dropdown-menu,
 .layout-single-column .dropdown-menu__item a,

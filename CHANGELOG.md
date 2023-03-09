@@ -5,6 +5,7 @@
 * Fix empty-column-indicator on mobile
 * Add more dim colors to variable scope
 * Add focused text color to inputs
+* Add list adder modal styles
 
 ### 1.1.0: 2023-03-09
 
