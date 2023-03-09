@@ -22,6 +22,18 @@ _Twitter colors:_
 
 ![mementomori social_notifications (3)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png)
 
+### Features
+
+As this is CSS-only, they are not really "features" but more like aesthetic changes.
+
+- CSS variables for evertyhing
+- Threaded replies
+- Avatars on the left in feed view
+- Unified transparent backgrounds
+- Dark patterns for dropdowns and other pop overs like emoji picker
+- Tinted deep purple, subtle beautiness
+- Action bar in the bottom on mobile
+
 ### Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/mementomori.social/admin/settings/appearance}
@@ -31,7 +43,7 @@ _Twitter colors:_
 
 - [x] Desktop views
 - [x] Mobile views
-- [ ] Star to like heart with animation
+- [x] Star to heart
 
 ## Installation
 
