@@ -687,8 +687,11 @@ a.status-card.compact .status-card__description {
 }
 
 .layout-single-column .notification__message > span {
+  display: block;
   margin-top: calc(var(--size-avatar-small) + 4px);
-  overflow: visible;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .layout-single-column .notification__message > div {

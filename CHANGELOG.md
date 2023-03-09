@@ -2,6 +2,7 @@
 
 * Improve unread notification style to be more subtle without left border
 * Add accent color to home icon in notifications
+* Fix wrapping issues of the notification title
 
 ### 1.0.4: 2023-03-09
 
