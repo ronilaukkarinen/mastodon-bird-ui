@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Improve unread notification style to be more subtle without left border
+* Add accent color to home icon in notifications
 
 ### 1.0.4: 2023-03-09
 

@@ -865,6 +865,7 @@ a.status-card.compact .status-card__description {
 }
 
 .layout-single-column .notification .fa.fa-home:not(.fa-link)::before {
+  color: var(--color-accent);
   font-size: 24px;
 }
 
