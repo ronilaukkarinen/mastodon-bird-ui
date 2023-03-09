@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Improve unread notification style to be more subtle without left border
+
 ### 1.0.4: 2023-03-09
 
 * Change server stats label to lowercase and dim
