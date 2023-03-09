@@ -1,3 +1,7 @@
+### 1.1.2rc1: 2023-03-09
+
+* Fix the heart animation on the icons with counter
+
 ### 1.1.1: 2023-03-09 
 
 * Fix always spinning boost button
