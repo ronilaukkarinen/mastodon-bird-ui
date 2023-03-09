@@ -1110,6 +1110,10 @@ a.status-card.compact .status-card__description {
 /* Visual indicator about direct messages
    @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
 
+.detailed-status-direct {
+  position: relative;
+}
+
 .status__wrapper-direct::after,
 .detailed-status-direct::after {
   border-left: 20px solid transparent;
@@ -1119,8 +1123,12 @@ a.status-card.compact .status-card__description {
   height: 0;
   position: absolute;
   right: 0;
-  top: -40px;
+  top: 0;
   width: 0;
+}
+
+.layout-single-column .notification .status__wrapper-direct::after {
+  top: -40px;
 }
 
 /* Compose hover and focus fix */
