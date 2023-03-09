@@ -48,7 +48,7 @@
     "function-name-case": "lower",
     "selector-attribute-quotes": "always",
     "comment-whitespace-inside": "always",
-    "selector-max-specificity": "0,6,6",
+    "selector-max-specificity": "0,7,7",
     "block-no-empty": true,
     "max-line-length": null,
     "declaration-empty-line-before": null,
@@ -63,11 +63,11 @@
     "unit-no-unknown": true,
     "property-no-unknown": true,
     "no-duplicate-selectors": true,
-    "length-zero-no-unit": true,
+    "length-zero-no-unit": null,
     "font-weight-notation": "numeric",
-    "number-max-precision": 3,
+    "number-max-precision": null,
     "selector-class-pattern": null,
-    "selector-max-class": 5,
+    "selector-max-class": 6,
     "selector-max-combinators": 6,
     "selector-max-compound-selectors": 6,
     "selector-max-pseudo-class": 3,
@@ -139,10 +139,6 @@
           "em",
           "px"
         ],
-        "/^animation/": [
-          "ms",
-          "s"
-        ],
         "line-height": [
           "px",
           "%",
@@ -152,7 +148,6 @@
     ],
     "property-disallowed-list": [
       "font",
-      "animation",
       "background"
     ]
   }
