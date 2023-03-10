@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc8 */
+   v1.1.3rc9 */
 
 /* CSS variables */
 :root {
@@ -147,6 +147,29 @@ body.layout-single-column {
   height: 38px;
 }
 
+.layout-single-column .list-editor .column-inline-form button::before {
+  min-height: 38px;
+  width: 100%;
+}
+
+.layout-single-column .list-editor__search {
+  padding: 15px;
+}
+
+.layout-single-column .list-editor__search .search__input {
+  background-color: transparent;
+  border-color: var(--color-black-coral);
+  height: 38px;
+}
+
+.layout-single-column .list-editor .drawer__inner.backdrop {
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, .2);
+}
+
+.layout-single-column .list-editor__search .search__icon .fa {
+  margin: 15px;
+}
+
 .layout-single-column .list-editor .list__display-name,
 .layout-single-column .list-adder .list__display-name {
   display: flex;
@@ -204,6 +227,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Dark panels like modal boxes */
+.layout-single-column .drawer__backdrop,
 .layout-single-column .list-editor__account,
 .layout-single-column .list-editor,
 .layout-single-column .list-editor__lists,
@@ -500,6 +524,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .drawer__inner,
 .layout-single-column .column-inline-form,
 .layout-single-column .scrollable .account-card,
 .layout-single-column .scrollable .account-card__title__avatar .account__avatar,

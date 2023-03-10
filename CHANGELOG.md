@@ -1,4 +1,4 @@
-### 1.1.3rc8: 2023-03-10
+### 1.1.3rc9: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
