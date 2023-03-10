@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.4rc2 */
+   v1.1.4rc3 */
 
 /* CSS variables */
 :root {
@@ -1803,10 +1803,10 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
     flex-direction: row;
-    gap: var(--gap-default);
+    gap: 0;
     height: unset;
     overflow-x: auto;
-    padding: 0 var(--gap-default);
+    padding: 0;
   }
 
   .layout-single-column .column-link {
@@ -1913,6 +1913,72 @@ a.status-card.compact .status-card__description {
   .columns-area--mobile .column,
   .columns-area--mobile .drawer {
     margin-top: var(--gap-default);
+  }
+
+  /* Column items order */
+  .layout-single-column .navigation-panel .column-link,
+  .layout-single-column .navigation-panel .list-panel,
+  .layout-single-column .navigation-panel hr,
+  .layout-single-column .navigation-panel .navigation-panel__logo {
+    order: 99;
+  }
+
+  /* Make the column link 1/4 of width of the screen */
+  .layout-single-column .navigation-panel .column-link {
+    flex: 0 0 calc(100vw / 4);
+    padding: 0;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(1) {
+    order: 1;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(2) {
+    order: 2;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(3) {
+    order: 3;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(4) {
+    order: 4;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(5) {
+    order: 5;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(6) {
+    order: 6;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(7) {
+    order: 7;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(8) {
+    order: 8;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(9) {
+    order: 9;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(10) {
+    order: 10;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(11) {
+    order: 11;
+  }
+
+  .layout-single-column .navigation-panel .column-link:nth-child(12) {
+    order: 12;
+  }
+
+  .layout-single-column .navigation-panel .navigation-panel__legal {
+    order: 13;
   }
 }
 

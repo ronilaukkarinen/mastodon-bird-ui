@@ -1,7 +1,9 @@
-### 1.1.4rc2: 2023-03-10
+### 1.1.4rc3: 2023-03-10
 
 * Fix border color tint towards the Mastodon brand color
 * Fix some cases where threaded line is cutting short
+* Order icons in mobile based by most used first
+* Make the column link 1/4 of width of the screen
 
 ### 1.1.3: 2023-03-10
 
