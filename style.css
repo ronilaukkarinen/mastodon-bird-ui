@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc4 */
+   v1.1.3rc5 */
 
 /* CSS variables */
 :root {
@@ -532,15 +532,15 @@ a.status-card.compact .status-card__description {
   /* stylelint-disable-next-line */
   height: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
-  max-height: var(--size-avatar-small) !important;
+  max-height: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
-  max-width: var(--size-avatar-small) !important;
+  max-width: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
-  min-height: var(--size-avatar-small) !important;
+  min-height: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
   min-width: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
-  min-width: var(--size-avatar-small) !important;
+  min-width: var(--size-avatar) !important;
 
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
@@ -792,6 +792,10 @@ a.status-card.compact .status-card__description {
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
   height: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
+  min-height: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
+  min-width: var(--size-avatar-small) !important;
   /* stylelint-disable-next-line */
   width: var(--size-avatar-small) !important;
 }
