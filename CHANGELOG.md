@@ -1,3 +1,7 @@
+### 1.1.3rc1: 2023-03-10
+
+* Fix status action bar button hover bubble alignment
+
 ### 1.1.2: 2023-03-09
 
 * Fix the heart animation on the icons with counter

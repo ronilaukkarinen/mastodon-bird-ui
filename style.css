@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.2 */
+   v1.1.3rc1 */
 
 /* CSS variables */
 :root {
@@ -1169,7 +1169,7 @@ a.status-card.compact .status-card__description {
   pointer-events: none;
   position: absolute;
   top: -8px;
-  transform: translateX(8px);
+  transform: translateX(7.5px);
   width: 36px;
   z-index: -1;
 }
@@ -1178,8 +1178,9 @@ a.status-card.compact .status-card__description {
   position: relative;
 }
 
+.layout-single-column .detailed-status__action-bar-dropdown .icon-button::after,
 .layout-single-column .detailed-status__button .icon-button::after {
-  transform: translateX(30px);
+  transform: translateX(40px);
 }
 
 .layout-single-column .detailed-status__button .icon-button.star-icon::after {
@@ -1620,6 +1621,15 @@ a.status-card.compact .status-card__description {
   opacity: 1;
 }
 
+/* iPad etc. */
+@media (max-width: 1175px) {
+  .layout-single-column .detailed-status__action-bar .icon-button::after,
+  .layout-single-column .status__action-bar .icon-button::after,
+  .layout-single-column .detailed-status__action-bar-dropdown .icon-button::after {
+    display: none;
+  }
+}
+
 /* Mobile */
 @media screen and (max-width: 889px) {
   .app-holder,
@@ -1756,11 +1766,6 @@ a.status-card.compact .status-card__description {
   .columns-area--mobile .column,
   .columns-area--mobile .drawer {
     margin-top: var(--gap-default);
-  }
-
-  .layout-single-column .detailed-status__action-bar .icon-button::after,
-  .layout-single-column .status__action-bar .icon-button::after {
-    display: none;
   }
 }
 
