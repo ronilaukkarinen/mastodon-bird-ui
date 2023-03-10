@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc6 */
+   v1.1.3rc7 */
 
 /* CSS variables */
 :root {
@@ -957,8 +957,17 @@ a.status-card.compact .status-card__description {
   height: 27px;
 }
 
+.layout-single-column .notification .fa.fa-user-plus:not(.fa-link)::before {
+  color: var(--color-accent-dark);
+  font-size: 20px;
+}
+
+.layout-single-column .notification .fa.fa-tasks:not(.fa-link)::before {
+  color: var(--color-accent-dark);
+}
+
 .layout-single-column .notification .fa.fa-home:not(.fa-link)::before {
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
   font-size: 24px;
 }
 
