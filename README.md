@@ -16,7 +16,7 @@ This is why I have defaulted Mastodon deep purple colors in this "theme", if you
 
 _Mobile:_
 
-![mobile](https://user-images.githubusercontent.com/1534150/224066558-b838fb1d-6edb-4b98-8cb3-cff2dd75bd7f.png)
+![mobile-2](https://user-images.githubusercontent.com/1534150/224368120-5f7bddc9-1702-4279-b297-35a4829e8a3b.png)
 
 _Mastodon colors:_
 
