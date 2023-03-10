@@ -2,6 +2,7 @@
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
+* Fix avatar size on certain situations
 
 ### 1.1.2: 2023-03-09
 

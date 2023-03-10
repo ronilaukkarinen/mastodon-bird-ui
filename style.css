@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc2 */
+   v1.1.3rc3 */
 
 /* CSS variables */
 :root {
@@ -530,7 +530,15 @@ a.status-card.compact .status-card__description {
   /* stylelint-disable-next-line */
   height: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
+  max-height: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
+  max-width: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
+  min-height: var(--size-avatar-small) !important;
+  /* stylelint-disable-next-line */
   min-width: var(--size-avatar) !important;
+  /* stylelint-disable-next-line */
+  min-width: var(--size-avatar-small) !important;
 
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
