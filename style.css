@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc5 */
+   v1.1.3rc6 */
 
 /* CSS variables */
 :root {
@@ -1609,7 +1609,7 @@ a.status-card.compact .status-card__description {
   height: 100%;
   left: calc(calc(calc(var(--size-avatar) / 2) + 16px) - 1px);
   position: absolute;
-  top: 0;
+  top: 16px;
   width: 2px;
 }
 

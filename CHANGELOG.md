@@ -1,10 +1,11 @@
-### 1.1.3rc5: 2023-03-10
+### 1.1.3rc6: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
 * Fix avatar size on certain situations
 * Fix dim hex in SVG icons
 * Fix wrong variable in avatars
+* Fix threaded line position on first post
 
 ### 1.1.2: 2023-03-09
 
