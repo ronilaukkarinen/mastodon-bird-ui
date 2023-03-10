@@ -1,6 +1,7 @@
-### 1.1.4rc1: 2023-03-10
+### 1.1.4rc2: 2023-03-10
 
 * Fix border color tint towards the Mastodon brand color
+* Fix some cases where threaded line is cutting short
 
 ### 1.1.3: 2023-03-10
 

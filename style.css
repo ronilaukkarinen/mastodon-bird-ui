@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.4rc1 */
+   v1.1.4rc2 */
 
 /* CSS variables */
 :root {
@@ -1751,7 +1751,7 @@ a.status-card.compact .status-card__description {
 }
 
 .layout-single-column .scrollable > div > div:last-child .status.status-reply .status__avatar::before {
-  height: 60px;
+  height: 40px;
 }
 
 .layout-single-column .scrollable > div > div:only-of-type .status.status-reply .status__avatar::before {
