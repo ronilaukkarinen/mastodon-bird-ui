@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc1 */
+   v1.1.3rc2 */
 
 /* CSS variables */
 :root {
@@ -1814,6 +1814,13 @@ a.status-card.compact .status-card__description {
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .fa-star::before {
   left: -24px;
+}
+
+@media screen and (max-width: 889px) {
+  /* stylelint-disable-next-line */
+  .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .fa-star::before {
+    left: -28px;
+  }
 }
 
 /* stylelint-disable-next-line */
