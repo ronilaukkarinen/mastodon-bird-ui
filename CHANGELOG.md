@@ -1,4 +1,4 @@
-### 1.1.3rc7: 2023-03-10
+### 1.1.3rc8: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
@@ -8,6 +8,7 @@
 * Fix threaded line position on first post
 * Improve follow user icon in notifications
 * Use brand color in notification icons
+* Add list-adder modal styles
 
 ### 1.1.2: 2023-03-09
 

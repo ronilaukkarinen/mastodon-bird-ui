@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc7 */
+   v1.1.3rc8 */
 
 /* CSS variables */
 :root {
@@ -140,12 +140,14 @@ body.layout-single-column {
 }
 
 /* List adder input */
+.layout-single-column .list-editor input.setting-text,
 .layout-single-column .list-adder input.setting-text {
   background-color: transparent;
   border-color: var(--color-black-coral);
   height: 38px;
 }
 
+.layout-single-column .list-editor .list__display-name,
 .layout-single-column .list-adder .list__display-name {
   display: flex;
   gap: var(--gap-default);
@@ -202,6 +204,9 @@ a.status-card.compact .status-card__description {
 }
 
 /* Dark panels like modal boxes */
+.layout-single-column .list-editor__account,
+.layout-single-column .list-editor,
+.layout-single-column .list-editor__lists,
 .layout-single-column .list-adder__account,
 .layout-single-column .list-adder,
 .layout-single-column .list-adder__lists,
