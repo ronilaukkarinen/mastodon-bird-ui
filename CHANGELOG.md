@@ -1,4 +1,4 @@
-### 1.1.3rc9: 2023-03-10
+### 1.1.3rc10: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
@@ -6,6 +6,7 @@
 * Fix dim hex in SVG icons
 * Fix wrong variable in avatars
 * Fix threaded line position on first post
+* Fix shade in the bio of "For you" user accounts
 * Improve follow user icon in notifications
 * Use brand color in notification icons
 * Add list-adder modal styles

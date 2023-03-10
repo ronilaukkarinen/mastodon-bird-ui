@@ -1,5 +1,5 @@
 /* Cursed Mastodon Twitter CSS-only revamp by @rolle@mementomori.social
-   v1.1.3rc9 */
+   v1.1.3rc10 */
 
 /* CSS variables */
 :root {
@@ -1247,6 +1247,12 @@ a.status-card.compact .status-card__description {
 /* Misc UI fixes */
 .layout-single-column .search__icon .fa.active {
   opacity: .6;
+}
+
+/* Explore -> For you shade in bio */
+.layout-single-column .scrollable .account-card__bio::after {
+  /* stylelint-disable-next-line */
+  background: linear-gradient(270deg, var(--color-bg), transparent);
 }
 
 /* Empty column */
