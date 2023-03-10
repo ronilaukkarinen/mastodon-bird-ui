@@ -4,6 +4,7 @@
 * Fix some cases where threaded line is cutting short
 * Order icons in mobile based by most used first
 * Make the column link 1/4 of width of the screen on mobile
+* Fix account relationship icon color
 
 ### 1.1.3: 2023-03-10
 

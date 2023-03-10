@@ -1009,6 +1009,8 @@ a.status-card.compact .status-card__description {
 }
 
 .layout-single-column .notification .account__relationship .fa::before {
+  /* stylelint-disable-next-line */
+  color: var(--color-dim) !important;
   font-size: 20px;
 }
 
