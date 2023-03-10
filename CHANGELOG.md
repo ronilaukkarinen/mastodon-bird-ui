@@ -1,8 +1,9 @@
-### 1.1.3rc2: 2023-03-10
+### 1.1.3rc4: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
 * Fix heart animation position on mobile
 * Fix avatar size on certain situations
+* Fix dim hex in SVG icons
 
 ### 1.1.2: 2023-03-09
 
