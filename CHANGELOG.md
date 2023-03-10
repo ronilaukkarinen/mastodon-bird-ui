@@ -1,6 +1,7 @@
-### 1.1.5rc: 2023-03-10
+### 1.1.5rc2: 2023-03-10
 
 * Improve trends heading
+* Fix account relationship hover background bubble
 
 ### 1.1.4: 2023-03-10
 
