@@ -1,3 +1,7 @@
+### 1.1.5rc: 2023-03-10
+
+* Improve trends heading
+
 ### 1.1.4: 2023-03-10
 
 * Fix border color tint towards the Mastodon brand color
