@@ -1,3 +1,7 @@
+### 1.1.4rc1: 2023-03-10
+
+* Fix border color tint towards the Mastodon brand color
+
 ### 1.1.3: 2023-03-10
 
 * Fix status action bar button hover bubble alignment
