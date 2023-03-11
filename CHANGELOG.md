@@ -1,4 +1,4 @@
-### 1.1.6rc3: 2023-03-11
+### 1.1.6rc4: 2023-03-11
 
 * Add consistent notification filter bar icons
 * Add text icons to dim color scope
