@@ -1,9 +1,10 @@
-### 1.1.8rc3: 2023-03-11
+### 1.1.8rc5: 2023-03-11
 
 * Remove width hack for mobile
 * Add unit tests
 * Remove SCSS related rules
 * Fix broken Safari build
+* Fix mobile scrollability issues in general
 
 ### 1.1.7: 2023-03-11
 
