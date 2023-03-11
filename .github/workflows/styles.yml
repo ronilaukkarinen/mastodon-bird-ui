@@ -1,0 +1,40 @@
+# @Author: Roni Laukkarinen
+# @Date:   2023-02-15 17:39:37
+# @Last Modified by:   Roni Laukkarinen
+# @Last Modified time: 2023-03-03 20:01:10
+name: CSS
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Test styles
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Read .nvmrc
+      run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+      id: nvm
+
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '${{ steps.nvm.outputs.NVMRC }}'
+
+    - name: Install stylelint packages
+      run: |
+        npm install --global \
+        postcss@^8.4.21 \
+        stylelint@^15.1.0 \
+        stylelint-config-recommended@^10.0.1 \
+        stylelint-config-standard@^30.0.1 \
+        stylelint-order@^6.0.2 \
+        @ronilaukkarinen/stylelint-a11y@^1.2.7 \
+        @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
+        @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1
+    - name: Run stylelint
+      run: |
+        npx stylelint style.css --max-warnings 0 --config .stylelintrc
