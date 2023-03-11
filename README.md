@@ -59,7 +59,7 @@ If you like bigger link previews, please implement [this](https://github.com/mas
 
 ### Goals
 
-- **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/mementomori.social/admin/settings/appearance}
+- **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/admin/settings/appearance}
 - **Single-column layout only.** This experiment is not meant for advanced layout.
 
 ### Roadmap
