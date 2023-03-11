@@ -20,9 +20,9 @@ _Mobile:_
 
 _Mastodon colors:_
 
-![mementomori social_home](https://user-images.githubusercontent.com/1534150/224062983-302bcc7b-06b5-4155-ba18-1ef9e9392999.png)
+![mementomori social_home (2)](https://user-images.githubusercontent.com/1534150/224481675-fa165053-30a4-4530-a2f4-ecc4ea08af4c.png)
 
-_Twitter colors:_
+_Twitter colors (outdated screenshot since I just wanted to try it first):_
 
 ![mementomori social_notifications (3)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png)
 
