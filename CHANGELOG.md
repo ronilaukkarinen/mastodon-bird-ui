@@ -1,4 +1,4 @@
-### 1.1.7rc4: 2023-03-11
+### 1.1.8rc3: 2023-03-11
 
 * Remove width hack for mobile
 * Add unit tests
