@@ -1,8 +1,8 @@
-### 1.1.5rc3: 2023-03-10
+### 1.1.5: 2023-03-11
 
 * Improve trends heading
 * Fix account relationship hover background bubble
-* Make the column links 1/5 of width of the screen on mobile
+* Order column-links on mobile: Home, Explore, notifications, lists
 
 ### 1.1.4: 2023-03-10
 

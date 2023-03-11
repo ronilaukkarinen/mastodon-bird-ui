@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.5rc3 */
+   v1.1.5 */
 
 /* CSS variables */
 :root {
@@ -1944,26 +1944,29 @@ a.status-card.compact .status-card__description {
     order: 99;
   }
 
-  /* Make the column link 1/5 of width of the screen */
+  /* Make the column link 1/4 of width of the screen */
   .layout-single-column .navigation-panel .column-link {
-    flex: 0 0 calc(100vw / 5);
+    flex: 0 0 calc(100vw / 4);
     padding: 0;
   }
 
   .layout-single-column .navigation-panel .column-link:nth-child(1) {
-    order: 1;
-  }
-
-  .layout-single-column .navigation-panel .column-link:nth-child(2) {
     order: 2;
   }
 
-  .layout-single-column .navigation-panel .column-link:nth-child(3) {
-    order: 3;
+  /* Home */
+  .layout-single-column .navigation-panel .column-link:nth-child(2) {
+    order: 1;
   }
 
-  .layout-single-column .navigation-panel .column-link:nth-child(4) {
+  /* Notifications */
+  .layout-single-column .navigation-panel .column-link:nth-child(3) {
     order: 4;
+  }
+
+  /* Explore */
+  .layout-single-column .navigation-panel .column-link:nth-child(4) {
+    order: 2;
   }
 
   .layout-single-column .navigation-panel .column-link:nth-child(5) {
@@ -1986,8 +1989,9 @@ a.status-card.compact .status-card__description {
     order: 9;
   }
 
+  /* Lists */
   .layout-single-column .navigation-panel .column-link:nth-child(10) {
-    order: 10;
+    order: 4;
   }
 
   .layout-single-column .navigation-panel .column-link:nth-child(11) {
