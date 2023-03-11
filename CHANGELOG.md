@@ -1,3 +1,8 @@
+### 1.1.7rc1: 2023-03-11
+
+* Fix flickering on iOS Safari and webkit browsers
+* Remove width hack for mobile
+
 ### 1.1.7: 2023-03-11
 
 * Fix detailed status bar icon bubble alignment on Windows
