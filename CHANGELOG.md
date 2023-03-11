@@ -1,4 +1,4 @@
-### 1.1.8rc8: 2023-03-12
+### 1.1.8rc10: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -7,6 +7,8 @@
 * Fix mobile scrollability issues in general
 * Fixes for iPad
 * Fixes for Android Chrome
+* Fixes for logged out mobile view
+* Order three dots last on mobile
 
 ### 1.1.7: 2023-03-11
 

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc8 */
+   v1.1.8rc10 */
 
 /* CSS variables */
 :root {
@@ -1954,6 +1954,10 @@ a.status-card.compact .status-card__description {
     padding: 0;
   }
 
+  .layout-single-column .columns-area__panels__pane--navigational .navigation-panel .flex-spacer {
+    display: none;
+  }
+
   .layout-single-column .column-link {
     justify-content: center;
     margin-right: unset;
@@ -2070,9 +2074,15 @@ a.status-card.compact .status-card__description {
   }
 
   /* Make the column link 1/4 of width of the screen */
+  .layout-single-column .navigation-panel .navigation-panel__legal,
   .layout-single-column .navigation-panel .column-link {
     flex: 0 0 calc(100vw / 4);
     padding: 0;
+  }
+
+  .layout-single-column .navigation-panel .navigation-panel__legal {
+    order: 999;
+    text-align: center;
   }
 
   .layout-single-column .navigation-panel .column-link:nth-child(1) {
@@ -2125,10 +2135,6 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .navigation-panel .column-link:nth-child(12) {
     order: 12;
-  }
-
-  .layout-single-column .navigation-panel .navigation-panel__legal {
-    order: 13;
   }
 }
 
