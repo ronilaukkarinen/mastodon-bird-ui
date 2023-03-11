@@ -1,3 +1,7 @@
+### 1.1.6rc1: 2023-03-11
+
+* Add consistent notification filter bar icons
+
 ### 1.1.5: 2023-03-11
 
 * Improve trends heading
