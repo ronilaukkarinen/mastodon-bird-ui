@@ -1,10 +1,11 @@
 ## Mastodon with modern birdsite-like UI
 
-Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to look like Twitter.
+Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to resemble Twitter, but be a lot better than it ever was.
 
-**Please note** that this is a personal experiment _for fun_, but as far as I know colors can't be trademarked. No logos or other elements have been used without permission.
+**Please note** that this started as a personal experiment _for fun_, but then got more serious.
 
-See the [original post](https://mementomori.social/@rolle/109984108360395822).
+**See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
+Read the blog post: [The day I decided to build my own “Twitter”](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
 ## Why would anyone want Mastodon to look like Twitter?
 
