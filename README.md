@@ -41,7 +41,6 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Tinted deep purple, subtle beautiness
 - Action bar in the bottom on mobile
 
-
 ## Installation for Mastodon instance admins
 
 1. Make sure _Mastodon (Dark)_ is enabled in the **Site theme** setting
@@ -69,3 +68,7 @@ If you like bigger link previews, please implement [this](https://github.com/mas
 - [x] Desktop views
 - [x] Mobile views
 - [x] Star to heart
+
+### Known issues and compatibiltiy
+
+This theme currently works best as Chrome app on Android. Safari on iOS has only limited support, see [#1](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/1).
