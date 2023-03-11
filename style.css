@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.6rc2 */
+   v1.1.6rc3 */
 
 /* CSS variables */
 :root {
@@ -2064,8 +2064,8 @@ a.status-card.compact .status-card__description {
 }
 
 /* Retweet animation */
-.layout-single-column.no-reduce-motion .icon-button:focus .fa-retweet,
-.layout-single-column.no-reduce-motion .icon-button.active:not([aria-label="Unboost"]) .fa-retweet {
+.layout-single-column.no-reduce-motion .icon-button:not(.active):focus .fa-retweet,
+.layout-single-column.no-reduce-motion .icon-button.active:not([aria-label="Unboost"]):not([aria-label="Peru tehostus"]) .fa-retweet {
   /* stylelint-disable-next-line */
   animation: spring-rotate-in 1s linear;
 }
