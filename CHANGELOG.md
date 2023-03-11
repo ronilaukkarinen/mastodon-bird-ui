@@ -1,7 +1,10 @@
-### 1.1.7rc2: 2023-03-11
+### 1.1.7: 2023-03-11
 
 * Fix detailed status bar icon bubble alignment on Windows
 * Add character-counter to the dim color scope
+* Fix focusable toot color
+* Fix theme when Mastodon (Light) Site theme is enabled
+* Add more elements to var scopes
 
 ### 1.1.6: 2023-03-11
 

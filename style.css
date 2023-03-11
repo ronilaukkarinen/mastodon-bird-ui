@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.7rc2 */
+   v1.1.7 */
 
 /* CSS variables */
 :root {
@@ -32,6 +32,7 @@
   --color-green: #00ba7c;
   --color-red: #f91880;
   --color-light-shade: #ffffff05;
+  --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
   --color-black-coral: #536471;
@@ -40,6 +41,7 @@
   --color-modal-overlay: #5b708366;
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
+  --color-gainsboro: #d9e1e8;
 
   /* Font related */
   --font-size: 15px;
@@ -71,8 +73,14 @@ body.layout-single-column {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
 }
 
+/* Text color */
+.layout-single-column .reply-indicator__content,
+.layout-single-column .status__content {
+  color: var(--color-fg);
+}
+
 /* Logo */
-.ui__header__logo,
+.layout-single-column .ui__header__logo,
 .layout-single-column .column-link.column-link--logo {
   /* Change the fill in this manually if you want to change colors */
   background-image: url('data:image/svg+xml, %3Csvg class="mastodon-logo" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 216.4144 232.00976"%3E%3Cdefs xmlns="http://www.w3.org/2000/svg"%3E%3ClinearGradient xmlns="http://www.w3.org/2000/svg" id="gradient" x2="0%25" y2="100%25" gradientUnits="userSpaceOnUse"%3E%3Cstop offset="0%25" stop-color="%23595aff"%3E%3C/stop%3E%3Cstop offset="100%25" stop-color="%23595aff"%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath xmlns="http://www.w3.org/2000/svg" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="url(%23gradient)"%3E%3C/path%3E%3Cpath d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="%23fff"%3E%3C/path%3E%3C/svg%3E');
@@ -278,6 +286,16 @@ a.status-card.compact .status-card__description {
   box-shadow: 2px 4px 16px rgb(0 0 0 / .01);
 }
 
+.layout-single-column .column-back-button,
+.layout-single-column .column-header,
+.layout-single-column .audio-player,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form__poll-wrapper select,
+.layout-single-column .poll__option input[type="text"],
+.layout-single-column .report-dialog-modal__textarea,
+.layout-single-column .search__input,
+.layout-single-column .setting-text,
 .layout-single-column .dropdown-menu__separator,
 .layout-single-column .status,
 .layout-single-column .emoji-mart-search input,
@@ -383,6 +401,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__wrapper.unread
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .navigation-bar > a,
 .layout-single-column .character-counter,
 .layout-single-column .text-icon-button,
 .layout-single-column .empty-column-indicator,
@@ -443,6 +462,12 @@ a.status-card.compact .status-card__description {
 /* Lighter border colors */
 .layout-single-column .poll__input {
   border-color: var(--color-brand-mastodon-text-light);
+}
+
+/* Light grey things */
+.layout-single-column .navigation-bar,
+.layout-single-column .navigation-bar strong {
+  color: var(--color-gainsboro);
 }
 
 /* White things */
@@ -586,6 +611,7 @@ a.status-card.compact .status-card__description {
   width: var(--size-avatar) !important;
 }
 
+/* Avatars */
 .layout-single-column .account-card__title__avatar .account__avatar,
 .layout-single-column .account-card__title__avatar img,
 .layout-single-column .account__avatar > img,
@@ -595,15 +621,47 @@ a.status-card.compact .status-card__description {
   box-shadow: rgb(255 255 255 / 0.03) 0 0 2px inset;
 }
 
+/* Things that should not have border */
+.layout-single-column .column-inline-form,
+.layout-single-column .column > .scrollable,
+.layout-single-column .error-column,
+.layout-single-column .getting-started,
+.layout-single-column .regeneration-indicator,
+.layout-single-column .column-back-button,
+.layout-single-column .column-header {
+  border: 0;
+}
+
+/* Nice active effect in the column header */
+.layout-single-column .column-header__wrapper.active {
+  box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
+}
+
+.layout-single-column .column-header__wrapper.active::before {
+  /* stylelint-disable-next-line */
+  background: radial-gradient(ellipse, rgba(99, 100, 255, .23) 0, rgba(99, 100, 255, 0) 60%);
+}
+
+.layout-single-column .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form__buttons-wrapper {
+  border: 0;
+}
+
 .layout-single-column .status__prepend,
 .layout-single-column .notification__message,
 .layout-single-column .status {
   transition: all 200ms;
 }
 
+/* Toot hover effect */
 .layout-single-column article:focus,
 .layout-single-column article:hover {
   background-color: var(--color-light-shade);
+}
+
+/* Focusable toot */
+.layout-single-column .focusable:focus {
+  background-color: var(--color-focusable-toot);
 }
 
 /* URL preview cards */
@@ -1039,6 +1097,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column input.setting-text,
 .layout-single-column .search__input {
   background-color: var(--color-mud);
+  border-color: var(--color-mud);
   border-radius: 32px;
   color: var(--color-dim);
   font-size: var(--font-size);
