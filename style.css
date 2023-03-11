@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc3 */
+   v1.1.8rc4 */
 
 /* CSS variables */
 :root {
@@ -1910,11 +1910,8 @@ a.status-card.compact .status-card__description {
   }
 
   .layout-single-column .columns-area__panels__main {
-    backface-visibility: hidden;
     order: 1;
     position: absolute;
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-transform: translate3d(0, 0, 0);
     width: 100vw;
   }
 

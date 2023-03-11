@@ -3,6 +3,7 @@
 * Remove width hack for mobile
 * Add unit tests
 * Remove SCSS related rules
+* Fix broken Safari build
 
 ### 1.1.7: 2023-03-11
 
