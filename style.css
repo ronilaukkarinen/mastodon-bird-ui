@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.7rc1 */
+   v1.1.7rc2 */
 
 /* CSS variables */
 :root {
@@ -1915,6 +1915,7 @@ a.status-card.compact .status-card__description {
   .layout-single-column .columns-area__panels__main {
     order: 1;
     position: absolute;
+    width: 100%;
   }
 
   .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
