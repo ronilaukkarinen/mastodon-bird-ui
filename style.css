@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.7rc3 */
+   v1.1.7rc4 */
 
 /* CSS variables */
 :root {
@@ -1907,9 +1907,6 @@ a.status-card.compact .status-card__description {
   .app-holder > div,
   body.app-body.layout-single-column {
     overflow-x: hidden;
-    /* Fix flickering on iOS */
-    /* stylelint-disable-next-line property-no-vendor-prefix */
-    -webkit-transform: translate3d(0, 0, 0);
   }
 
   .layout-single-column .columns-area__panels__main {
