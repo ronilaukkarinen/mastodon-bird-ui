@@ -1,6 +1,7 @@
-### 1.1.7rc1: 2023-03-11
+### 1.1.7rc2: 2023-03-11
 
 * Fix detailed status bar icon bubble alignment on Windows
+* Add character-counter to the dim color scope
 
 ### 1.1.6: 2023-03-11
 
