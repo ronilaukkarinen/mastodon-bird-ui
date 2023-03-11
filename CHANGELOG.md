@@ -3,6 +3,7 @@
 * Fix flickering on iOS Safari and webkit browsers
 * Remove width hack for mobile
 * Add unit tests
+* Remove SCSS related rules
 
 ### 1.1.7: 2023-03-11
 

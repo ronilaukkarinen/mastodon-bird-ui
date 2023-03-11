@@ -5,10 +5,8 @@
     "stylelint-order"
   ],
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-standard-scss"
+    "stylelint-config-standard"
   ],
-  "customSyntax": "postcss-scss",
   "rules": {
     "order/order": [
       {
@@ -33,10 +31,6 @@
       }
     ],
     "declaration-property-value-no-unknown": null,
-    "scss/at-mixin-argumentless-call-parentheses": null,
-    "scss/double-slash-comment-empty-line-before": null,
-    "scss/at-rule-conditional-no-parentheses": null,
-    "scss/dollar-variable-pattern": null,
     "order/properties-alphabetical-order": true,
     "alpha-value-notation": "number",
     "declaration-block-no-redundant-longhand-properties": null,
@@ -58,7 +52,6 @@
     "no-invalid-position-at-import-rule": null,
     "declaration-no-important": true,
     "comment-empty-line-before": null,
-    "scss/at-else-empty-line-before": "never",
     "function-url-quotes": "always",
     "unit-no-unknown": true,
     "property-no-unknown": true,
