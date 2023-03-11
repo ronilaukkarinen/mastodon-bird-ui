@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc5 */
+   v1.1.8rc6 */
 
 /* CSS variables */
 :root {
@@ -71,6 +71,10 @@ body.layout-single-column {
   background-color: var(--color-bg);
   color: var(--color-fg);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+.layout-single-column .ui {
+  width: calc(100% - 4px);
 }
 
 /* Text color */
@@ -800,8 +804,15 @@ a.status-card.compact .status-card__description {
 .layout-single-column .tabs-bar__wrapper {
   backdrop-filter: blur(12px);
   background-color: var(--color-bg-75);
-  margin-right: -2px;
   padding: 0;
+}
+
+@media (min-width: 1175px) {
+  .layout-single-column .ui__header,
+  .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+  .layout-single-column .tabs-bar__wrapper {
+    margin-right: -2px;
+  }
 }
 
 /* Hidden things */
