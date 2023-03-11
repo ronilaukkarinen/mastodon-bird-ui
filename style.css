@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.6rc4 */
+   v1.1.7rc1 */
 
 /* CSS variables */
 :root {
@@ -31,7 +31,7 @@
   --color-accent-dark: var(--color-brand-mastodon);
   --color-green: #00ba7c;
   --color-red: #f91880;
-  --color-light-shade: #ffffff08;
+  --color-light-shade: #ffffff05;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
   --color-black-coral: #536471;
@@ -600,16 +600,8 @@ a.status-card.compact .status-card__description {
   transition: all 200ms;
 }
 
-.layout-single-column article:focus .status__prepend,
-.layout-single-column article:hover .status__prepend,
-.layout-single-column article:focus .status,
-.layout-single-column article:hover .status,
-.layout-single-column article:hover .account,
-.layout-single-column article:focus .account,
-.layout-single-column .column > .scrollable .status:hover,
-.layout-single-column .column > .scrollable .status:focus,
-.layout-single-column article:focus .notification__message,
-.layout-single-column article:hover .notification__message {
+.layout-single-column article:focus,
+.layout-single-column article:hover {
   background-color: var(--color-light-shade);
 }
 
@@ -1261,11 +1253,6 @@ a.status-card.compact .status-card__description {
 
 .layout-single-column .detailed-status__button {
   position: relative;
-}
-
-.layout-single-column .detailed-status__action-bar-dropdown .icon-button::after,
-.layout-single-column .detailed-status__button .icon-button::after {
-  transform: translateX(40px);
 }
 
 .layout-single-column .detailed-status__button .icon-button.star-icon::after {
@@ -2125,6 +2112,15 @@ a.status-card.compact .status-card__description {
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .detailed-status__action-bar .icon-button.star-icon.activate .fa-star::before {
   left: -29px;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button {
+  position: relative;
+}
+
+.layout-single-column .detailed-status__action-bar-dropdown .icon-button::after,
+.layout-single-column .detailed-status__button .icon-button::after {
+  transform: translateX(-6px);
 }
 
 @keyframes heart-animate {

@@ -1,9 +1,14 @@
-### 1.1.6rc4: 2023-03-11
+### 1.1.7rc1: 2023-03-11
+
+* Fix detailed status bar icon bubble alignment on Windows
+
+### 1.1.6: 2023-03-11
 
 * Add consistent notification filter bar icons
 * Add text icons to dim color scope
 * Add composer button border-radius
 * Fix active boost animation
+* Simplify the hover and focus shade
 
 ### 1.1.5: 2023-03-11
 
