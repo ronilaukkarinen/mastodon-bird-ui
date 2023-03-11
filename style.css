@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.6rc1 */
+   v1.1.6rc2 */
 
 /* CSS variables */
 :root {
@@ -382,9 +382,10 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification.unread,
 .layout-single-column .status__wrapper.unread
 
-
-.empty-column-indicator,
-.follow_requests-unlocked_explanation,
+/* Things like notification status update text that should be dim */
+.layout-single-column .text-icon-button,
+.layout-single-column .empty-column-indicator,
+.layout-single-column .follow_requests-unlocked_explanation,
 .layout-single-column .poll__footer,
 .layout-single-column .server-banner h4,
 .layout-single-column .column-header__button,
@@ -1353,6 +1354,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Default buttons */
+.layout-single-column .compose-form__buttons button,
 .layout-single-column .button {
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;

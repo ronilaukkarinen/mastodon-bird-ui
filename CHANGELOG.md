@@ -1,6 +1,8 @@
-### 1.1.6rc1: 2023-03-11
+### 1.1.6rc2: 2023-03-11
 
 * Add consistent notification filter bar icons
+* Add text icons to dim color scope
+* Add composer button border-radius
 
 ### 1.1.5: 2023-03-11
 
