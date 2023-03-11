@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.5rc2 */
+   v1.1.5rc3 */
 
 /* CSS variables */
 :root {
@@ -1944,9 +1944,9 @@ a.status-card.compact .status-card__description {
     order: 99;
   }
 
-  /* Make the column link 1/4 of width of the screen */
+  /* Make the column link 1/5 of width of the screen */
   .layout-single-column .navigation-panel .column-link {
-    flex: 0 0 calc(100vw / 4);
+    flex: 0 0 calc(100vw / 5);
     padding: 0;
   }
 
