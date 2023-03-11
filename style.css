@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc6 */
+   v1.1.8rc8 */
 
 /* CSS variables */
 :root {
@@ -1928,7 +1928,8 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .columns-area__panels__main {
     order: 1;
-    width: 100%;
+    position: absolute;
+    width: calc(100% - 4px);
   }
 
   .layout-single-column .columns-area__panels__main::-webkit-scrollbar {
@@ -2034,11 +2035,11 @@ a.status-card.compact .status-card__description {
   }
 
   .layout-single-column .columns-area.columns-area--mobile {
-    top: 46px;
+    top: 16px;
   }
 
   .layout-single-column .column > .scrollable {
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 
   .layout-single-column .actions-modal ul li:not(:empty) a {

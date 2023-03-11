@@ -7,7 +7,7 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **Please note** that this started as a personal experiment _for fun_, but then got more serious.
 
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
-Read the blog post: [The day I decided to build my own “Twitter”](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
+Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
 ## Why would anyone want Mastodon to look like Twitter?
 
