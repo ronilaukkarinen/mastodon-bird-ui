@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc10 */
+   v1.1.8rc11 */
 
 /* CSS variables */
 :root {
@@ -159,9 +159,13 @@ body.layout-single-column {
   height: 38px;
 }
 
+.layout-single-column .list-editor .column-inline-form button,
+.layout-single-column .list-adder .column-inline-form button,
 .layout-single-column .list-editor .column-inline-form button::before {
   min-height: 38px;
-  width: 100%;
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  width: 100% !important;
 }
 
 .layout-single-column .list-editor__search {

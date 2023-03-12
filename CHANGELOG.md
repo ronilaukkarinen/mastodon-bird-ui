@@ -1,4 +1,4 @@
-### 1.1.8rc10: 2023-03-12
+### 1.1.8rc11: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -9,6 +9,7 @@
 * Fixes for Android Chrome
 * Fixes for logged out mobile view
 * Order three dots last on mobile
+* Fix list-editor inline button dimensions
 
 ### 1.1.7: 2023-03-11
 
