@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc19 */
+   v1.1.8rc21 */
 
 /* CSS variables */
 :root {
@@ -2315,6 +2315,16 @@ a.status-card.compact .status-card__description {
   100% {
     background-position: -2800px;
   }
+}
+
+/* Add border radius to media */
+.layout-single-column .media-gallery__item-thumbnail img,
+.layout-single-column .audio-player__canvas,
+.layout-single-column .video-player video,
+.layout-single-column .media-gallery__gifv video,
+.layout-single-column .media-gallery__preview {
+  backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 /* Fade out media that have no alt text */
