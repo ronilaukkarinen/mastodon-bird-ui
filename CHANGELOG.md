@@ -1,4 +1,4 @@
-### 1.1.8rc17: 2023-03-12
+### 1.1.8rc18: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -15,6 +15,8 @@
 * Remove autosuggest-textarea__suggestions extra box-shadow
 * Fix audio-player width on regular feed
 * Improve blurred ui header on mobile and iPad
+* Better Mastodon (Light) support
+* Added more elements to the color scopes
 
 ### 1.1.7: 2023-03-11
 

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc17 */
+   v1.1.8rc18 */
 
 /* CSS variables */
 :root {
@@ -42,6 +42,7 @@
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
   --color-gainsboro: #d9e1e8;
+  --color-light-purple: #9baec8;
 
   /* Font related */
   --font-size: 15px;
@@ -300,6 +301,9 @@ a.status-card.compact .status-card__description {
   box-shadow: none;
 }
 
+/* Border colors */
+.layout-single-column .account__section-headline,
+.layout-single-column .detailed-status__action-bar,
 .layout-single-column .column-back-button,
 .layout-single-column .column-header,
 .layout-single-column .audio-player,
@@ -415,6 +419,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__wrapper.unread
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .sign-in-banner p,
 .layout-single-column .navigation-bar > a,
 .layout-single-column .character-counter,
 .layout-single-column .text-icon-button,
@@ -484,7 +489,16 @@ a.status-card.compact .status-card__description {
   color: var(--color-gainsboro);
 }
 
+/* Light purple things */
+.layout-single-column .column-settings__section,
+.layout-single-column .setting-toggle__label {
+  color: var(--color-light-purple);
+}
+
+
 /* White things */
+.layout-single-column .detailed-status__display-name strong,
+.layout-single-column .dismissable-banner__message,
 .layout-single-column .privacy-dropdown__option,
 .layout-single-column .privacy-dropdown__option__content strong,
 .layout-single-column .status__info .display-name strong.display-name__html,
@@ -804,6 +818,14 @@ a.status-card.compact .status-card__description {
   color: var(--color-accent);
 }
 
+/* Other general buttons */
+.layout-single-column .column-header__button.active:active,
+.column-header__button.active:focus,
+.layout-single-column .column-header__button.active:hover {
+  background-color: var(--color-focusable-toot);
+  color: var(--color-fg);
+}
+
 /* "Retweet" button by default */
 .layout-single-column button.icon-button i.fa-retweet {
   /* Change the fill in this manually if you want to change colors */
@@ -1017,6 +1039,13 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification__filter-bar button:hover,
 .layout-single-column .account__section-headline a:hover {
   background-color: var(--color-column-link-hover);
+}
+
+/* Notification filter bar */
+.layout-single-column .notification__filter-bar {
+  border-bottom: 1px solid var(--color-border);
+  border-left: 0;
+  border-right: 0;
 }
 
 .layout-single-column .column-link__icon {
