@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc24 */
+   v1.1.8rc25 */
 
 /* CSS variables */
 :root {
@@ -683,6 +683,7 @@ a.status-card.compact .status-card__description {
   border: 0;
 }
 
+.layout-single-column article,
 .layout-single-column .status__prepend,
 .layout-single-column .notification__message,
 .layout-single-column .status {
