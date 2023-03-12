@@ -1,4 +1,4 @@
-### 1.1.8rc21: 2023-03-12
+### 1.1.8rc22: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -18,6 +18,7 @@
 * Better Mastodon (Light) support
 * Added more elements to the color scopes
 * Add border radius to media
+* Mark media with alt text missing with text "Alt text missing"
 
 ### 1.1.7: 2023-03-11
 

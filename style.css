@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc21 */
+   v1.1.8rc22 */
 
 /* CSS variables */
 :root {
@@ -2328,6 +2328,27 @@ a.status-card.compact .status-card__description {
 }
 
 /* Fade out media that have no alt text */
+.layout-single-column .media-gallery__item-thumbnail::after,
+.layout-single-column .audio-player__canvas::after,
+.layout-single-column .video-player::after,
+.layout-single-column .media-gallery__gifv::after,
+.layout-single-column .media-gallery__preview::after {
+  align-items: center;
+  color: var(--color-light-text);
+  content: 'Alt text missing';
+  display: flex;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 .layout-single-column .media-gallery__item-thumbnail img:not([alt]),
 .layout-single-column .audio-player__canvas:not([title]),
 .layout-single-column .video-player video:not([title]),
