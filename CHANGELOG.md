@@ -1,4 +1,4 @@
-### 1.1.8rc16: 2023-03-12
+### 1.1.8rc17: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -14,6 +14,7 @@
 * Make autosuggest-textarea__suggestions dark
 * Remove autosuggest-textarea__suggestions extra box-shadow
 * Fix audio-player width on regular feed
+* Improve blurred ui header on mobile and iPad
 
 ### 1.1.7: 2023-03-11
 

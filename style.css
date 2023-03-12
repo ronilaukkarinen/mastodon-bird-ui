@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc16 */
+   v1.1.8rc17 */
 
 /* CSS variables */
 :root {
@@ -827,6 +827,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .tabs-bar__wrapper {
   backdrop-filter: blur(12px);
   background-color: var(--color-bg-75);
+  border-color: var(--color-border);
   padding: 0;
 }
 
@@ -1932,6 +1933,43 @@ a.status-card.compact .status-card__description {
   .layout-single-column .status__action-bar .icon-button::after,
   .layout-single-column .detailed-status__action-bar-dropdown .icon-button::after {
     display: none;
+  }
+
+  .layout-single-column .ui__header,
+  .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+  .layout-single-column .tabs-bar__wrapper {
+    backdrop-filter: unset;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  /* Better blur overlay for ui-header */
+  .layout-single-column .ui::after {
+    backdrop-filter: blur(12px);
+    background-color: var(--color-bg-75);
+    content: '';
+    /* Height is .ui__header + .tabs-bar__wrapper */
+    height: calc(48px + 56px);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+/* In-between breakpoint */
+@media (min-width: 889px) and (max-width: 1175px) {
+  .layout-single-column .ui__header,
+  .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+  .layout-single-column .tabs-bar__wrapper {
+    backdrop-filter: blur(12px);
+    background-color: var(--color-bg-75);
+    border-color: var(--color-border);
+  }
+
+  .layout-single-column .columns-area__panels__main > .tabs-bar__wrapper {
+    border-right: 0;
   }
 }
 
