@@ -1,4 +1,4 @@
-### 1.1.8rc23: 2023-03-12
+### 1.1.8rc24: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -19,6 +19,7 @@
 * Added more elements to the color scopes
 * Add border radius to media
 * Mark media with alt text missing with text "Alt text missing"
+* Add embed input background color
 
 ### 1.1.7: 2023-03-11
 
