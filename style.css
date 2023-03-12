@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc22 */
+   v1.1.8rc23 */
 
 /* CSS variables */
 :root {
@@ -310,7 +310,6 @@ a.status-card.compact .status-card__description {
 .layout-single-column .audio-player,
 .layout-single-column .video-player,
 .layout-single-column .media-gallery,
-.layout-single-column .media-gallery__gifv,
 .layout-single-column .compose-form .spoiler-input__input,
 .layout-single-column .compose-form__autosuggest-wrapper,
 .layout-single-column .compose-form__poll-wrapper select,
@@ -762,7 +761,6 @@ a.status-card.compact .status-card__description {
 
 /* Media inside status update tinted to right */
 .layout-single-column .status .audio-player,
-.layout-single-column .status .media-gallery__gifv,
 .layout-single-column .status .video-player,
 .layout-single-column .status .media-gallery {
   margin-left: auto;
