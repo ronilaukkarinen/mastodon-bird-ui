@@ -10,6 +10,7 @@
 * Fixes for logged out mobile view
 * Order three dots last on mobile
 * Fix list-editor inline button dimensions
+* Fix disabled action buttons pointer-events and style
 
 ### 1.1.7: 2023-03-11
 

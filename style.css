@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc11 */
+   v1.1.8rc12 */
 
 /* CSS variables */
 :root {
@@ -724,6 +724,12 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__action-bar button,
 .layout-single-column .detailed-status__action-bar button {
   border-radius: 50%;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button[disabled],
+.layout-single-column .status__action-bar .icon-button[disabled] {
+  opacity: .5;
+  pointer-events: none;
 }
 
 /* Media inside status update tinted to right */
