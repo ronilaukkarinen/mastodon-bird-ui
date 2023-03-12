@@ -2322,7 +2322,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .audio-player__canvas:not([title]),
 .layout-single-column .video-player video:not([title]),
 .layout-single-column .media-gallery__gifv video:not([title]) {
-  opacity: .2;
+  opacity: .5;
   transition: opacity 200ms;
 }
 
