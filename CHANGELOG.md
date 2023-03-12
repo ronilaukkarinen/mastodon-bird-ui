@@ -1,4 +1,4 @@
-### 1.1.8rc14: 2023-03-12
+### 1.1.8rc15: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -12,6 +12,7 @@
 * Fix list-editor inline button dimensions
 * Fix disabled action buttons pointer-events and style
 * Make autosuggest-textarea__suggestions dark
+* Remove autosuggest-textarea__suggestions extra box-shadow
 
 ### 1.1.7: 2023-03-11
 

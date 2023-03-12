@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc14 */
+   v1.1.8rc15 */
 
 /* CSS variables */
 :root {
@@ -293,6 +293,11 @@ a.status-card.compact .status-card__description {
 /* More subtle box-shadow for dropdown-menu */
 .layout-single-column .dropdown-menu {
   box-shadow: 2px 4px 16px rgb(0 0 0 / .01);
+}
+
+/* Autosuggest box shadow reset */
+.layout-single-column .compose-form .autosuggest-textarea__suggestions {
+  box-shadow: none;
 }
 
 .layout-single-column .column-back-button,
