@@ -1,3 +1,7 @@
+### 1.1.8rc1: 2023-03-12
+
+* Fix blur overlay on iPad
+
 ### 1.1.8: 2023-03-12
 
 * Remove width hack for mobile

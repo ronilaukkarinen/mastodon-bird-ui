@@ -1980,20 +1980,6 @@ a.status-card.compact .status-card__description {
     background-color: transparent;
     padding: 0;
   }
-
-  /* Better blur overlay for ui-header */
-  .layout-single-column .ui::after {
-    backdrop-filter: blur(12px);
-    background-color: var(--color-bg-75);
-    content: '';
-    /* Height is .ui__header + .tabs-bar__wrapper */
-    height: calc(48px + 56px);
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
 }
 
 /* In-between breakpoint */
@@ -2013,6 +1999,20 @@ a.status-card.compact .status-card__description {
 
 /* Mobile */
 @media screen and (max-width: 889px) {
+  /* Better blur overlay for ui-header */
+  .layout-single-column .ui::after {
+    backdrop-filter: blur(12px);
+    background-color: var(--color-bg-75);
+    content: '';
+    /* Height is .ui__header + .tabs-bar__wrapper */
+    height: calc(48px + 56px);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
   .app-holder,
   .app-holder > div,
   body.app-body.layout-single-column {
