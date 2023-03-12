@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc12 */
+   v1.1.8rc14 */
 
 /* CSS variables */
 :root {
@@ -247,6 +247,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Dark panels like modal boxes */
+.layout-single-column .compose-form .autosuggest-textarea__suggestions,
 .layout-single-column .privacy-dropdown__dropdown,
 .layout-single-column .drawer__backdrop,
 .layout-single-column .list-editor__account,
@@ -667,7 +668,11 @@ a.status-card.compact .status-card__description {
   background-color: var(--color-light-shade);
 }
 
-/* Focusable toot */
+/* Focusable toot and other hilighted items */
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item.selected,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:active,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:focus,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover,
 .layout-single-column .focusable:focus {
   background-color: var(--color-focusable-toot);
 }
