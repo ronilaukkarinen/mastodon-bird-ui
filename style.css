@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   v1.1.8rc18 */
+   v1.1.8rc19 */
 
 /* CSS variables */
 :root {
@@ -31,6 +31,7 @@
   --color-accent-dark: var(--color-brand-mastodon);
   --color-green: #00ba7c;
   --color-red: #f91880;
+  --color-red-75: #f91880bf;
   --color-light-shade: #ffffff05;
   --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
@@ -307,6 +308,9 @@ a.status-card.compact .status-card__description {
 .layout-single-column .column-back-button,
 .layout-single-column .column-header,
 .layout-single-column .audio-player,
+.layout-single-column .video-player,
+.layout-single-column .media-gallery,
+.layout-single-column .media-gallery__gifv,
 .layout-single-column .compose-form .spoiler-input__input,
 .layout-single-column .compose-form__autosuggest-wrapper,
 .layout-single-column .compose-form__poll-wrapper select,
@@ -758,6 +762,7 @@ a.status-card.compact .status-card__description {
 
 /* Media inside status update tinted to right */
 .layout-single-column .status .audio-player,
+.layout-single-column .status .media-gallery__gifv,
 .layout-single-column .status .video-player,
 .layout-single-column .status .media-gallery {
   margin-left: auto;
@@ -2310,4 +2315,24 @@ a.status-card.compact .status-card__description {
   100% {
     background-position: -2800px;
   }
+}
+
+/* Fade out media that have no alt text */
+.layout-single-column .media-gallery__item-thumbnail img:not([alt]),
+.layout-single-column .audio-player__canvas:not([title]),
+.layout-single-column .video-player video:not([title]),
+.layout-single-column .media-gallery__gifv video:not([title]) {
+  opacity: .2;
+  transition: opacity 200ms;
+}
+
+.layout-single-column .media-gallery__item-thumbnail img:not([alt]):hover,
+.layout-single-column .audio-player__canvas:not([title]):hover,
+.layout-single-column .video-player video:not([title]):hover,
+.layout-single-column .media-gallery__gifv video:not([title]):hover,
+.layout-single-column .media-gallery__item-thumbnail img:not([alt]):focus,
+.layout-single-column .audio-player__canvas:not([title]):focus,
+.layout-single-column .video-player video:not([title]):focus,
+.layout-single-column .media-gallery__gifv video:not([title]):focus {
+  opacity: 1;
 }

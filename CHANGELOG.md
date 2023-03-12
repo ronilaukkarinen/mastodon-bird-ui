@@ -1,4 +1,4 @@
-### 1.1.8rc18: 2023-03-12
+### 1.1.8rc19: 2023-03-12
 
 * Remove width hack for mobile
 * Add unit tests
@@ -17,6 +17,7 @@
 * Improve blurred ui header on mobile and iPad
 * Better Mastodon (Light) support
 * Added more elements to the color scopes
+* Fade out media that have no alt text
 
 ### 1.1.7: 2023-03-11
 
