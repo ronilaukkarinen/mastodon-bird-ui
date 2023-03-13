@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0rc3 */
+   1.2.0rc4 */
 
 /* CSS variables */
 :root {
@@ -755,6 +755,15 @@ a.status-card.compact .status-card__description {
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
+/* Rtl version */
+[dir="rtl"] .layout-single-column .status__action-bar,
+[dir="rtl"] .layout-single-column .attachment-list
+[dir="rtl"] .layout-single-column .status__content__read-more-button,
+[dir="rtl"] .layout-single-column .status .status__content {
+  padding-left: 0;
+  padding-right: calc(var(--size-avatar) + var(--gap-default));
+}
+
 /* Reset padding from attachment-list on reply indicator */
 .layout-single-column .reply-indicator .attachment-list {
   padding-left: 0;
@@ -1041,6 +1050,11 @@ a.status-card.compact .status-card__description {
   padding-right: calc(var(--gap-default) * 1.5);
   padding-top: var(--gap-default);
   transition: all 100ms;
+}
+
+[dir="rtl"] .layout-single-column .column-link {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .layout-single-column .column-link:hover {
