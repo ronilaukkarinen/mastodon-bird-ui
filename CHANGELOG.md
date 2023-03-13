@@ -1,7 +1,9 @@
-### 1.2.0rc1: 2023-03-13
+### 1.2.0rc2: 2023-03-13
 
 * Consistency in follow/unfollow button hover and focus colors
-* More distinct :focus-within
+* More distinct :focus-within to text inputs
+* Hilight search icon when searching emojis
+* Fix emoji-mart search icon color
 
 ### 1.1.9: 2023-03-13
 

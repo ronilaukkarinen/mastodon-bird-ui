@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0rc1 */
+   1.2.0rc2 */
 
 /* CSS variables */
 :root {
@@ -1181,6 +1181,20 @@ a.status-card.compact .status-card__description {
 
 .layout-single-column .notification .account__relationship:hover {
   background-color: rgba(96, 105, 132, .15);
+}
+
+/* Emoji-mart search input */
+.layout-single-column .emoji-mart-search-icon svg {
+  fill: var(--color-border);
+  opacity: 1;
+}
+
+.layout-single-column .emoji-mart-search > input:focus-visible ~ .emoji-mart-search-icon svg {
+  fill: var(--color-accent);
+}
+
+.layout-single-column .emoji-mart-search-icon:disabled {
+  opacity: 1;
 }
 
 /* Search */
