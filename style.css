@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0rc5 */
+   1.2.0rc6 */
 
 /* CSS variables */
 :root {
@@ -1184,6 +1184,10 @@ a.status-card.compact .status-card__description {
   opacity: 1;
 }
 
+.layout-single-column .explore__search-results .icon-button:focus .fa::before,
+.layout-single-column .notification .account__relationship .icon-button:focus .fa::before,
+.layout-single-column .explore__search-results .icon-button.active:focus .fa::before,
+.layout-single-column .notification .account__relationship .icon-button.active:focus .fa::before,
 .layout-single-column .explore__search-results .icon-button:hover .fa::before,
 .layout-single-column .notification .account__relationship .icon-button:hover .fa::before {
   /* stylelint-disable-next-line */

@@ -1,4 +1,4 @@
-### 1.2.0rc5: 2023-03-13
+### 1.2.0rc6: 2023-03-13
 
 * Consistency in follow/unfollow button hover and focus colors
 * More distinct :focus-within to text inputs
@@ -7,6 +7,7 @@
 * Add more consistent colors for emoji-mart
 * Fix columns for RTL (thanks [@ButterflyOfFire](https://mstdn.fr/@ButterflyOfFire))
 * Fix default relationship follow button color
+* Improve relationship follow focus action on mobile
 
 ### 1.1.9: 2023-03-13
 
