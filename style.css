@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.1.9rc2 */
+   1.1.9rc3 */
 
 /* CSS variables */
 :root {
@@ -1134,10 +1134,36 @@ a.status-card.compact .status-card__description {
   font-size: 24px;
 }
 
+/* Follow/unfollow button in notifications */
+.layout-single-column .notification .account__relationship .icon-button:focus,
+.layout-single-column .notification .account__relationship .icon-button:hover {
+  background-color: transparent;
+}
+
 .layout-single-column .notification .account__relationship .fa::before {
   /* stylelint-disable-next-line */
   color: var(--color-dim) !important;
   font-size: 20px;
+}
+
+.layout-single-column .notification .account__relationship .icon-button.active .fa::before {
+  /* stylelint-disable-next-line */
+  color: var(--color-green) !important;
+  opacity: .75;
+}
+
+.layout-single-column .notification .account__relationship .icon-button:focus .fa::before,
+.layout-single-column .notification .account__relationship .icon-button:hover .fa::before {
+  opacity: 1;
+  /* stylelint-disable-next-line */
+  color: var(--color-red) !important;
+}
+
+.layout-single-column .notification .account__relationship .icon-button:not(.active):focus .fa::before,
+.layout-single-column .notification .account__relationship .icon-button:not(.active):hover .fa::before {
+  opacity: 1;
+  /* stylelint-disable-next-line */
+  color: var(--color-green) !important;
 }
 
 .layout-single-column .account__relationship .button:hover {
