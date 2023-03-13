@@ -1,3 +1,7 @@
+### 1.2.0rc1: 2023-03-13
+
+* Consistency in follow/unfollow button hover and focus colors
+
 ### 1.1.9: 2023-03-13
 
 * Fix blur overlay on iPad

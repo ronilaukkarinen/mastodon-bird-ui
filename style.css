@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.1.9 */
+   1.2.0rc1 */
 
 /* CSS variables */
 :root {
@@ -1141,39 +1141,36 @@ a.status-card.compact .status-card__description {
 }
 
 /* Follow/unfollow button in notifications */
-.layout-single-column .notification .account__relationship .icon-button:focus,
-.layout-single-column .notification .account__relationship .icon-button:hover {
+.layout-single-column .account__relationship .icon-button,
+.layout-single-column .notification .account__relationship .icon-button {
   background-color: transparent;
 }
 
 .layout-single-column .notification .account__relationship .fa::before {
   /* stylelint-disable-next-line */
-  color: var(--color-dim) !important;
+  color: var(--color-dim);
   font-size: 20px;
 }
 
+.layout-single-column .explore__search-results .account__relationship .icon-button.active .fa::before,
 .layout-single-column .notification .account__relationship .icon-button.active .fa::before {
   /* stylelint-disable-next-line */
-  color: var(--color-green) !important;
+  color: var(--color-green);
   opacity: .75;
 }
 
-.layout-single-column .notification .account__relationship .icon-button:focus .fa::before,
+.layout-single-column .explore__search-results .icon-button.active:hover .fa::before,
+.layout-single-column .notification .account__relationship .icon-button.active:hover .fa::before {
+  /* stylelint-disable-next-line */
+  color: var(--color-red);
+  opacity: 1;
+}
+
+.layout-single-column .explore__search-results .icon-button:hover .fa::before,
 .layout-single-column .notification .account__relationship .icon-button:hover .fa::before {
   /* stylelint-disable-next-line */
-  color: var(--color-red) !important;
+  color: var(--color-green);
   opacity: 1;
-}
-
-.layout-single-column .notification .account__relationship .icon-button:not(.active):focus .fa::before,
-.layout-single-column .notification .account__relationship .icon-button:not(.active):hover .fa::before {
-  /* stylelint-disable-next-line */
-  color: var(--color-green) !important;
-  opacity: 1;
-}
-
-.layout-single-column .account__relationship .button:hover {
-  background-color: transparent;
 }
 
 .layout-single-column .notification .account__relationship {
