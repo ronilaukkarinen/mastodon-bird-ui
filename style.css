@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.1.9rc1 */
+   1.1.9rc2 */
 
 /* CSS variables */
 :root {
@@ -2013,8 +2013,13 @@ a.status-card.compact .status-card__description {
     z-index: 1;
   }
 
-  .app-holder,
-  .app-holder > div,
+  /* Fix navigation-bar getting underneath layer */
+  .layout-single-column .navigation-bar {
+    z-index: 2;
+  }
+
+  .layout-single-column .app-holder,
+  .layout-single-column .app-holder > div,
   body.app-body.layout-single-column {
     overflow-x: hidden;
   }

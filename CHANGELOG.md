@@ -1,6 +1,7 @@
-### 1.1.9rc1: 2023-03-12
+### 1.1.9rc2: 2023-03-13
 
 * Fix blur overlay on iPad
+* Fix compose form z-index on mobile
 
 ### 1.1.8: 2023-03-12
 
