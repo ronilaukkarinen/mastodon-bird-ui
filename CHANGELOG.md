@@ -1,9 +1,10 @@
-### 1.1.9rc3: 2023-03-13
+### 1.1.9: 2023-03-13
 
 * Fix blur overlay on iPad
 * Fix compose form z-index on mobile
 * Add green/red indicator in the follow/unfollow button in notifications
 * Add missing stylelint-order package
+* Fix iOS Safari issue #1
 
 ### 1.1.8: 2023-03-12
 

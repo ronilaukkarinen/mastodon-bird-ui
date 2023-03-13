@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.1.9rc3 */
+   1.1.9 */
 
 /* CSS variables */
 :root {
@@ -67,6 +67,11 @@
   :root {
     --font-size-heading: 17px;
   }
+
+  /* Hide scrollbar on mobile, since we can't pick the handle anyway */
+  .layout-single-column::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body.layout-single-column {
@@ -76,7 +81,8 @@ body.layout-single-column {
 }
 
 .layout-single-column .ui {
-  width: calc(100% - 4px);
+  display: flex;
+  width: 100%;
 }
 
 /* Text color */
@@ -1154,16 +1160,16 @@ a.status-card.compact .status-card__description {
 
 .layout-single-column .notification .account__relationship .icon-button:focus .fa::before,
 .layout-single-column .notification .account__relationship .icon-button:hover .fa::before {
-  opacity: 1;
   /* stylelint-disable-next-line */
   color: var(--color-red) !important;
+  opacity: 1;
 }
 
 .layout-single-column .notification .account__relationship .icon-button:not(.active):focus .fa::before,
 .layout-single-column .notification .account__relationship .icon-button:not(.active):hover .fa::before {
-  opacity: 1;
   /* stylelint-disable-next-line */
   color: var(--color-green) !important;
+  opacity: 1;
 }
 
 .layout-single-column .account__relationship .button:hover {
@@ -2044,22 +2050,22 @@ a.status-card.compact .status-card__description {
     z-index: 2;
   }
 
-  .layout-single-column .app-holder,
-  .layout-single-column .app-holder > div,
-  body.app-body.layout-single-column {
-    overflow-x: hidden;
-  }
-
   .layout-single-column .tabs-bar__wrapper {
     margin-right: 0;
     position: sticky;
     top: 55px;
+    z-index: 2;
   }
 
   .layout-single-column .columns-area__panels__main {
     order: 1;
-    position: absolute;
-    width: calc(100% - 4px);
+    position: unset;
+    width: 100%;
+  }
+
+  .layout-single-column .columns-area__panels {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .layout-single-column .columns-area__panels__main::-webkit-scrollbar {
@@ -2147,11 +2153,16 @@ a.status-card.compact .status-card__description {
   }
 
   .layout-single-column .ui__header {
+    align-items: center;
     border-bottom: 0;
+    box-sizing: border-box;
+    display: flex;
     height: 56px;
-    position: fixed;
+    justify-content: space-between;
+    position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
   }
 
   .layout-single-column .account__header__bar .avatar .account__avatar {
@@ -2166,10 +2177,6 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .account__header__image {
     height: 157px;
-  }
-
-  .layout-single-column .columns-area.columns-area--mobile {
-    top: 16px;
   }
 
   .layout-single-column .column > .scrollable {
@@ -2188,11 +2195,6 @@ a.status-card.compact .status-card__description {
 
   .layout-single-column .compose-form {
     padding-bottom: calc(3.5rem + calc(var(--gap-default) * 2));
-  }
-
-  .columns-area--mobile .column,
-  .columns-area--mobile .drawer {
-    margin-top: var(--gap-default);
   }
 
   /* Column items order */
