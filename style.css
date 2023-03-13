@@ -2401,3 +2401,9 @@ a.status-card.compact .status-card__description {
 .layout-single-column .media-gallery__gifv video:not([title]):focus {
   opacity: 1;
 }
+
+/* More distinct focus color for accessibility, instead of just white */
+.layout-single-column input:focus-visible {
+  outline-color: var(--color-accent);
+  outline-style: solid;
+}
