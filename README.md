@@ -33,6 +33,8 @@ _Twitter colors (outdated screenshot since I just wanted to try it first):_
 
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
+- Missing alt text indicators (faded with "Alt text missing" text in the center)
+- Subtle deep purple ribbon in the right corner for private messages
 - CSS variables for everything
 - Threaded replies
 - Avatars on the left in feed view
