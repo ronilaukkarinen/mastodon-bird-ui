@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0rc4 */
+   1.2.0rc5 */
 
 /* CSS variables */
 :root {
@@ -1143,6 +1143,10 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification .fa.fa-user-plus:not(.fa-link)::before {
   color: var(--color-accent-dark);
   font-size: 20px;
+}
+
+.layout-single-column .notification .account__relationship .fa.fa-user-plus:not(.fa-link)::before {
+  color: var(--color-dim);
 }
 
 .layout-single-column .notification .fa.fa-tasks:not(.fa-link)::before {
