@@ -42,6 +42,8 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Dark patterns for dropdowns and other pop overs like emoji picker
 - Tinted deep purple, subtle beautiness
 - Action bar in the bottom on mobile
+- Birdsite-like like animation in the heart icon
+- Circling boost animation
 
 ## Installation for Mastodon instance admins
 
