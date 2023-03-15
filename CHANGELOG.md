@@ -5,8 +5,8 @@
 * Fix some situations where too high number can cause icon to shrink
 * Add compose history modal header to border color scope
 * Fix tertiary button border on hover
-* Fix styles for admin report notifications
-* Fix notification-update alignment
+* Fix styles for admin report notifications (thanks [@koyu](https://koyu.space/@koyu))
+* Fix notification-update alignment (thanks [@koyu](https://koyu.space/@koyu))
 
 ### 1.2.0: 2023-03-15
 
