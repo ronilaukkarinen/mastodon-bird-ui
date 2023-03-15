@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc5 */
+   1.2.1rc6 */
 
 /* CSS variables */
 :root {
@@ -1018,6 +1018,27 @@ a.status-card.compact .status-card__description {
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
+/* Admin reports and other admin notifications */
+.layout-single-column .notification-admin-report .notification__report {
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+.layout-single-column .notification-admin-report .notification__report__details {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+.layout-single-column .notification-admin-report .notification__report__details  strong {
+  font-weight: 400;
+}
+
+/* Revert hack for notification admin message */
+.layout-single-column .notification-admin-report .notification__message > span {
+  display: block;
+  margin-top: calc(var(--size-avatar-small) + 4px);
+  overflow: visible;
+}
+
 /* Hide things in notifications */
 .layout-single-column .notification .status__relative-time,
 .layout-single-column .notification .status__info::before {
@@ -1376,6 +1397,7 @@ a.status-card.compact .status-card__description {
   width: 133.5px;
 }
 
+.layout-single-column .notification__report__actions .button,
 .layout-single-column .column-inline-form button,
 .layout-single-column .explore__suggestions .account-card__actions__button button,
 .layout-single-column .account__header__tabs__buttons .button {
