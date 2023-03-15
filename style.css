@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0 */
+   1.2.1rc1 */
 
 /* CSS variables */
 :root {
@@ -2417,7 +2417,7 @@ a.status-card.compact .status-card__description {
   align-self: flex-end;
   background-color: var(--color-bg-75);
   border-radius: 4px;
-  bottom: 10px;
+  bottom: 4px;
   color: var(--color-light-text);
   content: 'No alt';
   display: flex;
@@ -2430,7 +2430,7 @@ a.status-card.compact .status-card__description {
   opacity: 1;
   padding: 2px 5px;
   position: absolute;
-  right: 10px;
+  right: 4px;
   text-transform: uppercase;
   top: auto;
   width: unset;

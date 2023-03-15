@@ -1,3 +1,7 @@
+### 1.2.1rc1: 2023-03-15
+
+* Consistent position for no alt tag with other media tags
+
 ### 1.2.0: 2023-03-15
 
 * Consistency in follow/unfollow button hover and focus colors
