@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc2 */
+   1.2.1rc3 */
 
 /* CSS variables */
 :root {
@@ -1639,6 +1639,7 @@ a.status-card.compact .status-card__description {
 /* Smaller icons for status action bar */
 .layout-single-column .status__action-bar .fa {
   font-size: 14.6px;
+  min-width: 18px;
 }
 
 .layout-single-column .status__action-bar .icon-button--with-counter {

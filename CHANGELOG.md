@@ -1,7 +1,8 @@
-### 1.2.1rc2: 2023-03-15
+### 1.2.1rc3: 2023-03-15
 
 * Consistent position for no alt tag with other media tags
 * Hide footer buttons in modals
+* Fix some situations where too high number can cause icon to shrink
 
 ### 1.2.0: 2023-03-15
 
