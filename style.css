@@ -2416,7 +2416,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .media-gallery__gifv:has(> video:not([title]))::after {
   align-self: flex-end;
   background-color: var(--color-bg-75);
-  border-radius: 10px;
+  border-radius: 4px;
   bottom: 10px;
   color: var(--color-light-text);
   content: 'No alt';
@@ -2428,7 +2428,7 @@ a.status-card.compact .status-card__description {
   left: auto;
   line-height: 14px;
   opacity: 1;
-  padding: 3px 7px;
+  padding: 2px 5px;
   position: absolute;
   right: 10px;
   text-transform: uppercase;
