@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc7 */
+   1.2.1rc8 */
 
 /* CSS variables */
 :root {
@@ -318,6 +318,8 @@ a.status-card.compact .status-card__description {
 }
 
 /* Border colors */
+.layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
+.layout-single-column .dropdown-menu__container__header,
 .layout-single-column .compare-history-modal .report-modal__target,
 .layout-single-column .account__section-headline,
 .layout-single-column .detailed-status__action-bar,
@@ -438,6 +440,7 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__wrapper.unread
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .dropdown-menu__container__header,
 .layout-single-column .sign-in-banner p,
 .layout-single-column .navigation-bar > a,
 .layout-single-column .character-counter,
@@ -513,7 +516,6 @@ a.status-card.compact .status-card__description {
 .layout-single-column .setting-toggle__label {
   color: var(--color-light-purple);
 }
-
 
 /* White things */
 .layout-single-column .detailed-status__display-name strong,
@@ -1061,6 +1063,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Hide scrollbars for .navigation-panel */
+.dropdown-menu__container__list--scrollable::-webkit-scrollbar,
 .layout-single-column .navigation-panel::-webkit-scrollbar {
   display: none;
   width: 3px;

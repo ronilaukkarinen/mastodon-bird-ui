@@ -1,4 +1,4 @@
-### 1.2.1rc7: 2023-03-15
+### 1.2.1rc8: 2023-03-15
 
 * Consistent position for no alt tag with other media tags
 * Hide footer buttons in modals
@@ -7,6 +7,7 @@
 * Fix tertiary button border on hover
 * Fix styles for admin report notifications (thanks [@koyu](https://koyu.space/@koyu))
 * Fix notification-update alignment (thanks [@koyu](https://koyu.space/@koyu))
+* Fix dropdown menu history item styles
 
 ### 1.2.0: 2023-03-15
 
