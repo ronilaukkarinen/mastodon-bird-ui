@@ -1,4 +1,4 @@
-### 1.2.0rc6: 2023-03-13
+### 1.2.0: 2023-03-15
 
 * Consistency in follow/unfollow button hover and focus colors
 * More distinct :focus-within to text inputs
@@ -8,6 +8,9 @@
 * Fix columns for RTL (thanks [@ButterflyOfFire](https://mstdn.fr/@ButterflyOfFire))
 * Fix default relationship follow button color
 * Improve relationship follow focus action on mobile
+* Fix missing audio player alignment
+* Fix audio player border-radius
+* Use CSS Selectors Level 4 Working Draft :has for missing alt tag media instead of opacity
 
 ### 1.1.9: 2023-03-13
 

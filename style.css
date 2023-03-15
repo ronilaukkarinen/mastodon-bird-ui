@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.0rc6 */
+   1.2.0 */
 
 /* CSS variables */
 :root {
@@ -787,7 +787,7 @@ a.status-card.compact .status-card__description {
   margin-left: auto;
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
-  width: calc(100% - calc(var(--size-avatar) + var(--gap-default)));
+  width: calc(100% - calc(var(--size-avatar) + var(--gap-default))) !important;
 }
 
 .layout-single-column .status .status-card {
@@ -2403,7 +2403,7 @@ a.status-card.compact .status-card__description {
 
 /* Add border radius to media */
 .layout-single-column .media-gallery__item-thumbnail img,
-.layout-single-column .audio-player__canvas,
+.layout-single-column .audio-player,
 .layout-single-column .video-player video,
 .layout-single-column .media-gallery__gifv video,
 .layout-single-column .media-gallery__preview {
@@ -2411,45 +2411,39 @@ a.status-card.compact .status-card__description {
   border-radius: 10px;
 }
 
-/* Fade out media that have no alt text */
-.layout-single-column .media-gallery__item-thumbnail::after,
-.layout-single-column .audio-player__canvas::after,
-.layout-single-column .video-player::after,
-.layout-single-column .media-gallery__gifv::after,
-.layout-single-column .media-gallery__preview::after {
-  align-items: center;
+.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt]))::after,
+.layout-single-column .video-player:has(> video:not([title]))::after,
+.layout-single-column .media-gallery__gifv:has(> video:not([title]))::after {
+  align-self: flex-end;
+  background-color: var(--color-bg-75);
+  border-radius: 10px;
+  bottom: 10px;
   color: var(--color-light-text);
-  content: 'Alt text missing';
+  content: 'No alt';
   display: flex;
-  font-size: var(--font-size-heading);
-  font-weight: var(--font-weight-bold);
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  opacity: .8;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.layout-single-column .media-gallery__item-thumbnail img:not([alt]),
-.layout-single-column .audio-player__canvas:not([title]),
-.layout-single-column .video-player video:not([title]),
-.layout-single-column .media-gallery__gifv video:not([title]) {
-  opacity: .5;
-  transition: opacity 200ms;
-}
-
-.layout-single-column .media-gallery__item-thumbnail img:not([alt]):hover,
-.layout-single-column .audio-player__canvas:not([title]):hover,
-.layout-single-column .video-player video:not([title]):hover,
-.layout-single-column .media-gallery__gifv video:not([title]):hover,
-.layout-single-column .media-gallery__item-thumbnail img:not([alt]):focus,
-.layout-single-column .audio-player__canvas:not([title]):focus,
-.layout-single-column .video-player video:not([title]):focus,
-.layout-single-column .media-gallery__gifv video:not([title]):focus {
+  font-size: 9px;
+  font-weight: 500;
+  height: 14px;
+  justify-self: flex-end;
+  left: auto;
+  line-height: 14px;
   opacity: 1;
+  padding: 3px 7px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: auto;
+  width: unset;
+  z-index: 3;
+}
+
+.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
+.layout-single-column .video-player:has(> video:not([title])):focus::after,
+.layout-single-column .media-gallery__gifv:has(> video:not([title])):focus::after,
+.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt])):hover::after,
+.layout-single-column .video-player:has(> video:not([title])):hover::after,
+.layout-single-column .media-gallery__gifv:has(> video:not([title])):hover::after {
+  background-color: var(--color-red);
 }
 
 /* More distinct focus color for accessibility, instead of just white */
