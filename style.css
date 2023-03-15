@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc4 */
+   1.2.1rc5 */
 
 /* CSS variables */
 :root {
@@ -1618,7 +1618,7 @@ a.status-card.compact .status-card__description {
   /* stylelint-disable-next-line */
   background-color: var(--color-brand-mastodon-links) !important;
   /* stylelint-disable-next-line */
-  border: 1px solid var(--color-brand-mastodon-links) !important;
+  border-color: var(--color-brand-mastodon-links) !important;
   /* stylelint-disable-next-line */
   color: var(--color-bg) !important;
 }
