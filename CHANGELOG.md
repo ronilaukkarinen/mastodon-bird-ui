@@ -1,6 +1,7 @@
-### 1.2.1rc1: 2023-03-15
+### 1.2.1rc2: 2023-03-15
 
 * Consistent position for no alt tag with other media tags
+* Hide footer buttons in modals
 
 ### 1.2.0: 2023-03-15
 

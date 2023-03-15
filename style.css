@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc1 */
+   1.2.1rc2 */
 
 /* CSS variables */
 :root {
@@ -117,13 +117,17 @@ body.layout-single-column {
 }
 
 /* Modal overlay */
-.modal-root__overlay,
 .layout-single-column .modal-root__overlay {
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   background-color: var(--color-modal-overlay) !important;
   /* stylelint-disable-next-line */
   color: var(--color-light-text) !important;
+}
+
+/* Hide footer buttons in modals */
+.layout-single-column .media-modal__overlay .picture-in-picture__footer {
+  display: none;
 }
 
 /* Modal buttons */
