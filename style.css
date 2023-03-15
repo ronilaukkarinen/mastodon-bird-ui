@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc6 */
+   1.2.1rc7 */
 
 /* CSS variables */
 :root {
@@ -981,16 +981,20 @@ a.status-card.compact .status-card__description {
 }
 
 /* Hack to show follow notification more minimal way */
+.layout-single-column .notification.notification-update .account__wrapper,
 .layout-single-column .notification.notification-follow .account__wrapper {
   position: relative;
 }
 
 /* Hack to show follow notification more minimal way */
 .layout-single-column .notification.notification-poll .display-name,
+.layout-single-column .notification.notification-update .display-name__html,
+.layout-single-column .notification.notification-update .display-name__account,
 .layout-single-column .notification.notification-follow .display-name__html {
   visibility: hidden;
 }
 
+.layout-single-column .notification.notification-update .account__avatar-wrapper,
 .layout-single-column .notification.notification-follow .account__avatar-wrapper,
 .layout-single-column .notification .account__avatar-overlay {
   left: calc(var(--size-avatar-small) + var(--gap-default) + 18px);
@@ -1012,6 +1016,7 @@ a.status-card.compact .status-card__description {
   padding-left: calc(var(--size-avatar) - 4px);
 }
 
+.layout-single-column .notification.notification.notification-update .account__display-name,
 .layout-single-column .notification.notification.notification-follow .account__display-name {
   display: inline-flex;
   gap: var(--gap-default);
@@ -1032,7 +1037,7 @@ a.status-card.compact .status-card__description {
   font-weight: 400;
 }
 
-/* Revert hack for notification admin message */
+/* Revert hack for notification admin message that has no avatar visible */
 .layout-single-column .notification-admin-report .notification__message > span {
   display: block;
   margin-top: calc(var(--size-avatar-small) + 4px);

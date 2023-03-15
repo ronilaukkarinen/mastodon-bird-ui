@@ -1,4 +1,4 @@
-### 1.2.1rc6: 2023-03-15
+### 1.2.1rc7: 2023-03-15
 
 * Consistent position for no alt tag with other media tags
 * Hide footer buttons in modals
@@ -6,6 +6,7 @@
 * Add compose history modal header to border color scope
 * Fix tertiary button border on hover
 * Fix styles for admin report notifications
+* Fix notification-update alignment
 
 ### 1.2.0: 2023-03-15
 
