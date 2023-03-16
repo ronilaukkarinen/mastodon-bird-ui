@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc9 */
+   1.2.1rc10 */
 
 /* CSS variables */
 :root {
@@ -975,7 +975,7 @@ a.status-card.compact .status-card__description {
   min-height: var(--size-avatar-small) !important;
   /* stylelint-disable-next-line */
   min-width: var(--size-avatar-small) !important;
-  position: unset;
+  position: absolute;
   /* stylelint-disable-next-line */
   width: var(--size-avatar-small) !important;
 }
@@ -989,6 +989,10 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification.notification-update .account__wrapper,
 .layout-single-column .notification.notification-follow .account__wrapper {
   position: relative;
+}
+
+.layout-single-column .notification.notification-admin-report .account__avatar-overlay-overlay {
+  top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default) + 4px));
 }
 
 /* Hack to show follow notification more minimal way */
