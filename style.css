@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc10 */
+   1.2.1rc12 */
 
 /* CSS variables */
 :root {
@@ -941,7 +941,7 @@ a.status-card.compact .status-card__description {
 /* Hack to display notification message title on one line */
 .layout-single-column .notification__message > span {
   display: block;
-  margin-top: calc(var(--size-avatar-small) + 4px);
+  margin-top: calc(var(--size-avatar-small) + 6px);
   overflow: visible;
 }
 
@@ -2505,4 +2505,10 @@ a.status-card.compact .status-card__description {
 .layout-single-column input:focus-visible {
   outline-color: var(--color-accent);
   outline-style: solid;
+}
+
+/* Hide boosted content from the explore tab */
+.layout-single-column .explore__search-header ~ .scrollable .item-list > article:has(.icon-button.active .fa-retweet) {
+  height: 0;
+  overflow: hidden;
 }
