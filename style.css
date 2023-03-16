@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1rc12 */
+   1.2.1rc13 */
 
 /* CSS variables */
 :root {
@@ -758,7 +758,8 @@ a.status-card.compact .status-card__description {
 .layout-single-column .status__action-bar,
 .layout-single-column .attachment-list,
 .layout-single-column .status__content__read-more-button,
-.layout-single-column .status .status__content {
+.layout-single-column .status .status__content,
+.layout-single-column .notification.notification-admin-sign-up .display-name__account {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
@@ -986,6 +987,7 @@ a.status-card.compact .status-card__description {
 
 /* Hack to show follow notification more minimal way */
 .layout-single-column .notification.notification-admin-report .notification__report,
+.layout-single-column .notification.notification-admin-sign-up .account__wrapper,
 .layout-single-column .notification.notification-update .account__wrapper,
 .layout-single-column .notification.notification-follow .account__wrapper {
   position: relative;
@@ -999,11 +1001,13 @@ a.status-card.compact .status-card__description {
 .layout-single-column .notification.notification-poll .display-name,
 .layout-single-column .notification.notification-update .display-name__html,
 .layout-single-column .notification.notification-update .display-name__account,
+.layout-single-column .notification.notification-admin-sign-up .display-name__html,
 .layout-single-column .notification.notification-follow .display-name__html {
   visibility: hidden;
 }
 
 .layout-single-column .notification.notification-update .account__avatar-wrapper,
+.layout-single-column .notification.notification-admin-sign-up .account__avatar-wrapper,
 .layout-single-column .notification.notification-follow .account__avatar-wrapper,
 .layout-single-column .notification .account__avatar-overlay {
   left: calc(var(--size-avatar-small) + var(--gap-default) + 18px);
