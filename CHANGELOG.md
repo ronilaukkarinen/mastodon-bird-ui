@@ -1,4 +1,4 @@
-### 1.2.1rc13: 2023-03-15
+### 1.2.1: 2023-03-17
 
 * Consistent position for no alt tag with other media tags
 * Hide footer buttons in modals
@@ -11,6 +11,7 @@
 * Hide already boosted posts on Expore tab
 * Fix follow notification avatar too close to text
 * Fix styles for admin sign up notifications (thanks [@koyu](https://koyu.space/@koyu))
+* Fix tertiary button hover border
 
 ### 1.2.0: 2023-03-15
 
