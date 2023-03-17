@@ -25,6 +25,8 @@ _Mastodon colors:_
 
 ![mementomori social_home (2)](https://user-images.githubusercontent.com/1534150/224481675-fa165053-30a4-4530-a2f4-ecc4ea08af4c.png)
 
+![mementomori social_@MarkRuffalo@mastodon social](https://user-images.githubusercontent.com/1534150/225982793-89843f18-e2e5-46bc-b265-138f8ed460ca.png)
+
 _Twitter colors (outdated screenshot since I just wanted to try it first):_
 
 ![mementomori social_notifications (3)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png)
