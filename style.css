@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.2rc2 */
+   1.2.2rc3 */
 
 /* CSS variables */
 :root {
@@ -265,7 +265,9 @@ a.status-card.compact .status-card__description {
   color: var(--color-dim);
 }
 
-/* Dark panels like modal boxes */
+/* Dark panels like modals and boxes */
+.layout-single-column .report-dialog-modal,
+.layout-single-column .report-modal__target,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions,
 .layout-single-column .privacy-dropdown__dropdown,
 .layout-single-column .drawer__backdrop,
@@ -320,6 +322,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Border colors */
+.layout-single-column .report-dialog-modal__container,
 .layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
 .layout-single-column .dropdown-menu__container__header,
 .layout-single-column .compare-history-modal .report-modal__target,
@@ -542,6 +545,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* White things */
+.layout-single-column .report-dialog-modal__lead,
 .layout-single-column .detailed-status__display-name strong,
 .layout-single-column .dismissable-banner__message,
 .layout-single-column .privacy-dropdown__option,

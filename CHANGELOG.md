@@ -1,7 +1,8 @@
-### 1.2.2rc2: 2023-03-18
+### 1.2.2rc3: 2023-03-18
 
 * Fix cancel button styles
 * Fix private message reply icon and alignment
+* Fix report/filter modal colors
 
 ### 1.2.1: 2023-03-17
 
