@@ -1,6 +1,7 @@
-### 1.2.2rc1: 2023-03-18
+### 1.2.2rc2: 2023-03-18
 
 * Fix cancel button styles
+* Fix private message reply icon and alignment
 
 ### 1.2.1: 2023-03-17
 
