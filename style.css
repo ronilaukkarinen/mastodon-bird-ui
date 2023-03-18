@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.1 */
+   1.2.2rc1 */
 
 /* CSS variables */
 :root {
@@ -44,10 +44,12 @@
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
   --color-gainsboro: #d9e1e8;
   --color-light-purple: #9baec8;
+  --color-dark-electric-blue: #576078;
 
   /* Font related */
   --font-size: 15px;
   --font-size-smaller: 13px;
+  --font-size-mid: 14px;
   --font-size-bigger: 17px;
   --font-size-heading: 20px;
   --font-weight-bold: 700;
@@ -390,11 +392,32 @@ a.status-card.compact .status-card__description {
 }
 
 /* Accented background colors */
-.react-toggle--checked .react-toggle-track,
+.layout-single-column .react-toggle--checked .react-toggle-track,
 .layout-single-column .language-dropdown__dropdown__results__item.active,
 .layout-single-column .icon-with-badge__badge,
 .layout-single-column .button {
   background-color: var(--color-accent);
+}
+
+.layout-single-column .block-modal__cancel-button,
+.layout-single-column .confirmation-modal__cancel-button,
+.layout-single-column .confirmation-modal__secondary-button,
+.layout-single-column .mute-modal__cancel-button {
+  background-color: transparent;
+  color: var(--color-dim);
+  font-size: var(--font-size-mid);
+}
+
+.layout-single-column .block-modal__cancel-button:focus,
+.layout-single-column .confirmation-modal__cancel-button:focus,
+.layout-single-column .confirmation-modal__secondary-button:focus,
+.layout-single-column .mute-modal__cancel-button:focus,
+.layout-single-column .block-modal__cancel-button:hover,
+.layout-single-column .confirmation-modal__cancel-button:hover,
+.layout-single-column .confirmation-modal__secondary-button:hover,
+.layout-single-column .mute-modal__cancel-button:hover {
+  background-color: transparent;
+  color: var(--color-dark-electric-blue);
 }
 
 .column-link--transparent .icon-with-badge__badge,
@@ -604,7 +627,7 @@ a.status-card.compact .status-card__description {
 
 /* Visibility icon */
 .layout-single-column .status .status__visibility-icon {
-  font-size: 14px;
+  font-size: var(--font-size-mid);
 }
 
 /* Panels and things that should be transparent */

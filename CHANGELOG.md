@@ -1,3 +1,7 @@
+### 1.2.2rc1: 2023-03-18
+
+* Fix cancel button styles
+
 ### 1.2.1: 2023-03-17
 
 * Consistent position for no alt tag with other media tags
