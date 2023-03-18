@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.2rc3 */
+   1.2.2rc4 */
 
 /* CSS variables */
 :root {
@@ -1109,6 +1109,7 @@ a.status-card.compact .status-card__description {
 
 .columns-area__panels__pane--navigational .navigation-panel {
   border: 0;
+  height: 100%;
 }
 
 /* Hide scrollbars for .navigation-panel */
