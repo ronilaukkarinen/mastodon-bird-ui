@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc3 */
+   1.2.3rc4 */
 
 /* CSS variables */
 :root {
@@ -2528,12 +2528,6 @@ a.status-card.compact .status-card__description {
   transform: translateX(-6px);
 }
 
-@keyframes heart-animate {
-  100% {
-    background-position: -2800px;
-  }
-}
-
 /* Add border radius to media */
 .layout-single-column .media-gallery__item-thumbnail img,
 .layout-single-column .audio-player,
@@ -2585,8 +2579,9 @@ a.status-card.compact .status-card__description {
   outline-style: solid;
 }
 
-/* Hide boosted content from the explore tab */
-.layout-single-column .explore__search-header ~ .scrollable .item-list > article:has(.icon-button.active .fa-retweet) {
-  height: 0;
-  overflow: hidden;
+/* Animations */
+@keyframes heart-animate {
+  100% {
+    background-position: -2800px;
+  }
 }
