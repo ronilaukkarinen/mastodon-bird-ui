@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc1 */
+   1.2.3rc2 */
 
 /* CSS variables */
 :root {
@@ -1776,6 +1776,11 @@ a.status-card.compact .status-card__description {
     /* It's inlined so we have to use !important */
     /* stylelint-disable-next-line */
     width: auto !important;
+  }
+
+  /* Fix list links if they are too short */
+  .layout-single-column .list-panel .column-link {
+    margin-right: 50%;
   }
 }
 
