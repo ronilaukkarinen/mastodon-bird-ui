@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc5 */
+   1.2.3rc6 */
 
 /* CSS variables */
 :root {
@@ -2453,19 +2453,6 @@ a.status-card.compact .status-card__description {
 /* Retweet animation */
 /* stylelint-disable-next-line selector-not-notation */
 .layout-single-column.no-reduce-motion .icon-button.active:not([aria-label="Unboost"]):not([aria-label="Peru tehostus"]) .fa-retweet {
-  /* stylelint-disable-next-line */
-  animation: spring-rotate-in 1s linear;
-}
-
-/* Boost icon fix when re-boosting on mobile */
-/* stylelint-disable-next-line selector-not-notation */
-.layout-single-column .icon-button.active:hover .fa-retweet,
-.layout-single-column .icon-button.active:focus .fa-retweet {
-  /* Change the fill in this manually if you want to change colors */
-  background-image: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='18' height='18' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23717c9b' d='M6 4h15a1 1 0 0 1 1 1v7h-2V6H6v3L1 5l5-4v3zm12 16H3a1 1 0 0 1-1-1v-7h2v6h14v-3l5 4l-5 4v-3z'/%3E%3C/svg%3E");
-}
-
-.layout-single-column.no-reduce-motion .icon-button:focus .fa-retweet {
   /* stylelint-disable-next-line */
   animation: spring-rotate-in 1s linear;
 }
