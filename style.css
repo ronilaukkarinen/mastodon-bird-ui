@@ -793,7 +793,6 @@ a.status-card.compact .status-card__description {
 
 /* Translate link */
 .layout-single-column .translate ~ .status__content__read-more-button {
-  font-size: var(--font-size-smaller);
   padding-left: 0;
 }
 
