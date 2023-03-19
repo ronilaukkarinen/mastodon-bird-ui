@@ -47,6 +47,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Action bar in the bottom on mobile
 - Birdsite-like like animation in the heart icon
 - Circling boost animation
+- Support for RTL languages
 
 ## Installation for Mastodon instance admins
 

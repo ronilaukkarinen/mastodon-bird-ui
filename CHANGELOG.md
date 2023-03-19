@@ -1,9 +1,10 @@
-### 1.2.2rc4: 2023-03-18
+### 1.2.2: 2023-03-19
 
 * Fix cancel button styles
 * Fix private message reply icon and alignment
 * Fix report/filter modal colors
 * Remove gap at the end of navigation panel
+* Fix translate link styles
 
 ### 1.2.1: 2023-03-17
 
