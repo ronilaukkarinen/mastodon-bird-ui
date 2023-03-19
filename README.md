@@ -63,6 +63,17 @@ If you like bigger link previews, please implement [this](https://github.com/mas
 
 Edit [this line](https://github.com/mastodon/mastodon/blob/f4f3e2b46e619fcc2eda48c2eb66c517b4f466aa/app/views/layouts/application.html.haml#L24) and recompile assets with `yarn build:production`.
 
+### Hide translate link for multiple languages
+
+If you're a polyglot like me, you can hide the translate link on other languages than default by adding this at the end of the Custom CSS (this example is for people who understand Finnish and German):
+
+```css
+.status__content__text[lang="de"].translate + .status__content__read-more-button,
+.status__content__text[lang="fi"].translate + .status__content__read-more-button {
+  display: none;
+}
+```
+
 ## Installation for regular users, contributing and testing
 
 1. Install [live-css-editor](https://github.com/webextensions/live-css-editor) (or any other extension that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
