@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc2 */
+   1.2.3rc3 */
 
 /* CSS variables */
 :root {
@@ -784,6 +784,7 @@ a.status-card.compact .status-card__description {
 /* Status update tinted to right */
 .layout-single-column .status__action-bar,
 .layout-single-column .attachment-list,
+.layout-single-column .status__content__read-more-button,
 .layout-single-column .status .status__content,
 .layout-single-column .notification.notification-admin-sign-up .display-name__account {
   font-size: var(--font-size);
@@ -791,7 +792,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Translate link */
-.layout-single-column .status__content__read-more-button {
+.layout-single-column .translate ~ .status__content__read-more-button {
   font-size: var(--font-size-smaller);
   padding-left: 0;
 }

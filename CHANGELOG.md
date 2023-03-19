@@ -1,7 +1,8 @@
-### 1.2.3rc2: 2023-03-19
+### 1.2.3rc3: 2023-03-19
 
 * Fix bookmark button styles on mobile when focusing on the button
 * Fix list links on desktop if they are too short
+* Fix read more button alongside translate button
 
 ### 1.2.2: 2023-03-19
 
