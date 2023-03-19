@@ -68,8 +68,8 @@ Edit [this line](https://github.com/mastodon/mastodon/blob/f4f3e2b46e619fcc2eda4
 If you're a polyglot like me, you can hide the translate link on other languages than default by adding this at the end of the Custom CSS (this example is for people who understand Finnish and German):
 
 ```css
-.status__content__text[lang="de"].translate + .status__content__read-more-button,
-.status__content__text[lang="fi"].translate + .status__content__read-more-button {
+.status__content__text[lang="de"].translate ~ .status__content__read-more-button,
+.status__content__text[lang="fi"].translate ~ .status__content__read-more-button {
   display: none;
 }
 ```

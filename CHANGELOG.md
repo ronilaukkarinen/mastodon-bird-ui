@@ -1,3 +1,7 @@
+### 1.2.3rc1: 2023-03-19
+
+* Fix bookmark button styles on mobile when focusing on the button
+
 ### 1.2.2: 2023-03-19
 
 * Fix cancel button styles
