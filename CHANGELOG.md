@@ -1,7 +1,8 @@
-### 1.2.5rc1: 2023-03-23
+### 1.2.5rc2: 2023-03-23
 
 * Remove language-dropdown__dropdown box-shadow
 * Fix language-dropdown__dropdown background color
+* Fix compose poll styles
 
 ### 1.2.4: 2023-03-23
 

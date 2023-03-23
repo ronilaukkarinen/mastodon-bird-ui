@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.5rc1 */
+   1.2.5rc2 */
 
 /* CSS variables */
 :root {
@@ -339,6 +339,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Border colors */
+.layout-single-column .poll__footer,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option,
 .layout-single-column .account,
 .layout-single-column .report-dialog-modal__container,
@@ -354,6 +355,7 @@ a.status-card.compact .status-card__host {
 .layout-single-column .media-gallery,
 .layout-single-column .compose-form .spoiler-input__input,
 .layout-single-column .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form__poll-wrapper,
 .layout-single-column .compose-form__poll-wrapper select,
 .layout-single-column .poll__option input[type="text"],
 .layout-single-column .report-dialog-modal__textarea,
@@ -563,6 +565,7 @@ body.embed .status__content a,
 }
 
 /* White things */
+.layout-single-column .compose-form__poll-wrapper select,
 .layout-single-column .actions-modal ul li:not(:empty) a,
 .layout-single-column .report-dialog-modal .status__content,
 .report-dialog-modal .status__content p,
@@ -657,6 +660,8 @@ body.embed .status__content a,
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .compose-form__poll-wrapper select,
+.layout-single-column .poll__option input[type="text"],
 .layout-single-column .language-dropdown__dropdown,
 body.embed .activity-stream .entry,
 .layout-single-column .report-dialog-modal__textarea,
@@ -789,7 +794,8 @@ body.embed .detailed-status,
   color: var(--color-dim);
 }
 
-/* Search panel that opens when focusing Saerch or paste URL field */
+/* Search panel that opens when focusing Search or paste URL field */
+.layout-single-column .compose-form__poll-wrapper option,
 .layout-single-column .search-popout {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
