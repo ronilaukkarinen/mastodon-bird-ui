@@ -1,7 +1,7 @@
-### 1.2.4rc2: 2023-03-23
+### 1.2.4: 2023-03-23
 
-* Embed styles
-* Make outside embeds more modern looking
+* Dark colors for search popout
+* Full width search popout on mobile
 
 ### 1.2.3: 2023-03-23
 

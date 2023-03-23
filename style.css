@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.4rc2 */
+   1.2.4 */
 
 /* CSS variables */
 :root {
@@ -73,6 +73,19 @@
   /* Hide scrollbar on mobile, since we can't pick the handle anyway */
   .layout-single-column::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Full width search popout on mobile */
+  .layout-single-column div:has(.search-popout) {
+
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    max-width: calc(100% - 30px) !important;
+    transform: translateX(15px);
+
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    width: calc(100% - 30px) !important;
   }
 }
 
@@ -314,6 +327,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* More subtle box-shadow for dropdown-menu */
+.layout-single-column .search-popout,
 .layout-single-column .dropdown-menu {
   box-shadow: 2px 4px 16px rgb(0 0 0 / .01);
 }
@@ -468,6 +482,7 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .search-popout > h4,
 .layout-single-column .status-check-box__status .detailed-status__display-name,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text,
 .layout-single-column .status-card .status-card__description,
@@ -769,6 +784,17 @@ body.embed .detailed-status,
 .layout-single-column a.status-card .status-card__description,
 .layout-single-column a.status-card.compact .status-card__description {
   color: var(--color-dim);
+}
+
+/* Search panel that opens when focusing Saerch or paste URL field */
+.layout-single-column .search-popout {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+.layout-single-column .search-popout em {
+  color: var(--color-light-text);
 }
 
 /* URL preview card box */
@@ -1420,6 +1446,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   text-transform: unset;
 }
 
+.layout-single-column h4,
+.layout-single-column .search-popout h4,
 .layout-single-column .server-banner h4 {
   text-transform: unset;
 }
