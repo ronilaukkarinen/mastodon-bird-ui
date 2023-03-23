@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.4 */
+   1.2.5rc1 */
 
 /* CSS variables */
 :root {
@@ -333,6 +333,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Autosuggest box shadow reset */
+.layout-single-column .language-dropdown__dropdown,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions {
   box-shadow: none;
 }
@@ -656,6 +657,7 @@ body.embed .status__content a,
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .language-dropdown__dropdown,
 body.embed .activity-stream .entry,
 .layout-single-column .report-dialog-modal__textarea,
 .layout-single-column .drawer__inner,

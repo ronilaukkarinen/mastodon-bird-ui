@@ -1,3 +1,8 @@
+### 1.2.5rc1: 2023-03-23
+
+* Remove language-dropdown__dropdown box-shadow
+* Fix language-dropdown__dropdown background color
+
 ### 1.2.4: 2023-03-23
 
 * Dark colors for search popout
