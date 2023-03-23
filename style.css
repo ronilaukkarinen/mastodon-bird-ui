@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc8 */
+   1.2.3 */
 
 /* CSS variables */
 :root {
@@ -132,6 +132,12 @@ body.layout-single-column {
   display: none;
 }
 
+/* Report modal */
+.layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text {
+  display: grid;
+  gap: 6px;
+}
+
 /* Modal buttons */
 .layout-single-column .media-modal__navigation button,
 .layout-single-column .image-loader button {
@@ -260,11 +266,6 @@ a.status-card.compact .status-card__host {
   margin-top: 0;
 }
 
-a.status-card .status-card__description,
-a.status-card.compact .status-card__description {
-  color: var(--color-dim);
-}
-
 /* Dark panels like modals and boxes */
 .layout-single-column .report-dialog-modal,
 .layout-single-column .report-modal__target,
@@ -322,6 +323,8 @@ a.status-card.compact .status-card__description {
 }
 
 /* Border colors */
+.layout-single-column .report-dialog-modal .poll__option.dialog-option,
+.layout-single-column .account,
 .layout-single-column .report-dialog-modal__container,
 .layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
 .layout-single-column .dropdown-menu__container__header,
@@ -463,6 +466,11 @@ a.status-card.compact .status-card__description {
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .status-check-box__status .detailed-status__display-name,
+.layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text,
+.layout-single-column .status-card .status-card__description,
+.layout-single-column .status-card.compact .status-card__description,
+.layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .dropdown-menu__container__header,
 .layout-single-column .sign-in-banner p,
 .layout-single-column .navigation-bar > a,
@@ -517,13 +525,8 @@ a.status-card.compact .status-card__description {
   background-color: var(--color-dim);
 }
 
-/* Border colors */
-.layout-single-column .account,
-.layout-single-column .status {
-  border-color: var(--color-border);
-}
-
 /* Lighter border colors */
+.layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .poll__input {
   border-color: var(--color-brand-mastodon-text-light);
 }
@@ -542,6 +545,9 @@ a.status-card.compact .status-card__description {
 }
 
 /* White things */
+.layout-single-column .report-dialog-modal .status__content,
+.report-dialog-modal .status__content p,
+.layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text strong,
 .layout-single-column .report-dialog-modal__lead,
 .layout-single-column .detailed-status__display-name strong,
 .layout-single-column .dismissable-banner__message,
@@ -632,6 +638,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .report-dialog-modal__textarea,
 .layout-single-column .drawer__inner,
 .layout-single-column .column-inline-form,
 .layout-single-column .scrollable .account-card,
@@ -1306,11 +1313,14 @@ a.status-card.compact .status-card__description {
   font-size: var(--font-size-smaller);
 }
 
+.layout-single-column .report-dialog-modal__textarea::placeholder,
 .layout-single-column .emoji-mart-search > input::placeholder {
   color: var(--color-dim);
   opacity: 1;
 }
 
+.layout-single-column .report-dialog-modal__textarea,
+.layout-single-column .report-dialog-modal__textarea:focus,
 .layout-single-column .emoji-mart-search > input:focus {
   color: var(--color-light-text);
 }
@@ -1663,6 +1673,7 @@ a.status-card.compact .status-card__description {
 }
 
 /* Compose hover and focus fix */
+.layout-single-column .report-dialog-modal__actions .button:hover,
 .layout-single-column .server-banner .button,
 .layout-single-column .sign-in-banner .button,
 .layout-single-column .ui__header__links .button,
