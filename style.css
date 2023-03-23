@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3rc7 */
+   1.2.3rc8 */
 
 /* CSS variables */
 :root {
@@ -458,12 +458,9 @@ a.status-card.compact .status-card__description {
   background-color: var(--color-dark);
 }
 
-.layout-single-column .notification:hover ..notification__message {
+.layout-single-column .notification:hover .notification__message {
   background-color: transparent;
 }
-
-.layout-single-column .notification.unread,
-.layout-single-column .status__wrapper.unread
 
 /* Things like notification status update text that should be dim */
 .layout-single-column .dropdown-menu__container__header,

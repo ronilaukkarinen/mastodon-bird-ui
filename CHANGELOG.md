@@ -1,10 +1,11 @@
-### 1.2.3rc7: 2023-03-19
+### 1.2.3rc8: 2023-03-19
 
 * Fix bookmark button styles on mobile when focusing on the button
 * Fix list links on desktop if they are too short
 * Fix read more button alongside translate button
 * Revert already boosted content hiding on Explore tab
 * Fix boost icon fix when re-boosting on mobile
+* Fix mistakes in the CSS, double dots and other mistakes
 
 ### 1.2.2: 2023-03-19
 
