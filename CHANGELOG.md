@@ -1,3 +1,7 @@
+### 1.2.4rc1: 2023-03-23
+
+* Embed styles
+
 ### 1.2.3: 2023-03-23
 
 * Fix bookmark button styles on mobile when focusing on the button

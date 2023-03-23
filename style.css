@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.3 */
+   1.2.4rc1 */
 
 /* CSS variables */
 :root {
@@ -76,6 +76,7 @@
   }
 }
 
+body.embed,
 body.layout-single-column {
   background-color: var(--color-bg);
   color: var(--color-fg);
@@ -391,6 +392,7 @@ a.status-card.compact .status-card__host {
 .layout-single-column .status__content a.unhandled-link,
 .layout-single-column .column-header > .column-header__back-button,
 .layout-single-column .reply-indicator__content a,
+body.embed .status__content a,
 .layout-single-column .status__content a,
 .layout-single-column .column-link--transparent.active,
 .layout-single-column .status__content__read-more-button {
@@ -638,6 +640,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Panels and things that should be transparent */
+body.embed .activity-stream .entry,
 .layout-single-column .report-dialog-modal__textarea,
 .layout-single-column .drawer__inner,
 .layout-single-column .column-inline-form,
@@ -664,6 +667,7 @@ a.status-card.compact .status-card__host {
 .layout-single-column .notification__filter-bar,
 .layout-single-column .tabs-bar__wrapper,
 .layout-single-column .column-header,
+body.embed .detailed-status,
 .layout-single-column .detailed-status,
 .layout-single-column .detailed-status__action-bar,
 .layout-single-column .column > .scrollable {
@@ -844,11 +848,18 @@ a.status-card.compact .status-card__host {
   font-size: var(--font-size-bigger);
 }
 
+body.embed .detailed-status__meta,
 .layout-single-column .detailed-status__meta {
   color: var(--color-dim);
   font-size: var(--font-size);
 }
 
+body.embed .detailed-status__meta {
+  line-height: 1.5;
+}
+
+body.embed .detailed-status__reblogs,
+body.embed .detailed-status__favorites,
 .layout-single-column .detailed-status__favorites,
 .layout-single-column .detailed-status__reblogs {
   display: inline-flex;
@@ -856,23 +867,39 @@ a.status-card.compact .status-card__host {
   gap: 4px;
 }
 
+body.embed .detailed-status__meta .animated-number,
 .layout-single-column .detailed-status__meta .animated-number {
   color: var(--color-light-text);
   font-weight: var(--font-weight-bold);
 }
 
+body.embed .detailed-status__reblogs,
 .layout-single-column .detailed-status__reblogs {
   font-size: var(--font-size);
 }
 
+body.embed .detailed-status__reblogs,
+body.embed .detailed-status__favorites {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+body.embed .detailed-status__reblogs::after,
 .layout-single-column .detailed-status__reblogs::after {
+  color: var(--color-dim);
   content: 'Boosts';
+  font-weight: 500;
 }
 
+body.embed .detailed-status__favorites::after,
 .layout-single-column .detailed-status__favorites::after {
+  color: var(--color-dim);
   content: 'Favourites';
+  font-weight: 500;
 }
 
+body.embed .detailed-status__meta .detailed-status__link .fa-star,
+body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .detailed-status__meta .detailed-status__link .fa-star,
 .layout-single-column .detailed-status__meta .detailed-status__link .fa-retweet {
   display: none;
@@ -1252,7 +1279,7 @@ a.status-card.compact .status-card__host {
   font-size: 24px;
 }
 
-/* Follow/unfollow button in notifications */
+/* Follow/unfollow button */
 .layout-single-column .account__relationship .icon-button,
 .layout-single-column .notification .account__relationship .icon-button {
   background-color: transparent;
@@ -1468,6 +1495,8 @@ a.status-card.compact .status-card__host {
   width: 133.5px;
 }
 
+/* Follow/unfollow button */
+body.embed .button.logo-button,
 .layout-single-column .notification__report__actions .button,
 .layout-single-column .column-inline-form button,
 .layout-single-column .explore__suggestions .account-card__actions__button button,
@@ -1500,6 +1529,7 @@ a.status-card.compact .status-card__host {
   justify-content: center;
 }
 
+body.embed .button.logo-button:hover,
 .layout-single-column .column-inline-form button:hover,
 .layout-single-column .explore__suggestions .account-card__actions__button button:hover,
 .layout-single-column .account__header__tabs__buttons .icon-button.active {
