@@ -562,6 +562,7 @@ body.embed .status__content a,
 }
 
 /* White things */
+.layout-single-column .actions-modal ul li:not(:empty) a,
 .layout-single-column .report-dialog-modal .status__content,
 .report-dialog-modal .status__content p,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text strong,

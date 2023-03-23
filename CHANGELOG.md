@@ -2,6 +2,8 @@
 
 * Dark colors for search popout
 * Full width search popout on mobile
+* General heading improvements
+* Fix actions-modal selection colors
 
 ### 1.2.3: 2023-03-23
 
