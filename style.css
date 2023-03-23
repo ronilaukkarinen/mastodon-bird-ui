@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.4rc1 */
+   1.2.4rc2 */
 
 /* CSS variables */
 :root {
@@ -2622,4 +2622,15 @@ body.embed .button.logo-button:hover,
   100% {
     background-position: -2800px;
   }
+}
+
+/* Embeds outside Mastodon */
+body.embed .entry .detailed-status {
+  backface-visibility: hidden;
+  background-color: #00000059;
+
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  border-radius: 10px !important;
+  overflow: hidden;
 }
