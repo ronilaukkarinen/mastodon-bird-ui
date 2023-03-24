@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.5rc3 */
+   1.2.5 */
 
 /* CSS variables */
 :root {
@@ -281,7 +281,18 @@ a.status-card.compact .status-card__host {
   margin-top: 0;
 }
 
+/* Announcements */
+.layout-single-column .announcements__pagination .fa,
+.layout-single-column .announcements__pagination {
+  color: var(--color-dim);
+}
+
+.layout-single-column .announcements__pagination .icon-button:hover i {
+  color: var(--color-light-purple);
+}
+
 /* Dark panels like modals and boxes */
+.layout-single-column .announcements,
 .layout-single-column .report-dialog-modal,
 .layout-single-column .report-modal__target,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions,
