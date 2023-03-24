@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.5 */
+   1.2.6rc1 */
 
 /* CSS variables */
 :root {
@@ -1783,6 +1783,13 @@ body.embed .button.logo-button:hover,
   background-color: transparent !important;
   /* stylelint-disable-next-line */
   border: 1px solid var(--color-accent-dark) !important;
+  padding: 6px 17px;
+}
+
+/* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
+.layout-single-column .button.button-tertiary:hover,
+.layout-single-column .button.button-tertiary:focus {
+  padding: 6px 17px;
 }
 
 .layout-single-column .button.button-tertiary:active,

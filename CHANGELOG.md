@@ -1,3 +1,7 @@
+### 1.2.6rc1: 2023-03-24
+
+* Fix weird padding bug on button-tertiary hover
+
 ### 1.2.5: 2023-03-24
 
 * Remove language-dropdown__dropdown box-shadow
