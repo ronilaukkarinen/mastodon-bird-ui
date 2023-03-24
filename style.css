@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.5rc2 */
+   1.2.5rc3 */
 
 /* CSS variables */
 :root {
@@ -77,11 +77,12 @@
 
   /* Full width search popout on mobile */
   .layout-single-column div:has(.search-popout) {
+    left: 15px;
+    position: relative;
 
     /* It's inlined so we have to use !important */
     /* stylelint-disable-next-line */
     max-width: calc(100% - 30px) !important;
-    transform: translateX(15px);
 
     /* It's inlined so we have to use !important */
     /* stylelint-disable-next-line */
