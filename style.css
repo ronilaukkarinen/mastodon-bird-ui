@@ -345,6 +345,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Autosuggest box shadow reset */
+.layout-single-column .privacy-dropdown__dropdown,
 .layout-single-column .language-dropdown__dropdown,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions {
   box-shadow: none;

@@ -1,6 +1,7 @@
 ### 1.2.5: 2023-03-24
 
 * Remove language-dropdown__dropdown box-shadow
+* Remove privacy-dropdown__dropdown box-shadow
 * Fix language-dropdown__dropdown background color
 * Fix compose poll styles
 * Fix search popout glitch on mobile
