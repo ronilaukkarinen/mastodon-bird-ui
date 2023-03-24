@@ -44,7 +44,6 @@
     "comment-whitespace-inside": "always",
     "selector-max-specificity": "0,7,7",
     "block-no-empty": true,
-    "max-line-length": null,
     "declaration-empty-line-before": null,
     "font-family-no-missing-generic-family-keyword": true,
     "font-family-name-quotes": "always-where-required",

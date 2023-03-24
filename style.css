@@ -1786,12 +1786,6 @@ body.embed .button.logo-button:hover,
   padding: 6px 17px;
 }
 
-/* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
-.layout-single-column .button.button-tertiary:hover,
-.layout-single-column .button.button-tertiary:focus {
-  padding: 6px 17px;
-}
-
 .layout-single-column .button.button-tertiary:active,
 .layout-single-column .button.button-tertiary:focus,
 .layout-single-column .button.button-tertiary:hover {
@@ -1821,6 +1815,9 @@ body.embed .button.logo-button:hover,
   border-color: var(--color-brand-mastodon-links) !important;
   /* stylelint-disable-next-line */
   color: var(--color-bg) !important;
+
+    /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
+    padding: 6px 17px;
 }
 
 /* Smaller icon for back button */
