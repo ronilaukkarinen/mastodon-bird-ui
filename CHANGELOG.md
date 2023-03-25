@@ -4,6 +4,8 @@
 * Fix shadow in privacy-dropdown__value
 * Add icons to CSS variables for easier customization
 * Add other found colors to the color var scopes
+* Fix content warning tag color
+* Fix focusable toot color
 
 ### 1.2.6: 2023-03-25
 
