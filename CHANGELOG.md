@@ -1,7 +1,8 @@
-### 1.2.6rc2: 2023-03-24
+### 1.2.6rc3: 2023-03-24
 
 * Fix weird padding bug on button-tertiary hover
 * Respect the user's choice to use light theme
+* Stylelint: Update specificity rules
 
 ### 1.2.5: 2023-03-24
 
