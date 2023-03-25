@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.6rc3 */
+   1.2.6 */
 
 /* CSS variables */
 :root {
@@ -292,6 +292,8 @@ a.status-card.compact .status-card__host {
 }
 
 /* Dark panels like modals and boxes */
+.layout-single-column.theme-default .about__meta,
+.layout-single-column.theme-default .about__section__title,
 .layout-single-column.theme-default .announcements,
 .layout-single-column.theme-default .report-dialog-modal,
 .layout-single-column.theme-default .report-modal__target,
@@ -352,6 +354,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Border colors */
+.layout-single-column.theme-default .about__meta__divider,
 .layout-single-column.theme-default .poll__footer,
 .layout-single-column.theme-default .report-dialog-modal .poll__option.dialog-option,
 .layout-single-column.theme-default .account,
@@ -409,8 +412,8 @@ a.status-card.compact .status-card__host {
 }
 
 /* Accented items like links */
-.about__section__title,
-.account__header__bio .account__header__fields a,
+.layout-single-column.theme-default .about__section__title,
+.layout-single-column.theme-default .account__header__bio .account__header__fields a,
 .layout-single-column.theme-default .column-back-button,
 .layout-single-column.theme-default .emoji-mart-anchor.emoji-mart-anchor-selected,
 .layout-single-column.theme-default .text-icon-button.active,
