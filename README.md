@@ -41,9 +41,8 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ## Installation for Mastodon instance admins
 
-1. Make sure _Mastodon (Dark)_ is enabled in the **Site theme** setting
-2. Copy the contents of style.css
-3. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
+1. Copy the contents of style.css
+2. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
 
 ### Twitter-like link previews
 
