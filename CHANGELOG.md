@@ -1,3 +1,10 @@
+### 1.2.7: 2023-03-26
+
+* Light theme
+* Fix shadow in privacy-dropdown__value
+* Add icons to CSS variables for easier customization
+* Add other found colors to the color var scopes
+
 ### 1.2.6: 2023-03-25
 
 * Fix weird padding bug on button-tertiary hover
