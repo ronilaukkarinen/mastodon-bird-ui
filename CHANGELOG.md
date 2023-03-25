@@ -1,3 +1,7 @@
+### 1.2.8rc: 2023-03-26
+
+* Fix button-tertiary color on light theme
+
 ### 1.2.7: 2023-03-26
 
 * Light theme

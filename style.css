@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.7 */
+   1.2.8rc1 */
 
 /* CSS variables */
 :root {
@@ -46,6 +46,7 @@
   --color-light-purple: #9baec8;
   --color-dark-electric-blue: #576078;
   --color-button-text: #f7f9f9;
+  --color-ghost-button-text: var(--color-button-text);
 
   /* Font related */
   --font-size: 15px;
@@ -142,6 +143,7 @@ body.theme-mastodon-light.layout-single-column {
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
   --color-accent: var(--color-accent-dark);
+  --color-ghost-button-text: var(--color-accent-dark);
 
   /* Icons for light theme */
   --icon-boost: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='18' height='18' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23717c9b' d='M6 4h15a1 1 0 0 1 1 1v7h-2V6H6v3L1 5l5-4v3zm12 16H3a1 1 0 0 1-1-1v-7h2v6h14v-3l5 4l-5 4v-3z'/%3E%3C/svg%3E");
@@ -1917,6 +1919,7 @@ body.embed .button.logo-button:hover,
   background-color: transparent !important;
   /* stylelint-disable-next-line */
   border: 1px solid var(--color-accent-dark) !important;
+  color: var(--color-ghost-button-text);
   padding: 6px 17px;
 }
 
