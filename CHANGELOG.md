@@ -1,6 +1,7 @@
-### 1.2.6rc1: 2023-03-24
+### 1.2.6rc2: 2023-03-24
 
 * Fix weird padding bug on button-tertiary hover
+* Respect the user's choice to use light theme
 
 ### 1.2.5: 2023-03-24
 
