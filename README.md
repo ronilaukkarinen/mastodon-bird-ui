@@ -21,11 +21,19 @@ _Mobile:_
 
 ![224368120-5f7bddc9-1702-4279-b297-35a4829e8a3b](https://user-images.githubusercontent.com/1534150/225091661-004080da-58c6-4f66-8d1a-9510cf656980.png)
 
+![mastodon-bird-ui-dark-light](https://user-images.githubusercontent.com/1534150/227730434-8a649484-d46c-4b5a-8137-930a302e54d8.png)
+
+![light-mastodon-bird-ui](https://user-images.githubusercontent.com/1534150/227730439-f4408917-f92f-4424-a3c6-35169af967bd.jpg)
+
 _Mastodon colors:_
 
 ![mementomori social_home (2)](https://user-images.githubusercontent.com/1534150/224481675-fa165053-30a4-4530-a2f4-ecc4ea08af4c.png)
 
 ![mementomori social_@MarkRuffalo@mastodon social](https://user-images.githubusercontent.com/1534150/225982793-89843f18-e2e5-46bc-b265-138f8ed460ca.png)
+
+_Light version:_
+
+![mementomori social_home (2)](https://user-images.githubusercontent.com/1534150/227730450-c1b82e2c-8ab3-4474-84fc-b9d3422cdc8d.png)
 
 _Twitter colors (outdated screenshot since I just wanted to try it first):_
 
@@ -35,7 +43,7 @@ _Twitter colors (outdated screenshot since I just wanted to try it first):_
 
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
-- Hide already boosted posts on Expore tab
+- Respects the profile **Site theme** setting and sets dark/light based on this alone
 - Missing alt text indicators (faded with "Alt text missing" text in the center)
 - Subtle deep purple ribbon in the right corner for private messages
 - CSS variables for everything
