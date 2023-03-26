@@ -1,6 +1,8 @@
-### 1.2.9rc1: 2023-03-26
+### 1.2.9rc2: 2023-03-26
 
 * Change font stack to CSS variable
+* Add verified color as variable
+* Fix verified colors in profile
 
 ### 1.2.8: 2023-03-26
 

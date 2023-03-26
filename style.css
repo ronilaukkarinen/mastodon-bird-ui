@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.9rc1 */
+   1.2.9rc2 */
 
 /* CSS variables */
 :root {
@@ -47,6 +47,7 @@
   --color-dark-electric-blue: #576078;
   --color-button-text: #f7f9f9;
   --color-ghost-button-text: var(--color-button-text);
+  --color-verified: #79bd9a;
 
   /* Font related */
   --font-stack: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -2781,4 +2782,12 @@ body.embed .entry .detailed-status {
   /* stylelint-disable-next-line */
   border-radius: 10px !important;
   overflow: hidden;
+}
+
+/* Verified */
+.layout-single-column .account__header__fields .verified a,
+.layout-single-column .account__header__bio .account__header__fields .verified a,
+.layout-single-column .account__header__bio .account__header__fields .verified dd,
+.layout-single-column .account__header__bio .account__header__fields .verified dt {
+  color: var(--color-verified);
 }
