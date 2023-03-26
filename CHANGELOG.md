@@ -1,3 +1,8 @@
+### 1.3.0rc1: 2023-03-26
+
+* Add compose form warning to the CSS var scope
+* Remove shadow from compose form warning
+
 ### 1.2.9: 2023-03-26
 
 * Change font stack to CSS variable
@@ -131,7 +136,7 @@
 
 * Add consistent notification filter bar icons
 * Add text icons to dim color scope
-* Add composer button border-radius
+* Add compose button border-radius
 * Fix active boost animation
 * Simplify the hover and focus shade
 

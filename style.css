@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.9 */
+   1.3.0rc1 */
 
 /* CSS variables */
 :root {
@@ -481,11 +481,18 @@ a.status-card.compact .status-card__host {
 }
 
 /* Autosuggest box shadow reset */
+.layout-single-column .compose-form .compose-form__warning,
 .layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
 .layout-single-column .privacy-dropdown__dropdown,
 .layout-single-column .language-dropdown__dropdown,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions {
   box-shadow: none;
+}
+
+/* Composer form warnings */
+.layout-single-column .compose-form .compose-form__warning {
+  background-color: var(--color-light-purple);
+  color: var(--color-bg);
 }
 
 /* Border colors */
