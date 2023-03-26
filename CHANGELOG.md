@@ -1,3 +1,7 @@
+### 1.2.9rc1: 2023-03-26
+
+* Change font stack to CSS variable
+
 ### 1.2.8: 2023-03-26
 
 * Fix button-tertiary color on light theme

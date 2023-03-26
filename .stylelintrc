@@ -71,12 +71,7 @@
     "no-unknown-animations": true,
     "shorthand-property-no-redundant-values": true,
     "declaration-block-single-line-max-declarations": 1,
-    "value-keyword-case": [
-      "lower",
-      {
-        "camelCaseSvgKeywords": true
-      }
-    ],
+    "value-keyword-case": null,
     "csstools/value-no-unknown-custom-properties": [
       true,
       {

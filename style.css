@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.2.8 */
+   1.2.9rc1 */
 
 /* CSS variables */
 :root {
@@ -49,6 +49,7 @@
   --color-ghost-button-text: var(--color-button-text);
 
   /* Font related */
+  --font-stack: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-size: 15px;
   --font-size-smaller: 13px;
   --font-size-mid: 14px;
@@ -225,7 +226,7 @@ body.embed,
 body.layout-single-column {
   background-color: var(--color-bg);
   color: var(--color-fg);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-family: var(--font-stack);
 }
 
 .layout-single-column .ui {
