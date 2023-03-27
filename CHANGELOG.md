@@ -1,4 +1,4 @@
-### 1.3.0rc3: 2023-03-26
+### 1.3.0: 2023-03-27
 
 * Add compose form warning to the CSS var scope
 * Remove shadow from compose form warning
