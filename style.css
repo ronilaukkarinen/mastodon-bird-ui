@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.0 */
+   1.3.1rc */
 
 /* CSS variables */
 :root {
@@ -2494,7 +2494,7 @@ body.embed .button.logo-button:hover,
   .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
     flex-direction: row;
     gap: 0;
-    height: unset;
+    height: 100%;
     overflow-x: auto;
     padding: 0;
   }

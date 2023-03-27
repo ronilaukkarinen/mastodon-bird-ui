@@ -1,3 +1,7 @@
+### 1.3.1rc: 2023-03-28
+
+* Fix regression in the mobile nav: Column-links not same height
+
 ### 1.3.0: 2023-03-27
 
 * Add compose form warning to the CSS var scope
