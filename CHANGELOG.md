@@ -1,7 +1,8 @@
-### 1.3.0rc1: 2023-03-26
+### 1.3.0rc3: 2023-03-26
 
 * Add compose form warning to the CSS var scope
 * Remove shadow from compose form warning
+* Nav panel: Make the whole row clickable #5 (thanks @Freeplayg!)
 
 ### 1.2.9: 2023-03-26
 
