@@ -3,6 +3,7 @@
 * Add compose form warning to the CSS var scope
 * Remove shadow from compose form warning
 * Nav panel: Make the whole row clickable #5 (thanks @Freeplayg!)
+* Fix direct message active icon in light theme
 
 ### 1.2.9: 2023-03-26
 
