@@ -1,7 +1,9 @@
-### 1.3.2rc2: 2023-03-28
+### 1.3.2rc3: 2023-03-28
 
 * Fix destructive button border color
 * Show green followed icon in the profile following/followers account wrapper
+* Add `--width-side-panel` for side panel widths
+* Fit content to iPad landscape view (thanks @jarilehtinen!)
 
 ### 1.3.1: 2023-03-28
 
