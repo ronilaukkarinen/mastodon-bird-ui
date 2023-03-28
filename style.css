@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.1 */
+   1.3.2rc1 */
 
 /* CSS variables */
 :root {
@@ -48,6 +48,7 @@
   --color-button-text: #f7f9f9;
   --color-ghost-button-text: var(--color-button-text);
   --color-verified: #79bd9a;
+  --color-destructive: #df405a;
 
   /* Font related */
   --font-stack: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -2827,4 +2828,11 @@ body.embed .entry .detailed-status {
 .layout-single-column .account__header__bio .account__header__fields .verified dd,
 .layout-single-column .account__header__bio .account__header__fields .verified dt {
   color: var(--color-verified);
+}
+
+/* Destructive colors (For you -suggestions, users when focused to the follow button */
+.layout-single-column .button.logo-button.button--destructive:active,
+.layout-single-column .button.logo-button.button--destructive:focus {
+  background-color: var(--color-destructive);
+  border-color: var(--color-destructive);
 }

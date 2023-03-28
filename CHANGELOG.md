@@ -1,3 +1,7 @@
+### 1.3.2rc1: 2023-03-28
+
+* Fix destructive button border color
+
 ### 1.3.1: 2023-03-28
 
 * Fix regression in the mobile nav: Column-links not same height
