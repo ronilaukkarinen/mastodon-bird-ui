@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.1rc */
+   1.3.1 */
 
 /* CSS variables */
 :root {
@@ -2529,14 +2529,9 @@ body.embed .button.logo-button:hover,
     font-size: 27px;
   }
 
-  .columns-area__panels__pane--navigational .column-link__icon.fa-bell::before {
-    position: relative;
-    top: 2px;
-  }
-
   .columns-area__panels__pane--navigational .column-link__icon.fa-ellipsis-h {
     position: relative;
-    top: -9px;
+    top: -4px;
   }
 
   .columns-area__panels__pane--navigational .column-link__icon.fa-users,

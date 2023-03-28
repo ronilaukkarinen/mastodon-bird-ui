@@ -1,6 +1,8 @@
-### 1.3.1rc: 2023-03-28
+### 1.3.1: 2023-03-28
 
 * Fix regression in the mobile nav: Column-links not same height
+* Fix bell icon alignment on mobile
+* Fix ellipsis icon alignment on mobile
 
 ### 1.3.0: 2023-03-27
 
