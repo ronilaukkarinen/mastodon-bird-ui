@@ -1,7 +1,8 @@
-### 1.3.4rc2: 2023-03-29
+### 1.3.4: 2023-03-29
 
 * Accessibility: Fix focus for list toggle (thanks @MerriNet@mastodon.social!)
 * Accessibility: Fix focus ring on :focus-visible on column-links
+* Add follow and unfollow hashtag icons (thanks for the idea @jaoler@suomi.social and @lari@suomi.social)
 
 ### 1.3.3: 2023-03-29
 
