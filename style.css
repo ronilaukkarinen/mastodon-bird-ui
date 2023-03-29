@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.2 */
+   1.3.3 */
 
 /* CSS variables */
 :root {
@@ -1376,7 +1376,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin: 0;
 }
 
-/* Hide scrollbars for .navigation-panel */
+/* Attempt to hide scrollbars for .navigation-panel for Firefox */
+.dropdown-menu__container__list--scrollable,
+.layout-single-column .navigation-panel {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbars for .navigation-panel for Chrome and Safari */
 .dropdown-menu__container__list--scrollable::-webkit-scrollbar,
 .layout-single-column .navigation-panel::-webkit-scrollbar {
   display: none;
@@ -2054,6 +2060,87 @@ body.embed .button.logo-button:hover,
 }
 
 @media screen and (min-width: 890px) {
+  /* Hide the space between Lists and the actual lists */
+  .layout-single-column .list-panel > hr,
+  .layout-single-column .list-panel + hr {
+    display: none;
+  }
+
+  /* Hide lists if there's not enough space on desktop vertically */
+  .layout-single-column .list-panel {
+    display: none;
+    opacity: 0;
+    transition: all 200ms;
+  }
+
+  .layout-single-column .list-panel:hover,
+  .layout-single-column .column-link[href="/lists"]:hover ~ .list-panel {
+    display: block;
+    opacity: 1;
+  }
+
+  /* Order of the side nav items */
+  .layout-single-column .navigation-panel__logo {
+    order: 1;
+  }
+
+  .layout-single-column .column-link[href="/home"] {
+    order: 2;
+  }
+
+  .layout-single-column .column-link[href="/notifications"] {
+    order: 3;
+  }
+
+  .layout-single-column .column-link[href="/explore"] {
+    order: 4;
+  }
+
+  .layout-single-column .column-link[href="/public/local"] {
+    order: 5;
+  }
+
+  .layout-single-column .column-link[href="/public"] {
+    order: 6;
+  }
+
+  .layout-single-column .column-link[href="/conversations"] {
+    order: 7;
+  }
+
+  .layout-single-column .column-link[href="/bookmarks"] {
+    order: 9;
+  }
+
+  .layout-single-column .column-link[href="/favourites"] {
+    order: 10;
+  }
+
+  .layout-single-column .column-link[href="/lists"] {
+    order: 12;
+  }
+
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  .layout-single-column .list-panel {
+    order: 13;
+  }
+
+  .layout-single-column .column-link[href="/settings/preferences"] {
+    order: 11;
+  }
+
+  .layout-single-column .navigation-panel__legal {
+    order: 14;
+  }
+
+  .layout-single-column .flex-spacer {
+    order: 15;
+  }
+
+  .layout-single-column .getting-started__trends {
+    order: 16;
+  }
+
   .layout-single-column .status__action-bar .icon-button {
     position: relative;
     /* It's inlined so we have to use !important */

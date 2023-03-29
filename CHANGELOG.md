@@ -1,3 +1,10 @@
+### 1.3.3: 2023-03-29
+
+* Hide navigation-panel scrollbars on Firefox on desktop
+* Hide lists by default, show the list of lists on hover (thanks for the idea @laukanhenkka@mastodonsuomi.fi!)
+* Order preferences menu before lists
+* Add order to all desktop column-link items
+
 ### 1.3.2: 2023-03-28
 
 * Fix destructive button border color
