@@ -1,3 +1,8 @@
+### 1.3.4rc2: 2023-03-29
+
+* Accessibility: Fix focus for list toggle (thanks @MerriNet@mastodon.social!)
+* Accessibility: Fix focus ring on :focus-visible on column-links
+
 ### 1.3.3: 2023-03-29
 
 * Hide navigation-panel scrollbars on Firefox on desktop
