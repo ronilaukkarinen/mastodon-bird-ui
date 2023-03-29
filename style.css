@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.3 */
+   1.3.3-hotfixed */
 
 /* CSS variables */
 :root {
@@ -2129,6 +2129,7 @@ body.embed .button.logo-button:hover,
     order: 11;
   }
 
+  .layout-single-column .navigation-panel__sign-in-banner,
   .layout-single-column .navigation-panel__legal {
     order: 14;
   }
