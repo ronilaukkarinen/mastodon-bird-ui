@@ -1,7 +1,8 @@
-### 1.3.6rc1: 2023-03-30
+### 1.3.6rc2: 2023-03-30
 
 * Fix confirmation modal text color (thanks @jaoler@suomi.social)
 * Add more colors to CSS var scope
+* Fix relative time color being too bright
 
 ### 1.3.5: 2023-03-30
 
