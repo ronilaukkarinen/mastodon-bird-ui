@@ -1,3 +1,8 @@
+### 1.3.5rc1: 2023-03-30
+
+* Fix poll input field colors
+* Accessibility: Add focus ring to poll input answer while composing
+
 ### 1.3.4: 2023-03-29
 
 * Accessibility: Fix focus for list toggle (thanks @MerriNet@mastodon.social!)
