@@ -1,7 +1,8 @@
-### 1.3.5rc1: 2023-03-30
+### 1.3.5: 2023-03-30
 
 * Fix poll input field colors
 * Accessibility: Add focus ring to poll input answer while composing
+* Revise follow and unfollow hashtag icons so that the + x are more distinct
 
 ### 1.3.4: 2023-03-29
 
