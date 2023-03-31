@@ -43,7 +43,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 ## Installation for Mastodon instance admins
 
 1. Copy the contents of style.css
-2. Install it as CSS to your assets (add it to your build process to [app/javascript/styles](https://github.com/mastodon/mastodon/tree/main/app/javascript/styles) and rebuild assets) or use Custom CSS in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance):
+2. Install it as CSS to your assets (add it to your build process to [app/javascript/styles](https://github.com/mastodon/mastodon/tree/main/app/javascript/styles) and rebuild assets) or (preferred) use **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance):
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
@@ -57,7 +57,7 @@ Edit [this line](https://github.com/mastodon/mastodon/blob/f4f3e2b46e619fcc2eda4
 
 ### Hide translate link for multiple languages
 
-If you're a polyglot like me, you can hide the translate link on other languages than default by adding this at the end of the Custom CSS (this example is for people who understand Finnish and German):
+If you're a polyglot like me, you can hide the translate link on other languages than default by adding this at the end of the **Custom CSS** (this example is for people who understand Finnish and German):
 
 ```css
 .status__content__text[lang="de"].translate ~ .status__content__read-more-button,
@@ -75,5 +75,5 @@ If you're a polyglot like me, you can hide the translate link on other languages
 
 ### Goals
 
-- **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in _Custom CSS_ box in {yourinstance.social/admin/settings/appearance}
+- **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
 - **Single-column layout only.** This experiment is not meant for advanced layout.
