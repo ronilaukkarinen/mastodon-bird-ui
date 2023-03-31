@@ -43,7 +43,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 ## Installation for Mastodon instance admins
 
 1. Copy the contents of style.css
-2. Install it as CSS to your assets or use Custom CSS in the Appearance settings in your instance
+2. Install it as CSS to your assets (add it to your build process to [app/javascript/styles](https://github.com/mastodon/mastodon/tree/main/app/javascript/styles) and rebuild assets) or use Custom CSS in the Appearance settings in your instance
 
 ### Twitter-like link previews
 
