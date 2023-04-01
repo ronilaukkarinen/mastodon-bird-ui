@@ -560,26 +560,31 @@ a.status-card.compact .status-card__host {
 .layout-single-column .columns-area__panels__pane.columns-area__panels__pane--start.columns-area__panels__pane--navigational {
   order: 1;
 }
+
 .layout-single-column .columns-area__panels__pane,
 .layout-single-column .columns-area__panels__pane__inner,
 .layout-single-column .compose-panel {
-  width: var(--width-side-panel);
   min-width: var(--width-side-panel);
+  width: var(--width-side-panel);
 }
+
 .layout-single-column .columns-area__panels__pane--compositional {
-  position: sticky;
-  top: 0;
+  flex-grow: 1;
   height: 100vh;
   max-width: 350px;
-  flex-grow: 1;
+  position: sticky;
+  top: 0;
 }
+
 .layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner {
   position: static;
 }
+
 .layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner,
 .compose-panel {
   width: 100% !important;
 }
+
 .layout-single-column .search {
   margin-inline: 10px;
 }
