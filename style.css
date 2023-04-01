@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.7rc2 */
+   1.3.7rc4 */
 
 /* CSS variables */
 :root {
@@ -3034,4 +3034,10 @@ body.embed .entry .detailed-status {
   content: var(--icon-unfollow-hashtag);
   position: relative;
   top: 2px;
+}
+
+/* Show more in server banner */
+.layout-single-column .server-banner__meta__column {
+  max-width: 60%;
+  width: unset;
 }

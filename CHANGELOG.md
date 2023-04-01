@@ -1,7 +1,9 @@
-### 1.3.7rc2: 2023-04-01
+### 1.3.7rc4: 2023-04-01
 
 * Add muted poll to the CSS var color scope
 * Allow resizing the compose form
+* Change sidebar's sizing to match Twitter's #7 (thanks $Freeplayg!)
+* Show more in server banner
 
 ### 1.3.6: 2023-04-01
 
