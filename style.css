@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.6 */
+   1.3.7rc1 */
 
 /* CSS variables */
 :root {
@@ -676,6 +676,7 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+.layout-single-column .muted .poll,
 .layout-single-column .status .status__relative-time,
 .layout-single-column .status .status__visibility-icon,
 .layout-single-column .block-modal__action-bar > div,

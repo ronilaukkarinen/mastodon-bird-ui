@@ -1,3 +1,7 @@
+### 1.3.7rc1: 2023-04-01
+
+* Add muted poll to the CSS var color scope
+
 ### 1.3.6: 2023-04-01
 
 * Fix confirmation modal text color (thanks @jaoler@suomi.social)
