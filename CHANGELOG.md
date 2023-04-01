@@ -1,6 +1,7 @@
-### 1.3.7rc1: 2023-04-01
+### 1.3.7rc2: 2023-04-01
 
 * Add muted poll to the CSS var color scope
+* Allow resizing the compose form
 
 ### 1.3.6: 2023-04-01
 
