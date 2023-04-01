@@ -1,4 +1,4 @@
-### 1.3.6rc2: 2023-03-30
+### 1.3.6: 2023-04-01
 
 * Fix confirmation modal text color (thanks @jaoler@suomi.social)
 * Add more colors to CSS var scope
