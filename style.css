@@ -582,6 +582,7 @@ a.status-card.compact .status-card__host {
 
 .layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner,
 .compose-panel {
+  /* stylelint-disable-next-line */
   width: 100% !important;
 }
 
