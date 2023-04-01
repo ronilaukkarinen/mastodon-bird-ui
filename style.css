@@ -67,7 +67,7 @@
   --size-avatar-small: 32px;
   --size-icon-notification: 30px;
   --width-main-panel: 600px;
-  --width-side-panel: 285px;
+  --width-side-panel: 260px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -561,9 +561,32 @@ a.status-card.compact .status-card__host {
   order: 1;
 }
 
+.layout-single-column .columns-area__panels__pane,
 .layout-single-column .columns-area__panels__pane__inner,
 .layout-single-column .compose-panel {
+  min-width: var(--width-side-panel);
   width: var(--width-side-panel);
+}
+
+.layout-single-column .columns-area__panels__pane--compositional {
+  flex-grow: 1;
+  height: 100vh;
+  max-width: 350px;
+  position: sticky;
+  top: 0;
+}
+
+.layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner {
+  position: static;
+}
+
+.layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner,
+.compose-panel {
+  width: 100% !important;
+}
+
+.layout-single-column .search {
+  margin-inline: 10px;
 }
 
 /* stylelint-disable-next-line */
