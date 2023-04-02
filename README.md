@@ -29,7 +29,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Missing alt text indicators (faded with "Alt text missing" text in the center)
 - Subtle deep purple ribbon in the right corner for private messages
 - CSS variables for everything
-- Threaded replies
+- Threaded replies (limited, see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306))
 - Avatars on the left in feed view
 - Unified transparent backgrounds
 - Dark patterns for dropdowns and other pop overs like emoji picker
