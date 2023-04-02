@@ -5,7 +5,7 @@
 * Change sidebar's sizing to match Twitter's #7 (thanks @Freeplayg!)
 * Show more in server banner
 * Fix overflow if the compose form is resized
-* Proper conversations/threads support with fallback (see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4))
+* Limited conversations/threads support with fallback (see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4))
 
 ### 1.3.6: 2023-04-01
 
