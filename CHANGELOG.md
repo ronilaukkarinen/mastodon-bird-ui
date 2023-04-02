@@ -1,7 +1,8 @@
-### 1.3.8rc5: 2023-04-02
+### 1.3.8rc6: 2023-04-02
 
 * Improve thread line structure to be more reliable, see [this commit](https://github.com/ronilaukkarinen/mastodon/commit/25f2dea0117c215eb703db41237a323991343292)
 * Fixes for thread line structure if there's more depth
+* Fix thread line not showing up for scenarios where there are only 2 threads
 
 ### 1.3.7: 2023-04-02
 
