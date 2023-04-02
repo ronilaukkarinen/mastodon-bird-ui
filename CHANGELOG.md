@@ -1,10 +1,11 @@
-### 1.3.7rc5: 2023-04-01
+### 1.3.7: 2023-04-02
 
 * Add muted poll to the CSS var color scope
 * Allow resizing the compose form
 * Change sidebar's sizing to match Twitter's #7 (thanks $Freeplayg!)
 * Show more in server banner
 * Fix overflow if the compose form is resized
+* Proper conversations/threads support (see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4)) with fallback
 
 ### 1.3.6: 2023-04-01
 
