@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.7 */
+   1.3.8rc1 */
 
 /* CSS variables */
 :root {
@@ -3031,6 +3031,9 @@ body.embed .entry .detailed-status {
   display: none;
 }
 
+/* stylelint-disable-next-line selector-max-class */
+.layout-single-column .scrollable > div > .status__thread.status__thread-last-item.status__thread-first-item .status.status-reply .status__avatar::before,
+.layout-single-column .scrollable > div > .status__thread ~ .status__thread .status.status-reply .status__avatar::before,
 .layout-single-column .scrollable > div > .status__thread .status.status-reply .status__avatar::before {
   background-color: var(--color-thread-line);
   content: '';
@@ -3041,24 +3044,29 @@ body.embed .entry .detailed-status {
   width: 2px;
 }
 
-.layout-single-column .scrollable > div > .status__thread > .status__thread > div:last-child .status.status-reply {
+/* stylelint-disable-next-line selector-max-compound-selectors, selector-not-notation */
+.layout-single-column .scrollable > div > .status__thread:not(.status__thread--last-item):not(.status__thread--first-item) > div > div > .status.status-reply {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid var(--color-border);
+}
+
+/* stylelint-disable-next-line selector-max-compound-selectors, selector-not-notation */
+.layout-single-column .scrollable > div > .status__thread:not(.status__thread--last-item):not(.status__thread--first-item) {
+  border-bottom: 1px solid var(--color-border);
   border-color: var(--color-border);
 }
 
-/* stylelint-disable selector-max-compound-selectors */
-.layout-single-column .scrollable > div > .status__thread > .status__thread > div:last-child .status.status-reply .status__avatar::before {
+/* stylelint-disable-next-line selector-max-compound-selectors */
+.layout-single-column .scrollable > div > .status__thread:only-of-type .status.status-reply .status__avatar::before,
+.layout-single-column .scrollable > div > .status__thread.status__thread--last-item:not(.status__thread--first-item) .status.status-reply .status__avatar::before,
+.layout-single-column .scrollable > div > .status__thread .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before {
   display: none;
 }
 
-.layout-single-column .scrollable > div > div:first-child .status.status-reply .status__avatar::before {
+.layout-single-column .scrollable > div > .status__thread.status__thread--first-item .status.status-reply .status__avatar::before {
   top: 60px;
 }
 
-.layout-single-column .scrollable > div > div:last-child .status.status-reply .status__avatar::before {
+.layout-single-column .scrollable > div > .status__thread.status__thread--last-item:not(.status__thread--first-item) .status.status-reply .status__avatar::before {
   height: 40px;
-}
-
-.layout-single-column .scrollable > div > div:only-of-type .status.status-reply .status__avatar::before {
-  border-color: var(--color-border);
-  display: none;
 }

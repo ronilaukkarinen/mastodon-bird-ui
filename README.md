@@ -70,8 +70,8 @@ If you're a polyglot like me, you can hide the translate link on other languages
 
 There is currently no proper thread support in replies on Mastodon core. There's an [issue](https://github.com/mastodon/mastodon/issues/19570#issuecomment-1493057424) about it that I have commented. You should also see the discussion on issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306).
 
-1. Implement [this](https://github.com/ronilaukkarinen/mastodon/commit/1fddcb709ce2f80174ba45e0d908c2ba8f899290) and [this](https://github.com/ronilaukkarinen/mastodon/commit/54fb213aaa5a2982e81696e0369c584b23da77c2) (tested and online at [mementomori.social](https://mementomori.social)). This changes the HTML structure so that creating threaded lines is possible.
-2. Enable Mastodon Bird UI 1.3.7 or later
+1. Implement [this](https://github.com/ronilaukkarinen/mastodon/commit/1fddcb709ce2f80174ba45e0d908c2ba8f899290) and [this](https://github.com/ronilaukkarinen/mastodon/commit/54fb213aaa5a2982e81696e0369c584b23da77c2) and [this](https://github.com/ronilaukkarinen/mastodon/commit/25f2dea0117c215eb703db41237a323991343292) (tested and online at [mementomori.social](https://mementomori.social)). This changes the HTML structure so that creating threaded lines is possible.
+2. Enable Mastodon Bird UI 1.3.8rc1 or later
 3. It works!
 
 ## Installation for regular users, contributing and testing

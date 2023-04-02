@@ -1,3 +1,7 @@
+### 1.3.8rc1: 2023-04-02
+
+* Improve thread line structure to be more reliable, see [this commit](https://github.com/ronilaukkarinen/mastodon/commit/25f2dea0117c215eb703db41237a323991343292)
+
 ### 1.3.7: 2023-04-02
 
 * Add muted poll to the CSS var color scope
