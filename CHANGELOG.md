@@ -1,3 +1,7 @@
+### 1.3.9rc1: 2023-04-03
+
+* Remove thread-line height no longer needed with the new structure
+
 ### 1.3.8: 2023-04-03
 
 * Improve thread line structure to be more reliable, see [this diff](https://github.com/mastodon/mastodon/compare/main...ronilaukkarinen:mastodon:feat-thread-lines)
