@@ -6,6 +6,7 @@
 * Fix thread line on last items when multiple threads have one orphan
 * Fix secondary button border color
 * Fix not all conversations linked properly
+* Make scrollbar styles more thin
 
 ### 1.3.7: 2023-04-02
 

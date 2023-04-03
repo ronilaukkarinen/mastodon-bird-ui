@@ -3083,3 +3083,41 @@ body.embed .entry .detailed-status {
 .layout-single-column .scrollable > div > .status__thread.status__thread--last-item:not(.status__thread--first-item) .status.status-reply .status__avatar::before {
   height: 40px;
 }
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border: 0px solid var(--color-border);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-purple);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg);
+  border: 0px solid var(--color-border);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-track:active {
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
