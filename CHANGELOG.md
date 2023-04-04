@@ -1,9 +1,10 @@
-### 1.3.9rc4: 2023-04-04
+### 1.3.9: 2023-04-04
 
 * Remove thread-line height no longer needed with the new structure
 * Fix compose form getting behind footer on desktop (thanks @lari@suomi.social!)
 * Fix: Restrict scrollbars in the single column view only (thanks @folini@mastodon.uno!)
 * Fix trending hashtags color leaking to the advanced view
+* High contrast theme support (color dim is currently more vivid there)
 
 ### 1.3.8: 2023-04-03
 
