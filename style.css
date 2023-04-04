@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.9rc3 */
+   1.3.9rc4 */
 
 /* CSS variables */
 :root {
@@ -812,7 +812,7 @@ body.embed .status__content a,
 .layout-single-column .compose-form__poll-wrapper select,
 .layout-single-column .actions-modal ul li:not(:empty) a,
 .layout-single-column .report-dialog-modal .status__content,
-.report-dialog-modal .status__content p,
+.layout-single-column .report-dialog-modal .status__content p,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text strong,
 .layout-single-column .report-dialog-modal__lead,
 .layout-single-column .detailed-status__display-name strong,
@@ -822,8 +822,8 @@ body.embed .status__content a,
 .layout-single-column .status__info .display-name strong.display-name__html,
 .layout-single-column .reply-indicator .display-name strong.display-name__html,
 .layout-single-column .notification__message,
-.getting-started__trends h4 a,
-.trends__item__name a,
+.layout-single-column .getting-started__trends h4 a,
+.layout-single-column .trends__item__name a,
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .language-dropdown__dropdown__results__item,
 .layout-single-column .reply-indicator__content,
