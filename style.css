@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.0rc1 */
+   1.4.0rc2 */
 
 /* CSS variables */
 :root {
@@ -3121,39 +3121,39 @@ body.embed .entry .detailed-status {
 }
 
 /* Scrollbars */
-.layout-single-column ::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+.layout-single-column::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
 }
 
-.layout-single-column ::-webkit-scrollbar-thumb {
+.layout-single-column::-webkit-scrollbar-thumb {
   background-color: var(--color-border);
   border: 0px solid var(--color-border);
   border-radius: 50px;
 }
 
-.layout-single-column ::-webkit-scrollbar-thumb:hover {
+.layout-single-column::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-light-purple);
 }
 
-.layout-single-column ::-webkit-scrollbar-thumb:active {
+.layout-single-column::-webkit-scrollbar-thumb:active {
   background-color: var(--color-bg);
 }
 
-.layout-single-column ::-webkit-scrollbar-track {
+.layout-single-column::-webkit-scrollbar-track {
   background-color: var(--color-bg);
   border: 0px solid var(--color-border);
   border-radius: 0;
 }
 
-.layout-single-column ::-webkit-scrollbar-track:hover {
+.layout-single-column::-webkit-scrollbar-track:hover {
   background-color: var(--color-bg);
 }
 
-.layout-single-column ::-webkit-scrollbar-track:active {
+.layout-single-column::-webkit-scrollbar-track:active {
   background-color: var(--color-bg);
 }
 
-.layout-single-column ::-webkit-scrollbar-corner {
+.layout-single-column::-webkit-scrollbar-corner {
   background-color: transparent;
 }
