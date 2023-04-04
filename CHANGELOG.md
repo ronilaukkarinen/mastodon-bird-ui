@@ -1,6 +1,7 @@
-### 1.3.9rc1: 2023-04-03
+### 1.3.9rc2: 2023-04-04
 
 * Remove thread-line height no longer needed with the new structure
+* Fix compose form getting behind footer on desktop (thanks @lari@suomi.social!)
 
 ### 1.3.8: 2023-04-03
 
