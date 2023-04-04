@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.3.9 */
+   1.4.0rc1 */
 
 /* CSS variables */
 :root {
@@ -2038,12 +2038,15 @@ body.embed .button.logo-button:hover,
 }
 
 /* Compose form */
+.layout-single-column .compose-panel .compose-form {
+  position: relative;
+  z-index: 100;
+}
+
 .layout-single-column .compose-panel .compose-form,
 .layout-single-column .compose-panel,
 .layout-single-column .compose-form__autosuggest-wrapper {
   overflow: visible;
-  position: relative;
-  z-index: 100;
 }
 
 .layout-single-column .compose-form {

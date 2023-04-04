@@ -1,3 +1,7 @@
+### 1.4.0rc1: 2024-04-04
+
+* Fix a regression with z-index, autosuggest not clickable if compose form expanding
+
 ### 1.3.9: 2023-04-04
 
 * Remove thread-line height no longer needed with the new structure
