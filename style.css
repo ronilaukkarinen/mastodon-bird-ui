@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc2 */
+   1.4.2rc3 */
 
 /* CSS variables */
 :root {
@@ -277,6 +277,13 @@ body.layout-single-column {
 .layout-single-column .ui {
   display: flex;
   width: 100%;
+}
+
+/* Fix weird horizontal overflow */
+@media (min-width: 1175px) and (max-width: 1330px) {
+  .layout-single-column .ui {
+    width: unset;
+  }
 }
 
 /* Text color */
@@ -2097,18 +2104,16 @@ body.embed .button.logo-button:hover,
 }
 
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
-.layout-single-column .reply-indicator {
-  max-height: 150px;
+@media (min-width: 889px) {
+  .layout-single-column .compose-form .autosuggest-textarea__textarea {
+    /* stylelint-disable-next-line */
+    max-height: 20vh !important;  /* stylelint-disable-next-line */
+    overflow-y: scroll !important;
+    resize: none;
+  }
 }
 
-.layout-single-column .compose-form .autosuggest-textarea__textarea {
-  /* stylelint-disable-next-line */
-  max-height: 20vh !important;  /* stylelint-disable-next-line */
-  overflow-y: scroll !important;
-  resize: none;
-}
-
-@media (max-height: 1000px) {
+@media (min-width: 889px) and (max-height: 1000px) {
   .layout-single-column .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 10vh !important;
