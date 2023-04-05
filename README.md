@@ -35,10 +35,11 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Dark patterns for dropdowns and other pop overs like emoji picker
 - Tinted deep purple, subtle beautiness
 - Action bar in the bottom on mobile
-- Birdsite-like like animation in the heart icon
+- Micro-interaction in the like/favourite icon (see more about [this](#micro-interactions))
 - Circling boost animation
 - Support for RTL languages
 - Hide lists by default, show them on hover
+- Carefully polished UI with hand picked/designed icons based on open source versions of Iconoir, Ionicons and Feather
 
 ## Installation for Mastodon instance admins
 
@@ -46,6 +47,17 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 2. Install it as CSS to your assets (add it to your build process to [app/javascript/styles](https://github.com/mastodon/mastodon/tree/main/app/javascript/styles) and rebuild assets) or (preferred) use **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance):
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
+
+## Installation for regular users, contributing and testing
+
+1. Install [live-css-editor](https://github.com/webextensions/live-css-editor) (or any other extension that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
+2. Get style.css from this repo
+3. Open extension and paste the CSS into the editor
+4. Click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+
+## Other tweaks and customizations
+
+While Mastodon Bird UI works perfectly fine out of the box, there are some things you might want to modify to make it look even better.
 
 ### Twitter-like link previews
 
@@ -74,12 +86,13 @@ There is currently no proper thread support in replies on Mastodon core. There's
 2. Enable Mastodon Bird UI 1.3.8 or later
 3. It works!
 
-## Installation for regular users, contributing and testing
+### Micro-interactions
 
-1. Install [live-css-editor](https://github.com/webextensions/live-css-editor) (or any other extension that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
-2. Get style.css from this repo
-3. Open extension and paste the CSS into the editor
-4. Click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+There are two micro-interaction animations in this UI, both are inspired by the Twitter's original UI animation.
+
+| Twitter like heart (2016-present)  | Twitter fave star (2015) |
+| ------------- | ------------- |
+| <img src="https://user-images.githubusercontent.com/1534150/230135110-6391e061-10c9-4819-af8b-7144b31dac93.gif" width="200" alt="heart" /> | ![star](https://user-images.githubusercontent.com/1534150/230135096-4d1ac9b2-290b-41da-a136-985e908868fa.gif) |
 
 ### Goals
 

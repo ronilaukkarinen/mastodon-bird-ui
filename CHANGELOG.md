@@ -1,9 +1,10 @@
-### 1.4.0rc3: 2024-04-04
+### 1.4.0rc4: 2024-04-05
 
 * Fix a regression with z-index, autosuggest not clickable if compose form expanding
 * Make scrollbars more visible
 * Accessibility: Add max-height to compose form (thanks @rmattila74@mastodo.fi!)
 * Accessibility: Revert resize: true in compose form (thanks @rmattila74@mastodo.fi!)
+* Implement star animation and micro-interaction
 
 ### 1.3.9: 2023-04-04
 
