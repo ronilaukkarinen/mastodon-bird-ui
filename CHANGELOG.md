@@ -1,10 +1,13 @@
-### 1.4.0rc4: 2024-04-05
+### 1.4.0rc5: 2024-04-05
 
 * Fix a regression with z-index, autosuggest not clickable if compose form expanding
 * Make scrollbars more visible
 * Accessibility: Add max-height to compose form (thanks @rmattila74@mastodo.fi!)
 * Accessibility: Revert resize: true in compose form (thanks @rmattila74@mastodo.fi!)
 * Implement star animation and micro-interaction
+* Replace sidebar heart icons with star icons
+* Add instructions for switching to heart icon
+* High contrast theme color improvements
 
 ### 1.3.9: 2023-04-04
 
