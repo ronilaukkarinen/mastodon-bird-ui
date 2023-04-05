@@ -1,3 +1,7 @@
+### 1.4.1rc1: 2024-04-05
+
+* Attempt to fix #8
+
 ### 1.4.0: 2024-04-05
 
 * Fix a regression with z-index, autosuggest not clickable if compose form expanding

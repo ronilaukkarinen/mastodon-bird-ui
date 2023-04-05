@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.0 */
+   1.4.1rc1 */
 
 /* CSS variables */
 :root {
@@ -2998,7 +2998,6 @@ body.embed .entry .detailed-status {
 .layout-single-column .scrollable > div > div.status__thread:has(.status__thread) > div.status__thread:not(.status__thread--last-item),
 .layout-single-column .scrollable > div > div:not([class]) > div.status__thread {
   border-bottom: 1px solid var(--color-border);
-  margin-bottom: -1px;
 }
 
 .layout-single-column .scrollable > div > div.status__thread > div.status__thread:not(.status__thread--last-item):not(:has(.status__thread--last-item)) {
