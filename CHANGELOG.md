@@ -1,10 +1,11 @@
-### 1.4.3rc3: 2024-04-05
+### 1.4.3rc4: 2024-04-05
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
 * Reset some 4.1.2 paddings
 * Fix navigation-panel overflow scroll
 * Hide verification url from follow notifications
+* Fix boost message line spacing
 
 ### 1.4.2: 2024-04-05
 
