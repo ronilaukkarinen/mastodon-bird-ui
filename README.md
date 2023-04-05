@@ -90,7 +90,7 @@ There is currently no proper thread support in replies on Mastodon core. There's
 
 There are two micro-interaction animations in this UI, both are inspired by the Twitter's original UI animation.
 
-| Twitter like heart (2016-present)  | Twitter fave star (2015) |
+| Twitter likes | Twitter fave star (2015) |
 | ------------- | ------------- |
 | <img src="https://user-images.githubusercontent.com/1534150/230135110-6391e061-10c9-4819-af8b-7144b31dac93.gif" width="200" alt="heart" /> | ![star](https://user-images.githubusercontent.com/1534150/230135096-4d1ac9b2-290b-41da-a136-985e908868fa.gif) |
 
