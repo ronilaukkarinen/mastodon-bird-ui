@@ -1,3 +1,8 @@
+### 1.4.3rc1: 2024-04-05
+
+* Fix new notification types
+* Fix a typo that caused reblog notification styles to crash
+
 ### 1.4.2: 2024-04-05
 
 * Fix offset of the star micro-interaction in the Explore view
