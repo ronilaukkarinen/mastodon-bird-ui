@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc6 */
+   1.4.2rc7 */
 
 /* CSS variables */
 :root {
@@ -1122,7 +1122,8 @@ body.embed .detailed-status,
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Translate link */
+/* Translate link and other padding resets */
+.layout-single-column .conversation .attachment-list,
 .layout-single-column .translate ~ .status__content__read-more-button {
   padding-left: 0;
 }
