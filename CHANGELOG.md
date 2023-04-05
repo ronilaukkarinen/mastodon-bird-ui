@@ -1,3 +1,7 @@
+### 1.4.2rc1: 2024-04-05
+
+* Fix offset of the star micro-interaction in the Explore view
+
 ### 1.4.1: 2024-04-05
 
 * Attempt to fix #8
