@@ -1120,6 +1120,7 @@ body.embed .detailed-status,
 .layout-single-column .notification.notification-admin-sign-up .display-name__account {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
+  padding-top: 0;
 }
 
 /* Translate link and other padding resets */
@@ -1469,6 +1470,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .navigation-panel {
   box-sizing: border-box;
   margin-top: 0;
+  overflow-y: auto;
   padding: 10px;
 }
 
@@ -1496,7 +1498,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .dropdown-menu__container__list--scrollable::-webkit-scrollbar,
 .layout-single-column .navigation-panel::-webkit-scrollbar {
   display: none;
-  width: 3px;
+  width: 4px;
 }
 
 .layout-single-column .column-link {
@@ -2032,11 +2034,6 @@ body.embed .button.logo-button:hover,
 .layout-single-column .account__header__bar .avatar {
   /* stylelint-disable-next-line */
   margin-left: 0 !important;
-}
-
-/* stylelint-disable-next-line */
-.layout-single-column::webkit-scrollbar {
-  width: 3px;
 }
 
 /* Fix for button line-height */

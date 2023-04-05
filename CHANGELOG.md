@@ -2,6 +2,8 @@
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
+* Reset some 4.1.2 paddings
+* Fix navigation-panel overflow scroll
 
 ### 1.4.2: 2024-04-05
 
