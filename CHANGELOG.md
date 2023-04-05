@@ -1,4 +1,4 @@
-### 1.4.2rc8: 2024-04-05
+### 1.4.2rc9: 2024-04-05
 
 * Fix offset of the star micro-interaction in the Explore view
 * Fix star/unstar interactions on mobile
@@ -10,6 +10,7 @@
 * Fix conversation border color
 * Fix private message attachment list padding
 * Fix favoriting private message styles
+* Fix icon-button--with-counter hover shade offset
 
 ### 1.4.1: 2024-04-05
 
