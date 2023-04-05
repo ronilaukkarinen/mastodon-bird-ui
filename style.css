@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.1rc3 */
+   1.4.1 */
 
 /* CSS variables */
 :root {
@@ -3244,6 +3244,12 @@ body.embed .entry .detailed-status {
 /* Replace notification tab bar icon with star */
 .layout-single-column .notification__filter-bar .active .fa-star::before {
   content: var(--icon-star-active);
+}
+
+/* Yellow numbers on hover */
+.layout-single-column button.icon-button:hover i.fa-star ~ span,
+.layout-single-column button.icon-button.active i.fa-star ~ span {
+  color: var(--color-yellow);
 }
 
 /* The actual star icon */

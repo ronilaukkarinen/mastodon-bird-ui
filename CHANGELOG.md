@@ -1,8 +1,9 @@
-### 1.4.1rc3: 2024-04-05
+### 1.4.1: 2024-04-05
 
 * Attempt to fix #8
 * Make the star icon in notification slightly bigger
 * Fix star always popping when already faved
+* Fix a regression with number color on hovering the star
 
 ### 1.4.0: 2024-04-05
 
