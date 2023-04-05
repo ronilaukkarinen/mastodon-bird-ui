@@ -1,4 +1,4 @@
-### 1.4.3rc1: 2024-04-05
+### 1.4.3rc2: 2024-04-05
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
