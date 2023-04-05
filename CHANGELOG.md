@@ -4,6 +4,7 @@
 * Fix star/unstar interactions on mobile
 * Fix sparkles not showing up on mobile devices
 * Fix strange horizontal overflow in between-resolutions (min-width: 1175px) and (max-width: 1330px)
+* Fix compose form not resizing on mobile devices
 
 ### 1.4.1: 2024-04-05
 
