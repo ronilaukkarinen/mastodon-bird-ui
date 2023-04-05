@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc9 */
+   1.4.2 */
 
 /* CSS variables */
 :root {
@@ -1395,6 +1395,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
+.layout-single-column .notification.notification-follow .display-name,
+.layout-single-column .notification.notification-follow .display-name + span,
 .layout-single-column .notification.notification-favourite .status__wrapper-direct .status__prepend,
 .layout-single-column .notification.notification-favourite
 .layout-single-column .notification.notification-reblog .display-name,
@@ -1402,12 +1404,21 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
+/* Minimal follow notification fix */
+.layout-single-column .notification.notification-follow .notification__message > span {
+  margin-top: calc(var(--size-avatar-small) + 16px);
+}
+
+.layout-single-column .notification.notification-follow .notification__message + .account {
+  padding-bottom: 0;
+}
+
 .layout-single-column .status__prepend {
   padding-left: calc(var(--size-avatar) - 4px);
 }
 
-.layout-single-column .notification.notification.notification-update .account__display-name,
-.layout-single-column .notification.notification.notification-follow .account__display-name {
+.layout-single-column .notification.notification-update .account__display-name,
+.layout-single-column .notification.notification-follow .account__display-name {
   display: inline-flex;
   gap: var(--gap-default);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
@@ -1625,6 +1636,10 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Follow/unfollow button */
+.layout-single-column .notification .account__relationship {
+  transform: translateY(-4px);
+}
+
 .layout-single-column .account__relationship .icon-button,
 .layout-single-column .notification .account__relationship .icon-button {
   background-color: transparent;
