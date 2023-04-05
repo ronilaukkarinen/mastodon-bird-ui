@@ -1,4 +1,4 @@
-### 1.4.2rc4: 2024-04-05
+### 1.4.2rc6: 2024-04-05
 
 * Fix offset of the star micro-interaction in the Explore view
 * Fix star/unstar interactions on mobile
@@ -6,6 +6,8 @@
 * Fix strange horizontal overflow in between-resolutions (min-width: 1175px) and (max-width: 1330px)
 * Fix compose form not resizing on mobile devices
 * Fix some unprefixed classes
+* Fix unread private message background
+* Fix conversation border color
 
 ### 1.4.1: 2024-04-05
 

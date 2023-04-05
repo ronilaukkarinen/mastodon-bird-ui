@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc4 */
+   1.4.2rc6 */
 
 /* CSS variables */
 :root {
@@ -583,6 +583,7 @@ a.status-card.compact .status-card__host {
 .layout-single-column .dropdown-menu__separator,
 .layout-single-column .status,
 .layout-single-column .emoji-mart-search input,
+.layout-single-column .conversation,
 .layout-single-column .setting-text__wrapper {
   border-color: var(--color-border);
 }
@@ -730,6 +731,7 @@ body.embed .status__content a,
 }
 
 /* Unread message */
+.layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
 .layout-single-column .notification.unread,
 .layout-single-column .status__wrapper.unread {
@@ -942,6 +944,7 @@ body.embed .status__content a,
 }
 
 /* Panels and things that should be transparent */
+.layout-single-column .status__wrapper-direct,
 .layout-single-column .focusable:focus .detailed-status,
 .layout-single-column .focusable:focus .detailed-status__action-bar,
 .layout-single-column .compose-form__poll-wrapper select,
@@ -2003,30 +2006,30 @@ body.embed .button.logo-button:hover,
 }
 
 /* General fixes */
-.account__header__bar .avatar {
+.layout-single-column .account__header__bar .avatar {
   /* stylelint-disable-next-line */
   margin-left: 0 !important;
 }
 
 /* stylelint-disable-next-line */
-::webkit-scrollbar {
+.layout-single-column::webkit-scrollbar {
   width: 3px;
 }
 
 /* Fix for button line-height */
-.button.logo-button {
+.layout-single-column .button.logo-button {
   line-height: 22px;
 }
 
 /* Visual indicator about direct messages
    @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
 
-.detailed-status-direct {
+.layout-single-column .detailed-status-direct {
   position: relative;
 }
 
-.status__wrapper-direct::after,
-.detailed-status-direct::after {
+.layout-single-column .status__wrapper-direct::after,
+.layout-single-column .detailed-status-direct::after {
   border-left: 20px solid transparent;
   border-top: 20px solid var(--color-accent);
   /* Add a ribbon to the corner */
