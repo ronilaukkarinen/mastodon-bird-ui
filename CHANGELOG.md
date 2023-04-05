@@ -1,6 +1,8 @@
-### 1.4.2rc1: 2024-04-05
+### 1.4.2rc2: 2024-04-05
 
 * Fix offset of the star micro-interaction in the Explore view
+* Fix star/unstar interactions on mobile
+* Fix sparkles not showing up on mobile devices
 
 ### 1.4.1: 2024-04-05
 

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc1 */
+   1.4.2rc2 */
 
 /* CSS variables */
 :root {
@@ -3314,6 +3314,14 @@ body.embed .entry .detailed-status {
   z-index: unset;
 }
 
+/* Ensure everything shows up on mobile */
+.layout-single-column.no-reduce-motion .icon-button.star-icon.activate .fa-star::before,
+.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
+.layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
+  /* stylelint-disable-next-line */
+  display: block !important;
+}
+
 /* Star circle/ring */
 .layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
 .layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
@@ -3335,6 +3343,16 @@ body.embed .entry .detailed-status {
   color: var(--color-yellow);
 }
 
+.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.deactivate:hover .fa-star::before,
+.layout-single-column .status__action-bar button.icon-button.deactivate.star-icon:hover .fa-star::before,
+.layout-single-column .detailed-status__action-bar .icon-butto.deactivate .fa-star::before,
+.layout-single-column .detailed-status button.icon-button.deactivate .fa-star::before,
+.layout-single-column .status button.icon-button.deactivate .fa-star::before {
+  color: var(--color-dim);
+  /* stylelint-disable-next-line */
+  content: '\f006' !important;
+}
+
 .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .fa-star::before,
 .layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .fa-star::before,
 .layout-single-column .detailed-status__action-bar .icon-button:hover .fa-star::before,
@@ -3342,9 +3360,21 @@ body.embed .entry .detailed-status {
 .layout-single-column .status button.icon-button:hover .fa-star::before {
   color: var(--color-yellow);
   /* stylelint-disable-next-line */
-  content: "\f006" !important;
+  content: "\f005" !important;
   position: relative;
   top: 0;
+}
+
+/* Mobile devices */
+@media (hover: none) {
+  .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .fa-star::before,
+  .layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .fa-star::before,
+  .layout-single-column .detailed-status__action-bar .icon-button:hover .fa-star::before,
+  .layout-single-column .detailed-status button.icon-button:hover .fa-star::before,
+  .layout-single-column .status button.icon-button:hover .fa-star::before {
+    /* stylelint-disable-next-line */
+    content: '\f005' !important;
+  }
 }
 
 /* Sparkle offset on numbered item */
@@ -3358,7 +3388,8 @@ body.embed .entry .detailed-status {
 }
 
 /* Circle offset on numbered item */
-.layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before, .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
+.layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
+.layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
   /* stylelint-disable-next-line */
   left: calc(50% - 14px) !important;
 }
