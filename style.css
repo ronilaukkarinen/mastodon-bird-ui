@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.2rc3 */
+   1.4.2rc4 */
 
 /* CSS variables */
 :root {
@@ -956,7 +956,7 @@ body.embed .activity-stream .entry,
 .layout-single-column .scrollable .account-card__title__avatar img,
 .layout-single-column .explore__search-header,
 .layout-single-column .empty-column-indicator,
-.follow_requests-unlocked_explanation,
+.layout-single-column .follow_requests-unlocked_explanation,
 .layout-single-column .column-link,
 .layout-single-column .columns-area__panels__pane--navigational .navigation-panel,
 .layout-single-column .tabs-bar__wrapper .column-back-button,
@@ -3344,7 +3344,7 @@ body.embed .entry .detailed-status {
 }
 
 .layout-single-column .icon-button.star-icon.active,
-.notification__favourite-icon-wrapper .star-icon {
+.layout-single-column .notification__favourite-icon-wrapper .star-icon {
   color: var(--color-yellow);
 }
 
