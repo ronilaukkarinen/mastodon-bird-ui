@@ -1,6 +1,7 @@
-### 1.4.1rc1: 2024-04-05
+### 1.4.1rc2: 2024-04-05
 
 * Attempt to fix #8
+* Make the star icon in notification slightly bigger
 
 ### 1.4.0: 2024-04-05
 
