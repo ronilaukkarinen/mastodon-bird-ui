@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.1rc2 */
+   1.4.1rc3 */
 
 /* CSS variables */
 :root {
@@ -3261,7 +3261,6 @@ body.embed .entry .detailed-status {
 .layout-single-column .notification__filter-bar button.icon-button.active .fa-star::before,
 .layout-single-column .detailed-status__action-bar button.icon-button.active .fa-star::before,
 .layout-single-column .status__action-bar button.icon-button.active .fa-star::before {
-  animation: popping .5s 1;
   /* stylelint-disable-next-line */
   content: "\f005" !important;
   display: block;
@@ -3269,7 +3268,7 @@ body.embed .entry .detailed-status {
 
 /* Active star when activated */
 .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .fa-star::before {
-  animation: sparkles-width .65s 1, sparkles-size .65s 1;
+  animation: sparkles-width .65s 1, sparkles-size .65s 1, popping .5s 1;
   /* stylelint-disable-next-line */
   background-color: unset !important;
   /* stylelint-disable-next-line */
