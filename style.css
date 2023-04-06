@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc11 */
+   1.4.3rc12 */
 
 /* CSS variables */
 :root {
@@ -2151,7 +2151,7 @@ body.embed .button.logo-button:hover,
   .layout-single-column .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 20vh !important;  /* stylelint-disable-next-line */
-    overflow-y: scroll !important;
+    overflow-y: hidden !important;
     resize: none;
   }
 }
