@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc7 */
+   1.4.3rc8 */
 
 /* CSS variables */
 :root {
@@ -1421,9 +1421,19 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
 }
 
-/* If notification content is empty and there's only attachment, remove gap */
+/* If a status content is empty and there's only attachment, remove gap */
 .layout-single-column .notification .status__content:has(.status__content__text:empty) + .attachment-list {
   margin-top: 0;
+}
+
+/* Less space before attachments if no status content */
+.layout-single-column .status .status__content:has(.status__content__text:empty) + .audio-player,
+.layout-single-column .status .status__content:has(.status__content__text:empty) + .video-player,
+.layout-single-column .status .status__content:has(.status__content__text:empty) + .media-gallery,
+.layout-single-column .detailed-status .status__content:has(.status__content__text:empty) + .audio-player,
+.layout-single-column .detailed-status .status__content:has(.status__content__text:empty) + .video-player,
+.layout-single-column .detailed-status .status__content:has(.status__content__text:empty) + .media-gallery {
+  margin-top: calc(var(--gap-default) / 2);
 }
 
 .layout-single-column .notification.notification-follow .notification__message + .account {
