@@ -1,4 +1,4 @@
-### 1.4.3rc12: 2024-04-06
+### 1.4.3: 2024-04-06
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
@@ -13,7 +13,7 @@
 * Fix follow notification spacing between avatar and an user
 * Fix status__prepend boost icon 1px alignment
 * Prevent the star from being highlighted when the button is focused, especially while logged out, Fixes #9
-* Hide scrollbar from the textarea by default
+* Do not force compose form scrollbar when not needed
 
 ### 1.4.2: 2024-04-05
 
