@@ -251,20 +251,20 @@ body.theme-mastodon-light.layout-single-column {
   .layout-single-column::-webkit-scrollbar {
     display: none;
   }
+}
 
-  /* Full width search popout on mobile */
-  .layout-single-column div:has(.search-popout) {
-    left: 15px;
+/* Search popout offset */
+.layout-single-column .search__popout,
+.layout-single-column .search-popout {
+  left: calc(30px / 2);
 
-    /* It's inlined so we have to use !important */
-    /* stylelint-disable-next-line */
-    max-width: calc(100% - 30px) !important;
-    position: relative;
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  max-width: calc(100% - 30px) !important;
 
-    /* It's inlined so we have to use !important */
-    /* stylelint-disable-next-line */
-    width: calc(100% - 30px) !important;
-  }
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  width: calc(100% - 30px) !important;
 }
 
 body.embed,
@@ -533,13 +533,22 @@ a.status-card.compact .status-card__host {
   color: var(--color-light-text);
 }
 
+/* Has dark 1px border */
+.layout-single-column .dismissable-banner {
+  border: 1px solid var(--color-dark);
+}
+
 /* More subtle box-shadow for dropdown-menu */
 .layout-single-column .search-popout,
+.layout-single-column .search__popout,
 .layout-single-column .dropdown-menu {
   box-shadow: 2px 4px 16px rgb(0 0 0 / .01);
 }
 
 /* Autosuggest box shadow reset */
+.layout-single-column .search-popout,
+.layout-single-column .search__popout,
+.layout-single-column .dropdown-menu,
 .layout-single-column .emoji-picker-dropdown__menu,
 .layout-single-column .compose-form .compose-form__warning,
 .layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
@@ -752,6 +761,7 @@ body.embed .status__content a,
 .layout-single-column .confirmation-modal__action-bar > div,
 .layout-single-column .mute-modal__action-bar > div,
 .layout-single-column .search-popout > h4,
+.layout-single-column .search__popout > h4,
 .layout-single-column .status-check-box__status .detailed-status__display-name,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text,
 .layout-single-column .status-card .status-card__description,
@@ -1084,13 +1094,16 @@ body.embed .detailed-status,
 }
 
 /* Search panel that opens when focusing Search or paste URL field */
+.layout-single-column .explore__search-header .search__popout,
 .layout-single-column .compose-form__poll-wrapper option,
+.layout-single-column .search__popout,
 .layout-single-column .search-popout {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
   color: var(--color-dim);
 }
 
+.layout-single-column .search__popout em,
 .layout-single-column .search-popout em {
   color: var(--color-light-text);
 }
@@ -1823,6 +1836,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column h4,
+.layout-single-column .search__popout h4,
 .layout-single-column .search-popout h4,
 .layout-single-column .server-banner h4 {
   text-transform: unset;

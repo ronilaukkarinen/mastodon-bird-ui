@@ -14,6 +14,7 @@
 * Fix status__prepend boost icon 1px alignment
 * Prevent the star from being highlighted when the button is focused, especially while logged out, Fixes #9
 * Do not force compose form scrollbar when not needed
+* Fix search popout in Mastodon 4.1.2
 
 ### 1.4.2: 2024-04-05
 
