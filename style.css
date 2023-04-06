@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc10 */
+   1.4.3rc11 */
 
 /* CSS variables */
 :root {
@@ -3408,9 +3408,16 @@ body.embed .entry .detailed-status {
 .layout-single-column .status button.icon-button:hover .fa-star::before {
   color: var(--color-yellow);
   /* stylelint-disable-next-line */
-  content: "\f005" !important;
+  content: "\f006" !important;
   position: relative;
   top: 0;
+}
+
+/* Prevent the star from being highlighted when the button is focused, especially while logged out */
+.layout-single-column .detailed-status__action-bar .icon-button:focus .fa-star::before,
+.layout-single-column .detailed-status button.icon-button:focus .fa-star::before,
+.layout-single-column .status button.icon-button:hover .fa-star::before {
+  color: var(--color-dim);
 }
 
 /* Mobile devices */
