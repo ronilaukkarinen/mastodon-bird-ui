@@ -1,4 +1,4 @@
-### 1.4.3rc5: 2024-04-06
+### 1.4.3rc6: 2024-04-06
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
@@ -7,6 +7,7 @@
 * Hide verification url from follow notifications
 * Fix boost message line spacing
 * Fix regression with status message padding
+* Fix: If notification content is empty and there's only attachment, remove gap
 
 ### 1.4.2: 2024-04-05
 

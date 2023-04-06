@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc5 */
+   1.4.3rc6 */
 
 /* CSS variables */
 :root {
@@ -1408,7 +1408,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Minimal boost notification fix */
 .layout-single-column .notification.notification-reblog .notification__message > span {
-  margin-top: calc(var(--size-avatar-small) + 12px);
+  margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2))
 }
 
 /* Minimal follow notification fix */
@@ -1419,6 +1419,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Minimal fav notification fix */
 .layout-single-column .notification.notification-favourite .notification__message > span {
   margin-top: calc(var(--size-avatar-small) + 16px);
+}
+
+/* If notification content is empty and there's only attachment, remove gap */
+.layout-single-column .notification .status__content:has(.status__content__text:empty) + .attachment-list {
+  margin-top: 0;
 }
 
 .layout-single-column .notification.notification-follow .notification__message + .account {
