@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc9 */
+   1.4.3rc10 */
 
 /* CSS variables */
 :root {
@@ -1630,6 +1630,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 .layout-single-column .status__prepend .fa-retweet::before {
   content: var(--icon-boost-status-prepend);
+  position: relative;
+  top: 1px;
 }
 
 .layout-single-column .notification .notification__message .fa {
