@@ -1,4 +1,4 @@
-### 1.4.3rc6: 2024-04-06
+### 1.4.3rc7: 2024-04-06
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
@@ -8,6 +8,7 @@
 * Fix boost message line spacing
 * Fix regression with status message padding
 * Fix: If notification content is empty and there's only attachment, remove gap
+* Fix inconsistencies in paddings of the notification content
 
 ### 1.4.2: 2024-04-05
 
