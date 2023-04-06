@@ -1,4 +1,4 @@
-### 1.4.3rc8: 2024-04-06
+### 1.4.3rc9: 2024-04-06
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
@@ -10,6 +10,7 @@
 * Fix: If notification content is empty and there's only attachment, remove gap
 * Fix inconsistencies in paddings of the notification content
 * Fix too much space if there is no content in regular statuses before attachment
+* Fix follow notification spacing between avatar and an user
 
 ### 1.4.2: 2024-04-05
 

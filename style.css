@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc8 */
+   1.4.3rc9 */
 
 /* CSS variables */
 :root {
@@ -1413,7 +1413,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Minimal follow notification fix */
 .layout-single-column .notification.notification-follow .notification__message > span {
-  margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
+  margin-top: calc(calc(var(--size-avatar-small) + calc(var(--gap-default) / 2)) + 4px);
 }
 
 /* Minimal fav notification fix */
