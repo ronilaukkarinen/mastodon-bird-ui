@@ -9,7 +9,24 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
-## Why would anyone want Mastodon to look like Twitter?
+## Table of contents
+
+1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
+2. [Features](#features)
+3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
+4. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
+5. [Other tweaks and customizations](#other-tweaks-and-customizations)
+    1. [Twitter-like link previews](#twitter-like-link-previews)
+    2. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
+    3. [Hide translate link for multiple languages](#hide-translate-link-for-multiple-languages)
+    4. [Thread lines](#thread-lines)
+    5. [Micro-interactions](#micro-interactions)
+6. [FAQ](#faq)
+    1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
+    2. [Can you implement feature X?](#can-you-implement-feature-x)
+    3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
+7. [Goals](#goals)
+
 
 Because you can? Let's face it, we're kinda used to it, Mastodon already resembles the birdsite. Twitter UI is not bad, it's just that it's not for everyone. Twitter (in my opinion) made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
 
@@ -21,7 +38,7 @@ This is why I have defaulted Mastodon deep purple colors in this "theme", if you
 
 More screenshots: [Dark version on mobile](https://user-images.githubusercontent.com/1534150/225091661-004080da-58c6-4f66-8d1a-9510cf656980.png), [Light version on mobile](https://user-images.githubusercontent.com/1534150/227730439-f4408917-f92f-4424-a3c6-35169af967bd.jpg), [Dark version on desktop](https://user-images.githubusercontent.com/1534150/224481675-fa165053-30a4-4530-a2f4-ecc4ea08af4c.png), [Dark version desktop profile view](https://user-images.githubusercontent.com/1534150/225982793-89843f18-e2e5-46bc-b265-138f8ed460ca.png), [Light version on desktop](https://user-images.githubusercontent.com/1534150/227730450-c1b82e2c-8ab3-4474-84fc-b9d3422cdc8d.png), [Twitter colors on desktop (outdated)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png).
 
-### Features
+## Features
 
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
@@ -96,7 +113,25 @@ There are two micro-interaction animations in this UI, both are inspired by the 
 
 If you like the heart, just remove everything between `Star animation micro-interactions start (depends on the heart icon above)` and `Star animation micro-interactions end`.
 
-### Goals
+## FAQ
+
+I get many questions about this UI, so here I'm going to answer to them.
+
+### I want to make changes to the UI, can I do that?
+
+Of course! This is all open source, customizable and extendable. You can fork this repo and make changes to the CSS. You can also use the **Custom CSS** box in {yourinstance.social/admin/settings/appearance} to add your own styles directly.
+
+### Can you implement feature X?
+
+Not everything is possible via CSS only. In fact, some of the tweaks I had to do to the Mastodon core, see my fork [here](https://github.com/ronilaukkarinen/mastodon/tree/mementomori-social-mods) and the tweaks above.
+
+However, even if they were possible, I won't implement all requests. My opinionated choices are not the only answer, but I'm not willing to add every possible customization to this UI as default. I want to keep it simple and extendable.
+
+### I want background-color to the compose form
+
+See the end of [this comment](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10#issuecomment-1499345796).
+
+## Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
 - **Single-column layout only.** This experiment is not meant for advanced layout.
