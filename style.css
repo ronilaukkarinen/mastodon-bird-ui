@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3rc4 */
+   1.4.3rc5 */
 
 /* CSS variables */
 :root {
@@ -904,6 +904,7 @@ body.embed .status__content a,
   height: calc(var(--gap-default) * 2);
   justify-content: flex-start;
   margin-bottom: 0;
+  padding-bottom: calc(var(--gap-default) / 2);
 }
 
 /* Display name */
