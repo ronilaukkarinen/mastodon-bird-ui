@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.4rc3 */
+   1.4.4rc4 */
 
 /* CSS variables */
 :root {
@@ -3309,9 +3309,14 @@ body.embed .entry .detailed-status {
 }
 
 /* Numbers on hover */
-.layout-single-column button.icon-button:hover i.fa-star ~ span,
-.layout-single-column button.icon-button.active i.fa-star ~ span {
+.layout-single-column button.icon-button:hover i.fa-star ~ span {
   color: var(--color-dim);
+}
+
+/* Numbers when the star is active/activated */
+.layout-single-column button.icon-button.activate i.fa-star ~ span,
+.layout-single-column button.icon-button.active i.fa-star ~ span {
+  color: var(--color-yellow);
 }
 
 /* The actual star icon */
