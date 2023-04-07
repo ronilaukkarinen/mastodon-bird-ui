@@ -1,3 +1,7 @@
+### 1.4.4rc1: 2024-04-07
+
+* Fix sparkle position on mobile devices
+
 ### 1.4.3: 2024-04-06
 
 * Fix new notification types

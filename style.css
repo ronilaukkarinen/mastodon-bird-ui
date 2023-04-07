@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.3 */
+   1.4.4rc1 */
 
 /* CSS variables */
 :root {
@@ -3454,6 +3454,14 @@ body.embed .entry .detailed-status {
 
   /* stylelint-disable-next-line */
   top: calc(50% + -1px) !important;
+}
+
+/* Fix the sparkle position on small screens */
+@media (max-width: 888px) {
+  .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
+    /* stylelint-disable-next-line */
+    left: calc(50% - 13px) !important;
+  }
 }
 
 /* Circle offset on numbered item */
