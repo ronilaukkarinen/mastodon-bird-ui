@@ -1,6 +1,7 @@
-### 1.4.4rc1: 2024-04-07
+### 1.4.4rc2: 2024-04-07
 
 * Fix sparkle position on mobile devices
+* Fix circle position on mobile devices
 
 ### 1.4.3: 2024-04-06
 
