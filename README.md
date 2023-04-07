@@ -123,7 +123,7 @@ Of course! This is all open source, customizable and extendable. You can fork th
 
 ### Can you implement feature X?
 
-Not everything is possible via CSS only. In fact, some of the tweaks I had to do to the Mastodon core, see my fork [here](https://github.com/ronilaukkarinen/mastodon/tree/mementomori-social-mods) and the tweaks above.
+Not everything is possible via CSS only. In fact, some of the tweaks I had to do to the Mastodon core, see my fork [here](https://github.com/mastodon/mastodon/compare/v4.1.2...ronilaukkarinen:mastodon:mementomori-social-mods) and the tweaks above.
 
 However, even if they were possible, I won't implement all requests. My opinionated choices are not the only answer, but I'm not willing to add every possible customization to this UI as default. I want to keep it simple and extendable.
 
