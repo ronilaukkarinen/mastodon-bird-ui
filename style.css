@@ -117,6 +117,7 @@
   --icon-users-column-link: url('data:image/svg+xml, %3Csvg width="24px" height="24px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="%23000000"%3E%3Cpath d="M1 20v-1a7 7 0 017-7v0a7 7 0 017 7v1" stroke="%23f7f9f9" stroke-width="2" stroke-linecap="round"%3E%3C/path%3E%3Cpath d="M13 14v0a5 5 0 015-5v0a5 5 0 015 5v.5" stroke="%23f7f9f9" stroke-width="1.5" stroke-linecap="round"%3E%3C/path%3E%3Cpath d="M8 12a4 4 0 100-8 4 4 0 000 8zM18 9a3 3 0 100-6 3 3 0 000 6z" stroke="%23f7f9f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3C/path%3E%3C/svg%3E');
   --icon-users-column-link-active: url('data:image/svg+xml, %3Csvg width="24px" height="24px" stroke-width="2.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="%23000000"%3E%3Cpath d="M1 20v-1a7 7 0 017-7v0a7 7 0 017 7v1" stroke="%23f7f9f9" stroke-width="2" stroke-linecap="round"%3E%3C/path%3E%3Cpath d="M13 14v0a5 5 0 015-5v0a5 5 0 015 5v.5" stroke="%23f7f9f9" stroke-width="2.5" stroke-linecap="round"%3E%3C/path%3E%3Cpath d="M8 12a4 4 0 100-8 4 4 0 000 8zM18 9a3 3 0 100-6 3 3 0 000 6z" stroke="%23f7f9f9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"%3E%3C/path%3E%3C/svg%3E');
   --icon-bookmark-status-hover: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23595aff' aria-hidden='true'%3E%3Cg%3E%3Cpath d='M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  --icon-bookmark-status-hover-red: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F91880' aria-hidden='true'%3E%3Cg%3E%3Cpath d='M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   --icon-bookmark: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23717c9b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"%3E%3Cpath d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"%3E%3C/path%3E%3C/svg%3E');
   --icon-bookmark-active: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F91880' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cg%3E%3Cpath d='M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   --icon-bell: url('data:image/svg+xml, %3Csvg width="24px" height="24px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="%23f7f9f9"%3E%3Cpath d="M18 8.4c0-1.697-.632-3.325-1.757-4.525C15.117 2.675 13.59 2 12 2c-1.591 0-3.117.674-4.243 1.875C6.632 5.075 6 6.703 6 8.4 6 15.867 3 18 3 18h18s-3-2.133-3-9.6zM13.73 21a1.999 1.999 0 01-3.46 0" stroke="%23f7f9f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3C/path%3E%3C/svg%3E');
@@ -2576,6 +2577,25 @@ body.embed .button.logo-button:hover,
   color: var(--color-dim);
 }
 
+
+/* If a hover device */
+@media (hover: hover) {
+  .layout-single-column button.icon-button:not(.active):hover i.fa-retweet,
+  .layout-single-column button.icon-button:not(.active):hover i.fa-retweet ~ span {
+    color: var(--color-green);
+  }
+
+  .layout-single-column button.icon-button:not(.active):hover i.fa-bookmark::before {
+    /* stylelint-disable-next-line */
+    content: var(--icon-bookmark-status-hover-red) !important;
+  }
+
+  .layout-single-column button.icon-button:not(.active):hover i.fa-retweet {
+    /* stylelint-disable-next-line */
+    background-image: var(--icon-boost-active) !important;
+  }
+}
+
 .layout-single-column button.icon-button:hover i.fa-retweet ~ span,
 .layout-single-column button.icon-button.active i.fa-retweet ~ span {
   color: var(--color-green);
@@ -3338,6 +3358,19 @@ body.embed .entry .detailed-status {
  * "Star animation micro-interactions end"
  * -------------------------------------------------------------------------
  */
+
+/* If a hover device */
+@media (hover: hover) {
+  .layout-single-column button.icon-button:not(.active):hover i.fa-star,
+  .layout-single-column button.icon-button:not(.active):hover i.fa-star ~ span,
+  .layout-single-column button.icon-button:not(.active):hover i.fa-star::before {
+    color: var(--color-yellow);
+  }
+
+  .layout-single-column button.icon-button.active:hover i.fa-star ~ span {
+    color: var(--color-dim);
+  }
+}
 
 /* stylelint-disable no-duplicate-selectors */
 /* Left sidebar column links */
