@@ -1,9 +1,11 @@
-### 1.4.4rc4: 2024-04-07
+### 1.4.4: 2024-04-08
 
 * Fix sparkle position on mobile devices
 * Fix circle position on mobile devices
 * Fix number color on hover when the star is not activated yet
 * Fix number color when the star is active
+* Fix active tab color staying active when the tab is not active on mobile
+* Fix heart is not active when it's activated over the star
 
 ### 1.4.3: 2024-04-06
 
