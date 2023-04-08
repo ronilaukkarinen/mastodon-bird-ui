@@ -26,6 +26,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
     4. [Why don't you just create an app?](#why-dont-you-just-create-an-app)
+    5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
 7. [Goals](#goals)
 
 
@@ -137,6 +138,12 @@ See the end of [this comment](https://github.com/ronilaukkarinen/mastodon-bird-u
 I'm not a software developer. I'm a front end developer (and a bit of a designer) and my expertise is in CSS, UX and HTML. I don't know how to create a Mastodon app for Android, iOS or web and while I know a bit of python, JavaScript, Ruby and other programming languages, I don't have time and patience to create an app from scratch right now.
 
 There are other people who are working on magnificent apps for Mastodon, so I'm not going to reinvent the wheel. I simply like the Twitter-ish UI and Mastodon default web back-end and I want to have these combined on my instance. As CSS is the language I live and breathe daily, it's really easy and fast for me to create a UI like this.
+
+### Why don't you just run Mastodon Bird UI in a separate URL?
+
+See the previous answer. Mastodon Bird UI is not an app, it's a CSS file that you can use with any Mastodon instance. You don't need to run a separate instance just for this UI and perhaps you shouldn't either.
+
+If you really would want this to run in a separate URL, you could in theory set up another nginx host for a subdomain and just use [ngx_http_sub_module](http://nginx.org/en/docs/http/ngx_http_sub_module.html) to load up a CSS file. I haven't tried this and it might not be even possible, but it's worth a try.
 
 ## Goals
 
