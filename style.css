@@ -1575,7 +1575,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: 32px;
   bottom: calc(2px - var(--gap-default) * 1.5);
   content: "";
-  inset-inline-end: calc(0px - var(--gap-default));
+  inset-inline-end: calc(0px - (var(--gap-default) * 2));
   inset-inline-start: calc(-1.28571429em - (var(--gap-default) * 2));
   opacity: 0;
   position: absolute;
