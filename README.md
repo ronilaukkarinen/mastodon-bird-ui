@@ -25,6 +25,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
+    4. [Why don't you just create an app?](#why-dont-you-just-create-an-app)
 7. [Goals](#goals)
 
 
@@ -130,6 +131,12 @@ However, even if they were possible, I won't implement all requests. My opiniona
 ### I want background-color to the compose form
 
 See the end of [this comment](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10#issuecomment-1499345796).
+
+### Why don't you just create an app?
+
+I'm not a software developer. I'm a front end developer (and a bit of a designer) and my expertise is in CSS, UX and HTML. I don't know how to create a Mastodon app for Android, iOS or web and while I know a bit of python, JavaScript, Ruby and other programming languages, I don't have time and patience to create an app from scratch right now.
+
+There are other people who are working on magnificent apps for Mastodon, so I'm not going to reinvent the wheel. I simply like the Twitter-ish UI and Mastodon default web back-end and I want to have these combined on my instance. As CSS is the language I live and breathe daily, it's really easy and fast for me to create a UI like this.
 
 ## Goals
 
