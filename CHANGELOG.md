@@ -5,6 +5,7 @@
 * Align column link heart icon better
 * Fix un-boost action color and animation
 * Fix un-bookmark color
+* Fix un-boost color when numbered item on Explore page
 
 ### 1.4.4: 2024-04-08
 

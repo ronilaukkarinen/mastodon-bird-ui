@@ -2569,6 +2569,13 @@ body.embed .button.logo-button:hover,
   content: var(--icon-bookmark);
 }
 
+
+/* Un-boost and un-bookmark numbers on explore page */
+.layout-single-column button.icon-button:not(.active):focus i.fa-retweet ~ span,
+.layout-single-column button.icon-button:not(.active):hover i.fa-retweet ~ span {
+  color: var(--color-dim);
+}
+
 .layout-single-column button.icon-button:hover i.fa-retweet ~ span,
 .layout-single-column button.icon-button.active i.fa-retweet ~ span {
   color: var(--color-green);
