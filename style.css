@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.5rc3 */
+   1.4.5 */
 
 /* CSS variables */
 :root {
@@ -2554,6 +2554,19 @@ body.embed .button.logo-button:hover,
   background-image: var(--icon-boost-active);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Un-boost and un-bookmark styles */
+/* Mobile devices */
+.layout-single-column button.icon-button:not(.active):focus i.fa-retweet,
+.layout-single-column button.icon-button:not(.active):hover i.fa-retweet {
+  animation: none;
+  background-image: var(--icon-boost);
+}
+
+.layout-single-column .status button.icon-button:not(.active):focus .fa-bookmark::before,
+.layout-single-column .status button.icon-button:not(.active):hover .fa-bookmark::before {
+  content: var(--icon-bookmark);
 }
 
 .layout-single-column button.icon-button:hover i.fa-retweet ~ span,
