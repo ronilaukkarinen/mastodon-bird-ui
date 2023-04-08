@@ -72,7 +72,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 1. Install [Live CSS Editor](https://github.com/webextensions/live-css-editor) (or any other extension like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite)
 2. Get the style.css from this repo
 3. Open extension and paste the CSS into the editor
-4. Click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
 ## Other tweaks and customizations
 
