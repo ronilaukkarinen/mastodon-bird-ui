@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.5rc2 */
+   1.4.5rc3 */
 
 /* CSS variables */
 :root {
@@ -3201,6 +3201,13 @@ body.embed .entry .detailed-status {
 /* Left sidebar column links */
 .layout-single-column .column-link .fa-star::before {
   content: var(--icon-heart-column-link);
+}
+
+@media (min-width: 889px) {
+  .layout-single-column .column-link .fa-star::before {
+    position: relative;
+    top: 2px;
+  }
 }
 
 .layout-single-column .column-link.active .fa-star::before {
