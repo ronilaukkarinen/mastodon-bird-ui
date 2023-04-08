@@ -1,6 +1,7 @@
-### 1.4.5rc1: 2024-04-08
+### 1.4.5rc2: 2024-04-08
 
 * Move follow notification closer in line to the follow button
+* Fix follow notification general alignment issues
 
 ### 1.4.4: 2024-04-08
 
