@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.6rc1 */
+   1.4.6rc2 */
 
 /* CSS variables */
 :root {
@@ -3079,6 +3079,11 @@ body.embed .entry .detailed-status {
 .layout-single-column .button.logo-button.button--destructive:focus {
   background-color: var(--color-destructive);
   border-color: var(--color-destructive);
+}
+
+/* Fix character counter color when it's over the limit */
+.layout-single-column .character-counter.character-counter--over {
+  color: var(--color-destructive);
 }
 
 /* Follow hashtag icon */

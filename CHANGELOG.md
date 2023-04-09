@@ -1,6 +1,7 @@
-### 1.4.6rc1: 2024-04-09
+### 1.4.6rc2: 2024-04-09
 
 * Increase right padding for left column link hover #13 (thanks @kde3kko!)
+* Fix character counter color when it's over the limit, Fixes #14 (thanks @kde3kko!)
 
 ### 1.4.5: 2024-04-08
 
