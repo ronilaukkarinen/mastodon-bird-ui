@@ -1,3 +1,7 @@
+### 1.4.6rc1: 2024-04-09
+
+* Increase right padding for left column link hover #13 (thanks @kde3kko!)
+
 ### 1.4.5: 2024-04-08
 
 * Move follow notification closer in line to the follow button
