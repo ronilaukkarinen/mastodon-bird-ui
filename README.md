@@ -109,7 +109,8 @@ There is currently no proper thread support in replies on Mastodon core. There's
 
 ### Micro-interactions
 
-There are two micro-interaction animations in this UI, both are inspired by the Twitter's original UI animation.
+There are two micro-interaction animations in this UI, both are inspired by the Twitter's original UI animation. The star is originally a work of 
+a Twitter designer [Brian Waddington](https://dribbble.com/shots/1884504-Twitter-Fav). The heart is by Twitter design team. Both animations have been completely re-created by me, frame by frame. The star animation itself contains 100 hand made frames.
 
 | Twitter likes | Twitter fave star (2015) |
 | ------------- | ------------- |
