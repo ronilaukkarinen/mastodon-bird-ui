@@ -1,10 +1,14 @@
-### 1.4.6: 2024-04-09
+### 1.4.7rc1: 2023-04-09
+
+* Fix the sparkle and circle position on Explore tab on mobile
+
+### 1.4.6: 2023-04-09
 
 * Increase right padding for left column link hover #13 (thanks @kde3kko!)
 * Fix character counter color when it's over the limit, Fixes #14 (thanks @kde3kko!)
 * Fix hover colors on the Explore tab, when un-boosted but hover supported
 
-### 1.4.5: 2024-04-08
+### 1.4.5: 2023-04-08
 
 * Move follow notification closer in line to the follow button
 * Fix follow notification general alignment issues
@@ -13,7 +17,7 @@
 * Fix un-bookmark color
 * Fix un-boost color when numbered item on Explore page
 
-### 1.4.4: 2024-04-08
+### 1.4.4: 2023-04-08
 
 * Fix sparkle position on mobile devices
 * Fix circle position on mobile devices
@@ -22,7 +26,7 @@
 * Fix active tab color staying active when the tab is not active on mobile
 * Fix heart is not active when it's activated over the star
 
-### 1.4.3: 2024-04-06
+### 1.4.3: 2023-04-06
 
 * Fix new notification types
 * Fix a typo that caused reblog notification styles to crash
@@ -40,7 +44,7 @@
 * Do not force compose form scrollbar when not needed
 * Fix search popout in Mastodon 4.1.2
 
-### 1.4.2: 2024-04-05
+### 1.4.2: 2023-04-05
 
 * Fix offset of the star micro-interaction in the Explore view
 * Fix star/unstar interactions on mobile
@@ -56,7 +60,7 @@
 * Fix follow notifications on Mastodon 4.1.2
 * Add support for Mastodon 4.1.2
 
-### 1.4.1: 2024-04-05
+### 1.4.1: 2023-04-05
 
 * Attempt to fix #8
 * Make the star icon in notification slightly bigger
