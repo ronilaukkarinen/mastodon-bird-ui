@@ -1011,8 +1011,6 @@ body.embed .detailed-status,
   min-height: var(--size-avatar) !important;
   /* stylelint-disable-next-line */
   min-width: var(--size-avatar) !important;
-  /* stylelint-disable-next-line */
-  min-width: var(--size-avatar) !important;
 
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
