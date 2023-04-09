@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss style.css > style.min.css"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +13,9 @@
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
     "@ronilaukkarinen/stylelint-declaration-strict-value": "^1.9.2",
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
+    "cssnano": "^6.0.0",
     "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
     "stylelint-order": "^6.0.3"
