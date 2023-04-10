@@ -1,6 +1,7 @@
-### 1.4.7rc1: 2023-04-09
+### 1.4.7rc2: 2023-04-09
 
 * Fix the sparkle and circle position on Explore tab on mobile
+* Fix star animation frame 7 (thanks @kde3kko!)
 
 ### 1.4.6: 2023-04-09
 
