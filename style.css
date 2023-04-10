@@ -2158,25 +2158,6 @@ body.embed .button.logo-button:hover,
   background-color: var(--color-bg);
 }
 
-/* Add a layer behind  composer form so things would not overlap */
-@media (min-width: 1175px) {
-  .layout-single-column .compose-form .compose-form__publish::after {
-    background-image: var(--compose-form-linear-gradient);
-    content: '';
-    height: 100px;
-    left: -38px;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: calc(100% + 80px);
-    z-index: -1;
-  }
-
-  .layout-single-column .compose-form .compose-form__publish {
-    position: relative;
-  }
-}
-
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
 @media (min-width: 889px) {
   .layout-single-column .compose-form .autosuggest-textarea__textarea {

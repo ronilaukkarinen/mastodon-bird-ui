@@ -4,6 +4,7 @@
 * Fix star animation frame 7 (thanks @kde3kko!)
 * Remove duplicate min-width definition #16 (thanks @kde3kko!)
 * Remove useless postcss dependency
+* Remove gradient that is no longer used, Fixes #17 (thanks @kde3kko!)
 
 ### 1.4.6: 2023-04-09
 
