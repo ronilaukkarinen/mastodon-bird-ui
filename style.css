@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.7rc1 */
+   1.4.7rc2 */
 
 /* CSS variables */
 :root {
@@ -3644,7 +3644,7 @@ body.embed .entry .detailed-status {
   }
 
   7% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4 fill='transparent' /%3E%3C/svg%3E");
+    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4' fill='transparent' /%3E%3C/svg%3E");
   }
 
   8% {
