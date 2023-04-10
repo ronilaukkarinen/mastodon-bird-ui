@@ -1,8 +1,9 @@
-### 1.4.7rc3: 2023-04-09
+### 1.4.7: 2023-04-09
 
 * Fix the sparkle and circle position on Explore tab on mobile
 * Fix star animation frame 7 (thanks @kde3kko!)
 * Remove duplicate min-width definition #16 (thanks @kde3kko!)
+* Remove useless postcss dependency
 
 ### 1.4.6: 2023-04-09
 

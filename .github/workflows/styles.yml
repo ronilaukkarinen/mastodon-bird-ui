@@ -27,7 +27,6 @@ jobs:
     - name: Install stylelint packages
       run: |
         npm install --global \
-        postcss@^8.4.21 \
         stylelint@^15.1.0 \
         stylelint-config-recommended@^10.0.1 \
         stylelint-config-standard@^30.0.1 \

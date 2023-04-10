@@ -151,4 +151,5 @@ If you really would want this to run in a separate URL, you could in theory set 
 ## Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
+- **Dependency free.** No JavaScript, no build process, no nothing. Just plain CSS. Linting is optional and just here to make sure the code quality is good.
 - **Single-column layout only.** This experiment is not meant for advanced layout.
