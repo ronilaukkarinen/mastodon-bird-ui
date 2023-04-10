@@ -32,7 +32,8 @@ jobs:
         stylelint-order@^6.0.3 \
         @ronilaukkarinen/stylelint-a11y@^1.2.7 \
         @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
-        @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1
+        @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1 \
+        postcss@8.4.21
     - name: Run stylelint
       run: |
         npx stylelint style.css --max-warnings 0 --config .stylelintrc
