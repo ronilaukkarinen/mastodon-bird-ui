@@ -27,10 +27,9 @@ jobs:
     - name: Install stylelint packages
       run: |
         npm install --global \
-        stylelint@^15.1.0 \
-        stylelint-config-recommended@^10.0.1 \
+        stylelint@^15.2.0 \
         stylelint-config-standard@^30.0.1 \
-        stylelint-order@^6.0.2 \
+        stylelint-order@^6.0.3 \
         @ronilaukkarinen/stylelint-a11y@^1.2.7 \
         @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
         @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1
