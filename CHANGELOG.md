@@ -1,3 +1,7 @@
+### 1.4.8rc1: 2023-04-14
+
+* Fix admin sign up notification glitch, Fixes #19 (thanks @llamacucumbe!)
+
 ### 1.4.7: 2023-04-09
 
 * Fix the sparkle and circle position on Explore tab on mobile

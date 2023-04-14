@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.7 */
+   1.4.8rc1 */
 
 /* CSS variables */
 :root {
@@ -1387,6 +1387,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .notification.notification-update .display-name__html,
 .layout-single-column .notification.notification-update .display-name__account,
 .layout-single-column .notification.notification-admin-sign-up .display-name__html,
+.layout-single-column .notification.notification-admin-sign-up .display-name,
 .layout-single-column .notification.notification-follow .display-name__html {
   visibility: hidden;
 }
@@ -1412,6 +1413,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 .layout-single-column .notification.notification-follow .verified-badge,
 .layout-single-column .notification.notification-follow .display-name,
+.layout-single-column .notification.notification-admin-sign-up .display-name + span,
 .layout-single-column .notification.notification-follow .display-name + span,
 .layout-single-column .notification.notification-favourite .status__wrapper-direct .status__prepend,
 .layout-single-column .notification.notification-reblog .display-name,
@@ -1429,6 +1431,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(calc(var(--size-avatar-small) + calc(var(--gap-default) / 2)) + 6px);
 }
 
+.layout-single-column .notification.notification.notification-admin-sign-up .account__relationship,
 .layout-single-column .notification.notification-follow .account__relationship {
   transform: translateY(-8px);
 }
@@ -1458,6 +1461,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(var(--gap-default) / 2);
 }
 
+.layout-single-column .notification.notification.notification-admin-sign-up .notification__message + .account,
 .layout-single-column .notification.notification-follow .notification__message + .account {
   padding-bottom: 0;
 }
