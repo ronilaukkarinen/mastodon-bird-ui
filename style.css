@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.8rc1 */
+   1.4.8rc2 */
 
 /* CSS variables */
 :root {
@@ -37,13 +37,13 @@
   --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
-  --color-black-coral: #536471;
-  --color-profile-button-hover: #eff3f41a;
-  --color-column-link-hover: #f7f9f91a;
+  --color-black-coral: #5a5371;
+  --color-profile-button-hover: #f1eff41a;
+  --color-column-link-hover: #f7f7f91a;
   --color-modal-overlay: #5b708366;
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
-  --color-gainsboro: #d9e1e8;
+  --color-gainsboro: #dcd9e8;
   --color-light-purple: #9baec8;
   --color-dark-electric-blue: #576078;
   --color-button-text: #f7f9f9;

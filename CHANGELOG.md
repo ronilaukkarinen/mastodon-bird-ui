@@ -1,6 +1,7 @@
-### 1.4.8rc1: 2023-04-14
+### 1.4.8rc2: 2023-04-14
 
 * Fix admin sign up notification glitch, Fixes #19 (thanks @llamacucumbe!)
+* Change some leftover shaded colors to more Mastodon deep purple variant rather than Twitter blue
 
 ### 1.4.7: 2023-04-09
 
