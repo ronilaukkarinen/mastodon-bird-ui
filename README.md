@@ -9,10 +9,6 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
-Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Mastodon post](https://mementomori.social/@rolle/110139191307581764)):
-
-[![image](https://user-images.githubusercontent.com/1534150/233774924-4506cf63-06f2-49e1-9c66-00f145a854b4.png)](https://mementomori.social/@rolle/110139191307581764)
-
 ## Table of contents
 
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
@@ -33,7 +29,6 @@ Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Ma
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
 7. [Goals](#goals)
 
-
 ## Why would anyone want Mastodon to look like Twitter?
 
 Because you can? Let's face it, we're kinda used to it, Mastodon already resembles the birdsite. Twitter UI is not bad, it's just that it's not for everyone. Twitter (in my opinion) made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
@@ -45,6 +40,10 @@ This is why I have defaulted Mastodon deep purple colors in this "theme", if you
 ![224368120-5f7bddc9-1702-4279-b297-35a4829e8a3b](https://user-images.githubusercontent.com/1534150/227730434-8a649484-d46c-4b5a-8137-930a302e54d8.png)
 
 More screenshots: [Dark version on mobile](https://user-images.githubusercontent.com/1534150/225091661-004080da-58c6-4f66-8d1a-9510cf656980.png), [Light version on mobile](https://user-images.githubusercontent.com/1534150/227730439-f4408917-f92f-4424-a3c6-35169af967bd.jpg), [Dark version on desktop](https://user-images.githubusercontent.com/1534150/224481675-fa165053-30a4-4530-a2f4-ecc4ea08af4c.png), [Dark version desktop profile view](https://user-images.githubusercontent.com/1534150/225982793-89843f18-e2e5-46bc-b265-138f8ed460ca.png), [Light version on desktop](https://user-images.githubusercontent.com/1534150/227730450-c1b82e2c-8ab3-4474-84fc-b9d3422cdc8d.png), [Twitter colors on desktop (outdated)](https://user-images.githubusercontent.com/1534150/223725571-b7f8ef41-212c-476c-9006-4e7cb2ddc062.png).
+
+Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Mastodon post](https://mementomori.social/@rolle/110139191307581764)):
+
+[![image](https://user-images.githubusercontent.com/1534150/233774924-4506cf63-06f2-49e1-9c66-00f145a854b4.png)](https://mementomori.social/@rolle/110139191307581764)
 
 ## Features
 
