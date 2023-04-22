@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.9rc3 */
+   1.4.9rc4 */
 
 /* CSS variables */
 :root {
@@ -45,6 +45,7 @@
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
   --color-gainsboro: #dcd9e8;
   --color-light-purple: #9baec8;
+  --color-lighter-purple: #a5b8d3;
   --color-dark-electric-blue: #576078;
   --color-button-text: #f7f9f9;
   --color-ghost-button-text: var(--color-button-text);
@@ -840,7 +841,7 @@ body.embed .status__content a,
 /* CW button */
 .layout-single-column .reply-indicator__content .status__content__spoiler-link,
 .layout-single-column .status__content__spoiler-link {
-  background-color: var(--color-mud);
+  background-color: var(--color-dark);
   color: var(--color-light-purple);
   font-weight: 500;
 
@@ -854,8 +855,23 @@ body.embed .status__content a,
 .layout-single-column .reply-indicator__content .status__content__spoiler-link:hover,
 .layout-single-column .status__content .status__content__spoiler-link:focus,
 .layout-single-column .status__content .status__content__spoiler-link:hover {
-  background-color: var(--color-light-purple);
-  color: var(--color-light-text);
+  background-color: var(--color-dark);
+  color: var(--color-lighter-purple);
+}
+
+/* CW button in notifications */
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link,
+.layout-single-column .notification .status__content__spoiler-link {
+  background-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link:focus,
+.layout-single-column .notification .reply-indicator__content .status__content__spoiler-link:hover,
+.layout-single-column .notification .status__content .status__content__spoiler-link:focus,
+.layout-single-column .notification .status__content .status__content__spoiler-link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-dim);
 }
 
 /* Light purple things */
