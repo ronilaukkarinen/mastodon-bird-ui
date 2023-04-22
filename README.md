@@ -27,6 +27,8 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
     4. [Why don't you just create an app?](#why-dont-you-just-create-an-app)
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
+    6. [Why the advanced web interface is not styled?](#why-the-advanced-web-interface-is-not-styled)
+    7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
 7. [Goals](#goals)
 
 ## Why would anyone want Mastodon to look like Twitter?
@@ -150,6 +152,16 @@ There are other people who are working on magnificent apps for Mastodon, so I'm 
 See the previous answer. Mastodon Bird UI is not an app, it's a CSS file that you can use with any Mastodon instance. You don't need to run a separate instance just for this UI and perhaps you shouldn't either.
 
 If you really would want this to run in a separate URL, you could in theory set up another nginx host for a subdomain and just use [ngx_http_sub_module](http://nginx.org/en/docs/http/ngx_http_sub_module.html) to load up a CSS file. I haven't tried this and it might not be even possible, but it's worth a try.
+
+### Why the advanced web interface is not styled?
+
+It's a choice. I don't use the advanced web interface myself, it's too noisy for me. It would also complicate the CSS file a lot and I'm currently not willing to do that.
+
+It would mean that I would have to go through every single element all over again and make sure the advanced web interface is styled properly. It would also make the CSS file very large and I want to keep the single CSS file as maintainable as possible.
+
+### Why the admin interface is not styled?
+
+Similar answer than to the question [above](#why-the-advanced-web-interface-is-not-styled). We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
 
 ## Goals
 
