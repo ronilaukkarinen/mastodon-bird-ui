@@ -1,3 +1,7 @@
+### 1.4.9rc1: 2023-04-22
+
+* Fix content warning alignment, should be baseline instead of top
+
 ### 1.4.8: 2023-04-22
 
 * Fix admin sign up notification glitch, Fixes #19 (thanks @llamacucumber!)

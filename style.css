@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.8 */
+   1.4.9rc1 */
 
 /* CSS variables */
 :root {
@@ -843,6 +843,7 @@ body.embed .status__content a,
   background-color: var(--color-mud);
   color: var(--color-dim);
   font-weight: 500;
+  vertical-align: baseline;
 }
 
 .layout-single-column .reply-indicator__content .status__content__spoiler-link:focus,
