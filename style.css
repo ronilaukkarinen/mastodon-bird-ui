@@ -843,6 +843,10 @@ body.embed .status__content a,
   background-color: var(--color-mud);
   color: var(--color-dim);
   font-weight: 500;
+
+  /* Need to override forced styles */
+  /* stylelint-disable-next-line */
+  margin-left: calc(var(--gap-default) / 2) !important;
   vertical-align: baseline;
 }
 
