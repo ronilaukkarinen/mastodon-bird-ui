@@ -147,6 +147,8 @@ I'm not a software developer. I'm a front end developer (and a bit of a designer
 
 There are other people who are working on magnificent apps for Mastodon, so I'm not going to reinvent the wheel. I simply like the Twitter-ish UI and Mastodon default web back-end and I want to have these combined on my instance. As CSS is the language I live and breathe daily, it's really easy and fast for me to create a UI like this.
 
+Also, Mastodon web UI works as an app already. See my answer [here](https://mementomori.social/@rolle/110242274361461278).
+
 ### Why don't you just run Mastodon Bird UI in a separate URL?
 
 See the previous answer. Mastodon Bird UI is not an app, it's a CSS file that you can use with any Mastodon instance. You don't need to run a separate instance just for this UI and perhaps you shouldn't either.
