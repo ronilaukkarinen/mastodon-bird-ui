@@ -9,6 +9,10 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
+Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Mastodon post](https://mementomori.social/@rolle/110139191307581764)):
+
+[![image](https://user-images.githubusercontent.com/1534150/233774924-4506cf63-06f2-49e1-9c66-00f145a854b4.png)](https://mementomori.social/@rolle/110139191307581764)
+
 ## Table of contents
 
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
