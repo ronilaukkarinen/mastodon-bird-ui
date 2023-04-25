@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.9rc5 */
+   1.4.9rc6 */
 
 /* CSS variables */
 :root {
@@ -2675,7 +2675,7 @@ body.embed .button.logo-button:hover,
 }
 
 .layout-single-column .detailed-status__action-bar .icon-button:hover .fa-bookmark::before {
-  content: var(--icon-bookmark-detailed-status-action-bar-hover);
+  content: var(--icon-bookmark-detailed-status-action-bar-hover-red);
   position: relative;
   top: 1px;
 }
