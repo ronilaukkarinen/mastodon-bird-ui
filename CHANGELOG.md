@@ -1,9 +1,10 @@
-### 1.4.9rc4: 2023-04-22
+### 1.4.9rc5: 2023-04-25
 
 * Fix content warning alignment, should be baseline instead of top
 * Add gap between the cw title and show-button
 * Increase contrast of show button
 * Fix cw button color in notifications
+* Fix hover size of the bookmark icon when in detailed status
 
 ### 1.4.8: 2023-04-22
 
