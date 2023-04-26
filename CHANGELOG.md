@@ -1,3 +1,7 @@
+### 1.5.0: 2023-04-26
+
+* Fix regression with the threaded border color
+
 ### 1.4.9: 2023-04-26
 
 * Fix content warning alignment, should be baseline instead of top

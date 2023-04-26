@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.9 */
+   1.5.0 */
 
 /* CSS variables */
 :root {
@@ -601,8 +601,7 @@ a.status-card.compact .status-card__host {
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .conversation,
 .layout-single-column .setting-text__wrapper {
-  /* stylelint-disable-next-line */
-  border-color: var(--color-border) !important;
+  border-color: var(--color-border);
 }
 
 /* Change panel order */
