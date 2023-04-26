@@ -1,4 +1,4 @@
-### 1.4.9rc8: 2023-04-25
+### 1.4.9: 2023-04-26
 
 * Fix content warning alignment, should be baseline instead of top
 * Add gap between the cw title and show-button
