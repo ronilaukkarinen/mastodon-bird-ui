@@ -1,4 +1,4 @@
-### 1.4.9rc6: 2023-04-25
+### 1.4.9rc7: 2023-04-25
 
 * Fix content warning alignment, should be baseline instead of top
 * Add gap between the cw title and show-button
@@ -6,6 +6,7 @@
 * Fix cw button color in notifications
 * Fix hover size of the bookmark icon when in detailed status
 * Fix detailed status bar bookmark icon color on hover
+* Add account header handle to color light purple scope
 
 ### 1.4.8: 2023-04-22
 
