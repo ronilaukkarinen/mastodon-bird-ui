@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.4.9rc7 */
+   1.4.9rc8 */
 
 /* CSS variables */
 :root {
@@ -51,6 +51,8 @@
   --color-ghost-button-text: var(--color-button-text);
   --color-verified: #79bd9a;
   --color-destructive: #df405a;
+
+  /* In the original UI this color is lighten($ui-base-color, 12%) */
   --color-outer-space: #42485a;
 
   /* Font related */
@@ -599,7 +601,8 @@ a.status-card.compact .status-card__host {
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .conversation,
 .layout-single-column .setting-text__wrapper {
-  border-color: var(--color-border);
+  /* stylelint-disable-next-line */
+  border-color: var(--color-border) !important;
 }
 
 /* Change panel order */
@@ -1965,7 +1968,6 @@ body.embed .button.logo-button,
 .layout-single-column .explore__suggestions .account-card__actions__button button,
 .layout-single-column .account__header__tabs__buttons .button {
   background-color: transparent;
-  border: 1px solid var(--color-black-coral);
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
@@ -1975,6 +1977,16 @@ body.embed .button.logo-button,
   padding-left: 16px;
   padding-right: 16px;
   transition: all 200ms;
+}
+
+/* Dark button borders and other things that have borders all around */
+body.embed .button.logo-button,
+.layout-single-column .notification__report__actions .button,
+.layout-single-column .column-inline-form button,
+.layout-single-column .explore__suggestions .account-card__actions__button button,
+.layout-single-column .account__header__tabs__buttons .button,
+.layout-single-column .account__header__tabs__buttons .icon-button {
+  border: 1px solid var(--color-outer-space);
 }
 
 .layout-single-column .account__header__tabs__buttons .icon-button {
