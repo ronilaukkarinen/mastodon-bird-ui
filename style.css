@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.0 */
+   1.5.1rc1 */
 
 /* CSS variables */
 :root {
@@ -2183,18 +2183,22 @@ body.embed .button.logo-button:hover,
 
 /* Compose form */
 .layout-single-column .compose-panel .compose-form {
+  background-color: transparent;
+  margin-bottom: 0;
   position: relative;
-  z-index: 100;
+  z-index: 4;
+}
+
+/* Footer items */
+.link-footer {
+  position: relative;
+  z-index: 5;
 }
 
 .layout-single-column .compose-panel .compose-form,
 .layout-single-column .compose-panel,
 .layout-single-column .compose-form__autosuggest-wrapper {
   overflow: visible;
-}
-
-.layout-single-column .compose-form {
-  background-color: var(--color-bg);
 }
 
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */

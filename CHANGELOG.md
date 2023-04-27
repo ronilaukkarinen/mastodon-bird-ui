@@ -1,3 +1,7 @@
+### 1.5.1rc1: 2023-04-27
+
+* Fix server information links not visible after logging in, Fixes #22 (thanks @fofwisdom!)
+
 ### 1.5.0: 2023-04-26
 
 * Fix regression with the threaded border color
