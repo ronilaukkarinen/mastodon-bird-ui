@@ -1,3 +1,7 @@
+### 1.5.2: 2023-04-28
+
+* Hot fix the bookmark hover icon
+
 ### 1.5.1: 2023-04-28
 
 * Fix server information links not visible after logging in, Fixes #22 (thanks @fofwisdom!)
