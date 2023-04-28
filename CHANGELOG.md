@@ -1,6 +1,7 @@
-### 1.5.1rc1: 2023-04-27
+### 1.5.1: 2023-04-28
 
 * Fix server information links not visible after logging in, Fixes #22 (thanks @fofwisdom!)
+* Fix follow_requests order #24 #23 (thanks @tribela!)
 
 ### 1.5.0: 2023-04-26
 
