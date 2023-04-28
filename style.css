@@ -2362,6 +2362,10 @@ body.embed .button.logo-button:hover,
     order: 7;
   }
 
+  .layout-single-colume .column-link[href='/follow_requests'] {
+    order: 8;
+  }
+
   .layout-single-column .column-link[href="/bookmarks"] {
     order: 9;
   }
