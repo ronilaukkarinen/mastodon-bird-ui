@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.2 */
+   1.5.3 */
 
 /* CSS variables */
 :root {
@@ -1394,6 +1394,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 .layout-single-column .notification .status__info .status__display-name {
   overflow: visible;
+}
+
+/* Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25 */
+.layout-single-column .notification.notification-reblog .status__info .status__display-name,
+.layout-single-column .notification.notification-follow .status__info .status__display-name,
+.layout-single-column .notification.notification-favourite .status__info .status__display-name {
+  pointer-events: none;
 }
 
 /* Hack to show follow notification more minimal way */
