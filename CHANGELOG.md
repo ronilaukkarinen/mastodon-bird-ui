@@ -2,6 +2,9 @@
 
 * Support multiple columns
 * Fix active scrollbar thumb color
+* Move compose panel to the right
+* Hide the elephant from advanced web view
+* General improvements to the advanced web view, like wider width
 
 ### 1.5.3: 2023-05-07
 

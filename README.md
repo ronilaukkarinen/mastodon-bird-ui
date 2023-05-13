@@ -27,7 +27,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
     4. [Why don't you just create an app?](#why-dont-you-just-create-an-app)
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
-    6. [Why the advanced web interface is not styled?](#why-the-advanced-web-interface-is-not-styled)
+    6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
 7. [Goals](#goals)
 
@@ -78,16 +78,15 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ## Installation for Mastodon instance admins
 
-1. Copy the contents of [style.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/style.css)
-2. Install it as CSS to your assets (add it to your build process to [app/javascript/styles](https://github.com/mastodon/mastodon/tree/main/app/javascript/styles) and rebuild assets) or (preferred) use **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance):
+1. Copy the contents of [layout-single-column.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-single-column.css) and [layout-multiple-columns.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-multiple-columns.css) and paste them to the **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance)
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
 ## Installation for regular users, contributing and testing
 
 1. Install [Live CSS Editor](https://github.com/webextensions/live-css-editor) (or any other extension like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite) or use the [user.js by eg](https://ieji.de/@eg/110174544387143309)
-2. Copy the contents of [style.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/style.css)
-3. Open extension and paste the CSS into the editor
+2. Copy the contents of [layout-single-column.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-single-column.css) and [layout-multiple-columns.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-multiple-columns.css)
+3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
 ## Other tweaks and customizations
@@ -164,18 +163,15 @@ See the previous answer. Mastodon Bird UI is not an app, it's a CSS file that yo
 
 If you really would want this to run in a separate URL, you could in theory set up another nginx host for a subdomain and just use [ngx_http_sub_module](http://nginx.org/en/docs/http/ngx_http_sub_module.html) to load up a CSS file. I haven't tried this and it might not be even possible, but it's worth a try.
 
-### Why the advanced web interface is not styled?
+### Is the advanced web interface styled?
 
-It's a choice. I don't use the advanced web interface myself, it's too noisy for me. It would also complicate the CSS file a lot and I'm currently not willing to do that.
-
-It would mean that I would have to go through every single element all over again and make sure the advanced web interface is styled properly. It would also make the CSS file very large and I want to keep the single CSS file as maintainable as possible.
+Yes! From version 1.5.4 multiple columns are supported. Apply layout-multiple-columns.css to your Custom CSS or style extension to enable.
 
 ### Why the admin interface is not styled?
 
-Similar answer than to the question [above](#why-the-advanced-web-interface-is-not-styled). We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
+We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
 
 ## Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
 - **Dependency free.** No JavaScript, no build process, no nothing. Just plain CSS. Linting is optional and just here to make sure the code quality is good.
-- **Single-column layout only.** This experiment is not meant for advanced layout.
