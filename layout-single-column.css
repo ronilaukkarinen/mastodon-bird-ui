@@ -1863,7 +1863,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Profile */
 .layout-single-column .getting-started__trends h4,
-.layout-single-column .layout-single-column .account__header__bar {
+.layout-single-column .account__header__bar {
   border-color: var(--color-border);
 }
 

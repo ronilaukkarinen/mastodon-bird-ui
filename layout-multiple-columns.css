@@ -1891,7 +1891,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Profile */
 .layout-multiple-columns .getting-started__trends h4,
-.layout-multiple-columns .layout-multiple-columns .account__header__bar {
+.layout-multiple-columns .account__header__bar {
   border-color: var(--color-border);
 }
 
@@ -2099,9 +2099,19 @@ body.embed .button.logo-button:hover,
   pointer-events: none;
   position: absolute;
   top: -8px;
-  transform: translateX(8px) translateY(1px);
+  transform: translateX(1px) translateY(0px);
   width: 36px;
   z-index: -1;
+}
+
+.layout-multiple-columns .detailed-status__action-bar .icon-button.star-icon::after,
+.layout-multiple-columns .status__action-bar .icon-button.star-icon::after {
+  transform: translateX(2px) translateY(1px);
+}
+
+.layout-multiple-columns .detailed-status__action-bar .icon-button:has(.fa-ellipsis-h)::after,
+.layout-multiple-columns .status__action-bar .icon-button:has(.fa-ellipsis-h)::after {
+  transform: translateX(7px) translateY(1px);
 }
 
 .layout-multiple-columns .conversation .icon-button::after {

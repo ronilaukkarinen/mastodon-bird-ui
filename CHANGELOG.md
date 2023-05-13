@@ -5,6 +5,7 @@
 * Move compose panel to the right
 * Hide the elephant from advanced web view
 * General improvements to the advanced web view, like wider width
+* Fix duplicate class before .account__header__bar
 
 ### 1.5.3: 2023-05-07
 
