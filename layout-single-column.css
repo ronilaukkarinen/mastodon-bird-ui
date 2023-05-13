@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.5 */
+   1.5.6rc1 */
 
 /* CSS variables */
 :root {
@@ -687,6 +687,11 @@ body.embed .status__content a,
 .layout-single-column .column-link--transparent.active,
 .layout-single-column .status__content__read-more-button {
   color: var(--color-accent);
+}
+
+/* Toggles */
+.layout-single-column .react-toggle .react-toggle-track {
+  background-color: var(--color-bg);
 }
 
 /* Accented background colors */
