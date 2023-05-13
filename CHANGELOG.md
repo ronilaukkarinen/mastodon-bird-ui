@@ -1,3 +1,8 @@
+### 1.5.4: 2023-05-13
+
+* Support multiple columns
+* Fix active scrollbar thumb color
+
 ### 1.5.3: 2023-05-07
 
 * Fixes #25, User avatars in notifications are sometimes links to my profile instead of theirs (thanks @carlwgeorge!)

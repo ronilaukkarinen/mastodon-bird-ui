@@ -76,7 +76,7 @@
       true,
       {
         "importFrom": [
-          "style.css"
+          "layout-single-column.css"
         ]
       }
     ],

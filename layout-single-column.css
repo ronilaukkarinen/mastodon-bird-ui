@@ -3232,7 +3232,7 @@ body.embed .entry .detailed-status {
 .layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
 .layout-single-column .reply-indicator::-webkit-scrollbar-thumb:active,
 .layout-single-column::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-bg);
+  background-color: var(--color-black-coral);
 }
 
 .layout-single-column textarea::-webkit-scrollbar-track,
