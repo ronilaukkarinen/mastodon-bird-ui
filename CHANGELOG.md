@@ -1,3 +1,8 @@
+### 1.5.6rc1: 2023-05-13
+
+* Fix toggle track color
+* Add column hashtag list styles
+
 ### 1.5.5: 2023-05-13
 
 * Fix width when zooming in on the advanced web view
