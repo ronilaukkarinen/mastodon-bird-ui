@@ -73,6 +73,7 @@
   --size-icon-notification: 30px;
   --width-main-panel: 600px;
   --width-side-panel: 260px;
+  --width-column: 380px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -621,6 +622,12 @@ a.status-card.compact .status-card__host {
 
 .layout-multiple-columns .columns-area__panels__pane.columns-area__panels__pane--start.columns-area__panels__pane--navigational {
   order: 1;
+}
+
+/* Make the side input last in order */
+.layout-multiple-columns .drawer {
+  order: 999999;
+  width: var(--width-column);
 }
 
 .layout-multiple-columns .columns-area__panels__pane,
@@ -1584,6 +1591,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 4px;
 }
 
+/* Columns */
+.layout-multiple-columns .column {
+  border-right: 1px solid var(--color-border);
+  padding-left: 0;
+  padding-right: 0;
+  width: var(--width-column);
+}
+
 .layout-multiple-columns .column-subheading,
 .layout-multiple-columns .column-link {
   align-items: center;
@@ -1964,11 +1979,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
-  height: 133.5px !important;
+  height: 90px !important;
 
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
-  width: 133.5px !important;
+  width: 90px !important;
 }
 
 .layout-multiple-columns .account__header__tabs {
@@ -1977,7 +1992,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 .layout-multiple-columns .account__header__tabs .account-role {
   display: none;
-  width: 133.5px;
+  width: 90px;
 }
 
 /* Follow/unfollow button */
