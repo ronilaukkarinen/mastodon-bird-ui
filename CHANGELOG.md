@@ -1,3 +1,7 @@
+### 1.5.5: 2023-05-13
+
+* Fix width when zooming in on the advanced web view
+
 ### 1.5.4: 2023-05-13
 
 * Support multiple columns

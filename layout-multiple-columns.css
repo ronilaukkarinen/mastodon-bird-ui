@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.4 */
+   1.5.5 */
 
 /* CSS variables */
 :root {
@@ -285,13 +285,6 @@ body.layout-multiple-columns {
 .layout-multiple-columns .ui {
   display: flex;
   width: 100%;
-}
-
-/* Fix weird horizontal overflow */
-@media (min-width: 1175px) and (max-width: 1330px) {
-  .layout-multiple-columns .ui {
-    width: unset;
-  }
 }
 
 /* Text color */
