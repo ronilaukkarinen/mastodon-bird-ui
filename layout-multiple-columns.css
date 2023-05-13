@@ -497,6 +497,8 @@ a.status-card.compact .status-card__host {
 }
 
 /* Dark panels like modals and boxes */
+.layout-multiple-columns .column-select__menu *,
+.layout-multiple-columns .column-select__menu,
 .layout-multiple-columns .column-settings__hashtags .column-select__control,
 .layout-multiple-columns .about__meta,
 .layout-multiple-columns .about__section__title,
@@ -569,6 +571,7 @@ a.status-card.compact .status-card__host {
 }
 
 /* Autosuggest box shadow reset */
+.layout-multiple-columns .column-select__menu,
 .layout-multiple-columns .search-popout,
 .layout-multiple-columns .search__popout,
 .layout-multiple-columns .dropdown-menu,
