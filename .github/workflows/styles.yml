@@ -36,4 +36,4 @@ jobs:
         postcss@8.4.21
     - name: Run stylelint
       run: |
-        npx stylelint style.css --max-warnings 0 --config .stylelintrc
+        npx stylelint *.css --max-warnings 0 --config .stylelintrc
