@@ -422,6 +422,7 @@ body.layout-multiple-columns {
   box-shadow: 2px 4px 15px rgba(0, 0, 0, .2);
 }
 
+.layout-multiple-columns .drawer__header,
 .layout-multiple-columns .drawer__inner__mastodon {
   background-color: var(--color-bg);
 }
@@ -1582,11 +1583,12 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 4px;
 }
 
+.layout-multiple-columns .column-subheading,
 .layout-multiple-columns .column-link {
   align-items: center;
   color: var(--color-light-text);
-  display: inline-flex;
-  font-size: var(--font-size-heading);
+  display: flex;
+  font-size: var(--font-size);
   gap: var(--gap-default);
   overflow: visible;
   padding-bottom: calc(var(--gap-default) + 4px);
@@ -1934,6 +1936,12 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 .layout-multiple-columns .getting-started__trends {
   margin-top: calc(var(--gap-default) * 2);
+}
+
+.layout-multiple-columns .flex-spacer,
+.layout-multiple-columns .getting-started,
+.layout-multiple-columns .getting-started__wrapper {
+  background-color: transparent;
 }
 
 .layout-multiple-columns .trends__item__name a {
@@ -2343,6 +2351,7 @@ body.embed .button.logo-button:hover,
     display: block;
     opacity: 1;
   }
+
 
   /* Order of the side nav items */
   .layout-multiple-columns .navigation-panel__logo {
