@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.3 */
+   1.5.4 */
 
 /* CSS variables */
 :root {
@@ -426,7 +426,12 @@ body.layout-multiple-columns {
 .layout-multiple-columns .column-back-button,
 .layout-multiple-columns .drawer__header,
 .layout-multiple-columns .drawer__inner__mastodon {
-  background-color: var(--color-bg);
+  background-color: transparent;
+}
+
+/* Hide the elephant */
+.layout-multiple-columns .drawer__inner__mastodon {
+  display: none;
 }
 
 .layout-multiple-columns .list-editor__search .search__icon .fa {
@@ -627,6 +632,7 @@ a.status-card.compact .status-card__host {
 /* Make the side input last in order */
 .layout-multiple-columns .drawer {
   order: 999999;
+  padding: 0 10px;
   width: var(--width-column);
 }
 
