@@ -422,6 +422,7 @@ body.layout-multiple-columns {
   box-shadow: 2px 4px 15px rgba(0, 0, 0, .2);
 }
 
+.layout-multiple-columns .column-back-button,
 .layout-multiple-columns .drawer__header,
 .layout-multiple-columns .drawer__inner__mastodon {
   background-color: var(--color-bg);
