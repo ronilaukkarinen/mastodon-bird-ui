@@ -2,6 +2,8 @@
 
 * Fix toggle track color
 * Add column hashtag list styles
+* Add hashtag context menu background
+* Fix search background color
 
 ### 1.5.5: 2023-05-13
 

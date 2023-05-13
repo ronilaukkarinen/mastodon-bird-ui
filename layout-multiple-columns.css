@@ -715,7 +715,9 @@ body.embed .status__content a,
   color: var(--color-accent);
 }
 
-/* Toggles */
+/* Toggles etc. */
+.layout-multiple-columns .search-results__header,
+.layout-multiple-columns .drawer__inner,
 .layout-multiple-columns .react-toggle .react-toggle-track {
   background-color: var(--color-bg);
 }
@@ -1022,7 +1024,6 @@ body.embed .status__content a,
 .layout-multiple-columns .language-dropdown__dropdown,
 body.embed .activity-stream .entry,
 .layout-multiple-columns .report-dialog-modal__textarea,
-.layout-multiple-columns .drawer__inner,
 .layout-multiple-columns .column-inline-form,
 .layout-multiple-columns .scrollable .account-card,
 .layout-multiple-columns .scrollable .account-card__title__avatar .account__avatar,
