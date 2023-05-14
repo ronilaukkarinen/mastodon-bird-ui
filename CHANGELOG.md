@@ -1,4 +1,4 @@
-### 1.5.6: 2023-05-13
+### 1.5.6: 2023-05-14
 
 * Fix toggle track color
 * Add column hashtag list styles
