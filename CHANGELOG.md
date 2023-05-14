@@ -1,9 +1,10 @@
-### 1.5.6rc3: 2023-05-13
+### 1.5.6: 2023-05-13
 
 * Fix toggle track color
 * Add column hashtag list styles
 * Add hashtag context menu background
 * Fix search background color
+* Some fixes for light mode in advanced web interface
 
 ### 1.5.5: 2023-05-13
 
