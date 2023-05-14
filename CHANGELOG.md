@@ -1,3 +1,7 @@
+### 1.5.7rc1: 2023-05-14
+
+* Fix icon bubble position on single column layout
+
 ### 1.5.6: 2023-05-14
 
 * Fix toggle track color
