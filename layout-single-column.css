@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.7rc1 */
+   1.5.7rc2 */
 
 /* CSS variables */
 :root {
@@ -2092,7 +2092,7 @@ body.embed .button.logo-button:hover,
 }
 
 .layout-single-column .status__action-bar .icon-button.icon-button--with-counter::after {
-  transform: translateX(-6px) translateY(-1);
+  transform: translateX(-6px) translateY(-1px);
 }
 
 /* Misc UI fixes */
