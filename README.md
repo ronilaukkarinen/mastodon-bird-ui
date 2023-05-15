@@ -62,7 +62,7 @@ Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Ma
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
 - Respects the profile **Site theme** setting and sets dark/light based on this alone
-- Missing alt text indicators (faded with "Alt text missing" text in the center)
+- Missing alt text indicators
 - Subtle deep purple ribbon in the right corner for private messages
 - CSS variables for everything
 - Threaded replies (limited, see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306))
