@@ -14,14 +14,15 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
 2. [Features](#features)
 3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
-4. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
-5. [Other tweaks and customizations](#other-tweaks-and-customizations)
+4. [Add Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#add-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
+5. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
+6. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Twitter-like link previews](#twitter-like-link-previews)
     2. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
     3. [Hide translate link for multiple languages](#hide-translate-link-for-multiple-languages)
     4. [Thread lines](#thread-lines)
     5. [Micro-interactions](#micro-interactions)
-6. [FAQ](#faq)
+7. [FAQ](#faq)
     1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
@@ -29,7 +30,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-7. [Goals](#goals)
+8. [Goals](#goals)
 
 ## Why would anyone want Mastodon to look like Twitter?
 
@@ -83,11 +84,11 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
-## Integration into Mastodon UI for all users
+## Add Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users
 
 ![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
 
-Mastodon Bird UI can be integrated as a theme for all instance users to use by following the instructions found [here](https://github.com/mstdn/Bird-UI-Theme-Admins).
+Mastodon Bird UI can be integrated as a **Site theme** for all instance users to use by following the instructions found [here](https://github.com/mstdn/Bird-UI-Theme-Admins).
 
 ## Installation for regular users, contributing and testing
 
