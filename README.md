@@ -14,7 +14,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
 2. [Features](#features)
 3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
-4. [Add Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#add-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
+4. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
 5. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
 6. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Twitter-like link previews](#twitter-like-link-previews)
@@ -84,11 +84,11 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
-## Add Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users
-
-![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
+## Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users
 
 Mastodon Bird UI can be integrated as a **Site theme** for all instance users to use by following the instructions found [here](https://github.com/mstdn/Bird-UI-Theme-Admins).
+
+![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
 
 ## Installation for regular users, contributing and testing
 
