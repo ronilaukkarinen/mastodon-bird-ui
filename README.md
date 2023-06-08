@@ -83,6 +83,12 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
+## Integration into Mastodon UI for all users
+
+![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
+
+Mastodon Bird UI can be integrated as a theme for all instance users to use by following the instructions found [here](https://github.com/mstdn/Bird-UI-Theme-Admins).
+
 ## Installation for regular users, contributing and testing
 
 1. Install [Live CSS Editor](https://github.com/webextensions/live-css-editor) (or any other extension like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite) or use the [user.js by eg](https://ieji.de/@eg/110174544387143309)
