@@ -1,7 +1,8 @@
-### 1.5.7rc2: 2023-05-15
+### 1.5.7: 2023-06-09
 
 * Fix icon bubble position on single column layout
 * Fix missing px unit
+* Fix typo on selector (thanks @tribela!)
 
 ### 1.5.6: 2023-05-14
 
