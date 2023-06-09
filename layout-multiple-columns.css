@@ -2415,7 +2415,7 @@ body.embed .button.logo-button:hover,
     order: 7;
   }
 
-  .layout-single-colume .column-link[href='/follow_requests'] {
+  .layout-multiple-columns .column-link[href='/follow_requests'] {
     order: 8;
   }
 
