@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.7 */
+   1.5.7-mastodon-4.1.2-nightly */
 
 /* CSS variables */
 :root {
@@ -1158,11 +1158,10 @@ body.embed .detailed-status,
 }
 
 /* Status update tinted to right */
-.layout-single-column .status__action-bar,
-.layout-single-column .attachment-list,
-.layout-single-column .status__content__read-more-button,
-.layout-single-column .status .status__content,
-.layout-single-column .notification.notification-admin-sign-up .display-name__account {
+.layout-single-column .status:not(.status--in-thread) .status__action-bar,
+.layout-single-column .status:not(.status--in-thread) .attachment-list,
+.layout-single-column .status:not(.status--in-thread) .status__content__read-more-button,
+.layout-single-column .status:not(.status--in-thread) .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
   padding-top: 0;
@@ -3144,68 +3143,51 @@ body.embed .entry .detailed-status {
   width: unset;
 }
 
-/* stylelint-disable selector-max-class, selector-max-combinators, selector-max-compound-selectors, selector-max-specificity, selector-max-pseudo-class, selector-not-notation */
-/* Threaded replies, see https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4 */
-.layout-single-column .scrollable > div > div .status.status-reply {
-  border-color: transparent;
-  position: relative;
+/* Native Mastodon 4.1.2-nightly threaded lines */
+.layout-single-column .status__line--first {
+  height: calc(100% + var(--size-avatar));
 }
 
-/* If we don't have threads support yet, just use borders */
-.layout-single-column .scrollable > div:not(:has(.status__thread)) .status.status-reply {
-  border-color: var(--color-border);
+.layout-single-column .status__line--full {
+  height: calc(100% + 32px);
 }
 
-/* Always have border-bottom in threads on main level to separate the discussions */
-.layout-single-column .scrollable > div > div.status__thread,
-.layout-single-column .scrollable > div > div.status__thread:has(.status__thread) > div.status__thread:not(.status__thread--last-item),
-.layout-single-column .scrollable > div > div:not([class]) > div.status__thread {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.layout-single-column .scrollable > div > div.status__thread > div.status__thread:not(.status__thread--last-item):not(:has(.status__thread--last-item)) {
-  border-bottom: 0;
-}
-
-/* If we don't have threads support yet, hide faux lines */
-.layout-single-column .scrollable > div:not(:has(.status__thread)) .status.status-reply .status__avatar::before {
-  background-color: transparent;
-  width: 0;
-}
-
-.layout-single-column .scrollable > div > .status__thread > .status__thread > div > div > .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread ~ .status__thread--first-item + .status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread.status__thread--last-item.status__thread--first-item .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread ~ .status__thread .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread.status__thread--first-item + .status__thread.status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread + .status__thread ~ .status__thread ~ .status__thread .status.status-reply .status__avatar::before {
-  background-color: var(--color-thread-line);
-  content: '';
+div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
+.layout-single-column .status__line--full.status__line--first {
   height: 100%;
-  left: calc(calc(calc(var(--size-avatar) / 2) + 16px) - 1px);
-  position: absolute;
-  top: 24px;
-  width: 2px;
 }
 
-/* Hide thread lines from the last items for at least 10 levels */
-.layout-single-column .scrollable > div > div.status__thread:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread:not(:has(.status__thread)).status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-single-column .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before {
-  /* stylelint-disable-next-line */
-  background-color: transparent !important;
+/* Threaded line, actually */
+.layout-single-column .status__line {
+  border-inline-start: 2px solid var(--color-thread-line);
+  -webkit-border-start: 2px solid var(--color-thread-line);
 }
 
-.layout-single-column .scrollable > div > .status__thread.status__thread--first-item .status.status-reply .status__avatar::before {
-  top: 60px;
+.layout-single-column .status__line--full::before {
+  background-color: var(--color-thread-line);
+}
+
+/* Hide border-top from the last in thread */
+.layout-single-column div:has(.status--in-thread) + div .detailed-status {
+  border-top: 0;
+}
+
+/* Hide the "stub" from the first status line */
+div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
+.layout-single-column .status-reply.status--in-thread.status--first-in-thread > .status__line,
+.layout-single-column .status-reply.status--in-thread.status--first-in-thread > .status__line--full::before {
+  top: 32px;
+}
+
+.layout-single-column .status--in-thread .attachment-list,
+.layout-single-column .status--in-thread .audio-player,
+.layout-single-column .status--in-thread .media-gallery,
+.layout-single-column .status--in-thread .picture-in-picture-placeholder,
+.layout-single-column .status--in-thread .status-card,
+.layout-single-column .status--in-thread .status__action-bar,
+.layout-single-column .status--in-thread .status__content,
+.layout-single-column .status--in-thread .video-player {
+  padding-left: 4px;
 }
 
 /* Scrollbars */
