@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc2-nightly-mastodon-4.1.2-nightly */
+   1.5.8rc3-nightly-mastodon-4.1.2-nightly */
 
 /* CSS variables */
 :root {
@@ -1160,7 +1160,6 @@ body.embed .detailed-status,
 /* Status update tinted to right */
 .layout-single-column .status:not(.status--in-thread) .status__action-bar,
 .layout-single-column .status:not(.status--in-thread) .attachment-list,
-.layout-single-column .status:not(.status--in-thread) .status__content__read-more-button,
 .layout-single-column .status:not(.status--in-thread) .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
