@@ -1819,7 +1819,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Search */
 .layout-single-column .search .search__icon .fa-search {
-  background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%23717c9b"%3E%3Cg%3E%3Cpath d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%23535C76"%3E%3Cg%3E%3Cpath d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-color: var(--color-mud);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2097,7 +2098,7 @@ body.embed .button.logo-button:hover,
 
 /* Misc UI fixes */
 .layout-single-column .search__icon .fa.active {
-  opacity: .6;
+  opacity: 1;
 }
 
 /* Explore -> For you shade in bio */
