@@ -1821,8 +1821,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Search */
 .layout-single-column .search .search__icon .fa-search {
-  background-image: var(--icon-search);
   background-color: var(--color-mud);
+  background-image: var(--icon-search);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
