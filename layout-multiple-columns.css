@@ -3056,14 +3056,6 @@ body.embed .button.logo-button:hover,
   overflow: hidden;
 }
 
-/* Make border shown */
-.layout-multiple-columns .audio-player,
-.layout-multiple-columns .video-player,
-.layout-multiple-columns .media-gallery,
-.layout-multiple-columns .media-gallery__item {
-  overflow: visible;
-}
-
 .layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
 .layout-multiple-columns .video-player:has(> video:not([title])):focus::after,
 .layout-multiple-columns .media-gallery__gifv:has(> video:not([title])):focus::after,

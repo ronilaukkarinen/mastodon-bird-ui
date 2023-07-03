@@ -4,7 +4,6 @@
 * Increase border-radius for media
 * Increase border-radius for url preview cards
 * Fix read more button position
-* Make border visible
 * Fix multiple columns layout
 * Fix media gallery border radius if multiple items
 * Make sure read more button icon is always aligned to center vertically
