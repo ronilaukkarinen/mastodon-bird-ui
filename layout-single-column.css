@@ -445,7 +445,7 @@ body.layout-single-column {
 .layout-single-column a.status-card,
 .layout-single-column a.status-card.compact {
   background-color: var(--color-bg);
-  border-radius: 10px;
+  border-radius: 16px;
   display: block;
 }
 

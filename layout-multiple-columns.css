@@ -445,7 +445,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card,
 .layout-multiple-columns a.status-card.compact {
   background-color: var(--color-bg);
-  border-radius: 10px;
+  border-radius: 16px;
   display: block;
 }
 

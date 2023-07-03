@@ -2,6 +2,7 @@
 
 * Add visible border around media
 * Increase border-radius for media
+* Increase border-radius for url preview cards
 * Fix read more button position
 * Make border visible
 * Fix multiple columns layout
