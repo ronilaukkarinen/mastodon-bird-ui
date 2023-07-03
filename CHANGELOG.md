@@ -1,3 +1,7 @@
+### 1.5.8rc1: 2023-07-03
+
+* Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
+
 ### 1.5.7: 2023-06-09
 
 * Fix icon bubble position on single column layout

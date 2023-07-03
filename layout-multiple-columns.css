@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.7 */
+   1.5.8rc1 */
 
 /* CSS variables */
 :root {
@@ -2929,8 +2929,8 @@ body.embed .button.logo-button:hover,
 
   .columns-area__panels__pane--navigational .column-link__icon {
     font-size: 24px;
-  } 
-  
+  }
+
   .columns-area__panels__pane--navigational .column-link__icon.fa-fw {
     font-size: 22px;
   }
