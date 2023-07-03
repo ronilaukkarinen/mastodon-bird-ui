@@ -1173,6 +1173,13 @@ body.embed .detailed-status,
   padding-left: 0;
 }
 
+/* Make sure read more button is always aligned to center vertically */
+.layout-single-column .status__content__read-more-button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
 /* Rtl version */
 [dir="rtl"] .layout-single-column .status__action-bar,
 [dir="rtl"] .layout-single-column .attachment-list
