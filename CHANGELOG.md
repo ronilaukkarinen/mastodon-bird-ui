@@ -6,6 +6,7 @@
 * Fix read more button position
 * Make border visible
 * Fix multiple columns layout
+* Fix media gallery border radius if multiple items
 
 ### 1.5.8rc3-nightly: 2023-07-03
 
