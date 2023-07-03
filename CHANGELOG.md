@@ -1,3 +1,8 @@
+### 1.5.8rc4-nightly: 2023-07-03
+
+* Add visible border around media
+* Increase border-radius for media
+
 ### 1.5.8rc3-nightly: 2023-07-03
 
 * Fix read more/translate link position
