@@ -1497,11 +1497,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(var(--gap-default) / 2);
 }
 
-.layout-single-column .notification.notification.notification-admin-sign-up .notification__message + .account,
-.layout-single-column .notification.notification-follow .notification__message + .account {
-  padding-bottom: 0;
-}
-
 .layout-single-column .status__prepend {
   padding-left: calc(var(--size-avatar) - 4px);
 }
