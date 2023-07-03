@@ -8,6 +8,7 @@
 * Fix multiple columns layout
 * Fix media gallery border radius if multiple items
 * Make sure read more button icon is always aligned to center vertically
+* Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
 
 ### 1.5.8rc3-nightly: 2023-07-03
 
