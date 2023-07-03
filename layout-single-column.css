@@ -3007,7 +3007,7 @@ body.embed .button.logo-button:hover,
   }
 
   /* Lists */
-  .layout-single-column .navigation-panel .column-link:nth-child(10) {
+  .layout-single-column .column-link[href="/lists"] {
     order: 4;
   }
 

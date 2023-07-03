@@ -5,6 +5,7 @@
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix glitches with sign up and follow notifications on 4.1.2-nightly-20230703
 * Fix follow button in notifications
+* Fix position of lists icon on mobile
 
 ### 1.5.7: 2023-06-09
 
