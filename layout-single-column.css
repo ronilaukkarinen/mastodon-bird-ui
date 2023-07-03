@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc4-nightly-mastodon-4.1.2-nightly */
+   1.5.8rc5-nightly-mastodon-4.1.2-nightly */
 
 /* CSS variables */
 :root {
@@ -3010,10 +3010,6 @@ body.embed .button.logo-button:hover,
 
   .layout-single-column .navigation-panel .column-link:nth-child(8) {
     order: 8;
-  }
-
-  .layout-single-column .navigation-panel .column-link:nth-child(9) {
-    order: 9;
   }
 
   /* Lists */

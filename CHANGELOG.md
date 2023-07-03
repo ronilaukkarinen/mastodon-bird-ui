@@ -1,3 +1,7 @@
+### 1.5.8rc5-nightly: 2023-07-04
+
+* Fix regression with lists order on mobile
+
 ### 1.5.8rc4-nightly: 2023-07-03
 
 * Add visible border around media
