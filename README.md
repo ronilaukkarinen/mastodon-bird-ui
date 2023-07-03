@@ -88,9 +88,11 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/da9f873d-8c0a-430c-8172-cc8f304c51ec)
+
 If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). Otherwise read along.
 
-If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands:
+If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes):
 
 ```bash
 # Create a new folder for the theme
