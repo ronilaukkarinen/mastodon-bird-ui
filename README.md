@@ -118,7 +118,7 @@ sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/st
 echo -e "@import 'contrast/variables';\n@import 'application';\n@import 'contrast/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-contrast.scss
 
 # Create light theme file
-echo -e "@import 'light/variables';\n@import 'application';\n@import 'mastodon-light/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-light.scss
+echo -e "@import 'mastodon-light/variables';\n@import 'application';\n@import 'mastodon-light/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-light.scss
 
 # Create dark theme file
 echo -e "@import 'application';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-dark.scss
