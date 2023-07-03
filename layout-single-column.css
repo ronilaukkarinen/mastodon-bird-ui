@@ -2097,8 +2097,7 @@ body.embed .button.logo-button:hover,
 
 /* Misc UI fixes */
 .layout-single-column .search__icon .fa.active {
-  background-color: var(--color-mud);
-  opacity: 1;
+  opacity: .6;
 }
 
 /* Explore -> For you shade in bio */
