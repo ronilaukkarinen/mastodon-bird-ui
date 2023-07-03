@@ -1778,11 +1778,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: 50%;
   height: 24px;
   transform: translateY(-4px);
-  width: 24px;
-}
-
-.layout-single-column .notification .account__relationship:hover {
-  background-color: rgba(96, 105, 132, .15);
 }
 
 /* Emoji-mart search input */
