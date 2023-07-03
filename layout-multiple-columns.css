@@ -3158,14 +3158,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: 32px;
 }
 
-.layout-multiple-columns .status--in-thread .attachment-list,
-.layout-multiple-columns .status--in-thread .audio-player,
-.layout-multiple-columns .status--in-thread .media-gallery,
-.layout-multiple-columns .status--in-thread .picture-in-picture-placeholder,
 .layout-multiple-columns .status--in-thread .status-card,
 .layout-multiple-columns .status--in-thread .status__action-bar,
-.layout-multiple-columns .status--in-thread .status__content,
-.layout-multiple-columns .status--in-thread .video-player {
+.layout-multiple-columns .status--in-thread .status__content {
   padding-left: 4px;
 }
 

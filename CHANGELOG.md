@@ -8,6 +8,7 @@
 * Fix media gallery border radius if multiple items
 * Make sure read more button icon is always aligned to center vertically
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
+* Fix regression with padding inside a media item
 
 ### 1.5.8rc3-nightly: 2023-07-03
 
