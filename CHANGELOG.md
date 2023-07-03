@@ -2,6 +2,7 @@
 
 * Add visible border around media
 * Increase border-radius for media
+* Fix read more button position
 
 ### 1.5.8rc3-nightly: 2023-07-03
 

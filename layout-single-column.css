@@ -1158,6 +1158,7 @@ body.embed .detailed-status,
 }
 
 /* Status update tinted to right */
+.layout-single-column .status__content--collapsed + .status__content__read-more-button,
 .layout-single-column .status:not(.status--in-thread) .status__action-bar,
 .layout-single-column .status:not(.status--in-thread) .attachment-list,
 .layout-single-column .status:not(.status--in-thread) .status__content {
