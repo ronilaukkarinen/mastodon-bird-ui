@@ -1449,6 +1449,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .notification.notification-follow .verified-badge,
+.layout-single-column .notification.notification-admin-sign-up .account__contents,
+.layout-single-column .notification.notification-follow .account__contents,
 .layout-single-column .notification.notification-follow .display-name,
 .layout-single-column .notification.notification-admin-sign-up .display-name + span,
 .layout-single-column .notification.notification-follow .display-name + span,
@@ -1496,11 +1498,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .detailed-status .status__content:has(.status__content__text:empty) + .video-player,
 .layout-single-column .detailed-status .status__content:has(.status__content__text:empty) + .media-gallery {
   margin-top: calc(var(--gap-default) / 2);
-}
-
-.layout-single-column .notification.notification.notification-admin-sign-up .notification__message + .account,
-.layout-single-column .notification.notification-follow .notification__message + .account {
-  padding-bottom: 0;
 }
 
 .layout-single-column .status__prepend {
