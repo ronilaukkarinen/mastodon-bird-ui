@@ -86,46 +86,73 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ## Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users
 
-Mastodon Bird UI can be integrated as a **Site theme** for all instance users using [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) written by [STUX](https://mstdn.social/@stux).
+Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
-1. Add the files from the repo (elephant.scss) and the folder elephant to your Mastodon themes directory:
+If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). Otherwise read along.
 
+If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands:
+
+```bash
+# Create a new folder for the theme
+mkdir -p app/javascript/styles/mastodon-bird-ui
+
+# Download the CSS file for single column layout
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Download the CSS file for multiple column layout
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Create high contrast theme file
+echo -e "@import 'contrast/variables';\n@import 'application';\n@import 'contrast/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-contrast.scss
+
+# Create light theme file
+echo -e "@import 'light/variables';\n@import 'application';\n@import 'mastodon-light/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-light.scss
+
+# Create dark theme file
+echo -e "@import 'application';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-dark.scss
+
+# Overwrite mastodon/config/themes.yml with new settings, Mastodon Bird UI dark as default
+echo -e "default: styles/mastodon-bird-ui-dark.scss\nmastodon-bird-ui-light: styles/mastodon-bird-ui-light.scss\nmastodon-bird-ui-contrast: styles/mastodon-bird-ui-contrast.scss\nmastodon-dark: styles/application.scss\nmastodon-light: styles/mastodon-light.scss\ncontrast: styles/contrast.scss" > config/themes.yml
 ```
-app/
-  javascript/
-    styles/
-    elephant.scss                             | **new**
-      contrast/
-        ...
-      fonts/
-        ...
-      elephant/                                   | **new**
-        layout-multiple-columns.scss                               | **new**
-        layout-single-column.scss                              | **new**
+
+After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add these lines:
+
+```yml
+  themes:
+     contrast: Mastodon (High contrast)
+     default: Mastodon Bird UI (Dark)
+     mastodon-bird-ui-light: Mastodon Bird UI (Light)
+     mastodon-bird-ui-contrast: Mastodon Bird UI (High contrast)
+     mastodon-light: Mastodon (Light)
+     mastodon-dark: Mastodon (Dark)
 ```
 
-2. **Add your theme to the config.** This is what [the default themes.yml](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml) looks like in Mastodon. To make your custom theme visible in settings, you need to add a new line in the form `themeName: path/to/theme.scss`. For example, the modern-dark theme would require adding `modern-dark: styles/modern-dark.scss` as a new line.
+Same for the localizations of your choice, for example `config/locales/fi.yml` (`nano config/locales/fi.yml`):
 
-```
-        default: styles/application.scss
-        contrast: styles/contrast.scss
-        mastodon-light: styles/mastodon-light.scss
-        elephant: styles/elephant.scss      | **new**
-```
 
-3. **Add a human-friendly name for the theme (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for your theme's `themeName` as added in the previous step. For example, [the default `config/locales/en.yml`](https://github.com/tootsuite/mastodon/blob/041ff5fa9a45f7b8d1048a05a35611622b6f5fdb/config/locales/en.yml#L942-L945) contains localizations for the three default themes that ship with Mastodon, into the `en`glish language. You need to do this for every language you expect your users to use, or else they will see the unlocalized `themeName` directly.
-
-```
-          themes:
-            contrast: Mastodon (High contrast)
-            default: Mastodon (Dark)
-            mastodon-light: Mastodon (Light)
-            elephant: Elephant              | **new**
+```yml
+  themes:
+     contrast: Mastodon (Korkea kontrasti)
+     default: Mastodon Bird UI (Tumma)
+     mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
+     mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)
+     mastodon-light: Mastodon (Vaalea)
+     mastodon-dark: Mastodon (Tumma)
 ```
 
-4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
-
-![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
+And you're done!
 
 ## Installation for regular users, contributing and testing
 
