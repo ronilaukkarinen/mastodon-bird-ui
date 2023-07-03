@@ -1,9 +1,10 @@
-### 1.5.8rc1-nightly: 2023-07-02
+### 1.5.8rc1-nightly: 2023-07-03
 
 * Add support for Mastodon 4.1.2-nightly-20230703
 * Fix lists position on mobile
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix glitches with sign up and follow notifications on 4.1.2-nightly-20230703
+* Fix follow button in notifications
 
 ### 1.5.7: 2023-06-09
 
