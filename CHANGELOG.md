@@ -1,4 +1,4 @@
-### 1.5.8rc1-nightly: 2023-07-03
+### 1.5.8rc2-nightly: 2023-07-03
 
 * Add support for Mastodon 4.1.2-nightly-20230703
 * Fix lists position on mobile
