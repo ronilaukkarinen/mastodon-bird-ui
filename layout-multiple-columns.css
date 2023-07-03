@@ -3044,32 +3044,6 @@ body.embed .button.logo-button:hover,
   border-radius: 10px;
 }
 
-.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt]))::after,
-.layout-single-column .video-player:has(> video:not([title]))::after,
-.layout-single-column .media-gallery__gifv:has(> video:not([title]))::after {
-  align-self: flex-end;
-  background-color: var(--color-bg-75);
-  border-radius: 4px;
-  bottom: 4px;
-  color: var(--color-light-text);
-  content: 'No alt';
-  display: flex;
-  font-size: 9px;
-  font-weight: 500;
-  height: 14px;
-  justify-self: flex-end;
-  left: auto;
-  line-height: 14px;
-  opacity: 1;
-  padding: 2px 5px;
-  position: absolute;
-  right: 4px;
-  text-transform: uppercase;
-  top: auto;
-  width: unset;
-  z-index: 3;
-}
-
 .layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
 .layout-single-column .video-player:has(> video:not([title])):focus::after,
 .layout-single-column .media-gallery__gifv:has(> video:not([title])):focus::after,

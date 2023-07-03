@@ -1,6 +1,7 @@
 ### 1.5.8rc3-nightly: 2023-07-03
 
 * Fix read more/translate link position
+* Remove "No alt" indicator now that 4.1.2-nightly has an indicator for media that has alt
 
 ### 1.5.8rc2-nightly: 2023-07-03
 
