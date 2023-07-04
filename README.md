@@ -16,13 +16,14 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
 4. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
 5. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
-6. [Other tweaks and customizations](#other-tweaks-and-customizations)
+6. [Updating instructions](#updating-instructions)
+8. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Twitter-like link previews](#twitter-like-link-previews)
     2. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
     3. [Hide translate link for multiple languages](#hide-translate-link-for-multiple-languages)
     4. [Thread lines](#thread-lines)
     5. [Micro-interactions](#micro-interactions)
-7. [FAQ](#faq)
+9. [FAQ](#faq)
     1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
@@ -30,7 +31,8 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-8. [Goals](#goals)
+10. [Goals](#goals)
+11. [Accessibility](#accessibility)
 
 ## Why would anyone want Mastodon to look like Twitter?
 
@@ -163,6 +165,39 @@ And you're done!
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
+## Updating instructions
+
+If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
+
+```bash
+# Download the CSS file for single column layout
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Download the CSS file for multiple column layout
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+```
+
+After this commit changes to your Mastodon fork if you have one, then:
+
+```
+RAILS_ENV=production bundle exec rails assets:precompile
+sudo service mastodon-web reload
+```
+
+That's it!
+
 ## Other tweaks and customizations
 
 While Mastodon Bird UI works perfectly fine out of the box, there are some things you might want to modify to make it look even better.
@@ -249,3 +284,11 @@ We don't spend much time in the admin interface and it's not a priority for me t
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
 - **Dependency free.** No JavaScript, no build process, no nothing. Just plain CSS. Linting is optional and just here to make sure the code quality is good.
+
+## Accessibility
+
+Mastodon Bird UI is built accessibility in mind. Please note that many "features" are 100% the same than in the original Mastodon, because this is not a separate app but merely consists of modifications in styles. There is a High contrast version available just like in the original Mastodon.
+
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/030e7243-5a9d-44ea-8284-4be745b13b83)
+
+Programmatically everything is accessible as Mastodon, color-wise "Pretty good" (WCAG A-AA). Please open [an issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues) or a [Mastodon issue](https://github.com/mastodon/mastodon/issues), if you have accessibility concerns. Thank you.
