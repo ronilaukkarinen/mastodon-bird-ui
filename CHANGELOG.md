@@ -1,7 +1,7 @@
 ### 1.5.8rc5-nightly: 2023-07-04
 
 * Fix regression with lists order on mobile
-* Connect default lines when replying in real time
+* Fix the thread line stub when replying in real time
 
 ### 1.5.8rc4-nightly: 2023-07-03
 

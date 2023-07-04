@@ -3127,13 +3127,9 @@ body.embed .entry .detailed-status {
   height: calc(100% + 32px);
 }
 
-/* Connect default lines when replying in real time */
+/* Default lines when replying in real time */
 .layout-multiple-columns div[tabindex="-1"]:has(.status--in-thread) .status--in-thread:not(.status--first-in-thread) > .status__line {
-  bottom: 110px;
-  height: 80px;
-  top: auto;
-  width: 0;
-  z-index: -1;
+  height: 0;
 }
 
 .layout-multiple-columns div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
