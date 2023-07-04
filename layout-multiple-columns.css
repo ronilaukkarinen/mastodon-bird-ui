@@ -74,6 +74,7 @@
   --width-main-panel: 600px;
   --width-side-panel: 260px;
   --width-column: 380px;
+  --border-radius: 16px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -452,7 +453,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card,
 .layout-multiple-columns a.status-card.compact {
   background-color: var(--color-bg);
-  border-radius: 16px;
+  border-radius: var(--border-radius);
   display: block;
 }
 
@@ -1330,7 +1331,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Hide/Show media button */
 .layout-multiple-columns .spoiler-button button {
   background-color: var(--color-bg);
-  border-radius: 16px;
+  border-radius: var(--border-radius);
   color: var(--color-ghost-button-text);
   opacity: .5;
 }
@@ -3117,7 +3118,7 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .video-player video,
 .layout-multiple-columns .media-gallery__gifv video,
 .layout-multiple-columns .media-gallery__preview {
-  border-radius: 16px;
+  border-radius: var(--border-radius);
   outline: 1px solid var(--color-border);
   overflow: hidden;
 }
