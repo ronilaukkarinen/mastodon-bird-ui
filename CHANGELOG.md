@@ -1,3 +1,7 @@
+### 1.5.8rc6-nightly: 2023-07-05
+
+* Fix regression with the advanced web interface for nightly (thanks @vmstan!)
+
 ### 1.5.8rc5-nightly: 2023-07-04
 
 * Fix regression with lists order on mobile
