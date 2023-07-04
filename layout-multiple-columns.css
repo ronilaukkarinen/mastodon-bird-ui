@@ -1814,11 +1814,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: 50%;
   height: 24px;
   transform: translateY(-4px);
-  width: 24px;
-}
-
-.layout-multiple-columns .notification .account__relationship:hover {
-  background-color: rgba(96, 105, 132, .15);
 }
 
 /* Emoji-mart search input */
@@ -2019,7 +2014,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .notification__report__actions .button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
-.layout-multiple-columns .account__header__tabs__buttons .button {
+.layout-multiple-columns .account__header__tabs__buttons .button,
+.layout-multiple-columns .account .account__relationship > .button,
+.layout-multiple-columns .notification .account__relationship > .button {
   background-color: transparent;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -2038,7 +2035,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
 .layout-multiple-columns .account__header__tabs__buttons .button,
-.layout-multiple-columns .account__header__tabs__buttons .icon-button {
+.layout-multiple-columns .account__header__tabs__buttons .icon-button,
+.layout-multiple-columns .notification .account__relationship > .button,
+.layout-multiple-columns .account .account__relationship > .button {
   border: 1px solid var(--color-outer-space);
 }
 
