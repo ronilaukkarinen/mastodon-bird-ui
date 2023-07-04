@@ -3069,15 +3069,6 @@ body.embed .button.logo-button:hover,
   overflow: hidden;
 }
 
-.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
-.layout-single-column .video-player:has(> video:not([title])):focus::after,
-.layout-single-column .media-gallery__gifv:has(> video:not([title])):focus::after,
-.layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt])):hover::after,
-.layout-single-column .video-player:has(> video:not([title])):hover::after,
-.layout-single-column .media-gallery__gifv:has(> video:not([title])):hover::after {
-  background-color: var(--color-red);
-}
-
 /* More distinct focus color for accessibility, instead of just white */
 .layout-single-column input:focus-visible {
   outline-color: var(--color-accent);

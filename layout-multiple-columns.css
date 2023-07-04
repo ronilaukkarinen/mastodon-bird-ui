@@ -3108,41 +3108,6 @@ body.embed .button.logo-button:hover,
   border-radius: 10px;
 }
 
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt]))::after,
-.layout-multiple-columns .video-player:has(> video:not([title]))::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title]))::after {
-  align-self: flex-end;
-  background-color: var(--color-bg-75);
-  border-radius: 4px;
-  bottom: 4px;
-  color: var(--color-light-text);
-  content: 'No alt';
-  display: flex;
-  font-size: 9px;
-  font-weight: 500;
-  height: 14px;
-  justify-self: flex-end;
-  left: auto;
-  line-height: 14px;
-  opacity: 1;
-  padding: 2px 5px;
-  position: absolute;
-  right: 4px;
-  text-transform: uppercase;
-  top: auto;
-  width: unset;
-  z-index: 3;
-}
-
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
-.layout-multiple-columns .video-player:has(> video:not([title])):focus::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title])):focus::after,
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt])):hover::after,
-.layout-multiple-columns .video-player:has(> video:not([title])):hover::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title])):hover::after {
-  background-color: var(--color-red);
-}
-
 /* More distinct focus color for accessibility, instead of just white */
 .layout-multiple-columns input:focus-visible {
   outline-color: var(--color-accent);
