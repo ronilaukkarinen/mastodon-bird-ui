@@ -1304,6 +1304,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: .5;
 }
 
+/* Alt badge */
+.layout-single-column .media-gallery__item__badges > span {
+  border-radius: var(--border-radius);
+}
+
 .layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
 .layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;

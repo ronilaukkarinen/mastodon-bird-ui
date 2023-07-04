@@ -1336,6 +1336,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: .5;
 }
 
+/* Alt badge */
+.layout-multiple-columns .media-gallery__item__badges > span {
+  border-radius: var(--border-radius);
+}
+
 .layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
 .layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;
