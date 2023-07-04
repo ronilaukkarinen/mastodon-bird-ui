@@ -3135,6 +3135,11 @@ body.embed .entry .detailed-status {
 .layout-multiple-columns div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
 .layout-multiple-columns .status__line--full.status__line--first {
   height: 100%;
+  z-index: -1;
+}
+
+.layout-multiple-columns .detailed-status {
+  background-color: var(--color-bg);
 }
 
 /* Threaded line, actually */
