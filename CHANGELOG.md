@@ -1,7 +1,7 @@
 ### 1.5.8rc6-nightly: 2023-07-05
 
 * Fix regression with the advanced web interface for nightly (thanks @vmstan!)
-* Add show/hide media icon button styles with border-radius (thanks @mikey!)
+* Add show/hide media icon button styles with border-radius (thanks @MikeHuntington!)
 * Add border-radius as a CSS variable
 
 ### 1.5.8rc5-nightly: 2023-07-04
