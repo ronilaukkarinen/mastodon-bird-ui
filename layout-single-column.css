@@ -3156,7 +3156,8 @@ body.embed .entry .detailed-status {
 }
 
 .layout-single-column .detailed-status {
-  background-color: var(--color-bg);
+  background-color: transparent;
+  border-top: 0;
 }
 
 /* Threaded line, actually */

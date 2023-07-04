@@ -3147,8 +3147,9 @@ body.embed .entry .detailed-status {
   z-index: -1;
 }
 
-.layout-multiple-columns .detailed-status {
-  background-color: var(--color-bg);
+.layout-single-column .detailed-status {
+  background-color: transparent;
+  border-top: 0;
 }
 
 /* Threaded line, actually */
