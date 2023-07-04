@@ -3147,11 +3147,6 @@ body.embed .entry .detailed-status {
   background-color: var(--color-thread-line);
 }
 
-/* Hide border-top from the last in thread */
-.layout-multiple-columns div:has(.status--in-thread) + div .detailed-status {
-  border-top: 0;
-}
-
 /* Hide the "stub" from the first status line */
 div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
 .layout-multiple-columns .status-reply.status--in-thread.status--first-in-thread > .status__line,

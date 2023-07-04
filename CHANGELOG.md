@@ -2,6 +2,7 @@
 
 * Fix regression with lists order on mobile
 * Fix the thread line stub when replying in real time
+* Fix regression with missing border in detailed status
 
 ### 1.5.8rc4-nightly: 2023-07-03
 
