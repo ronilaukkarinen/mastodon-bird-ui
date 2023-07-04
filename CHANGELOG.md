@@ -1,7 +1,8 @@
-### 1.5.8rc2: 2023-07-03
+### 1.5.8rc3: 2023-07-03
 
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
+* Fix undefined content warning placeholder (thanks @digitalspork!)
 
 ### 1.5.7: 2023-06-09
 
