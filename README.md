@@ -31,7 +31,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-    8. [Can you add background-color for compose form box area](#can-you-add-background-color-for-compose-form-box-area)
+    8. [Can you add background-color for compose form box area?](#can-you-add-background-color-for-compose-form-box-area)
     9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
     10. [Can you add this/that feature as default?](#can-you-add-feature-x-as-default)
     11. [Can you make it look like this by default?)?](#can-you-make-it-look-like-this-by-default)
@@ -283,6 +283,51 @@ Yes! From version 1.5.4 multiple columns are supported. Apply layout-multiple-co
 ### Why the admin interface is not styled?
 
 We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
+
+### Can you add background-color for compose form box area?
+
+Aesthetically I prefer left and right sides to be "floaty" and I follow the design language from Twitter even if the compose form is there inside the center column. See [this issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10) for the decision not to have it there by default.
+
+You can add it yourself by adding this to your Custom CSS:
+
+```css
+/* Add background color for the compose form */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-mud);
+  border-color: var(--color-mud);
+  padding-top: 0;
+}
+
+/* Fixes to bottom row when there's a background */
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  padding-bottom: calc(var(--gap-default) / 2);
+}
+```
+
+### Can you change compose form height and font-size?
+
+Yes YOU can. But they're not there by default, see [this post](https://mementomori.social/@rolle/110657416001531854). Box size has been set to a certain max-height because it helps the people who use assistive on-screen keyboard (suggestion from [@rmattila74](https://energydon.fi/@rmattila74)). For this reason I'm not going to increase height or make it resize too much by default. You can do these modifications for yourself, here's the code for you:
+
+```css
+.layout-single-column .compose-form .autosuggest-textarea__textarea {
+  font-size: 18px;
+  min-height: 300px;
+}
+``''
+
+Tweak the values as you like.
+
+### Can you add this/that feature as default?
+
+Mastodon Bird UI is CSS only, so I can't add any features. Please send your Mastodon feature ideas [here](https://github.com/mastodon/mastodon/issues).
+
+### Can you make it look like _this_ by default?
+
+Probably yes, but I'm not here to please everyone. Suggestions like [this](https://mementomori.social/@rolle/110658189531503982) are very important and there has been many pull requests and issues already that have helped me to make the UI better. While saying this I'm not going to implement every single suggestion, because there are too many different opinions out there.
+
+If you like, you can always suggest something or create a pull request. You are welcome to create your own fork and modify the UI as you prefer. I hope you have fun with it!
 
 ## Goals
 
