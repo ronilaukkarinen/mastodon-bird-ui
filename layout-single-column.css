@@ -573,6 +573,12 @@ a.status-card.compact .status-card__host {
   color: var(--color-bg);
 }
 
+/* Content warning placeholder */
+.layout-single-column .compose-form .autosuggest-textarea__textarea::placeholder,
+.layout-single-column .compose-form .spoiler-input__input::placeholder {
+  color: var(--color-dim);
+}
+
 /* Border colors */
 .layout-single-column .account__header__bar,
 .layout-single-column .about__meta__divider,
