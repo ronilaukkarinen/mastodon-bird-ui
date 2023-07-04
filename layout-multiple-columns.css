@@ -1327,6 +1327,19 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-dim);
 }
 
+/* Hide/Show media button */
+.layout-multiple-columns .spoiler-button button {
+  background-color: var(--color-bg);
+  border-radius: 16px;
+  color: var(--color-ghost-button-text);
+  opacity: .5;
+}
+
+.layout-multiple-columns .spoiler-button button:hover,
+.layout-multiple-columns .spoiler-button button:focus {
+  opacity: 1;
+}
+
 .layout-multiple-columns .icon-button:hover {
   color: var(--color-accent);
 }
