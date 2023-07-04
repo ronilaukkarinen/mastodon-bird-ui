@@ -3128,7 +3128,7 @@ body.embed .entry .detailed-status {
 }
 
 /* Default lines when replying in real time */
-.layout-multiple-columns div[tabindex="-1"]:has(.status--in-thread) .status--in-thread:not(.status--first-in-thread) > .status__line {
+.layout-multiple-columns div[tabindex="-1"]:has(.status--in-thread) .status--in-thread:not(.status--first-in-thread) > .status__line:not(.status__line--full) {
   height: 0;
 }
 
