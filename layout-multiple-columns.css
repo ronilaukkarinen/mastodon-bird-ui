@@ -76,6 +76,7 @@
   --width-column: 380px;
   --border-radius: 16px;
   --border-radius-badges: 4px;
+  --badges-distance-from-edge: 12px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -257,6 +258,7 @@ body.theme-mastodon-light.layout-multiple-columns {
 @media (max-width: 500px) {
   :root {
     --font-size-heading: 17px;
+    --badges-distance-from-edge: 12px;
   }
 
   /* Hide scrollbar on mobile, since we can't pick the handle anyway */
@@ -1344,13 +1346,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Distance from the edge */
 .layout-multiple-columns .spoiler-button--minified {
-  inset-inline-start: 12px;
-  top: 12px;
+  inset-inline-start: var(--badges-distance-from-edge);
+  top: var(--badges-distance-from-edge);
 }
 
 .layout-multiple-columns .media-gallery__item__badges {
-  bottom: 12px;
-  inset-inline-start: 12px;
+  bottom: var(--badges-distance-from-edge);
+  inset-inline-start: var(--badges-distance-from-edge);
 }
 
 .layout-multiple-columns .spoiler-button.spoiler-button--minified > button:hover,
