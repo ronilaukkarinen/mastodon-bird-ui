@@ -1297,15 +1297,15 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide/Show media button */
-.layout-single-column .spoiler-button .spoiler-button--minified {
+.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg);
   border-radius: var(--border-radius);
   color: var(--color-ghost-button-text);
   opacity: .5;
 }
 
-.layout-single-column .spoiler-button .spoiler-button--minified:hover,
-.layout-single-column .spoiler-button .spoiler-button--minified:focus {
+.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
+.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;
 }
 

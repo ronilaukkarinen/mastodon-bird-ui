@@ -31,6 +31,10 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
+    8. [Can you add background-color for compose form box area](#can-you-add-background-color-for-compose-form-box-area)
+    9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
+    10. [Can you add this/that feature as default?](#can-you-add-feature-x-as-default)
+    11. [Can you make it look like this by default?)?](#can-you-make-it-look-like-this-by-default)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
 

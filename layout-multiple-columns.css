@@ -1329,15 +1329,15 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide/Show media button */
-.layout-multiple-columns .spoiler-button .spoiler-button--minified {
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg);
   border-radius: var(--border-radius);
   color: var(--color-ghost-button-text);
   opacity: .5;
 }
 
-.layout-multiple-columns .spoiler-button .spoiler-button--minified:hover,
-.layout-multiple-columns .spoiler-button .spoiler-button--minified:focus {
+.layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
+.layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;
 }
 
