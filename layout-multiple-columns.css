@@ -574,8 +574,8 @@ a.status-card.compact .status-card__host {
 }
 
 /* Content warning placeholder */
-.layout-single-column .compose-form .autosuggest-textarea__textarea::placeholder,
-.layout-single-column .compose-form .spoiler-input__input::placeholder {
+.layout-multiple-columns .compose-form .autosuggest-textarea__textarea::placeholder,
+.layout-multiple-columns .compose-form .spoiler-input__input::placeholder {
   color: var(--color-dim);
 }
 
