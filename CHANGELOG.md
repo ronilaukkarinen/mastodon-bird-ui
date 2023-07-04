@@ -4,6 +4,8 @@
 * Add show/hide media icon button styles with border-radius (thanks @MikeHuntington!)
 * Add border-radius as a CSS variable
 * Add consistent border radius to alt badge
+* Add --border-radius-badges CSS variable
+* Make badges 12px from the edge
 
 ### 1.5.8rc5-nightly: 2023-07-04
 

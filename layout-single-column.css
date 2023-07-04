@@ -74,6 +74,7 @@
   --width-main-panel: 600px;
   --width-side-panel: 260px;
   --border-radius: 16px;
+  --border-radius-badges: 4px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -1299,14 +1300,25 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Hide/Show media button */
 .layout-single-column .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-badges);
   color: var(--color-ghost-button-text);
   opacity: .5;
 }
 
 /* Alt badge */
 .layout-single-column .media-gallery__item__badges > span {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-badges);
+}
+
+/* Distance from the edge */
+.layout-single-column .spoiler-button--minified {
+  inset-inline-start: 12px;
+  top: 12px;
+}
+
+.layout-single-column .media-gallery__item__badges {
+  bottom: 12px;
+  inset-inline-start: 12px;
 }
 
 .layout-single-column .spoiler-button.spoiler-button--minified > button:hover,
