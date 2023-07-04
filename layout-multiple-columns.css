@@ -3064,7 +3064,7 @@ body.embed .button.logo-button:hover,
   }
 
   /* Lists */
-  .layout-multiple-columns .navigation-panel .column-link:nth-child(10) {
+  .layout-multiple-columns .column-link[href="/lists"] {
     order: 4;
   }
 
