@@ -5,6 +5,7 @@
 * Fix regression with missing border in detailed status
 * Fix threaded line overlapping detailed status
 * Fix regression with status-line full being zero height
+* Add consistent styles for follow buttons inside the account panel
 
 ### 1.5.8rc4-nightly: 2023-07-03
 

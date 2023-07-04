@@ -1976,7 +1976,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .notification__report__actions .button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
-.layout-multiple-columns .account__header__tabs__buttons .button {
+.layout-multiple-columns .account__header__tabs__buttons .button,
+.layout-multiple-columns .account .account__relationship > .button,
+.layout-multiple-columns .notification .account__relationship > .button {
   background-color: transparent;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -1995,7 +1997,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
 .layout-multiple-columns .account__header__tabs__buttons .button,
-.layout-multiple-columns .account__header__tabs__buttons .icon-button {
+.layout-multiple-columns .account__header__tabs__buttons .icon-button,
+.layout-multiple-columns .notification .account__relationship > .button,
+.layout-multiple-columns .account .account__relationship > .button {
   border: 1px solid var(--color-outer-space);
 }
 
@@ -2042,7 +2046,11 @@ body.embed .button.logo-button:hover,
 
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button:hover,
 .layout-multiple-columns .account__header__tabs__buttons .button:focus,
-.layout-multiple-columns .account__header__tabs__buttons .button:hover {
+.layout-multiple-columns .account__header__tabs__buttons .button:hover,
+.layout-multiple-columns .notification .account__relationship > .button:hover,
+.layout-multiple-columns .notification .account__relationship > .button:focus,
+.layout-multiple-columns .account .account__relationship > .button:hover,
+.layout-multiple-columns .account .account__relationship > .button:focus {
   background-color: var(--color-profile-button-hover);
 }
 
