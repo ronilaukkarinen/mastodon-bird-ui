@@ -1341,8 +1341,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: var(--border-radius);
 }
 
-.layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
-.layout-multiple-columns .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button:hover,
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;
 }
 

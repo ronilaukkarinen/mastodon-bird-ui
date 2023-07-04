@@ -1297,7 +1297,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide/Show media button */
-.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button {
+.layout-single-column .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg);
   border-radius: var(--border-radius);
   color: var(--color-ghost-button-text);
@@ -1309,8 +1309,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: var(--border-radius);
 }
 
-.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:hover,
-.layout-single-column .spoiler-button .spoiler-button.spoiler-button--minified > button:focus {
+.layout-single-column .spoiler-button.spoiler-button--minified > button:hover,
+.layout-single-column .spoiler-button.spoiler-button--minified > button:focus {
   opacity: 1;
 }
 
