@@ -1199,11 +1199,10 @@ body.embed .detailed-status,
 }
 
 /* Status update tinted to right */
-.layout-multiple-columns .status__action-bar,
-.layout-multiple-columns .attachment-list,
-.layout-multiple-columns .status__content__read-more-button,
-.layout-multiple-columns .status .status__content,
-.layout-multiple-columns .notification.notification-admin-sign-up .display-name__account {
+.layout-multiple-columns .status__content--collapsed + .status__content__read-more-button,
+.layout-multiple-columns .status:not(.status--in-thread) .status__action-bar,
+.layout-multiple-columns .status:not(.status--in-thread) .attachment-list,
+.layout-multiple-columns .status:not(.status--in-thread) .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
   padding-top: 0;
@@ -1213,6 +1212,13 @@ body.embed .detailed-status,
 .layout-multiple-columns .conversation .attachment-list,
 .layout-multiple-columns .translate ~ .status__content__read-more-button {
   padding-left: 0;
+}
+
+/* Make sure read more button is always aligned to center vertically */
+.layout-multiple-columns .status__content__read-more-button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Rtl version */
@@ -1491,6 +1497,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-multiple-columns .notification.notification-follow .verified-badge,
+.layout-multiple-columns .notification.notification-admin-sign-up .account__contents,
+.layout-multiple-columns .notification.notification-follow .account__contents,
 .layout-multiple-columns .notification.notification-follow .display-name,
 .layout-multiple-columns .notification.notification-admin-sign-up .display-name + span,
 .layout-multiple-columns .notification.notification-follow .display-name + span,
@@ -1538,11 +1546,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-multiple-columns .detailed-status .status__content:has(.status__content__text:empty) + .video-player,
 .layout-multiple-columns .detailed-status .status__content:has(.status__content__text:empty) + .media-gallery {
   margin-top: calc(var(--gap-default) / 2);
-}
-
-.layout-multiple-columns .notification.notification.notification-admin-sign-up .notification__message + .account,
-.layout-multiple-columns .notification.notification-follow .notification__message + .account {
-  padding-bottom: 0;
 }
 
 .layout-multiple-columns .status__prepend {
