@@ -1,3 +1,8 @@
+### 1.5.8rc4: 2023-07-05
+
+* Backfill improvements from nightly branch, those which affect also the stable branch
+* Update instructions in README
+
 ### 1.5.8rc3: 2023-07-03
 
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)

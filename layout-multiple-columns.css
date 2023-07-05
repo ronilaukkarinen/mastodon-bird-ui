@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc3 */
+   1.5.8rc4-mastodon-4.1.2-stable */
 
 /* CSS variables */
 :root {
@@ -74,6 +74,9 @@
   --width-main-panel: 600px;
   --width-side-panel: 260px;
   --width-column: 380px;
+  --border-radius: 16px;
+  --border-radius-badges: 4px;
+  --badges-distance-from-edge: 12px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -255,6 +258,7 @@ body.theme-mastodon-light.layout-multiple-columns {
 @media (max-width: 500px) {
   :root {
     --font-size-heading: 17px;
+    --badges-distance-from-edge: 10px;
   }
 
   /* Hide scrollbar on mobile, since we can't pick the handle anyway */
@@ -452,7 +456,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card,
 .layout-multiple-columns a.status-card.compact {
   background-color: var(--color-bg);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: block;
 }
 
@@ -1319,6 +1323,30 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Icon buttons */
 .layout-multiple-columns .icon-button {
   color: var(--color-dim);
+}
+
+/* Hide/Show media button */
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button {
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius-badges);
+  color: var(--color-ghost-button-text);
+  opacity: .5;
+}
+
+/* Alt badge */
+.layout-multiple-columns .media-gallery__item__badges > span {
+  border-radius: var(--border-radius-badges);
+}
+
+/* Distance from the edge */
+.layout-multiple-columns .spoiler-button--minified {
+  inset-inline-start: var(--badges-distance-from-edge);
+  top: var(--badges-distance-from-edge);
+}
+
+.layout-multiple-columns .media-gallery__gifv__label {
+  bottom: var(--badges-distance-from-edge);
+  inset-inline-start: var(--badges-distance-from-edge);
 }
 
 .layout-multiple-columns .icon-button:hover {
@@ -3097,13 +3125,14 @@ body.embed .button.logo-button:hover,
 }
 
 /* Add border radius to media */
-.layout-multiple-columns .media-gallery__item-thumbnail img,
+.layout-multiple-columns .media-gallery,
 .layout-multiple-columns .audio-player,
-.layout-multiple-columns .video-player video,
-.layout-multiple-columns .media-gallery__gifv video,
+.layout-multiple-columns .video-player,
+.layout-multiple-columns .media-gallery__gifv,
 .layout-multiple-columns .media-gallery__preview {
-  backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
+  outline: 1px solid var(--color-border);
+  overflow: hidden;
 }
 
 .layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt]))::after,

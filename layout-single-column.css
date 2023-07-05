@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc3 */
+   1.5.8rc4-mastodon-4.1.2-stable */
 
 /* CSS variables */
 :root {
@@ -73,6 +73,9 @@
   --size-icon-notification: 30px;
   --width-main-panel: 600px;
   --width-side-panel: 260px;
+  --border-radius: 16px;
+  --border-radius-badges: 4px;
+  --badges-distance-from-edge: 12px;
 
   /* Misc */
   --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, .3);
@@ -254,6 +257,7 @@ body.theme-mastodon-light.layout-single-column {
 @media (max-width: 500px) {
   :root {
     --font-size-heading: 17px;
+    --badges-distance-from-edge: 10px;
   }
 
   /* Hide scrollbar on mobile, since we can't pick the handle anyway */
@@ -447,7 +451,7 @@ body.layout-single-column {
 .layout-single-column a.status-card,
 .layout-single-column a.status-card.compact {
   background-color: var(--color-bg);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: block;
 }
 
@@ -1286,6 +1290,30 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Icon buttons */
 .layout-single-column .icon-button {
   color: var(--color-dim);
+}
+
+/* Hide/Show media button */
+.layout-single-column .spoiler-button.spoiler-button--minified > button {
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius-badges);
+  color: var(--color-ghost-button-text);
+  opacity: .5;
+}
+
+/* Alt badge */
+.layout-single-column .media-gallery__item__badges > span {
+  border-radius: var(--border-radius-badges);
+}
+
+/* Distance from the edge */
+.layout-single-column .spoiler-button--minified {
+  inset-inline-start: var(--badges-distance-from-edge);
+  top: var(--badges-distance-from-edge);
+}
+
+.layout-single-column .media-gallery__gifv__label {
+  bottom: var(--badges-distance-from-edge);
+  inset-inline-start: var(--badges-distance-from-edge);
 }
 
 .layout-single-column .icon-button:hover {
@@ -3056,13 +3084,14 @@ body.embed .button.logo-button:hover,
 }
 
 /* Add border radius to media */
-.layout-single-column .media-gallery__item-thumbnail img,
+.layout-single-column .media-gallery,
 .layout-single-column .audio-player,
-.layout-single-column .video-player video,
-.layout-single-column .media-gallery__gifv video,
+.layout-single-column .video-player,
+.layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview {
-  backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
+  outline: 1px solid var(--color-border);
+  overflow: hidden;
 }
 
 .layout-single-column .media-gallery__item-thumbnail:has(> img:not([alt]))::after,
@@ -3070,8 +3099,8 @@ body.embed .button.logo-button:hover,
 .layout-single-column .media-gallery__gifv:has(> video:not([title]))::after {
   align-self: flex-end;
   background-color: var(--color-bg-75);
-  border-radius: 4px;
-  bottom: 4px;
+  border-radius: var(--border-radius-badges);
+  bottom: var(--badges-distance-from-edge);
   color: var(--color-light-text);
   content: 'No alt';
   display: flex;
@@ -3084,7 +3113,7 @@ body.embed .button.logo-button:hover,
   opacity: 1;
   padding: 2px 5px;
   position: absolute;
-  right: 4px;
+  right: var(--badges-distance-from-edge);
   text-transform: uppercase;
   top: auto;
   width: unset;
