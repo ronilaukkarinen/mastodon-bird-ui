@@ -9,6 +9,11 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
+## Versions
+
+- [Mastodon 4.1.2 stable](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2)
+- [Mastodon 4.1.2 nightly (main branch)](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2-nightly)
+
 ## Table of contents
 
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
@@ -16,13 +21,14 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
 4. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
 5. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
-6. [Other tweaks and customizations](#other-tweaks-and-customizations)
+6. [Updating instructions](#updating-instructions)
+8. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Twitter-like link previews](#twitter-like-link-previews)
     2. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
     3. [Hide translate link for multiple languages](#hide-translate-link-for-multiple-languages)
     4. [Thread lines](#thread-lines)
     5. [Micro-interactions](#micro-interactions)
-7. [FAQ](#faq)
+9. [FAQ](#faq)
     1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     3. [I want background-color to the compose form](#i-want-background-color-to-the-compose-form)
@@ -30,7 +36,12 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-8. [Goals](#goals)
+    8. [Can you add background-color for compose form box area?](#can-you-add-background-color-for-compose-form-box-area)
+    9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
+    10. [Can you add this/that feature as default?](#can-you-add-feature-x-as-default)
+    11. [Can you make it look like this by default?)?](#can-you-make-it-look-like-this-by-default)
+10. [Goals](#goals)
+11. [Accessibility](#accessibility)
 
 ## Why would anyone want Mastodon to look like Twitter?
 
@@ -86,46 +97,78 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ## Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users
 
-Mastodon Bird UI can be integrated as a **Site theme** for all instance users using [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) written by [STUX](https://mstdn.social/@stux).
+Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
-1. Add the files from the repo (elephant.scss) and the folder elephant to your Mastodon themes directory:
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/da9f873d-8c0a-430c-8172-cc8f304c51ec)
 
+If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). Otherwise read along.
+
+If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes):
+
+```bash
+# First, define version
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+
+# Create a new folder for the theme
+mkdir -p app/javascript/styles/mastodon-bird-ui
+
+# Download the CSS file for single column layout
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Download the CSS file for multiple column layout
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Create high contrast theme file
+echo -e "@import 'contrast/variables';\n@import 'application';\n@import 'contrast/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-contrast.scss
+
+# Create light theme file
+echo -e "@import 'mastodon-light/variables';\n@import 'application';\n@import 'mastodon-light/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-light.scss
+
+# Create dark theme file
+echo -e "@import 'application';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-dark.scss
+
+# Overwrite mastodon/config/themes.yml with new settings, Mastodon Bird UI dark as default
+echo -e "default: styles/mastodon-bird-ui-dark.scss\nmastodon-bird-ui-light: styles/mastodon-bird-ui-light.scss\nmastodon-bird-ui-contrast: styles/mastodon-bird-ui-contrast.scss\nmastodon-dark: styles/application.scss\nmastodon-light: styles/mastodon-light.scss\ncontrast: styles/contrast.scss" > config/themes.yml
 ```
-app/
-  javascript/
-    styles/
-    elephant.scss                             | **new**
-      contrast/
-        ...
-      fonts/
-        ...
-      elephant/                                   | **new**
-        layout-multiple-columns.scss                               | **new**
-        layout-single-column.scss                              | **new**
+
+After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add these lines:
+
+```yml
+  themes:
+     contrast: Mastodon (High contrast)
+     default: Mastodon Bird UI (Dark)
+     mastodon-bird-ui-light: Mastodon Bird UI (Light)
+     mastodon-bird-ui-contrast: Mastodon Bird UI (High contrast)
+     mastodon-light: Mastodon (Light)
+     mastodon-dark: Mastodon (Dark)
 ```
 
-2. **Add your theme to the config.** This is what [the default themes.yml](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml) looks like in Mastodon. To make your custom theme visible in settings, you need to add a new line in the form `themeName: path/to/theme.scss`. For example, the modern-dark theme would require adding `modern-dark: styles/modern-dark.scss` as a new line.
+Same for the localizations of your choice, for example `config/locales/fi.yml` (`nano config/locales/fi.yml`):
 
-```
-        default: styles/application.scss
-        contrast: styles/contrast.scss
-        mastodon-light: styles/mastodon-light.scss
-        elephant: styles/elephant.scss      | **new**
-```
 
-3. **Add a human-friendly name for the theme (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for your theme's `themeName` as added in the previous step. For example, [the default `config/locales/en.yml`](https://github.com/tootsuite/mastodon/blob/041ff5fa9a45f7b8d1048a05a35611622b6f5fdb/config/locales/en.yml#L942-L945) contains localizations for the three default themes that ship with Mastodon, into the `en`glish language. You need to do this for every language you expect your users to use, or else they will see the unlocalized `themeName` directly.
-
-```
-          themes:
-            contrast: Mastodon (High contrast)
-            default: Mastodon (Dark)
-            mastodon-light: Mastodon (Light)
-            elephant: Elephant              | **new**
+```yml
+  themes:
+     contrast: Mastodon (Korkea kontrasti)
+     default: Mastodon Bird UI (Tumma)
+     mastodon-bird-ui-light: Mastodon Bird UI (Vaalea)
+     mastodon-bird-ui-contrast: Mastodon Bird UI (Korkea kontrasti)
+     mastodon-light: Mastodon (Vaalea)
+     mastodon-dark: Mastodon (Tumma)
 ```
 
-4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
-
-![Example of integration](https://github.com/ultramookie/mastodon-bird-ui/assets/38467/1125dc9b-f3a2-431a-860f-d8219d8e0c5c)
+And you're done!
 
 ## Installation for regular users, contributing and testing
 
@@ -133,6 +176,42 @@ app/
 2. Copy the contents of [layout-single-column.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-single-column.css) and [layout-multiple-columns.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-multiple-columns.css)
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+
+## Updating instructions
+
+If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
+
+```bash
+# First, define version
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+
+# Download the CSS file for single column layout
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Download the CSS file for multiple column layout
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
+sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+
+# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
+sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+```
+
+After this commit changes to your Mastodon fork if you have one, then:
+
+```
+RAILS_ENV=production bundle exec rails assets:precompile
+sudo service mastodon-web reload
+```
+
+That's it!
 
 ## Other tweaks and customizations
 
@@ -216,7 +295,60 @@ Yes! From version 1.5.4 multiple columns are supported. Apply layout-multiple-co
 
 We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
 
+### Can you add background-color for compose form box area?
+
+Aesthetically I prefer left and right sides to be "floaty" and I follow the design language from Twitter even if the compose form is there inside the center column. See [this issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10) for the decision not to have it there by default.
+
+You can add it yourself by adding this to your Custom CSS:
+
+```css
+/* Add background color for the compose form */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-mud);
+  border-color: var(--color-mud);
+  padding-top: 0;
+}
+
+/* Fixes to bottom row when there's a background */
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  padding-bottom: calc(var(--gap-default) / 2);
+}
+```
+
+### Can you change compose form height and font-size?
+
+Yes YOU can. But they're not there by default, see [this post](https://mementomori.social/@rolle/110657416001531854). Box size has been set to a certain max-height because it helps the people who use assistive on-screen keyboard (suggestion from [@rmattila74](https://energydon.fi/@rmattila74)). For this reason I'm not going to increase height or make it resize too much by default. You can do these modifications for yourself, here's the code for you:
+
+```css
+.layout-single-column .compose-form .autosuggest-textarea__textarea {
+  font-size: 18px;
+  min-height: 300px;
+}
+```
+
+Tweak the values as you like.
+
+### Can you add this/that feature as default?
+
+Mastodon Bird UI is CSS only, so I can't add any features. Please send your Mastodon feature ideas [here](https://github.com/mastodon/mastodon/issues).
+
+### Can you make it look like _this_ by default?
+
+Probably yes, but I'm not here to please everyone. Suggestions like [this](https://mementomori.social/@rolle/110658189531503982) are very important and there has been many pull requests and issues already that have helped me to make the UI better. While saying this I'm not going to implement every single suggestion, because there are too many different opinions out there.
+
+If you like, you can always suggest something or create a pull request. You are welcome to create your own fork and modify the UI as you prefer. I hope you have fun with it!
+
 ## Goals
 
 - **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
 - **Dependency free.** No JavaScript, no build process, no nothing. Just plain CSS. Linting is optional and just here to make sure the code quality is good.
+
+## Accessibility
+
+Mastodon Bird UI is built accessibility in mind. Please note that many "features" are 100% the same than in the original Mastodon, because this is not a separate app but merely consists of modifications in styles. There is a High contrast version available just like in the original Mastodon.
+
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/030e7243-5a9d-44ea-8284-4be745b13b83)
+
+Programmatically everything is as accessible as Mastodon, color-wise "Pretty good" (WCAG A-AA). Please open [an issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues) or a [Mastodon issue](https://github.com/mastodon/mastodon/issues), if you have accessibility concerns. Thank you.
