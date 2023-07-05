@@ -54,6 +54,7 @@
   --color-light-fuchsia-pink: #ff8cfd;
   --color-hashtag: var(--color-accent);
   --color-mention: var(--color-accent);
+  --color-link: var(--color-accent);
 
   /* In the original UI this color is lighten($ui-base-color, 12%) */
   --color-outer-space: #42485a;
@@ -312,6 +313,10 @@ body.layout-multiple-columns {
 
 .layout-multiple-columns .status-link.mention:not(.hashtag) {
   color: var(--color-mention);
+}
+
+.layout-multiple-columns .status-link.mention:not(.hashtag):not(.mention) {
+  color: var(--color-link);
 }
 
 /* Logo */
