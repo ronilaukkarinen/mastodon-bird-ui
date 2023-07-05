@@ -101,14 +101,17 @@ If you'd like a different branding for your instance like "Elephant" without any
 If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes):
 
 ```bash
+# First, define version
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+
 # Create a new folder for the theme
 mkdir -p app/javascript/styles/mastodon-bird-ui
 
 # Download the CSS file for single column layout
-wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
 
 # Download the CSS file for multiple column layout
-wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+wget https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 
 # Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
 sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
@@ -174,11 +177,14 @@ And you're done!
 If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
 
 ```bash
+# First, define version
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+
 # Download the CSS file for single column layout
-wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
 
 # Download the CSS file for multiple column layout
-wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/mastodon-4.1.2-nightly/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 
 # Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
 sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
