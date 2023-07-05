@@ -11,7 +11,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 
 ## Versions
 
-- [Mastodon 4.1.2 stable](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2)
+- [Mastodon 4.1.2 stable](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2-stable)
 - [Mastodon 4.1.2 nightly (main branch)](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2-nightly)
 
 ## Table of contents
