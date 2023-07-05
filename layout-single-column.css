@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc4-mastodon-4.1.2-stable */
+   1.5.8 */
 
 /* CSS variables */
 :root {
@@ -3205,6 +3205,11 @@ body.embed .button.logo-button:hover,
 .layout-single-column .video-player:has(> video:not([title])):hover::after,
 .layout-single-column .media-gallery__gifv:has(> video:not([title])):hover::after {
   background-color: var(--color-red);
+}
+
+/* Exception for your own profile media gallery */
+.layout-single-column .account-gallery__container .media-gallery__gifv {
+  border-radius: 0;
 }
 
 /* More distinct focus color for accessibility, instead of just white */

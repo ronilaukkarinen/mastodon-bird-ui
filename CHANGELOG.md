@@ -1,12 +1,10 @@
-### 1.5.8rc4: 2023-07-05
+### 1.5.8: 2023-07-05
 
+* Fix profile media gallery thumbnails' border-radius
 * Backfill improvements from nightly branch, those which affect also the stable branch
 * Update instructions in README
 * Backfill color and CSS var improvements
 * Fix regressions with font-sizes
-
-### 1.5.8rc3: 2023-07-03
-
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
 * Fix undefined content warning placeholder (thanks @digitalspork!)
