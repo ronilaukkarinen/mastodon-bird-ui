@@ -348,6 +348,12 @@ body.layout-single-column {
   font-size: var(--font-size);
 }
 
+/* Things that should have the mid font-size */
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input {
+  font-size: var(--font-size-mid);
+}
+
 /* Line heights */
 .layout-single-column .reply-indicator__content,
 .layout-single-column .status__content {

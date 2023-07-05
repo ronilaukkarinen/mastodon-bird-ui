@@ -342,6 +342,12 @@ body.layout-multiple-columns {
   font-size: var(--font-size);
 }
 
+/* Things that should have the mid font-size */
+.layout-multiple-columns .compose-form .autosuggest-textarea__textarea,
+.layout-multiple-columns .compose-form .spoiler-input__input {
+  font-size: var(--font-size-mid);
+}
+
 /* Line heights */
 .layout-multiple-columns .reply-indicator__content,
 .layout-multiple-columns .status__content {
