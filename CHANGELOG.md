@@ -1,3 +1,7 @@
+### 1.5.8rc7-nightly: 2023-07-05
+
+* Fix video player border-radius
+
 ### 1.5.8rc6-nightly: 2023-07-05
 
 * Fix regression with the advanced web interface for nightly (thanks @vmstan!)
@@ -5,7 +9,7 @@
 * Add border-radius as a CSS variable
 * Add consistent border radius to alt badge
 * Add --border-radius-badges CSS variable
-* Make badges 12px from the edge
+* Make badges a bit further from the edge
 
 ### 1.5.8rc5-nightly: 2023-07-04
 

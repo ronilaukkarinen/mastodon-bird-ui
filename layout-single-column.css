@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8rc6-nightly-mastodon-4.1.2-nightly */
+   1.5.8rc7-nightly-mastodon-4.1.2-nightly */
 
 /* CSS variables */
 :root {
@@ -3094,8 +3094,8 @@ body.embed .button.logo-button:hover,
 /* Add border radius to media */
 .layout-single-column .media-gallery,
 .layout-single-column .audio-player,
-.layout-single-column .video-player video,
-.layout-single-column .media-gallery__gifv video,
+.layout-single-column .video-player,
+.layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview {
   border-radius: var(--border-radius);
   outline: 1px solid var(--color-border);
