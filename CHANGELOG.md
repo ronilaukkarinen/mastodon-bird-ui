@@ -5,6 +5,9 @@
 * Add line height
 * Add status__content__read-more-button to font size scope
 * Add logo to var
+* Improve accessible color areas
+* Add lots of more colors to CSS var scopes
+* Fix dark colors on high contrast mode
 
 ### 1.5.8rc6-nightly: 2023-07-05
 

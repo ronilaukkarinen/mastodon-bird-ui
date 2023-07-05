@@ -29,6 +29,7 @@
   --color-dim: var(--color-brand-mastodon-dim);
   --color-accent: var(--color-brand-mastodon-links);
   --color-accent-dark: var(--color-brand-mastodon);
+  --color-accent-dark-50: #595aff80;
   --color-green: #00ba7c;
   --color-red: #f91880;
   --color-red-75: #f91880bf;
@@ -63,11 +64,13 @@
   --font-stack: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, Inter, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-size: 15px;
   --font-size-smaller: 13px;
+  --font-size-12: 12px;
   --font-size-mid: 14px;
   --font-size-bigger: 17px;
   --font-size-heading: 20px;
   --font-weight-bold: 700;
   --line-height: 22px;
+  --line-height-mid: 20px;
 
   /* Grids and gaps */
   --gap-default: 12px;
@@ -170,6 +173,7 @@ body.theme-contrast.layout-multiple-columns {
   --icon-heart: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='20' height='20' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23b8b3c0' d='M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604a26.953 26.953 0 0 0 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4c-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5C5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903c.745.592 1.54 1.145 2.421 1.7c.299.189.595.37.934.572c.339-.202.635-.383.934-.571z'/%3E%3C/svg%3E");
   --icon-home-notification: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"%3E%3Ctitle%3EHome%3C/title%3E%3Cpath d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" fill="none" stroke="%23b8b3c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="38"/%3E%3Cpath d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none" stroke="%23b8b3c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="38"/%3E%3C/svg%3E');
   --icon-star: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="%23b8b3c0" stroke-width="5.5" viewBox="0 0 68 68"%3E%3Cpath d="M31.4 3.8c-.7.4-2.5 5-4.1 10.2l-2.9 9.5-9.9.5c-5.5.3-10.6.9-11.3 1.3-.6.5-1.2 1.9-1.2 3.3 0 2 1.5 3.4 8 7.5 4.4 2.8 8 5.5 8 6s-1.3 4.5-3 9.1c-3.6 9.7-3.7 11.4-.9 12.8 2.7 1.5 3.5 1.1 12.4-5.6l7.5-5.6 8.2 6.1c8.4 6.3 11.2 7.1 13.2 3.9.8-1.4.3-3.9-2.2-11-1.8-5.1-3.2-9.6-3.2-9.9 0-.4 3.6-3 8-5.8 6.5-4.1 8-5.5 8-7.5 0-1.4-.6-2.8-1.2-3.3-.7-.4-5.8-1-11.3-1.3l-9.9-.5-2.9-9.5C37.8 4.6 36.9 3 34 3c-.8 0-2 .4-2.6.8z"/%3E%3C/svg%3E%0A');
+  --icon-bookmark: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23b8b3c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"%3E%3Cpath d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"%3E%3C/path%3E%3C/svg%3E');
 }
 
 /* Light theme */
@@ -318,6 +322,7 @@ body.layout-multiple-columns {
   color: var(--color-mention);
 }
 
+/* stylelint-disable-next-line */
 .layout-multiple-columns .status-link.mention:not(.hashtag):not(.mention) {
   color: var(--color-link);
 }
@@ -339,6 +344,8 @@ body.layout-multiple-columns {
 }
 
 /* Things that should have the default font-size */
+.layout-multiple-columns .account__header__tabs__name h1 small,
+.layout-multiple-columns .button,
 .layout-multiple-columns .status__content__read-more-button,
 .layout-multiple-columns .status__prepend,
 .layout-multiple-columns .status__info,
@@ -352,9 +359,18 @@ body.layout-multiple-columns {
 }
 
 /* Things that should have the mid font-size */
+.layout-multiple-columns .account__header__extra__links,
+.layout-multiple-columns .account__header__account-note textarea,
+.layout-multiple-columns .account__header__content,
 .layout-multiple-columns .compose-form .autosuggest-textarea__textarea,
 .layout-multiple-columns .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
+  line-height: var(--line-height-mid);
+}
+
+/* Things that will have even smaller font size */
+.layout-single-column .account__header__account-note label {
+  font-size: var(--font-size-12);
 }
 
 /* Line heights */
@@ -525,7 +541,7 @@ body.layout-multiple-columns {
 a.status-card .status-card__host,
 a.status-card.compact .status-card__host {
   color: var(--color-dim);
-  font-size: 14px;
+  font-size: var(--font-size-mid);
   margin-bottom: 5px;
   margin-top: 0;
 }
@@ -783,7 +799,7 @@ body.embed .status__content a,
 .layout-multiple-columns .language-dropdown__dropdown__results__item.active,
 .layout-multiple-columns .icon-with-badge__badge,
 .layout-multiple-columns .button {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-dark);
 }
 
 .layout-multiple-columns .block-modal__cancel-button,
@@ -821,10 +837,15 @@ body.embed .status__content a,
 }
 
 /* Mud background colors */
-.layout-multiple-columns .language-dropdown__dropdown__results__item:hover,
-.layout-multiple-columns .language-dropdown__dropdown__results__item:focus,
 .layout-multiple-columns .reply-indicator {
   background-color: var(--color-mud);
+  color: var(--color-light-text);
+}
+
+/* Dropdown hovers */
+.layout-multiple-columns .language-dropdown__dropdown__results__item:hover,
+.layout-multiple-columns .language-dropdown__dropdown__results__item:focus {
+  background-color: var(--color-accent-dark-50);
   color: var(--color-light-text);
 }
 
@@ -848,6 +869,12 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+.layout-multiple-columns .compose-form .autosuggest-textarea__textarea::placeholder,
+.layout-multiple-columns .compose-form .icon-button,
+.layout-multiple-columns .compose-form .spoiler-input__input::placeholder,
+.layout-multiple-columns .compose-form__poll-wrapper .button.button-secondary,
+.layout-multiple-columns .language-dropdown__dropdown__results__item__common-name,
+.layout-multiple-columns .report-dialog-modal__textarea::placeholder,
 .layout-multiple-columns .poll__link,
 .layout-multiple-columns .muted .poll,
 .layout-multiple-columns .status .status__relative-time,
