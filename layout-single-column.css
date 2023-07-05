@@ -539,8 +539,8 @@ body.layout-single-column {
   white-space: inherit;
 }
 
-.status-card .status-card__host,
-.status-card.compact .status-card__host {
+.layout-single-column .status-card .status-card__host,
+.layout-single-column .status-card.compact .status-card__host {
   color: var(--color-dim);
   font-size: var(--font-size-mid);
   margin-bottom: 5px;
