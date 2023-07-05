@@ -1,6 +1,8 @@
 ### 1.5.8rc7-nightly: 2023-07-05
 
 * Fix video player border-radius
+* Add more font-sizes to the --font-size CSS var scope
+* Add line height
 
 ### 1.5.8rc6-nightly: 2023-07-05
 

@@ -63,6 +63,7 @@
   --font-size-bigger: 17px;
   --font-size-heading: 20px;
   --font-weight-bold: 700;
+  --line-height: 22px;
 
   /* Grids and gaps */
   --gap-default: 12px;
@@ -323,12 +324,22 @@ body.layout-single-column {
   display: none;
 }
 
-/* Things that should have default font-size */
+/* Things that should have the default font-size */
+.layout-single-column .status__prepend,
+.layout-single-column .status__info,
+.layout-single-column .status__relative-time,
+.layout-single-column .status__info .status__display-name,
 .layout-single-column .account__section-headline a,
 .layout-single-column .account__section-headline button,
 .layout-single-column .notification__filter-bar a,
 .layout-single-column .notification__filter-bar button {
   font-size: var(--font-size);
+}
+
+/* Line heights */
+.layout-single-column .reply-indicator__content,
+.layout-single-column .status__content {
+  line-height: var(--line-height);
 }
 
 /* Modal overlay */
