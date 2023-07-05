@@ -2,6 +2,7 @@
 
 * Backfill improvements from nightly branch, those which affect also the stable branch
 * Update instructions in README
+* Backfill color and CSS var improvements
 
 ### 1.5.8rc3: 2023-07-03
 
