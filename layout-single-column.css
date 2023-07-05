@@ -51,6 +51,10 @@
   --color-ghost-button-text: var(--color-button-text);
   --color-verified: #79bd9a;
   --color-destructive: #df405a;
+  --color-light-fuchsia-pink: #ff8cfd;
+  --color-hashtag: var(--color-accent);
+  --color-mention: var(--color-accent);
+  --color-link: var(--color-accent);
 
   /* In the original UI this color is lighten($ui-base-color, 12%) */
   --color-outer-space: #42485a;
@@ -314,6 +318,20 @@ body.layout-single-column {
 .layout-single-column .reply-indicator__content,
 .layout-single-column .status__content {
   color: var(--color-fg);
+}
+
+/* Link color variants */
+.layout-single-column .status-link.hashtag {
+  color: var(--color-hashtag);
+}
+
+.layout-single-column .status-link.mention:not(.hashtag) {
+  color: var(--color-mention);
+}
+
+/* stylelint-disable-next-line */
+.layout-single-column .status-link.mention:not(.hashtag):not(.mention) {
+  color: var(--color-link);
 }
 
 /* Logo */
