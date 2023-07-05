@@ -8,6 +8,7 @@
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
 * Fix undefined content warning placeholder (thanks @digitalspork!)
+* Fix YouTube preview card styles
 
 ### 1.5.7: 2023-06-09
 

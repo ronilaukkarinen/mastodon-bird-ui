@@ -501,15 +501,11 @@ body.layout-multiple-columns {
   top: -2px;
 }
 
-/* Default to full-width images in link previews
-   Needs implementation from the source below
-
-   @source https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018
-*/
-
-.layout-multiple-columns a.status-card,
-.layout-multiple-columns a.status-card.compact {
+/* Bigger preview cards */
+.layout-multiple-columns .status-card,
+.layout-multiple-columns .status-card.compact {
   background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: block;
 }
@@ -518,18 +514,18 @@ body.layout-multiple-columns {
   content: "";
 }
 
-.layout-multiple-columns a.status-card .status-card__image-image,
-.layout-multiple-columns a.status-card .status-card__image-image.compact {
+.layout-multiple-columns .status-card .status-card__image-image,
+.layout-multiple-columns .status-card .status-card__image-image.compact {
   border-radius: 0;
 }
 
-.layout-multiple-columns a.status-card .status-card__content,
-.layout-multiple-columns a.status-card.compact .status-card__content {
+.layout-multiple-columns .status-card .status-card__content,
+.layout-multiple-columns .status-card.compact .status-card__content {
   padding: 15px;
 }
 
-.layout-multiple-columns a.status-card .status-card__title,
-.layout-multiple-columns a.status-card.compact .status-card__title {
+.layout-multiple-columns .status-card .status-card__title,
+.layout-multiple-columns .status-card.compact .status-card__title {
   color: var(--color-fg);
   font-size: 18px;
   font-weight: 400;
@@ -538,8 +534,8 @@ body.layout-multiple-columns {
   white-space: inherit;
 }
 
-a.status-card .status-card__host,
-a.status-card.compact .status-card__host {
+.layout-multiple-columns .status-card .status-card__host,
+.layout-multiple-columns .status-card.compact .status-card__host {
   color: var(--color-dim);
   font-size: var(--font-size-mid);
   margin-bottom: 5px;
