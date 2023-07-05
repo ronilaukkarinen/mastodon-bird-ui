@@ -369,6 +369,11 @@ body.layout-multiple-columns {
   line-height: var(--line-height-mid);
 }
 
+/* Exceptions */
+.layout-single-column .account__header__content {
+  line-height: 18px;
+}
+
 /* Things that will have even smaller font size */
 .layout-single-column .account__header__account-note label {
   font-size: var(--font-size-12);
@@ -870,6 +875,10 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+/* stylelint-disable-next-line selector-not-notation */
+.layout-multiple-columns .notification .status-link.mention:not(.hashtag):not(.mention),
+.layout-multiple-columns .notification .status-link.hashtag,
+.layout-multiple-columns .notification .status-link.mention:not(.hashtag),
 .layout-multiple-columns .compose-form .autosuggest-textarea__textarea::placeholder,
 .layout-multiple-columns .compose-form .icon-button,
 .layout-multiple-columns .compose-form .spoiler-input__input::placeholder,

@@ -268,6 +268,8 @@ body.theme-mastodon-light.layout-single-column {
 /* Vars in mobile */
 @media (max-width: 500px) {
   :root {
+    --font-size: 16px;
+    --line-height: 1.4;
     --font-size-heading: 17px;
     --badges-distance-from-edge: 10px;
   }
@@ -376,6 +378,11 @@ body.layout-single-column {
 .layout-single-column .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
   line-height: var(--line-height-mid);
+}
+
+/* Exceptions */
+.layout-single-column .account__header__content {
+  line-height: 18px;
 }
 
 /* Things that will have even smaller font size */
@@ -839,6 +846,10 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+/* stylelint-disable-next-line selector-not-notation */
+.layout-single-column .notification .status-link.mention:not(.hashtag):not(.mention),
+.layout-single-column .notification .status-link.hashtag,
+.layout-single-column .notification .status-link.mention:not(.hashtag),
 .layout-single-column .compose-form .autosuggest-textarea__textarea::placeholder,
 .layout-single-column .compose-form .icon-button,
 .layout-single-column .compose-form .spoiler-input__input::placeholder,
