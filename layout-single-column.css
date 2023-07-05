@@ -845,6 +845,10 @@ body.embed .status__content a,
 }
 
 /* Things like notification status update text that should be dim */
+/* stylelint-disable-next-line selector-not-notation */
+.layout-single-column .notification .status-link.mention:not(.hashtag):not(.mention),
+.layout-single-column .notification .status-link.hashtag,
+.layout-single-column .notification .status-link.mention:not(.hashtag),
 .layout-single-column .compose-form .autosuggest-textarea__textarea::placeholder,
 .layout-single-column .compose-form .icon-button,
 .layout-single-column .compose-form .spoiler-input__input::placeholder,
