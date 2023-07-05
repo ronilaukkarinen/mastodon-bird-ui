@@ -365,6 +365,8 @@ My wife has Retinitis Pigmentosa and a form of Achromatopsia so it was her wish 
 * More accessible colors
 * Different colors for links, mentions and hashtags
 
+![mementomori social_home (8)](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/aa5e7254-e9d4-4e85-be0f-0ce372698d5c)
+
 If you use a **Custom CSS**/user version, add this to your CSS:
 
 ```css
