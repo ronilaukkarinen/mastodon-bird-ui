@@ -40,8 +40,9 @@ Mastodon Bird UI version format: _semver + Mastodon version_, for example: `1.5.
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
     8. [Can you add background-color for compose form box area?](#can-you-add-background-color-for-compose-form-box-area)
     9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
-    10. [Can you add this/that feature as default?](#can-you-add-feature-x-as-default)
-    11. [Can you make it look like this by default?)?](#can-you-make-it-look-like-this-by-default)
+    10. [Can you add feature x?](#can-you-add-feature-x)
+    11. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
+    12. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
@@ -333,7 +334,7 @@ Yes YOU can. But they're not there by default, see [this post](https://mementomo
 
 Tweak the values as you like.
 
-### Can you add this/that feature as default?
+### Can you add feature x?
 
 Mastodon Bird UI is CSS only, so I can't add any features. Please send your Mastodon feature ideas [here](https://github.com/mastodon/mastodon/issues).
 
@@ -342,6 +343,14 @@ Mastodon Bird UI is CSS only, so I can't add any features. Please send your Mast
 Probably yes, but I'm not here to please everyone. Suggestions like [this](https://mementomori.social/@rolle/110658189531503982) are very important and there has been many pull requests and issues already that have helped me to make the UI better. While saying this I'm not going to implement every single suggestion, because there are too many different opinions out there.
 
 If you like, you can always suggest something or create a pull request. You are welcome to create your own fork and modify the UI as you prefer. I hope you have fun with it!
+
+### How to get to settings or faves on mobile?
+
+You can swipe the bottom bar. I know this is not the most obvious feature.
+
+![ezgif com-video-to-gif](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/18c832c0-2e3b-4bc2-8323-636cd08b107d)
+
+See issues #26 and #33.
 
 ## Goals
 
