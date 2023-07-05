@@ -342,6 +342,7 @@ body.layout-single-column {
 }
 
 /* Things that should have the default font-size */
+.layout-single-column .status__content__read-more-button,
 .layout-single-column .status__prepend,
 .layout-single-column .status__info,
 .layout-single-column .status__relative-time,
