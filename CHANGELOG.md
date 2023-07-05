@@ -1,3 +1,7 @@
+### 1.5.8rc9-nightly: 2023-07-06
+
+* Fix missing comma (thanks @appel!)
+
 ### 1.5.8rc8-nightly: 2023-07-05
 
 * Add ultra accessible colors to README
