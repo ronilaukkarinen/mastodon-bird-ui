@@ -353,8 +353,7 @@ body.layout-single-column {
 
 /* Things that should have the default font-size */
 .layout-single-column .notification__message,
-.layout-single-column .detailed-status .status__content p,
-.layout-single-column .status__content__text p,
+.layout-single-column .status__content,
 .layout-single-column .account__header__tabs__name h1 small,
 .layout-single-column .button,
 .layout-single-column .status__content__read-more-button,
@@ -1315,6 +1314,7 @@ body.embed .detailed-status,
 /* Detailed status update */
 .layout-single-column .detailed-status .status__content {
   font-size: var(--font-size-bigger);
+  line-height: 1.4;
 }
 
 body.embed .detailed-status__meta,

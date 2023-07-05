@@ -1342,6 +1342,7 @@ body.embed .detailed-status,
 /* Detailed status update */
 .layout-multiple-columns .detailed-status .status__content {
   font-size: var(--font-size-bigger);
+  line-height: 1.4;
 }
 
 body.embed .detailed-status__meta,
