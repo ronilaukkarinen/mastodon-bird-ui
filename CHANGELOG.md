@@ -4,6 +4,7 @@
 * Add more font-sizes to the --font-size CSS var scope
 * Add line height
 * Add status__content__read-more-button to font size scope
+* Add logo to var
 
 ### 1.5.8rc6-nightly: 2023-07-05
 
