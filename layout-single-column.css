@@ -263,6 +263,8 @@ body.theme-mastodon-light.layout-single-column {
 /* Vars in mobile */
 @media (max-width: 500px) {
   :root {
+    --font-size: 16px;
+    --line-height: 1.4;
     --font-size-heading: 17px;
     --badges-distance-from-edge: 10px;
   }
@@ -357,6 +359,11 @@ body.layout-single-column {
 .layout-single-column .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
   line-height: var(--line-height-mid);
+}
+
+/* Exceptions */
+.layout-single-column .account__header__content {
+  line-height: 18px;
 }
 
 /* Things that will have even smaller font size */

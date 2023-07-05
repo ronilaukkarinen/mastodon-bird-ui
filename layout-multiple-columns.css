@@ -353,6 +353,11 @@ body.layout-multiple-columns {
   line-height: var(--line-height-mid);
 }
 
+/* Exceptions */
+.layout-multiple-columns .account__header__content {
+  line-height: 18px;
+}
+
 /* Things that will have even smaller font size */
 .layout-multiple-columns .account__header__account-note label {
   font-size: var(--font-size-12);
