@@ -350,7 +350,7 @@ You can swipe the bottom bar. I know this is not the most obvious feature.
 
 ![ezgif com-video-to-gif](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/18c832c0-2e3b-4bc2-8323-636cd08b107d)
 
-See issues #26 and #33.
+See issues [Many users don't recognize that the bottom menu is scrollable #26](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/26) and [Swiping bottom bar triggers multi-tasking on some phones #33](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/33).
 
 ## Goals
 
