@@ -3182,6 +3182,11 @@ body.embed .button.logo-button:hover,
   overflow: hidden;
 }
 
+/* Exception for your own profile media gallery */
+.layout-single-column .account-gallery__container .media-gallery__gifv {
+  border-radius: 0;
+}
+
 /* More distinct focus color for accessibility, instead of just white */
 .layout-single-column input:focus-visible {
   outline-color: var(--color-accent);
