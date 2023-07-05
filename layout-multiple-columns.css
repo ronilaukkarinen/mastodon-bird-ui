@@ -344,8 +344,6 @@ body.layout-multiple-columns {
 
 /* Things that should have the default font-size */
 .layout-multiple-columns .notification__message,
-.layout-multiple-columns .detailed-status .status__content p,
-.layout-multiple-columns .status__content__text p,
 .layout-multiple-columns .account__header__tabs__name h1 small,
 .layout-multiple-columns .button,
 .layout-multiple-columns .status__content__read-more-button,
@@ -1332,6 +1330,7 @@ body.embed .detailed-status,
 /* Detailed status update */
 .layout-multiple-columns .detailed-status .status__content {
   font-size: var(--font-size-bigger);
+  line-height: 1.4;
 }
 
 body.embed .detailed-status__meta,
