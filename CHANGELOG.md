@@ -4,6 +4,7 @@
 * Minor CSS var improvements
 * Fix profile media gallery thumbnails' border-radius
 * Fix regression with detailed status update font size
+* Fix YouTube preview card styles
 
 ### 1.5.8rc7-nightly: 2023-07-05
 
