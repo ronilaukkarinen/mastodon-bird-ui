@@ -1270,7 +1270,7 @@ body.embed .detailed-status,
 
 /* Rtl version */
 [dir="rtl"] .layout-single-column .status__action-bar,
-[dir="rtl"] .layout-single-column .attachment-list
+[dir="rtl"] .layout-single-column .attachment-list,
 [dir="rtl"] .layout-single-column .status__content__read-more-button,
 [dir="rtl"] .layout-single-column .status .status__content {
   padding-left: 0;
