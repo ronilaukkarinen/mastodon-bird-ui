@@ -815,6 +815,7 @@ body.embed .status__content a,
 .layout-single-column .language-dropdown__dropdown__results__item:hover,
 .layout-single-column .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
+  color: var(--color-light-text);
 }
 
 /* Accented border colors */

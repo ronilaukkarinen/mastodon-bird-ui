@@ -1,3 +1,8 @@
+### 1.5.8rc8-nightly: 2023-07-05
+
+* Add ultra accessible colors to README
+* Minor CSS var improvements
+
 ### 1.5.8rc7-nightly: 2023-07-05
 
 * Fix video player border-radius
