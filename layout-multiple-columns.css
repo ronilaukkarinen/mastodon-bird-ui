@@ -363,8 +363,8 @@ body.layout-multiple-columns {
 .layout-multiple-columns .account__header__extra__links,
 .layout-multiple-columns .columns-area__panels__pane--compositional .account__header__account-note textarea,
 .layout-multiple-columns .account__header__content,
-.layout-multiple-columns .compose-form .autosuggest-textarea__textarea,
-.layout-multiple-columns .compose-form .spoiler-input__input {
+.layout-multiple-columns .columns-area__panels__pane--compositional .compose-form .autosuggest-textarea__textarea,
+.layout-multiple-columns .columns-area__panels__pane--compositional .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
   line-height: var(--line-height-mid);
 }
