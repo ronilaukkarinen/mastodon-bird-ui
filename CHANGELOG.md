@@ -4,6 +4,7 @@
 * Fix regression with compose form font size
 * Less padding before the status header
 * Less margin before the status action bar
+* Hide empty YouTube description
 
 ### 1.5.8: 2023-07-05
 
