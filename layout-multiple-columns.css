@@ -1294,11 +1294,12 @@ body.embed .detailed-status,
   padding-left: 0;
 }
 
-/* Make sure read more button is always aligned to center vertically */
+/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
 .layout-multiple-columns .status__content__read-more-button {
   align-items: center;
   display: flex;
   justify-content: flex-start;
+  margin-inline-start: 0;
 }
 
 /* Rtl version */
