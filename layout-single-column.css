@@ -516,6 +516,11 @@ body.layout-single-column {
   transition: all 200ms;
 }
 
+/* Hide empty YouTube description */
+.layout-single-column .status-card__description:empty {
+  display: none;
+}
+
 .layout-single-column .status-card:focus,
 .layout-single-column .status-card:hover {
   background-color: rgba(255 255 255 / .03);

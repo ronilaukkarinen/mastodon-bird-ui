@@ -6,6 +6,7 @@
 * Less margin before the status action bar
 * Fix Mastodon UI bug with read more/translate button alignment
 * Add smooth hover to status cards
+* Hide empty YouTube description
 
 ### 1.5.8rc8-nightly: 2023-07-05
 
