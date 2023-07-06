@@ -1034,7 +1034,12 @@ body.embed .status__content a,
   height: calc(var(--gap-default) * 2);
   justify-content: flex-start;
   margin-bottom: 0;
-  padding-bottom: calc(var(--gap-default) / 2);
+  padding-bottom: 0;
+}
+
+/* Status action bar */
+.layout-single-column .status__action-bar {
+  margin-top: 12px;
 }
 
 /* Display name */

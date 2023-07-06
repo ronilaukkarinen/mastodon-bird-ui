@@ -2,6 +2,8 @@
 
 * Fix missing comma (thanks @appel!)
 * Fix regression with compose form font size on mobile
+* Less padding before the status header
+* Less margin before the status action bar
 
 ### 1.5.8rc8-nightly: 2023-07-05
 
