@@ -1,6 +1,7 @@
 ### 1.5.8rc9-nightly: 2023-07-06
 
 * Fix missing comma (thanks @appel!)
+* Fix regression with compose form font size on mobile
 
 ### 1.5.8rc8-nightly: 2023-07-05
 

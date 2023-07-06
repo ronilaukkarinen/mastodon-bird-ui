@@ -371,7 +371,7 @@ body.layout-single-column {
 
 /* Things that should have the mid font-size */
 .layout-single-column .account__header__extra__links,
-.layout-single-column .account__header__account-note textarea,
+.layout-single-column .columns-area__panels__pane--compositional .account__header__account-note textarea,
 .layout-single-column .account__header__content,
 .layout-single-column .compose-form .autosuggest-textarea__textarea,
 .layout-single-column .compose-form .spoiler-input__input {

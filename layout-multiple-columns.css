@@ -361,7 +361,7 @@ body.layout-multiple-columns {
 
 /* Things that should have the mid font-size */
 .layout-multiple-columns .account__header__extra__links,
-.layout-multiple-columns .account__header__account-note textarea,
+.layout-multiple-columns .columns-area__panels__pane--compositional .account__header__account-note textarea,
 .layout-multiple-columns .account__header__content,
 .layout-multiple-columns .compose-form .autosuggest-textarea__textarea,
 .layout-multiple-columns .compose-form .spoiler-input__input {
