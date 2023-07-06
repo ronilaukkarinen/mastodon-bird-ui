@@ -1,6 +1,6 @@
 ## Mastodon with modern birdsite-like UI
 
-[![Build Status for CSS](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml/badge.svg)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml) [![Supported Mastodon version](https://img.shields.io/badge/mastodon-v4.1.2-595aff)](https://github.com/mastodon/mastodon)
+[![Build Status for CSS](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml/badge.svg)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml) [![Supported Mastodon version](https://img.shields.io/badge/mastodon-v4.1.3-595aff)](https://github.com/mastodon/mastodon)
 
 Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to resemble Twitter, but be a lot better than it ever was.
 
@@ -14,7 +14,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 Mastodon Bird UI version format: _semver + Mastodon version_, for example: `1.5.8rc4-mastodon-4.1.2-stable`. First, check the Mastodon version you're running, then choose the version for Mastodon Bird UI. If you're running Mastodon 4.1.2 stable, choose the version `mastodon-4.1.2-stable`. If you're running Mastodon 4.1.2 nightly, choose the version `mastodon-4.1.2-nightly`.
 
 - [Mastodon 4.1.2 stable](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2-stable)
-- [Mastodon 4.1.2 nightly (main branch)](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.2-nightly)
+- [Mastodon 4.1.3 nightly (main branch)](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/mastodon-4.1.3-nightly)
 
 ## Table of contents
 
