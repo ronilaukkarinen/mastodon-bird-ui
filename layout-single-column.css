@@ -513,6 +513,12 @@ body.layout-single-column {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: block;
+  transition: all 200ms;
+}
+
+.layout-single-column .status-card:focus,
+.layout-single-column .status-card:hover {
+  background-color: rgba(255 255 255 / .03);
 }
 
 .layout-single-column .fa-file-text::before {
