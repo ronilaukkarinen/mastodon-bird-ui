@@ -1,3 +1,8 @@
+### 1.5.9: 2023-07-06
+
+* Fix YouTube preview card styles
+* Fix regression with compose form font size
+
 ### 1.5.8: 2023-07-05
 
 * Fix profile media gallery thumbnails' border-radius
@@ -8,7 +13,6 @@
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
 * Fix undefined content warning placeholder (thanks @digitalspork!)
-* Fix YouTube preview card styles
 
 ### 1.5.7: 2023-06-09
 

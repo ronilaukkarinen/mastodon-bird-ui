@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.8 */
+   1.5.9 */
 
 /* CSS variables */
 :root {
@@ -369,10 +369,10 @@ body.layout-single-column {
 
 /* Things that should have the mid font-size */
 .layout-single-column .account__header__extra__links,
-.layout-single-column .account__header__account-note textarea,
+.layout-single-column .columns-area__panels__pane--compositional .account__header__account-note textarea,
 .layout-single-column .account__header__content,
-.layout-single-column .compose-form .autosuggest-textarea__textarea,
-.layout-single-column .compose-form .spoiler-input__input {
+.layout-single-column .columns-area__panels__pane--compositional .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .columns-area__panels__pane--compositional .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
   line-height: var(--line-height-mid);
 }
