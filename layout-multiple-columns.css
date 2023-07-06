@@ -508,6 +508,12 @@ body.layout-multiple-columns {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: block;
+  transition: all 200ms;
+}
+
+.layout-multiple-columns .status-card:focus,
+.layout-multiple-columns .status-card:hover {
+  background-color: rgba(255 255 255 / .03);
 }
 
 .layout-multiple-columns .fa-file-text::before {
