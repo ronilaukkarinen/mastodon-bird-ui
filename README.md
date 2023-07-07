@@ -43,6 +43,7 @@ Mastodon Bird UI version format: _semver + Mastodon version_, for example: `1.5.
     10. [Can you add feature x?](#can-you-add-feature-x)
     11. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
     12. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
+    13. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
@@ -351,6 +352,14 @@ You can swipe the bottom bar. I know this is not the most obvious feature.
 ![ezgif com-video-to-gif](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/18c832c0-2e3b-4bc2-8323-636cd08b107d)
 
 See issues [Many users don't recognize that the bottom menu is scrollable #26](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/26) and [Swiping bottom bar triggers multi-tasking on some phones #33](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/33).
+
+# Automatic dark/light mode possible?
+
+Not at the moment, for following reasons:
+
+1. Original Mastodon themes were built using CSS classes in body level, Mastodon Bird UI merely follows this logic.
+2. `@media (prefers-color-scheme: dark/light)` does not support `@import` in SCSS inside them, so it's not currently possible to implement new themes with one file. I'm not going to create separate files for dark and light themes, because it would be too much work to maintain.
+3. Many choose to use either dark or light theme.
 
 ## Goals
 
