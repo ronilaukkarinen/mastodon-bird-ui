@@ -1,4 +1,4 @@
-### 1.5.8-nightly: 2023-07-08
+### 1.6.0-nightly: 2023-07-08
 
 * Indicate added to list icon with green color, Fixes #34
 * Fix missing comma (thanks @appel!)
