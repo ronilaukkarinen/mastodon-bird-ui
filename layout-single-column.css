@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.5.9 */
+   1.6.0 */
 
 /* CSS variables */
 :root {
@@ -1874,6 +1874,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-size: 20px;
 }
 
+.layout-single-column .list-adder__lists .fa-times::before,
 .layout-single-column .account__wrapper .account__relationship .icon-button.active .fa::before,
 .layout-single-column .explore__search-results .account__relationship .icon-button.active .fa::before,
 .layout-single-column .notification .account__relationship .icon-button.active .fa::before {
@@ -1882,6 +1883,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: .75;
 }
 
+.layout-single-column .list-adder__lists .fa-times:hover::before,
 .layout-single-column .explore__search-results .icon-button.active:hover .fa::before,
 .layout-single-column .notification .account__relationship .icon-button.active:hover .fa::before {
   /* stylelint-disable-next-line */
