@@ -100,16 +100,20 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 The following instances have enabled Mastodon Bird UI for their users, based on [this](https://mementomori.social/@rolle/110677863997761494) inquiry. Do you use this theme? Let me know or send a PR that adds your instance.
 
-| **Instance**                                             | **Implementation method** | **Theme name**   | **User count** | **Default** |
-|----------------------------------------------------------|---------------------------|------------------|----------------|-------------|
-| [mementomori.social](https://mementomori.social/explore) | Site theme                | Mastodon Bird UI | 20+            | Yes         |
-| [dvm.community](https://dmv.community/explore)           | Custom CSS                | N/A              | 200+           | Yes         |
-| [tyrol.social](https://tyrol.social/explore)             | Custom CSS                | N/A              | 200+           | Yes         |
-| [muri.network](https://muri.network/explore)             | Site theme                | Mastodon Bird UI | 100+           | Yes         |
-| [suomi.social](https://suomi.social/explore)             | Custom CSS                | N/A              | 10+            | Yes         |
-| [mstdn.social](https://mstdn.social/explore)             | Site theme                | Elephant         | 40 000+        | No          |
-| [bolha.one](https://bolha.one/explore)                   | Custom CSS                | N/A              | 10+            | Yes         |
-| [indieweb.social](https://indieweb.social/explore)       | Custom CSS                | N/A              | 1900+          | Yes         |
+| **Instance**                                                   | **Implementation method** | **Theme name**   | **User count** | **Default** |
+|----------------------------------------------------------------|---------------------------|------------------|----------------|-------------|
+| [mementomori.social](https://mementomori.social/explore)       | Site theme                | Mastodon Bird UI | 30+            | Yes         |
+| [dvm.community](https://dmv.community/explore)                 | Custom CSS                | N/A              | 200+           | Yes         |
+| [tyrol.social](https://tyrol.social/explore)                   | Custom CSS                | N/A              | 200+           | Yes         |
+| [muri.network](https://muri.network/explore)                   | Site theme                | Mastodon Bird UI | 100+           | Yes         |
+| [suomi.social](https://suomi.social/explore)                   | Custom CSS                | N/A              | 10+            | Yes         |
+| [mstdn.social](https://mstdn.social/explore)                   | Site theme                | Elephant         | 40 000+        | No          |
+| [bolha.one](https://bolha.one/explore)                         | Custom CSS                | N/A              | 10+            | Yes         |
+| [indieweb.social](https://indieweb.social/explore)             | Custom CSS                | N/A              | 1900+          | Yes         |
+| [egirl.social](https://egirl.social/about)                     | Custom CSS                | N/A              | 1              | Yes         |
+| [climatejustice.social](https://climatejustice.social/explore) | Site theme                | BirdUI           | 1800+          | No          |
+| [qdon.space](https://qdon.space/about)                         | Site theme                | Mastodon Bird UI | 1100+          | No          |
+| [bakedbean.xyz](https://bakedbean.xyz/explore)                 | Custom CSS                | N/A              | 100+           | Yes         |
 
 ## Installation for Mastodon instance admins
 
