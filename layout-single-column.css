@@ -455,6 +455,31 @@ body.layout-single-column {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgb(247 249 249)' aria-hidden='true' class='r-jwli3a r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03'%3E%3Cg%3E%3Cpath d='M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
+.layout-single-column .media-modal__navigation button.media-modal__nav--right,
+.layout-single-column .media-modal__navigation button.media-modal__nav--left {
+    /* stylelint-disable-next-line */
+    bottom: 5px!important;
+    /* stylelint-disable-next-line */
+    height:  auto!important;
+    /* stylelint-disable-next-line */
+    color: var(--color-button-text)!important;
+}
+
+.layout-single-column .media-modal__navigation button.media-modal__nav--right {
+    padding-left: 50vmin;
+    padding-right: 20px;
+}
+
+.layout-single-column .media-modal__navigation button.media-modal__nav--left {
+    padding-right: 50vmin;
+    padding-left: 20px;
+}
+
+.layout-single-column .image-loader button.media-modal__zoom-button {
+    /* stylelint-disable-next-line */
+    color: var(--color-button-text)!important;
+}
+
 /* List adder input */
 .layout-single-column .list-editor input.setting-text,
 .layout-single-column .list-adder input.setting-text {
