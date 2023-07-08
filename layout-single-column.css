@@ -347,7 +347,7 @@ body.layout-single-column {
   width: 50px;
 }
 
-.layout-multiple-columns .ui__header__logo img,
+.layout-single-column .ui__header__logo img,
 .layout-single-column .ui__header__logo svg {
   display: none;
 }
