@@ -79,7 +79,6 @@ Here are some of the UI things Mastodon Bird UI is trying to solve (read [the Ma
 As this is CSS-only, they are not really "features" but more like aesthetic changes.
 
 - Respects the profile **Site theme** setting and sets dark/light based on this alone
-- Missing alt text indicators
 - Subtle deep purple ribbon in the right corner for private messages
 - CSS variables for everything
 - Threaded replies (limited, see issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306))
@@ -93,6 +92,23 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 - Support for RTL languages
 - Hide lists by default, show them on hover
 - Carefully polished UI with hand picked/designed icons based on open source versions of Iconoir, Ionicons and Feather
+- Show added follows in green, indicate unfollow with red
+- Show added to list in green, indicate removing with red
+
+## List of instances that use Mastodon Bird UI
+
+The following instances have enabled Mastodon Bird UI for their users, based on [this](https://mementomori.social/@rolle/110677863997761494) inquiry.
+
+| **Instance**                                             | **Implementation method** | **Theme name**   | **User count** | **Default** |
+|----------------------------------------------------------|---------------------------|------------------|----------------|-------------|
+| [mementomori.social](https://mementomori.social/explore) | Site theme                | Mastodon Bird UI | 20+            | Yes         |
+| [dvm.community](https://dmv.community/explore)           | Custom CSS                | N/A              | 200+           | Yes         |
+| [tyrol.social](https://tyrol.social/explore)             | Custom CSS                | N/A              | 200+           | Yes         |
+| [muri.network](https://muri.network/explore)             | Site theme                | Mastodon Bird UI | 100+           | Yes         |
+| [suomi.social](https://suomi.social/explore)             | Custom CSS                | N/A              | 10+            | Yes         |
+| [mstdn.social](https://mstdn.social/explore)             | Site theme                | Elephant         | 40 000+        | No          |
+| [bolha.one](https://bolha.one/explore)                   | Custom CSS                | N/A              | 10+            | Yes         |
+| [indieweb.social](https://indieweb.social/explore)       | Custom CSS                | N/A              | 1900+          | Yes         |
 
 ## Installation for Mastodon instance admins
 
