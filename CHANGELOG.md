@@ -1,3 +1,7 @@
+### 1.6.1-nightly: 2023-07-08
+
+* Fix two logos showing on iPad, Safari. Fixes #44 (thanks @misterzwiebel!)
+
 ### 1.6.0-nightly: 2023-07-08
 
 * Indicate added to list icon with green color, Fixes #34
