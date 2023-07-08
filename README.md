@@ -97,7 +97,7 @@ As this is CSS-only, they are not really "features" but more like aesthetic chan
 
 ## List of instances that use Mastodon Bird UI
 
-The following instances have enabled Mastodon Bird UI for their users, based on [this](https://mementomori.social/@rolle/110677863997761494) inquiry.
+The following instances have enabled Mastodon Bird UI for their users, based on [this](https://mementomori.social/@rolle/110677863997761494) inquiry. Do you use this theme? Let me know or send a PR that adds your instance.
 
 | **Instance**                                             | **Implementation method** | **Theme name**   | **User count** | **Default** |
 |----------------------------------------------------------|---------------------------|------------------|----------------|-------------|
