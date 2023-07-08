@@ -190,6 +190,17 @@ Same for the localizations of your choice, for example `config/locales/fi.yml` (
      mastodon-dark: Mastodon (Tumma)
 ```
 
+Make sure everything is set in place, then rebuild all the assets and restart all the services:
+
+```bash
+bundle install
+rm -rfv public/packs
+yarn install
+RAILS_ENV=production bundle exec rails assets:precompile
+sudo systemctl restart mastodon-web mastodon-sidekiq mastodon-streaming
+sudo systemctl restart postgresql 
+```
+
 And you're done!
 
 ## Installation for regular users, contributing and testing
