@@ -120,6 +120,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [mtg.garden](https://mtg.garden/explore)                                 | Site theme                | BirdUI           | 20+            | No          |
 | [social.fairphone.community](https://social.fairphone.community/explore) | Site theme                | BirdUI           | 5              | No          |
 | [kawakawa.fun](https://kawakawa.fun/explore)                             | Custom CSS                | N/A              | 1              | Yes         |
+| [mastodonsuomi.fi](https://mastodonsuomi.fi/explore)                     | Custom CSS                | N/A              | 20+            | Yes         |
 
 ## Installation for Mastodon instance admins
 
