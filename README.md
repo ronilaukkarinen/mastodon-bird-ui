@@ -112,7 +112,7 @@ If you cd to your Mastodon directory (usually $HOME/live) you can run these bash
 
 ```bash
 # First, define version
-export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-stable"
 
 # Create a new folder for the theme
 mkdir -p app/javascript/styles/mastodon-bird-ui
@@ -188,7 +188,7 @@ If you are using **Custom CSS**, just copy and paste the new version to **Custom
 
 ```bash
 # First, define version
-export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-nightly"
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-stable"
 
 # Download the CSS file for single column layout
 wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
