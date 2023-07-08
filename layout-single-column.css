@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.0 */
+   1.6.1 */
 
 /* CSS variables */
 :root {
@@ -346,6 +346,7 @@ body.layout-single-column {
   width: 50px;
 }
 
+.layout-single-column .ui__header__logo img,
 .layout-single-column .ui__header__logo svg {
   display: none;
 }
