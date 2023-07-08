@@ -1,5 +1,6 @@
-### 1.5.8rc9-nightly: 2023-07-06
+### 1.5.8-nightly: 2023-07-08
 
+* Indicate added to list icon with green color, Fixes #34
 * Fix missing comma (thanks @appel!)
 * Fix regression with compose form font size on mobile
 * Less padding before the status header
@@ -7,17 +8,11 @@
 * Fix Mastodon UI bug with read more/translate button alignment
 * Add smooth hover to status cards
 * Hide empty YouTube description
-
-### 1.5.8rc8-nightly: 2023-07-05
-
 * Add ultra accessible colors to README
 * Minor CSS var improvements
 * Fix profile media gallery thumbnails' border-radius
 * Fix regression with detailed status update font size
 * Fix YouTube preview card styles
-
-### 1.5.8rc7-nightly: 2023-07-05
-
 * Fix video player border-radius
 * Add more font-sizes to the --font-size CSS var scope
 * Add line height
@@ -26,18 +21,12 @@
 * Improve accessible color areas
 * Add lots of more colors to CSS var scopes
 * Fix dark colors on high contrast mode
-
-### 1.5.8rc6-nightly: 2023-07-05
-
 * Fix regression with the advanced web interface for nightly (thanks @vmstan!)
 * Add show/hide media icon button styles with border-radius (thanks @MikeHuntington!)
 * Add border-radius as a CSS variable
 * Add consistent border radius to alt badge
 * Add --border-radius-badges CSS variable
 * Make badges a bit further from the edge
-
-### 1.5.8rc5-nightly: 2023-07-04
-
 * Fix regression with lists order on mobile
 * Fix the thread line stub when replying in real time
 * Fix regression with missing border in detailed status
@@ -47,9 +36,6 @@
 * Add background color for avatars for transparent avatars to be more distinct
 * Fix detailed status in between of threads
 * Fix undefined content warning placeholder (thanks @digitalspork!)
-
-### 1.5.8rc4-nightly: 2023-07-03
-
 * Add visible border around media
 * Increase border-radius for media
 * Increase border-radius for url preview cards
@@ -60,14 +46,8 @@
 * Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
 * Fix regression with padding inside a media item
 * Fix regression with padding inside a status card in thread
-
-### 1.5.8rc3-nightly: 2023-07-03
-
 * Fix read more/translate link position
 * Remove "No alt" indicator now that 4.1.2-nightly has an indicator for media that has alt
-
-### 1.5.8rc2-nightly: 2023-07-03
-
 * Add support for Mastodon 4.1.2-nightly-20230703
 * Fix lists position on mobile
 * Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
