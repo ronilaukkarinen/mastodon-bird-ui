@@ -1,3 +1,7 @@
+### 1.6.0: 2023-07-08
+
+* Indicate added to list icon with green color, Fixes #34
+
 ### 1.5.9: 2023-07-06
 
 * Fix YouTube preview card styles
