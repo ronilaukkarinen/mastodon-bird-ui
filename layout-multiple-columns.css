@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.1-nightly */
+   1.6.2-nightly */
 
 /* CSS variables */
 :root {
@@ -955,7 +955,8 @@ body.embed .status__content a,
 .layout-multiple-columns .muted .status__content,
 .layout-multiple-columns .muted .status__content a,
 .layout-multiple-columns .muted .status__content p,
-.layout-multiple-columns .muted .status__display-name strong {
+.layout-multiple-columns .muted .status__display-name strong,
+.layout-multiple-columns .privacy-dropdown__option:not(.active) .privacy-dropdown__option__content {
   color: var(--color-dim);
 }
 

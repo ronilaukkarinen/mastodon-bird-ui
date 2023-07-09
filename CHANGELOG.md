@@ -1,3 +1,7 @@
+### 1.6.2-nightly: 2023-07-08
+
+* Fix privacy dropdown text color in contrast theme (thanks @misterzwiebel!)
+
 ### 1.6.1-nightly: 2023-07-08
 
 * Fix two logos showing on iPad, Safari. Fixes #44 (thanks @misterzwiebel!)
