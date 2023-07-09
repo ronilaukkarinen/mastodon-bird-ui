@@ -122,6 +122,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [social.fairphone.community](https://social.fairphone.community/explore) | Site theme                | BirdUI           | 5              | No          |
 | [kawakawa.fun](https://kawakawa.fun/explore)                             | Custom CSS                | N/A              | 1              | Yes         |
 | [mastodonsuomi.fi](https://mastodonsuomi.fi/explore)                     | Custom CSS                | N/A              | 20+            | Yes         |
+| [mastodon.ktachibana.party](https://mastodon.ktachibana.party/explore)   | Site theme                | Bird UI          | 100+           | No          |
 
 ## Installation for Mastodon instance admins
 
