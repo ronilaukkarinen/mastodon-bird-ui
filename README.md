@@ -143,7 +143,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 
 Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
-![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/da9f873d-8c0a-430c-8172-cc8f304c51ec)
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/b30f19e2-2835-4d92-b40d-cac9922f64b3)
 
 If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). Otherwise read along.
 
