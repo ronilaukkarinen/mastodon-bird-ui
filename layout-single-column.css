@@ -922,11 +922,8 @@ body.embed .status__content a,
 .layout-single-column .muted .status__content,
 .layout-single-column .muted .status__content a,
 .layout-single-column .muted .status__content p,
-.layout-single-column .muted .status__display-name strong {
-  color: var(--color-dim);
-}
-
-.theme-contrast.layout-single-column .privacy-dropdown__option:not(.active) .privacy-dropdown__option__content {
+.layout-single-column .muted .status__display-name strong,
+.layout-single-column .privacy-dropdown__option:not(.active) .privacy-dropdown__option__content {
   color: var(--color-dim);
 }
 
