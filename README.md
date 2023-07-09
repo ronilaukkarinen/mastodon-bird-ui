@@ -123,6 +123,13 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [kawakawa.fun](https://kawakawa.fun/explore)                             | Custom CSS                | N/A              | 1              | Yes         |
 | [mastodonsuomi.fi](https://mastodonsuomi.fi/explore)                     | Custom CSS                | N/A              | 20+            | Yes         |
 | [mastodon.ktachibana.party](https://mastodon.ktachibana.party/explore)   | Site theme                | Bird UI          | 100+           | No          |
+| [techhub.social](https://techhub.social/explore)                         | Site theme                | Elephant         | 14 000+        | No          |
+| [social.noleron.com](https://social.noleron.com/explore)                 | Site theme                | Elephant         | 10+            | Yes         |
+| [masto.es](https://masto.es/explore)                                     | Site theme                | Elephant         | 5400+          | Yes         |
+| [mast.lat](https://mast.lat/explore)                                     | Modified Custom CSS       | N/A              | 1900+          | Yes         |
+| [tkz.one](https://tkz.one/explore)                                       | Modified Custom CSS       | N/A              | 3500+          | Yes         |
+| [mastodonsweden.se](https://mastodonsweden.se/explore)                   | Custom CSS                | N/A              | 130+           | Yes         |
+| [mindly.social](https://mindly.social/explore)                           | Site theme                | Elephant         | 4800+          | No          |
 
 ## Installation for Mastodon instance admins
 
