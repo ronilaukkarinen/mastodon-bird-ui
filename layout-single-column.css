@@ -926,6 +926,10 @@ body.embed .status__content a,
   color: var(--color-dim);
 }
 
+.theme-contrast.layout-single-column .privacy-dropdown__option:not(.active) .privacy-dropdown__option__content {
+  color: var(--color-dim);
+}
+
 /* Dim backgrounds */
 .layout-single-column .poll__chart {
   background-color: var(--color-dim);

@@ -953,6 +953,10 @@ body.embed .status__content a,
   color: var(--color-dim);
 }
 
+.theme-contrast.layout-multiple-columns .privacy-dropdown__option:not(.active) .privacy-dropdown__option__content {
+  color: var(--color-dim);
+}
+
 /* Dim backgrounds */
 .layout-multiple-columns .poll__chart {
   background-color: var(--color-dim);
