@@ -107,7 +107,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [tyrol.social](https://tyrol.social/explore)                             | Custom CSS                | N/A              | 200+           | Yes         |
 | [muri.network](https://muri.network/explore)                             | Site theme                | Mastodon Bird UI | 100+           | Yes         |
 | [suomi.social](https://suomi.social/explore)                             | Custom CSS                | N/A              | 10+            | Yes         |
-| [mstdn.social](https://mstdn.social/explore)                             | Site theme                | Elephant         | 40 000+        | No          |
+| [mstdn.social](https://mstdn.social/explore)                             | Site theme                | Elephant         | 40000+         | No          |
 | [bolha.one](https://bolha.one/explore)                                   | Custom CSS                | N/A              | 10+            | Yes         |
 | [indieweb.social](https://indieweb.social/explore)                       | Custom CSS                | N/A              | 1900+          | Yes         |
 | [egirl.social](https://egirl.social/about)                               | Custom CSS                | N/A              | 1              | Yes         |
@@ -123,13 +123,15 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [kawakawa.fun](https://kawakawa.fun/explore)                             | Custom CSS                | N/A              | 1              | Yes         |
 | [mastodonsuomi.fi](https://mastodonsuomi.fi/explore)                     | Custom CSS                | N/A              | 20+            | Yes         |
 | [mastodon.ktachibana.party](https://mastodon.ktachibana.party/explore)   | Site theme                | Bird UI          | 100+           | No          |
-| [techhub.social](https://techhub.social/explore)                         | Site theme                | Elephant         | 14 000+        | No          |
+| [techhub.social](https://techhub.social/explore)                         | Site theme                | Elephant         | 14000+         | No          |
 | [social.noleron.com](https://social.noleron.com/explore)                 | Site theme                | Elephant         | 10+            | Yes         |
-| [masto.es](https://masto.es/explore)                                     | Site theme                | Elephant         | 5400+          | Yes         |
+| [masto.es](https://masto.es/explore)                                     | Site theme                | Bird UI          | 5400+          | Yes         |
 | [mast.lat](https://mast.lat/explore)                                     | Modified Custom CSS       | N/A              | 1900+          | Yes         |
 | [tkz.one](https://tkz.one/explore)                                       | Modified Custom CSS       | N/A              | 3500+          | Yes         |
 | [mastodonsweden.se](https://mastodonsweden.se/explore)                   | Custom CSS                | N/A              | 130+           | Yes         |
 | [mindly.social](https://mindly.social/explore)                           | Site theme                | Elephant         | 4800+          | No          |
+| [vmst.io](https://vmst.io/explore)                                       | Site theme                | Bird UI          | 650+           | No          |
+| [some.tehy.fi](https://some.tehy.fi/explore)                             | Custom CSS                | N/A              | 3              | Yes         |
 
 ## Installation for Mastodon instance admins
 
