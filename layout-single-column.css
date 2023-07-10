@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.2 */
+   1.6.3 */
 
 /* CSS variables */
 :root {
@@ -997,6 +997,9 @@ body.embed .status__content a,
 .layout-single-column .report-dialog-modal__lead,
 .layout-single-column .detailed-status__display-name strong,
 .layout-single-column .dismissable-banner__message,
+.layout-single-column .privacy-dropdown__option.active,
+.layout-single-column .privacy-dropdown__option:hover .privacy-dropdown__option__content,
+.layout-single-column .privacy-dropdown__option:focus .privacy-dropdown__option__content,
 .layout-single-column .privacy-dropdown__option,
 .layout-single-column .privacy-dropdown__option__content strong,
 .layout-single-column .status__info .display-name strong.display-name__html,

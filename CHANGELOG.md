@@ -1,3 +1,7 @@
+### 1.6.3: 2023-07-10
+
+* Fix a regression with privacy dropdown hover color #49
+
 ### 1.6.2: 2023-07-10
 
 * Fix privacy dropdown text color in contrast theme (thanks @misterzwiebel!)
