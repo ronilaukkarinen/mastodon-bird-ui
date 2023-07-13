@@ -132,6 +132,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [some.tehy.fi](https://some.tehy.fi/explore)                             | Custom CSS                | N/A              | 3              | Yes         |
 | [pug.ninja](https://pug.ninja/explore)                                   | Custom CSS                | N/A              | 1              | Yes         |
 | [aus.social](https://aus.social/explore)                                 | Site theme                | Elephant         | 5700+          | No          |
+| [tyrol.social](https://aus.social/explore)                               | Site theme                | BirdUI           | 40+            | No          |
 
 ## Installation for Mastodon instance admins
 
