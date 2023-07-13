@@ -103,7 +103,6 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 |--------------------------------------------------------------------------|---------------------------|------------------|----------------|-------------|
 | [mementomori.social](https://mementomori.social/explore)                 | Site theme                | Mastodon Bird UI | 30+            | Yes         |
 | [dvm.community](https://dmv.community/explore)                           | Custom CSS                | N/A              | 200+           | Yes         |
-| [tyrol.social](https://tyrol.social/explore)                             | Custom CSS                | N/A              | 200+           | Yes         |
 | [muri.network](https://muri.network/explore)                             | Site theme                | Mastodon Bird UI | 100+           | Yes         |
 | [suomi.social](https://suomi.social/explore)                             | Custom CSS                | N/A              | 10+            | Yes         |
 | [mstdn.social](https://mstdn.social/explore)                             | Site theme                | Elephant         | 40000+         | No          |
@@ -133,7 +132,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [some.tehy.fi](https://some.tehy.fi/explore)                             | Custom CSS                | N/A              | 3              | Yes         |
 | [pug.ninja](https://pug.ninja/explore)                                   | Custom CSS                | N/A              | 1              | Yes         |
 | [aus.social](https://aus.social/explore)                                 | Site theme                | Elephant         | 5700+          | No          |
-| [tyrol.social](https://aus.social/explore)                               | Site theme                | BirdUI           | 40+            | No          |
+| [tyrol.social](https://tyrol.social/explore)                             | Site theme                | BirdUI           | 40+            | No          |
 
 ## Installation for Mastodon instance admins
 
