@@ -1,3 +1,7 @@
+### 1.6.4-nightly: 2023-07-13
+
+* Fix a regression with modal buttons #42, #46
+
 ### 1.6.3-nightly: 2023-07-10
 
 * Fix a regression with privacy dropdown hover color #49

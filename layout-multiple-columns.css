@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.3-nightly */
+   1.6.4-nightly */
 
 /* CSS variables */
 :root {
@@ -412,35 +412,6 @@ body.layout-multiple-columns {
 .layout-multiple-columns .report-dialog-modal .poll__option.dialog-option > .poll__option__text {
   display: grid;
   gap: 6px;
-}
-
-/* Modal buttons */
-.layout-multiple-columns .media-modal__navigation button,
-.layout-multiple-columns .image-loader button {
-  align-items: center;
-  border-radius: 50%;
-  /* It's inlined so we have to use !important */
-  /* stylelint-disable-next-line */
-  color: var(--color-light-text) !important;
-  display: inline-flex;
-
-  /* It's inlined so we have to use !important */
-  /* stylelint-disable-next-line */
-  font-size: var(--font-size-heading) !important;
-  /* stylelint-disable-next-line */
-  height: 36px !important;
-  justify-content: center;
-  /* stylelint-disable-next-line */
-  margin: 4px !important;
-  /* stylelint-disable-next-line */
-  top: 2px !important;
-  /* stylelint-disable-next-line */
-  width: 36px !important;
-}
-
-.layout-multiple-columns .media-modal__navigation button {
-  /* stylelint-disable-next-line */
-  top: 5px !important;
 }
 
 .layout-multiple-columns .media-modal__navigation .fa-times::before {
