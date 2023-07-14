@@ -275,7 +275,10 @@ While Mastodon Bird UI works perfectly fine out of the box, there are some thing
 
 ### Twitter-like link previews
 
-If you like bigger link previews, please implement [this](https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018).
+If you like bigger link previews, you can implement one of these:
+
+- [4.1.2-4.1.4 stable](https://github.com/mastodon/mastodon/commit/2fff05710b95c9fe5275a2b022b3348753e55050).
+- [4.1.4 nightly](https://github.com/mastodon/mastodon/commit/e97868ac3d6a72af8cb3c39d9e7fef6892c164f4)
 
 ### Status bar color on Android PWA
 
@@ -294,11 +297,13 @@ If you're a polyglot like me, you can hide the translate link on other languages
 
 ### Thread lines
 
-There is currently no proper thread support in replies on Mastodon core. There's an [issue](https://github.com/mastodon/mastodon/issues/19570#issuecomment-1493057424) about it that I have commented. You should also see the discussion on issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306).
+There is support for threads available for the nightly version since ([see PR #24549](https://github.com/mastodon/mastodon/pull/24549)) and if you want to use the native threaded lines, just use main branch from Mastodon. There's a related [issue](https://github.com/mastodon/mastodon/issues/19570#issuecomment-1493057424) about it that I have commented. You should also see the discussion on a Mastodon Bird UI issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306).
+
+If you are using 4.1.2, 4.1.3 or 4.1.4 **stable** tag version, you can implement threads with these steps:
 
 1. Implement [this](https://github.com/mastodon/mastodon/compare/main...ronilaukkarinen:mastodon:feat-thread-lines). Tested and online at [mementomori.social](https://mementomori.social). This changes the HTML structure so that creating threaded lines is possible.
-2. Enable Mastodon Bird UI 1.3.8 or later
-3. It works!
+2. Rebuild assets
+3. Enable Mastodon Bird UI 1.3.8 or later
 
 ### Micro-interactions
 
