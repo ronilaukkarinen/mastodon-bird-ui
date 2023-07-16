@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.4-nightly */
+   1.6.5rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -331,7 +331,7 @@ body.layout-single-column {
 }
 
 /* stylelint-disable-next-line */
-.layout-multiple-columns .status-link.mention:not(.hashtag):not(.mention) {
+.layout-single-column .status-link.mention:not(.hashtag):not(.mention) {
   color: var(--color-link);
 }
 
@@ -534,10 +534,6 @@ body.layout-single-column {
 .layout-single-column .announcements__pagination .fa,
 .layout-single-column .announcements__pagination {
   color: var(--color-dim);
-}
-
-.layout-single-column .announcements__pagination .icon-button:hover i {
-  color: var(--color-light-purple);
 }
 
 /* Dark panels like modals and boxes */
@@ -955,7 +951,9 @@ body.embed .status__content a,
 }
 
 /* Light purple things */
-.account__header__tabs__name h1 small,
+.layout-single-column .announcements__pagination .icon-button:hover i,
+.layout-single-column .server-banner__introduction,
+.layout-single-column .account__header__tabs__name h1 small,
 .layout-single-column .account .account__display-name,
 .layout-single-column .column-settings__section,
 .layout-single-column .setting-toggle__label {

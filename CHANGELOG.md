@@ -1,3 +1,9 @@
+### 1.6.5rc1-nightly: 2023-07-16
+
+* Combine light purple color scopes
+* Add .server-banner__introduction to light purple color scope
+* Fix couple of classes in layout-single-column theme and layout-multiple-column theme
+
 ### 1.6.4-nightly: 2023-07-13
 
 * Fix a regression with modal buttons #42, #46

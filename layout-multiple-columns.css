@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.4-nightly */
+   1.6.5rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -371,12 +371,12 @@ body.layout-multiple-columns {
 }
 
 /* Exceptions */
-.layout-single-column .account__header__content {
+.layout-multiple-columns .account__header__content {
   line-height: 18px;
 }
 
 /* Things that will have even smaller font size */
-.layout-single-column .account__header__account-note label {
+.layout-multiple-columns .account__header__account-note label {
   font-size: var(--font-size-12);
 }
 
@@ -985,7 +985,9 @@ body.embed .status__content a,
 }
 
 /* Light purple things */
-.account__header__tabs__name h1 small,
+.layout-multiple-columns .announcements__pagination .icon-button:hover i,
+.layout-multiple-columns .server-banner__introduction,
+.layout-multiple-columns .account__header__tabs__name h1 small,
 .layout-multiple-columns .account .account__display-name,
 .layout-multiple-columns .column-settings__section,
 .layout-multiple-columns .setting-toggle__label {
@@ -1055,7 +1057,7 @@ body.embed .status__content a,
 }
 
 /* Status action bar */
-.layout-single-column .status__action-bar {
+.layout-multiple-columns .status__action-bar {
   margin-top: 12px;
 }
 
