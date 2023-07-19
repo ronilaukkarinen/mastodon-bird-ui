@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc1-nightly */
+   1.6.5rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -805,6 +805,53 @@ body.embed .status__content a,
 .layout-single-column .status__wrapper.unread::before {
   border-color: var(--color-accent);
   display: none;
+}
+
+/* Filtered post */
+.layout-single-column .status__wrapper.status__wrapper--filtered {
+  align-items: center;
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: var(--font-size-mid);
+  justify-content: space-between;
+  margin: var(--gap-default);
+  overflow: hidden;
+  padding: 4px 16px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - calc(var(--gap-default) * 2));
+}
+
+.layout-single-column .notification:has(.status__wrapper--filtered) .notification__message {
+  display: none;
+}
+
+.layout-single-column .status__wrapper.status__wrapper--filtered button {
+  background-color: rgb(255 255 255 / 0);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-fg);
+  font-weight: 500;
+  margin-left: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  transition: 200ms background;
+  white-space: nowrap;
+}
+
+.layout-single-column .status__wrapper.status__wrapper--filtered button:focus,
+.layout-single-column .status__wrapper.status__wrapper--filtered button:hover {
+  background-color: rgb(255 255 255 / .1);
+  text-decoration: none;
 }
 
 /* Unread message */
