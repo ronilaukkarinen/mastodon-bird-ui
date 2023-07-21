@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc2-nightly */
+   1.6.5rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -863,6 +863,11 @@ body.embed .status__content a,
 
 .layout-multiple-columns .notification:has(.status__wrapper--filtered) .notification__message {
   display: none;
+}
+
+/* Fix hover/focus on article that has filtered banner */
+.layout-multiple-columns article:has(.status__wrapper--filtered):hover {
+  background-color: transparent;
 }
 
 .layout-multiple-columns .status__wrapper.status__wrapper--filtered button {

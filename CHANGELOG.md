@@ -1,9 +1,12 @@
-### 1.6.5rc2-nightly: 2023-07-19
+### 1.6.5rc3-nightly: 2023-07-21
 
 * Combine light purple color scopes
 * Add .server-banner__introduction to light purple color scope
 * Fix couple of classes in layout-single-column theme and layout-multiple-column theme
 * Filtered post styles
+* Fix focus overflow for 4.1.4-nightly-20230721
+* Fix focus for mouse users on v4.1.4-nighly-20230721
+* Fix hover/focus on article that has filtered banner
 
 ### 1.6.4-nightly: 2023-07-13
 

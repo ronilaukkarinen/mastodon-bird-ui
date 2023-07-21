@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc2-nightly */
+   1.6.5rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -829,6 +829,11 @@ body.embed .status__content a,
 
 .layout-single-column .notification:has(.status__wrapper--filtered) .notification__message {
   display: none;
+}
+
+/* Fix hover/focus on article that has filtered banner */
+.layout-single-column article:has(.status__wrapper--filtered):hover {
+  background-color: transparent;
 }
 
 .layout-single-column .status__wrapper.status__wrapper--filtered button {
@@ -2163,6 +2168,11 @@ body.embed .button.logo-button,
 
 .layout-single-column .account__header__tabs__buttons .icon-button {
   color: var(--color-light-text);
+}
+
+/* Fix focus overflow for 4.1.4-nightly */
+.layout-single-column .account__header__tabs__buttons {
+  overflow: visible;
 }
 
 /* stylelint-disable-next-line */
@@ -3688,6 +3698,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .detailed-status button.icon-button:focus .fa-star::before,
 .layout-single-column .status button.icon-button:hover .fa-star::before {
   color: var(--color-dim);
+}
+
+/* Fix focus for mouse users on v4.1.4-nighly-20230721 */
+.layout-single-column .icon-button:focus {
+  outline: 0;
+}
+
+.layout-single-column .icon-button:focus-visible {
+  outline: 2px solid var(--color-accent);
 }
 
 /* Mobile devices */
