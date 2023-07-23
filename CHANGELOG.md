@@ -1,4 +1,4 @@
-### 1.6.5rc3-nightly: 2023-07-21
+### 1.6.5rc4-nightly: 2023-07-23
 
 * Combine light purple color scopes
 * Add .server-banner__introduction to light purple color scope
@@ -7,6 +7,7 @@
 * Fix focus overflow for 4.1.4-nightly-20230721
 * Fix focus for mouse users on v4.1.4-nighly-20230721
 * Fix hover/focus on article that has filtered banner
+* Add button:focus to focus color scope, change :focus to :focus-visible
 
 ### 1.6.4-nightly: 2023-07-13
 

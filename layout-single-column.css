@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc3-nightly */
+   1.6.5rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -3701,10 +3701,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Fix focus for mouse users on v4.1.4-nighly-20230721 */
+.layout-single-column button:focus,
 .layout-single-column .icon-button:focus {
   outline: 0;
 }
 
+.layout-single-column button:focus-visible,
 .layout-single-column .icon-button:focus-visible {
   outline: 2px solid var(--color-accent);
 }
