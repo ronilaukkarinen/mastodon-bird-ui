@@ -3190,8 +3190,8 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .video-player,
 .layout-multiple-columns .media-gallery__gifv,
 .layout-multiple-columns .media-gallery__preview {
-  border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 

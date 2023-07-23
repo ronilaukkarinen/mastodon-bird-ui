@@ -3156,8 +3156,8 @@ body.embed .button.logo-button:hover,
 .layout-single-column .video-player,
 .layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview {
-  border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 
