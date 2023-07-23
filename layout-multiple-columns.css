@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc4-nightly */
+   1.6.5-nightly */
 
 /* CSS variables */
 :root {
@@ -3320,6 +3320,11 @@ body.embed .entry .detailed-status {
   width: unset;
 }
 
+/* Increase gap for server-banner__meta */
+.layout-multiple-columns .server-banner__meta {
+  gap: 25px;
+}
+
 /* Native Mastodon 4.1.2-nightly threaded lines */
 .layout-multiple-columns .status__line--first {
   height: calc(100% + var(--size-avatar));
@@ -3736,6 +3741,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .detailed-status button.icon-button:focus .fa-star::before,
 .layout-multiple-columns .status button.icon-button:hover .fa-star::before {
   color: var(--color-dim);
+}
+
+/* Fix focus for mouse users on v4.1.4-nighly-20230721 */
+.layout-multiple-columns button:focus,
+.layout-multiple-columns .icon-button:focus {
+  outline: 0;
+}
+
+.layout-multiple-columns button:focus-visible,
+.layout-multiple-columns .icon-button:focus-visible {
+  outline: 2px solid var(--color-accent);
 }
 
 /* Mobile devices */

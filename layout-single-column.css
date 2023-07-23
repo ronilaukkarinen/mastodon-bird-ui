@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5rc4-nightly */
+   1.6.5-nightly */
 
 /* CSS variables */
 :root {
@@ -3288,6 +3288,11 @@ body.embed .entry .detailed-status {
 .layout-single-column .server-banner__meta__column {
   max-width: 60%;
   width: unset;
+}
+
+/* Increase gap for server-banner__meta */
+.layout-single-column .server-banner__meta {
+  gap: 25px;
 }
 
 /* Native Mastodon 4.1.2-nightly threaded lines */
