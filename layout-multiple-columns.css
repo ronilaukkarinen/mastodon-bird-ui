@@ -1042,7 +1042,8 @@ body.embed .status__content a,
 .layout-multiple-columns .account__header__tabs__name h1 small,
 .layout-multiple-columns .account .account__display-name,
 .layout-multiple-columns .column-settings__section,
-.layout-multiple-columns .setting-toggle__label {
+.layout-multiple-columns .setting-toggle__label,
+.layout-single-column .server-banner__number-label {
   color: var(--color-light-purple);
 }
 

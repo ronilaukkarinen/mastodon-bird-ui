@@ -9,6 +9,7 @@
 * Fix hover/focus on article that has filtered banner
 * Add button:focus to focus color scope, change :focus to :focus-visible
 * Increase gap for server-banner__meta
+* Add server-banner__number-label to light purple color scope
 
 ### 1.6.4-nightly: 2023-07-13
 
