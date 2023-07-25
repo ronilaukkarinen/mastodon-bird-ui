@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.7rc2-nightly */
+   1.6.7rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -38,6 +38,7 @@
   --color-focusable-toot: #ffffff09;
   --color-light-text: #f7f9f9;
   --color-mud: var(--color-brand-mastodon-mud);
+  --color-arsenic: #393f4f;
   --color-black-coral: #5a5371;
   --color-profile-button-hover: #f1eff41a;
   --color-column-link-hover: #f7f7f91a;
@@ -533,8 +534,8 @@ body.layout-single-column {
   content: "";
 }
 
-.layout-single-column .status-card .status-card__image-image,
-.layout-single-column .status-card .status-card__image-image.compact {
+.layout-single-column .status-card .status-card__image {
+  background-color: var(--color-arsenic);
   border-radius: 0;
 }
 
