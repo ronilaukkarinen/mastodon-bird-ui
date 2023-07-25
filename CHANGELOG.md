@@ -1,4 +1,4 @@
-### 1.6.7rc3-nightly: 2023-07-26
+### 1.6.7rc4-nightly: 2023-07-26
 
 * Add support for mastodon 4.1.5+nightly-2023-07-25
 * Add font-weights as CSS variables
@@ -7,6 +7,7 @@
 * Fix status card hover and styles for YouTube cards
 * Fix changed class for .status-card__image
 * Add color for empty preview card
+* Fix bottom border radius on status card preview cards
 
 ### 1.6.6-nightly: 2023-07-25
 

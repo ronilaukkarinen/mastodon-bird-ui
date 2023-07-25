@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.7rc3-nightly */
+   1.6.7rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -534,6 +534,8 @@ body.layout-single-column {
   content: "";
 }
 
+.layout-single-column .status-card__image-image,
+.layout-single-column .status-card__image-preview,
 .layout-single-column .status-card .status-card__image {
   background-color: var(--color-arsenic);
   border-radius: 0;
