@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.4 */
+   1.6.6rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -29,6 +29,7 @@
   --color-dim: var(--color-brand-mastodon-dim);
   --color-accent: var(--color-brand-mastodon-links);
   --color-accent-dark: var(--color-brand-mastodon);
+  --color-accent-dark-50: #595aff80;
   --color-green: #00ba7c;
   --color-red: #f91880;
   --color-red-75: #f91880bf;
@@ -172,6 +173,7 @@ body.theme-contrast.layout-multiple-columns {
   --icon-heart: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='20' height='20' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23b8b3c0' d='M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604a26.953 26.953 0 0 0 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4c-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5C5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903c.745.592 1.54 1.145 2.421 1.7c.299.189.595.37.934.572c.339-.202.635-.383.934-.571z'/%3E%3C/svg%3E");
   --icon-home-notification: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"%3E%3Ctitle%3EHome%3C/title%3E%3Cpath d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" fill="none" stroke="%23b8b3c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="38"/%3E%3Cpath d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none" stroke="%23b8b3c0" stroke-linecap="round" stroke-linejoin="round" stroke-width="38"/%3E%3C/svg%3E');
   --icon-star: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="%23b8b3c0" stroke-width="5.5" viewBox="0 0 68 68"%3E%3Cpath d="M31.4 3.8c-.7.4-2.5 5-4.1 10.2l-2.9 9.5-9.9.5c-5.5.3-10.6.9-11.3 1.3-.6.5-1.2 1.9-1.2 3.3 0 2 1.5 3.4 8 7.5 4.4 2.8 8 5.5 8 6s-1.3 4.5-3 9.1c-3.6 9.7-3.7 11.4-.9 12.8 2.7 1.5 3.5 1.1 12.4-5.6l7.5-5.6 8.2 6.1c8.4 6.3 11.2 7.1 13.2 3.9.8-1.4.3-3.9-2.2-11-1.8-5.1-3.2-9.6-3.2-9.9 0-.4 3.6-3 8-5.8 6.5-4.1 8-5.5 8-7.5 0-1.4-.6-2.8-1.2-3.3-.7-.4-5.8-1-11.3-1.3l-9.9-.5-2.9-9.5C37.8 4.6 36.9 3 34 3c-.8 0-2 .4-2.6.8z"/%3E%3C/svg%3E%0A');
+  --icon-bookmark: url('data:image/svg+xml, %0A%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23b8b3c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"%3E%3Cpath d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"%3E%3C/path%3E%3C/svg%3E');
 }
 
 /* Light theme */
@@ -198,7 +200,6 @@ body.theme-mastodon-light.layout-multiple-columns {
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
   --color-accent: var(--color-accent-dark);
-  --color-accent-dark-50: #595aff80;
   --color-ghost-button-text: var(--color-accent-dark);
 
   /* Misc */
@@ -357,7 +358,6 @@ body.layout-multiple-columns {
 .layout-multiple-columns .notification__filter-bar a,
 .layout-multiple-columns .notification__filter-bar button {
   font-size: var(--font-size);
-  line-height: var(--line-height);
 }
 
 /* Things that should have the mid font-size */
@@ -378,6 +378,12 @@ body.layout-multiple-columns {
 /* Things that will have even smaller font size */
 .layout-multiple-columns .account__header__account-note label {
   font-size: var(--font-size-12);
+}
+
+/* Line heights */
+.layout-multiple-columns .reply-indicator__content,
+.layout-multiple-columns .status__content {
+  line-height: var(--line-height);
 }
 
 /* Modal overlay */
@@ -815,10 +821,11 @@ body.embed .status__content a,
   stroke: var(--color-accent) !important;
 }
 
-/* Mud background colors */
+/* Mud background colors, reply-indicator */
 .layout-multiple-columns .reply-indicator {
   background-color: var(--color-mud);
   color: var(--color-light-text);
+  max-height: 20vh;
 }
 
 /* Dropdown hovers */
@@ -833,6 +840,58 @@ body.embed .status__content a,
 .layout-multiple-columns .status__wrapper.unread::before {
   border-color: var(--color-accent);
   display: none;
+}
+
+/* Filtered post */
+.layout-multiple-columns .status__wrapper.status__wrapper--filtered {
+  align-items: center;
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: var(--font-size-mid);
+  justify-content: space-between;
+  margin: var(--gap-default);
+  overflow: hidden;
+  padding: 4px 16px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - calc(var(--gap-default) * 2));
+}
+
+.layout-multiple-columns .notification:has(.status__wrapper--filtered) .notification__message {
+  display: none;
+}
+
+/* Fix hover/focus on article that has filtered banner */
+.layout-multiple-columns article:has(.status__wrapper--filtered):hover {
+  background-color: transparent;
+}
+
+.layout-multiple-columns .status__wrapper.status__wrapper--filtered button {
+  background-color: rgb(255 255 255 / 0);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-fg);
+  font-weight: 500;
+  margin-left: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  transition: 200ms background;
+  white-space: nowrap;
+}
+
+.layout-multiple-columns .status__wrapper.status__wrapper--filtered button:focus,
+.layout-multiple-columns .status__wrapper.status__wrapper--filtered button:hover {
+  background-color: rgb(255 255 255 / .1);
+  text-decoration: none;
 }
 
 /* Unread message */
@@ -979,10 +1038,13 @@ body.embed .status__content a,
 }
 
 /* Light purple things */
-.account__header__tabs__name h1 small,
+.layout-multiple-columns .announcements__pagination .icon-button:hover i,
+.layout-multiple-columns .server-banner__introduction,
+.layout-multiple-columns .account__header__tabs__name h1 small,
 .layout-multiple-columns .account .account__display-name,
 .layout-multiple-columns .column-settings__section,
-.layout-multiple-columns .setting-toggle__label {
+.layout-multiple-columns .setting-toggle__label,
+.layout-multiple-columns .server-banner__number-label {
   color: var(--color-light-purple);
 }
 
@@ -1260,11 +1322,10 @@ body.embed .detailed-status,
 }
 
 /* Status update tinted to right */
-.layout-multiple-columns .status__action-bar,
-.layout-multiple-columns .attachment-list,
-.layout-multiple-columns .status__content__read-more-button,
-.layout-multiple-columns .status .status__content,
-.layout-multiple-columns .notification.notification-admin-sign-up .display-name__account {
+.layout-multiple-columns .status__content--collapsed + .status__content__read-more-button,
+.layout-multiple-columns .status:not(.status--in-thread) .status__action-bar,
+.layout-multiple-columns .status:not(.status--in-thread) .attachment-list,
+.layout-multiple-columns .status:not(.status--in-thread) .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
   padding-top: 0;
@@ -1276,9 +1337,17 @@ body.embed .detailed-status,
   padding-left: 0;
 }
 
+/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
+.layout-multiple-columns .status__content__read-more-button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-inline-start: 0;
+}
+
 /* Rtl version */
 [dir="rtl"] .layout-multiple-columns .status__action-bar,
-[dir="rtl"] .layout-multiple-columns .attachment-list
+[dir="rtl"] .layout-multiple-columns .attachment-list,
 [dir="rtl"] .layout-multiple-columns .status__content__read-more-button,
 [dir="rtl"] .layout-multiple-columns .status .status__content {
   padding-left: 0;
@@ -1402,9 +1471,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   top: var(--badges-distance-from-edge);
 }
 
-.layout-multiple-columns .media-gallery__gifv__label {
+.layout-multiple-columns .media-gallery__item__badges {
   bottom: var(--badges-distance-from-edge);
   inset-inline-start: var(--badges-distance-from-edge);
+}
+
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button:hover,
+.layout-multiple-columns .spoiler-button.spoiler-button--minified > button:focus {
+  opacity: 1;
 }
 
 .layout-multiple-columns .icon-button:hover {
@@ -1577,6 +1651,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-multiple-columns .notification.notification-follow .verified-badge,
+.layout-multiple-columns .notification.notification-admin-sign-up .account__contents,
+.layout-multiple-columns .notification.notification-follow .account__contents,
 .layout-multiple-columns .notification.notification-follow .display-name,
 .layout-multiple-columns .notification.notification-admin-sign-up .display-name + span,
 .layout-multiple-columns .notification.notification-follow .display-name + span,
@@ -1624,11 +1700,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-multiple-columns .detailed-status .status__content:has(.status__content__text:empty) + .video-player,
 .layout-multiple-columns .detailed-status .status__content:has(.status__content__text:empty) + .media-gallery {
   margin-top: calc(var(--gap-default) / 2);
-}
-
-.layout-multiple-columns .notification.notification.notification-admin-sign-up .notification__message + .account,
-.layout-multiple-columns .notification.notification-follow .notification__message + .account {
-  padding-bottom: 0;
 }
 
 .layout-multiple-columns .status__prepend {
@@ -1899,11 +1970,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-radius: 50%;
   height: 24px;
   transform: translateY(-4px);
-  width: 24px;
-}
-
-.layout-multiple-columns .notification .account__relationship:hover {
-  background-color: rgba(96, 105, 132, .15);
 }
 
 /* Emoji-mart search input */
@@ -2104,7 +2170,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .notification__report__actions .button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
-.layout-multiple-columns .account__header__tabs__buttons .button {
+.layout-multiple-columns .account__header__tabs__buttons .button,
+.layout-multiple-columns .account .account__relationship > .button,
+.layout-multiple-columns .notification .account__relationship > .button {
   background-color: transparent;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -2123,7 +2191,9 @@ body.embed .button.logo-button,
 .layout-multiple-columns .column-inline-form button,
 .layout-multiple-columns .explore__suggestions .account-card__actions__button button,
 .layout-multiple-columns .account__header__tabs__buttons .button,
-.layout-multiple-columns .account__header__tabs__buttons .icon-button {
+.layout-multiple-columns .account__header__tabs__buttons .icon-button,
+.layout-multiple-columns .notification .account__relationship > .button,
+.layout-multiple-columns .account .account__relationship > .button {
   border: 1px solid var(--color-outer-space);
 }
 
@@ -3150,7 +3220,7 @@ body.embed .button.logo-button:hover,
   }
 
   /* Lists */
-  .layout-multiple-columns .navigation-panel .column-link:nth-child(10) {
+  .layout-multiple-columns .column-link[href="/lists"] {
     order: 4;
   }
 
@@ -3193,41 +3263,6 @@ body.embed .button.logo-button:hover,
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   overflow: hidden;
-}
-
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt]))::after,
-.layout-multiple-columns .video-player:has(> video:not([title]))::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title]))::after {
-  align-self: flex-end;
-  background-color: var(--color-bg-75);
-  border-radius: 4px;
-  bottom: 4px;
-  color: var(--color-light-text);
-  content: 'No alt';
-  display: flex;
-  font-size: 9px;
-  font-weight: 500;
-  height: 14px;
-  justify-self: flex-end;
-  left: auto;
-  line-height: 14px;
-  opacity: 1;
-  padding: 2px 5px;
-  position: absolute;
-  right: 4px;
-  text-transform: uppercase;
-  top: auto;
-  width: unset;
-  z-index: 3;
-}
-
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt])):focus::after,
-.layout-multiple-columns .video-player:has(> video:not([title])):focus::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title])):focus::after,
-.layout-multiple-columns .media-gallery__item-thumbnail:has(> img:not([alt])):hover::after,
-.layout-multiple-columns .video-player:has(> video:not([title])):hover::after,
-.layout-multiple-columns .media-gallery__gifv:has(> video:not([title])):hover::after {
-  background-color: var(--color-red);
 }
 
 /* More distinct focus color for accessibility, instead of just white */
@@ -3287,76 +3322,70 @@ body.embed .entry .detailed-status {
   width: unset;
 }
 
-/* stylelint-disable selector-max-class, selector-max-combinators, selector-max-compound-selectors, selector-max-specificity, selector-max-pseudo-class, selector-not-notation */
-/* Threaded replies, see https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4 */
-.layout-multiple-columns .scrollable > div > div .status.status-reply {
-  border-color: transparent;
-  position: relative;
+/* Increase gap for server-banner__meta */
+.layout-multiple-columns .server-banner__meta {
+  gap: 25px;
 }
 
-/* If we don't have threads support yet, just use borders */
-.layout-multiple-columns .scrollable > div:not(:has(.status__thread)) .status.status-reply {
-  border-color: var(--color-border);
+/* Native Mastodon 4.1.2-nightly threaded lines */
+.layout-multiple-columns .status__line--first {
+  height: calc(100% + var(--size-avatar));
 }
 
-/* Always have border-bottom in threads on main level to separate the discussions */
-.layout-multiple-columns .scrollable > div > div.status__thread,
-.layout-multiple-columns .scrollable > div > div.status__thread:has(.status__thread) > div.status__thread:not(.status__thread--last-item),
-.layout-multiple-columns .scrollable > div > div:not([class]) > div.status__thread {
-  border-bottom: 1px solid var(--color-border);
+.layout-multiple-columns .status__line--full {
+  height: calc(100% + 32px);
 }
 
-.layout-multiple-columns .scrollable > div > div.status__thread > div.status__thread:not(.status__thread--last-item):not(:has(.status__thread--last-item)) {
-  border-bottom: 0;
+/* Default lines when replying in real time */
+.layout-multiple-columns div[tabindex="-1"]:has(.status--in-thread) .status--in-thread:not(.status--first-in-thread) > .status__line:not(.status__line--full) {
+  height: 0;
 }
 
-/* If we don't have threads support yet, hide faux lines */
-.layout-multiple-columns .scrollable > div:not(:has(.status__thread)) .status.status-reply .status__avatar::before {
-  background-color: transparent;
-  width: 0;
+/* Hide line before first in thread */
+.layout-multiple-columns div[tabindex="-1"]:has(.status--in-thread) + div[tabindex="-1"] > .status--in-thread.status--first-in-thread > .status__line:not(.status__line--full),
+.layout-multiple-columns div[tabindex="-1"]:has(.detailed-status__wrapper) + div[tabindex="-1"] > .status__wrapper .status__line:not(.status__line--full) {
+  height: 0;
 }
 
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread > div > div > .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread ~ .status__thread--first-item + .status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread.status__thread--last-item.status__thread--first-item .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread ~ .status__thread .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread.status__thread--first-item + .status__thread.status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread + .status__thread ~ .status__thread ~ .status__thread .status.status-reply .status__avatar::before {
-  background-color: var(--color-thread-line);
-  content: '';
+.layout-multiple-columns div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
+.layout-multiple-columns .status__line--full.status__line--first {
   height: 100%;
-  left: calc(calc(calc(var(--size-avatar) / 2) + 16px) - 1px);
-  position: absolute;
-  top: 24px;
-  width: 2px;
+  z-index: -1;
 }
 
-/* Hide thread lines from the last items for at least 10 levels */
-.layout-multiple-columns .scrollable > div > div.status__thread:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread:not(:has(.status__thread)).status__thread--last-item .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before,
-.layout-multiple-columns .scrollable > div > .status__thread > .status__thread:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:has(.status__thread--last-item) > .status__thread--last-item:not(:has(.status__thread)) .status.status-reply .status__avatar::before {
-  /* stylelint-disable-next-line */
-  background-color: transparent !important;
+.layout-multiple-columns .detailed-status {
+  background-color: transparent;
+  border-top: 0;
 }
 
-.layout-multiple-columns .scrollable > div > .status__thread.status__thread--first-item .status.status-reply .status__avatar::before {
-  top: 60px;
+/* Threaded line, actually */
+.layout-multiple-columns .status__line {
+  border-inline-start: 2px solid var(--color-thread-line);
+  -webkit-border-start: 2px solid var(--color-thread-line);
+}
+
+.layout-multiple-columns .status__line--full::before {
+  background-color: var(--color-thread-line);
+}
+
+/* Hide the "stub" from the first status line */
+div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.status--in-thread > .status__line.status__line--full,
+.layout-multiple-columns .status-reply.status--in-thread.status--first-in-thread > .status__line,
+.layout-multiple-columns .status-reply.status--in-thread.status--first-in-thread > .status__line--full::before {
+  top: 32px;
+}
+
+.layout-multiple-columns .status--in-thread .status__action-bar,
+.layout-multiple-columns .status--in-thread .status__content {
+  padding-left: 4px;
 }
 
 /* Scrollbars */
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar,
 .layout-multiple-columns textarea::-webkit-scrollbar,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar,
-.layout-multiple-columns::-webkit-scrollbar,
-.layout-multiple-columns .scrollable::-webkit-scrollbar {
+.layout-multiple-columns::-webkit-scrollbar {
   height: 6px;
   width: 6px;
 }
@@ -3364,8 +3393,7 @@ body.embed .entry .detailed-status {
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb,
-.layout-multiple-columns::-webkit-scrollbar-thumb,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-thumb {
+.layout-multiple-columns::-webkit-scrollbar-thumb {
   background-color: var(--color-border);
   border: 0px solid var(--color-border);
   border-radius: 50px;
@@ -3374,24 +3402,21 @@ body.embed .entry .detailed-status {
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb:hover,
-.layout-multiple-columns::-webkit-scrollbar-thumb:hover,
-.layout-multiple-columns .scrollable:-webkit-scrollbar-thumb:hover {
+.layout-multiple-columns::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-light-purple);
 }
 
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb:active,
-.layout-multiple-columns::-webkit-scrollbar-thumb:active,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-thumb:active {
+.layout-multiple-columns::-webkit-scrollbar-thumb:active {
   background-color: var(--color-black-coral);
 }
 
 .layout-multiple-columns textarea::-webkit-scrollbar-track,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track,
-.layout-multiple-columns::-webkit-scrollbar-track,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-track {
+.layout-multiple-columns::-webkit-scrollbar-track {
   background-color: var(--color-bg);
   border: 0px solid var(--color-border);
   border-radius: 0;
@@ -3400,25 +3425,49 @@ body.embed .entry .detailed-status {
 .layout-multiple-columns textarea::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track:hover,
-.layout-multiple-columns::-webkit-scrollbar-track:hover,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-track:hover {
+.layout-multiple-columns::-webkit-scrollbar-track:hover {
   background-color: var(--color-bg);
 }
 
 .layout-multiple-columns textarea::-webkit-scrollbar-track:active,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track:active,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track:active,
-.layout-multiple-columns::-webkit-scrollbar-track:active,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-track:active {
+.layout-multiple-columns::-webkit-scrollbar-track:active {
   background-color: var(--color-bg);
 }
 
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-corner,
 .layout-multiple-columns textarea::-webkit-scrollbar-corner,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-corner,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-corner,
-.layout-multiple-columns::-webkit-scrollbar-corner,
-.layout-multiple-columns .scrollable::-webkit-scrollbar-corner {
+.layout-multiple-columns::-webkit-scrollbar-corner {
   background-color: transparent;
+}
+
+/* Drawer scollbars */
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb {
+  background-color: var(--color-dim);
+  border: 0;
+  border-radius: 50px;
+}
+
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-purple);
+}
+
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-light-text);
+}
+
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0;
+}
+
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-track:hover,
+.layout-multiple-columns .drawer__inner::-webkit-scrollbar-track:active {
+  background-color: var(--color-dark);
 }
 
 /*
@@ -3714,6 +3763,17 @@ body.embed .entry .detailed-status {
 .layout-multiple-columns .detailed-status button.icon-button:focus .fa-star::before,
 .layout-multiple-columns .status button.icon-button:hover .fa-star::before {
   color: var(--color-dim);
+}
+
+/* Fix focus for mouse users on v4.1.4-nighly-20230721 */
+.layout-multiple-columns button:focus,
+.layout-multiple-columns .icon-button:focus {
+  outline: 0;
+}
+
+.layout-multiple-columns button:focus-visible,
+.layout-multiple-columns .icon-button:focus-visible {
+  outline: 2px solid var(--color-accent);
 }
 
 /* Mobile devices */

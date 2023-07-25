@@ -1,41 +1,94 @@
-### 1.6.4: 2023-07-13
+### 1.6.6rc3-nightly: 2023-07-23
 
-* Fix a regression with modal buttons, Fixes #42, #46
+* Add max-height to reply-indicator to prevent it overlapping compose form
+* Add drawer scrollbar styles
+* Fix media gallery corners in Safari #56 (thanks @misterzwiebel!)
 
-### 1.6.3: 2023-07-10
+### 1.6.5-nightly: 2023-07-23
+
+* Combine light purple color scopes
+* Add .server-banner__introduction to light purple color scope
+* Fix couple of classes in layout-single-column theme and layout-multiple-column theme
+* Filtered post styles
+* Fix focus overflow for 4.1.4-nightly-20230721
+* Fix focus for mouse users on v4.1.4-nighly-20230721
+* Fix hover/focus on article that has filtered banner
+* Add button:focus to focus color scope, change :focus to :focus-visible
+* Increase gap for server-banner__meta
+* Add server-banner__number-label to light purple color scope
+
+### 1.6.4-nightly: 2023-07-13
+
+* Fix a regression with modal buttons #42, #46
+
+### 1.6.3-nightly: 2023-07-10
 
 * Fix a regression with privacy dropdown hover color #49
 
-### 1.6.2: 2023-07-10
+### 1.6.2-nightly: 2023-07-10
 
 * Fix privacy dropdown text color in contrast theme (thanks @misterzwiebel!)
 
-### 1.6.1: 2023-07-08
+### 1.6.1-nightly: 2023-07-08
 
 * Fix two logos showing on iPad, Safari. Fixes #44 (thanks @misterzwiebel!)
 
-### 1.6.0: 2023-07-08
+### 1.6.0-nightly: 2023-07-08
 
 * Indicate added to list icon with green color, Fixes #34
-
-### 1.5.9: 2023-07-06
-
-* Fix YouTube preview card styles
-* Fix regression with compose form font size
+* Fix missing comma (thanks @appel!)
+* Fix regression with compose form font size on mobile
 * Less padding before the status header
 * Less margin before the status action bar
+* Fix Mastodon UI bug with read more/translate button alignment
+* Add smooth hover to status cards
 * Hide empty YouTube description
-
-### 1.5.8: 2023-07-05
-
+* Add ultra accessible colors to README
+* Minor CSS var improvements
 * Fix profile media gallery thumbnails' border-radius
-* Backfill improvements from nightly branch, those which affect also the stable branch
-* Update instructions in README
-* Backfill color and CSS var improvements
-* Fix regressions with font-sizes
-* Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
-* Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
+* Fix regression with detailed status update font size
+* Fix YouTube preview card styles
+* Fix video player border-radius
+* Add more font-sizes to the --font-size CSS var scope
+* Add line height
+* Add status__content__read-more-button to font size scope
+* Add logo to var
+* Improve accessible color areas
+* Add lots of more colors to CSS var scopes
+* Fix dark colors on high contrast mode
+* Fix regression with the advanced web interface for nightly (thanks @vmstan!)
+* Add show/hide media icon button styles with border-radius (thanks @MikeHuntington!)
+* Add border-radius as a CSS variable
+* Add consistent border radius to alt badge
+* Add --border-radius-badges CSS variable
+* Make badges a bit further from the edge
+* Fix regression with lists order on mobile
+* Fix the thread line stub when replying in real time
+* Fix regression with missing border in detailed status
+* Fix threaded line overlapping detailed status
+* Fix regression with status-line full being zero height
+* Add consistent styles for follow buttons inside the account panel
+* Add background color for avatars for transparent avatars to be more distinct
+* Fix detailed status in between of threads
 * Fix undefined content warning placeholder (thanks @digitalspork!)
+* Add visible border around media
+* Increase border-radius for media
+* Increase border-radius for url preview cards
+* Fix read more button position
+* Fix multiple columns layout
+* Fix media gallery border radius if multiple items
+* Make sure read more button icon is always aligned to center vertically
+* Fix search icon overlaping with the long search input placeholder text #40 (thanks @itbeard!)
+* Fix regression with padding inside a media item
+* Fix regression with padding inside a status card in thread
+* Fix read more/translate link position
+* Remove "No alt" indicator now that 4.1.2-nightly has an indicator for media that has alt
+* Add support for Mastodon 4.1.2-nightly-20230703
+* Fix lists position on mobile
+* Fixed fa-fw (Federated) icon size for mobile view #37 (thanks @itbeard!)
+* Fix glitches with sign up and follow notifications on 4.1.2-nightly-20230703
+* Fix follow button in notifications
+* Fix position of lists icon on mobile
 
 ### 1.5.7: 2023-06-09
 
