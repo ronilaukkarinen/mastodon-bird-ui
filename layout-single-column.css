@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.5-nightly */
+   1.6.6rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -787,10 +787,11 @@ body.embed .status__content a,
   stroke: var(--color-accent) !important;
 }
 
-/* Mud background colors */
+/* Mud background colors, reply-indicator */
 .layout-single-column .reply-indicator {
   background-color: var(--color-mud);
   color: var(--color-light-text);
+  max-height: 20vh;
 }
 
 /* Dropdown hovers */

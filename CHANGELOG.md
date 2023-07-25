@@ -1,3 +1,7 @@
+### 1.6.6rc1-nightly: 2023-07-23
+
+* Add max-height to reply-indicator to prevent it overlapping compose form
+
 ### 1.6.5-nightly: 2023-07-23
 
 * Combine light purple color scopes
