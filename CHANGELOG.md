@@ -1,4 +1,4 @@
-### 1.6.6rc3-nightly: 2023-07-23
+### 1.6.6-nightly: 2023-07-25
 
 * Add max-height to reply-indicator to prevent it overlapping compose form
 * Add drawer scrollbar styles
