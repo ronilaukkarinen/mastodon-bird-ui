@@ -240,8 +240,8 @@ And you're done!
 If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
 
 ```bash
-# First, define version
-export MASTODON_VERSION_FOR_BIRD_UI="mastodon-nightly"
+# First, define version, "main" for nightly or "stable" for stable
+export MASTODON_VERSION_FOR_BIRD_UI="main"
 
 # Download the CSS file for single column layout
 wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
