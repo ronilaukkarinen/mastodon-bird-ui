@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.6rc1-nightly */
+   1.6.6rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -3351,6 +3351,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Scrollbars */
+.layout-single-column .drawer__inner::-webkit-scrollbar,
 .layout-single-column textarea::-webkit-scrollbar,
 .layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar,
 .layout-single-column .reply-indicator::-webkit-scrollbar,
@@ -3405,11 +3406,38 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-bg);
 }
 
+.layout-single-column .drawer__inner::-webkit-scrollbar-corner,
 .layout-single-column textarea::-webkit-scrollbar-corner,
 .layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-corner,
 .layout-single-column .reply-indicator::-webkit-scrollbar-corner,
 .layout-single-column::-webkit-scrollbar-corner {
   background-color: transparent;
+}
+
+/* Drawer scollbars */
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb {
+  background-color: var(--color-dim);
+  border: 0;
+  border-radius: 50px;
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-purple);
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-light-text);
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0;
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-track:hover,
+.layout-single-column .drawer__inner::-webkit-scrollbar-track:active {
+  background-color: var(--color-dark);
 }
 
 /*
