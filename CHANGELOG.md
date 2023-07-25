@@ -1,3 +1,9 @@
+### 1.6.7rc1-nightly: 2023-07-25
+
+* Add support for mastodon 4.1.5+nightly-2023-07-25
+* Add font-weights as CSS variables
+* Add new bigger preview card style à la mastodon 4.1.5+nightly-2023-07-25
+
 ### 1.6.6-nightly: 2023-07-25
 
 * Add max-height to reply-indicator to prevent it overlapping compose form

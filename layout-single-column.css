@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.6-nightly */
+   1.6.7rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -10,8 +10,8 @@
   --color-brand-twitter-mud: #273340;
   --color-brand-twitter-dark: #232543;
   --color-brand-twitter-threaded-line: #425364;
-  --color-brand-mastodon: #595aff;
-  --color-brand-mastodon-links: #8c8dff;
+  --color-brand-mastodon: #6364ff;
+  --color-brand-mastodon-links: #858afa;
   --color-brand-mastodon-bg: #1e2028;
   --color-brand-mastodon-dim: #717c9b;
   --color-brand-mastodon-mud: #272c40;
@@ -44,7 +44,7 @@
   --color-modal-overlay: #5b708366;
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
-  --color-gainsboro: #dcd9e8;
+  --color-topaz: #dadaf3;
   --color-light-purple: #9baec8;
   --color-lighter-purple: #a5b8d3;
   --color-dark-electric-blue: #576078;
@@ -67,7 +67,10 @@
   --font-size-12: 12px;
   --font-size-mid: 14px;
   --font-size-bigger: 17px;
+  --font-size-title: 19px;
   --font-size-heading: 20px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
   --font-weight-bold: 700;
   --line-height: 22px;
   --line-height-mid: 20px;
@@ -194,7 +197,7 @@ body.theme-mastodon-light.layout-single-column {
   --color-modal-overlay: #6a5b8366;
   --color-dark: #f7f9f9;
   --color-thread-line: #e1e8ed;
-  --color-gainsboro: #8899a6;
+  --color-topaz: #8899a6;
   --color-light-purple: #9588a6;
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
@@ -478,7 +481,7 @@ body.layout-single-column {
   top: -2px;
 }
 
-/* Bigger preview cards */
+/* Preview cards */
 .layout-single-column .status-card,
 .layout-single-column .status-card.compact {
   background-color: var(--color-bg);
@@ -486,6 +489,25 @@ body.layout-single-column {
   border-radius: var(--border-radius);
   display: block;
   transition: all 200ms;
+}
+
+.layout-single-column a.status-card .status-card__host {
+  font-size: var(--font-size);
+}
+
+.layout-single-column a.status-card:active .status-card__author,
+.layout-single-column a.status-card:active .status-card__title,
+.layout-single-column a.status-card:focus .status-card__author,
+.layout-single-column a.status-card:focus .status-card__title,
+.layout-single-column a.status-card:hover .status-card__author,
+.layout-single-column a.status-card:hover .status-card__title {
+  color: var(--color-fg);
+}
+
+.layout-single-column a.status-card:active .status-card__host,
+.layout-single-column a.status-card:focus .status-card__host,
+.layout-single-column a.status-card:hover .status-card__host {
+  color: var(--color-dim);
 }
 
 /* Hide empty YouTube description */
@@ -507,25 +529,24 @@ body.layout-single-column {
   border-radius: 0;
 }
 
-.layout-single-column .status-card .status-card__content,
-.layout-single-column .status-card.compact .status-card__content {
-  padding: 15px;
+.layout-single-column a.status-card .status-card__content,
+.layout-single-column a.status-card.compact .status-card__content {
+  padding: 16px;
 }
 
-.layout-single-column .status-card .status-card__title,
-.layout-single-column .status-card.compact .status-card__title {
+.layout-single-column a.status-card .status-card__title,
+.layout-single-column a.status-card.compact .status-card__title {
   color: var(--color-fg);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
   line-height: 1.3;
-  margin-bottom: 10px;
   white-space: inherit;
 }
 
 .layout-single-column .status-card .status-card__host,
 .layout-single-column .status-card.compact .status-card__host {
   color: var(--color-dim);
-  font-size: var(--font-size-mid);
+  font-size: var(--font-size);
   margin-bottom: 5px;
   margin-top: 0;
 }
@@ -844,7 +865,7 @@ body.embed .status__content a,
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   color: var(--color-fg);
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
   margin-left: auto;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -964,7 +985,7 @@ body.embed .status__content a,
 /* Light grey things */
 .layout-single-column .navigation-bar,
 .layout-single-column .navigation-bar strong {
-  color: var(--color-gainsboro);
+  color: var(--color-topaz);
 }
 
 /* CW button */
@@ -972,7 +993,7 @@ body.embed .status__content a,
 .layout-single-column .status__content__spoiler-link {
   background-color: var(--color-dark);
   color: var(--color-light-purple);
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
 
   /* Need to override forced styles */
   /* stylelint-disable-next-line */
@@ -1100,7 +1121,7 @@ body.embed .status__content a,
   content: "·";
   display: inline-block;
   font-size: var(--font-size);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   height: 20px;
   margin-left: -6px;
   margin-right: -10px;
@@ -1398,14 +1419,14 @@ body.embed .detailed-status__reblogs::after,
 .layout-single-column .detailed-status__reblogs::after {
   color: var(--color-dim);
   content: 'Boosts';
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__favorites::after,
 .layout-single-column .detailed-status__favorites::after {
   color: var(--color-dim);
   content: 'Favourites';
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__meta .detailed-status__link .fa-star,
@@ -1698,7 +1719,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .notification-admin-report .notification__report__details  strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 /* Revert hack for notification admin message that has no avatar visible */
@@ -2053,7 +2074,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Joined label */
 .layout-single-column .account__header__bio .account__header__fields dt:not([title]) {
   display: inline-flex;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   gap: calc(var(--gap-default) / 2);
   text-transform: unset;
 }
@@ -2083,7 +2104,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-dim);
   display: inline-flex;
   font-size: var(--font-size);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   gap: calc(var(--gap-default) / 2);
   padding: 0;
 }
@@ -2913,7 +2934,7 @@ body.embed .button.logo-button:hover,
   background-color: var(--color-mud);
   color: var(--color-light-text);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
   line-height: 12px;
   opacity: 1;
 }
