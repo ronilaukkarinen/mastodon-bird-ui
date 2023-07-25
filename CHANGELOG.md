@@ -1,7 +1,8 @@
-### 1.6.6rc2-nightly: 2023-07-23
+### 1.6.6rc3-nightly: 2023-07-23
 
 * Add max-height to reply-indicator to prevent it overlapping compose form
 * Add drawer scrollbar styles
+* Fix media gallery corners in Safari #56 (thanks @misterzwiebel!)
 
 ### 1.6.5-nightly: 2023-07-23
 

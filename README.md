@@ -20,10 +20,18 @@ Mastodon Bird UI version format: _semver + Mastodon version_, for example: `1.5.
 
 1. [Why would anyone want Mastodon to look like Twitter?](#why-would-anyone-want-mastodon-to-look-like-twitter)
 2. [Features](#features)
+<<<<<<< HEAD
 3. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
 4. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
 5. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
 6. [Updating instructions](#updating-instructions)
+=======
+3. [List of instances that use Mastodon Bird UI](#list-of-instances-that-use-mastodon-bird-ui)
+4. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
+5. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
+6. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
+7. [Updating instructions](#updating-instructions)
+>>>>>>> misterzwiebel-fix/media-gallery-rounded-corners
 8. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Twitter-like link previews](#twitter-like-link-previews)
     2. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
@@ -153,7 +161,11 @@ If you cd to your Mastodon directory (usually $HOME/live) you can run these bash
 
 ```bash
 # First, define version
+<<<<<<< HEAD
 export MASTODON_VERSION_FOR_BIRD_UI="mastodon-nightly"
+=======
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-stable"
+>>>>>>> misterzwiebel-fix/media-gallery-rounded-corners
 
 # Create a new folder for the theme
 mkdir -p app/javascript/styles/mastodon-bird-ui
@@ -240,7 +252,11 @@ If you are using **Custom CSS**, just copy and paste the new version to **Custom
 
 ```bash
 # First, define version
+<<<<<<< HEAD
 export MASTODON_VERSION_FOR_BIRD_UI="mastodon-nightly"
+=======
+export MASTODON_VERSION_FOR_BIRD_UI="mastodon-4.1.2-stable"
+>>>>>>> misterzwiebel-fix/media-gallery-rounded-corners
 
 # Download the CSS file for single column layout
 wget --no-cache https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
@@ -276,7 +292,10 @@ While Mastodon Bird UI works perfectly fine out of the box, there are some thing
 
 ### Twitter-like link previews
 
-If you like bigger link previews, please implement [this](https://github.com/mastodon/mastodon/issues/21874#issuecomment-1332556018).
+If you like bigger link previews, you can implement one of these:
+
+- [4.1.2-4.1.4 stable](https://github.com/mastodon/mastodon/commit/2fff05710b95c9fe5275a2b022b3348753e55050).
+- [4.1.4 nightly](https://github.com/mastodon/mastodon/commit/e97868ac3d6a72af8cb3c39d9e7fef6892c164f4)
 
 ### Status bar color on Android PWA
 

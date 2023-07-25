@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.6rc2-nightly */
+   1.6.6rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -3225,8 +3225,8 @@ body.embed .button.logo-button:hover,
 .layout-single-column .video-player,
 .layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview {
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  outline: 1px solid var(--color-border);
   overflow: hidden;
 }
 
