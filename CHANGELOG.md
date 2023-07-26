@@ -1,4 +1,4 @@
-### 1.6.7rc4-nightly: 2023-07-26
+### 1.6.7-nightly: 2023-07-26
 
 * Add support for mastodon 4.1.5+nightly-2023-07-25
 * Add font-weights as CSS variables
@@ -8,6 +8,7 @@
 * Fix changed class for .status-card__image
 * Add color for empty preview card
 * Fix bottom border radius on status card preview cards
+* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26
 
 ### 1.6.6-nightly: 2023-07-25
 

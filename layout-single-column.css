@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.7rc4-nightly */
+   1.6.7-nightly */
 
 /* CSS variables */
 :root {
@@ -1371,6 +1371,14 @@ body.embed .detailed-status,
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
   width: calc(100% - calc(var(--size-avatar) + var(--gap-default))) !important;
+}
+
+/* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
+.layout-single-column div[style*='aspect-ratio']:has(.video-player):not([class]) {
+
+  /* It's inlined so we have to use !important */
+  /* stylelint-disable-next-line */
+  aspect-ratio: unset !important;
 }
 
 .layout-single-column .status .status-card {
