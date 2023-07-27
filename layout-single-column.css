@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.8rc1-nightly */
+   1.6.8rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -298,7 +298,6 @@ body.theme-mastodon-light.layout-single-column {
   width: calc(100% - 30px) !important;
 }
 
-body.embed,
 body.layout-single-column {
   background-color: var(--color-bg);
   color: var(--color-fg);
@@ -3293,6 +3292,13 @@ body.embed .button.logo-button:hover,
 }
 
 /* Embeds outside Mastodon */
+body.embed {
+  /* Make sure with !important */
+  /* stylelint-disable-next-line */
+  background: transparent !important;
+  border: 0;
+}
+
 body.embed .entry .detailed-status {
   backface-visibility: hidden;
   background-color: #00000059;

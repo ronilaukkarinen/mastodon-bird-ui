@@ -1,7 +1,8 @@
-### 1.6.8rc1-nightly: 2023-07-27
+### 1.6.8rc2-nightly: 2023-07-27
 
 * Fix Replies text in embeds
 * Fix embed border
+* Make sure embed background is transparent
 
 ### 1.6.7-nightly: 2023-07-26
 
