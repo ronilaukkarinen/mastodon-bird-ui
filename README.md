@@ -146,7 +146,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 
 Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
-**Please note**: These include modifications to the Mastodon core so do it only at your own risk!
+**Please note**: These include modifications to the Mastodon core so do it only at your own risk! I highly recommend you to make the modifications in local development envinronment, push them to your fork, then git pull that fork to live after confirmed working.
 
 ![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/b30f19e2-2835-4d92-b40d-cac9922f64b3)
 
