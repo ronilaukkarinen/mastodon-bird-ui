@@ -1,10 +1,11 @@
-### 1.6.8rc5-nightly: 2023-07-27
+### 1.6.8rc6-nightly: 2023-07-27
 
 * Fix Replies text in embeds
 * Fix embed border
 * Make sure embed background is transparent
 * Fix rounder border of the embed
 * Fix textual replies, boosts and favourites labels on Firefox
+* Fix video aspect ratio for Firefox
 
 ### 1.6.7-nightly: 2023-07-26
 

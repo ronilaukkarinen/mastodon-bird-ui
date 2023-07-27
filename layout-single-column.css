@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.8rc5-nightly */
+   1.6.8rc6-nightly */
 
 /* CSS variables */
 :root {
@@ -1373,7 +1373,7 @@ body.embed .detailed-status,
 }
 
 /* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
-.layout-single-column div[style*='aspect-ratio']:has(.video-player):not([class]) {
+.layout-single-column div[style*='aspect-ratio']:not([class]) {
 
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
