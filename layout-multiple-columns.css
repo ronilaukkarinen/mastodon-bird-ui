@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.7-nightly */
+   1.6.8rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -1428,13 +1428,20 @@ body.embed .detailed-status__favorites {
   font-weight: var(--font-weight-bold);
 }
 
-body.embed .detailed-status__reblogs::after,
+body.embed .detailed-status__link:has(.fa-reply) > span::after {
+  color: var(--color-dim);
+  content: 'Replies';
+  font-weight: var(--font-weight-semibold);
+}
+
+body.embed .detailed-status__link:has(.fa-retweet) > span::after,
 .layout-multiple-columns .detailed-status__reblogs::after {
   color: var(--color-dim);
   content: 'Boosts';
   font-weight: var(--font-weight-semibold);
 }
 
+body.embed .detailed-status__link:has(.fa-star) > span::after,
 body.embed .detailed-status__favorites::after,
 .layout-multiple-columns .detailed-status__favorites::after {
   color: var(--color-dim);

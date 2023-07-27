@@ -1,3 +1,8 @@
+### 1.6.8rc1-nightly: 2023-07-27
+
+* Fix Replies text in embeds
+* Fix embed border
+
 ### 1.6.7-nightly: 2023-07-26
 
 * Add support for mastodon 4.1.5+nightly-2023-07-25

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.7-nightly */
+   1.6.8rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -1427,13 +1427,31 @@ body.embed .detailed-status__favorites {
   font-weight: var(--font-weight-bold);
 }
 
-body.embed .detailed-status__reblogs::after,
+body.embed .activity-stream .entry {
+  background-color: var(--color-bg);
+}
+
+body.embed > .activity-stream {
+  backface-visibility: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body.embed .detailed-status__link:has(.fa-reply) > span::after {
+  color: var(--color-dim);
+  content: 'Replies';
+  font-weight: var(--font-weight-semibold);
+}
+
+body.embed .detailed-status__link:has(.fa-retweet) > span::after,
 .layout-single-column .detailed-status__reblogs::after {
   color: var(--color-dim);
   content: 'Boosts';
   font-weight: var(--font-weight-semibold);
 }
 
+body.embed .detailed-status__link:has(.fa-star) > span::after,
 body.embed .detailed-status__favorites::after,
 .layout-single-column .detailed-status__favorites::after {
   color: var(--color-dim);
@@ -3278,10 +3296,12 @@ body.embed .button.logo-button:hover,
 body.embed .entry .detailed-status {
   backface-visibility: hidden;
   background-color: #00000059;
+  /* stylelint-disable-next-line */
+  border: 0 !important;
 
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
-  border-radius: 10px !important;
+  border-radius: 0 !important;
   overflow: hidden;
 }
 
