@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.8rc4-nightly */
+   1.6.8rc5-nightly */
 
 /* CSS variables */
 :root {
@@ -1439,23 +1439,23 @@ body.embed > .activity-stream {
   overflow: hidden;
 }
 
-body.embed .detailed-status__link:has(.fa-reply) > span::after,
-.layout-single-column .detailed-status__link > span::after {
+/* Textual labels for detailed metrics */
+body.embed .detailed-status__link > .fa-reply + span::after,
+.layout-single-column .detailed-status__link > .fa-reply + span::after {
   color: var(--color-dim);
   content: 'Replies';
   font-weight: var(--font-weight-semibold);
 }
 
-body.embed .detailed-status__link:has(.fa-retweet) > span::after,
-.layout-single-column .detailed-status__reblogs > span::after {
+body.embed .detailed-status__link > .fa-retweet + span::after,
+.layout-single-column .detailed-status__link > .fa-retweet + span::after {
   color: var(--color-dim);
   content: 'Boosts';
   font-weight: var(--font-weight-semibold);
 }
 
-body.embed .detailed-status__link:has(.fa-star) > span::after,
-body.embed .detailed-status__favorites > span::after,
-.layout-single-column .detailed-status__favorites > span::after {
+body.embed .detailed-status__link > .fa-star + span::after,
+.layout-single-column .detailed-status__link > .fa-star + span::after {
   color: var(--color-dim);
   content: 'Favourites';
   font-weight: var(--font-weight-semibold);
