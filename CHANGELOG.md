@@ -1,3 +1,7 @@
+### 1.6.9rc1-nightly: 2023-07-28
+
+* Fix star animation for Safari by adding max-height to status bar
+
 ### 1.6.8-nightly: 2023-07-27
 
 * Fix Replies text in embeds

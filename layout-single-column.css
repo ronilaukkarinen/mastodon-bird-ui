@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.8-nightly */
+   1.6.9rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -1112,6 +1112,7 @@ body.embed .status__content a,
 /* Status action bar */
 .layout-single-column .status__action-bar {
   margin-top: 12px;
+  max-height: 27px;
 }
 
 /* Display name */
