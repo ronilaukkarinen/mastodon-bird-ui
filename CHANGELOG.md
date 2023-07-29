@@ -1,3 +1,7 @@
+### 1.7.0rc1-nightly: 2023-07-30
+
+* Add slight background color for the compose form, Fixes #10
+
 ### 1.6.9-nightly: 2023-07-30
 
 * Fix star animation for Safari by adding max-height to status bar

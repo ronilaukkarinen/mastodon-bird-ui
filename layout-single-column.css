@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.9-nightly */
+   1.7.0rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -14,7 +14,7 @@
   --color-brand-mastodon-links: #858afa;
   --color-brand-mastodon-bg: #1e2028;
   --color-brand-mastodon-dim: #717c9b;
-  --color-brand-mastodon-mud: #272c40;
+  --color-brand-mastodon-mud: rgb(39 44 64 / .5);
   --color-brand-mastodon-dark: #232543;
   --color-brand-mastodon-threaded-line: #434264;
   --color-brand-mastodon-text-light: #8493a7;
@@ -2459,6 +2459,38 @@ body.embed .button.logo-button:hover,
     max-height: 20vh !important;  /* stylelint-disable-next-line */
     overflow-y: auto !important;
     resize: none;
+  }
+
+  /* Add slight background color for the compose form */
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+  .layout-single-column .compose-form .compose-form__buttons-wrapper {
+    background-color: rgb(39 44 64 / .4);
+    border-color: rgb(39 44 64 / .4);
+    padding-top: 0;
+    transition: all 200ms;
+  }
+
+  /* Smooth color transition on focus */
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+    background-color: rgb(39 44 64 / .8);
+    border-color: rgb(39 44 64 / .8);
+  }
+
+  /* Fixes to bottom row when there's a background */
+  .layout-single-column .compose-form .compose-form__buttons-wrapper {
+    padding-bottom: calc(var(--gap-default) / 2);
+  }
+
+  .layout-single-column .navigation-bar + .compose-form {
+    padding-top: 10px;
+  }
+
+  .layout-single-column .compose-form .emoji-picker-dropdown {
+    inset-inline-end: 3px;
+    position: absolute;
+    top: 3px;
   }
 }
 
