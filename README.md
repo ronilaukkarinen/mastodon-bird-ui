@@ -9,6 +9,8 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
+## [Live demo on mementomori.social](https://mementomori.social)
+
 ![mbui (1)](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/1092506d-44f6-4257-ba16-43c76377c5e6)
 
 ## Versions
@@ -55,8 +57,6 @@ Mastodon Bird UI uses the following version formatting: _semver + stability tag,
 Because you can? Let's face it, we're kinda used to it, Mastodon already resembles the birdsite. Twitter UI is not bad, it's just that it's not for everyone. Twitter (in my opinion) made some bad choices with the new UI for example with the typography, so in a sense I wanted to see if I could make Mastodon look **like Twitter, but better**.
 
 This is why I have defaulted Mastodon deep purple colors in this "theme", if you will. If you really want the vanilla birdsite-look, please modify the colors yourself. Or go to the hellsite if you really love it so much.
-
-## [Live demo on mementomori.social](https://mementomori.social)
 
 ![224368120-5f7bddc9-1702-4279-b297-35a4829e8a3b](https://user-images.githubusercontent.com/1534150/227730434-8a649484-d46c-4b5a-8137-930a302e54d8.png)
 
