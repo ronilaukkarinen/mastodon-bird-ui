@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0rc1-nightly */
+   1.7.0rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -56,6 +56,8 @@
   --color-hashtag: var(--color-accent);
   --color-mention: var(--color-accent);
   --color-link: var(--color-accent);
+  --color-bg-compose-form: rgb(39 44 64 / .4);
+  --color-bg-compose-form-focus: rgb(39 44 64 / .8);
 
   /* In the original UI this color is lighten($ui-base-color, 12%) */
   --color-outer-space: #42485a;
@@ -203,6 +205,8 @@ body.theme-mastodon-light.layout-multiple-columns {
   --color-bg-75: #ffffffbf;
   --color-accent: var(--color-accent-dark);
   --color-ghost-button-text: var(--color-accent-dark);
+  --color-bg-compose-form: rgb(147 136 166 / .2);
+  --color-bg-compose-form-focus: rgb(147 136 166 / .3);
 
   /* Misc */
   --compose-form-linear-gradient: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.8141631652661064) 76%, rgba(255, 255, 255, 0.7077205882352942) 87%, rgba(255, 255, 255, 0.458420868347339) 97%, rgba(255, 255, 255, 0) 100%);
@@ -2449,31 +2453,31 @@ body.embed .button.logo-button:hover,
 
   /* Add slight background color for the compose form */
   /* stylelint-disable-next-line no-duplicate-selectors */
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
-  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
-    background-color: rgb(39 44 64 / .4);
-    border-color: rgb(39 44 64 / .4);
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+  .layout-single-column .compose-form .compose-form__buttons-wrapper {
+    background-color: var(--color-bg-compose-form);
+    border-color: var(--color-bg-compose-form);
     padding-top: 0;
     transition: all 200ms;
   }
 
   /* Smooth color transition on focus */
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
-    background-color: rgb(39 44 64 / .8);
-    border-color: rgb(39 44 64 / .8);
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+    background-color: var(--color-bg-compose-form-focus);
+    border-color: var(--color-bg-compose-form-focus);
   }
 
   /* Fixes to bottom row when there's a background */
-  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
+  .layout-single-column .compose-form .compose-form__buttons-wrapper {
     padding-bottom: calc(var(--gap-default) / 2);
   }
 
-  .layout-multiple-columns .navigation-bar + .compose-form {
+  .layout-single-column .navigation-bar + .compose-form {
     padding-top: 10px;
   }
 
-  .layout-multiple-columns .compose-form .emoji-picker-dropdown {
+  .layout-single-column .compose-form .emoji-picker-dropdown {
     inset-inline-end: 3px;
     position: absolute;
     top: 3px;
