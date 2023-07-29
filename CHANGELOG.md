@@ -1,7 +1,8 @@
-### 1.6.9rc2-nightly: 2023-07-28
+### 1.6.9-nightly: 2023-07-30
 
 * Fix star animation for Safari by adding max-height to status bar
 * Remove font-stack, let Mastodon users decide the font via settings
+* Don't show blank grey URL preview cards if image not found
 
 ### 1.6.8-nightly: 2023-07-27
 

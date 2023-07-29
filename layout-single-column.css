@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.9rc2-nightly */
+   1.6.9-nightly */
 
 /* CSS variables */
 :root {
@@ -515,6 +515,16 @@ body.layout-single-column {
 .layout-single-column a.status-card:focus .status-card__host,
 .layout-single-column a.status-card:hover .status-card__host {
   color: var(--color-dim);
+}
+
+/* Show minimal status card if there's no image */
+.layout-single-column .status-card .status-card__image:not(:has(img)) {
+  display: none;
+}
+
+/* Hide empty status cards alltogether (Mastodon 4.1.5-2023-07-29) */
+.layout-single-column .status-card:has(.fa-file-text) {
+  display: none;
 }
 
 /* Hide empty YouTube description */

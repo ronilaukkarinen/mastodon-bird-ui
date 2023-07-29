@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.6.9rc2-nightly */
+   1.6.9-nightly */
 
 /* CSS variables */
 :root {
@@ -487,6 +487,16 @@ body.layout-multiple-columns {
   border-radius: var(--border-radius);
   display: block;
   transition: all 200ms;
+}
+
+/* Show minimal status card if there's no image */
+.layout-multiple-columns .status-card .status-card__image:not(:has(img)) {
+  display: none;
+}
+
+/* Hide empty status cards alltogether (Mastodon 4.1.5-2023-07-29) */
+.layout-multiple-columns .status-card:has(.fa-file-text) {
+  display: none;
 }
 
 /* Hide empty YouTube description */
