@@ -9,6 +9,8 @@ Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possi
 **See my [original Mastodon post](https://mementomori.social/@rolle/109984108360395822).<br>
 Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.design/the-day-i-decided-to-build-my-own-twitter).**
 
+![mbui (1)](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/1092506d-44f6-4257-ba16-43c76377c5e6)
+
 ## Versions
 
 Mastodon Bird UI uses the following version formatting: _semver + stability tag, for example: `1.5.8rc4-nightly`. First, check the Mastodon version you're running, then choose the version for Mastodon Bird UI. If you're running Mastodon 4.1.2/4.1.3/4.1.4/4.1.5 **stable** (from stable tag), choose the version for it below. If you're running Mastodon nightly (from main branch), choose the version `Mastodon nightly (main branch)`.
