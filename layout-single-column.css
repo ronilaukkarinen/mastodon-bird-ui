@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0rc2-nightly */
+   1.7.0rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -2482,9 +2482,9 @@ body.embed .button.logo-button:hover,
     border-color: var(--color-bg-compose-form-focus);
   }
 
-  /* Fixes to bottom row when there's a background */
+  /* Fixes bottom row padding when there's a background */
   .layout-single-column .compose-form .compose-form__buttons-wrapper {
-    padding-bottom: calc(var(--gap-default) / 2);
+    padding: calc(var(--gap-default) / 2);
   }
 
   .layout-single-column .navigation-bar + .compose-form {

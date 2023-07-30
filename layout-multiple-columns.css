@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0rc2-nightly */
+   1.7.0rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -2453,8 +2453,8 @@ body.embed .button.logo-button:hover,
 
   /* Add slight background color for the compose form */
   /* stylelint-disable-next-line no-duplicate-selectors */
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper,
-  .layout-single-column .compose-form .compose-form__buttons-wrapper {
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
+  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form);
     border-color: var(--color-bg-compose-form);
     padding-top: 0;
@@ -2462,22 +2462,22 @@ body.embed .button.logo-button:hover,
   }
 
   /* Smooth color transition on focus */
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form-focus);
     border-color: var(--color-bg-compose-form-focus);
   }
 
-  /* Fixes to bottom row when there's a background */
-  .layout-single-column .compose-form .compose-form__buttons-wrapper {
-    padding-bottom: calc(var(--gap-default) / 2);
+  /* Fixes bottom row padding when there's a background */
+  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
+    padding: calc(var(--gap-default) / 2);
   }
 
-  .layout-single-column .navigation-bar + .compose-form {
+  .layout-multiple-columns .navigation-bar + .compose-form {
     padding-top: 10px;
   }
 
-  .layout-single-column .compose-form .emoji-picker-dropdown {
+  .layout-multiple-columns .compose-form .emoji-picker-dropdown {
     inset-inline-end: 3px;
     position: absolute;
     top: 3px;

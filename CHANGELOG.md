@@ -1,4 +1,4 @@
-### 1.7.0rc2-nightly: 2023-07-30
+### 1.7.0rc3-nightly: 2023-07-30
 
 * Add slight background color for the compose form, Fixes #10
 * Fix regression with light theme compose form colors
