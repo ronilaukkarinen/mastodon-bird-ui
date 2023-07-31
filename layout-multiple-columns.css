@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0rc3-nightly */
+   1.7.0rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -3317,6 +3317,17 @@ body.embed .button.logo-button:hover,
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+/* Exception for your own profile media gallery */
+.layout-multiple-columns .account-gallery__container .media-gallery__gifv {
+  border-radius: 0;
+}
+
+/* Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on) */
+.layout-multiple-columns .notification.notification-reblog .media-gallery:has(.media-gallery__gifv.autoplay),
+.layout-multiple-columns .notification.notification-favourite .media-gallery:has(.media-gallery__gifv.autoplay) {
+  display: none;
 }
 
 /* More distinct focus color for accessibility, instead of just white */
