@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0rc4-nightly */
+   1.7.0-nightly */
 
 /* CSS variables */
 :root {
@@ -1226,6 +1226,7 @@ body.embed .detailed-status,
 }
 
 /* Avatars */
+body.embed .detailed-status__display-avatar > img,
 .layout-single-column .account-card__title__avatar .account__avatar,
 .layout-single-column .account-card__title__avatar img,
 .layout-single-column .account__avatar > img,

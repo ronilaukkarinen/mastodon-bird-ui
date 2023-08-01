@@ -1,8 +1,9 @@
-### 1.7.0rc4-nightly: 2023-07-30
+### 1.7.0: 2023-08-01
 
 * Add slight background color for the compose form, Fixes #10
 * Fix regression with light theme compose form colors
 * Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on)
+* Make embed avatar rounded
 
 ### 1.6.9-nightly: 2023-07-30
 
