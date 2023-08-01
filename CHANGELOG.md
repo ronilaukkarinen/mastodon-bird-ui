@@ -1,3 +1,8 @@
+### 1.7.1rc1-nightly: 2023-08-01
+
+* Fix preview cards that are not expanded
+* Improve compact and expanded preview card alignments
+
 ### 1.7.0-nightly: 2023-08-01
 
 * Add slight background color for the compose form, Fixes #10

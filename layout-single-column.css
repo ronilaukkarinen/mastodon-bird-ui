@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0-nightly */
+   1.7.1rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -483,14 +483,41 @@ body.layout-single-column {
   top: -2px;
 }
 
-/* Preview cards */
+/* URL preview cards */
 .layout-single-column .status-card,
-.layout-single-column .status-card.compact {
+.layout-single-column .status-card:hover,
+.layout-single-column .status-card:focus {
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+/* URL preview card summary text */
+.layout-single-column .status-card .status-card__host,
+.layout-single-column .status-card .status-card__description {
+  color: var(--color-dim);
+}
+
+/* URL preview card box */
+/* stylelint-disable-next-line */
+.layout-single-column .status-card .status-card__content {
+  padding: var(--gap-default);
+}
+
+.layout-single-column .status-card.expanded .status-card__content {
+  display: grid;
+  gap: 8px;
+}
+
+/* Preview cards */
+.layout-single-column .status-card {
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  display: block;
   transition: all 200ms;
+}
+
+.layout-single-column .status-card.expanded {
+  display: block;
 }
 
 .layout-single-column a.status-card .status-card__host {
@@ -552,26 +579,30 @@ body.layout-single-column {
   border-radius: 0;
 }
 
-.layout-single-column a.status-card .status-card__content,
-.layout-single-column a.status-card.compact .status-card__content {
+.layout-single-column a.status-card .status-card__content {
   padding: 16px;
 }
 
-.layout-single-column a.status-card .status-card__title,
-.layout-single-column a.status-card.compact .status-card__title {
+.layout-single-column a.status-card .status-card__title {
   color: var(--color-fg);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-semibold);
   line-height: 1.3;
   margin: 0;
+}
+
+.layout-single-column a.status-card.expanded .status-card__title {
   white-space: inherit;
 }
 
-.layout-single-column .status-card .status-card__host,
-.layout-single-column .status-card.compact .status-card__host {
+.layout-single-column .status-card.expanded .status-card__host {
   color: var(--color-dim);
   font-size: var(--font-size);
-  margin-bottom: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.layout-single-column .status-card.expanded .status-card__description {
   margin-top: 0;
 }
 
@@ -941,7 +972,6 @@ body.embed .status__content a,
 .layout-single-column .status-check-box__status .detailed-status__display-name,
 .layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text,
 .layout-single-column .status-card .status-card__description,
-.layout-single-column .status-card.compact .status-card__description,
 .layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .dropdown-menu__container__header,
 .layout-single-column .sign-in-banner p,
@@ -1286,23 +1316,6 @@ body.embed .detailed-status__display-avatar > img,
   background: var(--color-focusable-toot);
 }
 
-/* URL preview cards */
-.layout-single-column .status-card,
-.layout-single-column .status-card.compact:hover,
-.layout-single-column .status-card.compact:focus,
-.layout-single-column .status-card.compact {
-  background-color: transparent;
-  border-color: var(--color-border);
-}
-
-/* URL preview card summary text */
-.layout-single-column .status-card .status-card__host,
-.layout-single-column .status-card.compact .status-card__host,
-.layout-single-column .status-card .status-card__description,
-.layout-single-column .status-card.compact .status-card__description {
-  color: var(--color-dim);
-}
-
 /* Search panel that opens when focusing Search or paste URL field */
 .layout-single-column .explore__search-header .search__popout,
 .layout-single-column .compose-form__poll-wrapper option,
@@ -1316,15 +1329,6 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .search__popout em,
 .layout-single-column .search-popout em {
   color: var(--color-light-text);
-}
-
-/* URL preview card box */
-/* stylelint-disable-next-line */
-.layout-single-column .status-card .status-card__content,
-.layout-single-column .status-card.compact .status-card__content {
-  display: grid;
-  gap: calc(var(--gap-default) / 2);
-  padding: var(--gap-default);
 }
 
 /* Status update tinted to right */

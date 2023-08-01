@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.0-nightly */
+   1.7.1rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -483,14 +483,69 @@ body.layout-multiple-columns {
   top: -2px;
 }
 
-/* Bigger preview cards */
+/* URL preview cards */
 .layout-multiple-columns .status-card,
-.layout-multiple-columns .status-card.compact {
+.layout-multiple-columns .status-card:hover,
+.layout-multiple-columns .status-card:focus {
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+/* URL preview card summary text */
+.layout-multiple-columns .status-card .status-card__host,
+.layout-multiple-columns .status-card .status-card__description {
+  color: var(--color-dim);
+}
+
+/* URL preview card box */
+/* stylelint-disable-next-line */
+.layout-multiple-columns .status-card .status-card__content {
+  padding: var(--gap-default);
+}
+
+.layout-multiple-columns .status-card.expanded .status-card__content {
+  display: grid;
+  gap: 8px;
+}
+
+/* Preview cards */
+.layout-multiple-columns .status-card {
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  display: block;
   transition: all 200ms;
+}
+
+.layout-multiple-columns .status-card.expanded {
+  display: block;
+}
+
+.layout-multiple-columns a.status-card .status-card__host {
+  font-size: var(--font-size);
+}
+
+.layout-multiple-columns .status-card a:active .status-card__author,
+.layout-multiple-columns .status-card a:active .status-card__title,
+.layout-multiple-columns .status-card a:focus .status-card__author,
+.layout-multiple-columns .status-card a:focus .status-card__title,
+.layout-multiple-columns .status-card a:hover .status-card__author,
+.layout-multiple-columns .status-card a:hover .status-card__title,
+.layout-multiple-columns a.status-card:active .status-card__author,
+.layout-multiple-columns a.status-card:active .status-card__title,
+.layout-multiple-columns a.status-card:focus .status-card__author,
+.layout-multiple-columns a.status-card:focus .status-card__title,
+.layout-multiple-columns a.status-card:hover .status-card__author,
+.layout-multiple-columns a.status-card:hover .status-card__title {
+  color: var(--color-fg);
+}
+
+.layout-multiple-columns .status-card a:active .status-card__host,
+.layout-multiple-columns .status-card a:hover .status-card__host,
+.layout-multiple-columns .status-card a:focus .status-card__host,
+.layout-multiple-columns a.status-card:active .status-card__host,
+.layout-multiple-columns a.status-card:focus .status-card__host,
+.layout-multiple-columns a.status-card:hover .status-card__host {
+  color: var(--color-dim);
 }
 
 /* Show minimal status card if there's no image */
@@ -517,31 +572,37 @@ body.layout-multiple-columns {
   content: "";
 }
 
-.layout-multiple-columns .status-card .status-card__image-image,
-.layout-multiple-columns .status-card .status-card__image-image.compact {
+.layout-multiple-columns .status-card__image-image,
+.layout-multiple-columns .status-card__image-preview,
+.layout-multiple-columns .status-card .status-card__image {
+  background-color: var(--color-arsenic);
   border-radius: 0;
 }
 
-.layout-multiple-columns .status-card .status-card__content,
-.layout-multiple-columns .status-card.compact .status-card__content {
-  padding: 15px;
+.layout-multiple-columns a.status-card .status-card__content {
+  padding: 16px;
 }
 
-.layout-multiple-columns .status-card .status-card__title,
-.layout-multiple-columns .status-card.compact .status-card__title {
+.layout-multiple-columns a.status-card .status-card__title {
   color: var(--color-fg);
-  font-size: 18px;
-  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
   line-height: 1.3;
   margin: 0;
+}
+
+.layout-multiple-columns a.status-card.expanded .status-card__title {
   white-space: inherit;
 }
 
-.layout-multiple-columns .status-card .status-card__host,
-.layout-multiple-columns .status-card.compact .status-card__host {
+.layout-multiple-columns .status-card.expanded .status-card__host {
   color: var(--color-dim);
-  font-size: var(--font-size-mid);
-  margin-bottom: 5px;
+  font-size: var(--font-size);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.layout-multiple-columns .status-card.expanded .status-card__description {
   margin-top: 0;
 }
 
@@ -944,7 +1005,6 @@ body.embed .status__content a,
 .layout-multiple-columns .status-check-box__status .detailed-status__display-name,
 .layout-multiple-columns .report-dialog-modal .poll__option.dialog-option > .poll__option__text,
 .layout-multiple-columns .status-card .status-card__description,
-.layout-multiple-columns .status-card.compact .status-card__description,
 .layout-multiple-columns .report-dialog-modal .dialog-option .poll__input,
 .layout-multiple-columns .dropdown-menu__container__header,
 .layout-multiple-columns .sign-in-banner p,
@@ -1286,23 +1346,6 @@ body.embed .detailed-status,
   background: var(--color-focusable-toot);
 }
 
-/* URL preview cards */
-.layout-multiple-columns a.status-card,
-.layout-multiple-columns a.status-card.compact:hover,
-.layout-multiple-columns a.status-card.compact:focus,
-.layout-multiple-columns a.status-card.compact {
-  background-color: transparent;
-  border-color: var(--color-border);
-}
-
-/* URL preview card summary text */
-.layout-multiple-columns a.status-card .status-card__host,
-.layout-multiple-columns a.status-card.compact .status-card__host,
-.layout-multiple-columns a.status-card .status-card__description,
-.layout-multiple-columns a.status-card.compact .status-card__description {
-  color: var(--color-dim);
-}
-
 /* Search panel that opens when focusing Search or paste URL field */
 .layout-multiple-columns .explore__search-header .search__popout,
 .layout-multiple-columns .compose-form__poll-wrapper option,
@@ -1316,15 +1359,6 @@ body.embed .detailed-status,
 .layout-multiple-columns .search__popout em,
 .layout-multiple-columns .search-popout em {
   color: var(--color-light-text);
-}
-
-/* URL preview card box */
-/* stylelint-disable-next-line */
-.layout-multiple-columns a.status-card .status-card__content,
-.layout-multiple-columns a.status-card.compact .status-card__content {
-  display: grid;
-  gap: calc(var(--gap-default) / 2);
-  padding: var(--gap-default);
 }
 
 /* Status update tinted to right */
