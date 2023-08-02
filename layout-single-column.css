@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1rc1-nightly */
+   1.7.1rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -544,7 +544,9 @@ body.layout-single-column {
 .layout-single-column .status-card a:focus .status-card__host,
 .layout-single-column a.status-card:active .status-card__host,
 .layout-single-column a.status-card:focus .status-card__host,
-.layout-single-column a.status-card:hover .status-card__host {
+.layout-single-column a.status-card:hover .status-card__host,
+.layout-single-column a.status-card:focus .status-card__description,
+.layout-single-column a.status-card:hover .status-card__description {
   color: var(--color-dim);
 }
 
