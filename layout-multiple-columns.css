@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1rc3-nightly */
+   1.7.1rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -1585,8 +1585,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-multiple-columns .column-subheading {
   background-color: transparent;
   color: var(--color-fg);
-  font-size: var(--font-size-bigger);
-  font-weight: var(--font-weight-bold);
+  /* stylelint-disable-next-line */
+  font-size: var(--font-size-bigger) !important;
+  /* stylelint-disable-next-line */
+  font-weight: var(--font-weight-bold) !important;
+  /* stylelint-disable-next-line */
+  padding-bottom: 12px !important;
+  /* stylelint-disable-next-line */
+  padding-top: 24px !important;
   text-transform: unset;
 }
 
@@ -1853,12 +1859,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-light-text);
   display: flex;
   font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
   gap: var(--gap-default);
   overflow: visible;
-  padding-bottom: calc(var(--gap-default) + 4px);
+  padding-bottom: 8px;
   padding-left: var(--gap-default);
   padding-right: calc(var(--gap-default) * 1.5);
-  padding-top: calc(var(--gap-default) + 4px);
+  padding-top: 8px;
   transition: all 100ms;
 }
 
@@ -1868,7 +1875,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-multiple-columns .column-link > i {
-  min-width: 1.3em;
+  min-width: 20px;
+  width: 20px;
 }
 
 .layout-multiple-columns .column-link > span {
