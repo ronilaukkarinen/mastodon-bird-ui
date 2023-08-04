@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1rc4-nightly */
+   1.7.1rc5-nightly */
 
 /* CSS variables */
 :root {
@@ -3091,8 +3091,19 @@ body.embed .button.logo-button:hover,
   }
 }
 
-/* Mobile */
+/* iPad */
 @media screen and (max-width: 889px) {
+  .layout-multiple-columns .ui__header {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .layout-multiple-columns .ui::after {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 630px) {
   /* Better blur overlay for ui-header */
   .layout-multiple-columns .ui::after {
     backdrop-filter: blur(12px);

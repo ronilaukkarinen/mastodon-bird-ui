@@ -1,10 +1,11 @@
-### 1.7.1rc4-nightly: 2023-08-04
+### 1.7.1rc5-nightly: 2023-08-04
 
 * Fix preview cards that are not expanded
 * Improve compact and expanded preview card alignments
 * Fix status-card__description color on hover
 * Thinner scrollbars for advanced web interface on 4.1.6
 * Improve advanced UI Getting started view column link, icon and heading alignment
+* Improve iPad compatibility of advanced web interface
 
 ### 1.7.0-nightly: 2023-08-01
 
