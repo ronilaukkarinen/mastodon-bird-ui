@@ -1,8 +1,9 @@
-### 1.7.1rc2-nightly: 2023-08-01
+### 1.7.1rc3-nightly: 2023-08-01
 
 * Fix preview cards that are not expanded
 * Improve compact and expanded preview card alignments
 * Fix status-card__description color on hover
+* Thinner scrollbars for advanced web interface on 4.1.6
 
 ### 1.7.0-nightly: 2023-08-01
 
