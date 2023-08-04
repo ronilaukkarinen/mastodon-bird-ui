@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1rc5-nightly */
+   1.7.1rc6-nightly */
 
 /* CSS variables */
 :root {
@@ -2229,6 +2229,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-multiple-columns .account__header__tabs .account-role {
   display: none;
   width: 90px;
+}
+
+/* Follow/unfollow button */
+.layout-multiple-columns .button.button--with-bell {
+  padding: 7px 18px;
 }
 
 /* Follow/unfollow button */
