@@ -11,7 +11,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 
 ## Versions
 
-Mastodon Bird UI uses the following version formatting: _semver + stability tag, for example: `1.5.8rc4-nightly`. First, check the Mastodon version you're running, then choose the version for Mastodon Bird UI. If you're running Mastodon 4.1.2/4.1.3/4.1.4/4.1.5 **stable** (from stable tag), choose the version for it below. If you're running Mastodon nightly (from main branch), choose the version `Mastodon nightly (main branch)`.
+Mastodon Bird UI uses the following version formatting: _semver + stability tag, for example: `1.5.8rc4-nightly`. First, check the Mastodon version you're running, then choose the version for Mastodon Bird UI. If you're running Mastodon **stable** (from stable tag), choose the version for it below. If you're running Mastodon nightly (from main branch), choose the version `Mastodon nightly (main branch)`.
 
 - [Mastodon 4.1.2, 4.1.3, 4.1.4, 4.1.5, 4.1.6 stable versions](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/stable)
 - [Mastodon nightly (main branch)](https://github.com/ronilaukkarinen/mastodon-bird-ui/tree/main)
