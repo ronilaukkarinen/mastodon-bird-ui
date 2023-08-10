@@ -3304,6 +3304,11 @@ body.embed .button.logo-button:hover,
   .layout-single-column .navigation-panel .column-link:nth-child(12) {
     order: 12;
   }
+
+  /* Fix "About" page's server thumbnail margins */
+  .about__header__hero {
+    margin-top: 30px;
+  }
 }
 
 /* Retweet animation */
