@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1rc6-nightly */
+   1.7.1rc7-nightly */
 
 /* CSS variables */
 :root {
@@ -3285,8 +3285,11 @@ body.embed .button.logo-button:hover,
   /* Make the column link 1/4 of width of the screen */
   .layout-multiple-columns .navigation-panel .navigation-panel__legal,
   .layout-multiple-columns .navigation-panel .column-link {
+    border: 0;
     flex: 0 0 calc(100vw / 4);
+    margin-inline: 0;
     padding: 0;
+    padding-inline: 0;
   }
 
   .layout-multiple-columns .navigation-panel .navigation-panel__legal {
