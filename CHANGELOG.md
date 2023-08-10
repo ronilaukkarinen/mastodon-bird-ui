@@ -1,4 +1,4 @@
-### 1.7.1rc7-nightly: 2023-08-04
+### 1.7.1rc7-nightly: 2023-08-10
 
 * Fix preview cards that are not expanded
 * Improve compact and expanded preview card alignments
