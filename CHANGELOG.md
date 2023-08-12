@@ -1,4 +1,4 @@
-### 1.7.1rc7-nightly: 2023-08-10
+### 1.7.1-nightly: 2023-08-12
 
 * Fix preview cards that are not expanded
 * Improve compact and expanded preview card alignments
@@ -8,6 +8,7 @@
 * Improve iPad compatibility of advanced web interface
 * Fix button with bell padding on advanced web interface
 * Fix wrong width of bottom column-links on mobile
+* Fix "About" page's server thumbnail margins on mobile #64 (thanks @LetyDoesStuff!)
 
 ### 1.7.0-nightly: 2023-08-01
 
