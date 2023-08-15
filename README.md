@@ -103,7 +103,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 
 | **Instance**                                                             | **Implementation method** | **Theme name**   | **User count** | **Default** |
 |--------------------------------------------------------------------------|---------------------------|------------------|----------------|-------------|
-| [mementomori.social](https://mementomori.social/explore)                 | Site theme                | Mastodon Bird UI | 30+            | Yes         |
+| [mementomori.social](https://mementomori.social/explore)                 | Site theme                | Mastodon Bird UI | 100+           | Yes         |
 | [dvm.community](https://dmv.community/explore)                           | Custom CSS                | N/A              | 200+           | Yes         |
 | [muri.network](https://muri.network/explore)                             | Site theme                | Mastodon Bird UI | 100+           | Yes         |
 | [suomi.social](https://suomi.social/explore)                             | Custom CSS                | N/A              | 10+            | Yes         |
@@ -137,8 +137,10 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [tyrol.social](https://tyrol.social/explore)                             | Site theme                | BirdUI           | 40+            | No          |
 | [social.ferrocarril.net](https://social.ferrocarril.net/explore)         | Custom CSS                | N/A              | 20+            | Yes         |
 | [social.braydmedia.de](https://social.braydmedia.de/explore)             | Custom CSS                | N/A              | 1              | Yes         |
-| [mastodon.sg](https://mastodon.sg/explore)                               | Custom CSS                | N/A              | 100+           | Yes         |
+| [mastodon.sg](https://mastodon.sg)                                       | Custom CSS                | N/A              | 100+           | Yes         |
 | [krassestegang.social](krassestegang.social/explore)                     | Site theme                | Elephant         | 3              | Yes         |
+| [artsculture.media](https://artsculture.media/explore)                   | Site theme                | Mastodon Bird UI | 60+            | No          |
+| [furry.energy](https://furry.energy/explore)                             | Site theme                | Elephant         | 90+            | Yes         |
 
 ## Installation for Mastodon instance admins
 
