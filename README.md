@@ -142,6 +142,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [artsculture.media](https://artsculture.media/explore)                   | Site theme                | Mastodon Bird UI | 60+            | No          |
 | [furry.energy](https://furry.energy/explore)                             | Site theme                | Elephant         | 90+            | Yes         |
 | [vkl.world](https://vkl.world/explore)                                   | Modified Custom CSS       | N/A              | 2000+          | Yes         |
+| [duk.space](https://duk.space/explore)                                   | Site theme                | Bird UI          | 80+            | No          |
 
 ## Installation for Mastodon instance admins
 
