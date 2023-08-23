@@ -1,9 +1,10 @@
-### 1.7.2rc3-nightly: 2023-08-23
+### 1.7.2rc4-nightly: 2023-08-23
 
 * Support Mastodon 4.2.0-beta2
 * Tint hashtag bar to the right
 * Add pill style hashtags styles for hashtag bar tag list
 * Fix regression in tinting hashtag bar
+* Fix bullet hover and focus on light theme
 
 ### 1.7.1-nightly: 2023-08-12
 

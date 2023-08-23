@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.2rc3-nightly */
+   1.7.2rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -1384,7 +1384,8 @@ body.embed .detailed-status,
 .layout-multiple-columns .hashtag-bar a:focus,
 .layout-multiple-columns .hashtag-bar a:hover {
   background-color: var(--color-accent-dark);
-  color: var(--color-light-text);
+  /* It should be always light also on light mode, so not using variable here */
+  color: #f7f9f9;
 }
 
 .layout-multiple-columns .hashtag-bar a:focus span,
