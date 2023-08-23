@@ -1,7 +1,8 @@
-### 1.7.2rc1-nightly: 2023-08-23
+### 1.7.2rc2-nightly: 2023-08-23
 
 * Support Mastodon 4.2.0-beta2
 * Tint hashtag bar to the right
+* Add pill style hashtags styles for hashtag bar tag list
 
 ### 1.7.1-nightly: 2023-08-12
 

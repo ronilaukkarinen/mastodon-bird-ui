@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.2rc1-nightly */
+   1.7.2rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -1361,6 +1361,35 @@ body.embed .detailed-status,
 .layout-multiple-columns .search__popout em,
 .layout-multiple-columns .search-popout em {
   color: var(--color-light-text);
+}
+
+/* Pill style tags */
+.layout-multiple-columns .hashtag-bar a {
+  background-color: var(--color-dark);
+  border-radius: 9999px;
+  color: var(--color-light-purple);
+  display: inline-block;
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.5;
+  margin: 0 4px 4px 0;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.layout-multiple-columns .hashtag-bar .link-button {
+  font-size: var(--font-size-smaller);
+}
+
+.layout-multiple-columns .hashtag-bar a:focus,
+.layout-multiple-columns .hashtag-bar a:hover {
+  background-color: var(--color-accent-dark);
+  color: var(--color-light-text);
+}
+
+.layout-multiple-columns .hashtag-bar a:focus span,
+.layout-multiple-columns .hashtag-bar a:hover span {
+  text-decoration: none;
 }
 
 /* Status update tinted to right */
