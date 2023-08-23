@@ -1337,11 +1337,15 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .status__content--collapsed + .status__content__read-more-button,
 .layout-single-column .status:not(.status--in-thread) .status__action-bar,
 .layout-single-column .status:not(.status--in-thread) .attachment-list,
-.layout-single-column .status:not(.status--in-thread) .status__content,
-.layout-single-column .status:not(.status--in-thread) .hashtag-bar {
+.layout-single-column .status:not(.status--in-thread) .status__content {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
   padding-top: 0;
+}
+
+/* Hashtag bar tinted to right */
+.layout-single-column .hashtag-bar, {
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
 /* Translate link and other padding resets */
