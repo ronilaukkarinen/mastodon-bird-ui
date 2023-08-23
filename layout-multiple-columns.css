@@ -1367,7 +1367,8 @@ body.embed .detailed-status,
 .layout-multiple-columns .status__content--collapsed + .status__content__read-more-button,
 .layout-multiple-columns .status:not(.status--in-thread) .status__action-bar,
 .layout-multiple-columns .status:not(.status--in-thread) .attachment-list,
-.layout-multiple-columns .status:not(.status--in-thread) .status__content {
+.layout-multiple-columns .status:not(.status--in-thread) .status__content,
+.layout-multiple-columns .status:not(.status--in-thread) .hashtag-bar {
   font-size: var(--font-size);
   padding-left: calc(var(--size-avatar) + var(--gap-default));
   padding-top: 0;
