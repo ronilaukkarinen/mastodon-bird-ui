@@ -1374,7 +1374,7 @@ body.embed .detailed-status,
 }
 
 /* Hashtag bar tinted to right */
-.layout-multiple-columns .hashtag-bar, {
+.layout-multiple-columns .hashtag-bar {
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 

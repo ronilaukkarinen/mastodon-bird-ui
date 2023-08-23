@@ -1344,7 +1344,7 @@ body.embed .detailed-status__display-avatar > img,
 }
 
 /* Hashtag bar tinted to right */
-.layout-single-column .hashtag-bar, {
+.layout-single-column .hashtag-bar {
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
