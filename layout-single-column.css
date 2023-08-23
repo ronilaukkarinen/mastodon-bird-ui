@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.1-nightly */
+   1.7.2rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -1334,6 +1334,7 @@ body.embed .detailed-status__display-avatar > img,
 }
 
 /* Status update tinted to right */
+.layout-single-column .hashtag-bar,
 .layout-single-column .status__content--collapsed + .status__content__read-more-button,
 .layout-single-column .status:not(.status--in-thread) .status__action-bar,
 .layout-single-column .status:not(.status--in-thread) .attachment-list,
