@@ -5,7 +5,7 @@
 * Add pill style hashtags styles for hashtag bar tag list
 * Fix regression in tinting hashtag bar
 * Fix bullet hover and focus on light theme
-* Fix embedded media not displaying in status cards #69 (thanks@LetyDoesStuff!)
+* Fix embedded media not displaying in status cards #69 (thanks @LetyDoesStuff!)
 
 ### 1.7.1-nightly: 2023-08-12
 
