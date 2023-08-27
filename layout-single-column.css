@@ -3347,6 +3347,29 @@ body.embed .button.logo-button:hover,
   }
 }
 
+/* Add bottom padding to the navigation panel
+   on iPhones with the portrait mode home bar */
+
+   @media
+   /* iPhone XR and iPhone 11 */
+   screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait),
+   /* iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14 */
+   screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+   /* iPhone 14 Pro */
+   screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+   /* iPhone XR and iPhone 11 */
+   screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait),
+   /* iPhone Xs Max and iPhone 11 Pro Max */
+   screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+   /* iPhone 12 Pro Max, iPhone 13 Pro Max, and iPhone 14 Plus */
+   screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait),
+   /* iPhone 14 Pro Max */
+   screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+     .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+       padding-bottom: 34px;
+     }
+ }
+
 /* Retweet animation */
 /* stylelint-disable-next-line selector-not-notation */
 .layout-single-column.no-reduce-motion .icon-button.active:not([aria-label="Unboost"]):not([aria-label="Peru tehostus"]) .fa-retweet {
