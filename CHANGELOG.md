@@ -1,4 +1,4 @@
-### 1.7.2rc5-nightly: 2023-08-25
+### 1.7.2-nightly: 2023-08-28
 
 * Support Mastodon 4.2.0-beta2
 * Tint hashtag bar to the right
@@ -6,6 +6,7 @@
 * Fix regression in tinting hashtag bar
 * Fix bullet hover and focus on light theme
 * Fix embedded media not displaying in status cards #69 (thanks @LetyDoesStuff!)
+* Add bottom padding to iPhones with home bar #71 (thanks @LetyDoesStuff!)
 
 ### 1.7.1-nightly: 2023-08-12
 
