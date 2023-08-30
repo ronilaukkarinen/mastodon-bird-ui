@@ -3386,11 +3386,9 @@ body.embed .button.logo-button:hover,
   }
 }
 
-/* Add bottom padding to the navigation panel
-   for the Safari PWA on iPhones with the
-   portrait mode home bar */
-
-  @media
+/* Add bottom padding to the navigation panel for the
+   Safari PWA on iPhones with the portrait mode home bar */
+@media
   /* iPhone XR and iPhone 11 */
   screen and (device-width: 375px) and (device-height: 812px) and (min-resolution: 2dppx) and (orientation: portrait) and (display-mode: standalone),
   /* iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14 */
