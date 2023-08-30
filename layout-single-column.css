@@ -3365,7 +3365,7 @@ body.embed .button.logo-button:hover,
   /* iPhone 14 Pro Max */
   screen and (device-width: 430px) and (device-height: 932px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone) {
     .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
-      padding-bottom: 34px;
+      padding-bottom: 26px;
     }
 }
 
