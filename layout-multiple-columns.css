@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.3rc5-nightly */
+   1.7.3rc6-nightly */
 
 /* CSS variables */
 :root {
@@ -3393,35 +3393,9 @@ body.embed .button.logo-button:hover,
     padding-bottom: 26px;
   }
 
-  .layout-single-column .columns-area__panels__main {
-    /* stylelint-disable-next-line */
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-
   /* Fix top header overlapping in /publish on iPhone */
-  .layout-single-column .ui .ui__header::after {
-    backdrop-filter: blur(12px);
-    /* stylelint-disable-next-line */
-    -webkit-backface-visibility: hidden;
-    background-color: var(--color-bg-75);
-    content: '';
-    /* Height is .ui__header + .tabs-bar__wrapper */
-    height: calc(48px + 56px);
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
-
-  .layout-single-column .ui::after {
-    display: none;
-  }
-
-  .layout-multiple-columns .columns-area--mobile .navigation-bar {
-    background-color: var(--color-bg);
-    position: relative;
-    z-index: 2;
+  .layout-multiple-columns .columns-area--mobile:has(.compose-form) {
+    top: 26px;
   }
 }
 
