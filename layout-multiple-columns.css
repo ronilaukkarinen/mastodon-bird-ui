@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.3rc6-nightly */
+   1.7.3rc7-nightly */
 
 /* CSS variables */
 :root {
@@ -3395,7 +3395,7 @@ body.embed .button.logo-button:hover,
 
   /* Fix top header overlapping in /publish on iPhone */
   .layout-multiple-columns .columns-area--mobile:has(.compose-form) {
-    top: 26px;
+    top: 34px;
   }
 }
 
