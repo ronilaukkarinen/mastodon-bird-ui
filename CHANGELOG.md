@@ -1,3 +1,7 @@
+### 1.7.3rc1-nightly: 2023-08-31
+
+* Add bottom padding for the PWA on iPhones with the home bar #72 (thanks @LetyDoesStuff!)
+
 ### 1.7.2-nightly: 2023-08-28
 
 * Support Mastodon 4.2.0-beta2
@@ -6,7 +10,6 @@
 * Fix regression in tinting hashtag bar
 * Fix bullet hover and focus on light theme
 * Fix embedded media not displaying in status cards #69 (thanks @LetyDoesStuff!)
-* Add bottom padding to iPhones with home bar #71 (thanks @LetyDoesStuff!)
 
 ### 1.7.1-nightly: 2023-08-12
 
