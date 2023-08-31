@@ -1,4 +1,4 @@
-### 1.7.3rc3-nightly: 2023-08-31
+### 1.7.3rc4-nightly: 2023-08-31
 
 * Add bottom padding for the PWA on iPhones with the home bar #72 (thanks @LetyDoesStuff!)
 * Fix top header overlapping in /publish on iPhone
