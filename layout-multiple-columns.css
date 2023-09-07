@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.3rc7-nightly */
+   1.7.4-nightly */
 
 /* CSS variables */
 :root {
@@ -1971,8 +1971,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
+  bottom: -1px;
+  content: "";
+  display: block;
   height: 4px;
+  left: 50%;
   min-width: 56px;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 .layout-multiple-columns .account__section-headline a.active::before,

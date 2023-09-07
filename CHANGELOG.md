@@ -1,9 +1,11 @@
-### 1.7.3rc7-nightly: 2023-08-31
+### 1.7.4-nightly: 2023-09-07
 
 * Add bottom padding for the PWA on iPhones with the home bar #72 (thanks @LetyDoesStuff!)
 * Fix top header overlapping in /publish on iPhone
 * Fix regression with top header on iPhone in compose view
 * Fix mistake in class
+* Support 4.2.0-beta3
+* Fix missing Active Tab Indicator on Mastodon 4.2.x Instances #73 (kudos to @rimar1337!)
 
 ### 1.7.2-nightly: 2023-08-28
 
