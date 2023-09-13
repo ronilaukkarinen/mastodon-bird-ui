@@ -2212,10 +2212,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Make full width... */
-/* stylelint-disable-next-line no-duplicate-selectors */
+/* stylelint-disable no-duplicate-selectors */
 .layout-single-column .account__header__bio .account__header__fields dl {
   width: 100%;
 }
+/* stylelint-enable no-duplicate-selectors */
 
 /* ...except on those that have label with GitHub, github, YouTube or similar */
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Website"], dt[title*="website"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"]) {
@@ -2333,6 +2334,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   text-transform: unset;
 }
 
+/* stylelint-disable no-duplicate-selectors */
 .layout-single-column .account__header__bio .account__header__fields dl {
   background-color: transparent;
   border: 0;
@@ -2343,6 +2345,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   gap: calc(var(--gap-default) / 2);
   padding: 0;
 }
+/* stylelint-enable no-duplicate-selectors */
 
 .layout-single-column .getting-started__trends h4 {
   border: 0;
