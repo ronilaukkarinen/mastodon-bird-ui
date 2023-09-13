@@ -1,4 +1,4 @@
-### 1.7.4rc5-nightly: 2023-09-14
+### 1.7.4rc6-nightly: 2023-09-14
 
 * Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
 * Fix line-height for ellipse shaped counter
@@ -6,6 +6,7 @@
 * Fix non-PWA iOS Safari Compose form top header overlap
 * If social media, move even further from links
 * If the profile item has no link element, show just label icon
+* Add Discord and LinkedIn icons
 
 ### 1.7.3-nightly: 2023-09-07
 
