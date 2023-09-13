@@ -2345,8 +2345,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   gap: calc(var(--gap-default) / 2);
   padding: 0;
 }
-/* stylelint-enable no-duplicate-selectors */
 
+/* stylelint-enable no-duplicate-selectors */
 .layout-single-column .getting-started__trends h4 {
   border: 0;
   font-size: var(--font-size-heading);
