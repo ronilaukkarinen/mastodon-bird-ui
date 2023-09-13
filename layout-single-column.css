@@ -1933,10 +1933,18 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Notification badge on side panel */
 .layout-single-column .icon-with-badge__badge {
-  border-radius: 50%;
+  align-items: center;
+  border-radius: 1em;
+  box-sizing: border-box;
+  display: flex;
   font-size: 11px;
+  height: 1.7em;
+  justify-content: center;
   left: 12px;
-  top: -6px;
+  min-width: max-content;
+  padding: 0 0.4em;
+  top: -7px;
+  width: 1.7em;
 }
 
 .layout-single-column .column-link--transparent.active {
