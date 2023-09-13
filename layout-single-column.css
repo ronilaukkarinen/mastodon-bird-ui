@@ -2206,6 +2206,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide the character in between Joined label */
+.layout-single-column .account__header__bio .account__header__fields dl:first-of-type::before,
 .layout-single-column .account__header__bio .account__header__fields dl:first-of-type::after {
   display: none;
 }
@@ -2231,7 +2232,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide labels that show "Website", "YouTube", etc. */
-.layout-single-column .account__header__bio .account__header__fields dl:first-of-type::before,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"])::before,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"]) dt,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Website"], dt[title*="website"]) dt,
