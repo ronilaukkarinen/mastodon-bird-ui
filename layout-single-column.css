@@ -2211,6 +2211,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Make full width... */
+/* stylelint-disable-next-line no-duplicate-selectors */
 .layout-single-column .account__header__bio .account__header__fields dl {
   width: 100%;
 }
