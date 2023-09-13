@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.5rc1-nightly */
+   1.7.5rc2-nightly */
 
 /* CSS variables */
 :root {
@@ -2207,6 +2207,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .account__header__bio .account__header__fields dl::after {
   content: '|';
   order: 2;
+}
+
+/* Recognize empty field and remove pipe */
+.layout-single-column .account__header__bio .account__header__fields dl:has(dd > span:empty)::after {
+  display: none;
 }
 
 .layout-single-column .account__header__bio .account__header__fields dt {
