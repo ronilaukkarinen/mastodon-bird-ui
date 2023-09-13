@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.4rc3-nightly */
+   1.7.4rc4-nightly */
 
 /* CSS variables */
 :root {
@@ -2224,6 +2224,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   /* Move to last */
   order: 9999;
   width: auto;
+}
+
+/* If GitHub etc. move even further from links */
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"]) {
+
+  /* Move to last-last */
+  order: 99999;
 }
 
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"])::after {
