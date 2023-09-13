@@ -1,3 +1,7 @@
+### 1.7.4rc1-nightly: 2023-09-13
+
+* Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
+
 ### 1.7.3-nightly: 2023-09-07
 
 * Add bottom padding for the PWA on iPhones with the home bar #72 (thanks @LetyDoesStuff!)
