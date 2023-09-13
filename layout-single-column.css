@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.4-nightly */
+   1.7.5rc1-nightly */
 
 /* CSS variables */
 :root {
@@ -2231,7 +2231,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* stylelint-enable no-duplicate-selectors */
 
 /* ...except on those that have label with GitHub, github, YouTube or similar */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Website"], dt[title*="website"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Website"], dt[title*="website"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
 
   /* Move to last */
   order: 9999;
@@ -2239,13 +2239,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* If GitHub etc. move even further from links */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
 
   /* Move to last-last */
   order: 99999;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"])::after {
   content: var(--icon-github);
   height: 18.5px;
   width: 18.5px;
@@ -2270,8 +2270,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Hide labels that show "Website", "YouTube", etc. */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"]) dt,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Website"], dt[title*="website"]) dt,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Website"], dt[title*="website"])::after,
 .layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="YouTube"], dt[title*="youtube"])::before,

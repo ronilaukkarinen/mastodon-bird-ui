@@ -1,3 +1,7 @@
+### 1.7.5rc1: 2023-09-14
+
+* Recognize mispelled GitHub and add an icon
+
 ### 1.7.4-nightly: 2023-09-14
 
 * Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
