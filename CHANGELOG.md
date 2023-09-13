@@ -1,4 +1,4 @@
-### 1.7.4rc6-nightly: 2023-09-14
+### 1.7.4rc7-nightly: 2023-09-14
 
 * Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
 * Fix line-height for ellipse shaped counter
@@ -7,6 +7,7 @@
 * If social media, move even further from links
 * If the profile item has no link element, show just label icon
 * Add Discord and LinkedIn icons
+* Add Instagram icon
 
 ### 1.7.3-nightly: 2023-09-07
 
