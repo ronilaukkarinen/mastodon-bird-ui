@@ -2272,6 +2272,15 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
+/* Verified colors for Firefox before :has */
+.layout-single-column .account__header__bar .account__header__fields .verified__mark,
+.layout-single-column .account__header__bar .account__header__fields .verified a,
+.layout-single-column .account__header__bar .account__header__bio .account__header__fields .verified a,
+.layout-single-column .account__header__bar .account__header__bio .account__header__fields .verified dd {
+  color: var(--color-verified);
+  font-weight: var(--font-weight-regular);
+}
+
 /* Reset verified colors */
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified a,
@@ -2292,13 +2301,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   position: relative;
   top: 5px;
   margin-left: 4px;
-}
-
-/* Replace the icon with verified badge if the link is verified */
-.layout-single-column .account__header__bar:has(.account__header__fields dl.verified > dt:not([title*="GitHub"]):not([title*="github"]):not([title*="YouTube"]):not([title*="youtube"]):not([title*="Website"]):not([title*="website"]):not([title*="Twitch"]):not([title*="twitch"]):not([title*="twitter"]):not([title*="Twitter"]):not([title="X"]):not([title="x"])) .account__header__bio .account__header__fields dl.verified::after {
-  content: var(--icon-verified-smaller);
-  height: 18.5px;
-  width: 18.5px;
 }
 
 /* Joined label */
