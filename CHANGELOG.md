@@ -1,8 +1,9 @@
-### 1.7.4rc2-nightly: 2023-09-13
+### 1.7.4rc3-nightly: 2023-09-13
 
 * Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
 * Fix line-height for ellipse shaped counter
 * Re-think profile links/labels, Fixes #61
+* Fix non-PWA iOS Safari Compose form top header overlap
 
 ### 1.7.3-nightly: 2023-09-07
 
