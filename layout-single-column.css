@@ -1941,6 +1941,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   height: 1.7em;
   justify-content: center;
   left: 12px;
+  line-height: 1;
   min-width: max-content;
   padding: 0 0.4em;
   top: -7px;

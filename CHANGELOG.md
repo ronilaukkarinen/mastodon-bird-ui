@@ -1,6 +1,7 @@
 ### 1.7.4rc1-nightly: 2023-09-13
 
 * Improve ellipse shaped counter with 10+ notifications, Fix build, Fixes #32 (thanks @Freeplayg!)
+* Fix line-height for ellipse shaped counter
 
 ### 1.7.3-nightly: 2023-09-07
 
