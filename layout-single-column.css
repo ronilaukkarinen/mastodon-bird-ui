@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.5rc2-nightly */
+   1.7.5rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -1942,6 +1942,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   transition: all 200ms;
 }
 
+.layout-single-column .dropdown-menu__item a:hover,
 .layout-single-column .notification__filter-bar button:hover,
 .layout-single-column .account__section-headline a:hover {
   background-color: var(--color-column-link-hover);

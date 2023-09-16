@@ -1,7 +1,8 @@
-### 1.7.5rc2: 2023-09-14
+### 1.7.5rc3: 2023-09-14
 
 * Recognize mispelled GitHub and add an icon
 * Recognize empty field and remove pipe
+* Hover effect missing in menus, Fixes #79 (Thanks @Roboron3042!)
 
 ### 1.7.4-nightly: 2023-09-14
 
