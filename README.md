@@ -123,7 +123,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [tkz.one](https://tkz.one/explore)                                       | Modified Custom CSS       | N/A              | 3500+          | Yes         |
 | [mastodonsweden.se](https://mastodonsweden.se/explore)                   | Custom CSS                | N/A              | 130+           | Yes         |
 | [mindly.social](https://mindly.social/explore)                           | Site theme                | Elephant         | 4800+          | No          |
-| [vmst.io](https://vmst.io/explore)                                       | Site theme                | Bird UI          | 650+           | No          |
+| [vmst.io](https://vmst.io/explore)                                       | Site theme                | Elephant         | 650+           | No          |
 | [some.tehy.fi](https://some.tehy.fi/explore)                             | Custom CSS                | N/A              | 3              | Yes         |
 | [pug.ninja](https://pug.ninja/explore)                                   | Custom CSS                | N/A              | 1              | Yes         |
 | [aus.social](https://aus.social/explore)                                 | Site theme                | Elephant         | 5700+          | No          |
