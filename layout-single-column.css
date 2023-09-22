@@ -79,6 +79,7 @@
 
   /* Grids and gaps */
   --gap-default: 12px;
+  --menu-gap-default: 8px;
 
   /* Element sizes */
   --size-avatar: 48px;
@@ -1898,12 +1899,12 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-light-text);
   display: inline-flex;
   font-size: var(--font-size-heading);
-  gap: var(--gap-default);
+  gap: var(--menu-gap-default);
   overflow: visible;
-  padding-bottom: calc(var(--gap-default) + 4px);
-  padding-left: var(--gap-default);
-  padding-right: calc(var(--gap-default) * 1.5);
-  padding-top: calc(var(--gap-default) + 4px);
+  padding-bottom: calc(var(--menu-gap-default) + 4px);
+  padding-left: var(--menu-gap-default);
+  padding-right: calc(var(--menu-gap-default) * 1.5);
+  padding-top: calc(var(--menu-gap-default) + 4px);
   transition: all 100ms;
 }
 
@@ -1923,13 +1924,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .column-link > span::before {
   background-color: var(--color-column-link-hover);
   border-radius: 32px;
-  bottom: calc(2px - var(--gap-default) * 1.5);
+  bottom: calc(2px - var(--menu-gap-default) * 1.5);
   content: "";
-  inset-inline-end: calc(0px - (var(--gap-default) * 2));
-  inset-inline-start: calc(-1.28571429em - (var(--gap-default) * 2));
+  inset-inline-end: calc(0px - (var(--menu-gap-default) * 2));
+  inset-inline-start: calc(-1.28571429em - (var(--menu-gap-default) * 2));
   opacity: 0;
   position: absolute;
-  top: calc(-4px - var(--gap-default));
+  top: calc(-4px - var(--menu-gap-default));
   transition: opacity 200ms;
 }
 
@@ -3388,8 +3389,8 @@ body.embed .button.logo-button:hover,
     justify-content: center;
     margin-right: unset;
     padding-bottom: 0;
-    padding-left: var(--gap-default);
-    padding-right: var(--gap-default);
+    padding-left: var(--menu-gap-default);
+    padding-right: var(--menu-gap-default);
     padding-top: 0;
     width: 38px;
   }
