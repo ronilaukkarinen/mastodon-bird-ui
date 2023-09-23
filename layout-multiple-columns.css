@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.8rc7 */
+   1.7.8rc8 */
 
 /* CSS variables */
 :root {
@@ -225,6 +225,8 @@ body.theme-mastodon-light.layout-multiple-columns {
   --color-ghost-button-text: var(--color-accent-dark);
   --color-bg-compose-form: rgb(147 136 166 / .2);
   --color-bg-compose-form-focus: rgb(147 136 166 / .3);
+  --color-hashtag: var(--color-accent-dark);
+  --color-mention: var(--color-accent-dark);
 
   /* Misc */
   --compose-form-linear-gradient: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.8141631652661064) 76%, rgba(255, 255, 255, 0.7077205882352942) 87%, rgba(255, 255, 255, 0.458420868347339) 97%, rgba(255, 255, 255, 0) 100%);
