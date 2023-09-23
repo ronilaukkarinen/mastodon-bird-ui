@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.8rc4 */
+   1.7.8rc5 */
 
 /* CSS variables */
 :root {
@@ -2409,9 +2409,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-multiple-columns .account__header__bio .account__header__fields dt {
   color: var(--color-dim);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  text-transform: unset;
 }
 
-/* stylelint-disable-next-line no-duplicate-selectors */
+/* stylelint-disable no-duplicate-selectors */
 .layout-multiple-columns .account__header__bio .account__header__fields dl {
   background-color: transparent;
   border: 0;
@@ -3663,14 +3665,6 @@ body.embed .entry .detailed-status {
   /* stylelint-disable-next-line */
   border-radius: 10px !important;
   overflow: hidden;
-}
-
-/* Verified */
-.layout-multiple-columns .account__header__fields .verified a,
-.layout-multiple-columns .account__header__bio .account__header__fields .verified a,
-.layout-multiple-columns .account__header__bio .account__header__fields .verified dd,
-.layout-multiple-columns .account__header__bio .account__header__fields .verified dt {
-  color: var(--color-verified);
 }
 
 /* Destructive colors (For you -suggestions, users when focused to the follow button */
