@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.8rc2 */
+   1.7.8rc3 */
 
 /* CSS variables */
 :root {
@@ -2339,6 +2339,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Verified colors for Firefox before :has */
+.layout-multiple-columns .account__details .verified-badge a,
 .layout-multiple-columns .account__header__bar .account__header__fields .verified__mark,
 .layout-multiple-columns .account__header__bar .account__header__fields .verified a,
 .layout-multiple-columns .account__header__bar .account__header__bio .account__header__fields .verified a,
@@ -2348,6 +2349,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Reset verified colors */
+.layout-multiple-columns .account__details .verified-badge a,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified a,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__bio .account__header__fields .verified a,
@@ -2357,22 +2359,26 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Replace verified__mark */
+.layout-multiple-columns .account__details .verified-badge .verified-badge__mark::before,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark {
   content: var(--icon-verified-smaller);
 }
 
+.layout-multiple-columns .account__details .verified-badge,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd {
   align-items: center;
   display: inline-flex;
   gap: 4px;
 }
 
+.layout-multiple-columns .account__details .verified-badge .verified-badge__mark,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd span:nth-child(1) {
   align-items: center;
   display: flex;
   order: 2;
 }
 
+.layout-multiple-columns .account__details .verified-badge > span,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd span:nth-child(2) {
   order: 1;
 }

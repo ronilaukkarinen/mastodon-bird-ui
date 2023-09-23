@@ -2361,6 +2361,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Verified colors for Firefox before :has */
+.layout-single-column .account__details .verified-badge a,
 .layout-single-column .account__header__bar .account__header__fields .verified__mark,
 .layout-single-column .account__header__bar .account__header__fields .verified a,
 .layout-single-column .account__header__bar .account__header__bio .account__header__fields .verified a,
@@ -2370,6 +2371,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Reset verified colors */
+.layout-single-column .account__details .verified-badge a,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified a,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__bio .account__header__fields .verified a,
@@ -2379,22 +2381,26 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Replace verified__mark */
+.layout-single-column .account__details .verified-badge .verified-badge__mark::before,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark {
   content: var(--icon-verified-smaller);
 }
 
+.layout-single-column .account__details .verified-badge,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd {
   align-items: center;
   display: inline-flex;
   gap: 4px;
 }
 
+.layout-single-column .account__details .verified-badge .verified-badge__mark,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd span:nth-child(1) {
   align-items: center;
   display: flex;
   order: 2;
 }
 
+.layout-single-column .account__details .verified-badge > span,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified dd span:nth-child(2) {
   order: 1;
 }
