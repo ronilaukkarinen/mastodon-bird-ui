@@ -316,9 +316,9 @@ If you are using 4.1.2, 4.1.3 or 4.1.4 **stable** tag version, you can implement
 There are two micro-interaction animations in this UI, both are inspired by the Twitter's original UI animation. The star is originally a work of 
 a Twitter designer [Brian Waddington](https://dribbble.com/shots/1884504-Twitter-Fav). The heart is by Twitter design team. Both animations have been completely re-created by me, frame by frame. The star animation itself contains 100 hand made frames.
 
-| Twitter likes | Twitter fave star (2015) |
-| ------------- | ------------- |
-| <img src="https://user-images.githubusercontent.com/1534150/230135110-6391e061-10c9-4819-af8b-7144b31dac93.gif" width="200" alt="heart" /> | ![star](https://user-images.githubusercontent.com/1534150/230135096-4d1ac9b2-290b-41da-a136-985e908868fa.gif) |
+| Twitter likes | Twitter fave star (2015) | Boost animation |
+| ------------- | ------------- |------------ |
+| <img src="https://user-images.githubusercontent.com/1534150/230135110-6391e061-10c9-4819-af8b-7144b31dac93.gif" height="200" alt="heart" /> | <img src="https://user-images.githubusercontent.com/1534150/230135096-4d1ac9b2-290b-41da-a136-985e908868fa.gif" alt="star" height="200px"> | <img src="https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/ef02d2b8-14bc-4dbc-9b48-112c723c71cb" alt="boost" height="200px"> | 
 
 If you like the heart, just remove everything between `Star animation micro-interactions start (depends on the heart icon above)` and `Star animation micro-interactions end`.
 
