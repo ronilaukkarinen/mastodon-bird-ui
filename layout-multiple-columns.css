@@ -2196,21 +2196,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
 }
 
-/* Profile */
-.layout-multiple-columns .getting-started__trends h4,
-.layout-multiple-columns .account__header__bar {
-  border-color: var(--color-border);
-}
-
-.layout-multiple-columns .account__header__bio .account__header__fields {
-  background-color: transparent;
-  color: var(--color-dim);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-default);
-  padding: 0;
-}
-
 .layout-multiple-columns .account__header__bio .account__header__fields dl::after {
   content: '|';
   order: 2;
@@ -2419,6 +2404,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-size: var(--font-size);
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .layout-multiple-columns .account__header__bio .account__header__fields dl {
   background-color: transparent;
   border: 0;
