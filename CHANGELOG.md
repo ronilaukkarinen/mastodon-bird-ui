@@ -4,6 +4,7 @@
 * Recognize empty field and remove pipe
 * Hover effect missing in menus, Fixes #79 (Thanks @Roboron3042!)
 * Profile view on mobile leaves kebab menu out when the localized "Unfollow" label is longer, Fixes #87 (Thanks @ikke-t!)
+* Support for Mastodon 4.2.0
 
 ### 1.7.4-nightly: 2023-09-14
 
