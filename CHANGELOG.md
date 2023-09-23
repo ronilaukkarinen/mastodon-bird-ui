@@ -8,6 +8,7 @@
 * Use `i` modifier to reduce attr selector repetition #84 (thanks @valtlai!)
 * Update `--icon-boost-notification-wrapper` to match new boost icon
 * Fix light theme icon colors
+* Hotfix for offset on boost icon for mobile
 
 ### 1.7.5: 2023-09-23
 

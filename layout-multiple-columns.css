@@ -3703,6 +3703,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: -39px;
 }
 
+/* Detailed status offset for boost animation on mobile */
+@media (max-width: 890px) {
+  /* stylelint-disable-next-line */
+  .layout-multiple-columns.no-reduce-motion .icon-button.active:focus .fa-retweet:before {
+    left: -90px;
+  }
+}
+
 /* Offset in numbered item */
 .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .fa-retweet::before {
   left: -88px;
