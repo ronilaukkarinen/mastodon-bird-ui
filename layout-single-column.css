@@ -2236,7 +2236,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* stylelint-enable no-duplicate-selectors */
 
 /* ...except on those that have label with GitHub, github, YouTube or similar */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Website"], dt[title*="website"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="github" i], dt[title*="youtube" i], dt[title*="website" i], dt[title*="twitch" i], dt[title*="twitter" i], dt[title="x" i], dt[title*="discord" i], dt[title*="linkedin" i], dt[title*="instagram" i], dt[title="IG"]) {
 
   /* Move to last */
   order: 9999;
@@ -2244,72 +2244,72 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* If GitHub etc. move even further from links */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"], dt[title*="YouTube"], dt[title*="youtube"], dt[title*="Twitch"], dt[title*="twitch"], dt[title*="twitter"], dt[title*="Twitter"], dt[title="X"], dt[title="x"], dt[title*="Discord"], dt[title*="discord"], dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"], dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="github" i], dt[title*="youtube" i], dt[title*="twitch" i], dt[title*="twitter" i], dt[title="x" i], dt[title*="discord" i], dt[title*="linkedin" i], dt[title*="instagram" i], dt[title="IG"]) {
 
   /* Move to last-last */
   order: 99999;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="github" i])::after {
   content: var(--icon-github);
   height: 18.5px;
   width: 18.5px;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Discord"], dt[title*="discord"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="discord" i])::after {
   content: var(--icon-discord);
   height: 18.5px;
   width: 18.5px;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="linkedin" i])::after {
   content: var(--icon-linkedin);
   height: 18.5px;
   width: 18.5px;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="IG"], dt[title*="Instagram"], dt[title*="instagram"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="IG"], dt[title*="instagram" i])::after {
   content: var(--icon-instagram);
   height: 18.5px;
   width: 18.5px;
 }
 
 /* Hide labels that show "Website", "YouTube", etc. */
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="GitHub"], dt[title*="github"], dt[title*="Github"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Website"], dt[title*="website"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Website"], dt[title*="website"])::after,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="YouTube"], dt[title*="youtube"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="YouTube"], dt[title*="youtube"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitch"], dt[title*="twitch"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitch"], dt[title*="twitch"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitter"], dt[title*="twitter"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitter"], dt[title*="twitter"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="X"], dt[title="X"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="X"], dt[title="X"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Discord"], dt[title*="discord"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Discord"], dt[title*="discord"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="LinkedIn"], dt[title*="linkedin"], dt[title*="Linkedin"]) dt,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"])::before,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Instagram"], dt[title*="instagram"], dt[title="IG"]) dt {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="github" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="github" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="website" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="website" i])::after,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="youtube" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="youtube" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitch" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitch" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitter" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitter" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="x" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="x" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="discord" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="discord" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="linkedin" i])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="linkedin" i]) dt,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="instagram" i], dt[title="IG"])::before,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="instagram" i], dt[title="IG"]) dt {
   display: none;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="YouTube"], dt[title*="youtube"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="youtube" i])::after {
   content: var(--icon-youtube);
   height: 18.5px;
   width: 18.5px;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitch"], dt[title*="twitch"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitch" i])::after {
   content: var(--icon-twitch);
   height: 18.5px;
   width: 18.5px;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="X"], dt[title="x"])::after,
-.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="Twitter"], dt[title*="twitter"])::after {
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title="x" i])::after,
+.layout-single-column .account__header__bio .account__header__fields dl:has(dt[title*="twitter" i])::after {
   content: var(--icon-twitter);
   height: 18.5px;
   width: 18.5px;
