@@ -1,8 +1,10 @@
-### 1.7.6rc3: 2023-09-23
+### 1.7.6rc4: 2023-09-23
 
 * Fix the x position in recent searches
 * Introduce new boost micro-interaction, Fixes #81 #74
 * Fix padding in multiple column view
+* Fix boost icon
+* Add new boost interactions to advanced web interface
 
 ### 1.7.5: 2023-09-23
 
