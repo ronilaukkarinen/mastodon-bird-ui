@@ -1,6 +1,7 @@
-### 1.7.6rc1: 2023-09-23
+### 1.7.6rc2: 2023-09-23
 
 * Fix the x position in recent searches
+* Introduce new boost micro-interaction, Fixes #81 #74
 
 ### 1.7.5: 2023-09-23
 
