@@ -6,6 +6,7 @@
 * Fix boost icon
 * Add new boost interactions to advanced web interface
 * Use `i` modifier to reduce attr selector repetition #84 (thanks @valtlai!)
+* Update `--icon-boost-notification-wrapper` to match new boost icon
 
 ### 1.7.5: 2023-09-23
 
