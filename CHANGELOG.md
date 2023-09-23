@@ -1,3 +1,7 @@
+### 1.7.8rc1: 2023-09-23
+
+* Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
+
 ### 1.7.7: 2023-09-23
 
 * Add Inactive Global Icons #89 (thanks @0ddfactory!)
