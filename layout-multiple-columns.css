@@ -3666,16 +3666,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* While active, hide the original icon */
-.layout-single-column.no-reduce-motion .icon-button.active:focus .fa-retweet {
+.layout-multiple-columns.no-reduce-motion .icon-button.active:focus .fa-retweet {
   /* stylelint-disable-next-line */
   background-image: none !important;
 }
 
-.layout-single-column.no-reduce-motion .icon-button.active {
+.layout-multiple-columns.no-reduce-motion .icon-button.active {
   position: relative;
 }
 
-.layout-single-column.no-reduce-motion .icon-button.active:focus .fa-retweet::before {
+.layout-multiple-columns.no-reduce-motion .icon-button.active:focus .fa-retweet::before {
   /* 37 frames */
   animation: boost-animate 1.65s steps(37) forwards;
   /* stylelint-disable-next-line */
@@ -3698,13 +3698,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Detailed status offset for boost animation */
-.layout-single-column.no-reduce-motion .detailed-status__button .icon-button.active:focus .fa-retweet::before {
+.layout-multiple-columns.no-reduce-motion .detailed-status__button .icon-button.active:focus .fa-retweet::before {
   left: -89px;
   top: -39px;
 }
 
 /* Offset in numbered item */
-.layout-single-column.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .fa-retweet::before {
+.layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .fa-retweet::before {
   left: -88px;
 }
 
@@ -4023,7 +4023,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* Fix the x position in recent searches,
    @link https://nileane.fr/@nileane/111110441774473219 */
 
-.layout-single-column .search__popout__menu__item {
+.layout-multiple-columns .search__popout__menu__item {
   align-items: initial;
 }
 
