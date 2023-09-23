@@ -1,3 +1,7 @@
+### 1.7.6rc1: 2023-09-23
+
+* Fix the x position in recent searches
+
 ### 1.7.5: 2023-09-23
 
 * Recognize mispelled GitHub and add an icon

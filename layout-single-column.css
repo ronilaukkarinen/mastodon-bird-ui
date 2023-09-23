@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.5 */
+   1.7.6rc1 */
 
 /* CSS variables */
 :root {
@@ -4143,6 +4143,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column button:focus-visible,
 .layout-single-column .icon-button:focus-visible {
   outline: 2px solid var(--color-accent);
+}
+
+/* Alignment fixes */
+/* Fix the x position in recent searches,
+   @link https://nileane.fr/@nileane/111110441774473219 */
+
+.layout-single-column .search__popout__menu__item {
+  align-items: initial;
 }
 
 /* Mobile devices */
