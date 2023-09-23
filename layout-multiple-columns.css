@@ -2425,6 +2425,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
 }
 
+/* stylelint-enable no-duplicate-selectors */
 .layout-multiple-columns .getting-started__trends h4 {
   border: 0;
   font-size: var(--font-size-heading);
@@ -2753,7 +2754,6 @@ body.embed .button.logo-button:hover,
   }
 
   /* Add slight background color for the compose form */
-  /* stylelint-disable-next-line no-duplicate-selectors */
   .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
   .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form);
