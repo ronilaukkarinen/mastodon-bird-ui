@@ -1,8 +1,9 @@
-### 1.7.8rc3: 2023-09-23
+### 1.7.8rc4: 2023-09-23
 
 * Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
 * Add new profile icons to the advanced web interface
 * Add verified badge styles to user listings
+* Fix: Hide pipe from link icons if there is no textual label
 
 ### 1.7.7: 2023-09-23
 

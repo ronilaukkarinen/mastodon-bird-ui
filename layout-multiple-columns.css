@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.8rc3 */
+   1.7.8rc4 */
 
 /* CSS variables */
 :root {
@@ -2240,7 +2240,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
-/* Hide link icon from the ones that already have an icon */
+/* Hide pipe after link icon and the link icon from the ones that already have an icon */
+.layout-multiple-columns .account__header__bio .account__header__fields dl:has(dt[title*="website" i])::after,
 .layout-multiple-columns .account__header__bio .account__header__fields dl:has(dt[title*="github" i], dt[title*="youtube" i], dt[title*="twitch" i], dt[title*="twitter" i], dt[title="x" i], dt[title*="discord" i], dt[title*="linkedin" i], dt[title*="instagram" i], dt[title="IG"], dt[title~="Mastodon account" i], dt[title~="Mastodon account" i], dt[title~="account" i], dt[title="Alt account" i], dt[title*="mastodon" i], dt[title*="masto" i], dt[title*="ko-fi" i], dt[title*="kofi" i], dt[title*="paypal" i], dt[title*="patreon" i])::before {
   display: none;
 }
