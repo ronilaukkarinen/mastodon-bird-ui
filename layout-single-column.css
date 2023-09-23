@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.5rc3-nightly */
+   1.7.5 */
 
 /* CSS variables */
 :root {
@@ -2474,9 +2474,13 @@ body.embed .button.logo-button,
   border-top-right-radius: 9999px;
   color: var(--color-light-text);
   font-size: var(--font-size);
+  max-width: 36vw;
+  overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
+  text-overflow: ellipsis;
   transition: all 200ms;
+  white-space: nowrap;
 }
 
 /* Dark button borders and other things that have borders all around */
