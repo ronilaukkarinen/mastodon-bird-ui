@@ -637,6 +637,35 @@ body.theme-mastodon-bird-ui-accessible {
 .layout-single-column .compose-form .compose-form__buttons-wrapper {
   padding-bottom: calc(var(--gap-default) / 2);
 }
+
+/* Advanced view accessibility improvements,
+   from the feedback from @mustikkasoppa@mementomori.social */
+/* Move form back to start */
+.layout-multiple-columns .drawer {
+  border-right: 1px solid var(--color-border) !important;
+  order: 0 !important;
+}
+
+/* Show full name */
+.status__info .display-name {
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.notification .status__info .status__display-name {
+  height: 16px;
+}
+
+.status .status__info {
+  height: auto !important;
+}
+
+/* Bigger translate link */
+.status__content__read-more-button,
+.status__content__translate-button {
+  color: var(--color-accent) !important;
+  font-size: var(--font-size-mid) !important;
+}
 ```
 
 After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add these lines:
