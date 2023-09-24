@@ -1,3 +1,7 @@
+### 1.7.9rc1: 2023-09-24
+
+* Improve the visibility of column header borders in advanced view
+
 ### 1.7.8: 2023-09-24
 
 * Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
