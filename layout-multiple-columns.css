@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.8rc9 */
+   1.7.8 */
 
 /* CSS variables */
 :root {
@@ -1689,6 +1689,18 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications */
+@media (max-width: 600px) {
+  .layout-multiple-columns .notification .account__relationship > .button,
+  .layout-multiple-columns .notification__report__actions .button {
+    max-width: 24vw;
+  }
+
+  .layout-multiple-columns .notification__message > span > span {
+    max-width: 50vw;
+  }
 }
 
 .layout-multiple-columns .notification__message > div {

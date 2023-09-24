@@ -1,4 +1,4 @@
-### 1.7.8rc9: 2023-09-24
+### 1.7.8: 2023-09-24
 
 * Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
 * Add new profile icons to the advanced web interface
@@ -9,6 +9,7 @@
 * Fix partial globe icon on light theme
 * Fix mention and hashtag color contrast for light theme
 * Fix consistency for --icon-boost-notification-filter-bar
+* Truncate too long localized unfollow button text in notifications in mobile
 
 ### 1.7.7: 2023-09-23
 
