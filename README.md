@@ -562,11 +562,7 @@ body.theme-mastodon-bird-ui-accessible {
 /* Show full name */
 .status__info .display-name {
   flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.notification .status__info .status__display-name {
-  height: 16px;
+  margin-bottom: 16px;
 }
 
 .status .status__info {
@@ -578,6 +574,12 @@ body.theme-mastodon-bird-ui-accessible {
 .status__content__translate-button {
   color: var(--color-accent) !important;
   font-size: var(--font-size-mid) !important;
+}
+
+/* Fix unfollow wrapping */
+.layout-multiple-columns .notification.notification-follow .account__relationship,
+.layout-multiple-columns .notification.notification.notification-admin-sign-up .accou>
+  transform: translateY(-34px);
 }
 ```
 
