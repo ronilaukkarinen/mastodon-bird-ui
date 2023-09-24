@@ -1,4 +1,4 @@
-### 1.7.8rc8: 2023-09-24
+### 1.7.8rc9: 2023-09-24
 
 * Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
 * Add new profile icons to the advanced web interface
@@ -8,6 +8,7 @@
 * Fix unminified globe icon causing it to randomly disappear #89, Fixes #90
 * Fix partial globe icon on light theme
 * Fix mention and hashtag color contrast for light theme
+* Fix consistency for --icon-boost-notification-filter-bar
 
 ### 1.7.7: 2023-09-23
 
