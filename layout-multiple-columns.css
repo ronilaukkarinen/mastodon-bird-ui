@@ -78,7 +78,7 @@
 
   /* Grids and gaps */
   --gap-default: 12px;
-  --menu-gap-default: 12px;
+  --gap-column-link: 12px;
 
   /* Element sizes */
   --size-avatar: 48px;
@@ -1940,11 +1940,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: flex;
   font-size: var(--font-size);
   font-weight: var(--font-weight-semibold);
-  gap: var(--menu-gap-default);
+  gap: var(--gap-column-link);
   overflow: visible;
   padding-bottom: 8px;
-  padding-left: var(--menu-gap-default);
-  padding-right: calc(var(--menu-gap-default) * 1.5);
+  padding-left: var(--gap-column-link);
+  padding-right: calc(var(--gap-column-link) * 1.5);
   padding-top: 8px;
   transition: all 100ms;
 }
@@ -3457,8 +3457,8 @@ body.embed .button.logo-button:hover,
     justify-content: center;
     margin-right: unset;
     padding-bottom: 0;
-    padding-left: var(--menu-gap-default);
-    padding-right: var(--menu-gap-default);
+    padding-left: var(--gap-column-link);
+    padding-right: var(--gap-column-link);
     padding-top: 0;
     width: 38px;
   }
