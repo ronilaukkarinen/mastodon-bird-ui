@@ -1,8 +1,46 @@
-### 1.7.5rc3: 2023-09-14
+### 1.7.9rc2: 2023-09-24
+
+* Improve the visibility of column header borders in advanced view
+* Fix border column-header color also in single column mode
+* Ultra accessible theme improvements (Readme snippet)
+
+### 1.7.8: 2023-09-24
+
+* Add profile icons for Ko-fi, Patreon, Paypal and Mastodon
+* Add new profile icons to the advanced web interface
+* Add verified badge styles to user listings
+* Fix: Hide pipe from link icons if there is no textual label
+* Fix regression with verified labels on multiple column view
+* Fix unminified globe icon causing it to randomly disappear #89, Fixes #90
+* Fix partial globe icon on light theme
+* Fix mention and hashtag color contrast for light theme
+* Fix consistency for --icon-boost-notification-filter-bar
+* Truncate too long localized unfollow button text in notifications in mobile
+
+### 1.7.7: 2023-09-23
+
+* Add Inactive Global Icons #89 (thanks @0ddfactory!)
+* Fix Multi-Column Icon Size #89 (thanks @0ddfactory!)
+* Hotfix for offset on boost icon for mobile (thanks @mitexleo!)
+
+### 1.7.6: 2023-09-23
+
+* Fix the x position in recent searches
+* Introduce new boost micro-interaction, Fixes #81 #74
+* Fix padding in multiple column view
+* Fix boost icon
+* Add new boost interactions to advanced web interface
+* Use `i` modifier to reduce attr selector repetition #84 (thanks @valtlai!)
+* Update `--icon-boost-notification-wrapper` to match new boost icon
+* Fix light theme icon colors
+
+### 1.7.5: 2023-09-23
 
 * Recognize mispelled GitHub and add an icon
 * Recognize empty field and remove pipe
 * Hover effect missing in menus, Fixes #79 (Thanks @Roboron3042!)
+* Profile view on mobile leaves kebab menu out when the localized "Unfollow" label is longer, Fixes #87 (Thanks @ikke-t!)
+* Support for Mastodon 4.2.0
 
 ### 1.7.4-nightly: 2023-09-14
 
