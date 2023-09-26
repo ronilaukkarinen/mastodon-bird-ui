@@ -137,8 +137,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [vkl.world](https://vkl.world/explore)                                   | Modified Custom CSS       | N/A              | 2000+          | Yes         |
 | [duk.space](https://duk.space/explore)                                   | Site theme                | Bird UI          | 80+            | No          |
 | [supebase.com](https://supebase.com)                                     | Site theme                | Bird UI Modified | 1              | Yes         |
-| [Buddyverse.xyz](https://buddyverse.xyz)
-                 | Site theme                | Mastodon Bird UI | 6+             | Yes
+| [Buddyverse.xyz](https://buddyverse.xyz)   | Site theme | Mastodon Bird UI | 6+ | Yes
 
 ## Installation for Mastodon instance admins
 
