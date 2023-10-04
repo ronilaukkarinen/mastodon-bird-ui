@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.9rc3 */
+   1.7.9rc4 */
 
 /* CSS variables */
 :root {
@@ -766,6 +766,7 @@ body.layout-single-column {
 }
 
 /* Border colors */
+.layout-single-column .search-results__section__header,
 .layout-single-column .account__header__bar,
 .layout-single-column .about__meta__divider,
 .layout-single-column .poll__footer,
@@ -1263,6 +1264,7 @@ body.embed .status__content a,
 
 /* Panels and things that should be transparent */
 .layout-single-column .explore__search-results,
+.layout-single-column .search-results__section__header,
 .layout-single-column .status__wrapper-direct,
 .layout-single-column .focusable:focus .detailed-status,
 .layout-single-column .focusable:focus .detailed-status__action-bar,
