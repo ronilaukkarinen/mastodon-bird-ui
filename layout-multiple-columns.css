@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.9rc4 */
+   1.7.9rc5 */
 
 /* CSS variables */
 :root {
@@ -701,6 +701,7 @@ body.layout-multiple-columns {
   border-bottom: 1px solid var(--color-border);
 }
 
+.layout-multiple-columns .column-header__collapsible,
 .layout-multiple-columns .column-header__collapsible.collapsed {
   opacity: 1;
 }
