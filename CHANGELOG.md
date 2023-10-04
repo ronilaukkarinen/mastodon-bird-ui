@@ -8,6 +8,7 @@
 * Fix collapsible border in tab header
 * Make it easier to edit the gap of column-links by splitting the variables in two #86 (thanks @trankten!)
 * Add dark banner styles for account-memorial-banner (thanks @DismalShadowX!), follow-request-banner and moved-account-banners, Closes #94
+* Fix column back button border
 
 ### 1.7.8: 2023-09-24
 

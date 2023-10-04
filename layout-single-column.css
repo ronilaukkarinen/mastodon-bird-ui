@@ -1348,7 +1348,6 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .error-column,
 .layout-single-column .getting-started,
 .layout-single-column .regeneration-indicator,
-.layout-single-column .column-back-button,
 .layout-single-column .column-header {
   border: 0;
 }
