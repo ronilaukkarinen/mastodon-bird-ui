@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.9rc2 */
+   1.7.9rc3 */
 
 /* CSS variables */
 :root {
@@ -1265,6 +1265,7 @@ body.embed .status__content a,
 }
 
 /* Panels and things that should be transparent */
+.layout-multiple-columns .explore__search-results,
 .layout-multiple-columns .status__wrapper-direct,
 .layout-multiple-columns .focusable:focus .detailed-status,
 .layout-multiple-columns .focusable:focus .detailed-status__action-bar,

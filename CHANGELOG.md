@@ -1,8 +1,9 @@
-### 1.7.9rc2: 2023-09-24
+### 1.7.9rc3: 2023-10-04
 
 * Improve the visibility of column header borders in advanced view
 * Fix border column-header color also in single column mode
 * Ultra accessible theme improvements (Readme snippet)
+* Add explore__search-results to transparent background color scope
 
 ### 1.7.8: 2023-09-24
 
