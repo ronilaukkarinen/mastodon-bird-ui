@@ -1,4 +1,4 @@
-### 1.7.9rc5: 2023-10-04
+### 1.7.9: 2023-10-04
 
 * Improve the visibility of column header borders in advanced view
 * Fix border column-header color also in single column mode
@@ -6,6 +6,8 @@
 * Add explore__search-results to transparent background color scope
 * Add search-results__section__header to color scopes
 * Fix collapsible border in tab header
+* Make it easier to edit the gap of column-links by splitting the variables in two #86 (thanks @trankten!)
+* Add dark banner styles for account-memorial-banner (thanks @DismalShadowX!), follow-request-banner and moved-account-banners, Closes #94
 
 ### 1.7.8: 2023-09-24
 

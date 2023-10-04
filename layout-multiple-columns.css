@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.9rc5 */
+   1.7.9 */
 
 /* CSS variables */
 :root {
@@ -646,6 +646,9 @@ body.layout-multiple-columns {
 }
 
 /* Dark panels like modals and boxes */
+.layout-multiple-columns .account-memorial-banner,
+.layout-multiple-columns .follow-request-banner,
+.layout-multiple-columns .moved-account-banner,
 .layout-multiple-columns .column-select__menu *,
 .layout-multiple-columns .column-select__menu,
 .layout-multiple-columns .column-settings__hashtags .column-select__control,
