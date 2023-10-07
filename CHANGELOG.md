@@ -1,3 +1,7 @@
+### 1.8.0rc1: 2023-10-07
+
+* Improve button border colors in ultra accessible theme
+
 ### 1.7.9: 2023-10-04
 
 * Improve the visibility of column header borders in advanced view

@@ -601,6 +601,17 @@ body.theme-mastodon-bird-ui-accessible {
 .notification__filter-bar button.active {
   background-color: var(--color-mud) !important;
 }
+
+/* More visible button borders */
+.account .account__relationship > .button,
+.account__header__tabs__buttons .button,
+.account__header__tabs__buttons .icon-button,
+.column-inline-form button,
+.explore__suggestions .account-card__actions__button button,
+.notification .account__relationship > .button,
+.notification__report__actions .button {
+  border-color: var(--color-light-text) !important;
+}
 ```
 
 After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add these lines:
