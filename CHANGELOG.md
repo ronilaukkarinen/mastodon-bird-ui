@@ -3,6 +3,7 @@
 * Improve button border colors in ultra accessible theme
 * Do not animate when prefers-reduced-motion is set to reduce, Fixes #95
 * Fix profile button icon not horizontally centered
+* Fix regression with icon button aligning when not focused
 
 ### 1.7.9: 2023-10-04
 
