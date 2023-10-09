@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.8.0rc2 */
+   1.8.0rc3 */
 
 /* CSS variables */
 :root {
@@ -2574,7 +2574,6 @@ body.embed .button.logo-button,
 
 /* stylelint-disable-next-line */
 .layout-single-column .account__header__tabs__buttons .icon-button {
-  align-items: center;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
