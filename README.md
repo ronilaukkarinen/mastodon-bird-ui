@@ -158,7 +158,6 @@ If you'd like a different branding for your instance like "Elephant" without any
 If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes):
 
 ```bash
-# First, define version, "main" for nightly or "stable" for stable
 export MASTODON_VERSION_FOR_BIRD_UI="main"
 
 # Create a new folder for the theme
@@ -245,7 +244,6 @@ And you're done!
 If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
 
 ```bash
-# First, define version, "main" for nightly or "stable" for stable
 export MASTODON_VERSION_FOR_BIRD_UI="main"
 
 # Download the CSS file for single column layout
@@ -280,13 +278,6 @@ That's it!
 
 While Mastodon Bird UI works perfectly fine out of the box, there are some things you might want to modify to make it look even better.
 
-### Twitter-like link previews
-
-If you like bigger link previews, you can implement one of these:
-
-- [4.1.2-4.1.4 stable](https://github.com/mastodon/mastodon/commit/2fff05710b95c9fe5275a2b022b3348753e55050).
-- [4.1.4 nightly](https://github.com/mastodon/mastodon/commit/e97868ac3d6a72af8cb3c39d9e7fef6892c164f4)
-
 ### Status bar color on Android PWA
 
 Edit [this line](https://github.com/mastodon/mastodon/blob/f4f3e2b46e619fcc2eda48c2eb66c517b4f466aa/app/views/layouts/application.html.haml#L24) and recompile assets with `yarn build:production`.
@@ -305,12 +296,6 @@ If you're a polyglot like me, you can hide the translate link on other languages
 ### Thread lines
 
 There is support for threads available for the nightly version since ([see PR #24549](https://github.com/mastodon/mastodon/pull/24549)) and if you want to use the native threaded lines, just use main branch from Mastodon. There's a related [issue](https://github.com/mastodon/mastodon/issues/19570#issuecomment-1493057424) about it that I have commented. You should also see the discussion on a Mastodon Bird UI issue [#4](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/4#issuecomment-1493274306).
-
-If you are using 4.1.2, 4.1.3 or 4.1.4 **stable** tag version, you can implement threads with these steps:
-
-1. Implement [this](https://github.com/mastodon/mastodon/compare/main...ronilaukkarinen:mastodon:feat-thread-lines). Tested and online at [mementomori.social](https://mementomori.social). This changes the HTML structure so that creating threaded lines is possible.
-2. Rebuild assets
-3. Enable Mastodon Bird UI 1.3.8 or later
 
 ### Micro-interactions
 
