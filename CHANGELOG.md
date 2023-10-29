@@ -1,7 +1,8 @@
-### 1.8.2rc: 2023-10-29
+### 1.8.2: 2023-10-29
 
 * Remove deprecated Local icon
 * Remove deprecated Share icon
+* Add an icon for Preferences
 
 ### 1.8.1: 2023-10-29
 
