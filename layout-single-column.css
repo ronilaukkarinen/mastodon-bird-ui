@@ -2967,6 +2967,10 @@ body.embed .button.logo-button:hover,
     order: 4;
   }
 
+  .layout-multiple-columns .column-link[href="/public/local"] {
+    order: 5;
+  }
+
   .layout-single-column .column-link[href="/public"] {
     order: 6;
   }
