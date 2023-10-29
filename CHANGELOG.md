@@ -8,6 +8,7 @@
 * Prepare for [changing the heart as default](https://github.com/mastodon/mastodon/pull/27385#issuecomment-1773117170)
 * Add icons for more ellipsis and close x
 * Add --size-icon variable for easier icon sizing
+* Change default fav action icon to heart
 
 ### 1.8.0: 2023-10-29
 

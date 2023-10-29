@@ -84,7 +84,6 @@
   /* Element sizes */
   --size-avatar: 48px;
   --size-avatar-small: 32px;
-  --size-icon-notification: 30px;
   --width-main-panel: 600px;
   --width-side-panel: 260px;
   --border-radius: 16px;
@@ -528,7 +527,7 @@ body.layout-single-column {
   box-shadow: 2px 4px 15px rgba(0, 0, 0, .2);
 }
 
-.layout-single-column .list-editor__search .search__icon .fa {
+.layout-single-column .list-editor__search .search__icon .icon {
   margin: 15px;
 }
 
@@ -673,7 +672,7 @@ body.layout-single-column {
 }
 
 /* Announcements */
-.layout-single-column .announcements__pagination .fa,
+.layout-single-column .announcements__pagination .icon,
 .layout-single-column .announcements__pagination {
   color: var(--color-dim);
 }
@@ -1090,7 +1089,7 @@ body.embed .status__content a,
 .layout-single-column .account__section-headline button,
 .layout-single-column .notification__filter-bar a,
 .layout-single-column .notification__filter-bar button,
-.layout-single-column .attachment-list.compact .fa,
+.layout-single-column .attachment-list.compact .icon,
 .layout-single-column .attachment-list__list a,
 .layout-single-column .notification__message .icon-user-plus,
 .layout-single-column .notification__message .icon-home,
@@ -1697,10 +1696,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   height: calc(var(--gap-default) * 2);
 }
 
-.layout-single-column .notification__message i {
-  font-size: var(--size-icon-notification);
-}
-
 /* Make sure notification user is clickable */
 .layout-single-column .notification__display-name {
   position: relative;
@@ -2081,35 +2076,39 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-image: var(--icon-boost-status-prepend);
 }
 
-.layout-single-column .notification .notification__message .fa {
-  font-size: 27px;
+.layout-single-column .notification .notification__message .icon {
+  align-self: start;
+  height: 27px;
+  justify-self: end;
   margin-right: 4px;
   max-width: 30px;
+  width: 27px;
 }
 
-.layout-single-column .notification .fa:not(.icon-link)::before {
-  font-size: 22px;
-  height: 27px;
+.layout-single-column .notification .notification__message .icon.icon-retweet {
+  color: var(--color-green);
+  height: 24px;
+  width: 24px;
 }
 
-.layout-single-column .notification .fa.icon-user-plus:not(.icon-link)::before {
+.layout-single-column .notification .icon.icon-user-plus:not(.icon-link) {
   color: var(--color-accent-dark);
-  font-size: 20px;
 }
 
-.layout-single-column .account__relationship .fa.icon-user-plus:not(.icon-link)::before,
-.layout-single-column .notification .account__relationship .fa.icon-user-plus:not(.icon-link)::before {
+.layout-single-column .account__relationship .icon.icon-user-plus:not(.icon-link),
+.layout-single-column .notification .account__relationship .icon.icon-user-plus:not(.icon-link) {
   color: var(--color-dim);
 }
 
-.layout-single-column .notification .fa.icon-flag::before,
-.layout-single-column .notification .fa.icon-tasks:not(.icon-link)::before {
+.layout-single-column .notification .icon.icon-flag,
+.layout-single-column .notification .icon.icon-tasks:not(.icon-link) {
   color: var(--color-accent-dark);
 }
 
-.layout-single-column .notification .fa.icon-home:not(.icon-link)::before {
+.layout-single-column .notification .icon.icon-home:not(.icon-link) {
   color: var(--color-accent-dark);
-  font-size: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 /* Follow/unfollow button */
@@ -2118,35 +2117,35 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-color: transparent;
 }
 
-.layout-single-column .notification .account__relationship .fa::before {
+.layout-single-column .notification .account__relationship .icon {
   /* stylelint-disable-next-line */
   color: var(--color-dim);
   font-size: 20px;
 }
 
 .layout-single-column .list-adder__lists .icon-times::before,
-.layout-single-column .account__wrapper .account__relationship .icon-button.active .fa::before,
-.layout-single-column .explore__search-results .account__relationship .icon-button.active .fa::before,
-.layout-single-column .notification .account__relationship .icon-button.active .fa::before {
+.layout-single-column .account__wrapper .account__relationship .icon-button.active .icon,
+.layout-single-column .explore__search-results .account__relationship .icon-button.active .icon,
+.layout-single-column .notification .account__relationship .icon-button.active .icon {
   /* stylelint-disable-next-line */
   color: var(--color-green);
   opacity: .75;
 }
 
 .layout-single-column .list-adder__lists .icon-times:hover::before,
-.layout-single-column .explore__search-results .icon-button.active:hover .fa::before,
-.layout-single-column .notification .account__relationship .icon-button.active:hover .fa::before {
+.layout-single-column .explore__search-results .icon-button.active:hover .icon,
+.layout-single-column .notification .account__relationship .icon-button.active:hover .icon {
   /* stylelint-disable-next-line */
   color: var(--color-red);
   opacity: 1;
 }
 
-.layout-single-column .explore__search-results .icon-button:focus .fa::before,
-.layout-single-column .notification .account__relationship .icon-button:focus .fa::before,
-.layout-single-column .explore__search-results .icon-button.active:focus .fa::before,
-.layout-single-column .notification .account__relationship .icon-button.active:focus .fa::before,
-.layout-single-column .explore__search-results .icon-button:hover .fa::before,
-.layout-single-column .notification .account__relationship .icon-button:hover .fa::before {
+.layout-single-column .explore__search-results .icon-button:focus .icon,
+.layout-single-column .notification .account__relationship .icon-button:focus .icon,
+.layout-single-column .explore__search-results .icon-button.active:focus .icon,
+.layout-single-column .notification .account__relationship .icon-button.active:focus .icon,
+.layout-single-column .explore__search-results .icon-button:hover .icon,
+.layout-single-column .notification .account__relationship .icon-button:hover .icon {
   /* stylelint-disable-next-line */
   color: var(--color-green);
   opacity: 1;
@@ -2588,11 +2587,6 @@ body.embed .button.logo-button,
   justify-content: center;
 }
 
-/* Exception for close icon that seem to align wrongly when active */
-.layout-single-column .account__header__tabs__buttons .icon-button .fa.icon-close {
-  align-self: start;
-}
-
 body.embed .button.logo-button:hover,
 .layout-single-column .column-inline-form button:hover,
 .layout-single-column .explore__suggestions .account-card__actions__button button:hover,
@@ -2600,7 +2594,7 @@ body.embed .button.logo-button:hover,
   color: var(--color-light-text);
 }
 
-.layout-single-column .account__header__tabs__buttons .icon-button .fa::before {
+.layout-single-column .account__header__tabs__buttons .icon-button .icon {
   font-size: 17px;
 }
 
@@ -2675,7 +2669,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* Misc UI fixes */
-.layout-single-column .search__icon .fa.active {
+.layout-single-column .search__icon .icon.active {
   opacity: 1;
 }
 
@@ -2909,17 +2903,17 @@ body.embed .button.logo-button:hover,
   font-size: var(--font-size-smaller);
 }
 
-.layout-single-column .notification__favourite-icon-wrapper .fa.icon-retweet {
+.layout-single-column .notification-favourite .icon.icon-retweet {
   color: var(--color-green);
 }
 
 /* Smaller icons for status action bar */
-.layout-single-column .status__action-bar .fa {
+.layout-single-column .status__action-bar .icon {
   font-size: 14.6px;
   min-width: 18px;
 }
 
-.layout-single-column .status__action-bar .fa.icon-retweet {
+.layout-single-column .status__action-bar .icon.icon-retweet {
   min-width: 21px;
 }
 
@@ -3085,6 +3079,8 @@ body.embed .button.logo-button:hover,
 
 /* General for all column icons */
 /* stylelint-disable-next-line */
+.layout-single-column .notification-favourite .notification__message > .icon,
+.layout-single-column .notification-reblog .notification__message > .icon,
 .layout-single-column .account__header__tabs__buttons .icon,
 .layout-single-column .detailed-status__action-bar .icon,
 .layout-single-column .status__action-bar .icon,
@@ -3111,6 +3107,8 @@ body.embed .button.logo-button:hover,
 }
 
 /* Hide the original icon from behind */
+.layout-single-column .notification-reblog .notification__message > .icon path,
+.layout-single-column .notification-favourite .notification__message > .icon path,
 .layout-single-column .account__header__tabs__buttons .icon path,
 .layout-single-column .detailed-status__action-bar .icon path,
 .layout-single-column .notification__filter-bar .icon path,
@@ -3124,7 +3122,7 @@ body.embed .button.logo-button:hover,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
 .layout-single-column .account__header__tabs__buttons .icon.icon-tasks path,
 .layout-single-column .notification__filter-bar .icon.icon-tasks path {
-  display: inline-flex;
+  display: block;
 }
 
 /* Home icon */
@@ -3219,7 +3217,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* Replace notification retweet icon */
-.layout-single-column .notification__favourite-icon-wrapper .icon-retweet {
+.layout-single-column .notification-reblog .icon-retweet {
   background-image: var(--icon-boost-notification-wrapper);
 }
 
@@ -3933,7 +3931,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  * ---------------------------------------
  */
 
- @keyframes boost-animate {
+@keyframes boost-animate {
   100% {
     background-position: -7770px;
   }
@@ -4017,7 +4015,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-image: var(--icon-heart-column-link-active);
 }
 
-.layout-single-column .notification__favourite-icon-wrapper .icon-star {
+.layout-single-column .notification-favourite .icon-star {
   background-image: var(--icon-heart-notification);
 }
 
@@ -4037,7 +4035,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .icon-button.star-icon.active,
-.notification__favourite-icon-wrapper .star-icon {
+.notification-favourite .star-icon {
   color: var(--color-red);
 }
 
@@ -4149,7 +4147,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-image: var(--icon-star-column-link-active);
 }
 
-.layout-single-column .notification__favourite-icon-wrapper .icon-star {
+.layout-single-column .notification-favourite .icon-star {
   background-image: var(--icon-star-notification);
 }
 
@@ -4250,7 +4248,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-single-column .icon-button.star-icon.active,
-.layout-single-column .notification__favourite-icon-wrapper .star-icon {
+.layout-single-column .notification-favourite .star-icon {
   color: var(--color-yellow);
 }
 
