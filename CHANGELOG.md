@@ -5,10 +5,13 @@
 * Replace filter bar icons with new SVG versions
 * Remove deprecated Local icon
 * Remove deprecated Share icon
+* Remove deprecated follow/unfollow hashtag icon
 * Prepare for [changing the heart as default](https://github.com/mastodon/mastodon/pull/27385#issuecomment-1773117170)
 * Add icons for more ellipsis and close x
 * Add --size-icon variable for easier icon sizing
 * Change default fav action icon to heart
+* Advanced web view support for 4.3.0
+* Make boost animation smoother
 
 ### 1.8.0: 2023-10-29
 
