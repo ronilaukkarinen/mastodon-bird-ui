@@ -1,3 +1,8 @@
+### 1.8.2rc: 2023-10-29
+
+* Remove deprecated Local icon
+* Remove deprecated Share icon
+
 ### 1.8.1: 2023-10-29
 
 * Hotfix for regression with the home icon
