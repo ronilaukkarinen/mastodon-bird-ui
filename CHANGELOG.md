@@ -1,3 +1,7 @@
+### 1.8.1: 2023-10-29
+
+* Hotfix for regression with the home icon
+
 ### 1.8.0: 2023-10-29
 
 * Improve button border colors in ultra accessible theme
