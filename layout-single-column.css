@@ -2065,10 +2065,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-.layout-single-column .search .search__icon .icon-search {
-  content: '';
-}
-
 .layout-single-column .status__prepend .icon-retweet {
   background-image: var(--icon-boost-status-prepend);
 }

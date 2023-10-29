@@ -1108,7 +1108,7 @@ body.embed .status__content a,
 /* Light grey things */
 .layout-multiple-columns .navigation-bar,
 .layout-multiple-columns .navigation-bar strong {
-  color: var(--color-gainsboro);
+  color: var(--color-topaz);
 }
 
 /* CW button */
@@ -2032,10 +2032,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .notification.notification-reblog .status__action-bar,
 .layout-multiple-columns .notification.notification-favourite .status__action-bar {
   display: none;
-}
-
-.layout-multiple-columns .search .search__icon .icon-search {
-  content: '';
 }
 
 .layout-multiple-columns .status__prepend .icon-retweet {
