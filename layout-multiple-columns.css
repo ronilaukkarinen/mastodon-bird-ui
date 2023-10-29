@@ -2852,6 +2852,7 @@ body.embed .button.logo-button:hover,
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   height: 24px !important;
+  position: relative;
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   width: 30px !important;
@@ -3000,7 +3001,7 @@ body.embed .button.logo-button:hover,
 
 /* General for all column icons */
 /* stylelint-disable-next-line */
-.layout-multiple-columns .status__prepend .icon path,
+.layout-multiple-columns .status__prepend .icon.icon-retweet path,
 .layout-multiple-columns .notification-favourite .notification__message > .icon,
 .layout-multiple-columns .notification-reblog .notification__message > .icon,
 .layout-multiple-columns .account__header__tabs__buttons .icon,
@@ -3026,6 +3027,13 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .account__header__tabs__buttons .icon {
   background-position: center;
   background-size: var(--size-icon) var(--size-icon);
+}
+
+.layout-multiple-columns .status__prepend .icon.icon-at {
+  height: 18px;
+  position: relative;
+  top: 2px;
+  width: 18px;
 }
 
 /* Hide the original icon from behind */
@@ -3868,8 +3876,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* Detailed status offset for boost animation on mobile */
 @media (max-width: 890px) {
   /* stylelint-disable-next-line */
-  .layout-multiple-columns.no-reduce-motion .icon-button.active:focus .icon-retweet::before {
-    left: -90px;
+  .layout-multiple-columns.no-reduce-motion .icon-button.active:focus .icon-retweet {
+    /* stylelint-disable-next-line */
+    left: -89px !important;
   }
 }
 
@@ -4137,7 +4146,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-multiple-columns .detailed-status__action-bar button.icon-button.star-icon.deactivate:hover .icon-star,
 .layout-multiple-columns .status__action-bar button.icon-button.deactivate.star-icon:hover .icon-star,
-.layout-multiple-columns .detailed-status__action-bar .icon-butto.deactivate .icon-star,
+.layout-multiple-columns .detailed-status__action-bar .icon-button.deactivate .icon-star,
 .layout-multiple-columns .detailed-status button.icon-button.deactivate .icon-star,
 .layout-multiple-columns .status button.icon-button.deactivate .icon-star {
   background-image: var(--icon-star-detailed-status-action-bar-hover) !important;

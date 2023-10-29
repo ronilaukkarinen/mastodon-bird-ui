@@ -12,6 +12,7 @@
 * Change default fav action icon to heart
 * Advanced web view support for 4.3.0
 * Make boost animation smoother
+* Fix icon size for private mention
 
 ### 1.8.0: 2023-10-29
 
