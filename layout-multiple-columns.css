@@ -3031,7 +3031,8 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .detailed-status__action-bar .icon path,
 .layout-multiple-columns .notification__filter-bar .icon path,
 .layout-multiple-columns .status__action-bar path,
-.layout-multiple-columns .column-link .icon path {
+.layout-multiple-columns .column-link .icon path,
+.layout-multiple-columns .load-more path {
   display: none;
 }
 
