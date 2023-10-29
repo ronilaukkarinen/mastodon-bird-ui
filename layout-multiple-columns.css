@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.8.0rc4 */
+   1.8.0 */
 
 /* CSS variables */
 :root {
@@ -2558,6 +2558,7 @@ body.embed .button.logo-button,
 
 /* stylelint-disable-next-line */
 .layout-multiple-columns .account__header__tabs__buttons .icon-button {
+  align-items: center;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
@@ -2566,8 +2567,9 @@ body.embed .button.logo-button,
   justify-content: center;
 }
 
-.layout-multiple-columns .account__header__tabs__buttons .icon-button:not(.active) {
-  align-items: center;
+/* Exception for close icon that seem to align wrongly when active */
+.layout-multiple-columns .account__header__tabs__buttons .icon-button .fa.fa-close {
+  align-self: start;
 }
 
 body.embed .button.logo-button:hover,

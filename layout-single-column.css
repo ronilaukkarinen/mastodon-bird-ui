@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.8.0rc4 */
+   1.8.0 */
 
 /* CSS variables */
 :root {
@@ -2574,6 +2574,7 @@ body.embed .button.logo-button,
 
 /* stylelint-disable-next-line */
 .layout-single-column .account__header__tabs__buttons .icon-button {
+  align-items: center;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
@@ -2582,8 +2583,9 @@ body.embed .button.logo-button,
   justify-content: center;
 }
 
-.layout-single-column .account__header__tabs__buttons .icon-button:not(.active) {
-  align-items: center;
+/* Exception for close icon that seem to align wrongly when active */
+.layout-single-column .account__header__tabs__buttons .icon-button .fa.fa-close {
+  align-self: start;
 }
 
 body.embed .button.logo-button:hover,
@@ -3088,10 +3090,19 @@ body.embed .button.logo-button:hover,
   content: var(--icon-home-notification-active);
 }
 
-.layout-single-column .column-link .fa-home::before {
-  content: var(--icon-home);
+/* Replace the original icon (after 4.3.0) */
+.layout-single-column .column-link .icon-home path {
+  display: none;
+}
+
+.layout-single-column .column-link .icon-home {
+  background-image: var(--icon-home);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  display: block;
+  height: 26px;
   position: relative;
-  top: 1px;
+  width: 26px;
 }
 
 /* Federated icon */
