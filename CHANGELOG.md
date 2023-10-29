@@ -1,6 +1,11 @@
 ### 2.0.0rc: 2023-10-29
 
 * Prepare for 4.3.0 release with SVG icons
+* Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
+* Replace filter bar icons with new SVG versions
+* Remove deprecated Local icon
+* Remove deprecated Share icon
+* Prepare for [changing the heart as default](https://github.com/mastodon/mastodon/pull/27385#issuecomment-1773117170)
 
 ### 1.8.0: 2023-10-29
 
