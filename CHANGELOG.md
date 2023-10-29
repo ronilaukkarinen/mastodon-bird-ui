@@ -1,3 +1,7 @@
+### 2.0.0rc: 2023-10-29
+
+* Prepare for 4.3.0 release with SVG icons
+
 ### 1.8.0: 2023-10-29
 
 * Improve button border colors in ultra accessible theme
