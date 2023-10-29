@@ -2414,9 +2414,17 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 /* Replace verified__mark */
-.layout-single-column .account__details .verified-badge .verified-badge__mark::before,
+.layout-single-column .account__details .verified-badge .verified-badge__mark,
 .layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark {
-  content: var(--icon-verified-smaller);
+  background-image: var(--icon-verified-smaller);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+}
+
+.layout-single-column .account__details .verified-badge .verified-badge__mark path,
+.layout-single-column .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark path {
+  display: none;
 }
 
 .layout-single-column .account__details .verified-badge,
@@ -4275,7 +4283,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   .layout-single-column .detailed-status__action-bar .icon-button:hover .icon-star,
   .layout-single-column .detailed-status button.icon-button:hover .icon-star,
   .layout-single-column .status button.icon-button:hover .icon-star {
-    content: var(--icon-star-detailed-status-action-bar-active) !important;
+    background-image: var(--icon-star-detailed-status-action-bar-active) !important;
   }
 }
 

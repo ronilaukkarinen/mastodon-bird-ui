@@ -2383,9 +2383,17 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 /* Replace verified__mark */
-.layout-multiple-columns .account__details .verified-badge .verified-badge__mark::before,
+.layout-multiple-columns .account__details .verified-badge .verified-badge__mark,
 .layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark {
-  content: var(--icon-verified-smaller);
+  background-image: var(--icon-verified-smaller);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+}
+
+.layout-multiple-columns .account__details .verified-badge .verified-badge__mark path,
+.layout-multiple-columns .account__header__bar:has(.account__header__fields .verified) .account__header__fields .verified__mark path {
+  display: none;
 }
 
 .layout-multiple-columns .account__details .verified-badge,
