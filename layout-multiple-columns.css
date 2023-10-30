@@ -2152,15 +2152,18 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Search */
 .layout-multiple-columns .search .search__icon .icon-search {
-  background-color: var(--color-mud);
   background-image: var(--icon-search);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
   display: inline-block;
   height: 24px;
-  top: 10px;
+  top: 9px;
   width: 24px;
+}
+
+.layout-multiple-columns .search .search__icon .icon-search path {
+  display: none;
 }
 
 .layout-multiple-columns input.setting-text,
@@ -2639,7 +2642,7 @@ body.embed .button.logo-button:hover,
 }
 
 .layout-multiple-columns .search__icon .icon-times-circle {
-  top: 14px;
+  top: 9px;
 }
 
 .layout-multiple-columns .setting-text__toolbar {

@@ -13,6 +13,7 @@
 * Advanced web view support for 4.3.0
 * Make boost animation smoother
 * Fix icon size for private mention
+* Add search icon and fix alignments for search for 4.3.0
 
 ### 1.8.0: 2023-10-29
 
