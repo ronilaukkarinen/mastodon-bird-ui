@@ -2193,7 +2193,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 24px;
 }
 
-.layout-multiple-columns .search .search__icon .icon-search path {
+.layout-single-column .search .search__icon .icon-search path {
   display: none;
 }
 
