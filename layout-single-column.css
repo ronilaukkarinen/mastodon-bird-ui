@@ -3081,7 +3081,7 @@ body.embed .button.logo-button:hover,
 /* Set size for the status icons */
 .layout-single-column .detailed-status__action-bar .icon,
 .layout-single-column .status__action-bar .icon {
-  --size-icon: 18px;
+  --size-icon: 19px;
 }
 
 /* General for all column icons */

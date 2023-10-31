@@ -2999,7 +2999,7 @@ body.embed .button.logo-button:hover,
 /* Set size for the status icons */
 .layout-multiple-columns .detailed-status__action-bar .icon,
 .layout-multiple-columns .status__action-bar .icon {
-  --size-icon: 18px;
+  --size-icon: 19px;
 }
 
 /* General for all column icons */
