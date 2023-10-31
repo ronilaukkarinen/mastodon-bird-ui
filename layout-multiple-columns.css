@@ -3949,7 +3949,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-multiple-columns .status__action-bar .icon-button.star-icon::after {
-  left: -5px;
+  left: -3px;
 }
 
 /* Disable default Mastodon animation: spring-rotate-in 1s linear; */
