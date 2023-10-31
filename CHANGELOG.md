@@ -14,6 +14,7 @@
 * Make boost animation smoother
 * Fix icon size for private mention
 * Add search icon and fix alignments for search for 4.3.0
+* Make status icons the same size
 
 ### 1.8.0: 2023-10-29
 
