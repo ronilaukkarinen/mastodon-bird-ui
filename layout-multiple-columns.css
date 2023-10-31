@@ -3864,7 +3864,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* Offset in numbered item */
   .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet {
-    left: -88px;
+    left: -84px;
   }
 }
 
