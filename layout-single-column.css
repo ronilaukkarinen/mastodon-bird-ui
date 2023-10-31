@@ -2939,6 +2939,14 @@ body.embed .button.logo-button:hover,
   width: unset !important;
 }
 
+/* Fix reply button not starting from the beginning */
+.layout-single-column .status__action-bar .icon-button:nth-of-type(1) {
+  /* stylelint-disable-next-line */
+  min-width: auto !important;
+  /* stylelint-disable-next-line */
+  width: auto !important;
+}
+
 @media screen and (min-width: 890px) {
   /* Hide the space between Lists and the actual lists */
   .layout-single-column .list-panel > hr,
