@@ -3123,8 +3123,8 @@ body.embed .button.logo-button:hover,
 }
 
 /* stylelint-disable-next-line */
-.layout-single-column .icon-plus,
-.layout-single-column .icon-times,
+.layout-single-column .list-adder__lists .icon-plus,
+.layout-single-column .list-adder__lists .icon-times,
 .layout-single-column .detailed-status__action-bar .icon,
 .layout-single-column .status__action-bar .icon,
 .layout-single-column .notification__filter-bar .icon,
@@ -3147,8 +3147,8 @@ body.embed .button.logo-button:hover,
 }
 
 /* Hide the original icon from behind */
-.layout-single-column .icon-plus > path,
-.layout-single-column .icon-times > path,
+.layout-single-column .list-adder__lists .icon-plus > path,
+.layout-single-column .list-adder__lists .icon-times > path,
 .layout-single-column .list-adder__lists .list__display-name svg > path,
 .layout-single-column .status__prepend .icon.icon-retweet path,
 .layout-single-column .notification-reblog .notification__message > .icon path,
@@ -3187,21 +3187,21 @@ body.embed .button.logo-button:hover,
   background-image: var(--icon-home-notification-active);
 }
 
-.layout-single-column .icon-plus {
+.layout-single-column .list-adder__lists .icon-plus {
   --size-icon: 20px;
   background-image: var(--icon-plus-green);
 }
 
-.layout-single-column .icon-times {
+.layout-single-column .list-adder__lists .icon-times {
   --size-icon: 20px;
   background-image: var(--icon-cross-red);
 }
 
-.layout-single-column .icon-button:hover .icon-plus {
+.layout-single-column .list-adder__lists .icon-button:hover .icon-plus {
   background-image: var(--icon-cross-red);
 }
 
-.layout-single-column .icon-button:hover .icon-times {
+.layout-single-column .list-adder__lists .icon-button:hover .icon-times {
   background-image: var(--icon-plus-green);
 }
 

@@ -3021,8 +3021,8 @@ body.embed .button.logo-button:hover,
 }
 
 /* stylelint-disable-next-line */
-.layout-multiple-columns .icon-plus,
-.layout-multiple-columns .icon-times,
+.layout-multiple-columns .list-adder__lists .icon-plus,
+.layout-multiple-columns .list-adder__lists .icon-times,
 .layout-multiple-columns .detailed-status__action-bar .icon,
 .layout-multiple-columns .status__action-bar .icon,
 .layout-multiple-columns .notification__filter-bar .icon,
@@ -3045,8 +3045,8 @@ body.embed .button.logo-button:hover,
 }
 
 /* Hide the original icon from behind */
-.layout-multiple-columns .icon-plus > path,
-.layout-multiple-columns .icon-times > path,
+.layout-multiple-columns .list-adder__lists .icon-plus > path,
+.layout-multiple-columns .list-adder__lists .icon-times > path,
 .layout-multiple-columns .list-adder__lists .list__display-name svg > path,
 .layout-multiple-columns .status__prepend .icon.icon-retweet path,
 .layout-multiple-columns .notification-reblog .notification__message > .icon path,
@@ -3085,21 +3085,21 @@ body.embed .button.logo-button:hover,
   background-image: var(--icon-home-notification-active);
 }
 
-.layout-multiple-columns .icon-plus {
+.layout-multiple-columns .list-adder__lists .icon-plus {
   --size-icon: 20px;
   background-image: var(--icon-plus-green);
 }
 
-.layout-multiple-columns .icon-times {
+.layout-multiple-columns .list-adder__lists .icon-times {
   --size-icon: 20px;
   background-image: var(--icon-cross-red);
 }
 
-.layout-multiple-columns .icon-button:hover .icon-plus {
+.layout-multiple-columns .list-adder__lists .icon-button:hover .icon-plus {
   background-image: var(--icon-cross-red);
 }
 
-.layout-multiple-columns .icon-button:hover .icon-times {
+.layout-multiple-columns .list-adder__lists .icon-button:hover .icon-times {
   background-image: var(--icon-plus-green);
 }
 
