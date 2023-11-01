@@ -3004,6 +3004,7 @@ body.embed .button.logo-button:hover,
 
 /* General for all column icons */
 /* stylelint-disable-next-line */
+.layout-multiple-columns .list-adder__lists .list__display-name svg > path,
 .layout-multiple-columns .status__prepend .icon.icon-retweet path,
 .layout-multiple-columns .notification-favourite .notification__message > .icon,
 .layout-multiple-columns .notification-reblog .notification__message > .icon,

@@ -3143,6 +3143,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* Hide the original icon from behind */
+.layout-single-column .list-adder__lists .list__display-name svg > path,
 .layout-single-column .status__prepend .icon.icon-retweet path,
 .layout-single-column .notification-reblog .notification__message > .icon path,
 .layout-single-column .notification-favourite .notification__message > .icon path,
