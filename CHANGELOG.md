@@ -1,4 +1,4 @@
-### 2.0.0rc: 2023-10-31
+### 2.0.0rc: 2023-11-01
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -15,6 +15,7 @@
 * Fix icon size for private mention
 * Add search icon and fix alignments for search for 4.3.0
 * Make status icons the same size
+* Better accessibility outlines for column links in single column mode
 
 ### 1.8.0: 2023-10-29
 
