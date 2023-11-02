@@ -3202,11 +3202,11 @@ body.embed .button.logo-button:hover,
 }
 
 .layout-single-column .list-adder__lists .icon-button:hover .icon-plus {
-  background-image: var(--icon-cross-red);
+  background-image: var(--icon-plus-green);
 }
 
 .layout-single-column .list-adder__lists .icon-button:hover .icon-times {
-  background-image: var(--icon-plus-green);
+  background-image: var(--icon-cross-red);
 }
 
 /* Notifications icon */
