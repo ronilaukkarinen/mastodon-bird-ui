@@ -3993,7 +3993,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     pointer-events: none;
     position: absolute;
     top: -38.4px;
-    transform: scale(0.85);
+    transform: scale(0.82) translateX(1px);
     width: 200px;
   }
 
@@ -4032,7 +4032,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   /* stylelint-disable-next-line */
   .layout-single-column.no-reduce-motion .icon-button.active:focus .icon-retweet {
     /* stylelint-disable-next-line */
-    left: -89px !important;
+    transform: scale(.82) translateY(1px) translateX(-2px) !important;
   }
 }
 
