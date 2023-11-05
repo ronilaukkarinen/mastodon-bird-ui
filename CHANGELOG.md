@@ -16,6 +16,7 @@
 * Add search icon and fix alignments for search for 4.3.0
 * Make status icons the same size
 * Better accessibility outlines for column links in single column mode
+* Fix a corner case bug where advanced UI in mobile mode has wrong order in column links
 
 ### 1.8.0: 2023-10-29
 
