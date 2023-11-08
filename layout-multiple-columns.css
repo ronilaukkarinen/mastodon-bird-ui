@@ -3066,6 +3066,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* ...except for these icons, we kinda like them as they are */
+.layout-multiple-columns .account__header__tabs__buttons .icon.icon-users path,
 .layout-multiple-columns .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-multiple-columns .notification__filter-bar .icon.icon-user-plus path,
 .layout-multiple-columns .account__header__tabs__buttons .icon.icon-tasks path,
