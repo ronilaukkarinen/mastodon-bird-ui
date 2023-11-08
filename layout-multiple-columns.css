@@ -3110,10 +3110,12 @@ body.embed .button.logo-button:hover,
 }
 
 /* Notifications icon */
+.layout-multiple-columns .icon.icon-bell-o,
 .layout-multiple-columns .column-link .icon-bell {
   background-image: var(--icon-bell);
 }
 
+.layout-multiple-columns .active .icon.icon-bell,
 .layout-multiple-columns .column-link.active .icon-bell {
   background-image: var(--icon-bell-active);
 }

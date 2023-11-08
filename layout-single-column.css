@@ -3212,10 +3212,12 @@ body.embed .button.logo-button:hover,
 }
 
 /* Notifications icon */
+.layout-single-column .icon.icon-bell-o,
 .layout-single-column .column-link .icon-bell {
   background-image: var(--icon-bell);
 }
 
+.layout-single-column .active .icon.icon-bell,
 .layout-single-column .column-link.active .icon-bell {
   background-image: var(--icon-bell-active);
 }
