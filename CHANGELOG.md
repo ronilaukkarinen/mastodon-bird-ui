@@ -1,3 +1,8 @@
+### 1.8.3: 2023-11-12
+
+* Add profile link icons for Nostr, Bluesky and Threads
+* Truncate too long links in the profile, like Nostr
+
 ### 1.8.2: 2023-10-29
 
 * Remove deprecated Local icon
