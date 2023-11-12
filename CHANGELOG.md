@@ -18,6 +18,7 @@
 * Better accessibility outlines for column links in single column mode
 * Fix a corner case bug where advanced UI in mobile mode has wrong order in column links
 * Add profile link icons for Nostr, Bluesky and Threads
+* Truncate too long links in the profile, like Nostr
 
 ### 1.8.0: 2023-10-29
 
