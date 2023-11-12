@@ -2280,9 +2280,9 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 /* Truncate too long links in the profile, like Nostr */
-.layout-single-column .account__header__bio .account__header__fields a span {
+.layout-single-column .account__header__bio .account__header__fields a {
   display: block;
-  max-width: 200px;
+  max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
