@@ -1,4 +1,4 @@
-### 2.0.0rc: 2023-11-12
+### 2.0.0rc: 2023-11-26
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -19,6 +19,8 @@
 * Fix a corner case bug where advanced UI in mobile mode has wrong order in column links
 * Add profile link icons for Nostr, Bluesky and Threads
 * Truncate too long links in the profile, like Nostr
+* Remove font-size definitions from icon fonts that are no longer in use
+* Add proportions for the new copy icon
 
 ### 1.8.0: 2023-10-29
 

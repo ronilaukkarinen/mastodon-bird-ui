@@ -2645,7 +2645,17 @@ body.embed .button.logo-button,
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   display: inline-flex;
+  height: 36px;
   justify-content: center;
+  padding: 0;
+  width: 36px;
+}
+
+/* Copy-icon size in profile */
+.layout-single-column .account__header__tabs__buttons .icon-button.copied svg,
+.layout-single-column .account__header__tabs__buttons .icon-button.copyable svg {
+  height: 18px;
+  width: 18px;
 }
 
 body.embed .button.logo-button:hover,
@@ -2653,10 +2663,6 @@ body.embed .button.logo-button:hover,
 .layout-single-column .explore__suggestions .account-card__actions__button button:hover,
 .layout-single-column .account__header__tabs__buttons .icon-button.active {
   color: var(--color-light-text);
-}
-
-.layout-single-column .account__header__tabs__buttons .icon-button .icon {
-  font-size: 17px;
 }
 
 .layout-single-column .account__header__tabs__buttons .icon-button .icon-bell-o,
@@ -3208,6 +3214,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* ...except for these icons, we kinda like them as they are */
+.layout-single-column .icon.icon-undefined path,
 .layout-single-column .icon.icon-users path,
 .layout-single-column .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
