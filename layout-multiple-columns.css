@@ -2625,8 +2625,7 @@ body.embed .button.logo-button,
 }
 
 /* Copy-icon size in profile */
-.layout-multiple-columns .account__header__tabs__buttons .icon-button.copied svg,
-.layout-multiple-columns .account__header__tabs__buttons .icon-button.copyable svg {
+.layout-multiple-columns .account__header__tabs__buttons .icon-button svg {
   height: 18px;
   width: 18px;
 }
