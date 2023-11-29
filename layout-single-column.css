@@ -1585,31 +1585,32 @@ body.embed > .activity-stream {
 }
 
 /* Textual labels for detailed metrics */
-body.embed .detailed-status__link > .icon-reply + span::after,
-.layout-single-column .detailed-status__link > .icon-reply + span::after {
+body.embed .detailed-status__link > .fa-reply + span::after,
+.layout-single-column .detailed-status__link > .fa-reply + span::after {
   color: var(--color-dim);
   content: 'Replies';
   font-weight: var(--font-weight-semibold);
 }
 
-body.embed .detailed-status__link > .icon-retweet + span::after,
-.layout-single-column .detailed-status__link > .icon-retweet + span::after {
+body.embed .detailed-status__link > .fa-retweet + span::after,
+.layout-single-column .detailed-status__link > .fa-retweet + span::after {
   color: var(--color-dim);
   content: 'Boosts';
   font-weight: var(--font-weight-semibold);
 }
 
-body.embed .detailed-status__link > .icon-star + span::after,
-.layout-single-column .detailed-status__link > .icon-star + span::after {
+body.embed .detailed-status__link > .fa-star + span::after,
+.layout-single-column .detailed-status__link > .fa-star + span::after {
   color: var(--color-dim);
   content: 'Favourites';
   font-weight: var(--font-weight-semibold);
 }
 
-body.embed .detailed-status__meta .detailed-status__link .icon-star,
-body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
-.layout-single-column .detailed-status__meta .detailed-status__link .icon-star,
-.layout-single-column .detailed-status__meta .detailed-status__link .icon-retweet {
+body.embed .detailed-status__meta .detailed-status__link .fa-reply,
+body.embed .detailed-status__meta .detailed-status__link .fa-star,
+body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
+.layout-single-column .detailed-status__meta .detailed-status__link .fa-star,
+.layout-single-column .detailed-status__meta .detailed-status__link .fa-retweet {
   display: none;
 }
 
