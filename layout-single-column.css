@@ -1535,6 +1535,12 @@ body.embed .detailed-status__display-avatar > img,
   line-height: 1.4;
 }
 
+/* Embeds */
+body.embed .detailed-status__link {
+  gap: 0;
+  margin-left: 4px;
+}
+
 body.embed .detailed-status__meta,
 .layout-single-column .detailed-status__meta {
   color: var(--color-dim);
