@@ -1562,6 +1562,11 @@ body.embed .detailed-status__favorites {
   font-weight: var(--font-weight-bold);
 }
 
+/* Fix alignment */
+.layout-multiple-columns .detailed-status__link {
+  top: 1px;
+}
+
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .icon-reply + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-reply + span::after {

@@ -1590,6 +1590,11 @@ body.embed > .activity-stream {
   overflow: hidden;
 }
 
+/* Fix alignment */
+.layout-single-column .detailed-status__link {
+  top: 1px;
+}
+
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .fa-reply + span::after,
 .layout-single-column .detailed-status__link > .icon-reply + span::after {

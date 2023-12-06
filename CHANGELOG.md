@@ -21,6 +21,7 @@
 * Truncate too long links in the profile, like Nostr
 * Remove font-size definitions from icon fonts that are no longer in use
 * Add proportions for the new copy icon
+* Fix alignment for textual label links
 
 ### 1.8.0: 2023-10-29
 
