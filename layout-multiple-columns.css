@@ -1564,7 +1564,7 @@ body.embed .detailed-status__favorites {
 
 /* Fix alignment */
 .layout-multiple-columns .detailed-status__link {
-  top: 1px;
+  top: 0;
 }
 
 /* Textual labels for detailed metrics */

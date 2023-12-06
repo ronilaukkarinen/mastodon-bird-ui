@@ -1592,7 +1592,7 @@ body.embed > .activity-stream {
 
 /* Fix alignment */
 .layout-single-column .detailed-status__link {
-  top: 1px;
+  top: 0;
 }
 
 /* Textual labels for detailed metrics */
