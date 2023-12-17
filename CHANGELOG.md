@@ -1,4 +1,4 @@
-### 2.0.0rc: 2023-11-26
+### 2.0.0rc: 2023-12-17
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -22,6 +22,7 @@
 * Remove font-size definitions from icon fonts that are no longer in use
 * Add proportions for the new copy icon
 * Fix alignment for textual label links
+* Add styles for the new /start onboarding on 4.3.0
 
 ### 1.8.0: 2023-10-29
 

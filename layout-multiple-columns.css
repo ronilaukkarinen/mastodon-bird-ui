@@ -3913,6 +3913,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-dark);
 }
 
+/* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
+.layout-multiple-columns .onboarding__steps__item,
+.layout-multiple-columns .onboarding__link {
+  background-color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.layout-multiple-columns .onboarding__steps__item__progress > svg > path {
+  fill: var(--color-dark);
+}
+
+.layout-multiple-columns .onboarding__links > * {
+  margin-bottom: 10px;
+}
+
 /*
  * Boost animation micro-interaction start
  * ---------------------------------------
