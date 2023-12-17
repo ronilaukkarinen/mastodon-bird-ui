@@ -409,7 +409,7 @@ Not at the moment, for following reasons:
 
 ### I like it so much, why it can't be the default Mastodon UI?
 
-As I have explained [here](https://mementomori.social/@rolle/110775398758308450) and on other threads, I do not want it to be the default UI. There are numerous reasons for this.
+As I have explained [here](https://mementomori.social/@rolle/110775398758308450) and in other threads, I do not want it to be the default UI. There are numerous reasons for this.
 
 1. I would not be responsible for it. I do this as a side hobby and for fun, it would get too professional and time consuming for me to be responsible "alone" for the UI infrastructure of the official Mastodon core. It would need some arrangement so it would not bring extra pressure to me personally. More maintainers, etc. I have a time consuming day job as an entrepreneur and UI in this scale needs more housekeeping than I can provide.
 2. The Mastodon core CSS/SCSS needs to be rewritten. It's not practical to have two code bases, I think Mastodon Bird UI cannot be just "added" to the core, it's CSS-only and does not follow the current Mastodon SCSS framework. At very least the SCSS variables should be replaced with CSS variables. It's quite a lot of work to rewrite a complete UI codebase.
