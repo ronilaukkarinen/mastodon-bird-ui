@@ -23,6 +23,7 @@
 * Add proportions for the new copy icon
 * Fix alignment for textual label links
 * Add styles for the new /start onboarding on 4.3.0
+* Improve modal icon size and accessibility
 
 ### 1.8.0: 2023-10-29
 
