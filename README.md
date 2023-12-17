@@ -41,6 +41,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     11. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
     12. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
     13. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
+    14. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
@@ -398,13 +399,22 @@ You can swipe the bottom bar. I know this is not the most obvious feature.
 
 See issues [Many users don't recognize that the bottom menu is scrollable #26](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/26) and [Swiping bottom bar triggers multi-tasking on some phones #33](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/33).
 
-# Automatic dark/light mode possible?
+### Automatic dark/light mode possible?
 
 Not at the moment, for following reasons:
 
 1. Original Mastodon themes were built using CSS classes in body level, Mastodon Bird UI merely follows this logic.
 2. `@media (prefers-color-scheme: dark/light)` does not support `@import` in SCSS inside them, so it's not currently possible to implement new themes with one file. I'm not going to create separate files for dark and light themes, because it would be too much work to maintain.
 3. Many choose to use either dark or light theme.
+
+### I like it so much, why it can't be the default Mastodon UI?
+
+As I have explained [here](https://mementomori.social/@rolle/110775398758308450) and on other threads, I do not want it to be the default UI. There are numerous reasons for this.
+
+1. I would not be responsible for it. I do this as a side hobby and for fun, it would get too professional and time consuming for me to be responsible "alone" for the UI infrastructure of the official Mastodon core. It would need some arrangement so it would not bring extra pressure to me personally. More maintainers, etc. I have a time consuming day job as an entrepreneur and UI in this scale needs more housekeeping than I can provide.
+2. The Mastodon core CSS/SCSS needs to be rewritten. It's not practical to have two code bases, I think Mastodon Bird UI cannot be just "added" to the core, it's CSS-only and does not follow the current Mastodon SCSS framework. At very least the SCSS variables should be replaced with CSS variables. It's quite a lot of work to rewrite a complete UI codebase.
+3. Hacky micro animations and SVG-CSS icons should be replaced with real things. Right now it's like a stamp on a letter. We need the new letter for this to be official.
+4. The idea and looks behind Mastodon Bird UI is hugely inspired by Twitter UI. If the popular attitude is that Mastodon should not resemble Twitter in any way, that needs to change first.
 
 ## Goals
 
