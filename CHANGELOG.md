@@ -26,6 +26,21 @@
 * Improve modal icon size and accessibility
 * Profile lock icon alignment fix, show it on the same level
 
+### 1.8.3: 2023-11-12
+
+* Add profile link icons for Nostr, Bluesky and Threads
+* Truncate too long links in the profile, like Nostr
+
+### 1.8.2: 2023-10-29
+
+* Remove deprecated Local icon
+* Remove deprecated Share icon
+* Add an icon for Preferences
+
+### 1.8.1: 2023-10-29
+
+* Hotfix for regression with the home icon
+
 ### 1.8.0: 2023-10-29
 
 * Improve button border colors in ultra accessible theme
