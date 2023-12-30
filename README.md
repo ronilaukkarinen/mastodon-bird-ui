@@ -145,6 +145,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [buddyverse.xyz](https://buddyverse.xyz)                                 | Site theme                | Mastodon Bird UI | 6+             | Yes         |
 | [mastodon.bsd.cafe](https://mastodon.bsd.cafe/)                          | Site theme                | Mastodon Bird UI | 70+            | Yes         |
 | [jkpg.rocks](https://jkpg.rocks/)                                        | Site theme                | Mastodon Bird UI | 2+             | Yes         |
+| [convo.casa](https://convo.casa)                                         | Site theme                | Mastodon Bird UI | 5000+          | No          |
 
 ## Installation for Mastodon instance admins
 
