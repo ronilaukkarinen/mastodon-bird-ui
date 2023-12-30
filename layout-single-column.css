@@ -1599,6 +1599,13 @@ body.embed > .activity-stream {
   top: 0;
 }
 
+/* Profile lock icon alignment fix */
+.layout-single-column .account__header__tabs__name h1 small {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .fa-reply + span::after,
 .layout-single-column .detailed-status__link > .icon-reply + span::after {

@@ -1571,6 +1571,13 @@ body.embed .detailed-status__favorites {
   top: 0;
 }
 
+/* Profile lock icon alignment fix */
+.layout-multiple-columns .account__header__tabs__name h1 small {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .icon-reply + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-reply + span::after {
