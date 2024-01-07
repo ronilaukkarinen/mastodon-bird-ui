@@ -1549,6 +1549,7 @@ body.embed .detailed-status,
   width: 100% !important;
 }
 
+.layout-single-column .media-gallery__gifv,
 .layout-multiple-columns .detailed-status .audio-player,
 .layout-multiple-columns .detailed-status .media-gallery,
 .layout-multiple-columns .detailed-status .media-gallery__gifv,

@@ -1558,6 +1558,7 @@ body.embed .detailed-status__display-avatar > img,
   width: 100% !important;
 }
 
+.layout-single-column .media-gallery__gifv,
 .layout-single-column .detailed-status .audio-player,
 .layout-single-column .detailed-status .media-gallery,
 .layout-single-column .detailed-status .media-gallery__gifv,
