@@ -1539,11 +1539,21 @@ body.embed .detailed-status__display-avatar > img,
 }
 
 /* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+body.embed .media-gallery__item.standalone img,
+body.embed .video-player .media-gallery__preview,
 .layout-single-column .media-gallery__item.standalone img,
 .layout-single-column .video-player .media-gallery__preview {
   object-fit: contain;
 }
 
+body.embed .status .audio-player,
+body.embed .status .media-gallery,
+body.embed .status .video-player,
+body.embed .audio-player,
+body.embed .media-gallery,
+body.embed .media-gallery__gifv,
+body.embed .media-gallery__preview,
+body.embed .video-player,
 .layout-single-column .status .audio-player,
 .layout-single-column .status .media-gallery,
 .layout-single-column .status .video-player,
@@ -1558,6 +1568,7 @@ body.embed .detailed-status__display-avatar > img,
   width: unset !important;
 }
 
+body.embed .spoiler-button + .media-gallery__item > .media-gallery__preview,
 .layout-single-column .spoiler-button + .media-gallery__item > .media-gallery__preview {
   /* stylelint-disable-next-line */
   margin-left: unset !important;
@@ -1567,6 +1578,12 @@ body.embed .detailed-status__display-avatar > img,
   width: 100% !important;
 }
 
+body.embed .media-gallery__gifv,
+body.embed .detailed-status .audio-player,
+body.embed .detailed-status .media-gallery,
+body.embed .detailed-status .media-gallery__gifv,
+body.embed .detailed-status .media-gallery__preview,
+body.embed .detailed-status .video-player,
 .layout-single-column .media-gallery__gifv,
 .layout-single-column .detailed-status .audio-player,
 .layout-single-column .detailed-status .media-gallery,
