@@ -26,6 +26,8 @@
 * Improve modal icon size and accessibility
 * Profile lock icon alignment fix, show it on the same level
 * Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
+* Fix picture in picture footer visibility
+* Fix picture in picture media border radius and margin
 
 ### 1.8.3: 2023-11-12
 

@@ -489,8 +489,17 @@ body.layout-multiple-columns {
 }
 
 /* Hide footer buttons in modals */
-.layout-multiple-columns .media-modal__overlay .picture-in-picture__footer {
+.layout-multiple-columns .picture-in-picture .picture-in-picture__footer {
   display: none;
+}
+
+/* Picture in picture fixes */
+.layout-multiple-columns .picture-in-picture .audio-player,
+.layout-multiple-columns .picture-in-picture .video-player {
+  /* stylelint-disable-next-line */
+  border-radius: 0 !important;
+  /* stylelint-disable-next-line */
+  margin-left: 0 !important;
 }
 
 /* Report modal */
