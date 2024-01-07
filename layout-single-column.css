@@ -1608,6 +1608,7 @@ body.embed .detailed-status .video-player,
 body.embed .detailed-status__link {
   gap: 0;
   margin-left: 4px;
+  top: 0;
 }
 
 body.embed .detailed-status__meta,
