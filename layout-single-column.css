@@ -1529,6 +1529,44 @@ body.embed .detailed-status__display-avatar > img,
   aspect-ratio: unset !important;
 }
 
+/* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+.layout-single-column .media-gallery__item.standalone img,
+.layout-single-column .video-player .media-gallery__preview {
+  object-fit: contain;
+}
+
+.layout-single-column .status .audio-player,
+.layout-single-column .status .media-gallery,
+.layout-single-column .status .video-player,
+.layout-single-column .audio-player,
+.layout-single-column .media-gallery,
+.layout-single-column .media-gallery__gifv,
+.layout-single-column .media-gallery__preview,
+.layout-single-column .video-player {
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+  max-height: 430px;
+  /* stylelint-disable-next-line */
+  width: unset !important;
+}
+
+.layout-single-column .spoiler-button + .media-gallery__item > .media-gallery__preview {
+  /* stylelint-disable-next-line */
+  margin-left: unset !important;
+  /* stylelint-disable-next-line */
+  max-height: unset !important;
+  /* stylelint-disable-next-line */
+  width: 100% !important;
+}
+
+.layout-single-column .detailed-status .audio-player,
+.layout-single-column .detailed-status .media-gallery,
+.layout-single-column .detailed-status .media-gallery__gifv,
+.layout-single-column .detailed-status .media-gallery__preview,
+.layout-single-column .detailed-status .video-player {
+  margin-left: 0;
+}
+
+/* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
 .layout-single-column .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
