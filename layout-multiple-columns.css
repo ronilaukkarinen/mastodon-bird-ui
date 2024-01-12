@@ -1567,6 +1567,28 @@ body.embed .detailed-status,
   margin-left: 0;
 }
 
+.layout-single-column .media-gallery__preview {
+  /* stylelint-disable-next-line */
+  margin-left: 0 !important;
+  /* stylelint-disable-next-line */
+  width: 100% !important;
+}
+
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd),
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
+.layout-single-column .media-gallery__preview:nth-of-type(odd),
+ {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(even),
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(even) > a,
+.layout-single-column .media-gallery__preview:nth-of-type(even) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
 /* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
 .layout-multiple-columns .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
