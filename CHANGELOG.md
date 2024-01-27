@@ -1,4 +1,4 @@
-### 2.0.0rc3: 2024-01-07
+### 2.0.0rc4: 2024-01-27
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -28,6 +28,7 @@
 * Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
 * Fix picture in picture footer visibility
 * Fix picture in picture media border radius and margin
+* New compose form styles for 4.3.0 (2024-01-27)
 
 ### 1.8.3: 2023-11-12
 

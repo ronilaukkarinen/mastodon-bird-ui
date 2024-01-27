@@ -2945,11 +2945,45 @@ body.embed .button.logo-button:hover,
 }
 
 /* Compose form */
+.layout-single-column .compose-panel .compose-form__highlightable,
 .layout-single-column .compose-panel .compose-form {
   background-color: transparent;
+  border: 0;
   margin-bottom: 0;
   position: relative;
   z-index: 4;
+}
+
+/* New compose form buttons from 4.3.0-alpha 2024-01-27 */
+.layout-single-column .compose-form__dropdowns {
+  gap: 10px;
+}
+
+.layout-single-column .compose-form__dropdowns .dropdown-button.active,
+.layout-single-column .compose-form__dropdowns .dropdown-button {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  padding: 0;
+}
+
+.layout-single-column .compose-form__dropdowns .dropdown-button.active,
+.layout-single-column .compose-form__dropdowns .dropdown-button:hover,
+.layout-single-column .compose-form__dropdowns .dropdown-button:focus {
+  color: var(--color-accent);
+}
+
+.layout-single-column .compose-form__submit {
+  flex: unset;
+}
+
+.layout-single-column .compose-form__actions {
+  justify-content: space-between;
+}
+
+.layout-single-column .compose-form__actions .icon-button.active {
+  background-color: transparent;
+  color: var(--color-accent);
 }
 
 /* Footer items */
@@ -2958,6 +2992,7 @@ body.embed .button.logo-button:hover,
   z-index: 5;
 }
 
+.layout-single-column .compose-form__highlightable,
 .layout-single-column .compose-panel .compose-form,
 .layout-single-column .compose-panel,
 .layout-single-column .compose-form__autosuggest-wrapper {
@@ -2966,6 +3001,7 @@ body.embed .button.logo-button:hover,
 
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
 @media (min-width: 889px) {
+  .layout-single-column .compose-form__highlightable .autosuggest-textarea__textarea,
   .layout-single-column .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 20vh !important;  /* stylelint-disable-next-line */
@@ -2975,6 +3011,8 @@ body.embed .button.logo-button:hover,
 
   /* Add slight background color for the compose form */
   /* stylelint-disable-next-line no-duplicate-selectors */
+  .layout-single-column .compose-panel .compose-form__highlightable,
+  .layout-single-column .compose-form__highlightable .compose-form__buttons-wrapper,
   .layout-single-column .compose-form .compose-form__autosuggest-wrapper,
   .layout-single-column .compose-form .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form);
@@ -2984,13 +3022,16 @@ body.embed .button.logo-button:hover,
   }
 
   /* Smooth color transition on focus */
+  .layout-single-column .compose-panel .compose-form__highlightable:focus-within,
   .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+  .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
+  .layout-single-column .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form-focus);
     border-color: var(--color-bg-compose-form-focus);
   }
 
   /* Fixes bottom row padding when there's a background */
+  .layout-single-column .compose-form__highlightable .compose-form__buttons-wrapper,
   .layout-single-column .compose-form .compose-form__buttons-wrapper {
     padding: calc(var(--gap-default) / 2);
   }
@@ -2999,14 +3040,16 @@ body.embed .button.logo-button:hover,
     padding-top: 10px;
   }
 
+  .layout-single-column .compose-form__highlightable .emoji-picker-dropdown,
   .layout-single-column .compose-form .emoji-picker-dropdown {
-    inset-inline-end: 3px;
+    inset-inline-end: 5px;
     position: absolute;
-    top: 3px;
+    top: 5px;
   }
 }
 
 @media (min-width: 889px) and (max-height: 1000px) {
+  .layout-single-column .compose-form__highlightable .autosuggest-textarea__textarea,
   .layout-single-column .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 10vh !important;
