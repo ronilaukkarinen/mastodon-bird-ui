@@ -2928,6 +2928,11 @@ body.embed .button.logo-button:hover,
   overflow: visible;
 }
 
+.layout-multiple-columns .compose-form__footer {
+  gap: 4px;
+  padding-bottom: 6px;
+}
+
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
 @media (min-width: 889px) {
   .layout-multiple-columns .compose-form__highlightable .autosuggest-textarea__textarea,

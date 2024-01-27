@@ -2999,6 +2999,11 @@ body.embed .button.logo-button:hover,
   overflow: visible;
 }
 
+.layout-single-column .compose-form__footer {
+  gap: 4px;
+  padding-bottom: 6px;
+}
+
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
 @media (min-width: 889px) {
   .layout-single-column .compose-form__highlightable .autosuggest-textarea__textarea,
@@ -3011,7 +3016,7 @@ body.embed .button.logo-button:hover,
 
   /* Add slight background color for the compose form */
   /* stylelint-disable-next-line no-duplicate-selectors */
-  .layout-single-column .compose-form__highlightable,
+  .layout-single-column .compose-panel .compose-form__highlightable,
   .layout-single-column .compose-form__highlightable .compose-form__buttons-wrapper,
   .layout-single-column .compose-form .compose-form__autosuggest-wrapper,
   .layout-single-column .compose-form .compose-form__buttons-wrapper {
@@ -3022,7 +3027,7 @@ body.embed .button.logo-button:hover,
   }
 
   /* Smooth color transition on focus */
-  .layout-single-column .compose-form__highlightable:focus-within,
+  .layout-single-column .compose-panel .compose-form__highlightable:focus-within,
   .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
   .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
   .layout-single-column .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
