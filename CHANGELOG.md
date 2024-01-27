@@ -29,6 +29,7 @@
 * Fix picture in picture footer visibility
 * Fix picture in picture media border radius and margin
 * New compose form styles for 4.3.0 (2024-01-27)
+* New search input styles for 4.3.0 (2024-01-27)
 
 ### 1.8.3: 2023-11-12
 

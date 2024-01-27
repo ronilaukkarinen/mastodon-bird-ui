@@ -1558,7 +1558,7 @@ body.embed .detailed-status,
   width: 100% !important;
 }
 
-.layout-single-column .media-gallery__gifv,
+.layout-multiple-columns .media-gallery__gifv,
 .layout-multiple-columns .detailed-status .audio-player,
 .layout-multiple-columns .detailed-status .media-gallery,
 .layout-multiple-columns .detailed-status .media-gallery__gifv,
@@ -1567,24 +1567,24 @@ body.embed .detailed-status,
   margin-left: 0;
 }
 
-.layout-single-column .media-gallery__preview {
+.layout-multiple-columns .media-gallery__preview {
   /* stylelint-disable-next-line */
   margin-left: 0 !important;
   /* stylelint-disable-next-line */
   width: 100% !important;
 }
 
-.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd),
-.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
-.layout-single-column .media-gallery__preview:nth-of-type(odd),
+.layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(odd),
+.layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
+.layout-multiple-columns .media-gallery__preview:nth-of-type(odd),
  {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(even),
-.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(even) > a,
-.layout-single-column .media-gallery__preview:nth-of-type(even) {
+.layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(even),
+.layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(even) > a,
+.layout-multiple-columns .media-gallery__preview:nth-of-type(even) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -2264,6 +2264,8 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-size: 20px;
   display: inline-block;
   height: 24px;
+  inset-inline-start: unset;
+  right: 14px;
   top: 9px;
   width: 24px;
 }
@@ -2866,11 +2868,45 @@ body.embed .button.logo-button:hover,
 }
 
 /* Compose form */
+.layout-multiple-columns .compose-panel .compose-form__highlightable,
 .layout-multiple-columns .compose-panel .compose-form {
   background-color: transparent;
+  border: 0;
   margin-bottom: 0;
   position: relative;
   z-index: 4;
+}
+
+/* New compose form buttons from 4.3.0-alpha 2024-01-27 */
+.layout-multiple-columns .compose-form__dropdowns {
+  gap: 10px;
+}
+
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.active,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  padding: 0;
+}
+
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.active,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button:hover,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button:focus {
+  color: var(--color-accent);
+}
+
+.layout-multiple-columns .compose-form__submit {
+  flex: unset;
+}
+
+.layout-multiple-columns .compose-form__actions {
+  justify-content: space-between;
+}
+
+.layout-multiple-columns .compose-form__actions .icon-button.active {
+  background-color: transparent;
+  color: var(--color-accent);
 }
 
 /* Footer items */
@@ -2885,8 +2921,16 @@ body.embed .button.logo-button:hover,
   overflow: visible;
 }
 
+.layout-multiple-columns .compose-form__highlightable,
+.layout-multiple-columns .compose-panel .compose-form,
+.layout-multiple-columns .compose-panel,
+.layout-multiple-columns .compose-form__autosuggest-wrapper {
+  overflow: visible;
+}
+
 /* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
 @media (min-width: 889px) {
+  .layout-multiple-columns .compose-form__highlightable .autosuggest-textarea__textarea,
   .layout-multiple-columns .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 20vh !important;  /* stylelint-disable-next-line */
@@ -2895,6 +2939,9 @@ body.embed .button.logo-button:hover,
   }
 
   /* Add slight background color for the compose form */
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  .layout-multiple-columns .compose-form__highlightable,
+  .layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
   .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
   .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form);
@@ -2904,13 +2951,16 @@ body.embed .button.logo-button:hover,
   }
 
   /* Smooth color transition on focus */
+  .layout-multiple-columns .compose-form__highlightable:focus-within,
   .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
+  .layout-multiple-columns .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
     background-color: var(--color-bg-compose-form-focus);
     border-color: var(--color-bg-compose-form-focus);
   }
 
   /* Fixes bottom row padding when there's a background */
+  .layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
   .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
     padding: calc(var(--gap-default) / 2);
   }
@@ -2919,14 +2969,16 @@ body.embed .button.logo-button:hover,
     padding-top: 10px;
   }
 
+  .layout-multiple-columns .compose-form__highlightable .emoji-picker-dropdown,
   .layout-multiple-columns .compose-form .emoji-picker-dropdown {
-    inset-inline-end: 3px;
+    inset-inline-end: 8px;
     position: absolute;
-    top: 3px;
+    top: 8px;
   }
 }
 
 @media (min-width: 889px) and (max-height: 1000px) {
+  .layout-multiple-columns .compose-form__highlightable .autosuggest-textarea__textarea,
   .layout-multiple-columns .compose-form .autosuggest-textarea__textarea {
     /* stylelint-disable-next-line */
     max-height: 10vh !important;
