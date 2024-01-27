@@ -1,4 +1,4 @@
-### 2.0.0rc5: 2024-01-27
+### 2.0.0rc6: 2024-01-27
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -31,6 +31,7 @@
 * New compose form styles for 4.3.0 (2024-01-27)
 * New search input styles for 4.3.0 (2024-01-27)
 * Add profile link icons for Facebook and Bandcamp
+* Fix a regression with reply-indicator, remove style no longer needed in 4.3.0 (2024-01-27)
 
 ### 1.8.3: 2023-11-12
 

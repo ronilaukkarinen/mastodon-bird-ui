@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc5 */
+   2.0.0rc6 */
 
 /* CSS variables */
 :root {
@@ -971,13 +971,6 @@ body.embed .status__content a,
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   stroke: var(--color-accent) !important;
-}
-
-/* Mud background colors, reply-indicator */
-.layout-single-column .reply-indicator {
-  background-color: var(--color-mud);
-  color: var(--color-light-text);
-  max-height: 20vh;
 }
 
 /* Dropdown hovers */
