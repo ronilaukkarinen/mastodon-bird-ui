@@ -4104,7 +4104,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* Offset in numbered item */
   .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet {
-    left: -95px;
+    left: -92px;
   }
 
   /* Offset fixes for especially multiple column view */
@@ -4121,8 +4121,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* stylelint-disable-next-line */
   .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet + .icon-button__counter > .animated-number {
-    top: 2px;
-    transform: translateX(12px);
+    top: 0;
+    transform: translateX(13px);
   }
 }
 
