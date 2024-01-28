@@ -34,6 +34,7 @@
 * Fix a regression with reply-indicator, remove style no longer needed in 4.3.0 (2024-01-27)
 * Fix follow requests icon for 4.3.0 (2024-01-27)
 * Reset emoji picker location from the corner to the bottom row for 4.3.0 (2024-01-27)
+* Offset fixes for especially multiple column view for 4.3.0 (2024-01-27)
 
 ### 1.8.3: 2023-11-12
 

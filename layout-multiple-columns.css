@@ -4064,7 +4064,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  * ---------------------------------------
  */
 
- @keyframes boost-animate {
+@keyframes boost-animate {
   100% {
     background-position: -7770px;
   }
@@ -4103,7 +4103,23 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* Offset in numbered item */
   .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet {
-    left: -84px;
+    left: -95px;
+  }
+
+  /* Offset fixes for especially multiple column view */
+  .layout-multiple-columns.no-reduce-motion .detailed-status__button .icon-button.active:focus .icon-retweet,
+  .layout-multiple-columns.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon.activate {
+    transform: translate(2px, -2px);
+  }
+
+  .layout-multiple-columns.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon.activate .icon-star + .icon-button__counter > .animated-number {
+    transform: translateX(10px);
+    top: 2px;
+  }
+
+  .layout-multiple-columns.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet + .icon-button__counter > .animated-number {
+    transform: translateX(12px);
+    top: 2px;
   }
 }
 
@@ -4241,6 +4257,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* stylelint-disable-next-line */
 .layout-multiple-columns.no-reduce-motion .detailed-status__action-bar .icon-button.star-icon.activate .icon-star {
   left: -29px;
+  top: -41px;
+}
+
+.layout-multiple-columns.no-reduce-motion .detailed-status__action-bar {
+  height: 25.5px;
 }
 
 @media screen and (max-width: 889px) {
