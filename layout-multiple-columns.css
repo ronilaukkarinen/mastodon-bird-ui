@@ -4253,6 +4253,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* stylelint-disable-next-line */
 .layout-multiple-columns.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon.activate .icon-star {
   left: -38px;
+  top: -38px;
 }
 
 /* stylelint-disable-next-line */
