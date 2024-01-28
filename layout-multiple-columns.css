@@ -2970,13 +2970,6 @@ body.embed .button.logo-button:hover,
   .layout-multiple-columns .navigation-bar + .compose-form {
     padding-top: 10px;
   }
-
-  .layout-multiple-columns .compose-form__highlightable .emoji-picker-dropdown,
-  .layout-multiple-columns .compose-form .emoji-picker-dropdown {
-    inset-inline-end: 8px;
-    position: absolute;
-    top: 8px;
-  }
 }
 
 @media (min-width: 889px) and (max-height: 1000px) {
