@@ -2326,10 +2326,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   background-size: 20px;
   display: inline-block;
   height: 24px;
+  width: 24px;
+}
+
+.layout-single-column .search .search__icon .icon {
   inset-inline-start: unset;
+  position: absolute;
   right: 14px;
   top: 9px;
-  width: 24px;
 }
 
 .layout-single-column .search .search__icon .icon-search path {
