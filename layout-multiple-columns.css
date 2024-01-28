@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc7 */
+   2.0.0rc8 */
 
 /* CSS variables */
 :root {
@@ -2271,6 +2271,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
+.layout-multiple-columns .search.active .search__input,
 .layout-multiple-columns input.setting-text,
 .layout-multiple-columns .search__input {
   background-color: var(--color-mud);
