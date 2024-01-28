@@ -4247,6 +4247,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* stylelint-disable-next-line */
 .layout-multiple-columns.no-reduce-motion .status .icon-button.star-icon.activate .icon-star {
   left: -27px;
+  top: -40px;
 }
 
 /* stylelint-disable-next-line */
