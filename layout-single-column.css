@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc9 */
+   2.0.0rc10 */
 
 /* CSS variables */
 :root {
@@ -2866,6 +2866,12 @@ body.embed .button.logo-button:hover,
 /* Misc UI fixes */
 .layout-single-column .search__icon .icon.active {
   opacity: 1;
+}
+
+/* Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01) */
+.layout-single-column .inline-follow-suggestions__body__scrollable__card .account__avatar {
+  background-color: transparent;
+  border: 0;
 }
 
 /* Explore -> For you shade in bio */
