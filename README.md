@@ -44,10 +44,6 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     14. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
-10. [Goals](#goals)
-11. [Accessibility](#accessibility)
-10. [Goals](#goals)
-11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
 
 ## Why would anyone want Mastodon to look like Twitter?
