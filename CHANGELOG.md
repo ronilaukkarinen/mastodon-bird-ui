@@ -1,3 +1,7 @@
+### 1.8.4rc: 2024-02-09
+
+* Update bluesky icon #106 (Thanks @dhelonious!)
+
 ### 1.8.3: 2023-11-12
 
 * Add profile link icons for Nostr, Bluesky and Threads
