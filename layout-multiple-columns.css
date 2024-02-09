@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc11 */
+   2.0.0rc12 */
 
 /* CSS variables */
 :root {
@@ -2326,7 +2326,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 /* Truncate too long links in the profile, like Nostr */
-.layout-multiple-columns .account__header__bio .account__header__fields a {
+.layout-multiple-columns .account__header__bio .account__header__fields span > a:only-of-type {
   display: block;
   max-width: 220px;
   overflow: hidden;
