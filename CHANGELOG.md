@@ -36,6 +36,7 @@
 * Reset emoji picker location from the corner to the bottom row for 4.3.0 (2024-01-27)
 * Offset fixes for especially multiple column view for 4.3.0 (2024-01-27)
 * Styles for Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01)
+* Add Bluesky icon according to the new brand #106 (thanks @dhelonious!)
 
 ### 1.8.3: 2023-11-12
 
