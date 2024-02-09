@@ -1,4 +1,4 @@
-### 1.8.4rc: 2024-02-09
+### 1.8.4: 2024-02-09
 
 * Update bluesky icon #106 (thanks @dhelonious!)
 * Fix Carriage Return after a custom emoji in the bio's Extra fields #104 (thanks @manuviens!)
