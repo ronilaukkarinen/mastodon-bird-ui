@@ -40,6 +40,7 @@
 * Fix Carriage Return after a custom emoji in the bio's Extra fields, Fixes #105 (thanks @manuviens!)
 * Add WordPress profile icon
 * Add Friendica profile icon #101 (thanks @expertmanofficial!)
+* Add an icon for genderless pronouns #101
 
 ### 1.8.3: 2023-11-12
 
