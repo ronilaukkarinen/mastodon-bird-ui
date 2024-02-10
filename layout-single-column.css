@@ -1572,7 +1572,7 @@ body.embed .video-player,
   width: unset !important;
 }
 
-body.embed [data-component="Video"] ~ div {
+body.embed [data-component="Video"] > div {
   /* stylelint-disable-next-line */
   aspect-ratio: unset !important;
 }
