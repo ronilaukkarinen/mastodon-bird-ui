@@ -39,6 +39,7 @@
 * Add Bluesky icon according to the new brand #106 (thanks @dhelonious!)
 * Fix Carriage Return after a custom emoji in the bio's Extra fields, Fixes #105 (thanks @manuviens!)
 * Add WordPress profile icon
+* Add Friendica profile icon #101 (thanks @expertmanofficial!)
 
 ### 1.8.3: 2023-11-12
 
