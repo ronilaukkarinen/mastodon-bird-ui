@@ -1,4 +1,4 @@
-### 2.0.0rc13: 2024-02-10
+### 2.0.0rc14: 2024-02-10
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -41,6 +41,7 @@
 * Add WordPress profile icon
 * Add Friendica profile icon #101 (thanks @expertmanofficial!)
 * Add an icon for genderless pronouns #101
+* Fix video aspect-ratio for embeds
 
 ### 1.8.3: 2023-11-12
 
