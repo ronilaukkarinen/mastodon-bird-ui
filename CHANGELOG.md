@@ -1,3 +1,10 @@
+### 1.8.5: 2024-02-10
+
+* Add profile link icons for Facebook and Bandcamp (from 2.0.0rc/nightly)
+* Add WordPress profile icon (from 2.0.0rc13/nightly)
+* Add Friendica profile icon #101 (thanks @expertmanofficial!) (from 2.0.0rc13/nightly)
+* Add an icon for genderless pronouns #101 (from 2.0.0rc13/nightly)
+
 ### 1.8.4: 2024-02-09
 
 * Update bluesky icon #106 (thanks @dhelonious!)
