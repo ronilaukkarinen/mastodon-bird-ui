@@ -1,4 +1,4 @@
-### 2.0.0rc12: 2024-02-09
+### 2.0.0rc13: 2024-02-10
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -38,6 +38,7 @@
 * Styles for Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01)
 * Add Bluesky icon according to the new brand #106 (thanks @dhelonious!)
 * Fix Carriage Return after a custom emoji in the bio's Extra fields, Fixes #105 (thanks @manuviens!)
+* Add WordPress profile icon
 
 ### 1.8.3: 2023-11-12
 
