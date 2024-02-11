@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc13 */
+   2.0.0rc15 */
 
 /* CSS variables */
 :root {
@@ -4105,6 +4105,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  * ---------------------------------------
  */
 
+.layout-multiple-columns .icon-button:has(.icon-retweet) {
+  height: 24px;
+  width: 24px;
+}
+
 @keyframes boost-animate {
   100% {
     background-position: -7770px;
@@ -4131,8 +4136,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     min-width: 42.22px;
     pointer-events: none;
     position: absolute;
-    top: -37.4px;
-    transform: scale(0.82) translateX(1px);
+    top: -38px;
+    transform: scale(0.82) translateX(0);
     width: 200px;
   }
 
@@ -4150,7 +4155,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   /* Offset fixes for especially multiple column view */
   .layout-multiple-columns.no-reduce-motion .detailed-status__button .icon-button.active:focus .icon-retweet,
   .layout-multiple-columns.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon.activate {
-    transform: translate(2px, -2px);
+    left: -90px;
+    top: -37px;
+    transform: scale(0.82) translate(2px, -2px);
   }
 
   /* stylelint-disable-next-line */
@@ -4289,7 +4296,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* stylelint-disable-next-line */
 .layout-multiple-columns.no-reduce-motion .status .icon-button.star-icon.activate .icon-star {
-  left: -27px;
+  left: -29px;
   top: -40px;
 }
 

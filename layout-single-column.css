@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc14 */
+   2.0.0rc15 */
 
 /* CSS variables */
 :root {
@@ -4212,6 +4212,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  * ---------------------------------------
  */
 
+.layout-single-column .icon-button:has(.icon-retweet) {
+  height: 24px;
+  width: 24px;
+}
+
 @keyframes boost-animate {
   100% {
     background-position: -7770px;
@@ -4244,14 +4249,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 
   /* Detailed status offset for boost animation */
-  .layout-single-column.no-reduce-motion .detailed-status__button .icon-button.active:focus .icon-retweet {
-    left: -89px;
-    top: -47px;
+  .layout-single-column.no-reduce-motion .detailed-status__button .icon-button.active:not:focus .icon-retweet {
+    left: -88px;
+    top: -38px;
   }
 
   /* Offset in numbered item */
   .layout-single-column.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet {
-    left: -84px;
+    left: -81.8550px;
   }
 
   .layout-single-column.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.activate .icon-button__counter,
@@ -4262,6 +4267,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   /* stylelint-disable-next-line */
   .layout-single-column.no-reduce-motion .status__action-bar .icon-button.star-icon.icon-button--with-counter.activate .icon-button__counter {
     transform: translateX(12px);
+  }
+
+  @media (max-width: 890px) {
+    /* stylelint-disable-next-line */
+    .layout-single-column.no-reduce-motion .status__action-bar .icon-button.icon-button--with-counter.active:focus .icon-retweet {
+      left: -84px;
+    }
   }
 }
 
@@ -4376,6 +4388,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: -38px;
   transform: scale(.6);
   width: 100px;
+}
+
+@media (max-width: 890px) {
+  .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star {
+    top: -40px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
