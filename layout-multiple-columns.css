@@ -4143,8 +4143,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* Detailed status offset for boost animation */
   .layout-multiple-columns.no-reduce-motion .detailed-status__button .icon-button.active:focus .icon-retweet {
-    left: -89px;
-    top: -47px;
+    left: -87px;
+    top: -39px;
   }
 
   /* Offset in numbered item */
