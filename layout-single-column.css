@@ -4385,7 +4385,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   left: -38px;
   pointer-events: none;
   position: absolute;
-  top: -38px;
+  top: -40px;
   transform: scale(.6);
   width: 100px;
 }
