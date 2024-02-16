@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc15 */
+   2.0.0rc16 */
 
 /* CSS variables */
 :root {
@@ -4280,7 +4280,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   pointer-events: none;
   position: absolute;
   top: -38px;
-  transform: scale(.6);
+  transform: scale(.65);
   width: 100px;
 }
 
