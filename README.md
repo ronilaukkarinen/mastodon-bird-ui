@@ -11,7 +11,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 
 ## [Live demo on mementomori.social](https://mementomori.social)
 
-![mbui-2023-10-31](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/87f99e72-8417-4c7f-b0c1-7430e3c0fd31)
+![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/8e4dd7cb-70b0-4749-b890-cb3d480f380a)
 
 ## Table of contents
 
