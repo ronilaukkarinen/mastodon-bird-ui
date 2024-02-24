@@ -160,6 +160,9 @@ If you'd like a different branding for your instance like "Elephant" without any
 
 If you cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes):
 
+**Mastodon main/nightly:** `nightly`<br>
+**Mastodon stable:** `main`
+
 ```bash
 export MASTODON_VERSION_FOR_BIRD_UI="main"
 
@@ -242,9 +245,12 @@ And you're done!
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
-## Updating instructions
+## Installation for Mastodon admins
 
-If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then:
+If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then run below.
+
+**Mastodon main/nightly:** `nightly`<br>
+**Mastodon stable:** `main`
 
 ```bash
 export MASTODON_VERSION_FOR_BIRD_UI="main"
