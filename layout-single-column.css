@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc16 */
+   2.0.0rc17 */
 
 /* CSS variables */
 :root {
@@ -1800,7 +1800,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Hidden things */
 /* stylelint-disable-next-line */
-.layout-single-column .column-header .column-header__icon:not(.icon-hashtag):not(.icon-user-plus):not(.icon-user-times) {
+.layout-single-column .column-header .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {
   display: none;
 }
 
@@ -3479,10 +3479,12 @@ body.embed .button.logo-button:hover,
 }
 
 /* Explore icon */
+.layout-single-column .column-link .icon-explore,
 .layout-single-column .column-link .icon-hashtag {
   background-image: var(--icon-hashtag);
 }
 
+.layout-single-column .column-link.active .icon-explore,
 .layout-single-column .column-link.active .icon-hashtag {
   background-image: var(--icon-hashtag-active);
 }
