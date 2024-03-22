@@ -1,4 +1,4 @@
-### 2.0.0rc17: 2024-02-25
+### 2.0.0rc19: 2024-03-22
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -44,6 +44,7 @@
 * Fix video aspect-ratio for embeds
 * Fixes to boost and heart animations in single and multiple columns
 * Fix explore icon for the new class (PR #29395)
+* Remove borders around account header fields on v4.3.0-alpha.3-2024-03-22
 
 ### 1.8.3: 2023-11-12
 

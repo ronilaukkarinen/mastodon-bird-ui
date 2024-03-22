@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc18 */
+   2.0.0rc19 */
 
 /* CSS variables */
 :root {
@@ -2333,12 +2333,12 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 .layout-multiple-columns .account__header__bio .account__header__fields {
   background-color: transparent;
+  border: 0;
   color: var(--color-dim);
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-default);
   padding: 0;
-  border: 0;
 }
 
 /* Truncate too long links in the profile, like Nostr */
