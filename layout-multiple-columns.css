@@ -2338,6 +2338,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   flex-wrap: wrap;
   gap: var(--gap-default);
   padding: 0;
+  border: 0;
 }
 
 /* Truncate too long links in the profile, like Nostr */
