@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc21 */
+   2.0.0rc22 */
 
 /* CSS variables */
 :root {
@@ -871,7 +871,7 @@ body.layout-multiple-columns {
   flex-grow: 1;
   height: 100vh;
   max-width: 350px;
-  overflow: visible;
+  min-height: 880px;
   position: sticky;
   top: 0;
 }
