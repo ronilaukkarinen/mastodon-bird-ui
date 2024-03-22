@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc24 */
+   2.0.0rc25 */
 
 /* CSS variables */
 :root {
@@ -4239,7 +4239,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   margin-bottom: 10px;
 }
 
-/* Fixes for the design for v4.3.0-alpha.3-2023-03-22 with new popout layout */
+/* Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout */
 .layout-single-column .explore__search-results {
   border: 0;
 }

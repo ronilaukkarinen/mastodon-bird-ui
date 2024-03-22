@@ -1,4 +1,4 @@
-### 2.0.0rc24: 2024-03-23
+### 2.0.0rc25: 2024-03-23
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
