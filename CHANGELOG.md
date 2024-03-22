@@ -1,4 +1,4 @@
-### 2.0.0rc29: 2024-03-22
+### 2.0.0rc21: 2024-03-22
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -46,6 +46,7 @@
 * Fix explore icon for the new class (PR #29395)
 * Remove borders around account header fields on v4.3.0-alpha.3-2024-03-22
 * Change server icon for account__domain-pill__popout__parts on v4.3.0-alpha.3-2024-03-22
+* Add styles for the new popout on v4.3.0-alpha.3-2024-03-22
 
 ### 1.8.3: 2023-11-12
 
