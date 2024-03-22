@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc22 */
+   2.0.0rc23 */
 
 /* CSS variables */
 :root {
@@ -490,7 +490,6 @@ body.layout-single-column {
 }
 
 /* Line heights */
-.layout-single-column .reply-indicator__content,
 .layout-single-column .status__content {
   line-height: var(--line-height);
 }
