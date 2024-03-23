@@ -4281,9 +4281,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   color: transparent;
 }
 
-/* More compact header on mobile, thanks for the idea @nileane@nileane.fr! / https://github.com/nileane/TangerineUI-for-Mastodon */
-
-*/
+/* More compact header on mobile, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
 @media screen and (max-width: 1174px) {
   .app-body:not(.layout-multiple-columns) .ui__header {
     background-color: transparent;
@@ -4379,7 +4377,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 @media screen and (min-width: 1175px) {
-  /* Fade in list panel, thanks for the idea @nileane@nileane.fr! / https://github.com/nileane/TangerineUI-for-Mastodon */
+  /* Fade in list panel, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
   .layout-single-column .column-link[href="/lists"]:is(.active, :hover) + .list-panel,
   .layout-single-column .list-panel:hover {
     animation: fadein .4s 1;
