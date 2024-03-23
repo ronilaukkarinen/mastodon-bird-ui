@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc30 */
+   2.0.0rc31 */
 
 /* CSS variables */
 :root {
@@ -3004,55 +3004,35 @@ body.embed .button.logo-button:hover,
   padding-bottom: 6px;
 }
 
-/* Compose form and reply indicator box, see https://mastodo.fi/@rmattila74/110140863513856240 */
-@media (min-width: 889px) {
-  .layout-multiple-columns .compose-form__highlightable .autosuggest-textarea__textarea,
-  .layout-multiple-columns .compose-form .autosuggest-textarea__textarea {
-    /* stylelint-disable-next-line */
-    max-height: 20vh !important;  /* stylelint-disable-next-line */
-    overflow-y: auto !important;
-    resize: none;
-  }
-
-  /* Add slight background color for the compose form */
-  /* stylelint-disable-next-line no-duplicate-selectors */
-  .layout-multiple-columns .compose-form__highlightable,
-  .layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
-  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
-    background-color: var(--color-bg-compose-form);
-    border-color: var(--color-bg-compose-form);
-    padding-top: 0;
-    transition: all 200ms;
-  }
-
-  /* Smooth color transition on focus */
-  .layout-multiple-columns .compose-form__highlightable:focus-within,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
-  .layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
-  .layout-multiple-columns .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
-    background-color: var(--color-bg-compose-form-focus);
-    border-color: var(--color-bg-compose-form-focus);
-  }
-
-  /* Fixes bottom row padding when there's a background */
-  .layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
-  .layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
-    padding: calc(var(--gap-default) / 2);
-  }
-
-  .layout-multiple-columns .navigation-bar + .compose-form {
-    padding-top: 10px;
-  }
+/* Add slight background color for the compose form */
+/* stylelint-disable-next-line no-duplicate-selectors */
+.layout-multiple-columns .compose-form__highlightable,
+.layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
+.layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper,
+.layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-bg-compose-form);
+  border-color: var(--color-bg-compose-form);
+  padding-top: 0;
+  transition: all 200ms;
 }
 
-@media (min-width: 889px) and (max-height: 1000px) {
-  .layout-multiple-columns .compose-form__highlightable .autosuggest-textarea__textarea,
-  .layout-multiple-columns .compose-form .autosuggest-textarea__textarea {
-    /* stylelint-disable-next-line */
-    max-height: 10vh !important;
-    resize: none;
-  }
+/* Smooth color transition on focus */
+.layout-multiple-columns .compose-form__highlightable:focus-within,
+.layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within,
+.layout-multiple-columns .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
+.layout-multiple-columns .compose-form__highlightable .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+  background-color: var(--color-bg-compose-form-focus);
+  border-color: var(--color-bg-compose-form-focus);
+}
+
+/* Fixes bottom row padding when there's a background */
+.layout-multiple-columns .compose-form__highlightable .compose-form__buttons-wrapper,
+.layout-multiple-columns .compose-form .compose-form__buttons-wrapper {
+  padding: calc(var(--gap-default) / 2);
+}
+
+.layout-multiple-columns .navigation-bar + .compose-form {
+  padding-top: 10px;
 }
 
 .layout-multiple-columns .server-banner .button:hover,
@@ -4031,6 +4011,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Scrollbars */
+*::-webkit-scrollbar,
 .layout-multiple-columns .scrollable::-webkit-scrollbar,
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar,
 .layout-multiple-columns textarea::-webkit-scrollbar,
@@ -4041,6 +4022,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   width: 6px;
 }
 
+*::-webkit-scrollbar-thumb,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-thumb,
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb,
@@ -4051,6 +4033,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   border-radius: 50px;
 }
 
+*::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:hover,
@@ -4059,6 +4042,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-light-purple);
 }
 
+*::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns textarea::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
@@ -4067,6 +4051,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-black-coral);
 }
 
+*::-webkit-scrollbar-track,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-track,
 .layout-multiple-columns textarea::-webkit-scrollbar-track,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track,
@@ -4077,6 +4062,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   border-radius: 0;
 }
 
+*::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-track:hover,
 .layout-multiple-columns textarea::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track:hover,
@@ -4085,6 +4071,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-bg);
 }
 
+*::-webkit-scrollbar-track:active,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-track:active,
 .layout-multiple-columns textarea::-webkit-scrollbar-track:active,
 .layout-multiple-columns .autosuggest-textarea__textarea::-webkit-scrollbar-track:active,
@@ -4093,6 +4080,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-color: var(--color-bg);
 }
 
+*::-webkit-scrollbar-corner,
 .layout-multiple-columns .scrollable::-webkit-scrollbar-corner,
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-corner,
 .layout-multiple-columns textarea::-webkit-scrollbar-corner,
