@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc26 */
+   2.0.0rc27 */
 
 /* CSS variables */
 :root {
@@ -4253,6 +4253,46 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-single-column .column-back-button {
   border-top: 0;
+}
+
+/* List panel */
+.layout-single-column .list-panel {
+  display: none;
+  margin: 0 0 5px;
+  padding: 5px 9px 50px 36px;
+}
+
+.layout-single-column .list-panel .icon {
+  display: none;
+}
+
+.app-body .list-panel .column-link span::before {
+  bottom: -10px;
+  left: -15px;
+  right: -15px;
+  top: -10px;
+}
+
+@media screen and (min-width: 1175px) {
+  /* Fade in list panel, thanks for the idea @nileane@nileane.fr! / https://github.com/nileane/TangerineUI-for-Mastodon */
+  .layout-single-column .column-link[href="/lists"]:is(.active, :hover) + .list-panel,
+  .layout-single-column .list-panel:hover {
+    animation: fadein .4s 1;
+    display: block;
+  }
+}
+
+/* Spare animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*
