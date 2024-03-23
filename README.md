@@ -34,13 +34,11 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-    8. [Can you add background-color for compose form box area?](#can-you-add-background-color-for-compose-form-box-area)
-    9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
-    10. [Can you add feature x?](#can-you-add-feature-x)
-    11. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
-    12. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
-    13. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
-    14. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
+    8. [Can you add feature x?](#can-you-add-feature-x)
+    9. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
+    10. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
+    11. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
+    12. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
@@ -354,41 +352,6 @@ Yes! From version 1.5.4 multiple columns are supported. Apply layout-multiple-co
 ### Why the admin interface is not styled?
 
 We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
-
-### Can you add background-color for compose form box area?
-
-Aesthetically I prefer left and right sides to be "floaty" and I follow the design language from Twitter even if the compose form is there inside the center column. See [this issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10) for the decision not to have it there by default.
-
-You can add it yourself by adding this to your Custom CSS:
-
-```css
-/* Add background color for the compose form */
-/* stylelint-disable-next-line no-duplicate-selectors */
-.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
-.layout-single-column .compose-form .compose-form__buttons-wrapper {
-  background-color: var(--color-mud);
-  border-color: var(--color-mud);
-  padding-top: 0;
-}
-
-/* Fixes to bottom row when there's a background */
-.layout-single-column .compose-form .compose-form__buttons-wrapper {
-  padding-bottom: calc(var(--gap-default) / 2);
-}
-```
-
-### Can you change compose form height and font-size?
-
-Yes YOU can. But they're not there by default, see [this post](https://mementomori.social/@rolle/110657416001531854). Box size has been set to a certain max-height because it helps the people who use assistive on-screen keyboard (suggestion from [@rmattila74](https://energydon.fi/@rmattila74)). For this reason I'm not going to increase height or make it resize too much by default. You can do these modifications for yourself, here's the code for you:
-
-```css
-.layout-single-column .compose-form .autosuggest-textarea__textarea {
-  font-size: 18px;
-  min-height: 300px;
-}
-```
-
-Tweak the values as you like.
 
 ### Can you add feature x?
 
