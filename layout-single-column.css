@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc31 */
+   2.0.0rc32 */
 
 /* CSS variables */
 :root {
@@ -3972,11 +3972,6 @@ body.embed .button.logo-button:hover,
 @media screen and (device-width: 375px) and (device-height: 812px) and (min-resolution: 2dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14 */ screen and (device-width: 390px) and (device-height: 844px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone 14 Pro */ screen and (device-width: 393px) and (device-height: 852px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone XR and iPhone 11 */ screen and (device-width: 414px) and (device-height: 896px) and (min-resolution: 2dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone Xs Max and iPhone 11 Pro Max */ screen and (device-width: 414px) and (device-height: 896px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone 12 Pro Max, iPhone 13 Pro Max, and iPhone 14 Plus */ screen and (device-width: 428px) and (device-height: 926px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone), /* iPhone 14 Pro Max */ screen and (device-width: 430px) and (device-height: 932px) and (min-resolution: 3dppx) and (orientation: portrait) and (display-mode: standalone) {
   .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
     padding-bottom: 26px;
-  }
-
-  /* Fix top header overlapping in /publish on iPhone */
-  .layout-single-column .columns-area--mobile:has(.compose-form) {
-    top: 34px;
   }
 }
 

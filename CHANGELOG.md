@@ -1,4 +1,4 @@
-### 2.0.0rc31: 2024-03-23
+### 2.0.0rc32: 2024-03-23
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -57,6 +57,7 @@
 * Replace column settings icon for both single and advanced column views
 * Fix compose form styles on mobile
 * Change compose form resizability to follow core
+* Remove Safari PWA top bar fix replacing by compact header on mobile
 
 ### 1.8.3: 2023-11-12
 
