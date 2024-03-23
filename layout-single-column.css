@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc28 */
+   2.0.0rc29 */
 
 /* CSS variables */
 :root {
@@ -3748,6 +3748,7 @@ body.embed .button.logo-button:hover,
   .layout-single-column .tabs-bar__wrapper {
     backdrop-filter: unset;
     background-color: transparent;
+    border: 0;
     padding: 0;
   }
 
@@ -4278,6 +4279,85 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-single-column .ui__header__links .button.button-secondary[href="/publish"] span {
   color: transparent;
+}
+
+/* More compact header on mobile, thanks for the idea @nileane@nileane.fr! / https://github.com/nileane/TangerineUI-for-Mastodon */
+
+*/
+@media screen and (max-width: 1174px) {
+  .app-body:not(.layout-multiple-columns) .ui__header {
+    background-color: transparent;
+    border-bottom: 0;
+  }
+
+  .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
+    margin-left: 3px;
+  }
+
+  .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
+    border-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    height: 55px;
+    inset-inline-end: 105px;
+    inset-inline-start: 45px;
+    margin-bottom: -2px;
+    position: fixed;
+    top: 0;
+  }
+
+  /* stylelint-disable-next-line */
+  .app-body:not(.layout-multiple-columns):not(:has(.ui .ui__header__links > .button[href="/auth/sign_in"])) .tabs-bar__wrapper {
+    z-index: 3;
+  }
+
+  .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper :is(.column-back-button, .column-header > *) {
+    display: none;
+  }
+
+  .app-body:not(.layout-multiple-columns)
+        :is(
+            .column-header,
+            .column-back-button,
+            .column-header__button,
+            .column-header__back-button
+        ) {
+    background-color: transparent;
+    border: 0;
+    height: 55px;
+    margin: 0;
+  }
+
+  .app-body .column-header__icon {
+    display: none;
+  }
+
+  /* Set a backdrop blur background to both top bars */
+  .app-body:not(.layout-multiple-columns) .ui::after {
+    /* stylelint-disable-next-line */
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--color-border);
+    content: "";
+    height: 55px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* Remove margin between column settings and column header */
+  .app-body:not(.layout-multiple-columns) .column-header__collapsible {
+    left: 0;
+    position: fixed;
+    right: 0;
+  }
+
+  .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
+    border-bottom: 1px solid var(--color-border);
+  }
 }
 
 /* List panel */

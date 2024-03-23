@@ -1,4 +1,4 @@
-### 2.0.0rc28: 2024-03-23
+### 2.0.0rc29: 2024-03-23
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -53,6 +53,7 @@
 * Fix list item center alignment
 * Fade in list panel
 * More compact compose button on mobile
+* More compact header bar on mobile (thanks @nileane!)
 
 ### 1.8.3: 2023-11-12
 
