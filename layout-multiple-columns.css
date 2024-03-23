@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc25 */
+   2.0.0rc26 */
 
 /* CSS variables */
 :root {
@@ -569,6 +569,7 @@ body.layout-multiple-columns {
 
 .layout-multiple-columns .list-editor .list__display-name,
 .layout-multiple-columns .list-adder .list__display-name {
+  align-items: center;
   display: flex;
   gap: var(--gap-default);
 }

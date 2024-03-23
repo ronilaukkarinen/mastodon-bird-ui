@@ -1,4 +1,4 @@
-### 2.0.0rc25: 2024-03-23
+### 2.0.0rc26: 2024-03-23
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -50,6 +50,7 @@
 * Fix: Theme footer sits on top of other elements #114
 * Fix reply indicator not truncating properly
 * Fix borders in some part of the layout on v4.3.0-alpha.3-2024-03-22
+* Fix list item center alignment
 
 ### 1.8.3: 2023-11-12
 
