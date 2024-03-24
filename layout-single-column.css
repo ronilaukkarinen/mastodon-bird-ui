@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc33 */
+   2.0.0rc34 */
 
 /* CSS variables */
 :root {
@@ -86,6 +86,7 @@
   --size-avatar-small: 32px;
   --width-main-panel: 600px;
   --width-side-panel: 260px;
+  --width-compose-panel: 350px;
   --border-radius: 16px;
   --border-radius-badges: 4px;
   --badges-distance-from-edge: 12px;
@@ -368,6 +369,7 @@ body.theme-mastodon-light.layout-single-column {
   :root {
     --width-main-panel: 500px;
     --width-side-panel: 265px;
+    --width-compose-panel: 265px;
   }
 }
 
@@ -874,10 +876,13 @@ body.layout-single-column {
 }
 
 .layout-single-column .columns-area__panels__pane,
-.layout-single-column .columns-area__panels__pane__inner,
-.layout-single-column .compose-panel {
+.layout-single-column .columns-area__panels__pane__inner {
   min-width: var(--width-side-panel);
   width: var(--width-side-panel);
+}
+
+.layout-single-column .compose-panel {
+  width: var(--width-compose-panel);
 }
 
 .layout-single-column .columns-area__panels__pane--compositional {
@@ -3077,13 +3082,6 @@ body.embed .button.logo-button:hover,
 .link-footer {
   position: relative;
   z-index: 5;
-}
-
-.layout-single-column .compose-form__highlightable,
-.layout-single-column .compose-panel .compose-form,
-.layout-single-column .compose-panel,
-.layout-single-column .compose-form__autosuggest-wrapper {
-  overflow: visible;
 }
 
 .layout-single-column .compose-form__footer {

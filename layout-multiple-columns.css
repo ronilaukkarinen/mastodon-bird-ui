@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc33 */
+   2.0.0rc34 */
 
 /* CSS variables */
 :root {
@@ -2986,19 +2986,6 @@ body.embed .button.logo-button:hover,
 .link-footer {
   position: relative;
   z-index: 5;
-}
-
-.layout-multiple-columns .compose-panel .compose-form,
-.layout-multiple-columns .compose-panel,
-.layout-multiple-columns .compose-form__autosuggest-wrapper {
-  overflow: visible;
-}
-
-.layout-multiple-columns .compose-form__highlightable,
-.layout-multiple-columns .compose-panel .compose-form,
-.layout-multiple-columns .compose-panel,
-.layout-multiple-columns .compose-form__autosuggest-wrapper {
-  overflow: visible;
 }
 
 .layout-multiple-columns .compose-form__footer {
