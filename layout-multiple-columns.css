@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc35 */
+   2.0.0rc36 */
 
 /* CSS variables */
 :root {
@@ -4175,7 +4175,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   /* Detailed status offset for boost animation */
   .layout-multiple-columns.no-reduce-motion .detailed-status__button .icon-button.active:focus .icon-retweet {
     left: -89px;
-    top: -47px;
+    top: -37px;
   }
 
   /* Offset in numbered item */
@@ -5027,7 +5027,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 2/2: If you prefer stars remove this line too */
-
 
 
 /* Advanced web interface specific styles */
