@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc34 */
+   2.0.0rc35 */
 
 /* CSS variables */
 :root {
@@ -4618,7 +4618,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  */
 
 /* 1/2: If you prefer stars remove this line and the last line of this file
-
 @media (hover: hover) {
   .layout-single-column button.icon-button:not(.active):hover .icon-star ~ span,
   .layout-single-column button.icon-button:not(.active):hover .icon-star {
@@ -4785,13 +4784,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.icon-button--with-counter.star-icon.activate::after,
 .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
-  left: calc(50% - 14px) !important;
+  left: calc(50% - 8px) !important;
   top: calc(50% + -1px) !important;
 }
 
 .layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
 .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
-  left: calc(50% - 14px) !important;
+  left: calc(50% - 8px) !important;
+}
+
+.layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
+  left: -34px !important;
+  position: absolute !important;
+  top: unset !important;
 }
 
 @media (hover: none) {
