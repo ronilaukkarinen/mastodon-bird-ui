@@ -1,4 +1,4 @@
-### 2.0.0rc36: 2024-04-06
+### 2.0.0rc37: 2024-04-06
 
 * Prepare for 4.3.0 release with SVG icons
 * Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
@@ -62,6 +62,7 @@
 * Fix post button running away if compose form message is too long
 * Fix star icon misalignment for numbered items, Fixes #116
 * Fix boost icon misalignment when clicked the detailed view boost icon on advanced web interface, Fixes #112
+* Fix a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
 
 ### 1.8.3: 2023-11-12
 
