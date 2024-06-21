@@ -576,6 +576,18 @@ body.layout-multiple-columns {
   padding: var(--gap-default);
 }
 
+/*
+ * Add status cards to display quote posts
+ */
+
+.status-card__image:has(.fa) {
+    display: none;
+}
+
+.status-card__description {
+    white-space: normal;
+}
+
 .layout-multiple-columns .status-card.expanded .status-card__content {
   display: grid;
   gap: 8px;

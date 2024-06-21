@@ -575,6 +575,16 @@ body.layout-single-column {
   padding: var(--gap-default);
 }
 
+/* Allow quote posts to be displayed */
+
+.status-card__image:has(.fa) {
+    display: none;
+}
+
+.status-card__description {
+    white-space: normal;
+}
+
 .layout-single-column .status-card.expanded .status-card__content {
   display: grid;
   gap: 8px;
@@ -4886,3 +4896,4 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
  * Star animation micro-interactions end
  * -------------------------------------
  */
+
