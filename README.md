@@ -139,6 +139,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [supebase.com](https://supebase.com)                                     | Site theme                | Bird UI Modified | 1              | Yes         |
 | [buddyverse.xyz](https://buddyverse.xyz)                                 | Site theme                | Mastodon Bird UI | 6+             | Yes         |
 | [mastodon.bsd.cafe](https://mastodon.bsd.cafe/)                          | Site theme                | Mastodon Bird UI | 70+            | Yes         |
+| [everythingbagel.social](https://everythingbagel.social)                 | Site theme                | Bagel UI         | 5              | Yes         |
 
 ## Installation for Mastodon instance admins
 
