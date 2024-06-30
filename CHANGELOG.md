@@ -1,3 +1,7 @@
+### 2.0.0rc39: 2024-06-30
+
+* Fix bottomless card and add styles for more-from-author
+
 ### 2.0.0rc38: 2024-06-30
 
 * Remove outdated links from the README #121 (thanks @mackuba!)

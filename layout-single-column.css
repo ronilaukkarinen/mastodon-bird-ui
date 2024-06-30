@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc38 */
+   2.0.0rc39 */
 
 /* CSS variables */
 :root {
@@ -635,6 +635,11 @@ body.layout-single-column {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   transition: all 200ms;
+}
+
+.layout-single-column .status-card.status-card.bottomless {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .layout-single-column .status-card.expanded {
@@ -1644,6 +1649,7 @@ body.embed .detailed-status .video-player,
 }
 
 /* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
+.layout-single-column .status .status-card + .more-from-author,
 .layout-single-column .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
