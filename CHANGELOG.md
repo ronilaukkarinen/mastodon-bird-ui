@@ -1,6 +1,7 @@
 ### 2.0.0rc38: 2024-06-30
 
 * Remove outdated links from the README #121 (thanks @mackuba!)
+* Consistent border-radius for buttons #123
 
 ### 2.0.0rc37: 2024-04-06
 
