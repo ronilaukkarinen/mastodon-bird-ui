@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc41 */
+   2.0.0rc42 */
 
 /* CSS variables */
 :root {
@@ -1554,6 +1554,17 @@ body.embed .detailed-status__display-avatar > img,
   padding-left: var(--gap-default);
 }
 
+/* Fix spacing under quoted post in grouped notification */
+.notification-group .notification-group__embedded-status__content {
+  max-height: 100%;
+}
+
+/* We don't need to show our own account when we know our own account is being mentioned */
+.notification-ungrouped.notification-ungrouped--mention .notification-ungrouped__header,
+.notification-group .notification-group__embedded-status__account {
+  display: none;
+}
+
 .layout-single-column .notification-ungrouped .notification-ungrouped__header {
   padding-left: calc(24px + var(--gap-default));
 }
@@ -1865,10 +1876,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 /* Notifications */
+.layout-single-column .notification-group,
 .layout-single-column .notification__message {
   display: grid;
   gap: var(--gap-default);
   grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
+}
+
+.layout-single-column .notification__message {
   height: calc(var(--gap-default) * 2);
 }
 
@@ -2271,6 +2286,15 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-right: 4px;
   max-width: 30px;
   width: 27px;
+}
+
+.layout-single-column .notification-group .notification-group__icon .icon {
+  margin-right: 0;
+}
+
+.layout-single-column .notification-group .notification-group__icon {
+  justify-self: end;
+  margin-right: 4px;
 }
 
 .layout-single-column .notification-group .notification-group__icon .icon-repeat,
