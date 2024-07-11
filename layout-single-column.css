@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc39 */
+   2.0.0rc40 */
 
 /* CSS variables */
 :root {
@@ -1547,6 +1547,17 @@ body.embed .detailed-status__display-avatar > img,
   pointer-events: none;
 }
 
+/* Grouped notification exceptions, pr30440 2024-07-11 */
+.layout-single-column .notification-ungrouped .status .hashtag-bar,
+.layout-single-column .notification-ungrouped .status .status__content,
+.layout-single-column .notification-ungrouped .status .status__action-bar {
+  padding-left: var(--gap-default);
+}
+
+.layout-single-column .notification-ungrouped .notification-ungrouped__header {
+  padding-left: calc(24px + var(--gap-default));
+}
+
 /* Media inside status update tinted to right */
 .layout-single-column .status .audio-player,
 .layout-single-column .status .video-player,
@@ -1859,6 +1870,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   gap: var(--gap-default);
   grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
   height: calc(var(--gap-default) * 2);
+}
+
+/* Notification groups, pr30440 2024-07-11 */
+.layout-single-column .notification-group {
+  display: grid;
+  gap: var(--gap-default);
+  grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
 }
 
 /* Make sure notification user is clickable */
