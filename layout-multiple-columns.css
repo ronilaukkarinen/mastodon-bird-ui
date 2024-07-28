@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc39 */
+   2.0.0rc43 */
 
 /* CSS variables */
 :root {
@@ -1534,6 +1534,17 @@ body.embed .detailed-status,
   pointer-events: none;
 }
 
+/* Grouped notification exceptions, pr30440 2024-07-11 */
+.layout-multiple-columns .notification-ungrouped .status .hashtag-bar,
+.layout-multiple-columns .notification-ungrouped .status .status__content,
+.layout-multiple-columns .notification-ungrouped .status .status__action-bar {
+  padding-left: var(--gap-default);
+}
+
+.layout-multiple-columns .notification-ungrouped .notification-ungrouped__header {
+  padding-left: calc(24px + var(--gap-default));
+}
+
 /* Media inside status update tinted to right */
 .layout-multiple-columns .status .audio-player,
 .layout-multiple-columns .status .video-player,
@@ -1810,6 +1821,13 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   height: calc(var(--gap-default) * 2);
 }
 
+/* Notification groups, pr30440 2024-07-11 */
+.layout-multiple-columns .notification-group {
+  display: grid;
+  gap: var(--gap-default);
+  grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
+}
+
 /* Make sure notification user is clickable */
 .layout-multiple-columns .notification__display-name {
   position: relative;
@@ -1877,6 +1895,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 /* Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25 */
 .layout-multiple-columns .notification.notification-reblog .status__info .status__display-name,
 .layout-multiple-columns .notification.notification-follow .status__info .status__display-name,
+.layout-multiple-columns .notification-group--favourite .status__info .status__display-name,
 .layout-multiple-columns .notification.notification-favourite .status__info .status__display-name {
   pointer-events: none;
 }
@@ -1928,8 +1947,10 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .notification.notification-follow .display-name,
 .layout-multiple-columns .notification.notification-admin-sign-up .display-name + span,
 .layout-multiple-columns .notification.notification-follow .display-name + span,
+.layout-multiple-columns .notification-group--favourite .status__wrapper-direct .status__prepend,
 .layout-multiple-columns .notification.notification-favourite .status__wrapper-direct .status__prepend,
 .layout-multiple-columns .notification.notification-reblog .display-name,
+.layout-multiple-columns .notification-group--favourite .display-name,
 .layout-multiple-columns .notification.notification-favourite .display-name {
   display: none;
 }
@@ -2173,6 +2194,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-image: var(--icon-boost-status-prepend);
 }
 
+.layout-multiple-columns .notification-group .notification-group__icon .icon,
 .layout-multiple-columns .notification .notification__message .icon {
   align-self: start;
   height: 27px;
@@ -2182,12 +2204,14 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 27px;
 }
 
+.layout-multiple-columns .notification-group .notification-group__icon .icon-repeat,
 .layout-multiple-columns .notification .notification__message .icon.icon-retweet {
   color: var(--color-green);
   height: 24px;
   width: 24px;
 }
 
+.layout-multiple-columns .notification-group .icon-person-add,
 .layout-multiple-columns .notification .icon.icon-user-plus:not(.icon-link) {
   color: var(--color-accent-dark);
 }
@@ -3255,6 +3279,7 @@ body.embed .button.logo-button:hover,
 
 /* General for all column icons */
 /* stylelint-disable-next-line */
+.layout-multiple-columns .notification-group--favourite .notification__message > .icon,
 .layout-multiple-columns .list-adder__lists .list__display-name svg > path,
 .layout-multiple-columns .status__prepend .icon.icon-retweet path,
 .layout-multiple-columns .notification-favourite .notification__message > .icon,
@@ -3263,7 +3288,10 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .detailed-status__action-bar .icon,
 .layout-multiple-columns .status__action-bar .icon,
 .layout-multiple-columns .notification__filter-bar .icon,
-.layout-multiple-columns .column-link .icon {
+.layout-multiple-columns .column-link .icon,
+.layout-multiple-columns .notification-group--reblog > .notification-group__icon > .icon path,
+.layout-multiple-columns .notification-group--favourite > .notification-group__icon > .icon path,
+.layout-multiple-columns .notification-group--favourite .notification__message > .icon path {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -3443,6 +3471,7 @@ body.embed .button.logo-button:hover,
 }
 
 /* Replace notification retweet icon */
+.layout-multiple-columns .notification-group--reblog .icon-repeat,
 .layout-multiple-columns .notification-reblog .icon-retweet {
   background-image: var(--icon-boost-notification-wrapper);
 }
@@ -3912,6 +3941,7 @@ body.embed .button.logo-button:hover,
 
 /* Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on) */
 .layout-multiple-columns .notification.notification-reblog .media-gallery:has(.media-gallery__gifv.autoplay),
+.layout-multiple-columns .notification-group--favourite .media-gallery:has(.media-gallery__gifv.autoplay),
 .layout-multiple-columns .notification.notification-favourite .media-gallery:has(.media-gallery__gifv.autoplay) {
   display: none;
 }
@@ -4259,6 +4289,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-image: var(--icon-heart-column-link-active);
 }
 
+.layout-multiple-columns .notification-group--favourite .icon-star,
 .layout-multiple-columns .notification-favourite .icon-star {
   background-image: var(--icon-heart-notification);
 }
@@ -4276,11 +4307,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .detailed-status__action-bar .active:not(.activated) .icon-star,
 .layout-multiple-columns .status__action-bar .active:not(.activated) .icon-star {
   background-image: var(--icon-heart-active-red);
-}
-
-.icon-button.star-icon.active,
-.notification-favourite .star-icon {
-  color: var(--color-red);
 }
 
 .layout-multiple-columns .detailed-status__action-bar .icon-button:hover .icon-star,
@@ -4398,6 +4424,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-image: var(--icon-star-column-link-active);
 }
 
+.layout-multiple-columns .notification-group--favourite .icon-star,
 .layout-multiple-columns .notification-favourite .icon-star {
   background-image: var(--icon-star-notification);
 }
@@ -4499,6 +4526,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-multiple-columns .icon-button.star-icon.active,
+.layout-multiple-columns .notification-group--favourite .star-icon,
 .layout-multiple-columns .notification-favourite .star-icon {
   color: var(--color-yellow);
 }

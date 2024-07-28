@@ -1,3 +1,13 @@
+### 2.0.0rc43: 2024-07-28
+
+* Fix Create account button not clickable on mobile
+
+### 2.0.0rc42: 2024-07-11
+
+* Support for grouped notifications [#30440](https://github.com/mastodon/mastodon/pull/30440)
+* Finalize styles for custom icons in grouped notifications
+* Fixes for grouped and ungrouped layout in notifications
+
 ### 2.0.0rc39: 2024-06-30
 
 * Fix bottomless card and add styles for more-from-author
