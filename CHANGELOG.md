@@ -1,3 +1,7 @@
+### 2.0.0rc43: 2024-07-28
+
+* Fix Create account button not clickable on mobile
+
 ### 2.0.0rc42: 2024-07-11
 
 * Support for grouped notifications [#30440](https://github.com/mastodon/mastodon/pull/30440)

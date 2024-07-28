@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc42 */
+   2.0.0rc43 */
 
 /* CSS variables */
 :root {
@@ -1838,6 +1838,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   background-color: var(--color-bg-75);
   border-color: var(--color-border);
   padding: 0;
+}
+
+/* Fix Create account button not clickable on mobile */
+.ui__header:has(.button[href="/auth/sign_up"]) {
+  z-index: 4;
 }
 
 @media (min-width: 1175px) {
