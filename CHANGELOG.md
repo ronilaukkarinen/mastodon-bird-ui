@@ -1,3 +1,8 @@
+### 2.0.0rc44: 2024-08-23
+
+* Support for v4.3.0-beta.1+mementomods-2024-08-23
+* Support for new content warnings presented in v4.3.0-beta.1 (thanks @shleeable!), Fixes #128
+
 ### 2.0.0rc43: 2024-07-28
 
 * Fix Create account button not clickable on mobile

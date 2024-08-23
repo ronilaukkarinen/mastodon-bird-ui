@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc43 */
+   2.0.0rc44 */
 
 /* CSS variables */
 :root {
@@ -1019,8 +1019,8 @@ body.embed .status__content a,
   display: none;
 }
 
-/* Filtered post */
-.layout-single-column .status__wrapper.status__wrapper--filtered {
+/* Filtered post / Content warnings */
+body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
   border: 1px solid var(--color-border);
@@ -1037,6 +1037,47 @@ body.embed .status__content a,
   text-overflow: ellipsis;
   white-space: nowrap;
   width: calc(100% - calc(var(--gap-default) * 2));
+}
+
+body .content-warning {
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: flex;
+  font-size: var(--font-size-mid);
+  justify-content: space-between;
+  padding: 10px 16px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body .content-warning .link-button {
+  color: var(--color-fg);
+  font-size: var(--font-size-mid);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+body .status:not(.status--in-thread) .content-warning {
+  margin-bottom: var(--gap-default);
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+  margin-top: var(--gap-default);
+}
+
+body .content-warning p {
+  margin-bottom: 0px;
+  max-width: 78%;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body .content-warning::after,
+body .content-warning::before {
+  display: none;
 }
 
 .layout-single-column .notification:has(.status__wrapper--filtered) .notification__message {
