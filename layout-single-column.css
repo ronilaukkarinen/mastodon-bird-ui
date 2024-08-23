@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc45 */
+   2.0.0rc46 */
 
 /* CSS variables */
 :root {
@@ -3551,7 +3551,8 @@ body.embed .button.logo-button:hover,
 .layout-single-column .column-link .icon path,
 .layout-single-column .load-more path,
 .layout-single-column .account__domain-pill__popout__parts > div:nth-child(2) path,
-.layout-single-column .column-header__button .icon-sliders > path {
+.layout-single-column .column-header__button .icon-sliders > path,
+.compose-form .icon-close > path {
   display: none;
 }
 
