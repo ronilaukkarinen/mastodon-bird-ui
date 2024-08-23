@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc44 */
+   2.0.0rc45 */
 
 /* CSS variables */
 :root {
@@ -1112,12 +1112,25 @@ body .content-warning::before {
   text-decoration: none;
 }
 
+/* Fix load more icon dimensions */
+.load-more .icon {
+  height: 16px;
+  width: 20px;
+}
+
 /* Unread message */
 .layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
 .layout-single-column .notification.unread,
-.layout-single-column .status__wrapper.unread {
+.layout-single-column .status__wrapper.unread,
+body .notification-group.notification-group--unread {
   background-color: var(--color-dark);
+}
+
+body .notification-group--unread::before,
+body .notification-ungrouped--unread::before {
+  /* stylelint-disable-next-line */
+  display: none;
 }
 
 .layout-single-column .notification:hover .notification__message {

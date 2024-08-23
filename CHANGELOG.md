@@ -1,3 +1,8 @@
+### 2.0.0rc45: 2024-08-23
+
+* Fix load more icon dimensions
+* Fix unread notification group styles for v4.3.0-beta.1
+
 ### 2.0.0rc44: 2024-08-23
 
 * Support for v4.3.0-beta.1+mementomods-2024-08-23
