@@ -1,6 +1,7 @@
 ### 2.0.0rc47: 2024-08-23
 
 * Add the same consistent content warning styles to the compose form
+* Show full content warning instead of hiding the overlapping part
 
 ### 2.0.0rc46: 2024-08-23
 

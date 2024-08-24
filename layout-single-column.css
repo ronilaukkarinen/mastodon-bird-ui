@@ -1045,13 +1045,11 @@ body .content-warning {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   color: var(--color-light-purple);
-  display: flex;
+  display: grid;
   font-size: var(--font-size-mid);
-  justify-content: space-between;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
   padding: 10px 16px;
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: unset;
 }
 
 body .compose-form__highlightable:has(.spoiler-input__input) {
@@ -1065,9 +1063,11 @@ body .compose-form:has(.spoiler-input__input) .spoiler-input .autosuggest-input 
 }
 
 body .content-warning .link-button {
+  align-self: flex-start;
   color: var(--color-fg);
   font-size: var(--font-size-mid);
   font-weight: var(--font-weight-semibold);
+  justify-self: flex-end;
 }
 
 /* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
@@ -1078,12 +1078,7 @@ body .status:not(.status--in-thread) .content-warning {
 }
 
 body .content-warning p {
-  margin-bottom: 0px;
-  max-width: 78%;
-  overflow: hidden;
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-bottom: 0;
 }
 
 body .spoiler-input__border,
