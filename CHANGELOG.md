@@ -1,4 +1,8 @@
-### 2.0.0rc45: 2024-08-23
+### 2.0.0rc47: 2024-08-23
+
+* Add the same consistent content warning styles to the compose form
+
+### 2.0.0rc46: 2024-08-23
 
 * Fix close icon overlapping inside compose form
 

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc46 */
+   2.0.0rc47 */
 
 /* CSS variables */
 :root {
@@ -1039,6 +1039,7 @@ body .status__wrapper.status__wrapper--filtered {
   width: calc(100% - calc(var(--gap-default) * 2));
 }
 
+body .columns-area__panels__pane--compositional .compose-form .spoiler-input__input,
 body .content-warning {
   background-color: var(--color-focusable-toot);
   border: 1px solid var(--color-border);
@@ -1051,6 +1052,16 @@ body .content-warning {
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+body .compose-form__highlightable:has(.spoiler-input__input) {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+body .compose-form:has(.spoiler-input__input) .spoiler-input .autosuggest-input {
+  border-bottom: 0;
+  border-radius: var(--border-radius);
 }
 
 body .content-warning .link-button {
@@ -1075,6 +1086,7 @@ body .content-warning p {
   white-space: nowrap;
 }
 
+body .spoiler-input__border,
 body .content-warning::after,
 body .content-warning::before {
   display: none;
