@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc43 */
+   2.0.0rc47 */
 
 /* CSS variables */
 :root {
@@ -1019,8 +1019,8 @@ body.embed .status__content a,
   display: none;
 }
 
-/* Filtered post */
-.layout-single-column .status__wrapper.status__wrapper--filtered {
+/* Filtered post / Content warnings */
+body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
   border: 1px solid var(--color-border);
@@ -1037,6 +1037,54 @@ body.embed .status__content a,
   text-overflow: ellipsis;
   white-space: nowrap;
   width: calc(100% - calc(var(--gap-default) * 2));
+}
+
+body .columns-area__panels__pane--compositional .compose-form .spoiler-input__input,
+body .content-warning {
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: grid;
+  font-size: var(--font-size-mid);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  padding: 10px 16px;
+  white-space: unset;
+}
+
+body .compose-form__highlightable:has(.spoiler-input__input) {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+body .compose-form:has(.spoiler-input__input) .spoiler-input .autosuggest-input {
+  border-bottom: 0;
+  border-radius: var(--border-radius);
+}
+
+body .content-warning .link-button {
+  align-self: flex-start;
+  color: var(--color-fg);
+  font-size: var(--font-size-mid);
+  font-weight: var(--font-weight-semibold);
+  justify-self: flex-end;
+}
+
+/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+body .status:not(.status--in-thread) .content-warning {
+  margin-bottom: var(--gap-default);
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+  margin-top: var(--gap-default);
+}
+
+body .content-warning p {
+  margin-bottom: 0;
+}
+
+body .spoiler-input__border,
+body .content-warning::after,
+body .content-warning::before {
+  display: none;
 }
 
 .layout-single-column .notification:has(.status__wrapper--filtered) .notification__message {
@@ -1071,12 +1119,25 @@ body.embed .status__content a,
   text-decoration: none;
 }
 
+/* Fix load more icon dimensions */
+.load-more .icon {
+  height: 16px;
+  width: 20px;
+}
+
 /* Unread message */
 .layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
 .layout-single-column .notification.unread,
-.layout-single-column .status__wrapper.unread {
+.layout-single-column .status__wrapper.unread,
+body .notification-group.notification-group--unread {
   background-color: var(--color-dark);
+}
+
+body .notification-group--unread::before,
+body .notification-ungrouped--unread::before {
+  /* stylelint-disable-next-line */
+  display: none;
 }
 
 .layout-single-column .notification:hover .notification__message {
@@ -3497,7 +3558,8 @@ body.embed .button.logo-button:hover,
 .layout-single-column .column-link .icon path,
 .layout-single-column .load-more path,
 .layout-single-column .account__domain-pill__popout__parts > div:nth-child(2) path,
-.layout-single-column .column-header__button .icon-sliders > path {
+.layout-single-column .column-header__button .icon-sliders > path,
+.compose-form .icon-close > path {
   display: none;
 }
 

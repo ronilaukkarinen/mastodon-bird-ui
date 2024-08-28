@@ -1,3 +1,22 @@
+### 2.0.0rc47: 2024-08-23
+
+* Add the same consistent content warning styles to the compose form
+* Show full content warning instead of hiding the overlapping part
+
+### 2.0.0rc46: 2024-08-23
+
+* Fix close icon overlapping inside compose form
+
+### 2.0.0rc45: 2024-08-23
+
+* Fix load more icon dimensions
+* Fix unread notification group styles for v4.3.0-beta.1
+
+### 2.0.0rc44: 2024-08-23
+
+* Support for v4.3.0-beta.1+mementomods-2024-08-23
+* Support for new content warnings presented in v4.3.0-beta.1 (thanks @shleeable!), Fixes #128
+
 ### 2.0.0rc43: 2024-07-28
 
 * Fix Create account button not clickable on mobile
