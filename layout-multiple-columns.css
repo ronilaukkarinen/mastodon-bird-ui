@@ -3204,6 +3204,24 @@ body.embed .button.logo-button:hover,
     order: 12;
   }
 
+  .layout-multiple-columns .column-link[href="/admin/dashboard"] {
+    order: 11;
+  }
+
+  .layout-multiple-columns .column-link[href="/admin/reports"] {
+    order: 12;
+  }
+
+  .layout-multiple-columns .column-link[href="/admin/dashboard"] path {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
+  }
+
+  .layout-multiple-columns .column-link[href="/admin/reports"] path {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
+  }
+
   /* stylelint-disable-next-line no-duplicate-selectors */
   .layout-multiple-columns .list-panel {
     order: 13;

@@ -1,6 +1,7 @@
 ### 2.0.0rc48: 2024-09-07
 
 * Fix indicator for private mentions when grouped notifications are enabled in 4.3.0
+* Add support for Administartion and Moderation column-links in 4.3.0-beta.1 (2024-09-07)
 
 ### 2.0.0rc47: 2024-08-23
 
