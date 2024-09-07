@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc47 */
+   2.0.0rc48 */
 
 /* CSS variables */
 :root {
@@ -3118,6 +3118,7 @@ body.embed .button.logo-button:hover,
   position: relative;
 }
 
+.notification-ungrouped--mention.notification-ungrouped--direct::after,
 .layout-single-column .status__wrapper-direct::after,
 .layout-single-column .detailed-status-direct::after {
   border-left: 20px solid transparent;
@@ -3129,6 +3130,12 @@ body.embed .button.logo-button:hover,
   right: 0;
   top: 0;
   width: 0;
+}
+
+/* Indicator for private mentions when grouped notifications are enabled in 4.3.0 */
+.notification-ungrouped--direct .status__wrapper-direct::after,
+.notification-ungrouped--direct .detailed-status-direct::after {
+  display: none;
 }
 
 .layout-single-column .notification .status__wrapper-direct::after {

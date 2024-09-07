@@ -1,3 +1,7 @@
+### 2.0.0rc48: 2024-09-07
+
+* Fix indicator for private mentions when grouped notifications are enabled in 4.3.0
+
 ### 2.0.0rc47: 2024-08-23
 
 * Add the same consistent content warning styles to the compose form
