@@ -1,3 +1,7 @@
+### 2.0.0rc50: 2024-09-13
+
+* Fix private message indicator not sticking
+
 ### 2.0.0rc49: 2024-09-07
 
 * Add new icons for Administration and Moderation column links in 4.3.0-beta.1 (2024-09-07)
