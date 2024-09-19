@@ -1,3 +1,7 @@
+### 2.0.0rc51: 2024-09-19
+
+* Fix ungrouped unread notification not having a highlight background color
+
 ### 2.0.0rc50: 2024-09-13
 
 * Fix private message indicator not sticking

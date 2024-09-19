@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc50 */
+   2.0.0rc51 */
 
 /* CSS variables */
 :root {
@@ -1130,6 +1130,7 @@ body .content-warning::before {
 }
 
 /* Unread message */
+.layout-single-column .notification-ungrouped--unread,
 .layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
 .layout-single-column .notification.unread,
