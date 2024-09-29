@@ -905,7 +905,7 @@ body.layout-single-column {
   flex-grow: 1;
   height: 100vh;
   max-width: 350px;
-  min-height: 880px;
+  min-height: 500px;
   position: sticky;
   top: 0;
 }
