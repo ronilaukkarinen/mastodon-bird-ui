@@ -1755,6 +1755,11 @@ body.embed .detailed-status__link {
   top: 0;
 }
 
+/* stylelint-disable-next-line */
+body.embed #mastodon-status {
+  overflow: hidden;
+}
+
 body.embed .detailed-status__meta,
 .layout-single-column .detailed-status__meta {
   color: var(--color-dim);
