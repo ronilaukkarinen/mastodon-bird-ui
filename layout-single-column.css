@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0rc53 */
+   2.0.0rc54 */
 
 /* CSS variables */
 :root {
@@ -4078,8 +4078,8 @@ body.embed .button.logo-button:hover,
   }
 
   .columns-area__panels__pane--navigational .column-link__icon.icon-ellipsis-h {
+    background-image: var(--icon-more);
     position: relative;
-    top: -4px;
   }
 
   .layout-single-column .columns-area__panels__main > div,
@@ -4151,6 +4151,8 @@ body.embed .button.logo-button:hover,
   }
 
   .layout-single-column .navigation-panel .navigation-panel__legal {
+    display: flex;
+    justify-content: center;
     order: 999;
     text-align: center;
   }

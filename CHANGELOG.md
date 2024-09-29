@@ -1,3 +1,7 @@
+### 2.0.0rc54: 2024-09-29
+
+* Improve more icon in mobile when logged out, fix alignment
+
 ### 2.0.0rc53: 2024-09-29
 
 * Make list nav an overlay menu instead of block nav to keep it tight
