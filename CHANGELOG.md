@@ -1,3 +1,7 @@
+### 2.0.0rc53: 2024-09-29
+
+* Make list nav an overlay menu instead of block nav to keep it tight
+
 ### 2.0.0rc52: 2024-09-29
 
 * Add support for Mastodon v4.3.0-beta.2-2024-09-29

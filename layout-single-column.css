@@ -4552,9 +4552,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* List panel */
 .layout-single-column .list-panel {
-  display: none;
+  background-color: var(--color-bg);
   margin: 0 0 5px;
   padding: 5px 9px 50px 36px;
+  position: absolute;
+  top: 100%;
 }
 
 .layout-single-column .list-panel .icon {
