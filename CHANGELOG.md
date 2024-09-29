@@ -1,6 +1,8 @@
 ### 2.0.0rc53: 2024-09-29
 
 * Make list nav an overlay menu instead of block nav to keep it tight
+* Fix list item style in mobile
+* Fix regressions caused by 2.0.0rc52 and the new nav structure in Mastodon 4.3.0-beta.2-2024-09-29
 
 ### 2.0.0rc52: 2024-09-29
 
