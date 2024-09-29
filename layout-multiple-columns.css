@@ -3151,27 +3151,6 @@ body.embed .button.logo-button:hover,
 }
 
 @media screen and (min-width: 890px) {
-  /* Hide the space between Lists and the actual lists */
-  .layout-multiple-columns .list-panel > hr,
-  .layout-multiple-columns .list-panel + hr {
-    display: none;
-  }
-
-  /* Hide lists if there's not enough space on desktop vertically */
-  .layout-multiple-columns .list-panel {
-    display: none;
-    opacity: 0;
-    transition: all 200ms;
-  }
-
-  .layout-multiple-columns .list-panel:focus,
-  .layout-multiple-columns .list-panel:hover,
-  .layout-multiple-columns .column-link[href="/lists"]:focus ~ .list-panel,
-  .layout-multiple-columns .column-link[href="/lists"]:hover ~ .list-panel {
-    display: block;
-    opacity: 1;
-  }
-
   .layout-multiple-columns .status__action-bar .icon-button {
     position: relative;
   }
