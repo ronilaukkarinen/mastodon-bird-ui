@@ -418,13 +418,6 @@ body.layout-single-column {
   width: 100%;
 }
 
-/* Fix weird horizontal overflow */
-@media (min-width: 1175px) and (max-width: 1330px) {
-  .layout-single-column .ui {
-    width: unset;
-  }
-}
-
 /* Text color */
 .layout-single-column .account__header__tabs__name h1,
 .layout-single-column .account__header__bio .account__header__content,
@@ -2218,6 +2211,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding-right: calc(var(--gap-column-link) * 1.5);
   padding-top: calc(var(--gap-column-link) + 4px);
   transition: all 100ms;
+  width: 100%;
 }
 
 [dir="rtl"] .layout-single-column .column-link {
