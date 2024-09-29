@@ -2173,7 +2173,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 /* Right side panel */
 .layout-single-column .navigation-panel {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   overflow-y: auto;
   padding: 10px;
@@ -3366,14 +3367,9 @@ body.embed .button.logo-button:hover,
   transform: translateX(-4px) translateY(0);
 }
 
-.layout-single-column .navigation-panel__logo {
-  order: 1;
-}
-
 .layout-single-column .navigation-panel__menu {
   display: flex;
   flex-wrap: wrap;
-  order: 2;
 }
 
 @media screen and (min-width: 890px) {
@@ -3383,9 +3379,12 @@ body.embed .button.logo-button:hover,
     display: none;
   }
 
+  .layout-single-column .navigation-panel__menu {
+    overflow: visible;
+  }
+
   /* Hide lists if there's not enough space on desktop vertically */
   .layout-single-column .list-panel {
-    display: none;
     opacity: 0;
     transition: all 200ms;
   }
@@ -3394,7 +3393,6 @@ body.embed .button.logo-button:hover,
   .layout-single-column .list-panel:hover,
   .layout-single-column .column-link[href="/lists"]:focus ~ .list-panel,
   .layout-single-column .column-link[href="/lists"]:hover ~ .list-panel {
-    display: grid;
     opacity: 1;
   }
 
@@ -3463,10 +3461,6 @@ body.embed .button.logo-button:hover,
   .layout-single-column .navigation-panel__sign-in-banner,
   .layout-single-column .navigation-panel__legal {
     order: 14;
-  }
-
-  .layout-single-column .flex-spacer {
-    order: 15;
   }
 
   .layout-single-column .getting-started__trends {
@@ -4562,7 +4556,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   .layout-single-column .column-link[href="/lists"]:is(.active, :hover) + .list-panel,
   .layout-single-column .list-panel:hover {
     animation: fadein .4s 1;
-    display: block;
   }
 }
 
