@@ -3217,6 +3217,10 @@ body.embed .button.logo-button:hover,
   z-index: 5;
 }
 
+.link-footer p .version {
+  white-space: normal;
+}
+
 .layout-single-column .compose-form__footer {
   gap: 4px;
   padding-bottom: 6px;
