@@ -1751,7 +1751,6 @@ body.embed .detailed-status .video-player,
 
 /* Embeds */
 body.embed .detailed-status__link {
-  gap: 0;
   margin-left: 4px;
   top: 0;
 }
