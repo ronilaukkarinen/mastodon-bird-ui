@@ -4049,7 +4049,10 @@ body.embed .button.logo-button:hover,
   }
 
   .layout-single-column .item-list .column-link {
+    height: auto;
+    justify-content: flex-start;
     padding-bottom: 4px;
+    padding-left: 4px;
     padding-top: 4px;
     width: unset;
   }
