@@ -3141,6 +3141,14 @@ body.embed .button.logo-button:hover,
   width: 30px !important;
 }
 
+.layout-single-column .navigation-panel__logo {
+  order: 1;
+}
+
+.layout-single-column .navigation-panel__menu {
+  order: 2;
+}
+
 @media screen and (min-width: 890px) {
   /* Hide the space between Lists and the actual lists */
   .layout-multiple-columns .list-panel > hr,
@@ -3161,82 +3169,6 @@ body.embed .button.logo-button:hover,
   .layout-multiple-columns .column-link[href="/lists"]:hover ~ .list-panel {
     display: block;
     opacity: 1;
-  }
-
-
-  /* Order of the side nav items */
-  .layout-multiple-columns .navigation-panel__logo {
-    order: 1;
-  }
-
-  .layout-multiple-columns .column-link[href="/home"] {
-    order: 2;
-  }
-
-  .layout-multiple-columns .column-link[href="/notifications"] {
-    order: 3;
-  }
-
-  .layout-multiple-columns .column-link[href="/explore"] {
-    order: 4;
-  }
-
-  .layout-multiple-columns .column-link[href="/public/local"] {
-    order: 5;
-  }
-
-  .layout-multiple-columns .column-link[href="/public"] {
-    order: 6;
-  }
-
-  .layout-multiple-columns .column-link[href="/conversations"] {
-    order: 7;
-  }
-
-  .layout-multiple-columns .column-link[href='/follow_requests'] {
-    order: 8;
-  }
-
-  .layout-multiple-columns .column-link[href="/bookmarks"] {
-    order: 9;
-  }
-
-  .layout-multiple-columns .column-link[href="/favourites"] {
-    order: 10;
-  }
-
-  .layout-multiple-columns .column-link[href="/lists"] {
-    order: 12;
-  }
-
-  .layout-multiple-columns .column-link[href="/admin/dashboard"] {
-    order: 11;
-  }
-
-  .layout-multiple-columns .column-link[href="/admin/reports"] {
-    order: 12;
-  }
-
-  /* stylelint-disable-next-line no-duplicate-selectors */
-  .layout-multiple-columns .list-panel {
-    order: 13;
-  }
-
-  .layout-multiple-columns .column-link[href="/settings/preferences"] {
-    order: 11;
-  }
-
-  .layout-multiple-columns .navigation-panel__sign-in-banner,
-  .layout-multiple-columns .navigation-panel__legal {
-    order: 14;
-  }
-
-  .layout-multiple-columns .flex-spacer {
-    order: 15;
-  }
-
-  .layout-multiple-columns .getting-started__trends {
-    order: 16;
   }
 
   .layout-multiple-columns .status__action-bar .icon-button {
