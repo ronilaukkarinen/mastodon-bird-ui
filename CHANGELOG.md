@@ -1,3 +1,12 @@
+### 2.0.0rc52: 2024-09-29
+
+* Add support for Mastodon v4.3.0-beta.2-2024-09-29
+* Fix desktop navigation for new v4.3.0-beta.2.-mementomods-2024-09-29
+* Fix mobile navigation with the new structure, Fixes #132 (thanks @cadusilva!)
+* Fix version information not visible on lower height screens, Fixes #133 (thanks @rsholmes!)
+* Wrap version information
+* Fix dark square behind rounded avatar, Fixes #131 (thanks @cadusilva!)
+
 ### 2.0.0rc51: 2024-09-19
 
 * Fix ungrouped unread notification not having a highlight background color
