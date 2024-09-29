@@ -6,6 +6,7 @@
 * Fix version information not visible on lower height screens, Fixes #133 (thanks @rsholmes!)
 * Wrap version information
 * Fix dark square behind rounded avatar, Fixes #131 (thanks @cadusilva!)
+* Fix overflow in mobile nav
 
 ### 2.0.0rc51: 2024-09-19
 
