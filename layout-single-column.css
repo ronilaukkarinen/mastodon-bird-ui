@@ -3397,7 +3397,13 @@ body.embed .button.logo-button:hover,
   }
 
   .layout-single-column .navigation-panel__menu {
+    align-items: flex-start;
+    display: flex;
+    flex: unset;
+    flex-wrap: wrap;
+    gap: 0;
     overflow: visible;
+    position: relative;
   }
 
   /* Hide lists if there's not enough space on desktop vertically */
