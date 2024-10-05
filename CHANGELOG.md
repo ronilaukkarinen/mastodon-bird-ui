@@ -1,3 +1,8 @@
+### 2.0.0rc55: 2024-10-05
+
+* Fix broken media gallery in compose form
+* Fix double outline in media items
+
 ### 2.0.0rc54: 2024-09-29
 
 * Improve more icon in mobile when logged out, fix alignment
