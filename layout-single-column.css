@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.0 */
+   2.0.1 */
 
 /* CSS variables */
 :root {
@@ -4733,13 +4733,32 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .icon-star {
-  left: -28px;
+  left: -37px;
+}
+
+/* If number enabled in core */
+/* stylelint-disable-next-line */
+/* If number enabled in core */
+/* stylelint-disable-next-line */
+.layout-single-column.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon .icon-star {
+  left: 0;
   margin-top: 1px;
+  position: absolute;
 }
 
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.icon-button--with-counter.star-icon.activate .icon-star {
-  left: -37px;
+  left: -40px;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.star-icon.icon-button--with-counter .icon-button__counter {
+  margin-left: 20px;
+}
+
+.animated-number {
+  z-index: 99;
 }
 
 /* stylelint-disable-next-line */

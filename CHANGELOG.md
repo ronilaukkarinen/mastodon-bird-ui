@@ -1,3 +1,7 @@
+### 2.0.1: 2024-10-08
+
+* Fixes to heart icon on servers that have numbers enabled
+
 ### 2.0.0: 2024-10-08
 
 * Fixes to heart animation
