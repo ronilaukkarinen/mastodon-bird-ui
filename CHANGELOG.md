@@ -1,3 +1,252 @@
+### 2.0.0: 2024-10-08
+
+* Fixes to heart animation
+* Fixes to cws in advanced view
+* Disable retweet micro animation
+* Fix broken media gallery in compose form
+* Fix double outline in media items
+* Improve more icon in mobile when logged out, fix alignment
+* Make list nav an overlay menu instead of block nav to keep it tight
+* Fix list item style in mobile
+* Fix regressions caused by 2.0.0rc52 and the new nav structure in Mastodon 4.3.0-beta.2-2024-09-29
+* Add support for Mastodon v4.3.0-beta.2-2024-09-29
+* Fix desktop navigation for new v4.3.0-beta.2.-mementomods-2024-09-29
+* Fix mobile navigation with the new structure, Fixes #132 (thanks @cadusilva!)
+* Fix version information not visible on lower height screens, Fixes #133 (thanks @rsholmes!)
+* Wrap version information
+* Fix dark square behind rounded avatar, Fixes #131 (thanks @cadusilva!)
+* Fix overflow in mobile nav
+* Fix ungrouped unread notification not having a highlight background color
+* Fix private message indicator not sticking
+* Add new icons for Administration and Moderation column links in 4.3.0-beta.1 (2024-09-07)
+* Fix indicator for private mentions when grouped notifications are enabled in 4.3.0
+* Add support for Administration and Moderation column-links in 4.3.0-beta.1 (2024-09-07)
+* Add the same consistent content warning styles to the compose form
+* Show full content warning instead of hiding the overlapping part
+* Fix close icon overlapping inside compose form
+* Fix load more icon dimensions
+* Fix unread notification group styles for v4.3.0-beta.1
+* Support for v4.3.0-beta.1+mementomods-2024-08-23
+* Support for new content warnings presented in v4.3.0-beta.1 (thanks @shleeable!), Fixes #128
+* Fix Create account button not clickable on mobile
+* Support for grouped notifications [#30440](https://github.com/mastodon/mastodon/pull/30440)
+* Finalize styles for custom icons in grouped notifications
+* Fixes for grouped and ungrouped layout in notifications
+* Fix bottomless card and add styles for more-from-author
+* Remove outdated links from the README #121 (thanks @mackuba!)
+* Fix: Consistent border-radius for buttons #123
+* Fix: Search item in sidebar misplaced when disabling trends #118
+* Prepare for 4.3.0 release with SVG icons
+* Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
+* Replace filter bar icons with new SVG versions
+* Remove deprecated Local icon
+* Remove deprecated Share icon
+* Remove deprecated follow/unfollow hashtag icon
+* Prepare for [changing the heart as default](https://github.com/mastodon/mastodon/pull/27385#issuecomment-1773117170)
+* Add icons for more ellipsis and close x
+* Add --size-icon variable for easier icon sizing
+* Change default fav action icon to heart
+* Advanced web view support for 4.3.0
+* Make boost animation smoother
+* Fix icon size for private mention
+* Add search icon and fix alignments for search for 4.3.0
+* Make status icons the same size
+* Better accessibility outlines for column links in single column mode
+* Fix a corner case bug where advanced UI in mobile mode has wrong order in column links
+* Add profile link icons for Nostr, Bluesky and Threads
+* Truncate too long links in the profile, like Nostr
+* Remove font-size definitions from icon fonts that are no longer in use
+* Add proportions for the new copy icon
+* Fix alignment for textual label links
+* Add styles for the new /start onboarding on 4.3.0
+* Improve modal icon size and accessibility
+* Profile lock icon alignment fix, show it on the same level
+* Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
+* Fix picture in picture footer visibility
+* Fix picture in picture media border radius and margin
+* New compose form styles for 4.3.0 (2024-01-27)
+* New search input styles for 4.3.0 (2024-01-27)
+* Add profile link icons for Facebook and Bandcamp
+* Fix a regression with reply-indicator, remove style no longer needed in 4.3.0 (2024-01-27)
+* Fix follow requests icon for 4.3.0 (2024-01-27)
+* Reset emoji picker location from the corner to the bottom row for 4.3.0 (2024-01-27)
+* Offset fixes for especially multiple column view for 4.3.0 (2024-01-27)
+* Styles for Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01)
+* Add Bluesky icon according to the new brand #106 (thanks @dhelonious!)
+* Fix Carriage Return after a custom emoji in the bio's Extra fields, Fixes #105 (thanks @manuviens!)
+* Add WordPress profile icon
+* Add Friendica profile icon #101 (thanks @expertmanofficial!)
+* Add an icon for genderless pronouns #101
+* Fix video aspect-ratio for embeds
+* Fixes to boost and heart animations in single and multiple columns
+* Fix explore icon for the new class (PR #29395)
+* Remove borders around account header fields on v4.3.0-alpha.3-2024-03-22
+* Change server icon for account__domain-pill__popout__parts on v4.3.0-alpha.3-2024-03-22
+* Add styles for the new popout on v4.3.0-alpha.3-2024-03-22
+* Fix: Theme footer sits on top of other elements #114
+* Fix reply indicator not truncating properly
+* Fix borders in some part of the layout on v4.3.0-alpha.3-2024-03-22
+* Fix list item center alignment
+* Fade in list panel
+* More compact compose button on mobile
+* More compact header bar on mobile (thanks @nileane!)
+* Replace column settings icon for both single and advanced column views
+* Fix compose form styles on mobile
+* Change compose form resizability to follow core
+* Remove Safari PWA top bar fix replacing by compact header on mobile
+* Change column-link preferences icon
+* Fix post button running away if compose form message is too long
+* Fix star icon misalignment for numbered items, Fixes #116
+* Fix boost icon misalignment when clicked the detailed view boost icon on advanced web interface, Fixes #112
+* Fix a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
+
+### 2.0.0rc55: 2024-10-05
+
+* Fix broken media gallery in compose form
+* Fix double outline in media items
+
+### 2.0.0rc54: 2024-09-29
+
+* Improve more icon in mobile when logged out, fix alignment
+
+### 2.0.0rc53: 2024-09-29
+
+* Make list nav an overlay menu instead of block nav to keep it tight
+* Fix list item style in mobile
+* Fix regressions caused by 2.0.0rc52 and the new nav structure in Mastodon 4.3.0-beta.2-2024-09-29
+
+### 2.0.0rc52: 2024-09-29
+
+* Add support for Mastodon v4.3.0-beta.2-2024-09-29
+* Fix desktop navigation for new v4.3.0-beta.2.-mementomods-2024-09-29
+* Fix mobile navigation with the new structure, Fixes #132 (thanks @cadusilva!)
+* Fix version information not visible on lower height screens, Fixes #133 (thanks @rsholmes!)
+* Wrap version information
+* Fix dark square behind rounded avatar, Fixes #131 (thanks @cadusilva!)
+* Fix overflow in mobile nav
+
+### 2.0.0rc51: 2024-09-19
+
+* Fix ungrouped unread notification not having a highlight background color
+
+### 2.0.0rc50: 2024-09-13
+
+* Fix private message indicator not sticking
+
+### 2.0.0rc49: 2024-09-07
+
+* Add new icons for Administration and Moderation column links in 4.3.0-beta.1 (2024-09-07)
+
+### 2.0.0rc48: 2024-09-07
+
+* Fix indicator for private mentions when grouped notifications are enabled in 4.3.0
+* Add support for Administration and Moderation column-links in 4.3.0-beta.1 (2024-09-07)
+
+### 2.0.0rc47: 2024-08-23
+
+* Add the same consistent content warning styles to the compose form
+* Show full content warning instead of hiding the overlapping part
+
+### 2.0.0rc46: 2024-08-23
+
+* Fix close icon overlapping inside compose form
+
+### 2.0.0rc45: 2024-08-23
+
+* Fix load more icon dimensions
+* Fix unread notification group styles for v4.3.0-beta.1
+
+### 2.0.0rc44: 2024-08-23
+
+* Support for v4.3.0-beta.1+mementomods-2024-08-23
+* Support for new content warnings presented in v4.3.0-beta.1 (thanks @shleeable!), Fixes #128
+
+### 2.0.0rc43: 2024-07-28
+
+* Fix Create account button not clickable on mobile
+
+### 2.0.0rc42: 2024-07-11
+
+* Support for grouped notifications [#30440](https://github.com/mastodon/mastodon/pull/30440)
+* Finalize styles for custom icons in grouped notifications
+* Fixes for grouped and ungrouped layout in notifications
+
+### 2.0.0rc39: 2024-06-30
+
+* Fix bottomless card and add styles for more-from-author
+
+### 2.0.0rc38: 2024-06-30
+
+* Remove outdated links from the README #121 (thanks @mackuba!)
+* Fix: Consistent border-radius for buttons #123
+* Fix: Search item in sidebar misplaced when disabling trends #118
+
+### 2.0.0rc37: 2024-04-06
+
+* Prepare for 4.3.0 release with SVG icons
+* Add icon support for new SVG icons, replace icons for Home, Notifications, Explore, Live feeds, Private mentions, bookmarks, Favorites, Preferences and Lists
+* Replace filter bar icons with new SVG versions
+* Remove deprecated Local icon
+* Remove deprecated Share icon
+* Remove deprecated follow/unfollow hashtag icon
+* Prepare for [changing the heart as default](https://github.com/mastodon/mastodon/pull/27385#issuecomment-1773117170)
+* Add icons for more ellipsis and close x
+* Add --size-icon variable for easier icon sizing
+* Change default fav action icon to heart
+* Advanced web view support for 4.3.0
+* Make boost animation smoother
+* Fix icon size for private mention
+* Add search icon and fix alignments for search for 4.3.0
+* Make status icons the same size
+* Better accessibility outlines for column links in single column mode
+* Fix a corner case bug where advanced UI in mobile mode has wrong order in column links
+* Add profile link icons for Nostr, Bluesky and Threads
+* Truncate too long links in the profile, like Nostr
+* Remove font-size definitions from icon fonts that are no longer in use
+* Add proportions for the new copy icon
+* Fix alignment for textual label links
+* Add styles for the new /start onboarding on 4.3.0
+* Improve modal icon size and accessibility
+* Profile lock icon alignment fix, show it on the same level
+* Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
+* Fix picture in picture footer visibility
+* Fix picture in picture media border radius and margin
+* New compose form styles for 4.3.0 (2024-01-27)
+* New search input styles for 4.3.0 (2024-01-27)
+* Add profile link icons for Facebook and Bandcamp
+* Fix a regression with reply-indicator, remove style no longer needed in 4.3.0 (2024-01-27)
+* Fix follow requests icon for 4.3.0 (2024-01-27)
+* Reset emoji picker location from the corner to the bottom row for 4.3.0 (2024-01-27)
+* Offset fixes for especially multiple column view for 4.3.0 (2024-01-27)
+* Styles for Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01)
+* Add Bluesky icon according to the new brand #106 (thanks @dhelonious!)
+* Fix Carriage Return after a custom emoji in the bio's Extra fields, Fixes #105 (thanks @manuviens!)
+* Add WordPress profile icon
+* Add Friendica profile icon #101 (thanks @expertmanofficial!)
+* Add an icon for genderless pronouns #101
+* Fix video aspect-ratio for embeds
+* Fixes to boost and heart animations in single and multiple columns
+* Fix explore icon for the new class (PR #29395)
+* Remove borders around account header fields on v4.3.0-alpha.3-2024-03-22
+* Change server icon for account__domain-pill__popout__parts on v4.3.0-alpha.3-2024-03-22
+* Add styles for the new popout on v4.3.0-alpha.3-2024-03-22
+* Fix: Theme footer sits on top of other elements #114
+* Fix reply indicator not truncating properly
+* Fix borders in some part of the layout on v4.3.0-alpha.3-2024-03-22
+* Fix list item center alignment
+* Fade in list panel
+* More compact compose button on mobile
+* More compact header bar on mobile (thanks @nileane!)
+* Replace column settings icon for both single and advanced column views
+* Fix compose form styles on mobile
+* Change compose form resizability to follow core
+* Remove Safari PWA top bar fix replacing by compact header on mobile
+* Change column-link preferences icon
+* Fix post button running away if compose form message is too long
+* Fix star icon misalignment for numbered items, Fixes #116
+* Fix boost icon misalignment when clicked the detailed view boost icon on advanced web interface, Fixes #112
+* Fix a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
+
 ### 1.8.5: 2024-02-10
 
 * Add profile link icons for Facebook and Bandcamp (from 2.0.0rc/nightly)

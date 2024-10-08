@@ -1,6 +1,6 @@
 ## Mastodon with modern birdsite-like UI
 
-[![Build Status for CSS](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml/badge.svg)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml) [![Supported Mastodon version](https://img.shields.io/badge/mastodon-v4.2.0-595aff)](https://github.com/mastodon/mastodon) <a href="https://github.com/sponsors/ronilaukkarinen"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" alt="GitHub Sponsor" height="20px"></a> <a href="https://ko-fi.com/rolle"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" height="20px"></a> <a href="https://www.buymeacoffee.com/Fd140aV"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-orange.png" height="20px"></a>
+[![Build Status for CSS](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml/badge.svg)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml) [![Supported Mastodon version](https://img.shields.io/badge/mastodon-v4.3.0-595aff)](https://github.com/mastodon/mastodon) <a href="https://github.com/sponsors/ronilaukkarinen"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" alt="GitHub Sponsor" height="20px"></a> <a href="https://ko-fi.com/rolle"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" height="20px"></a> <a href="https://www.buymeacoffee.com/Fd140aV"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-orange.png" height="20px"></a>
 
 Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to resemble Twitter, but be a lot better than it ever was.
 
@@ -11,7 +11,7 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 
 ## [Live demo on mementomori.social](https://mementomori.social)
 
-![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/82604f4e-15d9-4c5d-94d9-62d4ae91c439)
+![mbui](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/8006e3ba-a902-40f5-9047-048b29f075db)
 
 ## Table of contents
 
@@ -34,13 +34,11 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     5. [Why don't you just run Mastodon Bird UI in a separate URL?](#why-dont-you-just-run-mastodon-bird-ui-in-a-separate-url)
     6. [Is the advanced web interface styled](#is-the-advanced-web-interface-styled)
     7. [Why the admin interface is not styled?](#why-the-admin-interface-is-not-styled)
-    8. [Can you add background-color for compose form box area?](#can-you-add-background-color-for-compose-form-box-area)
-    9. [Can you change compose form height and font-size?](#can-you-change-compose-form-height-and-font-size)
-    10. [Can you add feature x?](#can-you-add-feature-x)
-    11. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
-    12. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
-    13. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
-    14. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
+    8. [Can you add feature x?](#can-you-add-feature-x)
+    9. [Can you make it look like this by default?](#can-you-make-it-look-like-this-by-default)
+    10. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
+    11. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
+    12. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
 10. [Goals](#goals)
 11. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
@@ -144,10 +142,11 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [jkpg.rocks](https://jkpg.rocks/)                                        | Site theme                | Mastodon Bird UI | 2+             | Yes         |
 | [convo.casa](https://convo.casa)                                         | Site theme                | Mastodon Bird UI | 5000+          | No          |
 | [social.kryta.app](https://social.kryta.app)                             | Custom CSS                | Mastodon Bird UI | <100           | Yes         |
+| [everythingbagel.social](https://everythingbagel.social)                 | Site theme                | Bagel UI         | 5              | Yes         |
 
 ## Installation for Mastodon instance admins
 
-1. Copy the contents of [layout-single-column.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-single-column.css) and [layout-multiple-columns.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-multiple-columns.css) and paste them (or one of them) to the **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). It might be recommended using the single layout CSS as "base" and use the advanced view CSS with browser extension (as it's desktop only anyway).
+1. Copy the contents of layout-single-column.css and layout-multiple-columns.css and paste them (or one of them) to the **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). It might be recommended using the single layout CSS as "base" and use the advanced view CSS with browser extension (as it's desktop only anyway).
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
 
@@ -161,7 +160,7 @@ Mastodon Bird UI can be integrated as a **Site theme** for all instance users as
 
 If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). If you want Mastodon Bird UI to be as default, read along.
 
-Cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes), then run below.
+Cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes) and run below.
 
 **Mastodon main/nightly:** `nightly`<br>
 **Mastodon stable:** `main`
@@ -244,13 +243,13 @@ And you're done!
 ## Installation for regular users, contributing and testing
 
 1. Install [Live CSS Editor](https://github.com/webextensions/live-css-editor) (or any other extension like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite) or use the [user.js by eg](https://ieji.de/@eg/110174544387143309)
-2. Copy the contents of [layout-single-column.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-single-column.css) and [layout-multiple-columns.css](https://github.com/ronilaukkarinen/mastodon-bird-ui/blob/master/layout-multiple-columns.css)
+2. Copy the contents of layout-single-column.css and layout-multiple-columns.css
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
 ## Updating instructions
 
-If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). 
+If you are using **Custom CSS**, just copy and paste the new version to **Custom CSS** textarea in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance).
 
 If you are using Mastodon Bird UI as option, get the latest changes to your instance, first cding to live folder (or to wherever your Mastodon root is), then run below.
 
@@ -357,41 +356,6 @@ Yes! From version 1.5.4 multiple columns are supported. Apply layout-multiple-co
 ### Why the admin interface is not styled?
 
 We don't spend much time in the admin interface and it's not a priority for me to style it. It would mean too much work and it's not worth it right now.
-
-### Can you add background-color for compose form box area?
-
-Aesthetically I prefer left and right sides to be "floaty" and I follow the design language from Twitter even if the compose form is there inside the center column. See [this issue](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/10) for the decision not to have it there by default.
-
-You can add it yourself by adding this to your Custom CSS:
-
-```css
-/* Add background color for the compose form */
-/* stylelint-disable-next-line no-duplicate-selectors */
-.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
-.layout-single-column .compose-form .compose-form__buttons-wrapper {
-  background-color: var(--color-mud);
-  border-color: var(--color-mud);
-  padding-top: 0;
-}
-
-/* Fixes to bottom row when there's a background */
-.layout-single-column .compose-form .compose-form__buttons-wrapper {
-  padding-bottom: calc(var(--gap-default) / 2);
-}
-```
-
-### Can you change compose form height and font-size?
-
-Yes YOU can. But they're not there by default, see [this post](https://mementomori.social/@rolle/110657416001531854). Box size has been set to a certain max-height because it helps the people who use assistive on-screen keyboard (suggestion from [@rmattila74](https://energydon.fi/@rmattila74)). For this reason I'm not going to increase height or make it resize too much by default. You can do these modifications for yourself, here's the code for you:
-
-```css
-.layout-single-column .compose-form .autosuggest-textarea__textarea {
-  font-size: 18px;
-  min-height: 300px;
-}
-```
-
-Tweak the values as you like.
 
 ### Can you add feature x?
 
