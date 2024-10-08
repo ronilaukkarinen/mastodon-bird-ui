@@ -4733,7 +4733,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* stylelint-disable-next-line */
 .layout-single-column.no-reduce-motion .status .icon-button.star-icon.activate .icon-star {
-  left: -37px;
+  left: -28px;
 }
 
 /* If number enabled in core */
