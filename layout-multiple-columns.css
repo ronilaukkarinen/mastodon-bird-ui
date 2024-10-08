@@ -3750,10 +3750,6 @@ body.embed .button.logo-button:hover,
     padding: 0;
   }
 
-  .layout-multiple-columns .columns-area__panels__pane--navigational .navigation-panel .flex-spacer {
-    display: none;
-  }
-
   .layout-multiple-columns .columns-area__panels__pane--navigational .navigation-panel__menu {
     flex-direction: row;
     flex-wrap: nowrap;
