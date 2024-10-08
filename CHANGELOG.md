@@ -1,3 +1,7 @@
+### 2.0.2: 2024-10-08
+
+* Fix a regression with the content warning text wrapping unintentionally in the advanced view
+
 ### 2.0.1: 2024-10-08
 
 * Fixes to heart icon on servers that have numbers enabled

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.1 */
+   2.0.2 */
 
 /* CSS variables */
 :root {
@@ -1044,7 +1044,7 @@ body .content-warning {
   color: var(--color-light-purple);
   display: grid;
   font-size: var(--font-size-mid);
-  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 3fr) minmax(88px, 1fr);
   padding: 10px 16px;
   white-space: unset;
 }
@@ -1065,8 +1065,8 @@ body .content-warning .link-button {
   font-size: var(--font-size-mid);
   font-weight: var(--font-weight-semibold);
   justify-self: flex-end;
-  min-width: 65px;
   text-align: right;
+  white-space: nowrap;
 }
 
 /* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
