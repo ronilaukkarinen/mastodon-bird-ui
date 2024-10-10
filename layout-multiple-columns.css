@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.2 */
+   2.0.3 */
 
 /* CSS variables */
 :root {
@@ -1659,20 +1659,15 @@ body.embed .detailed-status,
   width: 100% !important;
 }
 
-.layout-multiple-columns .media-gallery__gifv,
-.layout-multiple-columns .detailed-status .audio-player,
-.layout-multiple-columns .detailed-status .media-gallery,
-.layout-multiple-columns .detailed-status .media-gallery__gifv,
-.layout-multiple-columns .detailed-status .media-gallery__preview,
-.layout-multiple-columns .detailed-status .video-player {
-  margin-left: 0;
-}
-
 .layout-multiple-columns .media-gallery__preview {
   /* stylelint-disable-next-line */
   margin-left: 0 !important;
   /* stylelint-disable-next-line */
   width: 100% !important;
+}
+
+.layout-multiple-columns .media-gallery__item {
+  outline: 0;
 }
 
 .layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(odd),
@@ -3058,9 +3053,24 @@ body.embed .button.logo-button:hover,
   z-index: 4;
 }
 
+body .compose-form .compose-form__uploads {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* New compose form buttons from 4.3.0-alpha 2024-01-27 */
 .layout-multiple-columns .compose-form__dropdowns {
   gap: 10px;
+}
+
+.layout-multiple-columns .compose-form .media-gallery__item,
+.layout-multiple-columns .compose-form .compose-form__uploads,
+.layout-multiple-columns .compose-form .media-gallery {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
 }
 
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button.active,

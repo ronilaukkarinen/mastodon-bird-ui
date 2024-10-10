@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.2 */
+   2.0.3 */
 
 /* CSS variables */
 :root {
@@ -3201,6 +3201,14 @@ body .compose-form .compose-form__uploads {
 /* New compose form buttons from 4.3.0-alpha 2024-01-27 */
 .layout-single-column .compose-form__dropdowns {
   gap: 10px;
+}
+
+.layout-single-column .compose-form .media-gallery__item,
+.layout-single-column .compose-form .compose-form__uploads,
+.layout-single-column .compose-form .media-gallery {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
 }
 
 .layout-single-column .compose-form__dropdowns .dropdown-button.active,

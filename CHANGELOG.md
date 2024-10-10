@@ -1,3 +1,8 @@
+### 2.0.3: 2024-10-10
+
+* Fix advanced view compose form media attachment bug (thanks @CliffWade@allthingstech.social!)
+* Make the media attachment style more seamless
+
 ### 2.0.2: 2024-10-08
 
 * Fix a regression with the content warning text wrapping unintentionally in the advanced view
