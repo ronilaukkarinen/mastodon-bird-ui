@@ -1,3 +1,7 @@
+### 2.0.4: 2024-10-18
+
+* Fix hover bubble position if the button has counter
+
 ### 2.0.3: 2024-10-10
 
 * Fix advanced view compose form media attachment bug (thanks @CliffWade@allthingstech.social!)
