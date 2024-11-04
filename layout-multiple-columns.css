@@ -1672,8 +1672,7 @@ body.embed .detailed-status,
 
 .layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(odd),
 .layout-multiple-columns .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
-.layout-multiple-columns .media-gallery__preview:nth-of-type(odd),
- {
+.layout-multiple-columns .media-gallery__preview:nth-of-type(odd) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
