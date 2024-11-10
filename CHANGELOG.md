@@ -1,3 +1,11 @@
+### 2.0.6rc: 2024-11-10
+
+* Fix issues with the nav bar in 2024-11-09
+* More unified background and borders in the settings boxes
+* Use active color instead of rotate in settings icon
+* Fix navigation issues in nightly 2024-11-09
+* Remove stylelint recommended, fix unknown rule
+
 ### 2.0.5: 2024-11-10
 
 * Add unit test to test for CSS syntax errors #141
