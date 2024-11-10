@@ -1,3 +1,7 @@
+### 2.0.5rc: 2024-11-10
+
+* Add unit test to test for CSS syntax errors #141
+
 ### 2.0.4: 2024-10-18
 
 * Fix hover bubble position if the button has counter
