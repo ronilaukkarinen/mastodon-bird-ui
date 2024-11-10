@@ -3750,6 +3750,14 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-sliders);
 }
 
+.column-header__button.active .icon-sliders {
+  /* Use contrast icon */
+  background-image: var(--icon-sliders-contrast);
+
+  /* Disable rotate */
+  transform: none;
+}
+
 /* Administration icon */
 .layout-single-column .column-link .icon-tachometer {
   --size-icon: 24px;
