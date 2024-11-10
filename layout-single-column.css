@@ -4517,28 +4517,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   color: transparent;
 }
 
-/* More compact header on mobile, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
+/* Header on mobile */
 @media screen and (max-width: 1174px) {
-  .app-body:not(.layout-multiple-columns) .ui__header {
-    background-color: transparent;
-    border-bottom: 0;
-  }
-
   .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
     margin-left: 3px;
-  }
-
-  .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
-    border-bottom: 0;
-    border-radius: 0;
-    box-shadow: none;
-    display: block;
-    height: 55px;
-    inset-inline-end: 105px;
-    inset-inline-start: 45px;
-    margin-bottom: -2px;
-    position: fixed;
-    top: 0;
   }
 
   /* stylelint-disable-next-line */
@@ -4567,19 +4549,29 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
   }
 
+  .app-body:not(.layout-multiple-columns) .columns-area__panels {
+    z-index: 2;
+  }
+
   /* Set a backdrop blur background to both top bars */
-  .app-body:not(.layout-multiple-columns) .ui::after {
+  .app-body:not(.layout-multiple-columns) .ui__header {
+    background-color: var(--color-bg-75);
+    height: 55px;
+    z-index: 5;
+  }
+
+  .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper::after {
     /* stylelint-disable-next-line */
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-bg-75);
     content: "";
     height: 55px;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
   }
 
   /* Remove margin between column settings and column header */
