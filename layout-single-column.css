@@ -24,6 +24,7 @@
      and replace it inside the SVG icons if you decide to change it */
   --color-bg: var(--color-brand-mastodon-bg);
   --color-bg-75: #1e2028bf;
+  --color-bg-90: #1e2028e6;
   --color-fg: #fff;
   --color-border: #38384d;
   --color-dim: var(--color-brand-mastodon-dim);
@@ -275,6 +276,7 @@ body.theme-mastodon-light.layout-single-column {
   --color-light-purple: #9588a6;
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
+  --color-bg-90: #ffffffe6;
   --color-accent: var(--color-accent-dark);
   --color-ghost-button-text: var(--color-accent-dark);
   --color-bg-compose-form: rgb(147 136 166 / .2);
@@ -1490,9 +1492,8 @@ body.embed .detailed-status__display-avatar > img,
   border: 0;
 }
 
-/* Nice active effect in the column header */
 .layout-single-column .column-header__wrapper.active {
-  box-shadow: var(--active-header-box-shadow);
+  box-shadow: none;
 }
 
 .layout-single-column .column-header__wrapper.active::before {
@@ -4015,7 +4016,6 @@ body .compose-form .compose-form__uploads {
 /* Mobile */
 @media screen and (max-width: 889px) {
 
-
   /* Better blur overlay for ui-header */
   .layout-single-column .ui::after {
     backdrop-filter: blur(12px);
@@ -4548,19 +4548,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
   }
 
-  .app-body:not(.layout-multiple-columns)
-        :is(
-            .column-header,
-            .column-back-button,
-            .column-header__button,
-            .column-header__back-button
-        ) {
-    background-color: transparent;
-    border: 0;
-    height: 55px;
-    margin: 0;
-  }
-
   .app-body .column-header__icon {
     display: none;
   }
@@ -4571,18 +4558,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
   /* Set a backdrop blur background to both top bars */
   .app-body:not(.layout-multiple-columns) .ui__header {
-    background-color: var(--color-bg-75);
+    background-color: var(--color-bg-90);
     height: 55px;
     z-index: 5;
   }
 
   .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper::after {
-    /* stylelint-disable-next-line */
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: var(--color-bg-75);
+    background-color: var(--color-bg-90);
     content: "";
-    height: 55px;
+    height: 49px;
     left: 0;
     position: absolute;
     top: 0;
@@ -4590,15 +4574,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     z-index: 0;
   }
 
-  /* Remove margin between column settings and column header */
-  .app-body:not(.layout-multiple-columns) .column-header__collapsible {
-    left: 0;
-    position: fixed;
-    right: 0;
+  .ui:has([href="/auth/sign_in"]) .tabs-bar__wrapper::after,
+  .ui:has(.compose-form__submit) .tabs-bar__wrapper::after {
+    display: none;
+  }
+
+  .layout-single-column .column-header__collapsible {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .layout-single-column .column-header__collapsible-inner {
+    background-color: var(--color-bg-90);
   }
 
   .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0;
   }
 }
 
