@@ -4043,7 +4043,6 @@ body.embed .entry .detailed-status {
 /* Threaded line, actually */
 .layout-multiple-columns .status__line {
   border-inline-start: 2px solid var(--color-thread-line);
-  -webkit-border-start: 2px solid var(--color-thread-line);
 }
 
 .layout-multiple-columns .status__line--full::before {

@@ -12,9 +12,13 @@
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
     "@ronilaukkarinen/stylelint-declaration-strict-value": "^1.9.2",
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
-    "postcss": "^8.4.21",
-    "stylelint": "^15.2.0",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-standard": "^30.0.1",
+    "stylelint-csstree-validator": "^3.0.0",
     "stylelint-order": "^6.0.3"
-  }
+  },
+  "dependencies": {}
 }

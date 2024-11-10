@@ -33,17 +33,11 @@ jobs:
         @ronilaukkarinen/stylelint-a11y@^1.2.7 \
         @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
         @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1 \
-        postcss@8.4.21 \
-        postcss-cli@^10.1.0 \
-        postcss-safe-parser@^6.0.0
+        postcss@8.4.21
 
     - name: Run stylelint
       run: |
         npx stylelint *.css --max-warnings 0 --config .stylelintrc
 
     - name: Validate CSS syntax
-      run: |
-        for file in *.css; do
-          echo "Validating $file"
-          npx postcss "$file" --parser postcss-safe-parser
-        done
+      run: node validate-css.js
