@@ -783,6 +783,12 @@ body.layout-multiple-columns {
   color: var(--color-light-text);
 }
 
+/* Setting boxes */
+.layout-multiple-columns .column-header__collapsible-inner {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+
 /* Column-header border */
 .layout-multiple-columns .column-header__collapsible {
   border-bottom: 1px solid var(--color-border);
@@ -3447,6 +3453,13 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .column-header__button .icon-sliders {
   --size-icon: 20px;
   background-image: var(--icon-sliders);
+}
+
+.layout-multiple-columns .column-header__button.active .icon-sliders {
+  /* Use contrast icon */
+  background-image: var(--icon-sliders-contrast);
+  /* Disable rotate */
+  transform: none;
 }
 
 /* Administration icon */
