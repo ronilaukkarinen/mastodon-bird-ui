@@ -1,3 +1,7 @@
+### 2.0.6rc3: 2024-11-10
+
+* Fix imageless article cards don't display correctly, Fixes #137 (thanks @AlternateRT!)
+
 ### 2.0.6rc2: 2024-11-10
 
 * Fix numbered heart animation in advanced view (thanks @stedi!)
