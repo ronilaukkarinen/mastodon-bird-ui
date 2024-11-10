@@ -790,9 +790,17 @@ body.layout-single-column {
   color: var(--color-light-text);
 }
 
+/* Setting boxes */
+.layout-single-column .column-header__collapsible-inner {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+
 /* Column-header border */
 .layout-single-column .column-header__collapsible {
   border-bottom: 1px solid var(--color-border);
+  border-left: 0;
+  border-right: 0;
 }
 
 .layout-single-column .column-header__collapsible,
