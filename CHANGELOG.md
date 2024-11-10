@@ -1,3 +1,7 @@
+### 2.0.6rc2: 2024-11-10
+
+* Fix numbered heart animation in advanced view (thanks @stedi!)
+
 ### 2.0.6rc: 2024-11-10
 
 * Fix issues with the nav bar in 2024-11-09

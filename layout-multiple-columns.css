@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.6rc */
+   2.0.6rc2 */
 
 /* CSS variables */
 :root {
@@ -4325,6 +4325,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-multiple-columns.no-reduce-motion .detailed-status__action-bar {
   height: 25.5px;
+}
+
+.layout-multiple-columns.no-reduce-motion .star-icon.icon-button--with-counter .icon-button__counter {
+  margin-left: 20px;
+}
+
+.animated-number {
+  z-index: 99;
 }
 
 @media screen and (max-width: 889px) {
