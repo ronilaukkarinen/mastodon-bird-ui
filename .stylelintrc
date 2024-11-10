@@ -6,8 +6,7 @@
     "stylelint-csstree-validator"
   ],
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recommended"
+    "stylelint-config-standard"
   ],
   "rules": {
     "csstree/validator": true,
