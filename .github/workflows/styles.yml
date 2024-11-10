@@ -34,7 +34,8 @@ jobs:
         @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
         @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1 \
         postcss@8.4.21 \
-        postcss-cli@^10.1.0
+        postcss-cli@^10.1.0 \
+        postcss-safe-parser@^6.0.0
 
     - name: Run stylelint
       run: |
