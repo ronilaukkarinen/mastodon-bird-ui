@@ -1729,8 +1729,7 @@ body.embed .detailed-status .video-player,
 
 .layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd),
 .layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd) > a,
-.layout-single-column .media-gallery__preview:nth-of-type(odd),
- {
+.layout-single-column .media-gallery__preview:nth-of-type(odd) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
