@@ -1,7 +1,8 @@
-### 2.0.5rc: 2024-11-10
+### 2.0.5: 2024-11-10
 
 * Add unit test to test for CSS syntax errors #141
 * Add custom validator for comma errors #141
+* Fix trailing comma errors in CSS files #143 Fixes #141 (thanks @thomas-pike!)
 
 ### 2.0.4: 2024-10-18
 
