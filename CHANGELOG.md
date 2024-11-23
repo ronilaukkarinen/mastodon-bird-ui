@@ -1,6 +1,6 @@
 ### 2.0.6rc4: 2024-11-10
 
-* Fix star icon misalignment in Mastoodn v4.4.0-alpha.1
+* Fix star icon misalignment in Mastodon v4.4.0-alpha.1
 
 ### 2.0.6rc3: 2024-11-10
 
