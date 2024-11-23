@@ -4536,9 +4536,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-multiple-columns button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
+  left: 0 !important;
   position: absolute !important;
   top: unset !important;
-  left: -40px !important;
 }
 
 @media (hover: none) {
