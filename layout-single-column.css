@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.6rc3 */
+   2.0.6rc4 */
 
 /* CSS variables */
 :root {
@@ -4712,7 +4712,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-size: unset;
   /* stylelint-disable-next-line */
   content: '' !important;
-  height: 100px;
   left: -38px;
   pointer-events: none;
   position: absolute;
@@ -4966,7 +4965,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
-  left: -34px !important;
+  left: -40px !important;
   position: absolute !important;
   top: unset !important;
 }
