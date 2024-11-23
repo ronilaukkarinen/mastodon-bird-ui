@@ -4299,6 +4299,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: -38px;
   transform: scale(.58);
   width: 100px;
+  height: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -4419,6 +4420,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: 0;
   transform: none;
   width: unset;
+  height: unset !important;
 }
 
 .layout-multiple-columns.no-reduce-motion .icon-button.star-icon.active .icon-star {
