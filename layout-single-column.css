@@ -4712,13 +4712,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-size: unset;
   /* stylelint-disable-next-line */
   content: '' !important;
+  height: 100px;
   left: -38px;
   pointer-events: none;
   position: absolute;
   top: -37px;
   transform: scale(.58);
   width: 100px;
-  height: 100px;
 }
 
 @media (max-width: 890px) {
