@@ -3979,14 +3979,6 @@ body .compose-form .compose-form__uploads {
     border-right: 0;
   }
 
-  .layout-single-column .ui__header,
-  .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
-  .layout-single-column .tabs-bar__wrapper {
-    backdrop-filter: blur(12px);
-    background-color: var(--color-bg-75);
-    border-color: var(--color-border);
-  }
-
   .layout-single-column .columns-area__panels {
     width: calc(100% - 1px);
   }
@@ -4572,6 +4564,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     /* stylelint-disable-next-line */
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+    background-color: var(--color-bg-75);
     border-bottom: 1px solid var(--color-border);
     content: "";
     height: 55px;
