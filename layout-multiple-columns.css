@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.5 */
+   2.0.6 */
 
 /* CSS variables */
 :root {
@@ -669,11 +669,6 @@ body.layout-multiple-columns {
   display: inherit;
 }
 
-/* Hide empty status cards alltogether (Mastodon 4.1.5-2023-07-29) */
-.layout-multiple-columns .status-card:has(.icon-file-text) {
-  display: none;
-}
-
 /* Hide empty YouTube description */
 .layout-multiple-columns .status-card__description:empty {
   display: none;
@@ -781,6 +776,12 @@ body.layout-multiple-columns {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
   color: var(--color-light-text);
+}
+
+/* Setting boxes */
+.layout-multiple-columns .column-header__collapsible-inner {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
 }
 
 /* Column-header border */
@@ -1657,6 +1658,16 @@ body.embed .detailed-status,
   max-height: unset !important;
   /* stylelint-disable-next-line */
   width: 100% !important;
+}
+
+.layout-multiple-columns .media-gallery__gifv,
+.layout-multiple-columns .media-gallery__preview,
+.layout-multiple-columns .detailed-status .audio-player,
+.layout-multiple-columns .detailed-status .media-gallery,
+.layout-multiple-columns .detailed-status .media-gallery__gifv,
+.layout-multiple-columns .detailed-status .media-gallery__preview,
+.layout-multiple-columns .detailed-status .video-player {
+  margin-left: 0;
 }
 
 .layout-multiple-columns .media-gallery__preview {
@@ -3449,6 +3460,13 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-sliders);
 }
 
+.layout-multiple-columns .column-header__button.active .icon-sliders {
+  /* Use contrast icon */
+  background-image: var(--icon-sliders-contrast);
+  /* Disable rotate */
+  transform: none;
+}
+
 /* Administration icon */
 .layout-multiple-columns .column-link .icon-tachometer {
   --size-icon: 24px;
@@ -4314,6 +4332,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   height: 25.5px;
 }
 
+.layout-multiple-columns.no-reduce-motion .star-icon.icon-button--with-counter.activate .icon-button__counter {
+  margin-left: 20px;
+}
+
+.animated-number {
+  z-index: 99;
+}
+
 @media screen and (max-width: 889px) {
   /* stylelint-disable-next-line */
   .layout-multiple-columns.no-reduce-motion .status .icon-button.star-icon.activate .icon-star {
@@ -4394,6 +4420,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: 0;
   transform: none;
   width: unset;
+  height: unset !important;
 }
 
 .layout-multiple-columns.no-reduce-motion .icon-button.star-icon.active .icon-star {
@@ -4511,9 +4538,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-multiple-columns button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
+  left: 0 !important;
   position: absolute !important;
   top: unset !important;
-  left: -34px !important;
 }
 
 @media (hover: none) {

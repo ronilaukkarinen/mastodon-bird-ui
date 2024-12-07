@@ -1,3 +1,16 @@
+### 2.0.6: 2024-12-07
+
+* Fix top bar showing up when there is no column header title (thanks @ikkeT!)
+* Fix star icon misalignment in Mastodon v4.4.0-alpha.1
+* Fix imageless article cards don't display correctly, Fixes #137 (thanks @AlternateRT!)
+* Fix numbered heart animation in advanced view (thanks @stedi!)
+* Fix media gallery margin in advanced view
+* Fix issues with the nav bar in 2024-11-09
+* More unified background and borders in the settings boxes
+* Use active color instead of rotate in settings icon
+* Fix navigation issues in nightly 2024-11-09
+* Remove stylelint recommended, fix unknown rule
+
 ### 2.0.5: 2024-11-10
 
 * Add unit test to test for CSS syntax errors #141

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.5 */
+   2.0.6 */
 
 /* CSS variables */
 :root {
@@ -24,6 +24,7 @@
      and replace it inside the SVG icons if you decide to change it */
   --color-bg: var(--color-brand-mastodon-bg);
   --color-bg-75: #1e2028bf;
+  --color-bg-90: #1e2028e6;
   --color-fg: #fff;
   --color-border: #38384d;
   --color-dim: var(--color-brand-mastodon-dim);
@@ -275,6 +276,7 @@ body.theme-mastodon-light.layout-single-column {
   --color-light-purple: #9588a6;
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
+  --color-bg-90: #ffffffe6;
   --color-accent: var(--color-accent-dark);
   --color-ghost-button-text: var(--color-accent-dark);
   --color-bg-compose-form: rgb(147 136 166 / .2);
@@ -683,11 +685,6 @@ body.layout-single-column {
   display: inherit;
 }
 
-/* Hide empty status cards alltogether (Mastodon 4.1.5-2023-07-29) */
-.layout-single-column .status-card:has(.icon-file-text) {
-  display: none;
-}
-
 /* Hide empty YouTube description */
 .layout-single-column .status-card__description:empty {
   display: none;
@@ -790,9 +787,17 @@ body.layout-single-column {
   color: var(--color-light-text);
 }
 
+/* Setting boxes */
+.layout-single-column .column-header__collapsible-inner {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+
 /* Column-header border */
 .layout-single-column .column-header__collapsible {
   border-bottom: 1px solid var(--color-border);
+  border-left: 0;
+  border-right: 0;
 }
 
 .layout-single-column .column-header__collapsible,
@@ -1482,9 +1487,8 @@ body.embed .detailed-status__display-avatar > img,
   border: 0;
 }
 
-/* Nice active effect in the column header */
 .layout-single-column .column-header__wrapper.active {
-  box-shadow: var(--active-header-box-shadow);
+  box-shadow: none;
 }
 
 .layout-single-column .column-header__wrapper.active::before {
@@ -3750,6 +3754,14 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-sliders);
 }
 
+.column-header__button.active .icon-sliders {
+  /* Use contrast icon */
+  background-image: var(--icon-sliders-contrast);
+
+  /* Disable rotate */
+  transform: none;
+}
+
 /* Administration icon */
 .layout-single-column .column-link .icon-tachometer {
   --size-icon: 24px;
@@ -3998,7 +4010,6 @@ body .compose-form .compose-form__uploads {
 
 /* Mobile */
 @media screen and (max-width: 889px) {
-
 
   /* Better blur overlay for ui-header */
   .layout-single-column .ui::after {
@@ -4517,28 +4528,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   color: transparent;
 }
 
-/* More compact header on mobile, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
+/* Header on mobile */
 @media screen and (max-width: 1174px) {
-  .app-body:not(.layout-multiple-columns) .ui__header {
-    background-color: transparent;
-    border-bottom: 0;
-  }
-
   .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
     margin-left: 3px;
-  }
-
-  .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
-    border-bottom: 0;
-    border-radius: 0;
-    box-shadow: none;
-    display: block;
-    height: 55px;
-    inset-inline-end: 105px;
-    inset-inline-start: 45px;
-    margin-bottom: -2px;
-    position: fixed;
-    top: 0;
   }
 
   /* stylelint-disable-next-line */
@@ -4550,47 +4543,47 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
   }
 
-  .app-body:not(.layout-multiple-columns)
-        :is(
-            .column-header,
-            .column-back-button,
-            .column-header__button,
-            .column-header__back-button
-        ) {
-    background-color: transparent;
-    border: 0;
-    height: 55px;
-    margin: 0;
-  }
-
   .app-body .column-header__icon {
     display: none;
   }
 
-  /* Set a backdrop blur background to both top bars */
-  .app-body:not(.layout-multiple-columns) .ui::after {
-    /* stylelint-disable-next-line */
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--color-border);
-    content: "";
-    height: 55px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  .app-body:not(.layout-multiple-columns) .columns-area__panels {
+    z-index: 2;
   }
 
-  /* Remove margin between column settings and column header */
-  .app-body:not(.layout-multiple-columns) .column-header__collapsible {
+  /* Set a backdrop blur background to both top bars */
+  .app-body:not(.layout-multiple-columns) .ui__header {
+    background-color: var(--color-bg-90);
+    height: 55px;
+    z-index: 5;
+  }
+
+  .app-body:not(.layout-multiple-columns):has(.column-header__title) .tabs-bar__wrapper::after {
+    background-color: var(--color-bg-90);
+    content: "";
+    height: 49px;
     left: 0;
-    position: fixed;
-    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .ui:has([href="/auth/sign_in"]) .tabs-bar__wrapper::after,
+  .ui:has(.compose-form__submit) .tabs-bar__wrapper::after {
+    display: none;
+  }
+
+  .layout-single-column .column-header__collapsible {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .layout-single-column .column-header__collapsible-inner {
+    background-color: var(--color-bg-90);
   }
 
   .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0;
   }
 }
 
@@ -4764,7 +4757,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   position: absolute;
 }
 
-.star-icon.icon-button--with-counter .icon-button__counter {
+.layout-single-column.no-reduce-motion .star-icon.icon-button--with-counter .icon-button__counter {
   margin-left: 20px;
 }
 
@@ -4856,6 +4849,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   top: 0;
   transform: none;
   width: unset;
+  height: unset !important;
 }
 
 .layout-single-column.no-reduce-motion .icon-button.star-icon.active .icon-star {
@@ -4973,7 +4967,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
-  left: -34px !important;
+  left: 0 !important;
   position: absolute !important;
   top: unset !important;
 }
