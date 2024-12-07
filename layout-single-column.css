@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.6 */
+   2.0.7 */
 
 /* CSS variables */
 :root {
@@ -4558,7 +4558,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     z-index: 5;
   }
 
-  .app-body:not(.layout-multiple-columns):has(.column-header__title) .tabs-bar__wrapper::after {
+  .app-body:not(.layout-multiple-columns):has(.column-header) .tabs-bar__wrapper::after {
     background-color: var(--color-bg-90);
     content: "";
     height: 49px;

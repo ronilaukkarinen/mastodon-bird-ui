@@ -1,3 +1,7 @@
+### 2.0.7: 2024-12-07
+
+* Fix incorrect class issue: Regression with the top bar being fully transparent
+
 ### 2.0.6: 2024-12-07
 
 * Fix top bar showing up when there is no column header title (thanks @ikkeT!)
