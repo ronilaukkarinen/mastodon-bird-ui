@@ -1,3 +1,7 @@
+### 2.0.6rc5: 2024-12-07
+
+* Fix top bar showing up when there is no column header title (thanks @ikkeT!)
+
 ### 2.0.6rc4: 2024-11-10
 
 * Fix star icon misalignment in Mastodon v4.4.0-alpha.1
