@@ -1,3 +1,7 @@
+### 2.0.8: 2024-12-08
+
+* Make sure embed has a background color
+
 ### 2.0.7: 2024-12-07
 
 * Fix incorrect class issue: Regression with the top bar being fully transparent

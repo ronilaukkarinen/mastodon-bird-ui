@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.7 */
+   2.0.8 */
 
 /* CSS variables */
 :root {
@@ -4282,9 +4282,10 @@ body .compose-form .compose-form__uploads {
 
 /* Embeds outside Mastodon */
 body.embed {
+  /* stylelint-disable-next-line */
+  background-color: var(--color-bg) !important;
   /* Make sure with !important */
   /* stylelint-disable-next-line */
-  background: transparent !important;
   border: 0;
 }
 
