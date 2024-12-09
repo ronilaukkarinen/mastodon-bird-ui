@@ -2,6 +2,7 @@
 
 * Fix embed media gallery proportions
 * Use darker bg for embeds by default
+* Hide scrollbars from embeds
 
 ### 2.0.8: 2024-12-08
 

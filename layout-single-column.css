@@ -4284,6 +4284,8 @@ body.embed {
   /* Make sure with !important */
   /* stylelint-disable-next-line */
   border: 0;
+  /* stylelint-disable-next-line */
+  overflow: hidden !important;
 }
 
 body.embed .entry .detailed-status {
