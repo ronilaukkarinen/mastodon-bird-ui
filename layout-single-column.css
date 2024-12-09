@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.8 */
+   2.0.9 */
 
 /* CSS variables */
 :root {
@@ -1684,9 +1684,6 @@ body.embed .video-player,
 .layout-single-column .media-gallery__preview,
 .layout-single-column .video-player {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
-  max-height: 430px;
-  /* stylelint-disable-next-line */
-  width: unset !important;
 }
 
 body.embed [data-component="Video"] > div {
@@ -4283,7 +4280,7 @@ body .compose-form .compose-form__uploads {
 /* Embeds outside Mastodon */
 body.embed {
   /* stylelint-disable-next-line */
-  background-color: var(--color-bg) !important;
+  background-color: #14171d !important;
   /* Make sure with !important */
   /* stylelint-disable-next-line */
   border: 0;

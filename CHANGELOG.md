@@ -1,3 +1,8 @@
+### 2.0.9: 2024-12-09
+
+* Fix embed media gallery proportions
+* Use darker bg for embeds by default
+
 ### 2.0.8: 2024-12-08
 
 * Make sure embed has a background color
