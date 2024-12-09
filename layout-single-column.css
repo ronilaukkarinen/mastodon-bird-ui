@@ -4280,7 +4280,7 @@ body .compose-form .compose-form__uploads {
 /* Embeds outside Mastodon */
 body.embed {
   /* stylelint-disable-next-line */
-  background-color: #14171d !important;
+  background-color: #0e1014 !important;
   /* Make sure with !important */
   /* stylelint-disable-next-line */
   border: 0;
