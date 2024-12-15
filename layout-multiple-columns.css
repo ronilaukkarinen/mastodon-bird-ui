@@ -2384,17 +2384,8 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Search icon fix for 4.4.0-alpha.1+mementomods-2024-12-15 changes */
 .layout-multiple-columns .search__icon {
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  cursor: default;
-  height: unset;
-  margin-inline-start: unset;
-  padding: unset;
-  pointer-events: none;
-  position: unset;
-  top: unset;
-  width: unset;
+  right: 0;
+  top: 0;
 }
 
 /* Search */

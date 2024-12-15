@@ -590,17 +590,8 @@ body.layout-single-column {
 
 /* Search icon fix for 4.4.0-alpha.1+mementomods-2024-12-15 changes */
 .layout-single-column .search__icon {
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  cursor: default;
-  height: unset;
-  margin-inline-start: unset;
-  padding: unset;
-  pointer-events: none;
-  position: unset;
-  top: unset;
-  width: unset;
+  right: 0;
+  top: 0;
 }
 
 .layout-single-column .list-editor__search .search__icon .icon {
