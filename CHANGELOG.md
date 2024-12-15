@@ -1,3 +1,7 @@
+### 2.1.0: 2024-12-15
+
+* Fix star icon active position in single column mode
+
 ### 2.0.9: 2024-12-09
 
 * Fix embed media gallery proportions

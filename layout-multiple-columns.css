@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.0.9 */
+   2.1.0 */
 
 /* CSS variables */
 :root {
@@ -4528,17 +4528,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-multiple-columns .detailed-status__action-bar button.icon-button.star-icon.icon-button--with-counter.star-icon.activate::after,
 .layout-multiple-columns .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
-  left: calc(50% - 8px) !important;
+  left: calc(50% - 12px) !important;
   top: calc(50% + -1px) !important;
 }
 
 .layout-multiple-columns .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
 .layout-multiple-columns .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
-  left: calc(50% - 8px) !important;
+  left: calc(50% - 12px) !important;
 }
 
 .layout-multiple-columns button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
-  left: 0 !important;
+  left: -40px !important;
+  margin-top: 0 !important;
   position: absolute !important;
   top: unset !important;
 }
