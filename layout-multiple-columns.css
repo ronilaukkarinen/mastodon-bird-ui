@@ -4238,6 +4238,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .notification-group--favourite .icon-star,
 .layout-multiple-columns .notification-favourite .icon-star {
   background-image: var(--icon-heart-notification);
+  background-repeat: no-repeat;
 }
 
 .layout-multiple-columns .notification__filter-bar .icon-star,
@@ -4381,6 +4382,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .notification-group--favourite .icon-star,
 .layout-multiple-columns .notification-favourite .icon-star {
   background-image: var(--icon-star-notification);
+  background-repeat: no-repeat;
 }
 
 .layout-multiple-columns .notification__filter-bar .active .icon-star {

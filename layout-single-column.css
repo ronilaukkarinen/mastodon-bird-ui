@@ -1748,6 +1748,18 @@ body.embed .detailed-status .video-player,
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
+.layout-single-column .media-gallery.media-gallery__item--tall,
+.layout-single-column .media-gallery.media-gallery--layout-1,
+.layout-single-column .media-gallery.media-gallery--layout-2,
+.layout-single-column .media-gallery.media-gallery--layout-3,
+.layout-single-column .media-gallery.media-gallery--layout-4,
+.layout-single-column .media-gallery__preview,
+.layout-single-column .video-player {
+  max-height: 430px;
+  /* stylelint-disable-next-line */
+  width: unset !important;
+}
+
 /* Detailed status update */
 .layout-single-column .detailed-status .status__content {
   font-size: var(--font-size-bigger);
@@ -4651,6 +4663,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .notification-group--favourite .icon-star,
 .layout-single-column .notification-favourite .icon-star {
   background-image: var(--icon-heart-notification);
+  background-repeat: no-repeat;
 }
 
 .layout-single-column .notification__filter-bar .icon-star,
@@ -4810,6 +4823,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .notification-group--favourite .icon-star,
 .layout-single-column .notification-favourite .icon-star {
   background-image: var(--icon-star-notification);
+  background-repeat: no-repeat;
 }
 
 .layout-single-column .notification__filter-bar .active .icon-star {

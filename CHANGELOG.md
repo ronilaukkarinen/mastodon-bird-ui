@@ -1,3 +1,7 @@
+### 2.1.1: 2024-12-15
+
+* Reintroduce Threads-like media proportions for single column mode, missing since e2bb415 (2024-12-10)
+
 ### 2.1.0: 2024-12-15
 
 * Fix star icon active position in single column mode
