@@ -4416,8 +4416,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-position: center;
   color: var(--color-yellow);
   left: unset !important;
-  position: relative;
-  top: 0;
   transform: none;
   width: unset;
   height: unset !important;
@@ -4502,8 +4500,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .status button.icon-button:hover .icon-star {
   background-image: var(--icon-star-detailed-status-action-bar-active) !important;
   color: var(--color-yellow);
-  position: relative;
-  top: 0;
 }
 
 .layout-multiple-columns .detailed-status__action-bar .icon-button:focus .icon-star,

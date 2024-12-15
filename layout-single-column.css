@@ -4845,8 +4845,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-position: center;
   color: var(--color-yellow);
   left: unset !important;
-  position: relative;
-  top: 0;
   transform: none;
   width: unset;
   height: unset !important;

@@ -1,6 +1,7 @@
 ### 2.1.0: 2024-12-15
 
 * Fix star icon active position in single column mode
+* Fix other regressions with star icon alignment when hearts is enabled
 
 ### 2.0.9: 2024-12-09
 
