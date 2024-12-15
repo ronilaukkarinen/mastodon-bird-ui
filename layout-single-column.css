@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc1 */
+   2.1.2rc2 */
 
 /* CSS variables */
 :root {
@@ -586,6 +586,21 @@ body.layout-single-column {
 
 .layout-single-column .list-editor .drawer__inner.backdrop {
   box-shadow: 2px 4px 15px rgba(0, 0, 0, .2);
+}
+
+/* Search icon fix for 4.4.0-alpha.1+mementomods-2024-12-15 changes */
+.layout-single-column .search__icon {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  cursor: default;
+  height: unset;
+  margin-inline-start: unset;
+  padding: unset;
+  pointer-events: none;
+  position: unset;
+  top: unset;
+  width: unset;
 }
 
 .layout-single-column .list-editor__search .search__icon .icon {

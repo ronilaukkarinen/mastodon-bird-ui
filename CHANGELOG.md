@@ -1,3 +1,7 @@
+### 2.1.2rc2: 2024-12-15
+
+* Fix search icon for 4.4.0-alpha.1+mementomods-2024-12-15 changes
+
 ### 2.1.2rc1: 2024-12-15
 
 * Support new lists feature in Mastodon v4.4.0-alpha.1 (2024-12-15)
