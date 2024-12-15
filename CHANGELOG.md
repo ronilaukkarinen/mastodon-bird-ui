@@ -1,3 +1,7 @@
+### 2.1.2rc1: 2024-12-15
+
+* Support new lists feature in Mastodon v4.4.0-alpha.1 (2024-12-15)
+
 ### 2.1.1: 2024-12-15
 
 * Reintroduce Threads-like media proportions for single column mode, missing since e2bb415 (2024-12-10)
