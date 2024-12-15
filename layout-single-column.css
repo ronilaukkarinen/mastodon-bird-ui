@@ -4845,6 +4845,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   background-position: center;
   color: var(--color-yellow);
   left: unset !important;
+  position: relative;
+  top: 0;
   transform: none;
   width: unset;
   height: unset !important;
@@ -4955,18 +4957,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.icon-button--with-counter.star-icon.activate::after,
 .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
-  left: calc(50% - 12px) !important;
+  left: calc(50% - 8px) !important;
   top: calc(50% + -1px) !important;
 }
 
 .layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
 .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
-  left: calc(50% - 12px) !important;
+  left: calc(50% - 8px) !important;
 }
 
 .layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
-  left: -40px !important;
-  margin-top: 0 !important;
+  left: 0 !important;
   position: absolute !important;
   top: unset !important;
 }
