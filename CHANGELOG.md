@@ -1,3 +1,7 @@
+### 2.1.2rc3: 2024-12-20
+
+* Fix media gallery with blurred image getting cut off
+
 ### 2.1.2rc2: 2024-12-15
 
 * Fix search icon for 4.4.0-alpha.1+mementomods-2024-12-15 changes
