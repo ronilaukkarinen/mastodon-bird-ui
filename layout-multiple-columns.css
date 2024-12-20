@@ -1661,6 +1661,7 @@ body.embed .detailed-status,
 }
 
 .layout-multiple-columns .media-gallery:has(.spoiler-button) .media-gallery__preview {
+  /* stylelint-disable-next-line */
   width: 100% !important;
 }
 

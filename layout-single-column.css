@@ -1767,6 +1767,7 @@ body.embed .detailed-status .video-player,
 }
 
 .layout-single-column .media-gallery:has(.spoiler-button) .media-gallery__preview {
+  /* stylelint-disable-next-line */
   width: 100% !important;
 }
 
