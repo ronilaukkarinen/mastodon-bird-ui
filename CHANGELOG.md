@@ -1,10 +1,10 @@
 ### 2.1.2rc4: 2024-12-24
 
-* Fix media gallery with blurred image getting cut off
+* Fix double border on gifs
 
 ### 2.1.2rc3: 2024-12-20
 
-* Fix double border on gifs
+* Fix media gallery with blurred image getting cut off
 
 ### 2.1.2rc2: 2024-12-15
 
