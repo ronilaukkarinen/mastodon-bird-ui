@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc3 */
+   2.1.2rc4 */
 
 /* CSS variables */
 :root {
@@ -4282,6 +4282,11 @@ body .compose-form .compose-form__uploads {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+/* Fix double border on media */
+.layout-single-column .media-gallery .media-gallery__item .media-gallery__gifv {
+  border: 0;
 }
 
 /* Exception for your own profile media gallery */
