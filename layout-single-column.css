@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc4 */
+   2.1.2rc5 */
 
 /* CSS variables */
 :root {
@@ -4000,6 +4000,18 @@ body .compose-form .compose-form__uploads {
     background-color: transparent;
     border: 0;
     padding: 0;
+  }
+
+  /* Fix back button background on mobile */
+  .app-body:not(.layout-multiple-columns):has(.column-back-button) .tabs-bar__wrapper::after {
+    background-color: var(--color-bg-90);
+    content: "";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 
   .layout-single-column .columns-area__panels__main {

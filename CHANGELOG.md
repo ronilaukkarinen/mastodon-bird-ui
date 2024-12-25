@@ -1,3 +1,7 @@
+### 2.1.2rc5: 2024-12-25
+
+* Fix back button background on mobile
+
 ### 2.1.2rc4: 2024-12-24
 
 * Fix double border on gifs
