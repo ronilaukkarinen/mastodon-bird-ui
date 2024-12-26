@@ -1,3 +1,7 @@
+### 2.1.2rc6: 2024-12-26
+
+* Fix double icons in list modal
+
 ### 2.1.2rc5: 2024-12-25
 
 * Fix back button background on mobile

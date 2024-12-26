@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc5 */
+   2.1.2rc6 */
 
 /* CSS variables */
 :root {
@@ -3664,7 +3664,8 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .column-header__button .icon-sliders > path,
 .compose-form .icon-close > path,
 .layout-single-column .item-list .lists__item__title path,
-.layout-single-column .lists__item .icon-button.active path {
+.layout-single-column .lists__item .icon-button.active path,
+.layout-single-column .dialog-modal__content .lists__item path {
   display: none;
 }
 
