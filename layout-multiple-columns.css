@@ -3362,7 +3362,7 @@ body .compose-form .compose-form__uploads {
 .compose-form .icon-close > path,
 .layout-multiple-columns .item-list .lists__item__title path,
 .layout-multiple-columns .lists__item .icon-button.active path,
-.layout-multiple-columns .dialog-modal__content .lists__item path {
+.layout-multiple-columns .dialog-modal__content .lists__item__title path {
   display: none;
 }
 

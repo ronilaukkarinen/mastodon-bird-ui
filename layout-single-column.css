@@ -3665,7 +3665,7 @@ body .compose-form .compose-form__uploads {
 .compose-form .icon-close > path,
 .layout-single-column .item-list .lists__item__title path,
 .layout-single-column .lists__item .icon-button.active path,
-.layout-single-column .dialog-modal__content .lists__item path {
+.layout-single-column .dialog-modal__content .lists__item__title path {
   display: none;
 }
 
