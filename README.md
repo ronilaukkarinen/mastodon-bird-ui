@@ -561,6 +561,12 @@ body.theme-mastodon-bird-ui-accessible {
   font-size: var(--font-size-mid) !important;
 }
 
+/* Better load more link */
+.load-more {
+  font-size: var(--font-size-mid) !important;
+  color: var(--color-light-text) !important;
+}
+
 /* Fix unfollow wrapping */
 .layout-multiple-columns .notification.notification-follow .account__relationship,
 .layout-multiple-columns .notification.notification.notification-admin-sign-up .account__relationship {
