@@ -2159,7 +2159,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .status__prepend {
-  padding-left: calc(var(--size-avatar) + 4px);
+  padding-left: calc(var(--size-avatar) + 2px);
 }
 
 .layout-single-column .notification.notification-update .account__display-name,
