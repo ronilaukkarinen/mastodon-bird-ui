@@ -2073,8 +2073,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .status__prepend {
-  gap: calc(var(--gap-default) + 2px);
-  padding-left: calc(var(--size-avatar) - 4px);
+  padding-left: calc(var(--size-avatar) + 4px);
 }
 
 .layout-multiple-columns .notification.notification-update .account__display-name,
