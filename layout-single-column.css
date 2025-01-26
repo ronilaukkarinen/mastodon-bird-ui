@@ -2159,7 +2159,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .status__prepend {
-  gap: var(--gap-default);
+  gap: calc(var(--gap-default) + 2px);
   padding-left: calc(var(--size-avatar) - 4px);
 }
 
