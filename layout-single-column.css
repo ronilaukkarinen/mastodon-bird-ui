@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc6 */
+   2.1.2rc7 */
 
 /* CSS variables */
 :root {
@@ -2159,6 +2159,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .status__prepend {
+  gap: var(--gap-default);
   padding-left: calc(var(--size-avatar) - 4px);
 }
 

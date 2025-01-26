@@ -1,3 +1,7 @@
+### 2.1.2rc7: 2025-01-26
+
+* Fix default gap in status prepend
+
 ### 2.1.2rc6: 2024-12-26
 
 * Fix double icons in list modal
