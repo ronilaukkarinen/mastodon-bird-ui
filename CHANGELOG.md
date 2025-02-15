@@ -1,3 +1,7 @@
+### 2.1.2rc8: 2025-02-15
+
+* Fix hashtag more-icon showing two times
+
 ### 2.1.2rc7: 2025-01-26
 
 * Fix default gap in status prepend
