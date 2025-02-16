@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc8 */
+   2.1.2rc9 */
 
 /* CSS variables */
 :root {
@@ -1649,6 +1649,12 @@ body.embed .detailed-status,
   max-height: 430px;
   /* stylelint-disable-next-line */
   width: unset !important;
+}
+
+/* When image is still loading up, reset width to 100%, Fixes #150 */
+body.layout-multiple-columns canvas[class=".media-gallery__preview"] {
+  /* stylelint-disable-next-line */
+  width: 100% !important;
 }
 
 .layout-multiple-columns .spoiler-button + .media-gallery__item > .media-gallery__preview {

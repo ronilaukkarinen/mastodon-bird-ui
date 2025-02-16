@@ -1,3 +1,7 @@
+### 2.1.2rc9: 2025-02-16
+
+* Fix image placeholders when loading up on slow connections, Fixes #150
+
 ### 2.1.2rc8: 2025-02-15
 
 * Fix hashtag more-icon showing two times
