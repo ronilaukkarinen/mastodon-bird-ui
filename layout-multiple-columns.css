@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc9 */
+   2.1.2rc10 */
 
 /* CSS variables */
 :root {
@@ -1652,7 +1652,7 @@ body.embed .detailed-status,
 }
 
 /* When image is still loading up, reset width to 100%, Fixes #150 */
-body.layout-multiple-columns canvas[class=".media-gallery__preview"] {
+body.layout-multiple-columns canvas[class="media-gallery__preview"] {
   /* stylelint-disable-next-line */
   width: 100% !important;
 }

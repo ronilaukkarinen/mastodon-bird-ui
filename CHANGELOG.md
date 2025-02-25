@@ -1,3 +1,7 @@
+### 2.1.2rc10: 2025-02-25
+
+* Fix regression with 2.1.2rc9, dot in class selector
+
 ### 2.1.2rc9: 2025-02-16
 
 * Fix image placeholders when loading up on slow connections, Fixes #150
