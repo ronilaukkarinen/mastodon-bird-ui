@@ -1,3 +1,7 @@
+### 2.1.2rc11: 2025-03-04
+
+* Fix missing profile share icon in optional buttons on Safari mobile
+
 ### 2.1.2rc10: 2025-02-25
 
 * Fix regression with 2.1.2rc9, dot in class selector
