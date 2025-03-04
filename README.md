@@ -178,17 +178,8 @@ wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive http
 # Download the CSS file for multiple column layout
 wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 
-# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
-sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
-
-# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
-sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
-
-# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
-sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
-
-# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
-sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast and theme-mastodon-light with theme-mastodon-bird-ui-light
+sed -i -e 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' -e 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 
 # Create high contrast theme file
 echo -e "@import 'contrast/variables';\n@import 'application';\n@import 'contrast/diff';\n@import 'mastodon-bird-ui/layout-single-column.scss';\n@import 'mastodon-bird-ui/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-contrast.scss
@@ -266,17 +257,8 @@ wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive http
 # Download the CSS file for multiple column layout
 wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive https://raw.githubusercontent.com/ronilaukkarinen/mastodon-bird-ui/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 
-# Replace theme-contrast with theme-mastodon-bird-ui-contrast for single column layout
-sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
-
-# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for single column layout
-sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss
-
-# Replace theme-contrast with theme-mastodon-bird-ui-contrast for multiple column layout
-sed -i 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
-
-# Replace theme-mastodon-light with theme-mastodon-bird-ui-light for multiple column layout
-sed -i 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
+# Replace theme-contrast with theme-mastodon-bird-ui-contrast and theme-mastodon-light with theme-mastodon-bird-ui-light
+sed -i -e 's/theme-contrast/theme-mastodon-bird-ui-contrast/g' -e 's/theme-mastodon-light/theme-mastodon-bird-ui-light/g' app/javascript/styles/mastodon-bird-ui/layout-single-column.scss app/javascript/styles/mastodon-bird-ui/layout-multiple-columns.scss
 ```
 
 After this commit changes to your Mastodon fork if you have one, then:
