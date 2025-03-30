@@ -1,3 +1,7 @@
+### 2.1.2rc12: 2025-03-30
+
+* Fix video player aspect ratio in v4.4.0-alpha.4-2025-03-22
+
 ### 2.1.2rc11: 2025-03-04
 
 * Fix missing profile share icon in optional buttons on Safari mobile

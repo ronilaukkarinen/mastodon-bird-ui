@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc11 */
+   2.1.2rc12 */
 
 /* CSS variables */
 :root {
@@ -1611,16 +1611,6 @@ body.embed .detailed-status,
 
 .layout-multiple-columns .notification-ungrouped .notification-ungrouped__header {
   padding-left: calc(24px + var(--gap-default));
-}
-
-/* Media inside status update tinted to right */
-.layout-multiple-columns .status .audio-player,
-.layout-multiple-columns .status .video-player,
-.layout-multiple-columns .status .media-gallery {
-  margin-left: auto;
-  /* Need to override inline styles */
-  /* stylelint-disable-next-line */
-  width: calc(100% - calc(var(--size-avatar) + var(--gap-default))) !important;
 }
 
 /* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
