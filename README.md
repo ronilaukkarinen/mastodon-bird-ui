@@ -144,6 +144,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [social.kryta.app](https://social.kryta.app)                             | Custom CSS                | Mastodon Bird UI | <100           | Yes         |
 | [everythingbagel.social](https://everythingbagel.social)                 | Site theme                | Bagel UI         | 5              | Yes         |
 | [social.vivaldi.net](https://social.vivaldi.net)                         | Site theme                | Mastodon Bird UI | 6700+          | No          |
+| [wxw.moe](https://wxw.moe)                                               | Site theme                | Mastodon Bird UI | 3500+          | Yes         |
 
 ## Installation for Mastodon instance admins
 
