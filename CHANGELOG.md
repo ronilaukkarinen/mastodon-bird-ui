@@ -1,3 +1,7 @@
+### 2.1.2rc13: 2025-05-03
+
+* Override new warning button color in v4.4.0-alpha.4+mementomods-2025-05-03, Ref: mastodon#33042, mastodon#25568
+
 ### 2.1.2rc12: 2025-03-30
 
 * Fix video player aspect ratio in v4.4.0-alpha.4-2025-03-22

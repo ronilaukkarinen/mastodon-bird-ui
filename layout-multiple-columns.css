@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc12 */
+   2.1.2rc13 */
 
 /* CSS variables */
 :root {
@@ -3102,6 +3102,14 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button:hover,
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button:focus {
   color: var(--color-accent);
+}
+
+/* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.warning,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.warning.active,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.warning:hover,
+.layout-multiple-columns .compose-form__dropdowns .dropdown-button.warning:focus {
+  color: var(--color-yellow);
 }
 
 .layout-multiple-columns .compose-form__submit {
