@@ -145,6 +145,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [everythingbagel.social](https://everythingbagel.social)                 | Site theme                | Bagel UI         | 5              | Yes         |
 | [social.vivaldi.net](https://social.vivaldi.net)                         | Site theme                | Mastodon Bird UI | 6700+          | No          |
 | [wxw.moe](https://wxw.moe)                                               | Site theme                | Mastodon Bird UI | 3500+          | Yes         |
+| [mastodon.com.pl](https://mastodon.com.pl)                               | Site theme                | Mastodon Bird UI | 100+           | No          |
 
 ## Installation for Mastodon instance admins
 
