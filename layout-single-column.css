@@ -4617,6 +4617,16 @@ body .columns-area__panels__pane {
   align-self: center;
 }
 
+/* Speed up animation in the new mobile slideout navigation for v4.4.0-beta.1 */
+body.layout-single-column .columns-area__panels__pane__inner,
+body.layout-single-column .ui::after,
+body.layout-single-column .ui__header,
+body.layout-single-column .tabs-bar__wrapper,
+body.layout-single-column.scroll-down .tabs-bar__portal {
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
 @media screen and (max-width: 759px) {
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
     padding: 0;

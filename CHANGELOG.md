@@ -1,6 +1,7 @@
 ### 2.2.0rc2: 2025-06-14
 
 * v4.4.0-beta.1: Fix the mobile navigation panel proportions
+* v4.4.0-beta.1: Speed up animation in the new mobile slideout navigation
 
 ### 2.2.0rc: 2025-06-14
 
