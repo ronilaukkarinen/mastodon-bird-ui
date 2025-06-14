@@ -3683,6 +3683,7 @@ body .compose-form .compose-form__uploads {
   background-repeat: no-repeat;
 }
 
+.layout-multiple-columns .column-link .icon.icon-.column-link__icon,
 .layout-multiple-columns .icon-ellipsis-v {
   background-image: var(--icon-more);
   background-position: center;

@@ -3986,13 +3986,13 @@ body .compose-form .compose-form__uploads {
 }
 
 /* "More" icon */
-.layout-single-column .column-link .icon.icon-.column-link__icon,
 .layout-single-column .icon-ellipsis-h {
   background-image: var(--icon-more-status-action-bar);
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.layout-single-column .column-link .icon.icon-.column-link__icon,
 .layout-single-column .icon-ellipsis-v {
   background-image: var(--icon-more);
   background-position: center;
