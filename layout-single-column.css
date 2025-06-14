@@ -4591,6 +4591,26 @@ body .columns-area__panels__pane {
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
     padding: 0;
 
+    .navigation-panel__compose-button {
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .column-link {
+      font-size: 16px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .icon {
+      background-size: 20px auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     hr {
       visibility: visible;
       width: 100%;
