@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.1.2rc13 */
+   2.2.0rc */
 
 /* CSS variables */
 :root {
@@ -3522,6 +3522,7 @@ body .compose-form .compose-form__uploads {
     order: 11;
   }
 
+  .layout-single-column .navigation-panel__list-panel,
   .layout-single-column .column-link[href="/lists"] {
     order: 16;
   }
