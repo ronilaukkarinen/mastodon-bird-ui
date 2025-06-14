@@ -3693,8 +3693,13 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
 .layout-single-column .account__header__tabs__buttons .icon.icon-tasks path,
-.layout-single-column .notification__filter-bar .icon.icon-tasks path {
+.layout-single-column .notification__filter-bar .icon.icon-tasks path,
+body .navigation-panel__legal .column-link[href="/about"] path {
   display: block;
+}
+
+body .navigation-panel__legal .column-link[href="/about"] svg {
+  background-image: none;
 }
 
 /* Home icon */
@@ -4579,6 +4584,23 @@ body .columns-area__panels__pane {
     background-size: 22px auto;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
+    padding: 0;
+
+    hr {
+      visibility: visible;
+      width: 100%;
+      margin:0;
+      max-width: 100%;
+    }
+
+    .navigation-panel__legal {
+      width: 100%;
+    }
   }
 }
 
