@@ -8,6 +8,7 @@
 * Side note: Automatic light theme #136 can be fixed in v4.4.0-beta.1 easily by copying the light variables in their own file
 * Fix double icons in lists panel (this bug existed since 2.1.2rc12, just didn't see it before)
 * Use Mastodon Bird UI more icon in new column link for "More" in v4.4.0-beta.1+mementomods-2025-06-14
+* Support for completely rewritten bottom navigation bar and side menu for mobile in v4.4.0-beta.1+mementomods-2025-06-14
 
 ### 2.1.2rc13: 2025-05-03
 
