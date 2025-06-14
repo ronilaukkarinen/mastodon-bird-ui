@@ -3683,7 +3683,8 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
 .layout-single-column .account__header__tabs__buttons .icon.icon-tasks path,
-.layout-single-column .notification__filter-bar .icon.icon-tasks path {
+.layout-single-column .notification__filter-bar .icon.icon-tasks path,
+.layout-single-column .column-link .column-link__icon path {
   display: block;
 }
 
