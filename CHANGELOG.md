@@ -2,6 +2,7 @@
 
 * Fix new .navigation-panel__list-panel position in v4.4.0-beta.1+mementomods-2025-06-14
 * Fix the icon not showing up for new .column-link__icon in v4.4.0-beta.1+mementomods-2025-06-14
+* Fix the order of the new "More" button in v4.4.0-beta.1+mementomods-2025-06-14
 
 ### 2.1.2rc13: 2025-05-03
 

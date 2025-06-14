@@ -3961,6 +3961,10 @@ body .compose-form .compose-form__uploads {
     order: 4;
   }
 
+  .layout-multiple-columns button.column-link {
+    order: 18;
+  }
+
   .layout-multiple-columns .navigation-panel .column-link:nth-child(11) {
     order: 11;
   }

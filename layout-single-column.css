@@ -3553,6 +3553,10 @@ body .compose-form .compose-form__uploads {
     order: 16;
   }
 
+  .layout-single-column button.column-link {
+    order: 18;
+  }
+
   .layout-single-column .status__action-bar .icon-button {
     /* stylelint-disable-next-line */
     height: 24px !important;
