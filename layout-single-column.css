@@ -3439,7 +3439,7 @@ body .compose-form .compose-form__uploads {
   order: 4;
 }
 
-@media screen and (width >= 890px) {
+@media screen and (width >= 760px) {
   /* Hide the space between Lists and the actual lists */
   .layout-single-column .list-panel > hr,
   .layout-single-column .list-panel + hr {
@@ -3534,7 +3534,15 @@ body .compose-form .compose-form__uploads {
 
   .layout-single-column .navigation-panel__sign-in-banner,
   .layout-single-column .navigation-panel__legal {
-    order: 14;
+    order: 66;
+  }
+
+  .layout-single-column .navigation-panel__legal {
+    width: 100%;
+  }
+
+  .layout-single-column .navigation-panel hr {
+    visibility: visible;
   }
 
   .layout-single-column .getting-started__trends {
@@ -4574,6 +4582,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   }
 }
 
+@media screen and (min-width: 760px) {
+ .layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner {
+  position: static;
+}
+
+.layout-single-column .columns-area__panels__pane--compositional .columns-area__panels__pane__inner,
+.compose-panel {
+  /* stylelint-disable-next-line */
+  width: 100% !important;
+}
+}
+
 /* New navigation bar for mobile in v4.4.0-beta.1+mementomods-2025-06-14 */
 body .columns-area__panels__pane {
   z-index: 22;
@@ -4587,22 +4607,24 @@ body .columns-area__panels__pane {
   }
 }
 
+.navigation-panel__compose-button {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: inline-flex;
+  align-self: center;
+}
+
 @media screen and (max-width: 759px) {
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
     padding: 0;
 
-    .navigation-panel__compose-button {
-      font-size: 14px;
-      padding-left: 10px;
-      padding-right: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
     .column-link {
       font-size: 16px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
     }
 
     .icon {
