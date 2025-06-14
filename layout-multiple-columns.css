@@ -3380,7 +3380,7 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .notification__filter-bar .icon.icon-user-plus path,
 .layout-multiple-columns .account__header__tabs__buttons .icon.icon-tasks path,
 .layout-multiple-columns .notification__filter-bar .icon.icon-tasks path,
-.layout-multiple-columns .column-link .column-link__icon path {
+.layout-multiple-columns .column-link .icon.icon-.column-link__icon path {
   display: block;
 }
 
