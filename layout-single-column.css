@@ -4627,6 +4627,10 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
   transition-timing-function: linear;
 }
 
+.ui__navigation-bar__sign-up {
+  gap: 12px;
+}
+
 @media screen and (max-width: 759px) {
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
     padding: 0;
