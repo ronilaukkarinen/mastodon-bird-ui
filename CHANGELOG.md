@@ -4,6 +4,8 @@
 * Fix the icon not showing up for new .column-link__icon in v4.4.0-beta.1+mementomods-2025-06-14
 * Fix the order of the new "More" button in v4.4.0-beta.1+mementomods-2025-06-14
 * Styles for new lists panel in v4.4.0-beta.1+mementomods-2025-06-14
+* Remove extra margin from logo in v4.4.0-beta.1+mementomods-2025-06-14
+* Side note: Automatic light theme #136 can be fixed in v4.4.0-beta.1 easily by copying the light variables in their own file
 
 ### 2.1.2rc13: 2025-05-03
 

@@ -2213,6 +2213,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   visibility: hidden;
 }
 
+/* Remove extra margin from logo in v4.4.0-beta.1+mementomods-2025-06-14 */
+.layout-single-column .navigation-panel__logo {
+  margin-bottom: 0;
+}
+
 .layout-single-column .navigation-panel__logo hr {
   margin: 0;
 }
