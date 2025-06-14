@@ -3385,7 +3385,8 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .item-list .lists__item__title path,
 .layout-multiple-columns .lists__item .icon-button.active path,
 .layout-multiple-columns .dialog-modal__content .lists__item__title path,
-.layout-multiple-columns .hashtag-header__header__buttons .icon > path {
+.layout-multiple-columns .hashtag-header__header__buttons .icon > path,
+.layout-multiple-columns .lists__item .icon-button svg > path {
   display: none;
 }
 
@@ -3397,8 +3398,7 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-multiple-columns .notification__filter-bar .icon.icon-user-plus path,
 .layout-multiple-columns .account__header__tabs__buttons .icon.icon-tasks path,
-.layout-multiple-columns .notification__filter-bar .icon.icon-tasks path,
-.layout-multiple-columns .column-link .icon.icon-.column-link__icon path {
+.layout-multiple-columns .notification__filter-bar .icon.icon-tasks path {
   display: block;
 }
 
@@ -3679,6 +3679,8 @@ body .compose-form .compose-form__uploads {
 /* "More" icon */
 .layout-multiple-columns .icon-ellipsis-h {
   background-image: var(--icon-more-status-action-bar);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .layout-multiple-columns .icon-ellipsis-v {

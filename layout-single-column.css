@@ -3693,7 +3693,8 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .item-list .lists__item__title path,
 .layout-single-column .lists__item .icon-button.active path,
 .layout-single-column .dialog-modal__content .lists__item__title path,
-.layout-single-column .hashtag-header__header__buttons .icon > path {
+.layout-single-column .hashtag-header__header__buttons .icon > path,
+.layout-single-column .lists__item .icon-button svg > path {
   display: none;
 }
 
@@ -3705,8 +3706,7 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .account__header__tabs__buttons .icon.icon-user-plus path,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
 .layout-single-column .account__header__tabs__buttons .icon.icon-tasks path,
-.layout-single-column .notification__filter-bar .icon.icon-tasks path,
-.layout-single-column .column-link .icon.icon-.column-link__icon path {
+.layout-single-column .notification__filter-bar .icon.icon-tasks path {
   display: block;
 }
 
@@ -3986,8 +3986,11 @@ body .compose-form .compose-form__uploads {
 }
 
 /* "More" icon */
+.layout-single-column .column-link .icon.icon-.column-link__icon,
 .layout-single-column .icon-ellipsis-h {
   background-image: var(--icon-more-status-action-bar);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .layout-single-column .icon-ellipsis-v {
