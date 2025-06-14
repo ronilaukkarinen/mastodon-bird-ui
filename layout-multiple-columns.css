@@ -3266,6 +3266,19 @@ body .compose-form .compose-form__uploads {
   }
 }
 
+/* New lists panel in v4.4.0-beta.1+mementomods-2025-06-14 */
+.layout-multiple-columns .navigation-panel__list-panel__header {
+  .column-link {
+    order: 1;
+  }
+
+  .icon-button {
+    order: 2;
+    position: absolute;
+    right: 0;
+  }
+}
+
 /* Replace bookmark icon */
 .layout-multiple-columns .status .icon-button:hover:focus .icon-bookmark,
 .layout-multiple-columns .status .icon-button:focus .icon-bookmark,
