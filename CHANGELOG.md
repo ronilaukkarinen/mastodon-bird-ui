@@ -4,6 +4,7 @@
 * v4.4.0-beta.1: Speed up animation in the new mobile slideout navigation
 * Fix margin for separators
 * Fix too little gap between sign up and sign in buttons
+* Make trending disappear erlier, Fixes #155
 
 ### 2.2.0rc: 2025-06-14
 
