@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.2.0rc */
+   2.2.0rc2 */
 
 /* CSS variables */
 :root {
@@ -3409,11 +3409,6 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .status__action-bar .icon-button.icon-button--with-counter::after,
 .layout-single-column .status__action-bar .icon-button.icon-button--with-counter:first-of-type::after {
   transform: translateX(-5px) translateY(1px);
-}
-
-.layout-single-column .navigation-panel__menu {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 @media screen and (height <= 980px) {

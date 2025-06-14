@@ -1,3 +1,7 @@
+### 2.2.0rc2: 2025-06-14
+
+* v4.4.0-beta.1: Fix the mobile navigation panel proportions
+
 ### 2.2.0rc: 2025-06-14
 
 * Fix new .navigation-panel__list-panel position in v4.4.0-beta.1+mementomods-2025-06-14
