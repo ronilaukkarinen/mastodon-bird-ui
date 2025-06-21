@@ -1,3 +1,8 @@
+### 2.2.0rc3: 2025-06-21
+
+* Hide separators in the new navigation panel, v4.4.0-beta.2
+* Fix indent for the new navigation panel, v4.4.0-beta.2
+
 ### 2.2.0rc2: 2025-06-14
 
 * v4.4.0-beta.1: Fix the mobile navigation panel proportions

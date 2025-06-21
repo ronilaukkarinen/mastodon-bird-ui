@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.2.0rc2 */
+   2.2.0rc3 */
 
 /* CSS variables */
 :root {
@@ -4629,6 +4629,16 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 
 .ui__navigation-bar__sign-up {
   gap: 12px;
+}
+
+/* Hide separators in the new navigation panel, for now, v4.4.0-beta.2 */
+.navigation-panel__list-panel__header__sep {
+  display: none;
+}
+
+/* Fix indent for the new navigation panel, v4.4.0-beta.2 */
+.navigation-panel__list-panel__items {
+  padding-inline-start: 37px;
 }
 
 /* Make trending disappear erlier
