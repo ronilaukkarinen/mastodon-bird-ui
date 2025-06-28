@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.2.0rc3 */
+   2.2.0rc4 */
 
 /* CSS variables */
 :root {
@@ -3607,7 +3607,6 @@ body .compose-form .compose-form__uploads {
 /* Set size for the column link icons */
 .layout-single-column .column-link .icon {
   --size-icon: 24px;
-
   height: 26px;
   width: 26px;
 }
@@ -3726,13 +3725,11 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 .layout-single-column .list-adder__lists .icon-plus {
   --size-icon: 20px;
-
   background-image: var(--icon-plus);
 }
 
 .layout-single-column .list-adder__lists .icon-times {
   --size-icon: 20px;
-
   background-image: var(--icon-checked-green);
 }
 
@@ -3801,14 +3798,12 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 /* Preferences icon */
 .layout-single-column .column-link .icon-cog {
   --size-icon: 24px;
-
   background-image: var(--icon-sliders-contrast);
 }
 
 /* Settings icon */
 .layout-single-column .column-header__button .icon-sliders {
   --size-icon: 20px;
-
   background-image: var(--icon-sliders);
 }
 
@@ -3823,14 +3818,12 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 /* Administration icon */
 .layout-single-column .column-link .icon-tachometer {
   --size-icon: 24px;
-
   background-image: var(--icon-administration);
 }
 
 /* Moderation icon */
 .layout-single-column .column-link .icon-flag {
   --size-icon: 24px;
-
   background-image: var(--icon-moderation);
 }
 
@@ -3865,7 +3858,6 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 /* stylelint-disable-next-line */
 .layout-single-column button.icon-button .icon-retweet {
   --size-icon: 20px;
-
   background-image: var(--icon-boost);
   background-position: center;
   background-repeat: no-repeat;
@@ -3937,7 +3929,6 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 .layout-single-column .notification__filter-bar .icon-reply,
 .layout-single-column .notification__filter-bar .icon-reply-all {
   --size-icon: 19px;
-
   position: relative;
   top: 1px;
 }
@@ -4601,20 +4592,20 @@ body .columns-area__panels__pane {
 
 .layout-single-column .ui__navigation-bar {
   .icon {
-    background-size: 22px auto;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px auto;
   }
 }
 
 .navigation-panel__compose-button {
+  align-self: center;
+  display: inline-flex;
   font-size: 14px;
+  padding-bottom: 6px;
   padding-left: 10px;
   padding-right: 18px;
   padding-top: 6px;
-  padding-bottom: 6px;
-  display: inline-flex;
-  align-self: center;
 }
 
 /* Speed up animation in the new mobile slideout navigation for v4.4.0-beta.1 */
@@ -4645,19 +4636,19 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/155 */
 @media screen and (max-height: 965px) {
   .navigation-panel__portal .trends__item:nth-child(n+4) {
-      display: none;
+    display: none;
   }
 }
 
 @media screen and (max-height: 865px) {
   .navigation-panel__portal .trends__item:nth-child(n+3) {
-      display: none;
+    display: none;
   }
 }
 
 @media screen and (max-height: 800px) {
   .navigation-panel__portal {
-      display: none;
+    display: none;
   }
 }
 
@@ -4667,20 +4658,20 @@ https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/155 */
 
     .column-link {
       font-size: 16px;
-      padding-top: 1vh;
       padding-bottom: 1vh;
+      padding-top: 1vh;
     }
 
     .icon {
-      background-size: 20px auto;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: 20px auto;
     }
 
     hr {
+      max-width: 100%;
       visibility: visible;
       width: 100%;
-      max-width: 100%;
     }
 
     .navigation-panel__legal {

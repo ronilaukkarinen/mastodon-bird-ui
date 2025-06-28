@@ -1,3 +1,8 @@
+### 2.2.0rc4: 2025-06-28
+
+* Fix build
+* Update stylelint rules: Disable alpha-value-notation
+
 ### 2.2.0rc3: 2025-06-21
 
 * Hide separators in the new navigation panel, v4.4.0-beta.2

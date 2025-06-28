@@ -35,7 +35,6 @@
     ],
     "declaration-property-value-no-unknown": null,
     "order/properties-alphabetical-order": true,
-    "alpha-value-notation": "number",
     "declaration-block-no-redundant-longhand-properties": null,
     "custom-property-empty-line-before": "never",
     "color-no-invalid-hex": null,
@@ -135,6 +134,7 @@
       "font",
       "background"
     ],
+    "alpha-value-notation": null,
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
     "property-no-unknown": true,
