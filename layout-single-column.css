@@ -2219,13 +2219,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .column-link {
   align-items: center;
   color: var(--color-light-text);
+  column-gap: 14px;
   font-size: var(--font-size-heading);
-  gap: var(--gap-column-link);
   overflow: visible;
   padding-bottom: calc(var(--gap-column-link) + 4px);
   padding-left: var(--gap-column-link);
   padding-right: calc(var(--gap-column-link) * 1.5);
   padding-top: calc(var(--gap-column-link) + 4px);
+  row-gap: var(--gap-column-link);
   transition: all 100ms;
   width: 100%;
 }
@@ -2249,7 +2250,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   bottom: calc(2px - var(--gap-column-link) * 1.5);
   content: "";
   inset-inline-end: calc(0px - (var(--gap-column-link) * 2));
-  inset-inline-start: calc(-1.28571429em - (var(--gap-column-link) * 2));
+  inset-inline-start: calc(-1.28571429em - var(--gap-column-link) - 7px * 2);
   opacity: 0;
   position: absolute;
   top: calc(-4px - var(--gap-column-link));
@@ -3492,7 +3493,7 @@ body .compose-form .compose-form__uploads {
   }
 
   .layout-single-column .navigation-panel__list-panel .navigation-panel__list-panel__items .column-link > span::before {
-    margin-left: 20px;
+    margin-left: 25px;
   }
 
   /* Hide lists if there's not enough space on desktop vertically */
@@ -3650,9 +3651,9 @@ body .compose-form .compose-form__uploads {
 
 /* Set size for the column link icons */
 .layout-single-column .column-link .icon {
-  --size-icon: 24px;
-  height: 26px;
-  width: 26px;
+  --size-icon: 22px;
+  height: 22px;
+  width: 22px;
 }
 
 /* Set size for the status icons */
@@ -3841,7 +3842,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 /* Preferences icon */
 .layout-single-column .column-link .icon-cog {
-  --size-icon: 24px;
+  --size-icon: 22px;
   background-image: var(--icon-sliders-contrast);
 }
 
@@ -3861,7 +3862,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 /* Administration icon */
 .layout-single-column .column-link .icon-tachometer {
-  --size-icon: 24px;
+  --size-icon: 22px;
   background-image: var(--icon-administration);
 }
 
@@ -4673,7 +4674,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 
 /* Fix indent for the new navigation panel, v4.4.0-beta.2 */
 .navigation-panel__list-panel__items {
-  padding-inline-start: 37px;
+  padding-inline-start: 40px;
 }
 
 /* Make trending disappear erlier
