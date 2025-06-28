@@ -3868,7 +3868,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 /* Moderation icon */
 .layout-single-column .column-link .icon-flag {
-  --size-icon: 24px;
+  --size-icon: 22px;
   background-image: var(--icon-moderation);
 }
 
