@@ -2,6 +2,7 @@
 
 * Fix build
 * Update stylelint rules: Disable alpha-value-notation
+* Fix overflow overlapping trending section if there are too many items
 
 ### 2.2.0rc3: 2025-06-21
 

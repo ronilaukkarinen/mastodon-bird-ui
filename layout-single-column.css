@@ -2211,7 +2211,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* Hide scrollbars for .navigation-panel for Chrome and Safari */
 .dropdown-menu__container__list--scrollable::-webkit-scrollbar,
-.layout-single-column .navigation-panel__menu::-webkit-scrollbar,
 .layout-single-column .navigation-panel::-webkit-scrollbar {
   display: none;
   width: 4px;
@@ -3447,7 +3446,7 @@ body .compose-form .compose-form__uploads {
     flex: unset;
     flex-wrap: wrap;
     gap: 0;
-    overflow: visible;
+    overflow-y: auto;
     position: relative;
   }
 
