@@ -79,7 +79,7 @@
 
   /* Grids and gaps */
   --gap-default: 12px;
-  --gap-column-link: 12px;
+  --gap-column-link: 10px;
 
   /* Element sizes */
   --size-avatar: 48px;
