@@ -4,6 +4,7 @@
 * Update stylelint rules: Disable alpha-value-notation
 * Fix overflow overlapping trending section if there are too many items
 * Make scrollbars more subtle, make side nav more compact in v4.4.0-beta.2
+* Revert: Make trending disappear erlier, Fixes #155
 
 ### 2.2.0rc3: 2025-06-21
 

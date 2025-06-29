@@ -4677,26 +4677,6 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
   padding-inline-start: 40px;
 }
 
-/* Make trending disappear erlier
-https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/155 */
-@media screen and (max-height: 965px) {
-  .navigation-panel__portal .trends__item:nth-child(n+4) {
-    display: none;
-  }
-}
-
-@media screen and (max-height: 865px) {
-  .navigation-panel__portal .trends__item:nth-child(n+3) {
-    display: none;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .navigation-panel__portal {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 759px) {
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel {
     padding: 0;
