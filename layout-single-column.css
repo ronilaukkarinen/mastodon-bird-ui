@@ -1929,6 +1929,12 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   }
 }
 
+@media (max-width: 1175px) {
+  .layout-single-column .columns-area__panels__main > div {
+    border-right: 0;
+  }
+}
+
 /* Hidden things */
 /* stylelint-disable-next-line */
 .layout-single-column .column-header .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {

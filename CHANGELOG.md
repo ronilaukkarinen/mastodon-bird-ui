@@ -3,6 +3,7 @@
 * Prepare for v4.4.0-rc.1
 * Fix search icon position in v4.4.0-rc.1-2025-07-01 changes
 * Fix trend order in advanced column interface in v4.4.0-rc.1-2025-07-01 changes
+* Fixes to iPad and mobile views in v4.4.0-rc.1-2025-07-01
 
 ### 2.2.0rc4: 2025-06-28
 
