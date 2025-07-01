@@ -4638,6 +4638,10 @@ body .columns-area__panels__pane {
   z-index: 22;
 }
 
+body .ui__navigation-bar {
+  background-color: var(--color-bg);
+}
+
 .layout-single-column .ui__navigation-bar {
   .icon {
     background-position: center;
