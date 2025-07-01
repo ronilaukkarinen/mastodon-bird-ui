@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.2.0rc4 */
+   2.2.1rc1 */
 
 /* CSS variables */
 :root {
@@ -2114,16 +2114,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   height: 100%;
 }
 
-/* Remove extra margin from logo in v4.4.0-beta.1+mementomods-2025-06-14 */
-.layout-multiple-columns .navigation-panel__logo {
-  margin-bottom: 0;
-  order: 1;
-}
-
-.layout-multiple-columns .navigation-panel__logo hr {
-  margin: 0;
-}
-
 /* Attempt to hide scrollbars for .navigation-panel for Firefox */
 .dropdown-menu__container__list--scrollable,
 .layout-multiple-columns .navigation-panel {
@@ -3226,10 +3216,6 @@ body .compose-form .compose-form__uploads {
   /* It's inlined so we have to use !important */
   /* stylelint-disable-next-line */
   width: 30px !important;
-}
-
-.layout-multiple-columns .navigation-panel__menu {
-  order: 2;
 }
 
 @media screen and (min-width: 890px) {
