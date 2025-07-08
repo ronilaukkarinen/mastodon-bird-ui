@@ -1,3 +1,7 @@
+### 2.3.0: 2025-07-08
+
+* Bump version for Mastodon v4.4.0 stable
+
 ### 2.2.1rc1: 2025-07-01
 
 * Prepare for v4.4.0-rc.1
