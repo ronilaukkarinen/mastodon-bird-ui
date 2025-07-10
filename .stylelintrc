@@ -40,6 +40,7 @@
     "color-no-invalid-hex": null,
     "color-function-notation": null,
     "color-hex-length": null,
+    "selector-not-notation": null,
     "selector-type-case": "lower",
     "function-name-case": "lower",
     "selector-attribute-quotes": "always",
