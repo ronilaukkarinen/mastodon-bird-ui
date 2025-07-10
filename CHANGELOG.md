@@ -1,3 +1,8 @@
+### 2.3.1: 2025-07-10
+
+* Update instructions: Replace @import with @use #162, Closes #161 #152 #163 (thanks @SuperSandro2000!)
+* Fix missing close icon in the search input when it has value
+
 ### 2.3.0: 2025-07-08
 
 * Bump version for Mastodon v4.4.0 stable
@@ -998,7 +1003,7 @@
 * Fix detailed status button bubbles
 * Fix gap between list-adder list item and icon
 
-### 1.1.1: 2023-03-09 
+### 1.1.1: 2023-03-09
 
 * Fix always spinning boost button
 * Improve alignment of the bottom items on mobile
