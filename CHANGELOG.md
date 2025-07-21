@@ -1,6 +1,7 @@
 ### 2.3.2: 2025-07-21
 
 * Fix too large profile photo on mobile, Closes #166
+* Fix notification icon is always active on mobile, Closes #165
 
 ### 2.3.1: 2025-07-10
 

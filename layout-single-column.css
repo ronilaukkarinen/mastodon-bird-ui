@@ -4392,10 +4392,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-bell);
 }
 
-.layout-single-column
-  .ui__navigation-bar__item[href="/notifications"].active
-  .icon,
-.layout-single-column .active .icon.icon-bell,
+.layout-single-column .ui__navigation-bar__item[href="/notifications"].active .icon,
 .layout-single-column .column-link.active .icon-bell {
   background-image: var(--icon-bell-active);
 }
