@@ -1,3 +1,7 @@
+### 2.3.2: 2025-07-21
+
+* Fix too large profile photo on mobile, Closes #166
+
 ### 2.3.1: 2025-07-10
 
 * Update instructions: Replace @import with @use #162, Closes #161 #152 #163 (thanks @SuperSandro2000!)

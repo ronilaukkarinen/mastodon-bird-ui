@@ -3443,14 +3443,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .account__header__bar .avatar .account__avatar {
   background-color: transparent;
   border: 0;
-
-  /* It's inlined so we have to use !important */
-  /* stylelint-disable-next-line */
-  height: 133.5px !important;
-
-  /* It's inlined so we have to use !important */
-  /* stylelint-disable-next-line */
-  width: 133.5px !important;
 }
 
 .layout-single-column .account__header__tabs {
@@ -4006,6 +3998,16 @@ body .compose-form .compose-form__uploads {
   .layout-single-column .list-panel > hr,
   .layout-single-column .list-panel + hr {
     display: none;
+  }
+
+  .layout-single-column .account__header__bar .avatar .account__avatar {
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    height: 133.5px !important;
+
+    /* It's inlined so we have to use !important */
+    /* stylelint-disable-next-line */
+    width: 133.5px !important;
   }
 
   .layout-single-column .navigation-panel__menu {
