@@ -1,3 +1,7 @@
+### 2.3.4rc1: 2025-07-24
+
+* Reset margin under logo, fixed in 4.5.0-alpha.1
+
 ### 2.3.3: 2025-07-24
 
 * Fix odd box-shadow behind avatar-groups in 4.4.0-4.5.0-alpha.1
