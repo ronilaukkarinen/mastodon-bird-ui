@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.3 */
+   2.3.4 */
 
 /* CSS variables */
 :root {
@@ -2399,11 +2399,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column .navigation-panel hr {
   /* Hide but reserve space */
   visibility: hidden;
-}
-
-/* Remove extra margin from logo in v4.4.0-beta.1+mementomods-2025-06-14 */
-.layout-single-column .navigation-panel__logo {
-  margin-bottom: 0;
 }
 
 .layout-single-column .navigation-panel__logo hr {
