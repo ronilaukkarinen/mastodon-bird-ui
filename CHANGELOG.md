@@ -1,3 +1,7 @@
+### 2.3.3: 2025-07-24
+
+* Fix odd box-shadow behind avatar-groups in 4.4.0-4.5.0-alpha.1
+
 ### 2.3.2: 2025-07-21
 
 * Fix too large profile photo on mobile, Closes #166

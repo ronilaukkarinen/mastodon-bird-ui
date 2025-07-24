@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.1 */
+   2.3.3 */
 
 /* CSS variables */
 :root {
@@ -1533,6 +1533,11 @@ body.embed .detailed-status,
   /* Need to override inline styles */
   /* stylelint-disable-next-line */
   width: var(--size-avatar) !important;
+}
+
+/* Improve "others you know follow" avatar group */
+body .avatar-group--compact .account__avatar {
+  box-shadow: none;
 }
 
 /* Avatars */
