@@ -1,3 +1,7 @@
+### 2.3.4rc2: 2025-07-26
+
+* Fix audio embed overflow, Fixes #167
+
 ### 2.3.4rc1: 2025-07-24
 
 * Reset margin under logo, fixed in 4.5.0-alpha.1
