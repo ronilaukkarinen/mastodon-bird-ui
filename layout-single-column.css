@@ -44,7 +44,7 @@
   --color-black-coral: #5a5371;
   --color-profile-button-hover: #f1eff41a;
   --color-column-link-hover: #f7f7f91a;
-  --color-modal-overlay: #5b708366;
+  --color-modal-overlay: rgb(43 43 51);
   --color-dark: var(--color-brand-mastodon-dark);
   --color-thread-line: var(--color-brand-mastodon-threaded-line);
   --color-topaz: #dadaf3;

@@ -1,6 +1,7 @@
 ### 2.3.4rc2: 2025-07-26
 
 * Fix audio embed overflow, Fixes #167
+* Improve modal accessibility, update background color
 
 ### 2.3.4rc1: 2025-07-24
 
