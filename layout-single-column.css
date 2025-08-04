@@ -905,6 +905,13 @@ body.layout-single-column {
   border-color: var(--color-border);
 }
 
+/* Attempt to fix a janky scroll in v4.5.0-alpha.1 */
+.notification,
+.status__wrapper,
+.conversation {
+  scroll-margin-top: unset !important;
+}
+
 /* Change panel order */
 .layout-single-column .columns-area__panels__pane {
   order: 3;
