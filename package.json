@@ -1,6 +1,6 @@
 {
   "name": "mastodon-bird-ui",
-  "version": "2.3.4rc2",
+  "version": "2.3.4rc3",
   "description": "",
   "main": "index.js",
   "scripts": {

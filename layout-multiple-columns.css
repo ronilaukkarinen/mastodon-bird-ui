@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc2 */
+   2.3.4rc3 */
 
 /* CSS variables */
 :root {
@@ -654,7 +654,7 @@ body.layout-multiple-columns {
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  transition: all 200ms;
+  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
 }
 
 .layout-multiple-columns .status-card.status-card.bottomless {
@@ -1579,7 +1579,7 @@ body.embed .detailed-status,
 .layout-multiple-columns .status__prepend,
 .layout-multiple-columns .notification__message,
 .layout-multiple-columns .status {
-  transition: all 200ms;
+  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
 }
 
 /* Toot hover effect */
@@ -2408,7 +2408,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .account__section-headline a {
-  transition: all 200ms;
+  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
 }
 
 .layout-multiple-columns .dropdown-menu__item a:hover,

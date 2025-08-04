@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc2 */
+   2.3.4rc3 */
 
 /* CSS variables */
 :root {
@@ -505,19 +505,10 @@ body.layout-single-column {
 
 /* Things that should have the mid font-size */
 .layout-single-column .account__header__extra__links,
-.layout-single-column
-  .columns-area__panels__pane--compositional
-  .account__header__account-note
-  textarea,
+.layout-single-column .columns-area__panels__pane--compositional .account__header__account-note textarea,
 .layout-single-column .account__header__content,
-.layout-single-column
-  .columns-area__panels__pane--compositional
-  .compose-form
-  .autosuggest-textarea__textarea,
-.layout-single-column
-  .columns-area__panels__pane--compositional
-  .compose-form
-  .spoiler-input__input {
+.layout-single-column .columns-area__panels__pane--compositional .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .columns-area__panels__pane--compositional .compose-form .spoiler-input__input {
   font-size: var(--font-size-mid);
   line-height: var(--line-height-mid);
 }
@@ -568,10 +559,7 @@ body.layout-single-column {
 }
 
 /* Report modal */
-.layout-single-column
-  .report-dialog-modal
-  .poll__option.dialog-option
-  > .poll__option__text {
+.layout-single-column .report-dialog-modal .poll__option.dialog-option > .poll__option__text {
   display: grid;
   gap: 6px;
 }
@@ -672,7 +660,7 @@ body.layout-single-column {
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  transition: all 200ms;
+  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
 }
 
 .layout-single-column .status-card.status-card.bottomless {
@@ -1580,7 +1568,7 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .status__prepend,
 .layout-single-column .notification__message,
 .layout-single-column .status {
-  transition: all 200ms;
+  transition: background-color 200ms, border-color 200ms, opacity 200ms;
 }
 
 /* Toot hover effect */
@@ -2430,7 +2418,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding-right: calc(var(--gap-column-link) * 1.5);
   padding-top: calc(var(--gap-column-link) + 4px);
   row-gap: var(--gap-column-link);
-  transition: all 100ms;
   width: 100%;
 }
 
@@ -2476,7 +2463,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .account__section-headline a {
-  transition: all 200ms;
+  transition: background 200ms;
 }
 
 .layout-single-column .dropdown-menu__item a:hover,
@@ -3459,10 +3446,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 body.embed .button.logo-button,
 .layout-single-column .notification__report__actions .button,
 .layout-single-column .column-inline-form button,
-.layout-single-column
-  .explore__suggestions
-  .account-card__actions__button
-  button,
+.layout-single-column .explore__suggestions .account-card__actions__button button,
 .layout-single-column .account__header__tabs__buttons .button,
 .layout-single-column .account .account__relationship > .button,
 .layout-single-column .notification .account__relationship > .button {

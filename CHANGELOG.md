@@ -1,3 +1,7 @@
+### 2.3.4rc3: 2025-08-04
+
+* Fix performance-expensive transitions
+
 ### 2.3.4rc2: 2025-07-26
 
 * Fix audio embed overflow, Fixes #167
