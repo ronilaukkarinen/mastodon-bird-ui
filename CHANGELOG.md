@@ -1,3 +1,7 @@
+### 2.3.4rc4: 2025-08-25
+
+* 4.5.0-alpha.2: Fix margin for quote posts that have media inside of them, test toot: https://mementomori.social/@renchap@oisaur.com/115068746193468586
+
 ### 2.3.4rc3: 2025-08-04
 
 * Fix performance-expensive transitions

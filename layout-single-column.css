@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc3 */
+   2.3.4rc4 */
 
 /* CSS variables */
 :root {
@@ -1739,6 +1739,7 @@ body.embed .media-gallery,
 body.embed .media-gallery__gifv,
 body.embed .media-gallery__preview,
 body.embed .video-player,
+.detailed-status .status.status--is-quote .media-gallery,
 .layout-single-column .status .audio-player,
 .layout-single-column .status .media-gallery,
 .layout-single-column .status .video-player,
