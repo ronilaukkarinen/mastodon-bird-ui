@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Fix min-height for default quote status that is not unavailable
+
 ### 2.3.5rc5: 2025-08-25
 
 * Add more extensive styles for the upcoming Quote Posts feature, requires 4.5.0-alpha.2-2025-08-24 or later with `EXPERIMENTAL_FEATURES=inbound_quotes,outgoing_quotes` flag enabled

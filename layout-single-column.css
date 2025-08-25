@@ -728,6 +728,10 @@ body.layout-single-column {
   color: var(--color-light-text);
 }
 
+.status__quote:not(.status__quote--error) .status {
+  min-height: 40px;
+}
+
 @media (width <= 600px) {
   .layout-single-column .status.status--is-quote {
     --font-size: 14px;
