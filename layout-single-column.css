@@ -1466,20 +1466,6 @@ body .notification-ungrouped--unread::before {
   gap: calc(var(--gap-default) / 2);
 }
 
-/* The separator dot */
-.layout-single-column .status__info::before {
-  color: var(--color-dim);
-  content: "·";
-  display: inline-block;
-  font-size: var(--font-size);
-  font-weight: var(--font-weight-regular);
-  height: 20px;
-  margin-left: -6px;
-  margin-right: -10px;
-  order: 2;
-  position: relative;
-}
-
 .layout-single-column .status__info .status__relative-time {
   height: unset;
   order: 3;
