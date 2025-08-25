@@ -1,6 +1,7 @@
 ### [Unreleased]
 
 * Fix min-height for default quote status that is not unavailable
+* Fix quoted status inside a notification
 
 ### 2.3.5rc5: 2025-08-25
 

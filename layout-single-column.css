@@ -732,6 +732,13 @@ body.layout-single-column {
   min-height: 40px;
 }
 
+.notification-grouped .status--has-quote .status__quote .status.status--is-quote .status__content,
+.notification-grouped--direct .status--has-quote .status__quote .status.status--is-quote .status__content,
+.notification-ungrouped .status--has-quote .status__quote .status.status--is-quote .status__content {
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+  padding-left: 0;
+}
+
 @media (width <= 600px) {
   .layout-single-column .status.status--is-quote {
     --font-size: 14px;
