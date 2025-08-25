@@ -1,3 +1,7 @@
+### 2.3.5rc5: 2025-08-25
+
+* Add more extensive styles for the upcoming Quote Posts feature, requires 4.5.0-alpha.2-2025-08-24 or later with `EXPERIMENTAL_FEATURES=inbound_quotes,outgoing_quotes` flag enabled
+
 ### 2.3.4rc4: 2025-08-25
 
 * 4.5.0-alpha.2: Fix margin for quote posts that have media inside of them, test toot: https://mementomori.social/@renchap@oisaur.com/115068746193468586
