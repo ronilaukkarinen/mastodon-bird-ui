@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc5 */
+   2.3.4rc6 */
 
 /* CSS variables */
 :root {
@@ -694,6 +694,21 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card:focus .status-card__host,
 .layout-multiple-columns a.status-card:hover .status-card__host {
   color: var(--color-dim);
+}
+
+/* Disabled quote post selection */
+.layout-multiple-column .dropdown-menu__item :disabled,
+.layout-multiple-column .dropdown-menu__item button:disabled {
+  color: var(--color-dim);
+}
+
+/* Improved UI for the new quote posts popper */
+div[data-popper-placement]:has(.reblog-button__item) {
+  max-width: 200px;
+}
+
+div[data-popper-placement] .reblog-button__item button:disabled {
+  align-items: flex-start;
 }
 
 /* Show minimal status card if there's no image */

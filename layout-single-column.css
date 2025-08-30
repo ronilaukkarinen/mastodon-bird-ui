@@ -732,6 +732,21 @@ body.layout-single-column {
   min-height: 40px;
 }
 
+/* Disabled quote post selection */
+.layout-single-column .dropdown-menu__item :disabled,
+.layout-single-column .dropdown-menu__item button:disabled {
+  color: var(--color-dim);
+}
+
+/* Improved UI for the new quote posts popper */
+div[data-popper-placement]:has(.reblog-button__item) {
+  max-width: 200px;
+}
+
+div[data-popper-placement] .reblog-button__item button:disabled {
+  align-items: flex-start;
+}
+
 .notification-grouped .status--has-quote .status__quote .status.status--is-quote .status__content,
 .notification-grouped--direct .status--has-quote .status__quote .status.status--is-quote .status__content,
 .notification-ungrouped .status--has-quote .status__quote .status.status--is-quote .status__content {

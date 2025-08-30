@@ -1,7 +1,9 @@
-### [Unreleased]
+### 2.3.5rc6: 2025-08-30
 
 * Fix min-height for default quote status that is not unavailable
 * Fix quoted status inside a notification
+* Fix disabled styles quote poost selection that is disabled
+* Improved UI for the new quote posts popper
 
 ### 2.3.5rc5: 2025-08-25
 
