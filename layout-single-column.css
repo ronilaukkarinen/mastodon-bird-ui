@@ -751,12 +751,6 @@ body.layout-single-column {
   color: var(--color-dim);
 }
 
-/* Improved UI for the new quote posts popper */
-div[data-popper-placement]:has(.reblog-button__item button:disabled)
-  .dropdown-menu > .dropdown-menu__container .reblog-button__item.disabled button > div {
-    max-width: 120px;
-}
-
 div[data-popper-placement] .reblog-button__item button:disabled {
   align-items: flex-start;
 }
