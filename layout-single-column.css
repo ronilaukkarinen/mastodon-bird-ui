@@ -739,8 +739,8 @@ body.layout-single-column {
 }
 
 /* Improved UI for the new quote posts popper */
-div[data-popper-placement]:has(.reblog-button__item) {
-  max-width: 200px;
+div[data-popper-placement]:has(.reblog-button__item button:disabled) .dropdown-menu {
+  max-width: 180px;
 }
 
 div[data-popper-placement] .reblog-button__item button:disabled {

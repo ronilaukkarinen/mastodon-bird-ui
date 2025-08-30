@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Fix misaligned popper for Quote Posts
+
 ### 2.3.5rc6: 2025-08-30
 
 * Fix min-height for default quote status that is not unavailable

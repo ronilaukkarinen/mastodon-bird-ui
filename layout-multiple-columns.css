@@ -702,15 +702,6 @@ body.layout-multiple-columns {
   color: var(--color-dim);
 }
 
-/* Improved UI for the new quote posts popper */
-div[data-popper-placement]:has(.reblog-button__item) {
-  max-width: 200px;
-}
-
-div[data-popper-placement] .reblog-button__item button:disabled {
-  align-items: flex-start;
-}
-
 /* Show minimal status card if there's no image */
 .layout-multiple-columns .status-card .status-card__image:not(:has(img)) {
   display: none;
