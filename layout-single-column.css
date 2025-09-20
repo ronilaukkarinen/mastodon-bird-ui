@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc5 */
+   2.3.4rc7 */
 
 /* CSS variables */
 :root {
@@ -734,6 +734,7 @@ body.layout-single-column {
   border-color: var(--surface-border-color);
   color: var(--color-light-text);
   justify-content: center;
+  min-height: 45px;
   text-align: center;
 }
 

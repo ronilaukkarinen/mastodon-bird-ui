@@ -1,16 +1,17 @@
-### 2.3.5rc7: 2025-09-20
+### 2.3.4rc7: 2025-09-20
 
 * Fix misaligned popper for Quote Posts
 * Fix quote author button misalignment in v4.4.4 and v4.5.0-alpha.2
+* Improve status__quote--error being to heigh, update min-height
 
-### 2.3.5rc6: 2025-08-30
+### 2.3.4rc6: 2025-08-30
 
 * Fix min-height for default quote status that is not unavailable
 * Fix quoted status inside a notification
 * Fix disabled styles quote poost selection that is disabled
 * Improved UI for the new quote posts popper
 
-### 2.3.5rc5: 2025-08-25
+### 2.3.4rc5: 2025-08-25
 
 * Add more extensive styles for the upcoming Quote Posts feature, requires 4.5.0-alpha.2-2025-08-24 or later with `EXPERIMENTAL_FEATURES=inbound_quotes,outgoing_quotes` flag enabled
 * Remove the separator dot redundant since 4.3
