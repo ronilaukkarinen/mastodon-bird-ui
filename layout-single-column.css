@@ -1813,7 +1813,7 @@ body.embed .video-player,
 .layout-single-column .media-gallery,
 .layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview,
-.layout-single-column .video-player
+.layout-single-column .video-player,
 .layout-single-column .status__quote .status__quote-author-button {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
