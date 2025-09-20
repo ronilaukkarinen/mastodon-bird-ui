@@ -2,6 +2,7 @@
 
 * Fix misaligned popper for Quote Posts
 * Fix quote author button misalignment in v4.4.4 and v4.5.0-alpha.2
+* Fix disabled quote post button in v4.4.4 and v4.5.0-alpha.2
 * Improve status__quote--error being to heigh, update min-height
 
 ### 2.3.4rc6: 2025-08-30

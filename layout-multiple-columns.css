@@ -697,6 +697,7 @@ body.layout-multiple-columns {
 }
 
 /* Disabled quote post selection */
+.layout-multiple-column .dropdown-menu__item [aria-disabled="true"],
 .layout-multiple-column .dropdown-menu__item :disabled,
 .layout-multiple-column .dropdown-menu__item button:disabled {
   color: var(--color-dim);
