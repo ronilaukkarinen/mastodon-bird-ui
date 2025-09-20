@@ -1,6 +1,7 @@
-### [Unreleased]
+### 2.3.5rc7: 2025-09-20
 
 * Fix misaligned popper for Quote Posts
+* Fix quote author button misalignment in v4.4.4 and v4.5.0-alpha.2
 
 ### 2.3.5rc6: 2025-08-30
 
