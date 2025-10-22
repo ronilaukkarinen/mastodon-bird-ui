@@ -559,13 +559,13 @@ body.layout-single-column {
 }
 
 /* Picture in picture fixes */
+/* stylelint-disable */
 .layout-single-column .picture-in-picture .audio-player,
 .layout-single-column .picture-in-picture .video-player {
-  /* stylelint-disable-next-line */
   border-radius: 0 !important;
-  /* stylelint-disable-next-line */
   margin-left: 0 !important;
 }
+/* stylelint-enable */
 
 /* Report modal */
 .layout-single-column
@@ -3363,8 +3363,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__fields
   .verified__mark {
   background-image: var(--icon-verified-smaller);
-  content: "";
   background-repeat: no-repeat;
+  content: "";
   height: 15px;
   width: 15px;
 }
@@ -3454,6 +3454,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:first-of-type::after {
+  /* stylelint-disable-next-line */
   display: none !important;
 }
 
@@ -3528,7 +3529,7 @@ body.embed .button.logo-button,
   .explore__suggestions
   .account-card__actions__button
   button,
-.layout-single-column .account__header__tabs__buttons .button,
+.layout-single-column .account__header__buttons .button,
 .layout-single-column .account .account__relationship > .button,
 .layout-single-column .notification .account__relationship > .button {
   background-color: transparent;
@@ -3555,24 +3556,24 @@ body.embed .button.logo-button,
   .explore__suggestions
   .account-card__actions__button
   button,
-.layout-single-column .account__header__tabs__buttons .button,
-.layout-single-column .account__header__tabs__buttons .icon-button,
+.layout-single-column .account__header__buttons .button,
+.layout-single-column .account__header__buttons .icon-button,
 .layout-single-column .notification .account__relationship > .button,
 .layout-single-column .account .account__relationship > .button {
   border: 1px solid var(--color-outer-space);
 }
 
-.layout-single-column .account__header__tabs__buttons .icon-button {
+.layout-single-column .account__header__buttons .icon-button {
   color: var(--color-light-text);
 }
 
 /* Fix focus overflow for 4.1.4-nightly */
-.layout-single-column .account__header__tabs__buttons {
+.layout-single-column .account__header__buttons {
   overflow: visible;
 }
 
 /* stylelint-disable-next-line */
-.layout-single-column .account__header__tabs__buttons .icon-button {
+.layout-single-column .account__header__buttons .icon-button {
   align-items: center;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -3586,7 +3587,7 @@ body.embed .button.logo-button,
 }
 
 /* Copy-icon size in profile */
-.layout-single-column .account__header__tabs__buttons .icon-button svg {
+.layout-single-column .account__header__buttons .icon-button svg {
   height: 18px;
   width: 18px;
 }
@@ -3597,21 +3598,21 @@ body.embed .button.logo-button:hover,
   .explore__suggestions
   .account-card__actions__button
   button:hover,
-.layout-single-column .account__header__tabs__buttons .icon-button.active {
+.layout-single-column .account__header__buttons .icon-button.active {
   color: var(--color-light-text);
 }
 
-.layout-single-column .account__header__tabs__buttons .icon-button .icon-bell-o,
-.layout-single-column .account__header__tabs__buttons .icon-button .icon-bell {
+.layout-single-column .account__header__buttons .icon-button .icon-bell-o,
+.layout-single-column .account__header__buttons .icon-button .icon-bell {
   background-image: var(--icon-bell-header-tabs);
 }
 
 .layout-single-column
-  .account__header__tabs__buttons
+  .account__header__buttons
   .icon-button.active
   .icon-bell-o,
 .layout-single-column
-  .account__header__tabs__buttons
+  .account__header__buttons
   .icon-button.active
   .icon-bell {
   background-image: var(--icon-bell-header-tabs-active);
@@ -3621,8 +3622,8 @@ body.embed .button.logo-button:hover,
   .explore__suggestions
   .account-card__actions__button
   button:hover,
-.layout-single-column .account__header__tabs__buttons .button:focus,
-.layout-single-column .account__header__tabs__buttons .button:hover,
+.layout-single-column .account__header__buttons .button:focus,
+.layout-single-column .account__header__buttons .button:hover,
 .layout-single-column .notification .account__relationship > .button:hover,
 .layout-single-column .notification .account__relationship > .button:focus,
 .layout-single-column .account .account__relationship > .button:hover,
@@ -4287,7 +4288,7 @@ body .compose-form .compose-form__uploads {
 
 /* Set size for the filter bar and profile icons */
 /* stylelint-disable-next-line */
-.layout-single-column .account__header__tabs__buttons .icon,
+.layout-single-column .account__header__buttons .icon,
 .layout-single-column .notification__filter-bar .icon {
   --size-icon: 20px;
 }
@@ -4313,7 +4314,7 @@ body .compose-form .compose-form__uploads {
   > .icon,
 .layout-single-column .notification-favourite .notification__message > .icon,
 .layout-single-column .notification-reblog .notification__message > .icon,
-.layout-single-column .account__header__tabs__buttons .icon,
+.layout-single-column .account__header__buttons .icon,
 .layout-single-column .detailed-status__action-bar .icon,
 .layout-single-column .status__action-bar .icon,
 .layout-single-column .notification__filter-bar .icon,
@@ -4336,7 +4337,7 @@ body .compose-form .compose-form__uploads {
   width: var(--size-icon);
 }
 
-.layout-single-column .account__header__tabs__buttons .icon {
+.layout-single-column .account__header__buttons .icon {
   background-position: center;
   background-size: var(--size-icon) var(--size-icon);
 }
@@ -4377,7 +4378,7 @@ body .compose-form .compose-form__uploads {
   .notification__message
   > .icon
   path,
-.layout-single-column .account__header__tabs__buttons .icon path,
+.layout-single-column .account__header__buttons .icon path,
 .layout-single-column .detailed-status__action-bar .icon path,
 .layout-single-column .notification__filter-bar .icon path,
 .layout-single-column .status__action-bar path,
@@ -4401,10 +4402,10 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .icon-user-plus.column-link__icon path,
 .layout-single-column .icon.icon-undefined path,
 .layout-single-column .icon.icon-users path,
-.layout-single-column .account__header__tabs__buttons .optional path,
-.layout-single-column .account__header__tabs__buttons .icon.icon-user-plus path,
+.layout-single-column .account__header__buttons .optional path,
+.layout-single-column .account__header__buttons .icon.icon-user-plus path,
 .layout-single-column .notification__filter-bar .icon.icon-user-plus path,
-.layout-single-column .account__header__tabs__buttons .icon.icon-tasks path,
+.layout-single-column .account__header__buttons .icon.icon-tasks path,
 .layout-single-column .notification__filter-bar .icon.icon-tasks path,
 body .navigation-panel__legal .column-link[href="/about"] path {
   display: block;

@@ -1,3 +1,8 @@
+### 2.3.4rc8: 2025-09-22
+
+* Fix profile links and alignments in v4.5.0-beta.2-2025-10-22
+* Fix double bell icon and other profile icons in v4.5.0-beta.2-2025-10-22
+
 ### 2.3.4rc7: 2025-09-20
 
 * Fix misaligned popper for Quote Posts
