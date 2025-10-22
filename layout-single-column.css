@@ -2961,7 +2961,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
     dd[title*="wordpress.com" i],
     dd[title*="wordpress.org" i],
     dd[title*="/@" i]
-  ) {
+  ),
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(a):not(:first-of-type) {
   max-width: 50%;
   order: 9999;
   width: auto;
@@ -2995,6 +2999,11 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
     dd[title*="wordpress.org" i],
     dd[title*="/@" i]
   )
+  dt,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(a):not(:first-of-type)
   dt {
   display: none;
 }
