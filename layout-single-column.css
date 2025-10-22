@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc7 */
+   2.3.4rc8 */
 
 /* CSS variables */
 :root {
@@ -2908,37 +2908,23 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   white-space: nowrap;
 }
 
-.layout-single-column .account__header__bio .account__header__fields dl::after {
-  content: "|";
-  order: 2;
-}
-
-/* Recognize empty field and remove pipe */
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:has(dd > span:empty)::after {
-  display: none;
-}
-
 .layout-single-column .account__header__bio .account__header__fields dt {
   order: 1;
 }
 
 .layout-single-column .account__header__bio .account__header__fields dd {
-  order: 3;
+  order: 2;
 }
 
-/* Hide the character in between Joined label */
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:first-of-type::before,
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:first-of-type::after {
-  display: none;
+/* Icon positioning - icons appear before label/value */
+.layout-single-column .account__header__bio .account__header__fields dl::before,
+.layout-single-column .account__header__bio .account__header__fields dl::after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  flex-shrink: 0;
+  order: 0;
 }
 
 /* Make full width... */
@@ -2973,12 +2959,9 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
     dd[title*="fb.com" i],
     dd[title*="bandcamp.com" i],
     dd[title*="wordpress.com" i],
-    dd[title*="wordpress.org" i]
-  ),
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:has(dd[title^="http"]):not(:has(dd[title*="@"])):not(:first-of-type) {
+    dd[title*="wordpress.org" i],
+    dd[title*="/@" i]
+  ) {
   max-width: 50%;
   order: 9999;
   width: auto;
@@ -3009,90 +2992,60 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
     dd[title*="facebook.com" i],
     dd[title*="fb.com" i],
     dd[title*="wordpress.com" i],
-    dd[title*="wordpress.org" i]
+    dd[title*="wordpress.org" i],
+    dd[title*="/@" i]
   )
-  dt,
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:has(dd[title^="http"]):not(:has(dd[title*="@"])):not(:first-of-type)
   dt {
   display: none;
 }
 
-/* Hide pipe and default icon for platform-specific links */
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:has(
-    dd[title*="github.com" i],
-    dd[title*="youtube.com" i],
-    dd[title*="youtu.be" i],
-    dd[title*="twitch.tv" i],
-    dd[title*="twitter.com" i],
-    dd[title*="x.com" i],
-    dd[title*="discord" i],
-    dd[title*="linkedin.com" i],
-    dd[title*="instagram.com" i],
-    dd[title*="ko-fi.com" i],
-    dd[title*="kofi.com" i],
-    dd[title*="paypal" i],
-    dd[title*="patreon.com" i],
-    dd[title*="threads.net" i],
-    dd[title*="bsky.app" i],
-    dd[title*="bsky.social" i],
-    dd[title*="bandcamp.com" i],
-    dd[title*="facebook.com" i],
-    dd[title*="fb.com" i],
-    dd[title*="wordpress.com" i],
-    dd[title*="wordpress.org" i]
-  )::before,
-.layout-single-column
-  .account__header__bio
-  .account__header__fields
-  dl:has(dd[title^="http"]):not(:has(dd[title*="@"])):not(
-    :first-of-type
-  )::before {
-  display: none;
-}
-
 /* Platform-specific icons using dd[title] URL detection */
+
+/* GitHub */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="github.com" i])::after {
-  content: var(--icon-github);
+  background-image: var(--icon-github);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Discord */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="discord" i])::after {
-  content: var(--icon-discord);
+  background-image: var(--icon-discord);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* LinkedIn */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="linkedin.com" i])::after {
-  content: var(--icon-linkedin);
+  background-image: var(--icon-linkedin);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Instagram */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="instagram.com" i])::after {
-  content: var(--icon-instagram);
+  background-image: var(--icon-instagram);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* YouTube */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3101,20 +3054,24 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="youtu.be" i])::after {
-  content: var(--icon-youtube);
+  background-image: var(--icon-youtube);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Twitch */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="twitch.tv" i])::after {
-  content: var(--icon-twitch);
+  background-image: var(--icon-twitch);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Twitter/X */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3123,29 +3080,35 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="x.com" i])::after {
-  content: var(--icon-twitter);
+  background-image: var(--icon-twitter);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Patreon */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="patreon.com" i])::after {
-  content: var(--icon-patreon);
+  background-image: var(--icon-patreon);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* PayPal */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="paypal" i])::after {
-  content: var(--icon-paypal);
+  background-image: var(--icon-paypal);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Ko-fi */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3154,20 +3117,24 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="ko-fi.com" i])::after {
-  content: var(--icon-kofi);
+  background-image: var(--icon-kofi);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Bandcamp */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="bandcamp.com" i])::after {
-  content: var(--icon-bandcamp);
+  background-image: var(--icon-bandcamp);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Facebook */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3176,21 +3143,25 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="fb.com" i])::after {
-  content: var(--icon-facebook);
+  background-image: var(--icon-facebook);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Friendica */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="friendica" i])::after {
-  content: var(--icon-friendica);
+  background-image: var(--icon-friendica);
+  content: "";
   height: 18.5px;
   transform: scale(0.9);
   width: 18.5px;
 }
 
+/* WordPress */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3199,7 +3170,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="wordpress.org" i])::after {
-  content: var(--icon-wordpress);
+  background-image: var(--icon-wordpress);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
@@ -3221,20 +3193,24 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="masto.host" i])::after {
-  content: var(--icon-mastodon);
+  background-image: var(--icon-mastodon);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Threads */
 .layout-single-column
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="threads.net" i])::after {
-  content: var(--icon-threads);
+  background-image: var(--icon-threads);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
+/* Bluesky */
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3243,7 +3219,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="bsky.social" i])::after {
-  content: var(--icon-bluesky);
+  background-image: var(--icon-bluesky);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
@@ -3257,17 +3234,50 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:has(dd[title*="nostr:" i])::after {
-  content: var(--icon-nostr);
+  background-image: var(--icon-nostr);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
 
-/* Default link icon for all other links */
+/* Default link icon for all other links (that don't have platform-specific icons) */
 .layout-single-column
   .account__header__bio
   .account__header__fields
-  dl:has(dd[title^="http"])::before {
-  content: var(--icon-link);
+  dl:has(dd[title^="http"]):not(
+    :has(
+        dd[title*="github.com" i],
+        dd[title*="youtube.com" i],
+        dd[title*="youtu.be" i],
+        dd[title*="twitch.tv" i],
+        dd[title*="twitter.com" i],
+        dd[title*="x.com" i],
+        dd[title*="discord" i],
+        dd[title*="linkedin.com" i],
+        dd[title*="instagram.com" i],
+        dd[title*="ko-fi.com" i],
+        dd[title*="kofi.com" i],
+        dd[title*="paypal" i],
+        dd[title*="patreon.com" i],
+        dd[title*="threads.net" i],
+        dd[title*="bsky.app" i],
+        dd[title*="bsky.social" i],
+        dd[title*="bandcamp.com" i],
+        dd[title*="facebook.com" i],
+        dd[title*="fb.com" i],
+        dd[title*="wordpress.com" i],
+        dd[title*="wordpress.org" i],
+        dd[title*="/@" i],
+        dd[title*="mastodon.social" i],
+        dd[title*="mastodon.online" i],
+        dd[title*="masto.host" i],
+        dd[title*="friendica" i],
+        dd[title*="npub" i],
+        dd[title*="nostr:" i]
+      )
+  )::after {
+  background-image: var(--icon-link);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
@@ -3276,8 +3286,9 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 .layout-single-column
   .account__header__bio
   .account__header__fields
-  dl:not(:has(a))::before {
-  content: var(--icon-label);
+  dl:not(:has(a)):not(:first-of-type)::after {
+  background-image: var(--icon-label);
+  content: "";
   height: 18.5px;
   width: 18.5px;
 }
@@ -3343,6 +3354,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__fields
   .verified__mark {
   background-image: var(--icon-verified-smaller);
+  content: "";
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;
@@ -3418,9 +3430,22 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__header__bio
   .account__header__fields
   dl:first-of-type::before {
-  content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%23717c9b" class="r-115tad6 r-4qtqp9 r-yyyyoo r-1xvli5t r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%23717c9b" class="r-115tad6 r-4qtqp9 r-yyyyoo r-1xvli5t r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
   height: 18.5px;
   width: 18.5px;
+}
+
+/* Hide ::after for Joined field (no second icon needed) */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:first-of-type::after {
+  display: none !important;
 }
 
 .layout-single-column .account__header__bio .account__header__fields dd,
@@ -3433,6 +3458,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 
 /* stylelint-disable no-duplicate-selectors */
 .layout-single-column .account__header__bio .account__header__fields dl {
+  align-items: center;
   background-color: transparent;
   border: 0;
   color: var(--color-dim);
