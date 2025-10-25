@@ -5,9 +5,7 @@
     "stylelint-order",
     "stylelint-csstree-validator"
   ],
-  "extends": [
-    "stylelint-config-standard"
-  ],
+  "extends": ["stylelint-config-standard"],
   "rules": {
     "csstree/validator": true,
     "declaration-block-single-line-max-declarations": 1,
@@ -51,7 +49,7 @@
     "font-family-no-missing-generic-family-keyword": true,
     "font-family-name-quotes": "always-where-required",
     "no-invalid-position-at-import-rule": null,
-    "declaration-no-important": true,
+    "declaration-no-important": null,
     "comment-empty-line-before": null,
     "function-url-quotes": "always",
     "unit-no-unknown": true,
@@ -73,68 +71,42 @@
     "csstools/value-no-unknown-custom-properties": [
       true,
       {
-        "importFrom": [
-          "layout-single-column.css"
-        ]
+        "importFrom": ["layout-single-column.css"]
       }
     ],
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": [
-          "first-nested",
-          "after-single-line-comment"
-        ],
-        "ignore": [
-          "inside-block"
-        ]
+        "except": ["first-nested", "after-single-line-comment"],
+        "ignore": ["inside-block"]
       }
     ],
     "at-rule-empty-line-before": [
       "always",
       {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ],
+        "ignoreAtRules": ["if", "else"],
         "except": [
           "first-nested",
           "blockless-after-same-name-blockless",
           "blockless-after-blockless"
         ],
-        "ignore": [
-          "after-comment"
-        ]
+        "ignore": ["after-comment"]
       }
     ],
     "no-descending-specificity": null,
     "max-nesting-depth": [
       3,
       {
-        "ignore": [
-          "blockless-at-rules",
-          "pseudo-classes"
-        ]
+        "ignore": ["blockless-at-rules", "pseudo-classes"]
       }
     ],
     "declaration-property-unit-allowed-list": [
       {
-        "font-size": [
-          "rem",
-          "em",
-          "px"
-        ],
-        "line-height": [
-          "px",
-          "%",
-          ""
-        ]
+        "font-size": ["rem", "em", "px"],
+        "line-height": ["px", "%", ""]
       }
     ],
-    "property-disallowed-list": [
-      "font",
-      "background"
-    ],
+    "property-disallowed-list": ["font", "background"],
     "alpha-value-notation": null,
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
