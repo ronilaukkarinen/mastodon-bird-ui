@@ -625,6 +625,21 @@ body .content-warning {
 .notification__report__actions .button {
   border-color: var(--color-light-text) !important;
 }
+
+/* Ensure different colors for links, mentions and hashtags in v4.5-nightly 2025-10 */
+.status__content .mention,
+.status__content .mention * {
+  color: var(--color-mention) !important;
+}
+
+.status__content .hashtag,
+.status__content .hashtag * {
+  color: var(--color-hashtag) !important;
+}
+
+.status__content a[href]:not(.mention):not(.hashtag) * {
+  color: var(--color-link) !important;
+}
 ```
 
 After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add these lines:
@@ -659,3 +674,4 @@ Now rebuild assets and restart mastodon-web service:
 RAILS_ENV=production bundle exec rails assets:precompile
 sudo systemctl restart mastodon-web
 ```
+
