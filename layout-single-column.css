@@ -2886,11 +2886,6 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   order: 0;
 }
 
-/* Make full width... */
-.layout-single-column .account__header__bio .account__header__fields dl {
-  width: 100%;
-}
-
 /* ...except on those that have link URLs for known platforms */
 .layout-single-column
   .account__header__bio
@@ -3432,6 +3427,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-weight: var(--font-weight-regular);
   gap: calc(var(--gap-default) / 2);
   padding: 0;
+  width: 100%;
 }
 /* Profile links end */
 .layout-single-column .getting-started__trends h4 {
@@ -3516,10 +3512,6 @@ body.embed .button.logo-button,
   border: 1px solid var(--color-outer-space);
 }
 
-.layout-single-column .account__header__buttons .icon-button {
-  color: var(--color-light-text);
-}
-
 /* Fix focus overflow for 4.1.4-nightly */
 .layout-single-column .account__header__buttons {
   overflow: visible;
@@ -3531,6 +3523,7 @@ body.embed .button.logo-button,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
+  color: var(--color-light-text);
   display: inline-flex;
   height: 36px;
   justify-content: center;
@@ -4075,6 +4068,7 @@ body .compose-form .compose-form__uploads {
   /* Hide lists if there's not enough space on desktop vertically */
   .layout-single-column .list-panel {
     opacity: 0;
+    order: 22;
     transition: all 200ms;
   }
 
@@ -4137,10 +4131,6 @@ body .compose-form .compose-form__uploads {
 
   .layout-single-column .column-link[href="/admin/reports"] {
     order: 12;
-  }
-
-  .layout-single-column .list-panel {
-    order: 22;
   }
 
   .layout-single-column .column-link[href="/settings/preferences"] {
