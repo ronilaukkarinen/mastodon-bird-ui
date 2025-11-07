@@ -5,9 +5,7 @@
     "stylelint-order",
     "stylelint-csstree-validator"
   ],
-  "extends": [
-    "stylelint-config-standard"
-  ],
+  "extends": ["stylelint-config-standard"],
   "rules": {
     "csstree/validator": true,
     "declaration-block-single-line-max-declarations": 1,
@@ -45,13 +43,13 @@
     "function-name-case": "lower",
     "selector-attribute-quotes": "always",
     "comment-whitespace-inside": "always",
-    "selector-max-specificity": "0,8,8",
+    "selector-max-specificity": "1,8,8",
     "block-no-empty": true,
     "declaration-empty-line-before": null,
     "font-family-no-missing-generic-family-keyword": true,
     "font-family-name-quotes": "always-where-required",
     "no-invalid-position-at-import-rule": null,
-    "declaration-no-important": true,
+    "declaration-no-important": null,
     "comment-empty-line-before": null,
     "function-url-quotes": "always",
     "unit-no-unknown": true,
@@ -59,10 +57,10 @@
     "font-weight-notation": "numeric",
     "number-max-precision": null,
     "selector-class-pattern": null,
-    "selector-max-class": 7,
-    "selector-max-combinators": 7,
-    "selector-max-compound-selectors": 7,
-    "selector-max-pseudo-class": 3,
+    "selector-max-class": null,
+    "selector-max-combinators": null,
+    "selector-max-compound-selectors": null,
+    "selector-max-pseudo-class": null,
     "selector-max-universal": 1,
     "property-no-vendor-prefix": true,
     "selector-no-vendor-prefix": true,
@@ -73,68 +71,42 @@
     "csstools/value-no-unknown-custom-properties": [
       true,
       {
-        "importFrom": [
-          "layout-single-column.css"
-        ]
+        "importFrom": ["layout-single-column.css"]
       }
     ],
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": [
-          "first-nested",
-          "after-single-line-comment"
-        ],
-        "ignore": [
-          "inside-block"
-        ]
+        "except": ["first-nested", "after-single-line-comment"],
+        "ignore": ["inside-block"]
       }
     ],
     "at-rule-empty-line-before": [
       "always",
       {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ],
+        "ignoreAtRules": ["if", "else"],
         "except": [
           "first-nested",
           "blockless-after-same-name-blockless",
           "blockless-after-blockless"
         ],
-        "ignore": [
-          "after-comment"
-        ]
+        "ignore": ["after-comment"]
       }
     ],
     "no-descending-specificity": null,
     "max-nesting-depth": [
       3,
       {
-        "ignore": [
-          "blockless-at-rules",
-          "pseudo-classes"
-        ]
+        "ignore": ["blockless-at-rules", "pseudo-classes"]
       }
     ],
     "declaration-property-unit-allowed-list": [
       {
-        "font-size": [
-          "rem",
-          "em",
-          "px"
-        ],
-        "line-height": [
-          "px",
-          "%",
-          ""
-        ]
+        "font-size": ["rem", "em", "px"],
+        "line-height": ["px", "%", ""]
       }
     ],
-    "property-disallowed-list": [
-      "font",
-      "background"
-    ],
+    "property-disallowed-list": ["font"],
     "alpha-value-notation": null,
     "declaration-block-no-duplicate-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,

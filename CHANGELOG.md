@@ -1,3 +1,65 @@
+### 3.0.0: 2025-11-07
+
+* Bump version for Mastodon v4.5.0 stable
+* Fix profile links and alignments in v4.5.0-beta.2-2025-10-22
+* Fix double bell icon and other profile icons in v4.5.0-beta.2-2025-10-22
+* Fix misaligned popper for Quote Posts
+* Fix quote author button misalignment in v4.4.4 and v4.5.0-alpha.2
+* Fix disabled quote post button in v4.4.4 and v4.5.0-alpha.2
+* Improve status__quote--error being to heigh, update min-height
+* Fix min-height for default quote status that is not unavailable
+* Fix quoted status inside a notification
+* Fix disabled styles quote poost selection that is disabled
+* Improved UI for the new quote posts popper
+* Add more extensive styles for the upcoming Quote Posts feature, requires 4.5.0-alpha.2-2025-08-24 or later with `EXPERIMENTAL_FEATURES=inbound_quotes,outgoing_quotes` flag enabled
+* Remove the separator dot redundant since 4.3
+* 4.5.0-alpha.2: Fix margin for quote posts that have media inside of them, test toot: https://mementomori.social/@renchap@oisaur.com/115068746193468586
+* Fix performance-expensive transitions
+* Fix audio embed overflow, Fixes #167
+* Improve modal accessibility, update background color
+* Reset margin under logo, fixed in 4.5.0-alpha.1
+
+### 2.3.4rc8: 2025-10-22
+
+* Fix profile links and alignments in v4.5.0-beta.2-2025-10-22
+* Fix double bell icon and other profile icons in v4.5.0-beta.2-2025-10-22
+
+### 2.3.4rc7: 2025-09-20
+
+* Fix misaligned popper for Quote Posts
+* Fix quote author button misalignment in v4.4.4 and v4.5.0-alpha.2
+* Fix disabled quote post button in v4.4.4 and v4.5.0-alpha.2
+* Improve status__quote--error being to heigh, update min-height
+
+### 2.3.4rc6: 2025-08-30
+
+* Fix min-height for default quote status that is not unavailable
+* Fix quoted status inside a notification
+* Fix disabled styles quote poost selection that is disabled
+* Improved UI for the new quote posts popper
+
+### 2.3.4rc5: 2025-08-25
+
+* Add more extensive styles for the upcoming Quote Posts feature, requires 4.5.0-alpha.2-2025-08-24 or later with `EXPERIMENTAL_FEATURES=inbound_quotes,outgoing_quotes` flag enabled
+* Remove the separator dot redundant since 4.3
+
+### 2.3.4rc4: 2025-08-24
+
+* 4.5.0-alpha.2: Fix margin for quote posts that have media inside of them, test toot: https://mementomori.social/@renchap@oisaur.com/115068746193468586
+
+### 2.3.4rc3: 2025-08-04
+
+* Fix performance-expensive transitions
+
+### 2.3.4rc2: 2025-07-26
+
+* Fix audio embed overflow, Fixes #167
+* Improve modal accessibility, update background color
+
+### 2.3.4rc1: 2025-07-24
+
+* Reset margin under logo, fixed in 4.5.0-alpha.1
+
 ### 2.3.3: 2025-07-24
 
 * Fix odd box-shadow behind avatar-groups in 4.4.0-4.5.0-alpha.1

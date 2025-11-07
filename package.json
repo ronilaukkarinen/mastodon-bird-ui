@@ -1,6 +1,6 @@
 {
   "name": "mastodon-bird-ui",
-  "version": "2.3.4",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,10 +14,11 @@
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.6.2",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^30.0.1",
     "stylelint-csstree-validator": "^3.0.0",
     "stylelint-order": "^6.0.3"
-  },
-  "dependencies": {}
+  }
 }
