@@ -2779,11 +2779,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* Make full width... */
-.layout-multiple-columns .account__header__bio .account__header__fields dl {
-  width: 100%;
-}
-
 /* ...except on those that have label with GitHub, github, YouTube or similar */
 .layout-multiple-columns
   .account__header__bio
@@ -3313,6 +3308,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   font-weight: var(--font-weight-regular);
   gap: calc(var(--gap-default) / 2);
   padding: 0;
+  width: 100%;
 }
 
 .layout-multiple-columns .getting-started__trends h4 {
@@ -3415,15 +3411,12 @@ body.embed .button.logo-button,
 }
 
 .layout-multiple-columns .account__header__buttons .icon-button {
-  color: var(--color-light-text);
-}
-
-.layout-multiple-columns .account__header__buttons .icon-button {
   align-items: center;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
+  color: var(--color-light-text);
   display: inline-flex;
   height: 36px;
   justify-content: center;
