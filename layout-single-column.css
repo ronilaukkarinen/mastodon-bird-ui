@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc8 */
+   4.0.0rc1 */
 
 /* CSS variables */
 :root {
@@ -882,6 +882,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
 .layout-single-column .confirmation-modal,
 .layout-single-column .mute-modal,
 .layout-single-column .report-modal,
+.layout-single-columns .announcements__root,
 .layout-single-column .column-header__collapsible-inner {
   background-color: var(--color-dark);
   border-color: var(--color-dark);

@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   2.3.4rc7 */
+   4.0.0rc1 */
 
 /* CSS variables */
 :root {
@@ -644,7 +644,11 @@ body.layout-multiple-columns {
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
+  transition:
+    background-color 200ms,
+    border-color 200ms,
+    opacity 200ms,
+    transform 200ms;
 }
 
 .layout-multiple-columns .status-card.status-card.bottomless {
@@ -806,6 +810,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns .confirmation-modal,
 .layout-multiple-columns .mute-modal,
 .layout-multiple-columns .report-modal,
+.layout-multiple-columns .announcements__root,
 .layout-multiple-columns .column-header__collapsible-inner {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
@@ -1550,7 +1555,11 @@ body.embed .detailed-status,
 .layout-multiple-columns .status__prepend,
 .layout-multiple-columns .notification__message,
 .layout-multiple-columns .status {
-  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
+  transition:
+    background-color 200ms,
+    border-color 200ms,
+    opacity 200ms,
+    transform 200ms;
 }
 
 /* Toot hover effect */
@@ -2358,7 +2367,11 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .account__section-headline a {
-  transition: background-color 200ms, border-color 200ms, opacity 200ms, transform 200ms;
+  transition:
+    background-color 200ms,
+    border-color 200ms,
+    opacity 200ms,
+    transform 200ms;
 }
 
 .layout-multiple-columns .dropdown-menu__item a:hover,
@@ -3435,14 +3448,8 @@ body.embed .button.logo-button:hover,
   color: var(--color-light-text);
 }
 
-.layout-multiple-columns
-  .account__header__buttons
-  .icon-button
-  .icon-bell-o,
-.layout-multiple-columns
-  .account__header__buttons
-  .icon-button
-  .icon-bell {
+.layout-multiple-columns .account__header__buttons .icon-button .icon-bell-o,
+.layout-multiple-columns .account__header__buttons .icon-button .icon-bell {
   content: var(--icon-bell-header-tabs);
 }
 
@@ -3965,10 +3972,7 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .icon.icon-undefined path,
 .layout-multiple-columns .icon.icon-users path,
 .layout-multiple-columns .account__header__buttons .optional path,
-.layout-multiple-columns
-  .account__header__buttons
-  .icon.icon-user-plus
-  path,
+.layout-multiple-columns .account__header__buttons .icon.icon-user-plus path,
 .layout-multiple-columns .notification__filter-bar .icon.icon-user-plus path,
 .layout-multiple-columns .account__header__buttons .icon.icon-tasks path,
 .layout-multiple-columns .notification__filter-bar .icon.icon-tasks path {
