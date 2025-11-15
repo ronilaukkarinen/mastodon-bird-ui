@@ -266,7 +266,7 @@ This will:
 1. **Parcel** - Watch your CSS files and recompile on changes to `dist/`
 2. **Browsersync** - Proxy your Mastodon instance (default: `mastodon.test`) and inject the compiled CSS
 
-Browsersync will display a URL like `http://localhost:3000` - open that instead of your Mastodon instance directly. Any changes you make to `layout-single-column.css` or `layout-multiple-columns.css` will be instantly reflected in your browser without needing to reload the page.
+Browsersync will display a URL like `http://localhost:3000` - open that instead of your Mastodon instance directly. Any changes you make to SCSS files in `src/` will be instantly reflected in your browser without needing to reload the page.
 
 ### Available commands
 

@@ -5,14 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm-run-all --parallel watch sync",
-    "watch": "parcel watch layout-single-column.css layout-multiple-columns.css --dist-dir dist --public-url /bird-ui",
+    "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /bird-ui",
     "sync": "browser-sync start --config bs-config.js",
-    "build": "parcel build layout-single-column.css layout-multiple-columns.css --dist-dir dist --no-source-maps",
+    "build": "parcel build src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --no-source-maps",
     "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.1",
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
     "@ronilaukkarinen/stylelint-declaration-strict-value": "^1.9.2",
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
