@@ -21,13 +21,14 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
 4. [Installation for Mastodon instance admins](#installation-for-mastodon-instance-admins)
 5. [Make Mastodon Bird UI as optional by integrating it as 'Site theme' in settings for all users](#make-mastodon-bird-ui-as-optional-by-integrating-it-as-site-theme-in-settings-for-all-users)
 6. [Installation for regular users, contributing and testing](#installation-for-regular-users-contributing-and-testing)
-7. [Updating instructions](#updating-instructions)
-8. [Other tweaks and customizations](#other-tweaks-and-customizations)
+7. [Development](#development)
+8. [Updating instructions](#updating-instructions)
+9. [Other tweaks and customizations](#other-tweaks-and-customizations)
     1. [Status bar color on Android PWA](#status-bar-color-on-android-pwa)
     2. [Hide translate link for multiple languages](#hide-translate-link-for-multiple-languages)
     3. [Thread lines](#thread-lines)
     4. [Micro-interactions](#micro-interactions)
-9. [FAQ](#faq)
+10. [FAQ](#faq)
     1. [I want to make changes to the UI, can I do that?](#i-want-to-make-changes-to-the-ui-can-i-do-that)
     2. [Can you implement feature X?](#can-you-implement-feature-x)
     4. [Why don't you just create an app?](#why-dont-you-just-create-an-app)
@@ -39,8 +40,8 @@ Read the blog post: [The day I decided to build my own "Twitter"](https://rolle.
     10. [How to get to settings or faves on mobile?](#how-to-get-to-settings-or-faves-on-mobile)
     11. [Automatic dark/light mode possible?](#automatic-darklight-mode-possible)
     12. [I like it so much, why it can't be the default Mastodon UI](#i-like-it-so-much-why-it-cant-be-the-default-mastodon-ui)
-10. [Goals](#goals)
-11. [Accessibility](#accessibility)
+11. [Goals](#goals)
+12. [Accessibility](#accessibility)
     1. [ How to install an Accessible version built for people with serious vision impairment](#how-to-install-an-accessible-version-built-for-people-with-serious-vision-impairment)
 
 ## Why would anyone want Mastodon to look like Twitter?
@@ -242,6 +243,47 @@ And you're done!
 2. Copy the contents of layout-single-column.css and layout-multiple-columns.css
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
+
+## Development
+
+For contributors and developers working on Mastodon Bird UI, we provide a live development environment with instant CSS hot-reloading using Parcel and Browsersync.
+
+### Prerequisites
+
+- Node.js installed (see `.nvmrc` for the recommended version)
+- A running Mastodon instance (e.g., `mastodon.test`)
+- Dependencies installed: `npm install`
+
+### Development workflow
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+This will:
+1. **Parcel** - Watch your CSS files and recompile on changes to `dist/`
+2. **Browsersync** - Proxy your Mastodon instance (default: `mastodon.test`) and inject the compiled CSS
+
+Browsersync will display a URL like `http://localhost:3000` - open that instead of your Mastodon instance directly. Any changes you make to `layout-single-column.css` or `layout-multiple-columns.css` will be instantly reflected in your browser without needing to reload the page.
+
+### Available commands
+
+```bash
+npm run dev       # Development mode (watch + browsersync)
+npm run build     # Production build (minified, no source maps)
+npm run watch     # Parcel watch only (no browsersync)
+npm run sync      # Browsersync only (no parcel)
+npm run clean     # Clean build artifacts
+```
+
+### Configuration
+
+- **Parcel configuration**: `.parcelrc` - Controls CSS compilation and optimization
+- **Browsersync configuration**: `bs-config.js` - Configure proxy settings, injection rules, and other options
+
+If your Mastodon instance is not at `mastodon.test`, edit `bs-config.js` and change the `proxy` value.
 
 ## Updating instructions
 

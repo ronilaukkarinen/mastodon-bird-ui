@@ -2,9 +2,13 @@
   "name": "mastodon-bird-ui",
   "version": "4.0.0rc1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm-run-all --parallel watch sync",
+    "watch": "parcel watch layout-single-column.css layout-multiple-columns.css --dist-dir dist --public-url /bird-ui",
+    "sync": "browser-sync start --config bs-config.js",
+    "build": "parcel build layout-single-column.css layout-multiple-columns.css --dist-dir dist --no-source-maps",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +16,9 @@
     "@ronilaukkarinen/stylelint-a11y": "^1.2.7",
     "@ronilaukkarinen/stylelint-declaration-strict-value": "^1.9.2",
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
+    "browser-sync": "^3.0.4",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.16.1",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
     "postcss-scss": "^4.0.9",

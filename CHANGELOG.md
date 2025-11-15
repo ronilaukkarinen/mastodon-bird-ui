@@ -1,3 +1,7 @@
+### 4.0.0rc-dev-build-system-css-theme-tokens: 2025-11-15
+
+* Add build process with parcel and browsersync #172
+
 ### 4.0.0rc1: 2025-11-09
 
 * Fix .announcements__root background-color in v4.6.0-alpha.1+2025-11-09
