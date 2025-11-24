@@ -149,6 +149,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 | [mastodon.sg](https://mastodon.sg)                                       | Custom CSS                | Mastodon Bird UI | 100+           | Yes         |
 | [FaithTree.social](https://faithtree.social)                             | Site theme                | Mastodon Bird UI | 19+            | Yes         |
 | [mustard.blog](https://mustard.blog)                                     | Site theme                | Mastodon Bird UI | 2000+          | Yes         |
+| [c.im](https://c.im)                                                     | Site theme                | Mastodon Bird UI | 2000+          | No          |
 
 ## Installation for Mastodon instance admins
 
@@ -675,4 +676,5 @@ Now rebuild assets and restart mastodon-web service:
 RAILS_ENV=production bundle exec rails assets:precompile
 sudo systemctl restart mastodon-web
 ```
+
 
