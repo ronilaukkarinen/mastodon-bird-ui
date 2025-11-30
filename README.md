@@ -242,7 +242,7 @@ And you're done!
 ## Installation for regular users, contributing and testing
 
 1. Install [Live CSS Editor](https://github.com/webextensions/live-css-editor) (or any other extension like [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) that allows you to inject CSS into web pages) or use [Unite for macOS](https://www.bzgapps.com/unite) or use the [user.js by eg](https://ieji.de/@eg/110174544387143309)
-2. Copy the contents of layout-single-column.css and layout-multiple-columns.css
+2. Copy the contents of `dist/layout-single-column.css` and `dist/layout-multiple-columns.css`
 3. Open extension and paste the contents of both CSS files into the editor
 4. If you use Live CSS Editor, click 📌-icon so the styles will be remembered for the domain or if you want just to use it as needed, activate styles from the extension's popup
 
