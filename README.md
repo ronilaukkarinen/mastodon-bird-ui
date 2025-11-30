@@ -425,8 +425,8 @@ As I have explained [here](https://mementomori.social/@rolle/110775398758308450)
 
 ## Goals
 
-- **CSS only.** This means some pseudos and modern CSS hacks. The intent is to have the code base as simple and extendable as possible. The styles should be easily modifiable. Ready-made code works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
-- **Dependency free.** No JavaScript, no build process, no nothing. Just plain CSS. Linting is optional and just here to make sure the code quality is good.
+- **CSS only output.** The compiled output is pure CSS with no JavaScript runtime. Ready-made CSS works when placed in **Custom CSS** box in {yourinstance.social/admin/settings/appearance}
+- **Modular SCSS source.** The source code uses SCSS with a modular architecture for easier maintenance and contributions. The build process compiles everything into single CSS files for distribution.
 
 ## Accessibility
 
