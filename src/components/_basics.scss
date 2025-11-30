@@ -1,0 +1,141 @@
+/* Vars on iPad, landscape */
+@media (width >= 1175px) and (width <= 1260px) {
+  :root {
+    --width-main-panel: 500px;
+    --width-side-panel: 265px;
+    --width-compose-panel: 265px;
+  }
+}
+
+/* Vars in mobile */
+@media (width <= 500px) {
+  :root {
+    --font-size: 16px;
+    --line-height: 1.4;
+    --font-size-heading: 17px;
+    --badges-distance-from-edge: 10px;
+  }
+
+  /* Hide scrollbar on mobile, since we can't pick the handle anyway */
+  .layout-single-column::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Search popout offset */
+.layout-single-column .search__popout,
+.layout-single-column .search-popout {
+  left: calc(30px / 2);
+
+  /* It's inlined so we have to use !important */
+  max-width: calc(100% - 30px) !important;
+
+  /* It's inlined so we have to use !important */
+  width: calc(100% - 30px) !important;
+}
+
+body.layout-single-column {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.layout-single-column .ui {
+  display: flex;
+  width: 100%;
+}
+
+/* Text color */
+.layout-single-column .account__header__tabs__name h1,
+.layout-single-column .account__header__bio .account__header__content,
+.layout-single-column .reply-indicator__content,
+.layout-single-column .status__content {
+  color: var(--color-fg);
+}
+
+/* Link color variants */
+.layout-single-column .status-link.hashtag {
+  color: var(--color-hashtag);
+}
+
+.layout-single-column .status-link.mention:not(.hashtag) {
+  color: var(--color-mention);
+}
+
+.layout-single-column .status-link.mention:not(.hashtag):not(.mention) {
+  color: var(--color-link);
+}
+
+/* Logo */
+.layout-single-column .ui__header__logo,
+.layout-single-column .column-link.column-link--logo {
+  background-image: var(--logo);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+  height: 50px;
+  padding: 0;
+  width: 50px;
+}
+
+.layout-single-column .ui__header__logo img,
+.layout-single-column .ui__header__logo svg {
+  display: none;
+}
+
+/* Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417 */
+.layout-single-column .ui__header__logo {
+  flex-grow: unset;
+}
+
+/* Things that should have the default font-size */
+.layout-single-column .notification__message,
+.layout-single-column .status__content,
+.layout-single-column .account__header__tabs__name h1 small,
+.layout-single-column .button,
+.layout-single-column .status__content__read-more-button,
+.layout-single-column .status__prepend,
+.layout-single-column .status__info,
+.layout-single-column .status__relative-time,
+.layout-single-column .status__info .status__display-name,
+.layout-single-column .account__section-headline a,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar a,
+.layout-single-column .notification__filter-bar button {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+/* Things that should have the mid font-size */
+.layout-single-column .account__header__extra__links,
+.layout-single-column
+  .columns-area__panels__pane--compositional
+  .account__header__account-note
+  textarea,
+.layout-single-column .account__header__content,
+.layout-single-column
+  .columns-area__panels__pane--compositional
+  .compose-form
+  .autosuggest-textarea__textarea,
+.layout-single-column
+  .columns-area__panels__pane--compositional
+  .compose-form
+  .spoiler-input__input {
+  font-size: var(--font-size-mid);
+  line-height: var(--line-height-mid);
+}
+
+/* Exceptions */
+.layout-single-column .account__header__content {
+  line-height: 18px;
+}
+
+/* Things that will have even smaller font size */
+.layout-single-column .account__header__account-note label {
+  font-size: var(--font-size-12);
+}
+
+/* Line heights */
+.layout-single-column .status__content {
+  line-height: var(--line-height);
+}
+

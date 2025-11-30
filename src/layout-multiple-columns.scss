@@ -6,5 +6,18 @@
 @use 'common/theme-high-contrast';
 @use 'common/theme-light';
 
-/* Import layout styles */
+/* Import shared components */
+@use 'components/basics';
+@use 'components/modals';
+@use 'components/forms';
+@use 'components/cards';
+@use 'components/announcements';
+@use 'components/panels';
+@use 'components/colors';
+@use 'components/status';
+@use 'components/media';
+@use 'components/buttons';
+@use 'components/animations';
+
+/* Import multiple-columns specific layout */
 @use 'layouts/multiple-columns-styles';

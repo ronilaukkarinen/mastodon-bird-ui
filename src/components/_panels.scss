@@ -1,0 +1,97 @@
+/* Panels, boxes and borders */
+/* Dark panels like modals and boxes */
+.layout-single-column .account-memorial-banner,
+.layout-single-column .follow-request-banner,
+.layout-single-column .moved-account-banner,
+.layout-single-column .about__meta,
+.layout-single-column .about__section__title,
+.layout-single-column .announcements,
+.layout-single-column .report-dialog-modal,
+.layout-single-column .report-modal__target,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions,
+.layout-single-column .privacy-dropdown__dropdown,
+.layout-single-column .drawer__backdrop,
+.layout-single-column .list-editor__account,
+.layout-single-column .list-editor,
+.layout-single-column .list-editor__lists,
+.layout-single-column .list-adder__account,
+.layout-single-column .list-adder,
+.layout-single-column .list-adder__lists,
+.layout-single-column .dropdown-menu__arrow::before,
+.layout-single-column .dropdown-menu,
+.layout-single-column .dropdown-menu__item a,
+.layout-single-column .dropdown-menu__item button,
+.layout-single-column .emoji-mart-category-label span,
+.layout-single-column .emoji-mart-bar:first-child,
+.layout-single-column .emoji-picker-dropdown__menu,
+.layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
+.layout-single-column .emoji-mart-search input,
+.layout-single-column .emoji-mart-scroll,
+.layout-single-column .emoji-mart-search,
+.layout-single-column .follow_requests-unlocked_explanation,
+.layout-single-column .dismissable-banner,
+.layout-single-column .block-modal__action-bar,
+.layout-single-column .boost-modal__action-bar,
+.layout-single-column .confirmation-modal__action-bar,
+.layout-single-column .mute-modal__action-bar,
+.layout-single-column .setting-text__wrapper,
+.layout-single-column .setting-text,
+.layout-single-column .report-modal__comment,
+.layout-single-column .report-modal__container,
+.layout-single-column .actions-modal,
+.layout-single-column .block-modal,
+.layout-single-column .boost-modal,
+.layout-single-column .compare-history-modal,
+.layout-single-column .confirmation-modal,
+.layout-single-column .mute-modal,
+.layout-single-column .report-modal,
+.layout-single-column .announcements__root,
+.layout-single-column .column-header__collapsible-inner {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light-text);
+}
+
+/* Setting boxes */
+.layout-single-column .column-header__collapsible-inner {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+/* Column-header border */
+.layout-single-column .column-header__collapsible {
+  border-bottom: 1px solid var(--color-border);
+  border-left: 0;
+  border-right: 0;
+}
+
+.layout-single-column .column-header__collapsible,
+.layout-single-column .column-header__collapsible.collapsed {
+  opacity: 1;
+}
+
+/* Has dark 1px border */
+.layout-single-column .dismissable-banner {
+  border: 1px solid var(--color-dark);
+}
+
+/* More subtle box-shadow for dropdown-menu */
+.layout-single-column .search-popout,
+.layout-single-column .search__popout,
+.layout-single-column .dropdown-menu {
+  box-shadow: 2px 4px 16px rgb(0 0 0 / 1%);
+}
+
+/* Autosuggest box shadow reset */
+.layout-single-column .search-popout,
+.layout-single-column .search__popout,
+.layout-single-column .dropdown-menu,
+.layout-single-column .emoji-picker-dropdown__menu,
+.layout-single-column .compose-form .compose-form__warning,
+.layout-single-column .privacy-dropdown.active .privacy-dropdown__value,
+.layout-single-column .privacy-dropdown__dropdown,
+.layout-single-column .language-dropdown__dropdown,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions {
+  box-shadow: none;
+}
+

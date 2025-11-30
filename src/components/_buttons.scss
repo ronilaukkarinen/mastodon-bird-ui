@@ -1,0 +1,51 @@
+/* Buttons and interactive elements */
+/* Icon buttons */
+.layout-single-column .icon-button {
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-dim);
+}
+
+/* Hide/Show media button */
+.layout-single-column .spoiler-button.spoiler-button--minified > button {
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius-badges);
+  color: var(--color-ghost-button-text);
+  opacity: 0.5;
+}
+
+/* Alt badge */
+.layout-single-column .media-gallery__item__badges > span {
+  border-radius: var(--border-radius-badges);
+}
+
+/* Distance from the edge */
+.layout-single-column .spoiler-button--minified {
+  inset-inline-start: var(--badges-distance-from-edge);
+  top: var(--badges-distance-from-edge);
+}
+
+.layout-single-column .media-gallery__item__badges {
+  bottom: var(--badges-distance-from-edge);
+  inset-inline-start: var(--badges-distance-from-edge);
+}
+
+.layout-single-column .spoiler-button.spoiler-button--minified > button:hover,
+.layout-single-column .spoiler-button.spoiler-button--minified > button:focus {
+  opacity: 1;
+}
+
+.layout-single-column .icon-button:hover {
+  color: var(--color-accent);
+}
+
+/* Other general buttons */
+.layout-single-column .column-header__button.active:active,
+.column-header__button.active:focus,
+.layout-single-column .column-header__button.active:hover {
+  background-color: var(--color-focusable-toot);
+  color: var(--color-fg);
+}
+

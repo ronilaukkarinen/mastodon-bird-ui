@@ -1,0 +1,227 @@
+/* Media attachments and embeds */
+/* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+body.embed .media-gallery__item.standalone img,
+body.embed .video-player .media-gallery__preview,
+.layout-single-column .media-gallery__item.standalone img,
+.layout-single-column .video-player .media-gallery__preview {
+  object-fit: contain;
+}
+
+body.embed .status .audio-player,
+body.embed .status .media-gallery,
+body.embed .status .video-player,
+body.embed .audio-player,
+body.embed .media-gallery,
+body.embed .media-gallery__gifv,
+body.embed .media-gallery__preview,
+body.embed .video-player,
+.detailed-status .status.status--is-quote .media-gallery,
+.layout-single-column .status .audio-player,
+.layout-single-column .status .media-gallery,
+.layout-single-column .status .video-player,
+.layout-single-column .audio-player,
+.layout-single-column .media-gallery,
+.layout-single-column .media-gallery__gifv,
+.layout-single-column .media-gallery__preview,
+.layout-single-column .video-player,
+.layout-single-column .status__quote .status__quote-author-button {
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+body.embed [data-component="Video"] > div {
+  aspect-ratio: unset !important;
+}
+
+body.embed .spoiler-button + .media-gallery__item > .media-gallery__preview,
+.layout-single-column
+  .spoiler-button
+  + .media-gallery__item
+  > .media-gallery__preview {
+  margin-left: unset !important;
+  max-height: unset !important;
+  width: 100% !important;
+}
+
+body.embed .media-gallery__gifv,
+body.embed .detailed-status .audio-player,
+body.embed .detailed-status .media-gallery,
+body.embed .detailed-status .media-gallery__gifv,
+body.embed .detailed-status .media-gallery__preview,
+body.embed .detailed-status .video-player,
+.layout-single-column .media-gallery__gifv,
+.layout-single-column .media-gallery__preview,
+.layout-single-column .detailed-status .audio-player,
+.layout-single-column .detailed-status .media-gallery,
+.layout-single-column .detailed-status .media-gallery__gifv,
+.layout-single-column .detailed-status .media-gallery__preview,
+.layout-single-column .detailed-status .video-player {
+  margin-left: 0;
+}
+
+.layout-single-column .media-gallery__preview {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.layout-single-column .media-gallery__item {
+  outline: 0;
+}
+
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(odd),
+.layout-single-column
+  .media-gallery
+  > .media-gallery__item:nth-of-type(odd)
+  > a,
+.layout-single-column .media-gallery__preview:nth-of-type(odd) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.layout-single-column .media-gallery > .media-gallery__item:nth-of-type(even),
+.layout-single-column
+  .media-gallery
+  > .media-gallery__item:nth-of-type(even)
+  > a,
+.layout-single-column .media-gallery__preview:nth-of-type(even) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
+.layout-single-column .status .status-card + .more-from-author,
+.layout-single-column .status .status-card {
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+.layout-single-column .media-gallery.media-gallery__item--tall,
+.layout-single-column .media-gallery.media-gallery--layout-1,
+.layout-single-column .media-gallery.media-gallery--layout-2,
+.layout-single-column .media-gallery.media-gallery--layout-3,
+.layout-single-column .media-gallery.media-gallery--layout-4,
+.layout-single-column .media-gallery__preview,
+.layout-single-column .audio-player,
+.layout-single-column .video-player {
+  max-height: 430px;
+  width: unset !important;
+}
+
+/* When image is still loading up, reset width to 100%, Fixes #150 */
+body.layout-single-column canvas[class="media-gallery__preview"] {
+  width: 100% !important;
+}
+
+.layout-single-column
+  .media-gallery:has(.spoiler-button)
+  .media-gallery__preview {
+  width: 100% !important;
+}
+
+/* Detailed status update */
+.layout-single-column .detailed-status .status__content {
+  font-size: var(--font-size-bigger);
+  line-height: 1.4;
+}
+
+/* Embeds */
+body.embed .detailed-status__link {
+  margin-left: 4px;
+  top: 0;
+}
+
+body.embed #mastodon-status {
+  overflow: hidden;
+}
+
+body.embed .detailed-status__meta,
+.layout-single-column .detailed-status__meta {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+body.embed .detailed-status__meta {
+  line-height: 1.5;
+}
+
+body.embed .detailed-status__reblogs,
+body.embed .detailed-status__favorites,
+.layout-single-column .detailed-status__favorites,
+.layout-single-column .detailed-status__reblogs {
+  display: inline-flex;
+  font-size: var(--font-size);
+  gap: 4px;
+}
+
+body.embed .detailed-status__meta .animated-number,
+.layout-single-column .detailed-status__meta .animated-number {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+body.embed .detailed-status__reblogs,
+.layout-single-column .detailed-status__reblogs {
+  font-size: var(--font-size);
+}
+
+body.embed .detailed-status__reblogs,
+body.embed .detailed-status__favorites {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+body.embed .activity-stream .entry {
+  background-color: var(--color-bg);
+}
+
+body.embed > .activity-stream {
+  backface-visibility: hidden;
+  background: #313543 !important;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Fix alignment */
+.layout-single-column .detailed-status__link {
+  top: 0;
+}
+
+/* Profile lock icon alignment fix */
+.layout-single-column .account__header__tabs__name h1 small {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+/* Textual labels for detailed metrics */
+body.embed .detailed-status__link > .fa-reply + span::after,
+.layout-single-column .detailed-status__link > .icon-reply + span::after {
+  color: var(--color-dim);
+  content: "Replies";
+  font-weight: var(--font-weight-semibold);
+}
+
+body.embed .detailed-status__link > .fa-retweet + span::after,
+.layout-single-column .detailed-status__link > .icon-retweet + span::after {
+  color: var(--color-dim);
+  content: "Boosts";
+  font-weight: var(--font-weight-semibold);
+}
+
+body.embed .detailed-status__link > .fa-star + span::after,
+.layout-single-column .detailed-status__link > .icon-star + span::after {
+  color: var(--color-dim);
+  content: "Favourites";
+  font-weight: var(--font-weight-semibold);
+}
+
+body.embed .detailed-status__meta .detailed-status__link .fa-reply,
+body.embed .detailed-status__meta .detailed-status__link .fa-star,
+body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
+.layout-single-column .detailed-status__meta .detailed-status__link .icon-star,
+.layout-single-column
+  .detailed-status__meta
+  .detailed-status__link
+  .icon-retweet {
+  display: none;
+}
+

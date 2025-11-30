@@ -1,0 +1,71 @@
+/* Forms and inputs */
+/* List adder input */
+.layout-single-column .list-editor input.setting-text,
+.layout-single-column .list-adder input.setting-text {
+  background-color: transparent;
+  border-color: var(--color-black-coral);
+  height: 38px;
+}
+
+.layout-single-column .list-editor .column-inline-form button,
+.layout-single-column .list-adder .column-inline-form button,
+.layout-single-column .list-editor .column-inline-form button::before {
+  min-height: 38px;
+
+  /* It's inlined so we have to use !important */
+  width: 100% !important;
+}
+
+.layout-single-column .list-editor__search {
+  padding: 15px;
+}
+
+.layout-single-column .embed-modal .embed-modal__container .embed-modal__html {
+  color: var(--color-light-text);
+}
+
+.layout-single-column .embed-modal .embed-modal__container .embed-modal__html,
+.layout-single-column .list-editor__search .search__input {
+  background-color: transparent;
+  border-color: var(--color-black-coral);
+  height: 38px;
+}
+
+.layout-single-column .list-editor .drawer__inner.backdrop {
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 20%);
+}
+
+/* Search icon fix for v4.4.0-rc.1-2025-07-01 changes */
+.layout-single-column .search__icon-wrapper {
+  right: 0;
+  top: 0;
+}
+
+.layout-single-column .list-editor__search .search__icon .icon {
+  margin: 15px;
+}
+
+.layout-single-column .list-editor .list__display-name,
+.layout-single-column .list-adder .list__display-name {
+  align-items: center;
+  display: flex;
+  gap: var(--gap-default);
+}
+
+.layout-single-column .list__display-name .icon-list-ul {
+  top: -2px;
+}
+/* Composer form warnings */
+.layout-single-column .compose-form .compose-form__warning {
+  background-color: var(--color-light-purple);
+  color: var(--color-bg);
+}
+
+/* Content warning placeholder */
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__textarea::placeholder,
+.layout-single-column .compose-form .spoiler-input__input::placeholder {
+  color: var(--color-dim);
+}
+

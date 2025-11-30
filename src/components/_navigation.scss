@@ -1,0 +1,3067 @@
+/* Navigation, columns and headers */
+/* Bars on panels */
+.layout-single-column .ui__header,
+.layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+.layout-single-column .tabs-bar__wrapper {
+  backdrop-filter: blur(12px);
+  background-color: var(--color-bg-75);
+  border-color: var(--color-border);
+  padding: 0;
+}
+
+/* Fix Create account button not clickable on mobile */
+.ui__header:has(.button[href="/auth/sign_up"]) {
+  z-index: 4;
+}
+
+@media (width >= 1175px) {
+  .layout-single-column .ui__header,
+  .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
+  .layout-single-column .tabs-bar__wrapper {
+    margin-right: -2px;
+  }
+}
+
+@media (max-width: 1175px) {
+  .layout-single-column .columns-area__panels__main > div {
+    border-right: 0;
+  }
+}
+
+/* Hidden things */
+.layout-single-column
+  .column-header
+  .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {
+  display: none;
+}
+
+/* Column headers */
+.layout-single-column .column-header {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Column sub-headers */
+.layout-single-column .column-subheading {
+  background-color: transparent;
+  color: var(--color-fg);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+  text-transform: unset;
+}
+
+/* "Your lists" view */
+.layout-single-column .column-subheading ~ article {
+  padding-left: var(--gap-default);
+  padding-right: var(--gap-default);
+}
+
+/* Notifications */
+.layout-single-column .notification-group,
+.layout-single-column .notification__message {
+  display: grid;
+  gap: var(--gap-default);
+  grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
+}
+
+.layout-single-column .notification__message {
+  height: calc(var(--gap-default) * 2);
+}
+
+/* Make sure notification user is clickable */
+.layout-single-column .notification__display-name {
+  position: relative;
+  z-index: 99;
+}
+
+/* Hack to display notification message title on one line */
+.layout-single-column .notification__message > span {
+  display: block;
+  margin-top: calc(var(--size-avatar-small) + 6px);
+  overflow: visible;
+}
+
+.layout-single-column .notification__message > span > span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications */
+@media (width <= 600px) {
+  .layout-single-column .notification .account__relationship > .button,
+  .layout-single-column .notification__report__actions .button {
+    max-width: 24vw;
+  }
+
+  .layout-single-column .notification__message > span > span {
+    max-width: 50vw;
+  }
+}
+
+.layout-single-column .notification__message > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.layout-single-column .muted .status__avatar {
+  opacity: 1;
+}
+
+.layout-single-column .notification .account__avatar-overlay-base {
+  display: none;
+}
+
+.layout-single-column .notification .account__avatar,
+.layout-single-column
+  .notification
+  .account__avatar-overlay-overlay
+  .account__avatar,
+.layout-single-column .notification .account__avatar-overlay-overlay {
+  /* Need to override inline styles */
+  height: var(--size-avatar-small) !important;
+  min-height: var(--size-avatar-small) !important;
+  min-width: var(--size-avatar-small) !important;
+  position: absolute;
+  width: var(--size-avatar-small) !important;
+}
+
+.layout-single-column .notification .status__info .status__display-name {
+  overflow: visible;
+}
+
+/* Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25 */
+.layout-single-column
+  .notification.notification-reblog
+  .status__info
+  .status__display-name,
+.layout-single-column
+  .notification.notification-follow
+  .status__info
+  .status__display-name,
+.layout-single-column
+  .notification-group--favourite
+  .status__info
+  .status__display-name,
+.layout-single-column
+  .notification.notification-favourite
+  .status__info
+  .status__display-name {
+  pointer-events: none;
+}
+
+/* Hack to show follow notification more minimal way */
+.layout-single-column
+  .notification.notification-admin-report
+  .notification__report,
+.layout-single-column
+  .notification.notification-admin-sign-up
+  .account__wrapper,
+.layout-single-column .notification.notification-update .account__wrapper,
+.layout-single-column .notification.notification-follow .account__wrapper {
+  position: relative;
+}
+
+.layout-single-column
+  .notification.notification-admin-report
+  .account__avatar-overlay-overlay {
+  top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default) + 4px));
+}
+
+/* Hack to show follow notification more minimal way */
+.layout-single-column .notification.notification-poll .display-name,
+.layout-single-column .notification.notification-update .display-name__html,
+.layout-single-column .notification.notification-update .display-name__account,
+.layout-single-column
+  .notification.notification-admin-sign-up
+  .display-name__html,
+.layout-single-column .notification.notification-admin-sign-up .display-name,
+.layout-single-column .notification.notification-follow .display-name__html {
+  visibility: hidden;
+}
+
+.layout-single-column
+  .notification.notification-update
+  .account__avatar-wrapper,
+.layout-single-column
+  .notification.notification-admin-sign-up
+  .account__avatar-wrapper,
+.layout-single-column
+  .notification.notification-follow
+  .account__avatar-wrapper,
+.layout-single-column .notification .account__avatar-overlay {
+  left: calc(var(--size-avatar-small) + var(--gap-default) + 18px);
+  margin-top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default)));
+  position: absolute;
+  top: 4px;
+}
+
+.layout-single-column
+  .notification.notification-admin-report
+  .account__avatar-overlay {
+  margin-top: 0;
+  top: 0;
+}
+
+.layout-single-column
+  .notification.notification-status
+  .notification__message
+  > span {
+  display: none;
+}
+
+.layout-single-column .notification.notification-follow .verified-badge,
+.layout-single-column
+  .notification.notification-admin-sign-up
+  .account__contents,
+.layout-single-column .notification.notification-follow .account__contents,
+.layout-single-column .notification.notification-follow .display-name,
+.layout-single-column
+  .notification.notification-admin-sign-up
+  .display-name
+  + span,
+.layout-single-column .notification.notification-follow .display-name + span,
+.layout-single-column
+  .notification-group--favourite
+  .status__wrapper-direct
+  .status__prepend,
+.layout-single-column
+  .notification.notification-favourite
+  .status__wrapper-direct
+  .status__prepend,
+.layout-single-column .notification.notification-reblog .display-name,
+.layout-single-column .notification-group--favourite .display-name,
+.layout-single-column .notification.notification-favourite .display-name {
+  display: none;
+}
+
+/* Minimal boost notification fix */
+.layout-single-column
+  .notification.notification-reblog
+  .notification__message
+  > span {
+  margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
+}
+
+/* Minimal follow notification fix */
+.layout-single-column
+  .notification.notification-follow
+  .notification__message
+  > span {
+  margin-top: calc(
+    calc(var(--size-avatar-small) + calc(var(--gap-default) / 2)) + 6px
+  );
+}
+
+.layout-single-column
+  .notification.notification.notification-admin-sign-up
+  .account__relationship,
+.layout-single-column .notification.notification-follow .account__relationship {
+  transform: translateY(-8px);
+}
+
+.layout-single-column
+  .notification.notification-follow
+  .account__avatar-wrapper {
+  top: 6px;
+}
+
+/* Minimal fav notification fix */
+.layout-single-column
+  .notification.notification-favourite
+  .notification__message
+  > span {
+  margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
+}
+
+/* If a status content is empty and there's only attachment, remove gap */
+.layout-single-column
+  .notification
+  .status__content:has(.status__content__text:empty)
+  + .attachment-list {
+  margin-top: 0;
+}
+
+/* Less space before attachments if no status content */
+.layout-single-column
+  .status
+  .status__content:has(.status__content__text:empty)
+  + .audio-player,
+.layout-single-column
+  .status
+  .status__content:has(.status__content__text:empty)
+  + .video-player,
+.layout-single-column
+  .status
+  .status__content:has(.status__content__text:empty)
+  + .media-gallery,
+.layout-single-column
+  .detailed-status
+  .status__content:has(.status__content__text:empty)
+  + .audio-player,
+.layout-single-column
+  .detailed-status
+  .status__content:has(.status__content__text:empty)
+  + .video-player,
+.layout-single-column
+  .detailed-status
+  .status__content:has(.status__content__text:empty)
+  + .media-gallery:not(.compose-form__uploads) {
+  margin-top: calc(var(--gap-default) / 2);
+}
+
+.layout-single-column .status__prepend {
+  padding-left: calc(var(--size-avatar) + 2px);
+}
+
+.layout-single-column .notification.notification-update .account__display-name,
+.layout-single-column .notification.notification-follow .account__display-name {
+  display: inline-flex;
+  gap: var(--gap-default);
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Admin reports and other admin notifications */
+.layout-single-column .notification-admin-report .notification__report {
+  border-color: var(--color-border);
+  display: flex;
+  font-size: var(--font-size);
+  gap: 16px;
+  margin-top: 22px;
+  padding: 16px;
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+}
+
+.layout-single-column
+  .notification-admin-report
+  .notification__report__details {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+}
+
+.layout-single-column
+  .notification-admin-report
+  .notification__report__details
+  strong {
+  font-weight: var(--font-weight-regular);
+}
+
+/* Revert hack for notification admin message that has no avatar visible */
+.layout-single-column .notification-admin-report .notification__message > span {
+  display: block;
+  margin-top: calc(var(--size-avatar-small) + 4px);
+  overflow: visible;
+}
+
+/* Hide things in notifications */
+.layout-single-column .notification .status__relative-time,
+.layout-single-column .notification .status__info::before {
+  display: none;
+}
+
+/* Right side panel */
+.layout-single-column .navigation-panel {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.layout-single-column .navigation-panel hr {
+  /* Hide but reserve space */
+  visibility: hidden;
+}
+
+.layout-single-column .navigation-panel__logo hr {
+  margin: 0;
+}
+
+/* Attempt to hide scrollbars for .navigation-panel for Firefox */
+.dropdown-menu__container__list--scrollable,
+.layout-single-column .navigation-panel {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbars for .navigation-panel for Chrome and Safari */
+.dropdown-menu__container__list--scrollable::-webkit-scrollbar,
+.layout-single-column .navigation-panel::-webkit-scrollbar {
+  display: none;
+  width: 4px;
+}
+
+.layout-single-column .column-link {
+  align-items: center;
+  color: var(--color-light-text);
+  column-gap: 14px;
+  font-size: var(--font-size-heading);
+  overflow: visible;
+  padding-bottom: calc(var(--gap-column-link) + 4px);
+  padding-left: var(--gap-column-link);
+  padding-right: calc(var(--gap-column-link) * 1.5);
+  padding-top: calc(var(--gap-column-link) + 4px);
+  row-gap: var(--gap-column-link);
+  width: 100%;
+}
+
+[dir="rtl"] .layout-single-column .column-link {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.layout-single-column .column-link > i {
+  min-width: 1.3em;
+}
+
+.layout-single-column .column-link > span {
+  position: relative;
+}
+
+.layout-single-column .column-link > span::before {
+  background-color: var(--color-column-link-hover);
+  border-radius: 32px;
+  bottom: calc(2px - var(--gap-column-link) * 1.5);
+  content: "";
+  inset-inline-end: calc(0px - (var(--gap-column-link) * 2));
+  inset-inline-start: calc(-1.28571429em - var(--gap-column-link) - 7px * 2);
+  opacity: 0;
+  position: absolute;
+  top: calc(-4px - var(--gap-column-link));
+  transition: opacity 200ms;
+}
+
+/* Accessibility outlines for keyboard navigation */
+.layout-single-column .column-link:focus-visible {
+  border-color: transparent;
+  outline: 0;
+}
+
+.layout-single-column .column-link:focus-visible > span::before {
+  outline: 3px solid var(--color-accent);
+}
+
+.layout-single-column .column-link:focus-visible > span::before,
+.layout-single-column .column-link:hover > span::before {
+  opacity: 1;
+}
+
+.layout-single-column .account__section-headline a {
+  transition: background 200ms;
+}
+
+.layout-single-column .dropdown-menu__item a:hover,
+.layout-single-column .notification__filter-bar button:hover,
+.layout-single-column .account__section-headline a:hover {
+  background-color: var(--color-column-link-hover);
+}
+
+/* Mobile devices */
+@media (hover: none) {
+  .layout-single-column .notification__filter-bar button.active:hover,
+  .layout-single-column .account__section-headline a.active:hover {
+    background-color: transparent;
+  }
+}
+
+/* Notification filter bar */
+.layout-single-column .notification__filter-bar {
+  border-bottom: 1px solid var(--color-border);
+  border-left: 0;
+  border-right: 0;
+}
+
+.layout-single-column .column-link__icon {
+  margin: 0;
+}
+
+/* Notification badge on side panel */
+.layout-single-column .icon-with-badge__badge {
+  align-items: center;
+  border-radius: 1em;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 11px;
+  height: 1.7em;
+  justify-content: center;
+  left: 12px;
+  line-height: 1;
+  min-width: max-content;
+  padding: 0 0.4em;
+  top: -7px;
+  width: 1.7em;
+}
+
+.layout-single-column .column-link--transparent.active {
+  color: var(--color-light-text);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Top panel */
+.layout-single-column .account__section-headline a.active::after,
+.layout-single-column .account__section-headline button.active::after,
+.layout-single-column .notification__filter-bar a.active::after,
+.layout-single-column .notification__filter-bar button.active::after {
+  background-color: var(--color-accent);
+  border: 0;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  bottom: -1px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  min-width: 56px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* Notification icons */
+.layout-single-column .account__section-headline a.active::before,
+.layout-single-column .account__section-headline button.active::before,
+.layout-single-column .notification__filter-bar a.active::before,
+.layout-single-column .notification__filter-bar button.active::before {
+  display: none;
+}
+
+.layout-single-column .notification.notification-reblog .status__action-bar,
+.layout-single-column .notification-group--favourite .status__action-bar,
+.layout-single-column .notification.notification-favourite .status__action-bar {
+  display: none;
+}
+
+.layout-single-column .status__prepend .icon-retweet {
+  background-image: var(--icon-boost-status-prepend);
+}
+
+.layout-single-column .notification-group .notification-group__icon .icon,
+.layout-single-column .notification .notification__message .icon {
+  align-self: start;
+  height: 27px;
+  justify-self: end;
+  margin-right: 4px;
+  max-width: 30px;
+  width: 27px;
+}
+
+.layout-single-column .notification-group .notification-group__icon .icon {
+  margin-right: 0;
+}
+
+.layout-single-column .notification-group .notification-group__icon {
+  justify-self: end;
+  margin-right: 4px;
+}
+
+.layout-single-column
+  .notification-group
+  .notification-group__icon
+  .icon-repeat,
+.layout-single-column .notification .notification__message .icon.icon-retweet {
+  color: var(--color-green);
+  height: 24px;
+  width: 24px;
+}
+
+.layout-single-column .notification-group .icon-person-add,
+.layout-single-column .notification .icon.icon-user-plus:not(.icon-link) {
+  color: var(--color-accent-dark);
+}
+
+.layout-single-column
+  .account__relationship
+  .icon.icon-user-plus:not(.icon-link),
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon.icon-user-plus:not(.icon-link) {
+  color: var(--color-dim);
+}
+
+.layout-single-column .notification .icon.icon-flag,
+.layout-single-column .notification .icon.icon-tasks:not(.icon-link) {
+  color: var(--color-accent-dark);
+}
+
+.layout-single-column .notification .icon.icon-home:not(.icon-link) {
+  color: var(--color-accent-dark);
+  height: 24px;
+  width: 24px;
+}
+
+/* Follow/unfollow button */
+.layout-single-column .account__relationship .icon-button,
+.layout-single-column .notification .account__relationship .icon-button {
+  background-color: transparent;
+}
+
+.layout-single-column .notification .account__relationship .icon {
+  color: var(--color-dim);
+  font-size: 20px;
+}
+
+.layout-single-column .list-adder__lists .icon-times::before,
+.layout-single-column
+  .account__wrapper
+  .account__relationship
+  .icon-button.active
+  .icon,
+.layout-single-column
+  .explore__search-results
+  .account__relationship
+  .icon-button.active
+  .icon,
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon-button.active
+  .icon {
+  color: var(--color-green);
+  opacity: 0.75;
+}
+
+.layout-single-column .list-adder__lists .icon-times:hover::before,
+.layout-single-column .explore__search-results .icon-button.active:hover .icon,
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon-button.active:hover
+  .icon {
+  color: var(--color-red);
+  opacity: 1;
+}
+
+.layout-single-column .explore__search-results .icon-button:focus .icon,
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon-button:focus
+  .icon,
+.layout-single-column .explore__search-results .icon-button.active:focus .icon,
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon-button.active:focus
+  .icon,
+.layout-single-column .explore__search-results .icon-button:hover .icon,
+.layout-single-column
+  .notification
+  .account__relationship
+  .icon-button:hover
+  .icon {
+  color: var(--color-green);
+  opacity: 1;
+}
+
+.layout-single-column .notification .account__relationship {
+  border-radius: 50%;
+  height: 24px;
+  transform: translateY(-4px);
+}
+
+/* Emoji-mart search input */
+.layout-single-column .emoji-mart-search-icon svg {
+  fill: var(--color-border);
+  opacity: 1;
+}
+
+.layout-single-column
+  .emoji-mart-search
+  > input:focus-visible
+  ~ .emoji-mart-search-icon
+  svg {
+  fill: var(--color-accent);
+}
+
+.layout-single-column .emoji-mart-search > input {
+  font-size: var(--font-size-smaller);
+}
+
+.layout-single-column .compose-form__autosuggest-wrapper textarea::placeholder,
+.layout-single-column .report-dialog-modal__textarea::placeholder,
+.layout-single-column .emoji-mart-search > input::placeholder {
+  color: var(--color-dim);
+  opacity: 1;
+}
+
+.layout-single-column .report-dialog-modal__textarea,
+.layout-single-column .report-dialog-modal__textarea:focus,
+.layout-single-column .emoji-mart-search > input:focus {
+  color: var(--color-light-text);
+}
+
+.layout-single-column .emoji-mart-search-icon:disabled {
+  opacity: 1;
+}
+
+/* Search */
+.layout-single-column .search__icon-wrapper .search__icon {
+  background-image: var(--icon-search);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  display: inline-block;
+  height: 24px;
+  inset-inline-start: unset;
+  position: absolute;
+  right: 14px;
+  top: 9px;
+  width: 24px;
+}
+
+.layout-single-column .search__icon-wrapper.has-value .search__icon {
+  background-image: var(--icon-close-action-bar);
+}
+
+.layout-single-column .search__icon-wrapper .search__icon path {
+  display: none;
+}
+
+.layout-single-column .search.active .search__input,
+.layout-single-column input.setting-text,
+.layout-single-column .search__input {
+  background-color: var(--color-mud);
+  border-color: var(--color-mud);
+  border-radius: 32px;
+  color: var(--color-dim);
+  font-size: var(--font-size);
+  height: 42px;
+  padding: 0 20px;
+}
+
+/* Input texts */
+.layout-single-column .search.active .search__input,
+.layout-single-column .poll__option input[type="text"],
+.layout-single-column input.setting-text:focus,
+.layout-single-column .search__input:focus {
+  color: var(--color-light-text);
+}
+
+/* Poll input */
+.layout-single-column .poll__option input[type="text"] {
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+
+.layout-single-column .poll__option input[type="text"]:focus {
+  border-color: var(--color-accent);
+}
+
+/* Placeholders */
+.layout-single-column .poll__option input[type="text"]::placeholder,
+.layout-single-column .search__input::placeholder,
+.layout-single-column input::placeholder,
+.layout-single-column input.setting-text::placeholder {
+  color: var(--color-dim);
+  opacity: 1;
+}
+
+/* Profile */
+.layout-single-column .getting-started__trends h4,
+.layout-single-column .account__header__bar {
+  border-color: var(--color-border);
+}
+
+.layout-single-column .account__header__bio .account__header__fields {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-default);
+  padding: 0;
+}
+
+/* New popout styles */
+.layout-single-column .account__domain-pill__popout {
+  border: 1px solid var(--color-mud);
+  color: var(--color-light-purple);
+}
+
+.layout-single-column
+  .account__domain-pill__popout__parts
+  > div:nth-child(2)
+  svg {
+  background-image: var(--icon-globe-purple);
+  background-size: 24px;
+}
+
+.layout-single-column .account__domain-pill__popout__handle {
+  background-color: var(--color-dark);
+  border: 0;
+  color: var(--color-accent);
+  padding: 12px 10px;
+}
+
+/* Hide unnecessary header icon for minimalism */
+.layout-single-column .account__domain-pill__popout__header__icon {
+  display: none;
+}
+
+.account__domain-pill__popout > p {
+  font-size: var(--font-size-smaller);
+  line-height: 1.3;
+}
+
+/* Profile links start */
+/* Truncate too long links in the profile, like Nostr */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  span
+  > a:only-of-type {
+  display: block;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layout-single-column .account__header__bio .account__header__fields dt {
+  order: 1;
+}
+
+.layout-single-column .account__header__bio .account__header__fields dd {
+  order: 2;
+}
+
+/* Icon positioning - icons appear before label/value */
+.layout-single-column .account__header__bio .account__header__fields dl::before,
+.layout-single-column .account__header__bio .account__header__fields dl::after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  flex-shrink: 0;
+  order: 0;
+}
+
+/* ...except on those that have link URLs for known platforms */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(
+    dd[title*="github.com" i],
+    dd[title*="youtube.com" i],
+    dd[title*="youtu.be" i],
+    dd[title*="twitch.tv" i],
+    dd[title*="twitter.com" i],
+    dd[title*="x.com" i],
+    dd[title*="discord" i],
+    dd[title*="linkedin.com" i],
+    dd[title*="instagram.com" i],
+    dd[title*="ko-fi.com" i],
+    dd[title*="kofi.com" i],
+    dd[title*="paypal" i],
+    dd[title*="patreon.com" i],
+    dd[title*="threads.net" i],
+    dd[title*="bsky.app" i],
+    dd[title*="bsky.social" i],
+    dd[title*="facebook.com" i],
+    dd[title*="fb.com" i],
+    dd[title*="bandcamp.com" i],
+    dd[title*="wordpress.com" i],
+    dd[title*="wordpress.org" i],
+    dd[title*="/@" i]
+  ),
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(a):not(:first-of-type) {
+  max-width: 50%;
+  order: 9999;
+  width: auto;
+}
+
+/* Hide labels for social/link fields (keep icons only) */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(
+    dd[title*="github.com" i],
+    dd[title*="youtube.com" i],
+    dd[title*="youtu.be" i],
+    dd[title*="twitch.tv" i],
+    dd[title*="twitter.com" i],
+    dd[title*="x.com" i],
+    dd[title*="discord" i],
+    dd[title*="linkedin.com" i],
+    dd[title*="instagram.com" i],
+    dd[title*="ko-fi.com" i],
+    dd[title*="kofi.com" i],
+    dd[title*="paypal" i],
+    dd[title*="patreon.com" i],
+    dd[title*="threads.net" i],
+    dd[title*="bsky.app" i],
+    dd[title*="bsky.social" i],
+    dd[title*="bandcamp.com" i],
+    dd[title*="facebook.com" i],
+    dd[title*="fb.com" i],
+    dd[title*="wordpress.com" i],
+    dd[title*="wordpress.org" i],
+    dd[title*="/@" i]
+  )
+  dt,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(a):not(:first-of-type)
+  dt {
+  display: none;
+}
+
+/* Platform-specific icons using dd[title] URL detection */
+
+/* GitHub */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="github.com" i])::after {
+  background-image: var(--icon-github);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Discord */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="discord" i])::after {
+  background-image: var(--icon-discord);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* LinkedIn */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="linkedin.com" i])::after {
+  background-image: var(--icon-linkedin);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Instagram */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="instagram.com" i])::after {
+  background-image: var(--icon-instagram);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* YouTube */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="youtube.com" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="youtu.be" i])::after {
+  background-image: var(--icon-youtube);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Twitch */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="twitch.tv" i])::after {
+  background-image: var(--icon-twitch);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Twitter/X */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="twitter.com" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="x.com" i])::after {
+  background-image: var(--icon-twitter);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Patreon */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="patreon.com" i])::after {
+  background-image: var(--icon-patreon);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* PayPal */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="paypal" i])::after {
+  background-image: var(--icon-paypal);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Ko-fi */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="kofi.com" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="ko-fi.com" i])::after {
+  background-image: var(--icon-kofi);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Bandcamp */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="bandcamp.com" i])::after {
+  background-image: var(--icon-bandcamp);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Facebook */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="facebook.com" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="fb.com" i])::after {
+  background-image: var(--icon-facebook);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Friendica */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="friendica" i])::after {
+  background-image: var(--icon-friendica);
+  content: "";
+  height: 18.5px;
+  transform: scale(0.9);
+  width: 18.5px;
+}
+
+/* WordPress */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="wordpress.com" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="wordpress.org" i])::after {
+  background-image: var(--icon-wordpress);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Mastodon instances - detect by @ in URL or common instance domains */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="/@" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="mastodon.social" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="mastodon.online" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="masto.host" i])::after {
+  background-image: var(--icon-mastodon);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Threads */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="threads.net" i])::after {
+  background-image: var(--icon-threads);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Bluesky */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="bsky.app" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="bsky.social" i])::after {
+  background-image: var(--icon-bluesky);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Nostr - typically npub or other nostr formats */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="npub" i])::after,
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title*="nostr:" i])::after {
+  background-image: var(--icon-nostr);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Default link icon for all other links (that don't have platform-specific icons) */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:has(dd[title^="http"]):not(
+    :has(
+      dd[title*="github.com" i],
+      dd[title*="youtube.com" i],
+      dd[title*="youtu.be" i],
+      dd[title*="twitch.tv" i],
+      dd[title*="twitter.com" i],
+      dd[title*="x.com" i],
+      dd[title*="discord" i],
+      dd[title*="linkedin.com" i],
+      dd[title*="instagram.com" i],
+      dd[title*="ko-fi.com" i],
+      dd[title*="kofi.com" i],
+      dd[title*="paypal" i],
+      dd[title*="patreon.com" i],
+      dd[title*="threads.net" i],
+      dd[title*="bsky.app" i],
+      dd[title*="bsky.social" i],
+      dd[title*="bandcamp.com" i],
+      dd[title*="facebook.com" i],
+      dd[title*="fb.com" i],
+      dd[title*="wordpress.com" i],
+      dd[title*="wordpress.org" i],
+      dd[title*="/@" i],
+      dd[title*="mastodon.social" i],
+      dd[title*="mastodon.online" i],
+      dd[title*="masto.host" i],
+      dd[title*="friendica" i],
+      dd[title*="npub" i],
+      dd[title*="nostr:" i]
+    )
+  )::after {
+  background-image: var(--icon-link);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* If the profile item has no link element, show just label icon */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:not(:has(a)):not(:first-of-type)::after {
+  background-image: var(--icon-label);
+  content: "";
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Verified colors for Firefox before :has */
+.layout-single-column .account__details .verified-badge a,
+.layout-single-column
+  .account__header__bar
+  .account__header__fields
+  .verified__mark,
+.layout-single-column
+  .account__header__bar
+  .account__header__fields
+  .verified
+  a,
+.layout-single-column
+  .account__header__bar
+  .account__header__bio
+  .account__header__fields
+  .verified
+  a,
+.layout-single-column
+  .account__header__bar
+  .account__header__bio
+  .account__header__fields
+  .verified
+  dd {
+  color: var(--color-verified);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Reset verified colors */
+.layout-single-column .account__details .verified-badge a,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified__mark,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified
+  a,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__bio
+  .account__header__fields
+  .verified
+  a,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__bio
+  .account__header__fields
+  .verified
+  dd {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Replace verified__mark */
+.layout-single-column .account__details .verified-badge .verified-badge__mark,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified__mark {
+  background-image: var(--icon-verified-smaller);
+  background-repeat: no-repeat;
+  content: "";
+  height: 15px;
+  width: 15px;
+}
+
+.layout-single-column
+  .account__details
+  .verified-badge
+  .verified-badge__mark
+  path,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified__mark
+  path {
+  display: none;
+}
+
+.layout-single-column .account__details .verified-badge,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified
+  dd {
+  align-items: center;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.layout-single-column .account__details .verified-badge .verified-badge__mark,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified
+  dd
+  span:nth-child(1) {
+  align-items: center;
+  display: flex;
+  order: 2;
+}
+
+.layout-single-column .account__details .verified-badge > span,
+.layout-single-column
+  .account__header__bar:has(.account__header__fields .verified)
+  .account__header__fields
+  .verified
+  dd
+  span:nth-child(2) {
+  order: 1;
+}
+
+/* Joined label - first dl is always "Joined" */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:first-of-type
+  dt {
+  display: inline-flex;
+  font-weight: var(--font-weight-regular);
+  gap: calc(var(--gap-default) / 2);
+  text-transform: unset;
+}
+
+.layout-single-column h4,
+.layout-single-column .search__popout h4,
+.layout-single-column .search-popout h4,
+.layout-single-column .server-banner h4 {
+  text-transform: unset;
+}
+
+/* Calendar icon for "Joined" field */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:first-of-type::before {
+  background-image: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="%23717c9b" class="r-115tad6 r-4qtqp9 r-yyyyoo r-1xvli5t r-1d4mawv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"%3E%3Cg%3E%3Cpath d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 18.5px;
+  width: 18.5px;
+}
+
+/* Hide ::after for Joined field (no second icon needed) */
+.layout-single-column
+  .account__header__bio
+  .account__header__fields
+  dl:first-of-type::after {
+  display: none !important;
+}
+
+.layout-single-column .account__header__bio .account__header__fields dd,
+.layout-single-column .account__header__bio .account__header__fields dt {
+  color: var(--color-dim);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  text-transform: unset;
+}
+
+.layout-single-column .account__header__bio .account__header__fields dl {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  display: inline-flex;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  gap: calc(var(--gap-default) / 2);
+  padding: 0;
+  width: 100%;
+}
+/* Profile links end */
+.layout-single-column .getting-started__trends h4 {
+  border: 0;
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  margin-bottom: var(--gap-default);
+  text-transform: unset;
+}
+
+.layout-single-column .getting-started__trends {
+  margin-top: calc(var(--gap-default) * 2);
+}
+
+.layout-single-column .trends__item__name a {
+  font-size: var(--font-size);
+}
+
+.layout-single-column .trends__item__name {
+  display: grid;
+  gap: 4px;
+}
+
+.layout-single-column .account__header__image {
+  height: 200px;
+}
+
+.layout-single-column .account__header__bar .avatar .account__avatar {
+  background-color: transparent;
+  border: 0;
+}
+
+.layout-single-column .account__header__tabs {
+  overflow: visible;
+}
+
+.layout-single-column .account__header__tabs .account-role {
+  display: none;
+  width: 133.5px;
+}
+
+/* Follow/unfollow button */
+body.embed .button.logo-button,
+.layout-single-column .notification__report__actions .button,
+.layout-single-column .column-inline-form button,
+.layout-single-column
+  .explore__suggestions
+  .account-card__actions__button
+  button,
+.layout-single-column .account__header__buttons .button,
+.layout-single-column .account .account__relationship > .button,
+.layout-single-column .notification .account__relationship > .button {
+  background-color: transparent;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-light-text);
+  font-size: var(--font-size);
+  max-width: 36vw;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-overflow: ellipsis;
+  transition: all 200ms;
+  white-space: nowrap;
+}
+
+/* Dark button borders and other things that have borders all around */
+body.embed .button.logo-button,
+.layout-single-column .notification__report__actions .button,
+.layout-single-column .column-inline-form button,
+.layout-single-column
+  .explore__suggestions
+  .account-card__actions__button
+  button,
+.layout-single-column .account__header__buttons .button,
+.layout-single-column .account__header__buttons .icon-button,
+.layout-single-column .notification .account__relationship > .button,
+.layout-single-column .account .account__relationship > .button {
+  border: 1px solid var(--color-outer-space);
+}
+
+/* Fix focus overflow for 4.1.4-nightly */
+.layout-single-column .account__header__buttons {
+  overflow: visible;
+}
+
+.layout-single-column .account__header__buttons .icon-button {
+  align-items: center;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-light-text);
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  width: 36px;
+}
+
+/* Copy-icon size in profile */
+.layout-single-column .account__header__buttons .icon-button svg {
+  height: 18px;
+  width: 18px;
+}
+
+body.embed .button.logo-button:hover,
+.layout-single-column .column-inline-form button:hover,
+.layout-single-column
+  .explore__suggestions
+  .account-card__actions__button
+  button:hover,
+.layout-single-column .account__header__buttons .icon-button.active {
+  color: var(--color-light-text);
+}
+
+.layout-single-column .account__header__buttons .icon-button .icon-bell-o,
+.layout-single-column .account__header__buttons .icon-button .icon-bell {
+  background-image: var(--icon-bell-header-tabs);
+}
+
+.layout-single-column
+  .account__header__buttons
+  .icon-button.active
+  .icon-bell-o,
+.layout-single-column .account__header__buttons .icon-button.active .icon-bell {
+  background-image: var(--icon-bell-header-tabs-active);
+}
+
+.layout-single-column
+  .explore__suggestions
+  .account-card__actions__button
+  button:hover,
+.layout-single-column .account__header__buttons .button:focus,
+.layout-single-column .account__header__buttons .button:hover,
+.layout-single-column .notification .account__relationship > .button:hover,
+.layout-single-column .notification .account__relationship > .button:focus,
+.layout-single-column .account .account__relationship > .button:hover,
+.layout-single-column .account .account__relationship > .button:focus {
+  background-color: var(--color-profile-button-hover);
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button:focus,
+.layout-single-column .status__action-bar .icon-button:focus,
+.layout-single-column .detailed-status__action-bar .icon-button:hover,
+.layout-single-column .status__action-bar .icon-button:hover {
+  background-color: transparent;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button:hover::after,
+.layout-single-column .status__action-bar .icon-button:hover::after {
+  opacity: 1;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button::after,
+.layout-single-column .status__action-bar .icon-button::after {
+  background-color: rgba(96, 105, 132, 15%);
+  border-radius: 50%;
+  content: "";
+  height: 36px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -8px;
+  transform: translateX(8px) translateY(1px);
+  width: 36px;
+  z-index: -1;
+}
+
+.layout-single-column .conversation .icon-button::after {
+  transform: translateX(-8px) translateY(1px);
+}
+
+.layout-single-column .conversation__content {
+  overflow: visible;
+}
+
+.layout-single-column .detailed-status__button {
+  max-height: 24px;
+  max-width: 120px;
+  position: relative;
+}
+
+.layout-single-column .detailed-status__button .icon-button.star-icon::after {
+  transform: translateX(3px);
+}
+
+.layout-single-column
+  .status__action-bar
+  .icon-button.icon-button--with-counter::after {
+  transform: translateX(0) translateY(0);
+}
+
+/* Misc UI fixes */
+.layout-single-column .search__icon .icon.active {
+  opacity: 1;
+}
+
+/* Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01) */
+.layout-single-column
+  .inline-follow-suggestions__body__scrollable__card
+  .account__avatar {
+  background-color: transparent;
+  border: 0;
+}
+
+/* Explore -> For you shade in bio */
+.layout-single-column .scrollable .account-card__bio::after {
+  background: linear-gradient(270deg, var(--color-bg), transparent);
+}
+
+/* Empty column */
+.layout-single-column .empty-column-indicator {
+  min-height: 120px;
+}
+
+.layout-single-column .status__prepend + .status {
+  padding-top: 10px;
+}
+
+.layout-single-column .search__icon .icon-times-circle {
+  top: 9px;
+}
+
+.layout-single-column .setting-text__toolbar {
+  align-items: center;
+}
+
+.layout-single-column .timeline-hint strong {
+  display: block;
+  margin-bottom: var(--gap-default);
+}
+
+.layout-single-column .timeline-hint br {
+  display: none;
+}
+
+/* General fixes */
+.layout-single-column .account__header__bar .avatar {
+  margin-left: 0 !important;
+}
+
+/* Fix for button line-height */
+.layout-single-column .button.logo-button {
+  line-height: 22px;
+}
+
+/* Visual indicator about direct messages
+   @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
+
+.notification-ungrouped--direct,
+.layout-single-column .detailed-status-direct {
+  position: relative;
+}
+
+.notification-ungrouped--mention.notification-grouped--direct::after,
+.notification-ungrouped--mention.notification-ungrouped--direct::after {
+  border-left: 20px solid transparent;
+  border-top: 20px solid var(--color-accent);
+
+  /* Add a ribbon to the corner */
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+}
+
+/* Indicator for private mentions when grouped notifications are enabled in 4.3.0 */
+.notification-ungrouped--direct .status__wrapper-direct::after,
+.notification-ungrouped--direct .detailed-status-direct::after {
+  display: none;
+}
+
+.layout-single-column .notification .status__wrapper-direct::after {
+  top: -40px;
+}
+
+/* Private message conversations */
+.layout-single-column .conversation .status__action-bar {
+  padding-left: 0;
+}
+
+/* Default buttons */
+.layout-single-column .compose-form__buttons button,
+.layout-single-column .button {
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Compose hover and focus fix */
+.layout-single-column .report-dialog-modal__actions .button:hover,
+.layout-single-column .server-banner .button,
+.layout-single-column .sign-in-banner .button,
+.layout-single-column .ui__header__links .button,
+.layout-single-column .compose-form__publish-button-wrapper button {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--color-button-text);
+  transition: all 200ms;
+}
+
+/* Compose form */
+.layout-single-column .compose-panel .compose-form__highlightable,
+.layout-single-column .compose-panel .compose-form {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 4;
+}
+
+body .compose-form .compose-form__uploads {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* New compose form buttons from 4.3.0-alpha 2024-01-27 */
+.layout-single-column .compose-form__dropdowns {
+  gap: 10px;
+}
+
+.layout-single-column .compose-form .media-gallery__item,
+.layout-single-column .compose-form .compose-form__uploads,
+.layout-single-column .compose-form .media-gallery {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+}
+
+.layout-single-column .compose-form__dropdowns .dropdown-button.active,
+.layout-single-column .compose-form__dropdowns .dropdown-button {
+  background-color: transparent;
+  border: 0;
+  color: var(--color-dim);
+  padding: 0;
+}
+
+.layout-single-column .compose-form__dropdowns .dropdown-button.active,
+.layout-single-column .compose-form__dropdowns .dropdown-button:hover,
+.layout-single-column .compose-form__dropdowns .dropdown-button:focus {
+  color: var(--color-accent);
+}
+
+/* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
+.layout-single-column .compose-form__dropdowns .dropdown-button.warning,
+.layout-single-column .compose-form__dropdowns .dropdown-button.warning.active,
+.layout-single-column .compose-form__dropdowns .dropdown-button.warning:hover,
+.layout-single-column .compose-form__dropdowns .dropdown-button.warning:focus {
+  color: var(--color-yellow);
+}
+
+.layout-single-column .compose-form__submit {
+  flex: unset;
+}
+
+.layout-single-column .compose-form__actions {
+  justify-content: space-between;
+}
+
+.layout-single-column .compose-form__actions .icon-button.active {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+/* Footer items */
+.link-footer {
+  position: relative;
+  z-index: 5;
+}
+
+.link-footer p .version {
+  white-space: normal;
+}
+
+.layout-single-column .compose-form__footer {
+  gap: 4px;
+  padding-bottom: 6px;
+}
+
+/* Add slight background color for the compose form */
+.layout-single-column .compose-form .compose-form__highlightable,
+.layout-single-column
+  .compose-form__highlightable
+  .compose-form__buttons-wrapper,
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  background-color: var(--color-bg-compose-form);
+  border-color: var(--color-bg-compose-form);
+  padding-top: 0;
+  transition: all 200ms;
+}
+
+/* Smooth color transition on focus */
+.layout-single-column .compose-form .compose-form__highlightable:focus-within,
+.layout-single-column
+  .compose-form
+  .compose-form__autosuggest-wrapper:focus-within,
+.layout-single-column
+  .compose-form
+  .compose-form__autosuggest-wrapper:focus-within
+  ~ .compose-form__buttons-wrapper,
+.layout-single-column
+  .compose-form__highlightable
+  .compose-form__autosuggest-wrapper:focus-within
+  ~ .compose-form__buttons-wrapper {
+  background-color: var(--color-bg-compose-form-focus);
+  border-color: var(--color-bg-compose-form-focus);
+}
+
+/* Fixes bottom row padding when there's a background */
+.layout-single-column
+  .compose-form__highlightable
+  .compose-form__buttons-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+  padding: calc(var(--gap-default) / 2);
+}
+
+.layout-single-column .navigation-bar + .compose-form {
+  padding-top: 10px;
+}
+
+.layout-single-column .server-banner .button:hover,
+.layout-single-column .server-banner .button:focus,
+.layout-single-column .sign-in-banner .button:hover,
+.layout-single-column .sign-in-banner .button:hover:focus,
+.layout-single-column .ui__header__links .button:hover,
+.layout-single-column .ui__header__links .button:focus,
+.layout-single-column .compose-form__publish-button-wrapper button:hover,
+.layout-single-column .compose-form__publish-button-wrapper button:focus {
+  background-color: var(--color-brand-mastodon-links);
+  border-color: var(--color-brand-mastodon-links);
+  color: var(--color-button-text);
+}
+
+/* Tertiary button */
+.layout-single-column .button.button-tertiary {
+  background-color: transparent !important;
+  border: 1px solid var(--color-accent-dark) !important;
+  color: var(--color-ghost-button-text);
+  padding: 6px 17px;
+}
+
+.layout-single-column .button.button-tertiary:active,
+.layout-single-column .button.button-tertiary:focus,
+.layout-single-column .button.button-tertiary:hover {
+  border: 1px solid var(--color-accent-dark);
+}
+
+/* Secondary button */
+.layout-single-column .button.button-secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-dim);
+  color: var(--color-dim);
+}
+
+.layout-single-column .button.button-secondary:hover {
+  background-color: var(--color-light-text);
+  border-color: var(--color-light-text);
+  color: var(--color-bg);
+}
+
+.layout-single-column .button.button-tertiary:focus,
+.layout-single-column .button.button-tertiary:hover {
+  background-color: var(--color-brand-mastodon-links) !important;
+  border-color: var(--color-brand-mastodon-links) !important;
+  color: var(--color-bg) !important;
+
+  /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
+  padding: 6px 17px;
+}
+
+/* Smaller icon for back button */
+.layout-single-column .column-back-button i,
+.layout-single-column .column-header__back-button i {
+  font-size: 12px;
+}
+
+.layout-single-column .icon-button__counter {
+  font-size: var(--font-size-smaller);
+}
+
+/* Smaller icons for status action bar */
+.layout-single-column .status__action-bar .icon {
+  font-size: 14.6px;
+  min-width: 18px;
+}
+
+.layout-single-column .status__action-bar .icon.icon-retweet {
+  min-width: 21px;
+}
+
+.layout-single-column .status__action-bar .icon-button--with-counter {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+}
+
+.layout-single-column .status__action-bar .icon-button {
+  /* It's inlined so we have to use !important */
+  height: 24px !important;
+  min-width: 45.78px !important;
+  position: relative;
+
+  /* It's inlined so we have to use !important */
+  width: unset !important;
+}
+
+/* Fix reply button not starting from the beginning */
+.layout-single-column .status__action-bar .icon-button:nth-of-type(1) {
+  min-width: 42.22px !important;
+  width: 42.22px !important;
+}
+
+.layout-single-column .status__action-bar .icon-button:nth-of-type(1)::after {
+  transform: translateX(4px) translateY(2px);
+}
+
+.layout-single-column
+  .status__action-bar
+  .icon-button.icon-button--with-counter::after,
+.layout-single-column
+  .status__action-bar
+  .icon-button.icon-button--with-counter:first-of-type::after {
+  transform: translateX(-5px) translateY(1px);
+}
+
+@media screen and (height <= 980px) {
+  .navigation-panel .column-link.column-link--optional {
+    display: none;
+  }
+}
+
+/* Order of items in v4.3.0-beta2-2024-09-29 */
+.columns-area__panels__pane--navigational .navigation-panel__logo {
+  order: 1;
+}
+
+.columns-area__panels__pane--navigational .navigation-panel__menu {
+  order: 2;
+}
+
+.columns-area__panels__pane--navigational .flex-spacer {
+  order: 3;
+}
+
+.columns-area__panels__pane--navigational .navigation-panel__portal {
+  order: 4;
+}
+
+@media screen and (width >= 760px) {
+  /* Hide the space between Lists and the actual lists */
+  .layout-single-column .list-panel > hr,
+  .layout-single-column .list-panel + hr {
+    display: none;
+  }
+
+  .layout-single-column .account__header__bar .avatar .account__avatar {
+    /* It's inlined so we have to use !important */
+    height: 133.5px !important;
+
+    /* It's inlined so we have to use !important */
+    width: 133.5px !important;
+  }
+
+  .layout-single-column .navigation-panel__menu {
+    align-items: flex-start;
+    display: flex;
+    flex: unset;
+    flex-wrap: wrap;
+    gap: 0;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .layout-single-column .navigation-panel__menu::-webkit-scrollbar {
+    border-radius: 50px;
+    height: 4px;
+    width: 4px;
+  }
+
+  .layout-single-column .navigation-panel__menu::-webkit-scrollbar-thumb {
+    background-color: var(--color-border);
+    border: 0 solid var(--color-border);
+    border-radius: 50px;
+  }
+
+  .layout-single-column .navigation-panel__menu::-webkit-scrollbar-track {
+    background-color: var(--color-bg);
+    border: 0 solid var(--color-border);
+    border-radius: 0;
+    margin-bottom: 40vh;
+    margin-top: 40px;
+  }
+
+  .layout-single-column .navigation-panel__menu::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-black-coral);
+  }
+
+  .layout-single-column
+    .navigation-panel__menu::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-light-purple);
+  }
+
+  .layout-single-column .navigation-panel__menu::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+  .layout-single-column .column-link {
+    font-size: 18px;
+  }
+
+  .layout-single-column
+    .navigation-panel__list-panel
+    .navigation-panel__list-panel__items
+    .column-link {
+    --gap-column-link: 8px;
+    font-size: 16px;
+  }
+
+  .layout-single-column
+    .navigation-panel__list-panel
+    .navigation-panel__list-panel__items
+    .column-link
+    > span::before {
+    margin-left: 25px;
+  }
+
+  /* Hide lists if there's not enough space on desktop vertically */
+  .layout-single-column .list-panel {
+    opacity: 0;
+    order: 22;
+    transition: all 200ms;
+  }
+
+  .layout-single-column .list-panel:focus,
+  .layout-single-column .list-panel:hover,
+  .layout-single-column .column-link[href="/lists"]:focus ~ .list-panel,
+  .layout-single-column .column-link[href="/lists"]:hover ~ .list-panel {
+    opacity: 1;
+  }
+
+  /* Order of the side nav items */
+  .layout-single-column .column-link[href="/home"] {
+    order: 2;
+  }
+
+  .layout-single-column .column-link[href="/notifications"] {
+    order: 3;
+  }
+
+  .layout-single-column .column-link[href="/explore"] {
+    order: 4;
+  }
+
+  .layout-single-column .column-link[href="/public/local"] {
+    order: 5;
+  }
+
+  .layout-single-column .column-link[href="/public"] {
+    order: 6;
+  }
+
+  .layout-single-column .column-link[href="/conversations"] {
+    order: 7;
+  }
+
+  .layout-single-column .column-link[href="/follow_requests"] {
+    order: 8;
+  }
+
+  .layout-single-column .column-link[href="/bookmarks"] {
+    order: 9;
+  }
+
+  .layout-single-column .column-link[href="/favourites"] {
+    order: 10;
+  }
+
+  .layout-single-column .column-link[href="/search"] {
+    order: 11;
+  }
+
+  .layout-single-column .navigation-panel__list-panel,
+  .layout-single-column .column-link[href="/lists"] {
+    order: 16;
+  }
+
+  .layout-single-column .column-link[href="/admin/dashboard"] {
+    order: 11;
+  }
+
+  .layout-single-column .column-link[href="/admin/reports"] {
+    order: 12;
+  }
+
+  .layout-single-column .column-link[href="/settings/preferences"] {
+    order: 11;
+  }
+
+  .layout-single-column .navigation-panel__sign-in-banner,
+  .layout-single-column .navigation-panel__legal {
+    order: 66;
+  }
+
+  .layout-single-column .navigation-panel__legal {
+    width: 100%;
+  }
+
+  .layout-single-column .navigation-panel hr {
+    visibility: visible;
+  }
+
+  .layout-single-column .getting-started__trends {
+    order: 16;
+  }
+
+  .layout-single-column button.column-link {
+    order: 18;
+  }
+
+  .layout-single-column .status__action-bar .icon-button {
+    height: 24px !important;
+    position: relative;
+
+    /* It's inlined so we have to use !important */
+    width: 50px !important;
+  }
+
+  .layout-single-column .conversation .status__action-bar .icon-button {
+    /* It's inlined so we have to use !important */
+    width: auto !important;
+  }
+
+  /* Fix list links if they are too short */
+  .layout-single-column .list-panel .column-link {
+    display: flex;
+  }
+}
+
+/* New lists panel in v4.4.0-beta.1+mementomods-2025-06-14 */
+.layout-single-column .navigation-panel__list-panel__header {
+  .column-link {
+    order: 1;
+  }
+
+  .icon-button {
+    order: 2;
+    position: absolute;
+    right: 0;
+  }
+}
+
+/* Replace bookmark icon */
+.layout-single-column .status .icon-button:hover:focus .icon-bookmark,
+.layout-single-column .status .icon-button:focus .icon-bookmark,
+.layout-single-column .status .icon-button.active .icon-bookmark {
+  background-image: var(--icon-bookmark-active);
+}
+
+.layout-single-column .status button.icon-button:hover .icon-bookmark {
+  background-image: var(--icon-bookmark-status-hover);
+}
+
+/* Replace the original icons (after 4.3.0)
+-------------------------------------------
+
+/* Set size for the filter bar and profile icons */
+
+.layout-single-column .account__header__buttons .icon,
+.layout-single-column .notification__filter-bar .icon {
+  --size-icon: 20px;
+}
+
+/* Set size for the column link icons */
+.layout-single-column .column-link .icon {
+  --size-icon: 22px;
+  height: 22px;
+  width: 22px;
+}
+
+/* Set size for the status icons */
+.layout-single-column .detailed-status__action-bar .icon,
+.layout-single-column .status__action-bar .icon {
+  --size-icon: 19px;
+}
+
+/* General for all column icons */
+.layout-single-column
+  .notification-group--favourite
+  .notification__message
+  > .icon,
+.layout-single-column .notification-favourite .notification__message > .icon,
+.layout-single-column .notification-reblog .notification__message > .icon,
+.layout-single-column .account__header__buttons .icon,
+.layout-single-column .detailed-status__action-bar .icon,
+.layout-single-column .status__action-bar .icon,
+.layout-single-column .notification__filter-bar .icon,
+.layout-single-column .column-link .icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.layout-single-column .list-adder__lists .icon-plus,
+.layout-single-column .list-adder__lists .icon-times,
+.layout-single-column .detailed-status__action-bar .icon,
+.layout-single-column .status__action-bar .icon,
+.layout-single-column .notification__filter-bar .icon,
+.layout-single-column .column-header__button .icon-sliders,
+.layout-single-column .column-link .icon {
+  background-size: var(--size-icon) var(--size-icon);
+  height: var(--size-icon);
+  width: var(--size-icon);
+}
+
+.layout-single-column .account__header__buttons .icon {
+  background-position: center;
+  background-size: var(--size-icon) var(--size-icon);
+}
+
+.layout-single-column .status__prepend .icon.icon-at {
+  height: 18px;
+  position: relative;
+  top: 2px;
+  width: 18px;
+}
+
+/* Hide the original icon from behind */
+.layout-single-column .ui__navigation-bar__item[href="/home"] svg path,
+.layout-single-column .ui__navigation-bar__item[href="/notifications"] svg path,
+.layout-single-column .ui__navigation-bar__item[href="/explore"] svg path,
+.layout-single-column .list-adder__lists .icon-plus > path,
+.layout-single-column .list-adder__lists .icon-times > path,
+.layout-single-column .list-adder__lists .list__display-name svg > path,
+.layout-single-column .status__prepend .icon.icon-retweet path,
+.layout-single-column
+  .notification-group--reblog
+  > .notification-group__icon
+  > .icon
+  path,
+.layout-single-column .notification-reblog .notification__message > .icon path,
+.layout-single-column
+  .notification-group--favourite
+  > .notification-group__icon
+  > .icon
+  path,
+.layout-single-column
+  .notification-group--favourite
+  .notification__message
+  > .icon
+  path,
+.layout-single-column
+  .notification-favourite
+  .notification__message
+  > .icon
+  path,
+.layout-single-column .account__header__buttons .icon path,
+.layout-single-column .detailed-status__action-bar .icon path,
+.layout-single-column .notification__filter-bar .icon path,
+.layout-single-column .status__action-bar path,
+.layout-single-column .column-link .icon path,
+.layout-single-column .load-more path,
+.layout-single-column
+  .account__domain-pill__popout__parts
+  > div:nth-child(2)
+  path,
+.layout-single-column .column-header__button .icon-sliders > path,
+.compose-form .icon-close > path,
+.layout-single-column .item-list .lists__item__title path,
+.layout-single-column .lists__item .icon-button.active path,
+.layout-single-column .dialog-modal__content .lists__item__title path,
+.layout-single-column .hashtag-header__header__buttons .icon > path,
+.layout-single-column .lists__item .icon-button svg > path {
+  display: none;
+}
+
+/* ...except for these icons, we kinda like them as they are */
+.layout-single-column .icon-user-plus.column-link__icon path,
+.layout-single-column .icon.icon-undefined path,
+.layout-single-column .icon.icon-users path,
+.layout-single-column .account__header__buttons .optional path,
+.layout-single-column .account__header__buttons .icon.icon-user-plus path,
+.layout-single-column .notification__filter-bar .icon.icon-user-plus path,
+.layout-single-column .account__header__buttons .icon.icon-tasks path,
+.layout-single-column .notification__filter-bar .icon.icon-tasks path,
+body .navigation-panel__legal .column-link[href="/about"] path {
+  display: block;
+}
+
+body .navigation-panel__legal .column-link[href="/about"] svg {
+  background-image: none;
+}
+
+/* Home icon */
+.layout-single-column .ui__navigation-bar__item[href="/home"] .icon,
+.layout-single-column .column-link .icon-home {
+  background-image: var(--icon-home);
+}
+
+.layout-single-column .ui__navigation-bar__item[href="/home"].active .icon,
+.layout-single-column .column-link.active .icon-home {
+  background-image: var(--icon-home-column-link-active);
+}
+
+.layout-single-column .notification__filter-bar .icon-home {
+  background-image: var(--icon-home-notification);
+}
+
+.layout-single-column .notification__filter-bar .active .icon-home {
+  background-image: var(--icon-home-notification-active);
+}
+
+.layout-single-column .list-adder__lists .icon-plus {
+  --size-icon: 20px;
+  background-image: var(--icon-plus);
+}
+
+.layout-single-column .list-adder__lists .icon-times {
+  --size-icon: 20px;
+  background-image: var(--icon-checked-green);
+}
+
+.layout-single-column .list-adder__lists .icon-button:hover .icon-plus {
+  background-image: var(--icon-plus-green);
+}
+
+.layout-single-column .list-adder__lists .icon-button:hover .icon-times {
+  background-image: var(--icon-cross-red);
+}
+
+/* Notifications icon */
+.layout-single-column .ui__navigation-bar__item[href="/notifications"] .icon,
+.layout-single-column .icon.icon-bell-o,
+.layout-single-column .column-link .icon-bell {
+  background-image: var(--icon-bell);
+}
+
+.layout-single-column
+  .ui__navigation-bar__item[href="/notifications"].active
+  .icon,
+.layout-single-column .column-link.active .icon-bell {
+  background-image: var(--icon-bell-active);
+}
+
+/* Explore icon */
+.layout-single-column .ui__navigation-bar__item[href="/explore"] .icon,
+.layout-single-column .column-link .icon-explore,
+.layout-single-column .column-link .icon-hashtag {
+  background-image: var(--icon-hashtag);
+}
+
+.layout-single-column .ui__navigation-bar__item[href="/explore"].active .icon,
+.layout-single-column .column-link.active .icon-explore,
+.layout-single-column .column-link.active .icon-hashtag {
+  background-image: var(--icon-hashtag-active);
+}
+
+/* Live feeds icon */
+.layout-single-column .column-link .icon-globe {
+  background-image: var(--icon-globe);
+}
+
+.layout-single-column .column-link.active .icon-globe {
+  background-image: var(--icon-globe-active);
+}
+
+/* Private mentions icon */
+.layout-single-column .column-link .icon-at {
+  background-image: var(--icon-direct-messages);
+}
+
+.layout-single-column .column-link.active .icon-at {
+  background-image: var(--icon-direct-messages-active);
+  transform: scale(1.15);
+}
+
+/* Bookmarks icon */
+.layout-single-column .column-link .icon-bookmarks {
+  background-image: var(--icon-bookmark-column-link);
+}
+
+.layout-single-column .column-link.active .icon-bookmarks {
+  background-image: var(--icon-bookmark-column-link-active);
+}
+
+/* Preferences icon */
+.layout-single-column .column-link .icon-cog {
+  --size-icon: 22px;
+  background-image: var(--icon-sliders-contrast);
+}
+
+/* Settings icon */
+.layout-single-column .column-header__button .icon-sliders {
+  --size-icon: 20px;
+  background-image: var(--icon-sliders);
+}
+
+.column-header__button.active .icon-sliders {
+  /* Use contrast icon */
+  background-image: var(--icon-sliders-contrast);
+
+  /* Disable rotate */
+  transform: none;
+}
+
+/* Administration icon */
+.layout-single-column .column-link .icon-tachometer {
+  --size-icon: 22px;
+  background-image: var(--icon-administration);
+}
+
+/* Moderation icon */
+.layout-single-column .column-link .icon-flag {
+  --size-icon: 22px;
+  background-image: var(--icon-moderation);
+}
+
+/* Replace retweet icon */
+.layout-single-column .notification__filter-bar .icon-retweet {
+  background-image: var(--icon-boost-notification-filter-bar);
+}
+
+.layout-single-column .notification__filter-bar .active .icon-retweet {
+  background-image: var(--icon-boost-notification-filter-bar-active);
+}
+
+.layout-single-column .notification__filter-bar .active .icon-mailreply,
+.layout-single-column .notification__filter-bar .active .icon-reply-all,
+.layout-single-column .notification__filter-bar .active .icon-reply {
+  background-image: var(--icon-reply-nofitication-filter-bar-active);
+}
+
+.layout-single-column .detailed-status button.icon-button .icon-retweet,
+.layout-single-column .status button.icon-button .icon-retweet {
+  background-image: var(--icon-boost-status);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Replace notification retweet icon */
+.layout-single-column .notification-group--reblog .icon-repeat,
+.layout-single-column .notification-reblog .icon-retweet {
+  background-image: var(--icon-boost-notification-wrapper);
+}
+
+.layout-single-column button.icon-button .icon-retweet {
+  --size-icon: 20px;
+  background-image: var(--icon-boost);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout-single-column button.icon-button:hover .icon-retweet,
+.layout-single-column button.icon-button.active .icon-retweet {
+  background-image: var(--icon-boost-active);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Un-boost and un-bookmark styles */
+
+/* Mobile devices */
+.layout-single-column button.icon-button:not(.active):focus .icon-retweet,
+.layout-single-column button.icon-button:not(.active):hover .icon-retweet {
+  animation: none;
+  background-image: var(--icon-boost);
+}
+
+.layout-single-column
+  .status
+  button.icon-button:not(.active):focus
+  .icon-bookmark,
+.layout-single-column
+  .status
+  button.icon-button:not(.active):hover
+  .icon-bookmark {
+  background-image: var(--icon-bookmark);
+}
+
+/* Un-boost and un-bookmark numbers on explore page */
+.layout-single-column
+  button.icon-button:not(.active):focus
+  .icon-retweet
+  ~ span,
+.layout-single-column
+  button.icon-button:not(.active):hover
+  .icon-retweet
+  ~ span {
+  color: var(--color-dim);
+}
+
+/* Replace bookmark icon */
+.layout-single-column .detailed-status .icon-bookmark,
+.layout-single-column .status .icon-bookmark {
+  background-image: var(--icon-bookmark);
+}
+
+/* If a hover device */
+@media (hover: hover) {
+  .layout-single-column button.icon-button:not(.active):hover .icon-retweet,
+  .layout-single-column
+    button.icon-button:not(.active):hover
+    .icon-retweet
+    ~ span {
+    color: var(--color-green);
+  }
+
+  .layout-single-column
+    .status
+    button.icon-button:not(.active):hover
+    .icon-bookmark {
+    background-image: var(--icon-bookmark-status-hover-red);
+  }
+
+  .layout-single-column button.icon-button:not(.active):hover .icon-retweet {
+    background-image: var(--icon-boost-active) !important;
+  }
+}
+
+.layout-single-column button.icon-button:hover .icon-retweet ~ span,
+.layout-single-column button.icon-button.active .icon-retweet ~ span {
+  color: var(--color-green);
+}
+
+.layout-single-column button.icon-button:hover .icon-star ~ span,
+.layout-single-column button.icon-button.active .icon-star ~ span {
+  color: var(--color-red);
+}
+
+/* Replace reply icon */
+.layout-single-column .notification__filter-bar .icon-mail-reply,
+.layout-single-column .notification__filter-bar .icon-reply,
+.layout-single-column .notification__filter-bar .icon-reply-all {
+  --size-icon: 19px;
+  position: relative;
+  top: 1px;
+}
+
+.layout-single-column .conversation .icon-reply,
+.layout-single-column .notification__filter-bar .icon-mail-reply,
+.layout-single-column .notification__filter-bar .icon-reply,
+.layout-single-column .notification__filter-bar .icon-reply-all,
+.layout-single-column .detailed-status .icon-mail-reply,
+.layout-single-column .detailed-status .icon-reply,
+.layout-single-column .detailed-status .icon-reply-all,
+.layout-single-column .status .icon-mail-reply,
+.layout-single-column .status .icon-reply,
+.layout-single-column .status .icon-reply-all {
+  background-image: var(--icon-reply);
+}
+
+.layout-single-column .detailed-status__action-bar .icon-mail-reply,
+.layout-single-column .detailed-status__action-bar .icon-reply,
+.layout-single-column .detailed-status__action-bar .icon-reply-all {
+  background-image: var(--icon-reply-detailed-status-action-bar);
+}
+
+.layout-single-column
+  .detailed-status__action-bar
+  .icon-button:hover
+  .icon-mail-reply,
+.layout-single-column
+  .detailed-status__action-bar
+  .icon-button:hover
+  .icon-reply,
+.layout-single-column
+  .detailed-status__action-bar
+  .icon-button:hover
+  .icon-reply-all {
+  background-image: var(--icon-reply-detailed-status-action-bar-hover);
+}
+
+.layout-single-column .conversation .icon-button:hover .icon-reply {
+  background-image: var(--icon-reply-conversation);
+}
+
+.layout-single-column .detailed-status__action-bar .icon-bookmark {
+  background-image: var(--icon-bookmark-detailed-status-action-bar);
+}
+
+.layout-single-column
+  .detailed-status__action-bar
+  .icon-button:hover
+  .icon-bookmark {
+  background-image: var(--icon-bookmark-detailed-status-action-bar-hover);
+}
+
+.layout-single-column
+  .detailed-status__action-bar
+  .icon-button.active
+  .icon-bookmark {
+  background-image: var(--icon-bookmark-detailed-status-action-bar-active);
+}
+
+.layout-single-column .status button.icon-button:hover .icon-mail-reply,
+.layout-single-column .status button.icon-button:hover .icon-reply,
+.layout-single-column .status button.icon-button:hover .icon-reply-all {
+  background-image: var(--icon-reply-status-hover);
+}
+
+/* More icons */
+.layout-single-column .icon-list-ul {
+  background-image: var(--icon-list);
+  top: 1px;
+}
+
+/* "More" icon */
+.layout-single-column .icon-ellipsis-h {
+  background-image: var(--icon-more-status-action-bar);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout-single-column .column-link .icon.icon-.column-link__icon,
+.layout-single-column .icon-ellipsis-v {
+  background-image: var(--icon-more);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout-single-column .icon-search {
+  background-image: var(--icon-search-opaque);
+}
+
+/* Close icon */
+.layout-single-column .icon-close {
+  background-image: var(--icon-close);
+}
+
+.layout-single-column .status .icon-close {
+  background-image: var(--icon-close-action-bar);
+}
+
+.layout-single-column .relationship-tag {
+  background-color: var(--color-mud);
+  color: var(--color-light-text);
+  font-size: 11px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 12px;
+  opacity: 1;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button {
+  min-width: 24px;
+  position: relative;
+}
+
+.layout-single-column .detailed-status__action-bar-dropdown .icon-button::after,
+.layout-single-column .detailed-status__button .icon-button::after {
+  transform: translateX(-6px);
+}
+
+/* Add border radius to media */
+.layout-single-column .media-gallery,
+.layout-single-column .audio-player,
+.layout-single-column .video-player,
+.layout-single-column .media-gallery__gifv,
+.layout-single-column .media-gallery__preview {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Fix double border on media */
+.layout-single-column .media-gallery .media-gallery__item .media-gallery__gifv {
+  border: 0;
+}
+
+/* Exception for your own profile media gallery */
+.layout-single-column .account-gallery__container .media-gallery__gifv {
+  border-radius: 0;
+}
+
+/* Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on) */
+.layout-single-column
+  .notification.notification-reblog
+  .media-gallery:has(.media-gallery__gifv.autoplay),
+.layout-single-column
+  .notification-group--favourite
+  .media-gallery:has(.media-gallery__gifv.autoplay),
+.layout-single-column
+  .notification.notification-favourite
+  .media-gallery:has(.media-gallery__gifv.autoplay) {
+  display: none;
+}
+
+/* More distinct focus color for accessibility, instead of just white */
+.layout-single-column input:focus-visible {
+  outline-color: var(--color-accent);
+  outline-style: solid;
+}
+
+/* Embeds outside Mastodon */
+body.embed {
+  background-color: #0e1014 !important;
+
+  /* Make sure with !important */
+  border: 0;
+  overflow: hidden !important;
+}
+
+body.embed .entry .detailed-status {
+  backface-visibility: hidden;
+  background-color: #00000059;
+  border: 0 !important;
+
+  /* It's inlined so we have to use !important */
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+
+/* Destructive colors (For you -suggestions, users when focused to the follow button */
+.layout-single-column .button.logo-button.button--destructive:active,
+.layout-single-column .button.logo-button.button--destructive:focus {
+  background-color: var(--color-destructive);
+  border-color: var(--color-destructive);
+}
+
+/* Fix character counter color when it's over the limit */
+.layout-single-column .character-counter.character-counter--over {
+  color: var(--color-destructive);
+}
+
+/* Show more in server banner */
+.layout-single-column .server-banner__meta__column {
+  max-width: 60%;
+  width: unset;
+}
+
+/* Increase gap for server-banner__meta */
+.layout-single-column .server-banner__meta {
+  gap: 25px;
+}
+
+/* Native Mastodon 4.1.2-nightly threaded lines */
+.layout-single-column .status__line--first {
+  height: calc(100% + var(--size-avatar));
+}
+
+.layout-single-column .status__line--full {
+  height: calc(100% + 32px);
+}
+
+/* Default lines when replying in real time */
+.layout-single-column
+  div[tabindex="-1"]:has(.status--in-thread)
+  .status--in-thread:not(.status--first-in-thread)
+  > .status__line:not(.status__line--full) {
+  height: 0;
+}
+
+/* Hide line before first in thread */
+.layout-single-column
+  div[tabindex="-1"]:has(.status--in-thread)
+  + div[tabindex="-1"]
+  > .status--in-thread.status--first-in-thread
+  > .status__line:not(.status__line--full),
+.layout-single-column
+  div[tabindex="-1"]:has(.detailed-status__wrapper)
+  + div[tabindex="-1"]
+  > .status__wrapper
+  .status__line:not(.status__line--full) {
+  height: 0;
+}
+
+.layout-single-column
+  div[tabindex="-1"]
+  + div[tabindex="-1"]
+  > .status__wrapper
+  > .status-reply.status--in-thread
+  > .status__line.status__line--full,
+.layout-single-column .status__line--full.status__line--first {
+  height: 100%;
+  z-index: -1;
+}
+
+.layout-single-column .detailed-status {
+  background-color: transparent;
+  border-top: 0;
+}
+
+/* Threaded line, actually */
+.layout-single-column .status__line {
+  border-inline-start: 2px solid var(--color-thread-line);
+}
+
+.layout-single-column .status__line--full::before {
+  background-color: var(--color-thread-line);
+}
+
+/* Hide the "stub" from the first status line */
+div[tabindex="-1"]
+  + div[tabindex="-1"]
+  > .status__wrapper
+  > .status-reply.status--in-thread
+  > .status__line.status__line--full,
+.layout-single-column
+  .status-reply.status--in-thread.status--first-in-thread
+  > .status__line,
+.layout-single-column
+  .status-reply.status--in-thread.status--first-in-thread
+  > .status__line--full::before {
+  top: 32px;
+}
+
+.layout-single-column .status--in-thread .status__action-bar,
+.layout-single-column .status--in-thread .status__content {
+  padding-left: 4px;
+}
+
+/* Scrollbars */
+*::-webkit-scrollbar,
+.layout-single-column .drawer__inner::-webkit-scrollbar,
+.layout-single-column textarea::-webkit-scrollbar,
+.layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar,
+.layout-single-column .reply-indicator::-webkit-scrollbar,
+.layout-single-column::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb,
+.layout-single-column textarea::-webkit-scrollbar-thumb,
+.layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-thumb,
+.layout-single-column .reply-indicator::-webkit-scrollbar-thumb,
+.layout-single-column::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border: 0 solid var(--color-border);
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover,
+.layout-single-column textarea::-webkit-scrollbar-thumb:hover,
+.layout-single-column
+  .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:hover,
+.layout-single-column .reply-indicator::-webkit-scrollbar-thumb:hover,
+.layout-single-column::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-purple);
+}
+
+*::-webkit-scrollbar-thumb:active,
+.layout-single-column textarea::-webkit-scrollbar-thumb:active,
+.layout-single-column
+  .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
+.layout-single-column .reply-indicator::-webkit-scrollbar-thumb:active,
+.layout-single-column::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-black-coral);
+}
+
+*::-webkit-scrollbar-track,
+.layout-single-column textarea::-webkit-scrollbar-track,
+.layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-track,
+.layout-single-column .reply-indicator::-webkit-scrollbar-track,
+.layout-single-column::-webkit-scrollbar-track {
+  background-color: var(--color-bg);
+  border: 0 solid var(--color-border);
+  border-radius: 0;
+}
+
+.layout-single-column textarea::-webkit-scrollbar-track:hover,
+.layout-single-column
+  .autosuggest-textarea__textarea::-webkit-scrollbar-track:hover,
+.layout-single-column .reply-indicator::-webkit-scrollbar-track:hover,
+.layout-single-column::-webkit-scrollbar-track:hover {
+  background-color: var(--color-bg);
+}
+
+.layout-single-column textarea::-webkit-scrollbar-track:active,
+.layout-single-column
+  .autosuggest-textarea__textarea::-webkit-scrollbar-track:active,
+.layout-single-column .reply-indicator::-webkit-scrollbar-track:active,
+.layout-single-column::-webkit-scrollbar-track:active {
+  background-color: var(--color-bg);
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-corner,
+.layout-single-column textarea::-webkit-scrollbar-corner,
+.layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-corner,
+.layout-single-column .reply-indicator::-webkit-scrollbar-corner,
+.layout-single-column::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* Drawer scollbars */
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb {
+  background-color: var(--color-dim);
+  border: 0;
+  border-radius: 50px;
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-purple);
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-light-text);
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0;
+}
+
+.layout-single-column .drawer__inner::-webkit-scrollbar-track:hover,
+.layout-single-column .drawer__inner::-webkit-scrollbar-track:active {
+  background-color: var(--color-dark);
+}
+
+/* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
+.layout-single-column .onboarding__steps__item,
+.layout-single-column .onboarding__link {
+  background-color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.layout-single-column .onboarding__steps__item__progress > svg > path {
+  fill: var(--color-dark);
+}
+
+.layout-single-column .onboarding__links > * {
+  margin-bottom: 10px;
+}
+
+/* Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout */
+.layout-single-column .explore__search-results {
+  border: 0;
+}
+
+.layout-single-column .column-back-button,
+.layout-single-column .account__section-headline {
+  border-left: 0;
+  border-right: 0;
+}
+
+.layout-single-column .column-back-button {
+  border-top: 0;
+}
+
+/* Hide search (can be found under Explore in the mobile */
+.layout-single-column
+  .ui__header__links
+  .button.button-secondary[href="/search"] {
+  display: none;
+}
+
+/* More compact compose button on mobile */
+.layout-single-column
+  .ui__header__links
+  .button.button-secondary[href="/publish"] {
+  background-color: var(--color-accent-dark);
+  background-image: var(--icon-compose);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--color-light-purple);
+  height: 35px;
+  width: 45px;
+}
+
+.layout-single-column
+  .ui__header__links
+  .button.button-secondary[href="/publish"]:is(:hover, :focus, :active) {
+  background-color: var(--color-accent-dark-50);
+  color: var(--color-light-purple);
+}
+
+.layout-single-column
+  .ui__header__links
+  .button.button-secondary[href="/publish"]
+  span {
+  color: transparent;
+}
+
+/* Header on mobile */
+@media screen and (width <= 1174px) {
+  .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
+    margin-left: 3px;
+  }
+
+  .app-body:not(.layout-multiple-columns):not(
+      :has(.ui .ui__header__links > .button[href="/auth/sign_in"])
+    )
+    .tabs-bar__wrapper {
+    z-index: 3;
+  }
+
+  .app-body:not(.layout-multiple-columns):has(
+      .ui .ui__header__links > .button[href="/auth/sign_in"]
+    )
+    .tabs-bar__wrapper
+    :is(.column-back-button, .column-header > *) {
+    display: none;
+  }
+
+  .app-body .column-header__icon {
+    display: none;
+  }
+
+  .app-body:not(.layout-multiple-columns) .columns-area__panels {
+    z-index: 2;
+  }
+
+  /* Set a backdrop blur background to both top bars */
+  .app-body:not(.layout-multiple-columns) .ui__header {
+    background-color: var(--color-bg-90);
+    height: 55px;
+    z-index: 5;
+  }
+
+  .app-body:not(.layout-multiple-columns):has(.column-header)
+    .tabs-bar__wrapper::after {
+    background-color: var(--color-bg-90);
+    content: "";
+    height: 49px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .ui:has([href="/auth/sign_in"]) .tabs-bar__wrapper::after,
+  .ui:has(.compose-form__submit) .tabs-bar__wrapper::after {
+    display: none;
+  }
+
+  .layout-single-column .column-header__collapsible {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .layout-single-column .column-header__collapsible-inner {
+    background-color: var(--color-bg-90);
+  }
+
+  .app-body:not(.layout-multiple-columns)
+    .column-header__collapsible:not(.collapsed) {
+    border-bottom: 0;
+  }
+}
+
+/* List panel */
+.layout-single-column .list-panel {
+  background-color: var(--color-bg);
+  margin: 0 0 5px;
+  padding: 5px 9px 50px 36px;
+  position: absolute;
+  top: 100%;
+}
+
+.layout-single-column .list-panel .icon {
+  display: none;
+}
+
+.app-body .list-panel .column-link span::before {
+  bottom: -10px;
+  left: -15px;
+  right: -15px;
+  top: -10px;
+}
+
+@media screen and (width >= 1175px) {
+  /* Fade in list panel, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
+  .layout-single-column
+    .column-link[href="/lists"]:is(.active, :hover)
+    + .list-panel,
+  .layout-single-column .list-panel:hover {
+    animation: fadein 0.4s 1;
+  }
+}
+
+/* Spare animations */

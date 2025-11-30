@@ -1,0 +1,313 @@
+/* Status and account components */
+/* Account names */
+.layout-single-column .status__info .display-name .display-name__account,
+.layout-single-column .display-name__account {
+  color: var(--color-dim);
+}
+
+/* Main panel column */
+.layout-single-column .columns-area__panels__main > div {
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+
+/* Status header */
+.layout-single-column .status .status__info {
+  align-items: flex-start;
+  gap: var(--gap-default);
+  height: calc(var(--gap-default) * 2);
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Status action bar */
+.layout-single-column .status__action-bar {
+  height: 27px;
+  margin-top: 12px;
+  max-height: 27px;
+}
+
+/* Display name */
+.layout-single-column .status__info .status__display-name {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: var(--gap-default);
+  order: 1;
+}
+
+.layout-single-column .status__info .display-name {
+  display: flex;
+  gap: calc(var(--gap-default) / 2);
+}
+
+.layout-single-column .status__info .status__relative-time {
+  height: unset;
+  order: 3;
+}
+
+/* Visibility icon */
+.layout-single-column .status .status__visibility-icon {
+  font-size: var(--font-size-mid);
+}
+
+/* Panels and things that should be transparent */
+.layout-single-column .explore__search-results,
+.layout-single-column .search-results__section__header,
+.layout-single-column .status__wrapper-direct,
+.layout-single-column .focusable:focus .detailed-status,
+.layout-single-column .focusable:focus .detailed-status__action-bar,
+.layout-single-column .compose-form__poll-wrapper select,
+.layout-single-column .poll__option input[type="text"],
+.layout-single-column .language-dropdown__dropdown,
+body.embed .activity-stream .entry,
+.layout-single-column .report-dialog-modal__textarea,
+.layout-single-column .drawer__inner,
+.layout-single-column .column-inline-form,
+.layout-single-column .scrollable .account-card,
+.layout-single-column .scrollable .account-card__title__avatar .account__avatar,
+.account__avatar,
+.layout-single-column .scrollable .account-card__title__avatar img,
+.layout-single-column .explore__search-header,
+.layout-single-column .empty-column-indicator,
+.layout-single-column .follow_requests-unlocked_explanation,
+.layout-single-column .column-link,
+.layout-single-column
+  .columns-area__panels__pane--navigational
+  .navigation-panel,
+.layout-single-column .tabs-bar__wrapper .column-back-button,
+.layout-single-column .account__header,
+.layout-single-column .column-header__back-button,
+.layout-single-column .compose-form .compose-form__modifiers,
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .compose-panel .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper,
+.layout-single-column .column-header__button,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar button,
+.layout-single-column .account__section-headline,
+.layout-single-column .notification__filter-bar,
+.layout-single-column .tabs-bar__wrapper,
+.layout-single-column .column-header,
+body.embed .detailed-status,
+.layout-single-column .detailed-status,
+.layout-single-column .detailed-status__action-bar,
+.layout-single-column .column > .scrollable {
+  background-color: transparent;
+}
+
+/* Avatar */
+.account__avatar[style="width: 46px; height: 46px;"],
+.layout-single-column .status__avatar {
+  /* Need to override inline styles */
+  height: var(--size-avatar) !important;
+  max-height: var(--size-avatar) !important;
+  max-width: var(--size-avatar) !important;
+  min-height: var(--size-avatar) !important;
+  min-width: var(--size-avatar) !important;
+
+  /* Need to override inline styles */
+  width: var(--size-avatar) !important;
+}
+
+/* Improve "others you know follow" avatar group */
+body .avatar-group--compact .account__avatar {
+  box-shadow: none;
+}
+
+/* Avatars */
+body.embed .detailed-status__display-avatar > img,
+.layout-single-column .account-card__title__avatar .account__avatar,
+.layout-single-column .account-card__title__avatar img,
+.layout-single-column .account__avatar > img,
+.layout-single-column .column > .scrollable .status__avatar img {
+  background-color: var(--color-bg);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: rgb(255 255 255 / 3%) 0 0 2px inset;
+}
+
+/* Things that should not have border */
+.layout-single-column .column-inline-form,
+.layout-single-column .column > .scrollable,
+.layout-single-column .error-column,
+.layout-single-column .getting-started,
+.layout-single-column .regeneration-indicator,
+.layout-single-column .column-header {
+  border: 0;
+}
+
+.layout-single-column .column-header__wrapper.active {
+  box-shadow: none;
+}
+
+.layout-single-column .column-header__wrapper.active::before {
+  background: var(--active-header-radial-gradient);
+}
+
+.layout-single-column .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form__buttons-wrapper {
+  border: 0;
+}
+
+.layout-single-column article,
+.layout-single-column .status__prepend,
+.layout-single-column .notification__message,
+.layout-single-column .status {
+  transition:
+    background-color 200ms,
+    border-color 200ms,
+    opacity 200ms;
+}
+
+/* Toot hover effect */
+.layout-single-column article:focus,
+.layout-single-column article:hover {
+  background-color: var(--color-light-shade);
+}
+
+/* Focusable toot and other hilighted items */
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__suggestions__item.selected,
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__suggestions__item:active,
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__suggestions__item:focus,
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__suggestions__item:hover,
+.layout-single-column .focusable:focus {
+  background: var(--color-focusable-toot);
+}
+
+/* Search panel that opens when focusing Search or paste URL field */
+.layout-single-column .explore__search-header .search__popout,
+.layout-single-column .compose-form__poll-wrapper option,
+.layout-single-column .search__popout,
+.layout-single-column .search-popout {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+.layout-single-column .search__popout em,
+.layout-single-column .search-popout em {
+  color: var(--color-light-text);
+}
+
+/* Pill style tags */
+.layout-single-column .hashtag-bar a {
+  background-color: var(--color-dark);
+  border-radius: 9999px;
+  color: var(--color-light-purple);
+  display: inline-block;
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.5;
+  margin: 0 4px 4px 0;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.layout-single-column .hashtag-bar .link-button {
+  font-size: var(--font-size-smaller);
+}
+
+.layout-single-column .hashtag-bar a:focus,
+.layout-single-column .hashtag-bar a:hover {
+  background-color: var(--color-accent-dark);
+
+  /* It should be always light also on light mode, so not using variable here */
+  color: #f7f9f9;
+}
+
+.layout-single-column .hashtag-bar a:focus span,
+.layout-single-column .hashtag-bar a:hover span {
+  text-decoration: none;
+}
+
+/* Status update tinted to right */
+.layout-single-column .status:not(.status--in-thread) .hashtag-bar,
+.layout-single-column
+  .status__content--collapsed
+  + .status__content__read-more-button,
+.layout-single-column .status:not(.status--in-thread) .status__action-bar,
+.layout-single-column .status:not(.status--in-thread) .attachment-list,
+.layout-single-column .status:not(.status--in-thread) .status__content {
+  font-size: var(--font-size);
+  padding-left: calc(var(--size-avatar) + var(--gap-default));
+  padding-top: 0;
+}
+
+/* Translate link and other padding resets */
+.layout-single-column .conversation .attachment-list,
+.layout-single-column .translate ~ .status__content__read-more-button {
+  padding-left: 0;
+}
+
+/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
+.layout-single-column .status__content__read-more-button {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-inline-start: 0;
+}
+
+/* Rtl version */
+[dir="rtl"] .layout-single-column .status__action-bar,
+[dir="rtl"] .layout-single-column .attachment-list,
+[dir="rtl"] .layout-single-column .status__content__read-more-button,
+[dir="rtl"] .layout-single-column .status .status__content {
+  padding-left: 0;
+  padding-right: calc(var(--size-avatar) + var(--gap-default));
+}
+
+/* Reset padding from attachment-list on reply indicator */
+.layout-single-column .reply-indicator .attachment-list {
+  padding-left: 0;
+}
+
+.layout-single-column .status__action-bar button,
+.layout-single-column .detailed-status__action-bar button {
+  border-radius: 50%;
+}
+
+.layout-single-column .detailed-status__action-bar .icon-button[disabled],
+.layout-single-column .status__action-bar .icon-button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Grouped notification exceptions, pr30440 2024-07-11 */
+.layout-single-column .notification-ungrouped .status .hashtag-bar,
+.layout-single-column .notification-ungrouped .status .status__content,
+.layout-single-column .notification-ungrouped .status .status__action-bar {
+  padding-left: var(--gap-default);
+}
+
+/* Fix spacing under quoted post in grouped notification */
+.notification-group .notification-group__embedded-status__content {
+  max-height: 100%;
+}
+
+/* We don't need to show our own account when we know our own account is being mentioned */
+.notification-ungrouped.notification-ungrouped--mention
+  .notification-ungrouped__header,
+.notification-group .notification-group__embedded-status__account {
+  display: none;
+}
+
+.layout-single-column .notification-ungrouped .notification-ungrouped__header {
+  padding-left: calc(24px + var(--gap-default));
+}
+
+/* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
+.layout-single-column div[style*="aspect-ratio"]:not([class]) {
+  /* It's inlined so we have to use !important */
+  aspect-ratio: unset !important;
+}
+

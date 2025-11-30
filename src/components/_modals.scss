@@ -1,0 +1,43 @@
+/* Modals and overlays */
+/* Modal overlay */
+.layout-single-column .modal-root__overlay {
+  /* It's inlined so we have to use !important */
+  background-color: var(--color-modal-overlay) !important;
+  color: var(--color-light-text) !important;
+}
+
+.layout-single-column .modal-root__modal .display-name strong,
+.layout-single-column .modal-root__modal .status__content {
+  /* It's inlined so we have to use !important */
+  color: var(--color-light-text) !important;
+}
+
+/* Hide footer buttons in modals */
+.layout-single-column .picture-in-picture .picture-in-picture__footer {
+  display: none;
+}
+
+/* Picture in picture fixes */
+.layout-single-column .picture-in-picture .audio-player,
+.layout-single-column .picture-in-picture .video-player {
+  border-radius: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Report modal */
+.layout-single-column
+  .report-dialog-modal
+  .poll__option.dialog-option
+  > .poll__option__text {
+  display: grid;
+  gap: 6px;
+}
+
+/* Improve modal icon size and accessibility */
+.layout-single-column .image-loader .icon,
+.layout-single-column .media-modal__navigation .icon {
+  color: var(--color-light-text);
+  height: 32px;
+  width: 32px;
+}
+

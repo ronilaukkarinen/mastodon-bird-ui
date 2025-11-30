@@ -1,0 +1,465 @@
+/* Color and styling utilities */
+/* Border colors */
+.layout-single-column .search-results__section__header,
+.layout-single-column .account__header__bar,
+.layout-single-column .about__meta__divider,
+.layout-single-column .poll__footer,
+.layout-single-column .report-dialog-modal .poll__option.dialog-option,
+.layout-single-column .account,
+.layout-single-column .report-dialog-modal__container,
+.layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
+.layout-single-column .dropdown-menu__container__header,
+.layout-single-column .compare-history-modal .report-modal__target,
+.layout-single-column .account__section-headline,
+.layout-single-column .detailed-status__action-bar,
+.layout-single-column .column-back-button,
+.layout-single-column .column-header,
+.layout-single-column .audio-player,
+.layout-single-column .video-player,
+.layout-single-column .media-gallery,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form__poll-wrapper,
+.layout-single-column .compose-form__poll-wrapper select,
+.layout-single-column .poll__option input[type="text"],
+.layout-single-column .report-dialog-modal__textarea,
+.layout-single-column .search__input,
+.layout-single-column .setting-text,
+.layout-single-column .dropdown-menu__separator,
+.layout-single-column .status,
+.layout-single-column .emoji-mart-search input,
+.layout-single-column .conversation,
+.layout-single-column .setting-text__wrapper {
+  border-color: var(--color-border);
+}
+
+/* Change panel order */
+.layout-single-column .columns-area__panels__pane {
+  order: 3;
+}
+
+.layout-single-column .columns-area__panels__main {
+  order: 2;
+}
+
+.layout-single-column
+  .columns-area__panels__pane.columns-area__panels__pane--start.columns-area__panels__pane--navigational {
+  order: 1;
+}
+
+.layout-single-column .columns-area__panels__pane--compositional {
+  flex-grow: 1;
+  height: 100vh;
+  max-width: 350px;
+  min-height: 500px;
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 1175px) {
+  .layout-single-column .columns-area__panels__main {
+    max-width: calc(var(--width-main-panel) + calc(var(--gap-default) * 4));
+    padding-left: calc(var(--gap-default) * 2);
+    padding-right: calc(var(--gap-default) * 2);
+  }
+
+  .layout-single-column .navigation-panel {
+    margin-right: -20px;
+    padding-left: 0 !important;
+    padding-right: 20px;
+  }
+}
+
+.layout-single-column .emoji-mart-anchor-bar,
+.layout-single-column .column-link.column-link--logo svg {
+  display: none;
+}
+
+/* Accented items like links */
+.layout-single-column .about__section__title,
+.layout-single-column .account__header__bio .account__header__fields a,
+.layout-single-column .column-back-button,
+.layout-single-column .emoji-mart-anchor.emoji-mart-anchor-selected,
+.layout-single-column .text-icon-button.active,
+.layout-single-column .empty-column-indicator a,
+.layout-single-column .follow_requests-unlocked_explanation a,
+.layout-single-column .column-header__back-button,
+.layout-single-column .link-button,
+.layout-single-column .reply-indicator__content a.unhandled-link,
+.layout-single-column .status__content a.unhandled-link,
+.layout-single-column .column-header > .column-header__back-button,
+.layout-single-column .reply-indicator__content a,
+body.embed .status__content a,
+.layout-single-column .status__content a,
+.layout-single-column .column-link--transparent.active,
+.layout-single-column .status__content__read-more-button {
+  color: var(--color-accent);
+}
+
+/* Toggles */
+.layout-single-column .react-toggle .react-toggle-track {
+  background-color: var(--color-bg);
+}
+
+/* Accented background colors */
+.layout-single-column .react-toggle--checked .react-toggle-track,
+.layout-single-column .language-dropdown__dropdown__results__item.active,
+.layout-single-column .icon-with-badge__badge,
+.layout-single-column .button {
+  background-color: var(--color-accent-dark);
+}
+
+.layout-single-column .block-modal__cancel-button,
+.layout-single-column .confirmation-modal__cancel-button,
+.layout-single-column .confirmation-modal__secondary-button,
+.layout-single-column .mute-modal__cancel-button {
+  background-color: transparent;
+  color: var(--color-dim);
+  font-size: var(--font-size-mid);
+}
+
+.layout-single-column .block-modal__cancel-button:focus,
+.layout-single-column .confirmation-modal__cancel-button:focus,
+.layout-single-column .confirmation-modal__secondary-button:focus,
+.layout-single-column .mute-modal__cancel-button:focus,
+.layout-single-column .block-modal__cancel-button:hover,
+.layout-single-column .confirmation-modal__cancel-button:hover,
+.layout-single-column .confirmation-modal__secondary-button:hover,
+.layout-single-column .mute-modal__cancel-button:hover {
+  background-color: transparent;
+  color: var(--color-dark-electric-blue);
+}
+
+.column-link--transparent .icon-with-badge__badge,
+.layout-single-column .icon-with-badge__badge {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-bg);
+}
+
+/* Accented strokes */
+.layout-single-column .trends__item__sparkline path:last-child {
+  /* It's inlined so we have to use !important */
+  stroke: var(--color-accent) !important;
+}
+
+/* Dropdown hovers */
+.layout-single-column .language-dropdown__dropdown__results__item:hover,
+.layout-single-column .language-dropdown__dropdown__results__item:focus {
+  background-color: var(--color-accent-dark-50);
+  color: var(--color-light-text);
+}
+
+/* Accented border colors */
+.layout-single-column .notification.unread::before,
+.layout-single-column .status__wrapper.unread::before {
+  border-color: var(--color-accent);
+  display: none;
+}
+
+/* Filtered post / Content warnings */
+body .status__wrapper.status__wrapper--filtered {
+  align-items: center;
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: var(--font-size-mid);
+  justify-content: space-between;
+  margin: var(--gap-default);
+  overflow: hidden;
+  padding: 4px 16px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - calc(var(--gap-default) * 2));
+}
+
+body
+  .columns-area__panels__pane--compositional
+  .compose-form
+  .spoiler-input__input,
+body .content-warning {
+  background-color: var(--color-focusable-toot);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-light-purple);
+  display: grid;
+  font-size: var(--font-size-mid);
+  grid-template-columns: minmax(0, 3fr) minmax(88px, 1fr);
+  padding: 10px 16px;
+  white-space: unset;
+}
+
+body .compose-form__highlightable:has(.spoiler-input__input) {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+body
+  .compose-form:has(.spoiler-input__input)
+  .spoiler-input
+  .autosuggest-input {
+  border-bottom: 0;
+  border-radius: var(--border-radius);
+}
+
+body .content-warning .link-button {
+  align-self: flex-start;
+  color: var(--color-fg);
+  font-size: var(--font-size-mid);
+  font-weight: var(--font-weight-semibold);
+  justify-self: flex-end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+body .status:not(.status--in-thread) .content-warning {
+  margin-bottom: var(--gap-default);
+  margin-left: calc(var(--size-avatar) + var(--gap-default));
+  margin-top: var(--gap-default);
+}
+
+.notification-group__main__status:has(.content-warning) {
+  border: 0;
+  padding: 0;
+}
+
+body .content-warning p {
+  margin-bottom: 0;
+}
+
+body .spoiler-input__border,
+body .content-warning::after,
+body .content-warning::before {
+  display: none;
+}
+
+.layout-single-column
+  .notification:has(.status__wrapper--filtered)
+  .notification__message {
+  display: none;
+}
+
+/* Fix hover/focus on article that has filtered banner */
+.layout-single-column article:has(.status__wrapper--filtered):hover {
+  background-color: transparent;
+}
+
+.layout-single-column .status__wrapper.status__wrapper--filtered button {
+  background-color: rgb(255 255 255 / 0%);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: var(--color-fg);
+  font-weight: var(--font-weight-semibold);
+  margin-left: auto;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  transition: 200ms background;
+  white-space: nowrap;
+}
+
+.layout-single-column .status__wrapper.status__wrapper--filtered button:focus,
+.layout-single-column .status__wrapper.status__wrapper--filtered button:hover {
+  background-color: rgb(255 255 255 / 10%);
+  text-decoration: none;
+}
+
+/* Fix load more icon dimensions */
+.load-more .icon {
+  height: 16px;
+  width: 20px;
+}
+
+/* Unread message */
+.layout-single-column .notification-ungrouped--unread,
+.layout-single-column .conversation--unread,
+.layout-single-column .notification.unread:hover,
+.layout-single-column .notification.unread,
+.layout-single-column .status__wrapper.unread,
+body .notification-group.notification-group--unread {
+  background-color: var(--color-dark);
+}
+
+body .notification-group--unread::before,
+body .notification-ungrouped--unread::before {
+  display: none;
+}
+
+.layout-single-column .notification:hover .notification__message {
+  background-color: transparent;
+}
+
+/* Things like notification status update text that should be dim */
+.layout-single-column
+  .notification
+  .status-link.mention:not(.hashtag):not(.mention),
+.layout-single-column .notification .status-link.hashtag,
+.layout-single-column .notification .status-link.mention:not(.hashtag),
+.layout-single-column
+  .compose-form
+  .autosuggest-textarea__textarea::placeholder,
+.layout-single-column .compose-form .icon-button,
+.layout-single-column .compose-form .spoiler-input__input::placeholder,
+.layout-single-column .compose-form__poll-wrapper .button.button-secondary,
+.layout-single-column .language-dropdown__dropdown__results__item__common-name,
+.layout-single-column .report-dialog-modal__textarea::placeholder,
+.layout-single-column .poll__link,
+.layout-single-column .muted .poll,
+.layout-single-column .status .status__relative-time,
+.layout-single-column .status .status__visibility-icon,
+.layout-single-column .block-modal__action-bar > div,
+.layout-single-column .boost-modal__action-bar > div,
+.layout-single-column .confirmation-modal__action-bar > div,
+.layout-single-column .mute-modal__action-bar > div,
+.layout-single-column .search-popout > h4,
+.layout-single-column .search__popout > h4,
+.layout-single-column .status-check-box__status .detailed-status__display-name,
+.layout-single-column
+  .report-dialog-modal
+  .poll__option.dialog-option
+  > .poll__option__text,
+.layout-single-column .status-card .status-card__description,
+.layout-single-column .report-dialog-modal .dialog-option .poll__input,
+.layout-single-column .dropdown-menu__container__header,
+.layout-single-column .sign-in-banner p,
+.layout-single-column .navigation-bar > a,
+.layout-single-column .character-counter,
+.layout-single-column .text-icon-button,
+.layout-single-column .empty-column-indicator,
+.layout-single-column .follow_requests-unlocked_explanation,
+.layout-single-column .poll__footer,
+.layout-single-column .server-banner h4,
+.layout-single-column .column-header__button,
+.layout-single-column .search__icon .icon-times-circle,
+.layout-single-column .timeline-hint,
+.layout-single-column .status__display-name.muted,
+.layout-single-column .setting-text-label,
+.layout-single-column .account__header__bio .account__header__fields dt,
+.layout-single-column .account__header__bio .account__header__fields dd,
+.layout-single-column .link-footer p,
+.layout-single-column .account__header__extra__links a,
+.layout-single-column .trends__item__current,
+.layout-single-column .emoji-mart-anchor,
+.layout-single-column .emoji-mart,
+.layout-single-column .emoji-mart-anchors,
+.layout-single-column .reply-indicator .display-name *,
+.layout-single-column .status__display-name,
+.layout-single-column .status__prepend .status__display-name strong,
+.layout-single-column .status__prepend,
+.layout-single-column .compose-form .compose-form__modifiers,
+.layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .spoiler-input__input,
+.layout-single-column .autosuggest-textarea__suggestions,
+.layout-single-column .compose-form .autosuggest-account .display-name__account,
+.layout-single-column .compose-panel .compose-form__autosuggest-wrapper,
+.layout-single-column .compose-form .compose-form__buttons-wrapper,
+.layout-single-column .account__section-headline a,
+.layout-single-column .account__section-headline button,
+.layout-single-column .notification__filter-bar a,
+.layout-single-column .notification__filter-bar button,
+.layout-single-column .attachment-list.compact .icon,
+.layout-single-column .attachment-list__list a,
+.layout-single-column .notification__message .icon-user-plus,
+.layout-single-column .notification__message .icon-home,
+.layout-single-column .notification__message .icon-retweet,
+.layout-single-column .link-footer p a,
+.layout-single-column .trends__item__name,
+.layout-single-column .muted .status__content,
+.layout-single-column .muted .status__content a,
+.layout-single-column .muted .status__content p,
+.layout-single-column .muted .status__display-name strong,
+.layout-single-column
+  .privacy-dropdown__option:not(.active)
+  .privacy-dropdown__option__content {
+  color: var(--color-dim);
+}
+
+/* Dim backgrounds */
+.layout-single-column .poll__chart {
+  background-color: var(--color-dim);
+}
+
+/* Lighter border colors */
+.layout-single-column .report-dialog-modal .dialog-option .poll__input,
+.layout-single-column .poll__input {
+  border-color: var(--color-brand-mastodon-text-light);
+}
+
+/* Light grey things */
+.layout-single-column .navigation-bar,
+.layout-single-column .navigation-bar strong {
+  color: var(--color-topaz);
+}
+
+/* CW button */
+.layout-single-column .reply-indicator__content .status__content__spoiler-link,
+.layout-single-column .status__content__spoiler-link {
+  background-color: var(--color-dark);
+  color: var(--color-light-purple);
+  font-weight: var(--font-weight-semibold);
+
+  /* Need to override forced styles */
+  margin-left: calc(var(--gap-default) / 2) !important;
+  vertical-align: baseline;
+}
+
+.layout-single-column
+  .reply-indicator__content
+  .status__content__spoiler-link:focus,
+.layout-single-column
+  .reply-indicator__content
+  .status__content__spoiler-link:hover,
+.layout-single-column .status__content .status__content__spoiler-link:focus,
+.layout-single-column .status__content .status__content__spoiler-link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-lighter-purple);
+}
+
+/* CW button in notifications */
+.layout-single-column
+  .notification
+  .reply-indicator__content
+  .status__content__spoiler-link,
+.layout-single-column .notification .status__content__spoiler-link {
+  background-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+.layout-single-column
+  .notification
+  .reply-indicator__content
+  .status__content__spoiler-link:focus,
+.layout-single-column
+  .notification
+  .reply-indicator__content
+  .status__content__spoiler-link:hover,
+.layout-single-column
+  .notification
+  .status__content
+  .status__content__spoiler-link:focus,
+.layout-single-column
+  .notification
+  .status__content
+  .status__content__spoiler-link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-dim);
+}
+
+/* Light purple things */
+.layout-single-column .announcements__pagination .icon-button:hover i,
+.layout-single-column .server-banner__introduction,
+.layout-single-column .account__header__tabs__name h1 small,
+.layout-single-column .account .account__display-name,
+.layout-single-column .column-settings__section,
+.layout-single-column .setting-toggle__label,
+.layout-single-column .server-banner__number-label {
+  color: var(--color-light-purple);
+}
+
