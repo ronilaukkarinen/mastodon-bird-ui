@@ -1,8 +1,6 @@
 ## Mastodon with modern birdsite-like UI
 
-![Version](https://img.shields.io/badge/version-4.0.0-595aff.svg?style=for-the-badge) ![Mastodon](https://img.shields.io/badge/mastodon-v4.6.0+-6364FF?style=for-the-badge&logo=mastodon&logoColor=white) ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) [![Build Status](https://img.shields.io/github/actions/workflow/status/ronilaukkarinen/mastodon-bird-ui/styles.yml?style=for-the-badge&logo=github)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml)
-
-<a href="https://github.com/sponsors/ronilaukkarinen"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" alt="GitHub Sponsor" height="28px"></a> <a href="https://ko-fi.com/rolle"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" height="28px"></a>
+![Version](https://img.shields.io/badge/version-4.0.0-blue.svg?style=for-the-badge) ![Mastodon](https://img.shields.io/badge/mastodon-v4.6.0+-6364FF?style=for-the-badge&logo=mastodon&logoColor=white) ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) [![Build Status](https://img.shields.io/github/actions/workflow/status/ronilaukkarinen/mastodon-bird-ui/styles.yml?style=for-the-badge&logo=github)](https://github.com/ronilaukkarinen/mastodon-bird-ui/actions/workflows/styles.yml) <a href="https://github.com/sponsors/ronilaukkarinen"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white" alt="GitHub Sponsor" height="28px"></a> <a href="https://ko-fi.com/rolle"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" height="28px"></a>
 
 Blasphemy! Yes, I know, but I just had to do this. I wanted to see if it's possible to get <a href="https://github.com/mastodon/mastodon">Mastodon</a> default user interface to resemble Twitter, but be a lot better than it ever was.
 
@@ -162,7 +160,7 @@ The following instances have enabled Mastodon Bird UI for their users, based on 
 
 Mastodon Bird UI can be integrated as a **Site theme** for all instance users as optional.
 
-**Please note**: These include modifications to the Mastodon core so do it only at your own risk! I highly recommend you to make the modifications in local development envinronment, push them to your fork, then git pull that fork to live after confirmed working.
+**Please note**: These include modifications to the Mastodon core so do it only at your own risk! I highly recommend making the modifications in a local development environment, push them to your fork, then git pull that fork to live after confirmed working.
 
 ![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/b30f19e2-2835-4d92-b40d-cac9922f64b3)
 
@@ -430,7 +428,7 @@ As I have explained [here](https://mementomori.social/@rolle/110775398758308450)
 
 ## Accessibility
 
-Mastodon Bird UI is built accessibility in mind. Please note that many "features" are 100% the same than in the original Mastodon, because this is not a separate app but merely consists of modifications in styles. There is a High contrast version available just like in the original Mastodon.
+Mastodon Bird UI is built with accessibility in mind. Please note that many "features" are 100% the same as in the original Mastodon, because this is not a separate app but merely consists of modifications in styles. There is a High contrast version available just like in the original Mastodon.
 
 ![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/030e7243-5a9d-44ea-8284-4be745b13b83)
 
