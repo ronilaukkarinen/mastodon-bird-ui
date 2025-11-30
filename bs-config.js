@@ -3,6 +3,7 @@
 
 module.exports = {
   proxy: 'https://mementomori.test',
+  port: 3999,
   files: ['dist/**/*.css'],
   https: false,
   serveStatic: [
