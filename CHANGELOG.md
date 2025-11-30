@@ -1,6 +1,27 @@
-### 4.0.0rc-dev-build-system-css-theme-tokens: 2025-11-15
+### 4.0.0rc: 2025-11-30
 
-* Add build process with parcel and browsersync #172
+This is a major rewrite of the project architecture. The codebase has been completely modularized from 11,600+ lines of plain CSS into a structured SCSS architecture with proper build tooling. See [#172](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/172) for details.
+
+#### Build System
+
+* Add Parcel bundler for SCSS compilation
+* Add Browsersync for live development with CSS hot-reloading
+* Add npm scripts for development workflow (`npm run dev`, `npm run build`)
+
+#### Architecture
+
+* Migrate from plain CSS to modular SCSS with `@use` imports
+* Create `src/` directory structure with organized partials:
+  * `src/common/` - Variables, themes (dark, light, high-contrast)
+  * `src/components/` - UI components (buttons, cards, navigation, status, etc.)
+  * `src/layouts/` - Layout-specific styles (multiple columns)
+* Extract CSS custom properties into dedicated `_variables.scss`
+* Maintain single-file CSS output in `dist/` for backward compatibility
+
+#### For Users
+
+* Installation method remains unchanged - copy CSS from `dist/` folder
+* Output CSS files are functionally identical to previous versions
 
 ### 4.0.0rc1: 2025-11-09
 
