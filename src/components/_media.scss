@@ -1,5 +1,5 @@
-/* Media attachments and embeds */
-/* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+// Media attachments and embeds
+// Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
 body.embed .media-gallery__item.standalone img,
 body.embed .video-player .media-gallery__preview,
 .layout-single-column .media-gallery__item.standalone img,
@@ -87,7 +87,7 @@ body.embed .detailed-status .video-player,
   border-top-left-radius: 0;
 }
 
-/* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
+// End: Experimental Threads-like media proportions, if the height is tall, show smaller media
 .layout-single-column .status .status-card + .more-from-author,
 .layout-single-column .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
@@ -105,7 +105,7 @@ body.embed .detailed-status .video-player,
   width: unset !important;
 }
 
-/* When image is still loading up, reset width to 100%, Fixes #150 */
+// When image is still loading up, reset width to 100%, Fixes #150
 body.layout-single-column canvas[class="media-gallery__preview"] {
   width: 100% !important;
 }
@@ -116,13 +116,13 @@ body.layout-single-column canvas[class="media-gallery__preview"] {
   width: 100% !important;
 }
 
-/* Detailed status update */
+// Detailed status update
 .layout-single-column .detailed-status .status__content {
   font-size: var(--font-size-bigger);
   line-height: 1.4;
 }
 
-/* Embeds */
+// Embeds
 body.embed .detailed-status__link {
   margin-left: 4px;
   top: 0;
@@ -180,19 +180,19 @@ body.embed > .activity-stream {
   overflow: hidden;
 }
 
-/* Fix alignment */
+// Fix alignment
 .layout-single-column .detailed-status__link {
   top: 0;
 }
 
-/* Profile lock icon alignment fix */
+// Profile lock icon alignment fix
 .layout-single-column .account__header__tabs__name h1 small {
   display: flex;
   gap: 4px;
   margin-top: 4px;
 }
 
-/* Textual labels for detailed metrics */
+// Textual labels for detailed metrics
 body.embed .detailed-status__link > .fa-reply + span::after,
 .layout-single-column .detailed-status__link > .icon-reply + span::after {
   color: var(--color-text-secondary);

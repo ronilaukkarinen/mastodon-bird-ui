@@ -1,7 +1,7 @@
-/* Mastodon Bird UI dark theme tokens */
+// Mastodon Bird UI dark theme tokens
 
 @mixin tokens {
-  /* Text tokens */
+  // Text tokens
   --color-text-primary: var(--color-grey-50);
   --color-text-secondary: var(--color-grey-500);
   --color-text-tertiary: var(--color-grey-600);
@@ -27,7 +27,7 @@
   --color-text-on-media: var(--color-white);
   --color-text-status-links: var(--color-indigo-400);
 
-  /* Background tokens */
+  // Background tokens
   --color-bg-primary: var(--color-grey-950);
   --overlay-strength-secondary: 8%;
   --color-bg-secondary-base: var(--color-indigo-200);
@@ -50,7 +50,7 @@
   --color-bg-overlay: #2b2b33;
   --color-bg-disabled: var(--color-grey-700);
 
-  /* Brand backgrounds */
+  // Brand backgrounds
   --overlay-strength-brand: 10%;
   --color-bg-brand-base: var(--color-indigo-600);
   --color-bg-brand-base-hover: color-mix(
@@ -59,7 +59,7 @@
     black var(--overlay-strength-brand)
   );
 
-  /* Error backgrounds */
+  // Error backgrounds
   --overlay-strength-error: 12%;
   --color-bg-error-base: var(--color-red-600);
   --color-bg-error-base-hover: color-mix(
@@ -68,7 +68,7 @@
     black var(--overlay-strength-error)
   );
 
-  /* Warning backgrounds */
+  // Warning backgrounds
   --overlay-strength-warning: 10%;
   --color-bg-warning-base: var(--color-yellow-700);
   --color-bg-warning-base-hover: color-mix(
@@ -77,7 +77,7 @@
     black var(--overlay-strength-warning)
   );
 
-  /* Success backgrounds */
+  // Success backgrounds
   --overlay-strength-success: 15%;
   --color-bg-success-base: var(--color-green-600);
   --color-bg-success-base-hover: color-mix(
@@ -86,7 +86,7 @@
     black var(--overlay-strength-success)
   );
 
-  /* Border tokens */
+  // Border tokens
   --border-strength-primary: 18%;
   --color-border-primary: var(--color-grey-700);
   --color-border-media: rgb(252 248 255 / 15%);
@@ -94,7 +94,7 @@
   --color-border-on-bg-brand-softer: var(--color-border-primary);
   --color-border-on-bg-inverted: var(--color-border-primary);
 
-  /* Shadow tokens */
+  // Shadow tokens
   --shadow-strength-primary: 80%;
   --dropdown-shadow:
     0 20px 25px -5px rgb(0 0 0 / var(--shadow-strength-primary)),

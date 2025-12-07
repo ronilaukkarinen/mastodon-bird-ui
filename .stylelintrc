@@ -114,6 +114,7 @@
     "selector-type-no-unknown": true,
     "media-feature-name-no-unknown": true,
     "scss/at-rule-no-unknown": true,
+    "scss/comment-no-loud": true,
     "comment-no-empty": true,
     "no-duplicate-selectors": true,
     "no-empty-source": true,

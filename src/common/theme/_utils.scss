@@ -1,4 +1,4 @@
-/* Mastodon Bird UI utility mixins */
+// Mastodon Bird UI utility mixins
 
 @function css-alpha($base-color, $amount) {
   @return #{rgb(from $base-color r g b / $amount)};

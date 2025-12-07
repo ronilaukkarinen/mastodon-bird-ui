@@ -1,4 +1,4 @@
-/* Vars on iPad, landscape */
+// Vars on iPad, landscape
 @media (width >= 1175px) and (width <= 1260px) {
   :root {
     --width-main-panel: 500px;
@@ -7,7 +7,7 @@
   }
 }
 
-/* Vars in mobile */
+// Vars in mobile
 @media (width <= 500px) {
   :root {
     --font-size: 16px;
@@ -16,21 +16,21 @@
     --badges-distance-from-edge: 10px;
   }
 
-  /* Hide scrollbar on mobile, since we can't pick the handle anyway */
+  // Hide scrollbar on mobile, since we can't pick the handle anyway
   .layout-single-column::-webkit-scrollbar {
     display: none;
   }
 }
 
-/* Search popout offset */
+// Search popout offset
 .layout-single-column .search__popout,
 .layout-single-column .search-popout {
   left: calc(30px / 2);
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   max-width: calc(100% - 30px) !important;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: calc(100% - 30px) !important;
 }
 
@@ -44,7 +44,7 @@ body.layout-single-column {
   width: 100%;
 }
 
-/* Text color */
+// Text color
 .layout-single-column .account__header__tabs__name h1,
 .layout-single-column .account__header__bio .account__header__content,
 .layout-single-column .reply-indicator__content,
@@ -52,7 +52,7 @@ body.layout-single-column {
   color: var(--color-text-primary);
 }
 
-/* Link color variants */
+// Link color variants
 .layout-single-column .status-link.hashtag {
   color: var(--color-text-brand);
 }
@@ -65,7 +65,7 @@ body.layout-single-column {
   color: var(--color-text-brand);
 }
 
-/* Logo */
+// Logo
 .layout-single-column .ui__header__logo,
 .layout-single-column .column-link.column-link--logo {
   background-image: var(--logo);
@@ -82,12 +82,12 @@ body.layout-single-column {
   display: none;
 }
 
-/* Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417 */
+// Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
 .layout-single-column .ui__header__logo {
   flex-grow: unset;
 }
 
-/* Things that should have the default font-size */
+// Things that should have the default font-size
 .layout-single-column .notification__message,
 .layout-single-column .status__content,
 .layout-single-column .account__header__tabs__name h1 small,
@@ -105,7 +105,7 @@ body.layout-single-column {
   line-height: var(--line-height);
 }
 
-/* Things that should have the mid font-size */
+// Things that should have the mid font-size
 .layout-single-column .account__header__extra__links,
 .layout-single-column
   .columns-area__panels__pane--compositional
@@ -124,47 +124,47 @@ body.layout-single-column {
   line-height: var(--line-height-mid);
 }
 
-/* Exceptions */
+// Exceptions
 .layout-single-column .account__header__content {
   line-height: 18px;
 }
 
-/* Things that will have even smaller font size */
+// Things that will have even smaller font size
 .layout-single-column .account__header__account-note label {
   font-size: var(--font-size-12);
 }
 
-/* Line heights */
+// Line heights
 .layout-single-column .status__content {
   line-height: var(--line-height);
 }
 
-/* Modal overlay */
+// Modal overlay
 .layout-single-column .modal-root__overlay {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   background-color: var(--color-bg-overlay) !important;
   color: var(--color-text-primary) !important;
 }
 
 .layout-single-column .modal-root__modal .display-name strong,
 .layout-single-column .modal-root__modal .status__content {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   color: var(--color-text-primary) !important;
 }
 
-/* Hide footer buttons in modals */
+// Hide footer buttons in modals
 .layout-single-column .picture-in-picture .picture-in-picture__footer {
   display: none;
 }
 
-/* Picture in picture fixes */
+// Picture in picture fixes
 .layout-single-column .picture-in-picture .audio-player,
 .layout-single-column .picture-in-picture .video-player {
   border-radius: 0 !important;
   margin-left: 0 !important;
 }
 
-/* Report modal */
+// Report modal
 .layout-single-column
   .report-dialog-modal
   .poll__option.dialog-option
@@ -173,7 +173,7 @@ body.layout-single-column {
   gap: 6px;
 }
 
-/* Improve modal icon size and accessibility */
+// Improve modal icon size and accessibility
 .layout-single-column .image-loader .icon,
 .layout-single-column .media-modal__navigation .icon {
   color: var(--color-text-primary);
@@ -181,7 +181,7 @@ body.layout-single-column {
   width: 32px;
 }
 
-/* List adder input */
+// List adder input
 .layout-single-column .list-editor input.setting-text,
 .layout-single-column .list-adder input.setting-text {
   background-color: transparent;
@@ -194,7 +194,7 @@ body.layout-single-column {
 .layout-single-column .list-editor .column-inline-form button::before {
   min-height: 38px;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: 100% !important;
 }
 
@@ -217,7 +217,7 @@ body.layout-single-column {
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 20%);
 }
 
-/* Search icon fix for v4.4.0-rc.1-2025-07-01 changes */
+// Search icon fix for v4.4.0-rc.1-2025-07-01 changes
 .layout-single-column .search__icon-wrapper {
   right: 0;
   top: 0;
@@ -238,7 +238,7 @@ body.layout-single-column {
   top: -2px;
 }
 
-/* URL preview cards */
+// URL preview cards
 .layout-single-column .status-card,
 .layout-single-column .status-card:hover,
 .layout-single-column .status-card:focus {
@@ -246,13 +246,13 @@ body.layout-single-column {
   border-color: var(--color-border-primary);
 }
 
-/* URL preview card summary text */
+// URL preview card summary text
 .layout-single-column .status-card .status-card__host,
 .layout-single-column .status-card .status-card__description {
   color: var(--color-text-secondary);
 }
 
-/* URL preview card box */
+// URL preview card box
 .layout-single-column .status-card .status-card__content {
   padding: var(--gap-default);
 }
@@ -262,7 +262,7 @@ body.layout-single-column {
   gap: 8px;
 }
 
-/* Preview cards */
+// Preview cards
 .layout-single-column .status-card {
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-border-primary);
@@ -313,7 +313,7 @@ body.layout-single-column {
   color: var(--color-text-secondary);
 }
 
-/* New Quote Posts feature after v4.5.0.alpha.2-2025-08-24 */
+// New Quote Posts feature after v4.5.0.alpha.2-2025-08-24
 .status__quote {
   --status-gutter-width: calc(var(--size-avatar) + var(--gap-default));
 }
@@ -344,7 +344,7 @@ body.layout-single-column {
   min-height: 40px;
 }
 
-/* Disabled quote post selection */
+// Disabled quote post selection
 .layout-single-column .dropdown-menu__item [aria-disabled="true"],
 .layout-single-column .dropdown-menu__item :disabled,
 .layout-single-column .dropdown-menu__item button:disabled {
@@ -381,17 +381,17 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   }
 }
 
-/* Show minimal status card if there's no image */
+// Show minimal status card if there's no image
 .layout-single-column .status-card .status-card__image:not(:has(img)) {
   display: none;
 }
 
-/* Show iframe in status card if status contains embedded media */
+// Show iframe in status card if status contains embedded media
 .layout-single-column .status-card .status-card-video:has(iframe) {
   display: inherit;
 }
 
-/* Hide empty YouTube description */
+// Hide empty YouTube description
 .layout-single-column .status-card__description:empty {
   display: none;
 }
@@ -435,13 +435,13 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   margin-top: 0;
 }
 
-/* Announcements */
+// Announcements
 .layout-single-column .announcements__pagination .icon,
 .layout-single-column .announcements__pagination {
   color: var(--color-text-secondary);
 }
 
-/* Dark panels like modals and boxes */
+// Dark panels like modals and boxes
 .layout-single-column .account-memorial-banner,
 .layout-single-column .follow-request-banner,
 .layout-single-column .moved-account-banner,
@@ -494,13 +494,13 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   color: var(--color-text-primary);
 }
 
-/* Setting boxes */
+// Setting boxes
 .layout-single-column .column-header__collapsible-inner {
   background-color: var(--color-bg-primary);
   border-color: var(--color-border-primary);
 }
 
-/* Column-header border */
+// Column-header border
 .layout-single-column .column-header__collapsible {
   border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
@@ -512,19 +512,19 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   opacity: 1;
 }
 
-/* Has dark 1px border */
+// Has dark 1px border
 .layout-single-column .dismissable-banner {
   border: 1px solid var(--color-bg-tertiary);
 }
 
-/* More subtle box-shadow for dropdown-menu */
+// More subtle box-shadow for dropdown-menu
 .layout-single-column .search-popout,
 .layout-single-column .search__popout,
 .layout-single-column .dropdown-menu {
   box-shadow: 2px 4px 16px rgb(0 0 0 / 1%);
 }
 
-/* Autosuggest box shadow reset */
+// Autosuggest box shadow reset
 .layout-single-column .search-popout,
 .layout-single-column .search__popout,
 .layout-single-column .dropdown-menu,
@@ -537,13 +537,13 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   box-shadow: none;
 }
 
-/* Composer form warnings */
+// Composer form warnings
 .layout-single-column .compose-form .compose-form__warning {
   background-color: var(--color-text-tertiary);
   color: var(--color-bg-primary);
 }
 
-/* Content warning placeholder */
+// Content warning placeholder
 .layout-single-column
   .compose-form
   .autosuggest-textarea__textarea::placeholder,
@@ -551,7 +551,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   color: var(--color-text-secondary);
 }
 
-/* Border colors */
+// Border colors
 .layout-single-column .search-results__section__header,
 .layout-single-column .account__header__bar,
 .layout-single-column .about__meta__divider,
@@ -585,7 +585,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   border-color: var(--color-border-primary);
 }
 
-/* Change panel order */
+// Change panel order
 .layout-single-column .columns-area__panels__pane {
   order: 3;
 }
@@ -627,7 +627,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   display: none;
 }
 
-/* Accented items like links */
+// Accented items like links
 .layout-single-column .about__section__title,
 .layout-single-column .account__header__bio .account__header__fields a,
 .layout-single-column .column-back-button,
@@ -648,12 +648,12 @@ body.embed .status__content a,
   color: var(--color-text-brand);
 }
 
-/* Toggles */
+// Toggles
 .layout-single-column .react-toggle .react-toggle-track {
   background-color: var(--color-bg-primary);
 }
 
-/* Accented background colors */
+// Accented background colors
 .layout-single-column .react-toggle--checked .react-toggle-track,
 .layout-single-column .language-dropdown__dropdown__results__item.active,
 .layout-single-column .icon-with-badge__badge,
@@ -688,27 +688,27 @@ body.embed .status__content a,
   border-color: var(--color-bg-primary);
 }
 
-/* Accented strokes */
+// Accented strokes
 .layout-single-column .trends__item__sparkline path:last-child {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   stroke: var(--color-text-brand) !important;
 }
 
-/* Dropdown hovers */
+// Dropdown hovers
 .layout-single-column .language-dropdown__dropdown__results__item:hover,
 .layout-single-column .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
   color: var(--color-text-primary);
 }
 
-/* Accented border colors */
+// Accented border colors
 .layout-single-column .notification.unread::before,
 .layout-single-column .status__wrapper.unread::before {
   border-color: var(--color-text-brand);
   display: none;
 }
 
-/* Filtered post / Content warnings */
+// Filtered post / Content warnings
 body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
@@ -767,7 +767,7 @@ body .content-warning .link-button {
   white-space: nowrap;
 }
 
-/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+// New content warnings in 4.3.0.beta.1-mementomods-2024-08-23
 body .status:not(.status--in-thread) .content-warning {
   margin-bottom: var(--gap-default);
   margin-left: calc(var(--size-avatar) + var(--gap-default));
@@ -795,7 +795,7 @@ body .content-warning::before {
   display: none;
 }
 
-/* Fix hover/focus on article that has filtered banner */
+// Fix hover/focus on article that has filtered banner
 .layout-single-column article:has(.status__wrapper--filtered):hover {
   background-color: transparent;
 }
@@ -823,13 +823,13 @@ body .content-warning::before {
   text-decoration: none;
 }
 
-/* Fix load more icon dimensions */
+// Fix load more icon dimensions
 .load-more .icon {
   height: 16px;
   width: 20px;
 }
 
-/* Unread message */
+// Unread message
 .layout-single-column .notification-ungrouped--unread,
 .layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
@@ -848,7 +848,7 @@ body .notification-ungrouped--unread::before {
   background-color: transparent;
 }
 
-/* Things like notification status update text that should be dim */
+// Things like notification status update text that should be dim
 .layout-single-column
   .notification
   .status-link.mention:not(.hashtag):not(.mention),
@@ -933,31 +933,31 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-secondary);
 }
 
-/* Dim backgrounds */
+// Dim backgrounds
 .layout-single-column .poll__chart {
   background-color: var(--color-text-secondary);
 }
 
-/* Lighter border colors */
+// Lighter border colors
 .layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .poll__input {
   border-color: var(--color-text-secondary);
 }
 
-/* Light grey things */
+// Light grey things
 .layout-single-column .navigation-bar,
 .layout-single-column .navigation-bar strong {
   color: var(--color-topaz);
 }
 
-/* CW button */
+// CW button
 .layout-single-column .reply-indicator__content .status__content__spoiler-link,
 .layout-single-column .status__content__spoiler-link {
   background-color: var(--color-bg-tertiary);
   color: var(--color-text-tertiary);
   font-weight: var(--font-weight-semibold);
 
-  /* Need to override forced styles */
+  // Need to override forced styles
   margin-left: calc(var(--gap-default) / 2) !important;
   vertical-align: baseline;
 }
@@ -974,7 +974,7 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-tertiary);
 }
 
-/* CW button in notifications */
+// CW button in notifications
 .layout-single-column
   .notification
   .reply-indicator__content
@@ -1004,7 +1004,7 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-secondary);
 }
 
-/* Light purple things */
+// Light purple things
 .layout-single-column .announcements__pagination .icon-button:hover i,
 .layout-single-column .server-banner__introduction,
 .layout-single-column .account__header__tabs__name h1 small,
@@ -1015,7 +1015,7 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-tertiary);
 }
 
-/* White things */
+// White things
 .layout-single-column .compose-form__poll-wrapper select,
 .layout-single-column .actions-modal ul li:not(:empty) a,
 .layout-single-column .report-dialog-modal .status__content,
@@ -1065,19 +1065,19 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-primary);
 }
 
-/* Account names */
+// Account names
 .layout-single-column .status__info .display-name .display-name__account,
 .layout-single-column .display-name__account {
   color: var(--color-text-secondary);
 }
 
-/* Main panel column */
+// Main panel column
 .layout-single-column .columns-area__panels__main > div {
   border-left: 1px solid var(--color-border-primary);
   border-right: 1px solid var(--color-border-primary);
 }
 
-/* Status header */
+// Status header
 .layout-single-column .status .status__info {
   align-items: flex-start;
   gap: var(--gap-default);
@@ -1087,14 +1087,14 @@ body .notification-ungrouped--unread::before {
   padding-bottom: 0;
 }
 
-/* Status action bar */
+// Status action bar
 .layout-single-column .status__action-bar {
   height: 27px;
   margin-top: 12px;
   max-height: 27px;
 }
 
-/* Display name */
+// Display name
 .layout-single-column .status__info .status__display-name {
   align-items: flex-start;
   display: inline-flex;
@@ -1112,12 +1112,12 @@ body .notification-ungrouped--unread::before {
   order: 3;
 }
 
-/* Visibility icon */
+// Visibility icon
 .layout-single-column .status .status__visibility-icon {
   font-size: var(--font-size-mid);
 }
 
-/* Panels and things that should be transparent */
+// Panels and things that should be transparent
 .layout-single-column .explore__search-results,
 .layout-single-column .search-results__section__header,
 .layout-single-column .status__wrapper-direct,
@@ -1163,26 +1163,26 @@ body.embed .detailed-status,
   background-color: transparent;
 }
 
-/* Avatar */
+// Avatar
 .account__avatar[style="width: 46px; height: 46px;"],
 .layout-single-column .status__avatar {
-  /* Need to override inline styles */
+  // Need to override inline styles
   height: var(--size-avatar) !important;
   max-height: var(--size-avatar) !important;
   max-width: var(--size-avatar) !important;
   min-height: var(--size-avatar) !important;
   min-width: var(--size-avatar) !important;
 
-  /* Need to override inline styles */
+  // Need to override inline styles
   width: var(--size-avatar) !important;
 }
 
-/* Improve "others you know follow" avatar group */
+// Improve "others you know follow" avatar group
 body .avatar-group--compact .account__avatar {
   box-shadow: none;
 }
 
-/* Avatars */
+// Avatars
 body.embed .detailed-status__display-avatar > img,
 .layout-single-column .account-card__title__avatar .account__avatar,
 .layout-single-column .account-card__title__avatar img,
@@ -1194,7 +1194,7 @@ body.embed .detailed-status__display-avatar > img,
   box-shadow: rgb(255 255 255 / 3%) 0 0 2px inset;
 }
 
-/* Things that should not have border */
+// Things that should not have border
 .layout-single-column .column-inline-form,
 .layout-single-column .column > .scrollable,
 .layout-single-column .error-column,
@@ -1227,13 +1227,13 @@ body.embed .detailed-status__display-avatar > img,
     opacity 200ms;
 }
 
-/* Toot hover effect */
+// Toot hover effect
 .layout-single-column article:focus,
 .layout-single-column article:hover {
   background-color: var(--color-light-shade);
 }
 
-/* Focusable toot and other hilighted items */
+// Focusable toot and other hilighted items
 .layout-single-column
   .compose-form
   .autosuggest-textarea__suggestions__item.selected,
@@ -1250,7 +1250,7 @@ body.embed .detailed-status__display-avatar > img,
   background: var(--color-focusable-toot);
 }
 
-/* Search panel that opens when focusing Search or paste URL field */
+// Search panel that opens when focusing Search or paste URL field
 .layout-single-column .explore__search-header .search__popout,
 .layout-single-column .compose-form__poll-wrapper option,
 .layout-single-column .search__popout,
@@ -1265,7 +1265,7 @@ body.embed .detailed-status__display-avatar > img,
   color: var(--color-text-primary);
 }
 
-/* Pill style tags */
+// Pill style tags
 .layout-single-column .hashtag-bar a {
   background-color: var(--color-bg-tertiary);
   border-radius: 9999px;
@@ -1287,7 +1287,7 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .hashtag-bar a:hover {
   background-color: var(--color-text-brand);
 
-  /* It should be always light also on light mode, so not using variable here */
+  // It should be always light also on light mode, so not using variable here
   color: #f7f9f9;
 }
 
@@ -1296,7 +1296,7 @@ body.embed .detailed-status__display-avatar > img,
   text-decoration: none;
 }
 
-/* Status update tinted to right */
+// Status update tinted to right
 .layout-single-column .status:not(.status--in-thread) .hashtag-bar,
 .layout-single-column
   .status__content--collapsed
@@ -1309,13 +1309,13 @@ body.embed .detailed-status__display-avatar > img,
   padding-top: 0;
 }
 
-/* Translate link and other padding resets */
+// Translate link and other padding resets
 .layout-single-column .conversation .attachment-list,
 .layout-single-column .translate ~ .status__content__read-more-button {
   padding-left: 0;
 }
 
-/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
+// Make sure read more/translate button is always aligned to center vertically and to left horizontally
 .layout-single-column .status__content__read-more-button {
   align-items: center;
   display: flex;
@@ -1323,7 +1323,7 @@ body.embed .detailed-status__display-avatar > img,
   margin-inline-start: 0;
 }
 
-/* Rtl version */
+// Rtl version
 [dir="rtl"] .layout-single-column .status__action-bar,
 [dir="rtl"] .layout-single-column .attachment-list,
 [dir="rtl"] .layout-single-column .status__content__read-more-button,
@@ -1332,7 +1332,7 @@ body.embed .detailed-status__display-avatar > img,
   padding-right: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Reset padding from attachment-list on reply indicator */
+// Reset padding from attachment-list on reply indicator
 .layout-single-column .reply-indicator .attachment-list {
   padding-left: 0;
 }
@@ -1348,19 +1348,19 @@ body.embed .detailed-status__display-avatar > img,
   pointer-events: none;
 }
 
-/* Grouped notification exceptions, pr30440 2024-07-11 */
+// Grouped notification exceptions, pr30440 2024-07-11
 .layout-single-column .notification-ungrouped .status .hashtag-bar,
 .layout-single-column .notification-ungrouped .status .status__content,
 .layout-single-column .notification-ungrouped .status .status__action-bar {
   padding-left: var(--gap-default);
 }
 
-/* Fix spacing under quoted post in grouped notification */
+// Fix spacing under quoted post in grouped notification
 .notification-group .notification-group__embedded-status__content {
   max-height: 100%;
 }
 
-/* We don't need to show our own account when we know our own account is being mentioned */
+// We don't need to show our own account when we know our own account is being mentioned
 .notification-ungrouped.notification-ungrouped--mention
   .notification-ungrouped__header,
 .notification-group .notification-group__embedded-status__account {
@@ -1371,13 +1371,13 @@ body.embed .detailed-status__display-avatar > img,
   padding-left: calc(24px + var(--gap-default));
 }
 
-/* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
+// Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26
 .layout-single-column div[style*="aspect-ratio"]:not([class]) {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   aspect-ratio: unset !important;
 }
 
-/* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+// Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
 body.embed .media-gallery__item.standalone img,
 body.embed .video-player .media-gallery__preview,
 .layout-single-column .media-gallery__item.standalone img,
@@ -1465,7 +1465,7 @@ body.embed .detailed-status .video-player,
   border-top-left-radius: 0;
 }
 
-/* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
+// End: Experimental Threads-like media proportions, if the height is tall, show smaller media
 .layout-single-column .status .status-card + .more-from-author,
 .layout-single-column .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
@@ -1483,7 +1483,7 @@ body.embed .detailed-status .video-player,
   width: unset !important;
 }
 
-/* When image is still loading up, reset width to 100%, Fixes #150 */
+// When image is still loading up, reset width to 100%, Fixes #150
 body.layout-single-column canvas[class="media-gallery__preview"] {
   width: 100% !important;
 }
@@ -1494,13 +1494,13 @@ body.layout-single-column canvas[class="media-gallery__preview"] {
   width: 100% !important;
 }
 
-/* Detailed status update */
+// Detailed status update
 .layout-single-column .detailed-status .status__content {
   font-size: var(--font-size-bigger);
   line-height: 1.4;
 }
 
-/* Embeds */
+// Embeds
 body.embed .detailed-status__link {
   margin-left: 4px;
   top: 0;
@@ -1558,19 +1558,19 @@ body.embed > .activity-stream {
   overflow: hidden;
 }
 
-/* Fix alignment */
+// Fix alignment
 .layout-single-column .detailed-status__link {
   top: 0;
 }
 
-/* Profile lock icon alignment fix */
+// Profile lock icon alignment fix
 .layout-single-column .account__header__tabs__name h1 small {
   display: flex;
   gap: 4px;
   margin-top: 4px;
 }
 
-/* Textual labels for detailed metrics */
+// Textual labels for detailed metrics
 body.embed .detailed-status__link > .fa-reply + span::after,
 .layout-single-column .detailed-status__link > .icon-reply + span::after {
   color: var(--color-text-secondary);
@@ -1603,7 +1603,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
-/* Icon buttons */
+// Icon buttons
 .layout-single-column .icon-button {
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -1612,7 +1612,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-text-secondary);
 }
 
-/* Hide/Show media button */
+// Hide/Show media button
 .layout-single-column .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-badges);
@@ -1620,12 +1620,12 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: 0.5;
 }
 
-/* Alt badge */
+// Alt badge
 .layout-single-column .media-gallery__item__badges > span {
   border-radius: var(--border-radius-badges);
 }
 
-/* Distance from the edge */
+// Distance from the edge
 .layout-single-column .spoiler-button--minified {
   inset-inline-start: var(--badges-distance-from-edge);
   top: var(--badges-distance-from-edge);
@@ -1645,7 +1645,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-text-brand);
 }
 
-/* Other general buttons */
+// Other general buttons
 .layout-single-column .column-header__button.active:active,
 .column-header__button.active:focus,
 .layout-single-column .column-header__button.active:hover {
@@ -1653,7 +1653,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-text-primary);
 }
 
-/* Bars on panels */
+// Bars on panels
 .layout-single-column .ui__header,
 .layout-single-column .columns-area__panels__main > div.tabs-bar__wrapper,
 .layout-single-column .tabs-bar__wrapper {
@@ -1663,7 +1663,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
 }
 
-/* Fix Create account button not clickable on mobile */
+// Fix Create account button not clickable on mobile
 .ui__header:has(.button[href="/auth/sign_up"]) {
   z-index: 4;
 }
@@ -1682,20 +1682,20 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   }
 }
 
-/* Hidden things */
+// Hidden things
 .layout-single-column
   .column-header
   .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {
   display: none;
 }
 
-/* Column headers */
+// Column headers
 .layout-single-column .column-header {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
 }
 
-/* Column sub-headers */
+// Column sub-headers
 .layout-single-column .column-subheading {
   background-color: transparent;
   color: var(--color-text-primary);
@@ -1704,13 +1704,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   text-transform: unset;
 }
 
-/* "Your lists" view */
+// "Your lists" view
 .layout-single-column .column-subheading ~ article {
   padding-left: var(--gap-default);
   padding-right: var(--gap-default);
 }
 
-/* Notifications */
+// Notifications
 .layout-single-column .notification-group,
 .layout-single-column .notification__message {
   display: grid;
@@ -1722,13 +1722,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   height: calc(var(--gap-default) * 2);
 }
 
-/* Make sure notification user is clickable */
+// Make sure notification user is clickable
 .layout-single-column .notification__display-name {
   position: relative;
   z-index: 99;
 }
 
-/* Hack to display notification message title on one line */
+// Hack to display notification message title on one line
 .layout-single-column .notification__message > span {
   display: block;
   margin-top: calc(var(--size-avatar-small) + 6px);
@@ -1742,7 +1742,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   white-space: nowrap;
 }
 
-/* Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications */
+// Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications
 @media (width <= 600px) {
   .layout-single-column .notification .account__relationship > .button,
   .layout-single-column .notification__report__actions .button {
@@ -1773,7 +1773,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   .account__avatar-overlay-overlay
   .account__avatar,
 .layout-single-column .notification .account__avatar-overlay-overlay {
-  /* Need to override inline styles */
+  // Need to override inline styles
   height: var(--size-avatar-small) !important;
   min-height: var(--size-avatar-small) !important;
   min-width: var(--size-avatar-small) !important;
@@ -1785,7 +1785,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   overflow: visible;
 }
 
-/* Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25 */
+// Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25
 .layout-single-column
   .notification.notification-reblog
   .status__info
@@ -1805,7 +1805,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   pointer-events: none;
 }
 
-/* Hack to show follow notification more minimal way */
+// Hack to show follow notification more minimal way
 .layout-single-column
   .notification.notification-admin-report
   .notification__report,
@@ -1823,7 +1823,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default) + 4px));
 }
 
-/* Hack to show follow notification more minimal way */
+// Hack to show follow notification more minimal way
 .layout-single-column .notification.notification-poll .display-name,
 .layout-single-column .notification.notification-update .display-name__html,
 .layout-single-column .notification.notification-update .display-name__account,
@@ -1890,7 +1890,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
-/* Minimal boost notification fix */
+// Minimal boost notification fix
 .layout-single-column
   .notification.notification-reblog
   .notification__message
@@ -1898,7 +1898,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
 }
 
-/* Minimal follow notification fix */
+// Minimal follow notification fix
 .layout-single-column
   .notification.notification-follow
   .notification__message
@@ -1921,7 +1921,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   top: 6px;
 }
 
-/* Minimal fav notification fix */
+// Minimal fav notification fix
 .layout-single-column
   .notification.notification-favourite
   .notification__message
@@ -1929,7 +1929,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
 }
 
-/* If a status content is empty and there's only attachment, remove gap */
+// If a status content is empty and there's only attachment, remove gap
 .layout-single-column
   .notification
   .status__content:has(.status__content__text:empty)
@@ -1937,7 +1937,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin-top: 0;
 }
 
-/* Less space before attachments if no status content */
+// Less space before attachments if no status content
 .layout-single-column
   .status
   .status__content:has(.status__content__text:empty)
@@ -1976,7 +1976,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Admin reports and other admin notifications */
+// Admin reports and other admin notifications
 .layout-single-column .notification-admin-report .notification__report {
   border-color: var(--color-border-primary);
   display: flex;
@@ -2001,20 +2001,20 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Revert hack for notification admin message that has no avatar visible */
+// Revert hack for notification admin message that has no avatar visible
 .layout-single-column .notification-admin-report .notification__message > span {
   display: block;
   margin-top: calc(var(--size-avatar-small) + 4px);
   overflow: visible;
 }
 
-/* Hide things in notifications */
+// Hide things in notifications
 .layout-single-column .notification .status__relative-time,
 .layout-single-column .notification .status__info::before {
   display: none;
 }
 
-/* Right side panel */
+// Right side panel
 .layout-single-column .navigation-panel {
   box-sizing: border-box;
   display: flex;
@@ -2025,7 +2025,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
 }
 
 .layout-single-column .navigation-panel hr {
-  /* Hide but reserve space */
+  // Hide but reserve space
   visibility: hidden;
 }
 
@@ -2033,13 +2033,13 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin: 0;
 }
 
-/* Attempt to hide scrollbars for .navigation-panel for Firefox */
+// Attempt to hide scrollbars for .navigation-panel for Firefox
 .dropdown-menu__container__list--scrollable,
 .layout-single-column .navigation-panel {
   scrollbar-width: none;
 }
 
-/* Hide scrollbars for .navigation-panel for Chrome and Safari */
+// Hide scrollbars for .navigation-panel for Chrome and Safari
 .dropdown-menu__container__list--scrollable::-webkit-scrollbar,
 .layout-single-column .navigation-panel::-webkit-scrollbar {
   display: none;
@@ -2086,7 +2086,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   transition: opacity 200ms;
 }
 
-/* Accessibility outlines for keyboard navigation */
+// Accessibility outlines for keyboard navigation
 .layout-single-column .column-link:focus-visible {
   border-color: transparent;
   outline: 0;
@@ -2111,7 +2111,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   background-color: var(--color-column-link-hover);
 }
 
-/* Mobile devices */
+// Mobile devices
 @media (hover: none) {
   .layout-single-column .notification__filter-bar button.active:hover,
   .layout-single-column .account__section-headline a.active:hover {
@@ -2119,7 +2119,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   }
 }
 
-/* Notification filter bar */
+// Notification filter bar
 .layout-single-column .notification__filter-bar {
   border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
@@ -2130,7 +2130,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   margin: 0;
 }
 
-/* Notification badge on side panel */
+// Notification badge on side panel
 .layout-single-column .icon-with-badge__badge {
   align-items: center;
   border-radius: 1em;
@@ -2152,7 +2152,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-weight: var(--font-weight-bold);
 }
 
-/* Top panel */
+// Top panel
 .layout-single-column .account__section-headline a.active::after,
 .layout-single-column .account__section-headline button.active::after,
 .layout-single-column .notification__filter-bar a.active::after,
@@ -2173,7 +2173,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   transform: translateX(-50%);
 }
 
-/* Notification icons */
+// Notification icons
 .layout-single-column .account__section-headline a.active::before,
 .layout-single-column .account__section-headline button.active::before,
 .layout-single-column .notification__filter-bar a.active::before,
@@ -2246,7 +2246,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 24px;
 }
 
-/* Follow/unfollow button */
+// Follow/unfollow button
 .layout-single-column .account__relationship .icon-button,
 .layout-single-column .notification .account__relationship .icon-button {
   background-color: transparent;
@@ -2316,7 +2316,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   transform: translateY(-4px);
 }
 
-/* Emoji-mart search input */
+// Emoji-mart search input
 .layout-single-column .emoji-mart-search-icon svg {
   fill: var(--color-border-primary);
   opacity: 1;
@@ -2351,7 +2351,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: 1;
 }
 
-/* Search */
+// Search
 .layout-single-column .search__icon-wrapper .search__icon {
   background-image: var(--icon-search);
   background-position: center;
@@ -2386,7 +2386,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0 20px;
 }
 
-/* Input texts */
+// Input texts
 .layout-single-column .search.active .search__input,
 .layout-single-column .poll__option input[type="text"],
 .layout-single-column input.setting-text:focus,
@@ -2394,7 +2394,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   color: var(--color-text-primary);
 }
 
-/* Poll input */
+// Poll input
 .layout-single-column .poll__option input[type="text"] {
   background-color: transparent;
   border-color: var(--color-border-primary);
@@ -2404,7 +2404,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-color: var(--color-text-brand);
 }
 
-/* Placeholders */
+// Placeholders
 .layout-single-column .poll__option input[type="text"]::placeholder,
 .layout-single-column .search__input::placeholder,
 .layout-single-column input::placeholder,
@@ -2413,7 +2413,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   opacity: 1;
 }
 
-/* Profile */
+// Profile
 .layout-single-column .getting-started__trends h4,
 .layout-single-column .account__header__bar {
   border-color: var(--color-border-primary);
@@ -2429,7 +2429,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
 }
 
-/* New popout styles */
+// New popout styles
 .layout-single-column .account__domain-pill__popout {
   border: 1px solid var(--color-bg-secondary);
   color: var(--color-text-tertiary);
@@ -2450,7 +2450,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 12px 10px;
 }
 
-/* Hide unnecessary header icon for minimalism */
+// Hide unnecessary header icon for minimalism
 .layout-single-column .account__domain-pill__popout__header__icon {
   display: none;
 }
@@ -2460,8 +2460,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   line-height: 1.3;
 }
 
-/* Profile links start */
-/* Truncate too long links in the profile, like Nostr */
+// Profile links start
+// Truncate too long links in the profile, like Nostr
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2482,7 +2482,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   order: 2;
 }
 
-/* Icon positioning - icons appear before label/value */
+// Icon positioning - icons appear before label/value
 .layout-single-column .account__header__bio .account__header__fields dl::before,
 .layout-single-column .account__header__bio .account__header__fields dl::after {
   background-position: center;
@@ -2493,7 +2493,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   order: 0;
 }
 
-/* ...except on those that have link URLs for known platforms */
+// ...except on those that have link URLs for known platforms
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2530,7 +2530,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: auto;
 }
 
-/* Hide labels for social/link fields (keep icons only) */
+// Hide labels for social/link fields (keep icons only)
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2567,9 +2567,9 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   display: none;
 }
 
-/* Platform-specific icons using dd[title] URL detection */
+// Platform-specific icons using dd[title] URL detection
 
-/* GitHub */
+// GitHub
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2580,7 +2580,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Discord */
+// Discord
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2591,7 +2591,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* LinkedIn */
+// LinkedIn
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2602,7 +2602,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Instagram */
+// Instagram
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2613,7 +2613,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* YouTube */
+// YouTube
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2628,7 +2628,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Twitch */
+// Twitch
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2639,7 +2639,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Twitter/X */
+// Twitter/X
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2654,7 +2654,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Patreon */
+// Patreon
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2665,7 +2665,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* PayPal */
+// PayPal
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2676,7 +2676,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Ko-fi */
+// Ko-fi
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2691,7 +2691,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Bandcamp */
+// Bandcamp
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2702,7 +2702,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Facebook */
+// Facebook
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2717,7 +2717,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Friendica */
+// Friendica
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2729,7 +2729,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* WordPress */
+// WordPress
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2744,7 +2744,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Mastodon instances - detect by @ in URL or common instance domains */
+// Mastodon instances - detect by @ in URL or common instance domains
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2767,7 +2767,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Threads */
+// Threads
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2778,7 +2778,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Bluesky */
+// Bluesky
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2793,7 +2793,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Nostr - typically npub or other nostr formats */
+// Nostr - typically npub or other nostr formats
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2808,7 +2808,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Default link icon for all other links (that don't have platform-specific icons) */
+// Default link icon for all other links (that don't have platform-specific icons)
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2850,7 +2850,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* If the profile item has no link element, show just label icon */
+// If the profile item has no link element, show just label icon
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2861,7 +2861,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Verified colors for Firefox before :has */
+// Verified colors for Firefox before :has
 .layout-single-column .account__details .verified-badge a,
 .layout-single-column
   .account__header__bar
@@ -2888,7 +2888,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Reset verified colors */
+// Reset verified colors
 .layout-single-column .account__details .verified-badge a,
 .layout-single-column
   .account__header__bar:has(.account__header__fields .verified)
@@ -2915,7 +2915,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Replace verified__mark */
+// Replace verified__mark
 .layout-single-column .account__details .verified-badge .verified-badge__mark,
 .layout-single-column
   .account__header__bar:has(.account__header__fields .verified)
@@ -2974,7 +2974,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   order: 1;
 }
 
-/* Joined label - first dl is always "Joined" */
+// Joined label - first dl is always "Joined"
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -2993,7 +2993,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   text-transform: unset;
 }
 
-/* Calendar icon for "Joined" field */
+// Calendar icon for "Joined" field
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3008,7 +3008,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 18.5px;
 }
 
-/* Hide ::after for Joined field (no second icon needed) */
+// Hide ::after for Joined field (no second icon needed)
 .layout-single-column
   .account__header__bio
   .account__header__fields
@@ -3036,7 +3036,8 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   padding: 0;
   width: 100%;
 }
-/* Profile links end */
+
+// Profile links end
 .layout-single-column .getting-started__trends h4 {
   border: 0;
   font-size: var(--font-size-heading);
@@ -3077,7 +3078,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   width: 133.5px;
 }
 
-/* Follow/unfollow button */
+// Follow/unfollow button
 body.embed .button.logo-button,
 .layout-single-column .notification__report__actions .button,
 .layout-single-column .column-inline-form button,
@@ -3104,7 +3105,7 @@ body.embed .button.logo-button,
   white-space: nowrap;
 }
 
-/* Dark button borders and other things that have borders all around */
+// Dark button borders and other things that have borders all around
 body.embed .button.logo-button,
 .layout-single-column .notification__report__actions .button,
 .layout-single-column .column-inline-form button,
@@ -3119,7 +3120,7 @@ body.embed .button.logo-button,
   border: 1px solid var(--color-outer-space);
 }
 
-/* Fix focus overflow for 4.1.4-nightly */
+// Fix focus overflow for 4.1.4-nightly
 .layout-single-column .account__header__buttons {
   overflow: visible;
 }
@@ -3138,7 +3139,7 @@ body.embed .button.logo-button,
   width: 36px;
 }
 
-/* Copy-icon size in profile */
+// Copy-icon size in profile
 .layout-single-column .account__header__buttons .icon-button svg {
   height: 18px;
   width: 18px;
@@ -3232,12 +3233,12 @@ body.embed .button.logo-button:hover,
   transform: translateX(0) translateY(0);
 }
 
-/* Misc UI fixes */
+// Misc UI fixes
 .layout-single-column .search__icon .icon.active {
   opacity: 1;
 }
 
-/* Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01) */
+// Follow recommendations, "Who to follow" since Mastodon v4.3.0-alpha.1 (2024-02-01)
 .layout-single-column
   .inline-follow-suggestions__body__scrollable__card
   .account__avatar {
@@ -3245,12 +3246,12 @@ body.embed .button.logo-button:hover,
   border: 0;
 }
 
-/* Explore -> For you shade in bio */
+// Explore -> For you shade in bio
 .layout-single-column .scrollable .account-card__bio::after {
   background: linear-gradient(270deg, var(--color-bg-primary), transparent);
 }
 
-/* Empty column */
+// Empty column
 .layout-single-column .empty-column-indicator {
   min-height: 120px;
 }
@@ -3276,19 +3277,18 @@ body.embed .button.logo-button:hover,
   display: none;
 }
 
-/* General fixes */
+// General fixes
 .layout-single-column .account__header__bar .avatar {
   margin-left: 0 !important;
 }
 
-/* Fix for button line-height */
+// Fix for button line-height
 .layout-single-column .button.logo-button {
   line-height: 22px;
 }
 
-/* Visual indicator about direct messages
-   @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
-
+// Visual indicator about direct messages
+// @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031
 .notification-ungrouped--direct,
 .layout-single-column .detailed-status-direct {
   position: relative;
@@ -3299,7 +3299,7 @@ body.embed .button.logo-button:hover,
   border-left: 20px solid transparent;
   border-top: 20px solid var(--color-text-brand);
 
-  /* Add a ribbon to the corner */
+  // Add a ribbon to the corner
   content: "";
   height: 0;
   position: absolute;
@@ -3308,7 +3308,7 @@ body.embed .button.logo-button:hover,
   width: 0;
 }
 
-/* Indicator for private mentions when grouped notifications are enabled in 4.3.0 */
+// Indicator for private mentions when grouped notifications are enabled in 4.3.0
 .notification-ungrouped--direct .status__wrapper-direct::after,
 .notification-ungrouped--direct .detailed-status-direct::after {
   display: none;
@@ -3318,12 +3318,12 @@ body.embed .button.logo-button:hover,
   top: -40px;
 }
 
-/* Private message conversations */
+// Private message conversations
 .layout-single-column .conversation .status__action-bar {
   padding-left: 0;
 }
 
-/* Default buttons */
+// Default buttons
 .layout-single-column .compose-form__buttons button,
 .layout-single-column .button {
   border-bottom-left-radius: 9999px;
@@ -3332,7 +3332,7 @@ body.embed .button.logo-button:hover,
   border-top-right-radius: 9999px;
 }
 
-/* Compose hover and focus fix */
+// Compose hover and focus fix
 .layout-single-column .report-dialog-modal__actions .button:hover,
 .layout-single-column .server-banner .button,
 .layout-single-column .sign-in-banner .button,
@@ -3344,7 +3344,7 @@ body.embed .button.logo-button:hover,
   transition: all 200ms;
 }
 
-/* Compose form */
+// Compose form
 .layout-single-column .compose-panel .compose-form__highlightable,
 .layout-single-column .compose-panel .compose-form {
   background-color: transparent;
@@ -3361,7 +3361,7 @@ body .compose-form .compose-form__uploads {
   padding-right: 0;
 }
 
-/* New compose form buttons from 4.3.0-alpha 2024-01-27 */
+// New compose form buttons from 4.3.0-alpha 2024-01-27
 .layout-single-column .compose-form__dropdowns {
   gap: 10px;
 }
@@ -3388,7 +3388,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-brand);
 }
 
-/* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
+// Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning,
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning.active,
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning:hover,
@@ -3409,7 +3409,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-brand);
 }
 
-/* Footer items */
+// Footer items
 .link-footer {
   position: relative;
   z-index: 5;
@@ -3424,7 +3424,7 @@ body .compose-form .compose-form__uploads {
   padding-bottom: 6px;
 }
 
-/* Add slight background color for the compose form */
+// Add slight background color for the compose form
 .layout-single-column .compose-form .compose-form__highlightable,
 .layout-single-column
   .compose-form__highlightable
@@ -3437,7 +3437,7 @@ body .compose-form .compose-form__uploads {
   transition: all 200ms;
 }
 
-/* Smooth color transition on focus */
+// Smooth color transition on focus
 .layout-single-column .compose-form .compose-form__highlightable:focus-within,
 .layout-single-column
   .compose-form
@@ -3454,7 +3454,7 @@ body .compose-form .compose-form__uploads {
   border-color: var(--color-bg-compose-form-focus);
 }
 
-/* Fixes bottom row padding when there's a background */
+// Fixes bottom row padding when there's a background
 .layout-single-column
   .compose-form__highlightable
   .compose-form__buttons-wrapper,
@@ -3479,7 +3479,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-on-brand-base);
 }
 
-/* Tertiary button */
+// Tertiary button
 .layout-single-column .button.button-tertiary {
   background-color: transparent !important;
   border: 1px solid var(--color-text-brand) !important;
@@ -3493,7 +3493,7 @@ body .compose-form .compose-form__uploads {
   border: 1px solid var(--color-text-brand);
 }
 
-/* Secondary button */
+// Secondary button
 .layout-single-column .button.button-secondary {
   background-color: transparent;
   border: 1px solid var(--color-text-secondary);
@@ -3512,11 +3512,11 @@ body .compose-form .compose-form__uploads {
   border-color: var(--color-text-brand) !important;
   color: var(--color-bg-primary) !important;
 
-  /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
+  // This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has
   padding: 6px 17px;
 }
 
-/* Smaller icon for back button */
+// Smaller icon for back button
 .layout-single-column .column-back-button i,
 .layout-single-column .column-header__back-button i {
   font-size: 12px;
@@ -3526,7 +3526,7 @@ body .compose-form .compose-form__uploads {
   font-size: var(--font-size-smaller);
 }
 
-/* Smaller icons for status action bar */
+// Smaller icons for status action bar
 .layout-single-column .status__action-bar .icon {
   font-size: 14.6px;
   min-width: 18px;
@@ -3543,16 +3543,16 @@ body .compose-form .compose-form__uploads {
 }
 
 .layout-single-column .status__action-bar .icon-button {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   height: 24px !important;
   min-width: 45.78px !important;
   position: relative;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: unset !important;
 }
 
-/* Fix reply button not starting from the beginning */
+// Fix reply button not starting from the beginning
 .layout-single-column .status__action-bar .icon-button:nth-of-type(1) {
   min-width: 42.22px !important;
   width: 42.22px !important;
@@ -3577,7 +3577,7 @@ body .compose-form .compose-form__uploads {
   }
 }
 
-/* Order of items in v4.3.0-beta2-2024-09-29 */
+// Order of items in v4.3.0-beta2-2024-09-29
 .columns-area__panels__pane--navigational .navigation-panel__logo {
   order: 1;
 }
@@ -3595,17 +3595,17 @@ body .compose-form .compose-form__uploads {
 }
 
 @media screen and (width >= 760px) {
-  /* Hide the space between Lists and the actual lists */
+  // Hide the space between Lists and the actual lists
   .layout-single-column .list-panel > hr,
   .layout-single-column .list-panel + hr {
     display: none;
   }
 
   .layout-single-column .account__header__bar .avatar .account__avatar {
-    /* It's inlined so we have to use !important */
+    // It's inlined so we have to use !important
     height: 133.5px !important;
 
-    /* It's inlined so we have to use !important */
+    // It's inlined so we have to use !important
     width: 133.5px !important;
   }
 
@@ -3672,7 +3672,7 @@ body .compose-form .compose-form__uploads {
     margin-left: 25px;
   }
 
-  /* Hide lists if there's not enough space on desktop vertically */
+  // Hide lists if there's not enough space on desktop vertically
   .layout-single-column .list-panel {
     opacity: 0;
     order: 22;
@@ -3686,7 +3686,7 @@ body .compose-form .compose-form__uploads {
     opacity: 1;
   }
 
-  /* Order of the side nav items */
+  // Order of the side nav items
   .layout-single-column .column-link[href="/home"] {
     order: 2;
   }
@@ -3769,22 +3769,22 @@ body .compose-form .compose-form__uploads {
     height: 24px !important;
     position: relative;
 
-    /* It's inlined so we have to use !important */
+    // It's inlined so we have to use !important
     width: 50px !important;
   }
 
   .layout-single-column .conversation .status__action-bar .icon-button {
-    /* It's inlined so we have to use !important */
+    // It's inlined so we have to use !important
     width: auto !important;
   }
 
-  /* Fix list links if they are too short */
+  // Fix list links if they are too short
   .layout-single-column .list-panel .column-link {
     display: flex;
   }
 }
 
-/* New lists panel in v4.4.0-beta.1+mementomods-2025-06-14 */
+// New lists panel in v4.4.0-beta.1+mementomods-2025-06-14
 .layout-single-column .navigation-panel__list-panel__header {
   .column-link {
     order: 1;
@@ -3797,7 +3797,7 @@ body .compose-form .compose-form__uploads {
   }
 }
 
-/* Replace bookmark icon */
+// Replace bookmark icon
 .layout-single-column .status .icon-button:hover:focus .icon-bookmark,
 .layout-single-column .status .icon-button:focus .icon-bookmark,
 .layout-single-column .status .icon-button.active .icon-bookmark {
@@ -3808,30 +3808,28 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-bookmark-status-hover);
 }
 
-/* Replace the original icons (after 4.3.0)
--------------------------------------------
-
-/* Set size for the filter bar and profile icons */
-
+// Replace the original icons (after 4.3.0)
+// -------------------------------------------
+// /* Set size for the filter bar and profile icons
 .layout-single-column .account__header__buttons .icon,
 .layout-single-column .notification__filter-bar .icon {
   --size-icon: 20px;
 }
 
-/* Set size for the column link icons */
+// Set size for the column link icons
 .layout-single-column .column-link .icon {
   --size-icon: 22px;
   height: 22px;
   width: 22px;
 }
 
-/* Set size for the status icons */
+// Set size for the status icons
 .layout-single-column .detailed-status__action-bar .icon,
 .layout-single-column .status__action-bar .icon {
   --size-icon: 19px;
 }
 
-/* General for all column icons */
+// General for all column icons
 .layout-single-column
   .notification-group--favourite
   .notification__message
@@ -3872,7 +3870,7 @@ body .compose-form .compose-form__uploads {
   width: 18px;
 }
 
-/* Hide the original icon from behind */
+// Hide the original icon from behind
 .layout-single-column .ui__navigation-bar__item[href="/home"] svg path,
 .layout-single-column .ui__navigation-bar__item[href="/notifications"] svg path,
 .layout-single-column .ui__navigation-bar__item[href="/explore"] svg path,
@@ -3921,7 +3919,7 @@ body .compose-form .compose-form__uploads {
   display: none;
 }
 
-/* ...except for these icons, we kinda like them as they are */
+// ...except for these icons, we kinda like them as they are
 .layout-single-column .icon-user-plus.column-link__icon path,
 .layout-single-column .icon.icon-undefined path,
 .layout-single-column .icon.icon-users path,
@@ -3938,7 +3936,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: none;
 }
 
-/* Home icon */
+// Home icon
 .layout-single-column .ui__navigation-bar__item[href="/home"] .icon,
 .layout-single-column .column-link .icon-home {
   background-image: var(--icon-home);
@@ -3975,7 +3973,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-cross-red);
 }
 
-/* Notifications icon */
+// Notifications icon
 .layout-single-column .ui__navigation-bar__item[href="/notifications"] .icon,
 .layout-single-column .icon.icon-bell-o,
 .layout-single-column .column-link .icon-bell {
@@ -3989,7 +3987,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-bell-active);
 }
 
-/* Explore icon */
+// Explore icon
 .layout-single-column .ui__navigation-bar__item[href="/explore"] .icon,
 .layout-single-column .column-link .icon-explore,
 .layout-single-column .column-link .icon-hashtag {
@@ -4002,7 +4000,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-hashtag-active);
 }
 
-/* Live feeds icon */
+// Live feeds icon
 .layout-single-column .column-link .icon-globe {
   background-image: var(--icon-globe);
 }
@@ -4011,7 +4009,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-globe-active);
 }
 
-/* Private mentions icon */
+// Private mentions icon
 .layout-single-column .column-link .icon-at {
   background-image: var(--icon-direct-messages);
 }
@@ -4021,7 +4019,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   transform: scale(1.15);
 }
 
-/* Bookmarks icon */
+// Bookmarks icon
 .layout-single-column .column-link .icon-bookmarks {
   background-image: var(--icon-bookmark-column-link);
 }
@@ -4030,39 +4028,39 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-bookmark-column-link-active);
 }
 
-/* Preferences icon */
+// Preferences icon
 .layout-single-column .column-link .icon-cog {
   --size-icon: 22px;
   background-image: var(--icon-sliders-contrast);
 }
 
-/* Settings icon */
+// Settings icon
 .layout-single-column .column-header__button .icon-sliders {
   --size-icon: 20px;
   background-image: var(--icon-sliders);
 }
 
 .column-header__button.active .icon-sliders {
-  /* Use contrast icon */
+  // Use contrast icon
   background-image: var(--icon-sliders-contrast);
 
-  /* Disable rotate */
+  // Disable rotate
   transform: none;
 }
 
-/* Administration icon */
+// Administration icon
 .layout-single-column .column-link .icon-tachometer {
   --size-icon: 22px;
   background-image: var(--icon-administration);
 }
 
-/* Moderation icon */
+// Moderation icon
 .layout-single-column .column-link .icon-flag {
   --size-icon: 22px;
   background-image: var(--icon-moderation);
 }
 
-/* Replace retweet icon */
+// Replace retweet icon
 .layout-single-column .notification__filter-bar .icon-retweet {
   background-image: var(--icon-boost-notification-filter-bar);
 }
@@ -4084,7 +4082,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-repeat: no-repeat;
 }
 
-/* Replace notification retweet icon */
+// Replace notification retweet icon
 .layout-single-column .notification-group--reblog .icon-repeat,
 .layout-single-column .notification-reblog .icon-retweet {
   background-image: var(--icon-boost-notification-wrapper);
@@ -4104,9 +4102,9 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-repeat: no-repeat;
 }
 
-/* Un-boost and un-bookmark styles */
+// Un-boost and un-bookmark styles
 
-/* Mobile devices */
+// Mobile devices
 .layout-single-column button.icon-button:not(.active):focus .icon-retweet,
 .layout-single-column button.icon-button:not(.active):hover .icon-retweet {
   animation: none;
@@ -4124,7 +4122,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-bookmark);
 }
 
-/* Un-boost and un-bookmark numbers on explore page */
+// Un-boost and un-bookmark numbers on explore page
 .layout-single-column
   button.icon-button:not(.active):focus
   .icon-retweet
@@ -4136,13 +4134,13 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   color: var(--color-text-secondary);
 }
 
-/* Replace bookmark icon */
+// Replace bookmark icon
 .layout-single-column .detailed-status .icon-bookmark,
 .layout-single-column .status .icon-bookmark {
   background-image: var(--icon-bookmark);
 }
 
-/* If a hover device */
+// If a hover device
 @media (hover: hover) {
   .layout-single-column button.icon-button:not(.active):hover .icon-retweet,
   .layout-single-column
@@ -4174,7 +4172,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   color: var(--color-text-error);
 }
 
-/* Replace reply icon */
+// Replace reply icon
 .layout-single-column .notification__filter-bar .icon-mail-reply,
 .layout-single-column .notification__filter-bar .icon-reply,
 .layout-single-column .notification__filter-bar .icon-reply-all {
@@ -4245,13 +4243,13 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-reply-status-hover);
 }
 
-/* More icons */
+// More icons
 .layout-single-column .icon-list-ul {
   background-image: var(--icon-list);
   top: 1px;
 }
 
-/* "More" icon */
+// "More" icon
 .layout-single-column .icon-ellipsis-h {
   background-image: var(--icon-more-status-action-bar);
   background-position: center;
@@ -4269,7 +4267,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   background-image: var(--icon-search-opaque);
 }
 
-/* Close icon */
+// Close icon
 .layout-single-column .icon-close {
   background-image: var(--icon-close);
 }
@@ -4297,7 +4295,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   transform: translateX(-6px);
 }
 
-/* Add border radius to media */
+// Add border radius to media
 .layout-single-column .media-gallery,
 .layout-single-column .audio-player,
 .layout-single-column .video-player,
@@ -4308,17 +4306,17 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   overflow: hidden;
 }
 
-/* Fix double border on media */
+// Fix double border on media
 .layout-single-column .media-gallery .media-gallery__item .media-gallery__gifv {
   border: 0;
 }
 
-/* Exception for your own profile media gallery */
+// Exception for your own profile media gallery
 .layout-single-column .account-gallery__container .media-gallery__gifv {
   border-radius: 0;
 }
 
-/* Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on) */
+// Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on)
 .layout-single-column
   .notification.notification-reblog
   .media-gallery:has(.media-gallery__gifv.autoplay),
@@ -4331,17 +4329,17 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   display: none;
 }
 
-/* More distinct focus color for accessibility, instead of just white */
+// More distinct focus color for accessibility, instead of just white
 .layout-single-column input:focus-visible {
   outline-color: var(--color-text-brand);
   outline-style: solid;
 }
 
-/* Embeds outside Mastodon */
+// Embeds outside Mastodon
 body.embed {
   background-color: #0e1014 !important;
 
-  /* Make sure with !important */
+  // Make sure with !important
   border: 0;
   overflow: hidden !important;
 }
@@ -4351,35 +4349,35 @@ body.embed .entry .detailed-status {
   background-color: #00000059;
   border: 0 !important;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   border-radius: 0 !important;
   overflow: hidden;
 }
 
-/* Destructive colors (For you -suggestions, users when focused to the follow button */
+// Destructive colors (For you -suggestions, users when focused to the follow button
 .layout-single-column .button.logo-button.button--destructive:active,
 .layout-single-column .button.logo-button.button--destructive:focus {
   background-color: var(--color-text-error);
   border-color: var(--color-text-error);
 }
 
-/* Fix character counter color when it's over the limit */
+// Fix character counter color when it's over the limit
 .layout-single-column .character-counter.character-counter--over {
   color: var(--color-text-error);
 }
 
-/* Show more in server banner */
+// Show more in server banner
 .layout-single-column .server-banner__meta__column {
   max-width: 60%;
   width: unset;
 }
 
-/* Increase gap for server-banner__meta */
+// Increase gap for server-banner__meta
 .layout-single-column .server-banner__meta {
   gap: 25px;
 }
 
-/* Native Mastodon 4.1.2-nightly threaded lines */
+// Native Mastodon 4.1.2-nightly threaded lines
 .layout-single-column .status__line--first {
   height: calc(100% + var(--size-avatar));
 }
@@ -4388,7 +4386,7 @@ body.embed .entry .detailed-status {
   height: calc(100% + 32px);
 }
 
-/* Default lines when replying in real time */
+// Default lines when replying in real time
 .layout-single-column
   div[tabindex="-1"]:has(.status--in-thread)
   .status--in-thread:not(.status--first-in-thread)
@@ -4396,7 +4394,7 @@ body.embed .entry .detailed-status {
   height: 0;
 }
 
-/* Hide line before first in thread */
+// Hide line before first in thread
 .layout-single-column
   div[tabindex="-1"]:has(.status--in-thread)
   + div[tabindex="-1"]
@@ -4426,7 +4424,7 @@ body.embed .entry .detailed-status {
   border-top: 0;
 }
 
-/* Threaded line, actually */
+// Threaded line, actually
 .layout-single-column .status__line {
   border-inline-start: 2px solid var(--color-border-primary);
 }
@@ -4435,7 +4433,7 @@ body.embed .entry .detailed-status {
   background-color: var(--color-border-primary);
 }
 
-/* Hide the "stub" from the first status line */
+// Hide the "stub" from the first status line
 div[tabindex="-1"]
   + div[tabindex="-1"]
   > .status__wrapper
@@ -4455,7 +4453,7 @@ div[tabindex="-1"]
   padding-left: 4px;
 }
 
-/* Scrollbars */
+// Scrollbars
 *::-webkit-scrollbar,
 .layout-single-column .drawer__inner::-webkit-scrollbar,
 .layout-single-column textarea::-webkit-scrollbar,
@@ -4528,7 +4526,7 @@ div[tabindex="-1"]
   background-color: transparent;
 }
 
-/* Drawer scollbars */
+// Drawer scollbars
 .layout-single-column .drawer__inner::-webkit-scrollbar-thumb {
   background-color: var(--color-text-secondary);
   border: 0;
@@ -4554,7 +4552,7 @@ div[tabindex="-1"]
   background-color: var(--color-bg-tertiary);
 }
 
-/* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
+// New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16
 .layout-single-column .onboarding__steps__item,
 .layout-single-column .onboarding__link {
   background-color: var(--color-bg-tertiary);
@@ -4569,7 +4567,7 @@ div[tabindex="-1"]
   margin-bottom: 10px;
 }
 
-/* Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout */
+// Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout
 .layout-single-column .explore__search-results {
   border: 0;
 }
@@ -4584,14 +4582,14 @@ div[tabindex="-1"]
   border-top: 0;
 }
 
-/* Hide search (can be found under Explore in the mobile */
+// Hide search (can be found under Explore in the mobile
 .layout-single-column
   .ui__header__links
   .button.button-secondary[href="/search"] {
   display: none;
 }
 
-/* More compact compose button on mobile */
+// More compact compose button on mobile
 .layout-single-column
   .ui__header__links
   .button.button-secondary[href="/publish"] {
@@ -4621,7 +4619,7 @@ div[tabindex="-1"]
   color: transparent;
 }
 
-/* Header on mobile */
+// Header on mobile
 @media screen and (width <= 1174px) {
   .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
     margin-left: 3px;
@@ -4650,7 +4648,7 @@ div[tabindex="-1"]
     z-index: 2;
   }
 
-  /* Set a backdrop blur background to both top bars */
+  // Set a backdrop blur background to both top bars
   .app-body:not(.layout-multiple-columns) .ui__header {
     background-color: var(--color-bg-90);
     height: 55px;
@@ -4688,7 +4686,7 @@ div[tabindex="-1"]
   }
 }
 
-/* List panel */
+// List panel
 .layout-single-column .list-panel {
   background-color: var(--color-bg-primary);
   margin: 0 0 5px;
@@ -4709,7 +4707,7 @@ div[tabindex="-1"]
 }
 
 @media screen and (width >= 1175px) {
-  /* Fade in list panel, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon */
+  // Fade in list panel, thanks for the idea @nileane@nileane.fr! https://github.com/nileane/TangerineUI-for-Mastodon
   .layout-single-column
     .column-link[href="/lists"]:is(.active, :hover)
     + .list-panel,
@@ -4718,7 +4716,7 @@ div[tabindex="-1"]
   }
 }
 
-/* Spare animations */
+// Spare animations
 @keyframes fadein {
   from {
     opacity: 0;
@@ -4731,10 +4729,8 @@ div[tabindex="-1"]
   }
 }
 
-/*
- * Heart animation micro-interaction start
- * ---------------------------------------
- */
+// Heart animation micro-interaction start
+// ---------------------------------------
 
 @keyframes heart-animate {
   100% {
@@ -4742,7 +4738,7 @@ div[tabindex="-1"]
   }
 }
 
-/* Left sidebar column links */
+// Left sidebar column links
 .layout-single-column .column-link .icon-star {
   background-image: var(--icon-heart-column-link);
 }
@@ -4802,12 +4798,12 @@ div[tabindex="-1"]
   left: -3px;
 }
 
-/* Disable default Mastodon animation: spring-rotate-in 1s linear; */
+// Disable default Mastodon animation: spring-rotate-in 1s linear;
 .layout-single-column.no-reduce-motion .icon-button.star-icon .icon-star {
   animation: none !important;
 }
 
-/* While active, hide the original icon */
+// While active, hide the original icon
 .layout-single-column.no-reduce-motion
   .icon-button.star-icon.activate:hover
   .icon-star {
@@ -4843,7 +4839,7 @@ div[tabindex="-1"]
   .layout-single-column.no-reduce-motion
     .icon-button.star-icon.activate
     .icon-star {
-    /* 28 frames */
+    // 28 frames
     animation: heart-animate 0.8s steps(28) forwards !important;
   }
 }
@@ -4855,7 +4851,7 @@ div[tabindex="-1"]
   left: -28px;
 }
 
-/* If number enabled in core */
+// If number enabled in core
 .layout-single-column.no-reduce-motion
   .status
   .icon-button.icon-button--with-counter.star-icon
@@ -4915,12 +4911,12 @@ div[tabindex="-1"]
   }
 }
 
-/* Make sure popouts stay on top */
+// Make sure popouts stay on top
 div[data-popper-placement] {
   z-index: 99;
 }
 
-/* New navigation bar for mobile in v4.4.0-beta.1+mementomods-2025-06-14 */
+// New navigation bar for mobile in v4.4.0-beta.1+mementomods-2025-06-14
 body .columns-area__panels__pane {
   z-index: 22;
 }
@@ -4947,7 +4943,7 @@ body .ui__navigation-bar {
   padding-top: 6px;
 }
 
-/* Speed up animation in the new mobile slideout navigation for v4.4.0-beta.1 */
+// Speed up animation in the new mobile slideout navigation for v4.4.0-beta.1
 body.layout-single-column .columns-area__panels__pane__inner,
 body.layout-single-column .ui::after,
 body.layout-single-column .ui__header,
@@ -4961,12 +4957,12 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
   gap: 12px;
 }
 
-/* Hide separators in the new navigation panel, for now, v4.4.0-beta.2 */
+// Hide separators in the new navigation panel, for now, v4.4.0-beta.2
 .navigation-panel__list-panel__header__sep {
   display: none;
 }
 
-/* Fix indent for the new navigation panel, v4.4.0-beta.2 */
+// Fix indent for the new navigation panel, v4.4.0-beta.2
 .navigation-panel__list-panel__items {
   padding-inline-start: 40px;
 }
@@ -5001,681 +4997,534 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
   }
 }
 
-/*
- * --------------------------------------
- * Heart animation micro-interaction ends
- */
-
-/*
- * Star animation micro-interaction start (depends on the hearts above)
- * -------------------------------------------------------------------------
- */
-
-/* 1/2: If you prefer stars remove this line and the last line of this file
-@media (hover: hover) {
-  .layout-single-column button.icon-button:not(.active):hover .icon-star ~ span,
-  .layout-single-column button.icon-button:not(.active):hover .icon-star {
-    color: var(--color-text-warning);
-  }
-
-  .layout-single-column button.icon-button.active:hover .icon-star ~ span {
-    color: var(--color-text-secondary);
-  }
-}
-
-.layout-single-column .column-link .icon-star {
-  background-image: var(--icon-star-column-link);
-}
-
-.layout-single-column .column-link.active .icon-star {
-  background-image: var(--icon-star-column-link-active);
-}
-
-.layout-single-column .notification-group--favourite .icon-star,
-.layout-single-column .notification-favourite .icon-star {
-  background-image: var(--icon-star-notification);
-  background-repeat: no-repeat;
-}
-
-.layout-single-column .notification__filter-bar .active .icon-star {
-  background-image: var(--icon-star-active);
-}
-
-.layout-single-column button.icon-button:hover .icon-star ~ span {
-  color: var(--color-text-secondary);
-}
-
-.layout-single-column button.icon-button.activate .icon-star ~ span,
-.layout-single-column button.icon-button.active .icon-star ~ span {
-  color: var(--color-text-warning);
-}
-
-.layout-single-column .notification__filter-bar .icon-star,
-.layout-single-column .detailed-status__action-bar .icon-button .icon-star,
-.layout-single-column .status__action-bar .icon-button .icon-star {
-  --size-icon: 20px;
-  background-image: var(--icon-star-detailed-status-action-bar);
-}
-
-.layout-single-column .notification__filter-bar button.icon-button.active .icon-star,
-.layout-single-column .detailed-status__action-bar button.icon-button.active .icon-star,
-.layout-single-column .status__action-bar button.icon-button.active .icon-star {
-  background-image: var(--icon-star-detailed-status-action-bar) !important;
-  display: block;
-}
-
-.layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star {
-  background-color: unset !important;
-  background-image: var(--icon-star-detailed-status-action-bar-active) !important;
-  background-position: center;
-  color: var(--color-text-warning);
-  left: unset !important;
-  position: relative;
-  top: 0;
-  transform: none;
-  width: unset;
-  height: unset !important;
-}
-
-.layout-single-column.no-reduce-motion .icon-button.star-icon.active .icon-star {
-  animation: none !important;
-  background-image: var(--icon-star-detailed-status-action-bar-active) !important;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star {
-    animation: sparkles-width .65s 1, sparkles-size .65s 1, popping .5s 1 !important;
-  }
-
-  .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
-  .layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
-    animation: sparkles-width .65s 1, sparkles-size .65s 1;
-  }
-
-  .layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
-  .layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
-    animation: ring-border-width .35s 1, ring-size .35s 1;
-  }
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
-.layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
-  background-color: unset !important;
-  content: '';
-  height: 50px !important;
-  left: 50% !important;
-  margin-left: -24px;
-  margin-top: -20px;
-  opacity: unset;
-  position: absolute;
-  top: calc(50% + 1px);
-  transform: none;
-  width: 50px !important;
-  z-index: unset;
-}
-
-.layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star,
-.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
-.layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
-  display: block !important;
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
-.layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
-  border: 0px solid var(--color-text-warning);
-  border-radius: 10em;
-  content: '';
-  height: 0em;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: 50px 50px;
-  width: 0em;
-}
-
-.layout-single-column .icon-button.star-icon.active,
-.layout-single-column .notification-group--favourite .star-icon,
-.layout-single-column .notification-favourite .star-icon {
-  color: var(--color-text-warning);
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.deactivate:hover .icon-star,
-.layout-single-column .status__action-bar button.icon-button.deactivate.star-icon:hover .icon-star,
-.layout-single-column .detailed-status__action-bar .icon-button.deactivate .icon-star,
-.layout-single-column .detailed-status button.icon-button.deactivate .icon-star,
-.layout-single-column .status button.icon-button.deactivate .icon-star {
-  background-image: var(--icon-star-detailed-status-action-bar-hover) !important;
-  color: var(--color-text-secondary);
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .icon-star,
-.layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .icon-star,
-.layout-single-column .detailed-status__action-bar .icon-button:hover .icon-star,
-.layout-single-column .detailed-status button.icon-button:hover .icon-star,
-.layout-single-column .status button.icon-button:hover .icon-star {
-  background-image: var(--icon-star-detailed-status-action-bar-active) !important;
-  color: var(--color-text-warning);
-  position: relative;
-  top: 0;
-}
-
-.layout-single-column .detailed-status__action-bar .icon-button:focus .icon-star,
-.layout-single-column .detailed-status button.icon-button:focus .icon-star,
-.layout-single-column .status button.icon-button:hover .icon-star {
-  color: var(--color-text-secondary);
-}
-
-.layout-single-column button:focus,
-.layout-single-column .icon-button:focus {
-  outline: 0;
-}
-
-.layout-single-column button:focus-visible,
-.layout-single-column .icon-button:focus-visible {
-  outline: 2px solid var(--color-text-brand);
-}
-
-.layout-single-column .search__popout__menu__item {
-  align-items: initial;
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.star-icon.icon-button--with-counter.star-icon.activate::after,
-.layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
-  left: calc(50% - 8px) !important;
-  top: calc(50% + -1px) !important;
-}
-
-.layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
-.layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
-  left: calc(50% - 8px) !important;
-}
-
-.layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
-  left: 0 !important;
-  position: absolute !important;
-  top: unset !important;
-}
-
-@media (hover: none) {
-  .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .icon-star,
-  .layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .icon-star,
-  .layout-single-column .detailed-status__action-bar .icon-button:hover .icon-star,
-  .layout-single-column .detailed-status button.icon-button:hover .icon-star,
-  .layout-single-column .status button.icon-button:hover .icon-star {
-    background-image: var(--icon-star-detailed-status-action-bar-active) !important;
-  }
-}
-
-@media (width <= 888px) {
-  .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
-    left: calc(50% - 11px) !important;
-  }
-
-  .layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
-  .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
-    left: calc(50% - 11px) !important;
-  }
-}
-
-@keyframes popping {
-  0% {
-    transform: scale(0, 0);
-  }
-
-  40% {
-    transform: scale(0, 0);
-  }
-
-  75% {
-    transform: scale(1.3, 1.3);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-@keyframes ring-border-width {
-  0% {
-    border-width: 0;
-  }
-
-  50% {
-    border-width: 0.22em;
-  }
-
-  100% {
-    border-width: 0;
-  }
-}
-
-@keyframes ring-size {
-  0% {
-    height: 0;
-    width: 0;
-  }
-
-  100% {
-    height: 2em;
-    width: 2em;
-  }
-}
-
-@keyframes sparkles-width {
-  0% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.3' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  1% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  2% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.9' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  3% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  4% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.5' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  5% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  6% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.1' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  7% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  8% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.7' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  9% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  10% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.3' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  11% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='15.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  12% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='16.9' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  13% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='17.3' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  14% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='17.3' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  15% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='18' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  16% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  17% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  18% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  19% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  20% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  21% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  22% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  23% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  24% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  25% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  26% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  27% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  28% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  29% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  30% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  31% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  32% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  33% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  34% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  35% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  36% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  37% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  38% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  39% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  40% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  41% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  42% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  43% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  44% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  45% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  46% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  47% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  48% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  49% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  50% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  51% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  52% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  53% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  54% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  55% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  56% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  57% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  58% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  59% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  60% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  61% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  62% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  63% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  64% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  65% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  66% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  67% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  68% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  69% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  70% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  71% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  72% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  73% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  74% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  75% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  76% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  77% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  78% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  79% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  80% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  81% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  82% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  83% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  84% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  86% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.8' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  87% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.6' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  88% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.4' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  89% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.2' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  90% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  91% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  92% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  93% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  94% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  95% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  96% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  97% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  98% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  99% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-
-  100% {
-    content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
-  }
-}
-
-@keyframes sparkles-size {
-  0% {
-    transform: scale(0.1, 0.1);
-  }
-
-  5% {
-    transform: scale(0.1, 0.1);
-  }
-
-  85% {
-    transform: scale(1, 1);
-  }
-}
-
-2/2: If you prefer stars remove this line too */
+// --------------------------------------
+// Heart animation micro-interaction ends
+
+// Star animation micro-interaction start (depends on the hearts above)
+// -------------------------------------------------------------------------
+
+// 1/2: If you prefer stars remove this line and the last line of this file
+// @media (hover: hover) {
+// .layout-single-column button.icon-button:not(.active):hover .icon-star ~ span,
+// .layout-single-column button.icon-button:not(.active):hover .icon-star {
+// color: var(--color-text-warning);
+// }
+// .layout-single-column button.icon-button.active:hover .icon-star ~ span {
+// color: var(--color-text-secondary);
+// }
+// }
+// .layout-single-column .column-link .icon-star {
+// background-image: var(--icon-star-column-link);
+// }
+// .layout-single-column .column-link.active .icon-star {
+// background-image: var(--icon-star-column-link-active);
+// }
+// .layout-single-column .notification-group--favourite .icon-star,
+// .layout-single-column .notification-favourite .icon-star {
+// background-image: var(--icon-star-notification);
+// background-repeat: no-repeat;
+// }
+// .layout-single-column .notification__filter-bar .active .icon-star {
+// background-image: var(--icon-star-active);
+// }
+// .layout-single-column button.icon-button:hover .icon-star ~ span {
+// color: var(--color-text-secondary);
+// }
+// .layout-single-column button.icon-button.activate .icon-star ~ span,
+// .layout-single-column button.icon-button.active .icon-star ~ span {
+// color: var(--color-text-warning);
+// }
+// .layout-single-column .notification__filter-bar .icon-star,
+// .layout-single-column .detailed-status__action-bar .icon-button .icon-star,
+// .layout-single-column .status__action-bar .icon-button .icon-star {
+// --size-icon: 20px;
+// background-image: var(--icon-star-detailed-status-action-bar);
+// }
+// .layout-single-column .notification__filter-bar button.icon-button.active .icon-star,
+// .layout-single-column .detailed-status__action-bar button.icon-button.active .icon-star,
+// .layout-single-column .status__action-bar button.icon-button.active .icon-star {
+// background-image: var(--icon-star-detailed-status-action-bar) !important;
+// display: block;
+// }
+// .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star {
+// background-color: unset !important;
+// background-image: var(--icon-star-detailed-status-action-bar-active) !important;
+// background-position: center;
+// color: var(--color-text-warning);
+// left: unset !important;
+// position: relative;
+// top: 0;
+// transform: none;
+// width: unset;
+// height: unset !important;
+// }
+// .layout-single-column.no-reduce-motion .icon-button.star-icon.active .icon-star {
+// animation: none !important;
+// background-image: var(--icon-star-detailed-status-action-bar-active) !important;
+// }
+// @media (prefers-reduced-motion: no-preference) {
+// .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star {
+// animation: sparkles-width .65s 1, sparkles-size .65s 1, popping .5s 1 !important;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
+// animation: sparkles-width .65s 1, sparkles-size .65s 1;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
+// animation: ring-border-width .35s 1, ring-size .35s 1;
+// }
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
+// background-color: unset !important;
+// content: '';
+// height: 50px !important;
+// left: 50% !important;
+// margin-left: -24px;
+// margin-top: -20px;
+// opacity: unset;
+// position: absolute;
+// top: calc(50% + 1px);
+// transform: none;
+// width: 50px !important;
+// z-index: unset;
+// }
+// .layout-single-column.no-reduce-motion .icon-button.star-icon.activate .icon-star,
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate::after,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon::after {
+// display: block !important;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
+// border: 0px solid var(--color-text-warning);
+// border-radius: 10em;
+// content: '';
+// height: 0em;
+// left: 50%;
+// position: absolute;
+// top: 50%;
+// transform: translate(-50%, -50%);
+// transform-origin: 50px 50px;
+// width: 0em;
+// }
+// .layout-single-column .icon-button.star-icon.active,
+// .layout-single-column .notification-group--favourite .star-icon,
+// .layout-single-column .notification-favourite .star-icon {
+// color: var(--color-text-warning);
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.deactivate:hover .icon-star,
+// .layout-single-column .status__action-bar button.icon-button.deactivate.star-icon:hover .icon-star,
+// .layout-single-column .detailed-status__action-bar .icon-button.deactivate .icon-star,
+// .layout-single-column .detailed-status button.icon-button.deactivate .icon-star,
+// .layout-single-column .status button.icon-button.deactivate .icon-star {
+// background-image: var(--icon-star-detailed-status-action-bar-hover) !important;
+// color: var(--color-text-secondary);
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .icon-star,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .icon-star,
+// .layout-single-column .detailed-status__action-bar .icon-button:hover .icon-star,
+// .layout-single-column .detailed-status button.icon-button:hover .icon-star,
+// .layout-single-column .status button.icon-button:hover .icon-star {
+// background-image: var(--icon-star-detailed-status-action-bar-active) !important;
+// color: var(--color-text-warning);
+// position: relative;
+// top: 0;
+// }
+// .layout-single-column .detailed-status__action-bar .icon-button:focus .icon-star,
+// .layout-single-column .detailed-status button.icon-button:focus .icon-star,
+// .layout-single-column .status button.icon-button:hover .icon-star {
+// color: var(--color-text-secondary);
+// }
+// .layout-single-column button:focus,
+// .layout-single-column .icon-button:focus {
+// outline: 0;
+// }
+// .layout-single-column button:focus-visible,
+// .layout-single-column .icon-button:focus-visible {
+// outline: 2px solid var(--color-text-brand);
+// }
+// .layout-single-column .search__popout__menu__item {
+// align-items: initial;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.icon-button--with-counter.star-icon.activate::after,
+// .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
+// left: calc(50% - 8px) !important;
+// top: calc(50% + -1px) !important;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
+// .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
+// left: calc(50% - 8px) !important;
+// }
+// .layout-single-column button.icon-button.icon-button--with-counter.activate.star-icon > .icon-star {
+// left: 0 !important;
+// position: absolute !important;
+// top: unset !important;
+// }
+// @media (hover: none) {
+// .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .icon-star,
+// .layout-single-column .status__action-bar button.icon-button.activate.star-icon:hover .icon-star,
+// .layout-single-column .detailed-status__action-bar .icon-button:hover .icon-star,
+// .layout-single-column .detailed-status button.icon-button:hover .icon-star,
+// .layout-single-column .status button.icon-button:hover .icon-star {
+// background-image: var(--icon-star-detailed-status-action-bar-active) !important;
+// }
+// }
+// @media (width <= 888px) {
+// .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.star-icon.activate.star-icon::after {
+// left: calc(50% - 11px) !important;
+// }
+// .layout-single-column .detailed-status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before,
+// .layout-single-column .status__action-bar button.icon-button.icon-button--with-counter.activate.star-icon::before {
+// left: calc(50% - 11px) !important;
+// }
+// }
+// @keyframes popping {
+// 0% {
+// transform: scale(0, 0);
+// }
+// 40% {
+// transform: scale(0, 0);
+// }
+// 75% {
+// transform: scale(1.3, 1.3);
+// }
+// 100% {
+// transform: scale(1, 1);
+// }
+// }
+// @keyframes ring-border-width {
+// 0% {
+// border-width: 0;
+// }
+// 50% {
+// border-width: 0.22em;
+// }
+// 100% {
+// border-width: 0;
+// }
+// }
+// @keyframes ring-size {
+// 0% {
+// height: 0;
+// width: 0;
+// }
+// 100% {
+// height: 2em;
+// width: 2em;
+// }
+// }
+// @keyframes sparkles-width {
+// 0% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.3' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 1% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 2% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.9' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 3% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 4% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.5' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 5% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 6% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.1' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 7% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 8% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.7' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 9% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 10% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.3' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 11% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='15.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 12% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='16.9' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 13% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='17.3' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 14% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='17.3' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 15% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='18' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 16% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 17% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 18% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 19% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 20% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='14' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 21% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 22% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 23% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 24% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 25% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='13' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 26% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 27% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 28% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 29% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 30% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='12' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 31% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 32% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 33% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 34% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 35% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='11' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 36% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 37% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 38% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 39% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 40% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='10' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 41% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 42% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 43% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 44% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 45% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='9' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 46% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 47% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 48% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 49% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 50% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 51% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 52% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 53% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 54% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 55% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='7' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 56% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 57% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 58% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 59% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 60% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 61% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 62% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 63% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 64% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='5.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 65% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 66% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 67% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 68% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 69% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 70% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 71% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 72% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 73% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 74% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='3' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 75% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 76% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 77% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 78% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 79% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 80% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 81% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 82% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 83% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 84% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='1' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 86% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.8' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 87% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.6' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 88% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.4' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 89% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0.2' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 90% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 91% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 92% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 93% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 94% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 95% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 96% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 97% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 98% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 99% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// 100% {
+// content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' height='40' width='40' class='stardust'%3E%3Ccircle cx='20' cy='20' r='14' stroke='%23fa733e' stroke-dasharray='1 15' stroke-dashoffset='23' stroke-width='0' fill='transparent' /%3E%3C/svg%3E");
+// }
+// }
+// @keyframes sparkles-size {
+// 0% {
+// transform: scale(0.1, 0.1);
+// }
+// 5% {
+// transform: scale(0.1, 0.1);
+// }
+// 85% {
+// transform: scale(1, 1);
+// }
+// }
+// 2/2: If you prefer stars remove this line too

@@ -1,10 +1,10 @@
-/* Import base variables and themes */
+// Import base variables and themes
 @use 'common/tokens';
 @use 'common/variables';
 @use 'common/theme-high-contrast';
 @use 'common/theme-light';
 
-/* Import base components */
+// Import base components
 @use 'components/basics';
 @use 'components/modals';
 @use 'components/forms';

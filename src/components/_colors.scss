@@ -1,5 +1,5 @@
-/* Color and styling utilities */
-/* Border colors */
+// Color and styling utilities
+// Border colors
 .layout-single-column .search-results__section__header,
 .layout-single-column .account__header__bar,
 .layout-single-column .about__meta__divider,
@@ -33,7 +33,7 @@
   border-color: var(--color-border-primary);
 }
 
-/* Change panel order */
+// Change panel order
 .layout-single-column .columns-area__panels__pane {
   order: 3;
 }
@@ -75,7 +75,7 @@
   display: none;
 }
 
-/* Accented items like links */
+// Accented items like links
 .layout-single-column .about__section__title,
 .layout-single-column .account__header__bio .account__header__fields a,
 .layout-single-column .column-back-button,
@@ -96,12 +96,12 @@ body.embed .status__content a,
   color: var(--color-text-brand);
 }
 
-/* Toggles */
+// Toggles
 .layout-single-column .react-toggle .react-toggle-track {
   background-color: var(--color-bg-primary);
 }
 
-/* Accented background colors */
+// Accented background colors
 .layout-single-column .react-toggle--checked .react-toggle-track,
 .layout-single-column .language-dropdown__dropdown__results__item.active,
 .layout-single-column .icon-with-badge__badge,
@@ -136,27 +136,27 @@ body.embed .status__content a,
   border-color: var(--color-bg-primary);
 }
 
-/* Accented strokes */
+// Accented strokes
 .layout-single-column .trends__item__sparkline path:last-child {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   stroke: var(--color-text-brand) !important;
 }
 
-/* Dropdown hovers */
+// Dropdown hovers
 .layout-single-column .language-dropdown__dropdown__results__item:hover,
 .layout-single-column .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
   color: var(--color-text-primary);
 }
 
-/* Accented border colors */
+// Accented border colors
 .layout-single-column .notification.unread::before,
 .layout-single-column .status__wrapper.unread::before {
   border-color: var(--color-text-brand);
   display: none;
 }
 
-/* Filtered post / Content warnings */
+// Filtered post / Content warnings
 body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
@@ -215,7 +215,7 @@ body .content-warning .link-button {
   white-space: nowrap;
 }
 
-/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+// New content warnings in 4.3.0.beta.1-mementomods-2024-08-23
 body .status:not(.status--in-thread) .content-warning {
   margin-bottom: var(--gap-default);
   margin-left: calc(var(--size-avatar) + var(--gap-default));
@@ -243,7 +243,7 @@ body .content-warning::before {
   display: none;
 }
 
-/* Fix hover/focus on article that has filtered banner */
+// Fix hover/focus on article that has filtered banner
 .layout-single-column article:has(.status__wrapper--filtered):hover {
   background-color: transparent;
 }
@@ -271,13 +271,13 @@ body .content-warning::before {
   text-decoration: none;
 }
 
-/* Fix load more icon dimensions */
+// Fix load more icon dimensions
 .load-more .icon {
   height: 16px;
   width: 20px;
 }
 
-/* Unread message */
+// Unread message
 .layout-single-column .notification-ungrouped--unread,
 .layout-single-column .conversation--unread,
 .layout-single-column .notification.unread:hover,
@@ -296,7 +296,7 @@ body .notification-ungrouped--unread::before {
   background-color: transparent;
 }
 
-/* Things like notification status update text that should be dim */
+// Things like notification status update text that should be dim
 .layout-single-column
   .notification
   .status-link.mention:not(.hashtag):not(.mention),
@@ -381,31 +381,31 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-secondary);
 }
 
-/* Dim backgrounds */
+// Dim backgrounds
 .layout-single-column .poll__chart {
   background-color: var(--color-text-secondary);
 }
 
-/* Lighter border colors */
+// Lighter border colors
 .layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .poll__input {
   border-color: var(--color-text-secondary);
 }
 
-/* Light grey things */
+// Light grey things
 .layout-single-column .navigation-bar,
 .layout-single-column .navigation-bar strong {
   color: var(--color-topaz);
 }
 
-/* CW button */
+// CW button
 .layout-single-column .reply-indicator__content .status__content__spoiler-link,
 .layout-single-column .status__content__spoiler-link {
   background-color: var(--color-bg-tertiary);
   color: var(--color-text-tertiary);
   font-weight: var(--font-weight-semibold);
 
-  /* Need to override forced styles */
+  // Need to override forced styles
   margin-left: calc(var(--gap-default) / 2) !important;
   vertical-align: baseline;
 }
@@ -422,7 +422,7 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-tertiary);
 }
 
-/* CW button in notifications */
+// CW button in notifications
 .layout-single-column
   .notification
   .reply-indicator__content
@@ -452,7 +452,7 @@ body .notification-ungrouped--unread::before {
   color: var(--color-text-secondary);
 }
 
-/* Light purple things */
+// Light purple things
 .layout-single-column .announcements__pagination .icon-button:hover i,
 .layout-single-column .server-banner__introduction,
 .layout-single-column .account__header__tabs__name h1 small,

@@ -1,17 +1,17 @@
-/* Status and account components */
-/* Account names */
+// Status and account components
+// Account names
 .layout-single-column .status__info .display-name .display-name__account,
 .layout-single-column .display-name__account {
   color: var(--color-text-secondary);
 }
 
-/* Main panel column */
+// Main panel column
 .layout-single-column .columns-area__panels__main > div {
   border-left: 1px solid var(--color-border-primary);
   border-right: 1px solid var(--color-border-primary);
 }
 
-/* Status header */
+// Status header
 .layout-single-column .status .status__info {
   align-items: flex-start;
   gap: var(--gap-default);
@@ -21,14 +21,14 @@
   padding-bottom: 0;
 }
 
-/* Status action bar */
+// Status action bar
 .layout-single-column .status__action-bar {
   height: 27px;
   margin-top: 12px;
   max-height: 27px;
 }
 
-/* Display name */
+// Display name
 .layout-single-column .status__info .status__display-name {
   align-items: flex-start;
   display: inline-flex;
@@ -46,12 +46,12 @@
   order: 3;
 }
 
-/* Visibility icon */
+// Visibility icon
 .layout-single-column .status .status__visibility-icon {
   font-size: var(--font-size-mid);
 }
 
-/* Panels and things that should be transparent */
+// Panels and things that should be transparent
 .layout-single-column .explore__search-results,
 .layout-single-column .search-results__section__header,
 .layout-single-column .status__wrapper-direct,
@@ -97,26 +97,26 @@ body.embed .detailed-status,
   background-color: transparent;
 }
 
-/* Avatar */
+// Avatar
 .account__avatar[style="width: 46px; height: 46px;"],
 .layout-single-column .status__avatar {
-  /* Need to override inline styles */
+  // Need to override inline styles
   height: var(--size-avatar) !important;
   max-height: var(--size-avatar) !important;
   max-width: var(--size-avatar) !important;
   min-height: var(--size-avatar) !important;
   min-width: var(--size-avatar) !important;
 
-  /* Need to override inline styles */
+  // Need to override inline styles
   width: var(--size-avatar) !important;
 }
 
-/* Improve "others you know follow" avatar group */
+// Improve "others you know follow" avatar group
 body .avatar-group--compact .account__avatar {
   box-shadow: none;
 }
 
-/* Avatars */
+// Avatars
 body.embed .detailed-status__display-avatar > img,
 .layout-single-column .account-card__title__avatar .account__avatar,
 .layout-single-column .account-card__title__avatar img,
@@ -128,7 +128,7 @@ body.embed .detailed-status__display-avatar > img,
   box-shadow: rgb(255 255 255 / 3%) 0 0 2px inset;
 }
 
-/* Things that should not have border */
+// Things that should not have border
 .layout-single-column .column-inline-form,
 .layout-single-column .column > .scrollable,
 .layout-single-column .error-column,
@@ -161,13 +161,13 @@ body.embed .detailed-status__display-avatar > img,
     opacity 200ms;
 }
 
-/* Toot hover effect */
+// Toot hover effect
 .layout-single-column article:focus,
 .layout-single-column article:hover {
   background-color: var(--color-light-shade);
 }
 
-/* Focusable toot and other hilighted items */
+// Focusable toot and other hilighted items
 .layout-single-column
   .compose-form
   .autosuggest-textarea__suggestions__item.selected,
@@ -184,7 +184,7 @@ body.embed .detailed-status__display-avatar > img,
   background: var(--color-focusable-toot);
 }
 
-/* Search panel that opens when focusing Search or paste URL field */
+// Search panel that opens when focusing Search or paste URL field
 .layout-single-column .explore__search-header .search__popout,
 .layout-single-column .compose-form__poll-wrapper option,
 .layout-single-column .search__popout,
@@ -199,7 +199,7 @@ body.embed .detailed-status__display-avatar > img,
   color: var(--color-text-primary);
 }
 
-/* Pill style tags */
+// Pill style tags
 .layout-single-column .hashtag-bar a {
   background-color: var(--color-bg-tertiary);
   border-radius: 9999px;
@@ -221,7 +221,7 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .hashtag-bar a:hover {
   background-color: var(--color-text-brand);
 
-  /* It should be always light also on light mode, so not using variable here */
+  // It should be always light also on light mode, so not using variable here
   color: #f7f9f9;
 }
 
@@ -230,7 +230,7 @@ body.embed .detailed-status__display-avatar > img,
   text-decoration: none;
 }
 
-/* Status update tinted to right */
+// Status update tinted to right
 .layout-single-column .status:not(.status--in-thread) .hashtag-bar,
 .layout-single-column
   .status__content--collapsed
@@ -243,13 +243,13 @@ body.embed .detailed-status__display-avatar > img,
   padding-top: 0;
 }
 
-/* Translate link and other padding resets */
+// Translate link and other padding resets
 .layout-single-column .conversation .attachment-list,
 .layout-single-column .translate ~ .status__content__read-more-button {
   padding-left: 0;
 }
 
-/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
+// Make sure read more/translate button is always aligned to center vertically and to left horizontally
 .layout-single-column .status__content__read-more-button {
   align-items: center;
   display: flex;
@@ -257,7 +257,7 @@ body.embed .detailed-status__display-avatar > img,
   margin-inline-start: 0;
 }
 
-/* Rtl version */
+// Rtl version
 [dir="rtl"] .layout-single-column .status__action-bar,
 [dir="rtl"] .layout-single-column .attachment-list,
 [dir="rtl"] .layout-single-column .status__content__read-more-button,
@@ -266,7 +266,7 @@ body.embed .detailed-status__display-avatar > img,
   padding-right: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Reset padding from attachment-list on reply indicator */
+// Reset padding from attachment-list on reply indicator
 .layout-single-column .reply-indicator .attachment-list {
   padding-left: 0;
 }
@@ -282,19 +282,19 @@ body.embed .detailed-status__display-avatar > img,
   pointer-events: none;
 }
 
-/* Grouped notification exceptions, pr30440 2024-07-11 */
+// Grouped notification exceptions, pr30440 2024-07-11
 .layout-single-column .notification-ungrouped .status .hashtag-bar,
 .layout-single-column .notification-ungrouped .status .status__content,
 .layout-single-column .notification-ungrouped .status .status__action-bar {
   padding-left: var(--gap-default);
 }
 
-/* Fix spacing under quoted post in grouped notification */
+// Fix spacing under quoted post in grouped notification
 .notification-group .notification-group__embedded-status__content {
   max-height: 100%;
 }
 
-/* We don't need to show our own account when we know our own account is being mentioned */
+// We don't need to show our own account when we know our own account is being mentioned
 .notification-ungrouped.notification-ungrouped--mention
   .notification-ungrouped__header,
 .notification-group .notification-group__embedded-status__account {
@@ -305,9 +305,9 @@ body.embed .detailed-status__display-avatar > img,
   padding-left: calc(24px + var(--gap-default));
 }
 
-/* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
+// Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26
 .layout-single-column div[style*="aspect-ratio"]:not([class]) {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   aspect-ratio: unset !important;
 }
 

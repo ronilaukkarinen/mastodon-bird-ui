@@ -1,5 +1,5 @@
-/* Buttons and interactive elements */
-/* Icon buttons */
+// Buttons and interactive elements
+// Icon buttons
 .layout-single-column .icon-button {
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -8,7 +8,7 @@
   color: var(--color-text-secondary);
 }
 
-/* Hide/Show media button */
+// Hide/Show media button
 .layout-single-column .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-badges);
@@ -16,12 +16,12 @@
   opacity: 0.5;
 }
 
-/* Alt badge */
+// Alt badge
 .layout-single-column .media-gallery__item__badges > span {
   border-radius: var(--border-radius-badges);
 }
 
-/* Distance from the edge */
+// Distance from the edge
 .layout-single-column .spoiler-button--minified {
   inset-inline-start: var(--badges-distance-from-edge);
   top: var(--badges-distance-from-edge);
@@ -41,7 +41,7 @@
   color: var(--color-text-brand);
 }
 
-/* Other general buttons */
+// Other general buttons
 .layout-single-column .column-header__button.active:active,
 .column-header__button.active:focus,
 .layout-single-column .column-header__button.active:hover {

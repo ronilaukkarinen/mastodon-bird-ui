@@ -1,5 +1,5 @@
-/* Cards and previews */
-/* URL preview cards */
+// Cards and previews
+// URL preview cards
 .layout-single-column .status-card,
 .layout-single-column .status-card:hover,
 .layout-single-column .status-card:focus {
@@ -7,13 +7,13 @@
   border-color: var(--color-border-primary);
 }
 
-/* URL preview card summary text */
+// URL preview card summary text
 .layout-single-column .status-card .status-card__host,
 .layout-single-column .status-card .status-card__description {
   color: var(--color-text-secondary);
 }
 
-/* URL preview card box */
+// URL preview card box
 .layout-single-column .status-card .status-card__content {
   padding: var(--gap-default);
 }
@@ -23,7 +23,7 @@
   gap: 8px;
 }
 
-/* Preview cards */
+// Preview cards
 .layout-single-column .status-card {
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-border-primary);
@@ -74,7 +74,7 @@
   color: var(--color-text-secondary);
 }
 
-/* New Quote Posts feature after v4.5.0.alpha.2-2025-08-24 */
+// New Quote Posts feature after v4.5.0.alpha.2-2025-08-24
 .status__quote {
   --status-gutter-width: calc(var(--size-avatar) + var(--gap-default));
 }
@@ -105,7 +105,7 @@
   min-height: 40px;
 }
 
-/* Disabled quote post selection */
+// Disabled quote post selection
 .layout-single-column .dropdown-menu__item [aria-disabled="true"],
 .layout-single-column .dropdown-menu__item :disabled,
 .layout-single-column .dropdown-menu__item button:disabled {
@@ -142,17 +142,17 @@ div[data-popper-placement] .reblog-button__item button:disabled {
   }
 }
 
-/* Show minimal status card if there's no image */
+// Show minimal status card if there's no image
 .layout-single-column .status-card .status-card__image:not(:has(img)) {
   display: none;
 }
 
-/* Show iframe in status card if status contains embedded media */
+// Show iframe in status card if status contains embedded media
 .layout-single-column .status-card .status-card-video:has(iframe) {
   display: inherit;
 }
 
-/* Hide empty YouTube description */
+// Hide empty YouTube description
 .layout-single-column .status-card__description:empty {
   display: none;
 }

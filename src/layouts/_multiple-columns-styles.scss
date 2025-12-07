@@ -1,4 +1,4 @@
-/* Vars on iPad, landscape */
+// Vars on iPad, landscape
 @media (1175px <= width <= 1260px) {
   :root {
     --width-main-panel: 500px;
@@ -6,7 +6,7 @@
   }
 }
 
-/* Vars in mobile */
+// Vars in mobile
 @media (width <= 500px) {
   :root {
     --font-size: 16px;
@@ -15,21 +15,21 @@
     --badges-distance-from-edge: 10px;
   }
 
-  /* Hide scrollbar on mobile, since we can't pick the handle anyway */
+  // Hide scrollbar on mobile, since we can't pick the handle anyway
   .layout-multiple-columns::-webkit-scrollbar {
     display: none;
   }
 }
 
-/* Search popout offset */
+// Search popout offset
 .layout-multiple-columns .search__popout,
 .layout-multiple-columns .search-popout {
   left: calc(30px / 2);
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   max-width: calc(100% - 30px) !important;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: calc(100% - 30px) !important;
 }
 
@@ -43,7 +43,7 @@ body.layout-multiple-columns {
   width: 100%;
 }
 
-/* Text color */
+// Text color
 .layout-multiple-columns .account__header__tabs__name h1,
 .layout-multiple-columns .account__header__bio .account__header__content,
 .layout-multiple-columns .reply-indicator__content,
@@ -51,7 +51,7 @@ body.layout-multiple-columns {
   color: var(--color-text-primary);
 }
 
-/* Link color variants */
+// Link color variants
 .layout-multiple-columns .status-link.hashtag {
   color: var(--color-text-brand);
 }
@@ -64,7 +64,7 @@ body.layout-multiple-columns {
   color: var(--color-text-brand);
 }
 
-/* Logo */
+// Logo
 .layout-multiple-columns .ui__header__logo,
 .layout-multiple-columns .column-link.column-link--logo {
   background-image: var(--logo);
@@ -76,7 +76,7 @@ body.layout-multiple-columns {
   width: 50px;
 }
 
-/* Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417 */
+// Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
 .layout-multiple-columns .ui__header__logo {
   flex-grow: unset;
 }
@@ -86,7 +86,7 @@ body.layout-multiple-columns {
   display: none;
 }
 
-/* Things that should have the default font-size */
+// Things that should have the default font-size
 .layout-multiple-columns .notification__message,
 .layout-multiple-columns .account__header__tabs__name h1 small,
 .layout-multiple-columns .button,
@@ -102,7 +102,7 @@ body.layout-multiple-columns {
   font-size: var(--font-size);
 }
 
-/* Things that should have the mid font-size */
+// Things that should have the mid font-size
 .layout-multiple-columns .account__header__extra__links,
 .layout-multiple-columns
   .columns-area__panels__pane--compositional
@@ -121,47 +121,47 @@ body.layout-multiple-columns {
   line-height: var(--line-height-mid);
 }
 
-/* Exceptions */
+// Exceptions
 .layout-multiple-columns .account__header__content {
   line-height: 18px;
 }
 
-/* Things that will have even smaller font size */
+// Things that will have even smaller font size
 .layout-multiple-columns .account__header__account-note label {
   font-size: var(--font-size-12);
 }
 
-/* Line heights */
+// Line heights
 .layout-multiple-columns .status__content {
   line-height: var(--line-height);
 }
 
-/* Modal overlay */
+// Modal overlay
 .layout-multiple-columns .modal-root__overlay {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   background-color: var(--color-bg-overlay) !important;
   color: var(--color-text-primary) !important;
 }
 
 .layout-multiple-columns .modal-root__modal .display-name strong,
 .layout-multiple-columns .modal-root__modal .status__content {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   color: var(--color-text-primary) !important;
 }
 
-/* Hide footer buttons in modals */
+// Hide footer buttons in modals
 .layout-multiple-columns .picture-in-picture .picture-in-picture__footer {
   display: none;
 }
 
-/* Picture in picture fixes */
+// Picture in picture fixes
 .layout-multiple-columns .picture-in-picture .audio-player,
 .layout-multiple-columns .picture-in-picture .video-player {
   border-radius: 0 !important;
   margin-left: 0 !important;
 }
 
-/* Report modal */
+// Report modal
 .layout-multiple-columns
   .report-dialog-modal
   .poll__option.dialog-option
@@ -170,7 +170,7 @@ body.layout-multiple-columns {
   gap: 6px;
 }
 
-/* Improve modal icon size and accessibility */
+// Improve modal icon size and accessibility
 .layout-multiple-columns .image-loader .icon,
 .layout-multiple-columns .media-modal__navigation .icon {
   color: var(--color-text-primary);
@@ -178,7 +178,7 @@ body.layout-multiple-columns {
   width: 32px;
 }
 
-/* List adder input */
+// List adder input
 .layout-multiple-columns .list-editor input.setting-text,
 .layout-multiple-columns .list-adder input.setting-text {
   background-color: transparent;
@@ -190,7 +190,8 @@ body.layout-multiple-columns {
 .layout-multiple-columns .list-adder .column-inline-form button,
 .layout-multiple-columns .list-editor .column-inline-form button::before {
   min-height: 38px;
-  /* It's inlined so we have to use !important */
+
+  // It's inlined so we have to use !important
   width: 100% !important;
 }
 
@@ -226,7 +227,7 @@ body.layout-multiple-columns {
   gap: var(--gap-default);
 }
 
-/* URL preview cards */
+// URL preview cards
 .layout-multiple-columns .status-card,
 .layout-multiple-columns .status-card:hover,
 .layout-multiple-columns .status-card:focus {
@@ -234,13 +235,13 @@ body.layout-multiple-columns {
   border-color: var(--color-border-primary);
 }
 
-/* URL preview card summary text */
+// URL preview card summary text
 .layout-multiple-columns .status-card .status-card__host,
 .layout-multiple-columns .status-card .status-card__description {
   color: var(--color-text-secondary);
 }
 
-/* URL preview card box */
+// URL preview card box
 .layout-multiple-columns .status-card .status-card__content {
   padding: var(--gap-default);
 }
@@ -250,7 +251,7 @@ body.layout-multiple-columns {
   gap: 8px;
 }
 
-/* Preview cards */
+// Preview cards
 .layout-multiple-columns .status-card {
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-border-primary);
@@ -301,24 +302,24 @@ body.layout-multiple-columns {
   color: var(--color-text-secondary);
 }
 
-/* Disabled quote post selection */
+// Disabled quote post selection
 .layout-multiple-column .dropdown-menu__item [aria-disabled="true"],
 .layout-multiple-column .dropdown-menu__item :disabled,
 .layout-multiple-column .dropdown-menu__item button:disabled {
   color: var(--color-text-secondary);
 }
 
-/* Show minimal status card if there's no image */
+// Show minimal status card if there's no image
 .layout-multiple-columns .status-card .status-card__image:not(:has(img)) {
   display: none;
 }
 
-/* Show iframe in status card if status contains embedded media */
+// Show iframe in status card if status contains embedded media
 .layout-multiple-columns .status-card .status-card-video:has(iframe) {
   display: inherit;
 }
 
-/* Hide empty YouTube description */
+// Hide empty YouTube description
 .layout-multiple-columns .status-card__description:empty {
   display: none;
 }
@@ -362,7 +363,7 @@ body.layout-multiple-columns {
   margin-top: 0;
 }
 
-/* Announcements */
+// Announcements
 .layout-multiple-columns .announcements__pagination .icon,
 .layout-multiple-columns .announcements__pagination {
   color: var(--color-text-secondary);
@@ -372,7 +373,7 @@ body.layout-multiple-columns {
   color: var(--color-text-tertiary);
 }
 
-/* Dark panels like modals and boxes */
+// Dark panels like modals and boxes
 .layout-multiple-columns .account-memorial-banner,
 .layout-multiple-columns .follow-request-banner,
 .layout-multiple-columns .moved-account-banner,
@@ -428,13 +429,13 @@ body.layout-multiple-columns {
   color: var(--color-text-primary);
 }
 
-/* Setting boxes */
+// Setting boxes
 .layout-multiple-columns .column-header__collapsible-inner {
   background-color: var(--color-bg-primary);
   border-color: var(--color-border-primary);
 }
 
-/* Column-header border */
+// Column-header border
 .layout-multiple-columns .column-header__collapsible {
   border-bottom: 1px solid var(--color-border-primary);
 }
@@ -444,19 +445,19 @@ body.layout-multiple-columns {
   opacity: 1;
 }
 
-/* Has dark 1px border */
+// Has dark 1px border
 .layout-multiple-columns .dismissable-banner {
   border: 1px solid var(--color-bg-tertiary);
 }
 
-/* More subtle box-shadow for dropdown-menu */
+// More subtle box-shadow for dropdown-menu
 .layout-multiple-columns .search-popout,
 .layout-multiple-columns .search__popout,
 .layout-multiple-columns .dropdown-menu {
   box-shadow: 2px 4px 16px rgb(0 0 0 / 0.01);
 }
 
-/* Autosuggest box shadow reset */
+// Autosuggest box shadow reset
 .layout-multiple-columns .column-select__menu,
 .layout-multiple-columns .search-popout,
 .layout-multiple-columns .search__popout,
@@ -470,13 +471,13 @@ body.layout-multiple-columns {
   box-shadow: none;
 }
 
-/* Composer form warnings */
+// Composer form warnings
 .layout-multiple-columns .compose-form .compose-form__warning {
   background-color: var(--color-text-tertiary);
   color: var(--color-bg-primary);
 }
 
-/* Content warning placeholder */
+// Content warning placeholder
 .layout-multiple-columns
   .compose-form
   .autosuggest-textarea__textarea::placeholder,
@@ -484,7 +485,7 @@ body.layout-multiple-columns {
   color: var(--color-text-secondary);
 }
 
-/* Border colors */
+// Border colors
 .layout-multiple-columns .search-results__section__header,
 .layout-multiple-columns .account__header__bar,
 .layout-multiple-columns .about__meta__divider,
@@ -518,7 +519,7 @@ body.layout-multiple-columns {
   border-color: var(--color-border-primary);
 }
 
-/* Change panel order */
+// Change panel order
 .layout-multiple-columns .columns-area__panels__pane {
   order: 3;
 }
@@ -564,7 +565,7 @@ body.layout-multiple-columns {
   display: none;
 }
 
-/* Accented items like links */
+// Accented items like links
 .layout-multiple-columns .about__section__title,
 .layout-multiple-columns .account__header__bio .account__header__fields a,
 .layout-multiple-columns .column-back-button,
@@ -585,14 +586,14 @@ body.embed .status__content a,
   color: var(--color-text-brand);
 }
 
-/* Toggles etc. */
+// Toggles etc.
 .layout-multiple-columns .search-results__header,
 .layout-multiple-columns .drawer__inner,
 .layout-multiple-columns .react-toggle .react-toggle-track {
   background-color: var(--color-bg-primary);
 }
 
-/* Accented background colors */
+// Accented background colors
 .layout-multiple-columns .react-toggle--checked .react-toggle-track,
 .layout-multiple-columns .language-dropdown__dropdown__results__item.active,
 .layout-multiple-columns .icon-with-badge__badge,
@@ -627,27 +628,27 @@ body.embed .status__content a,
   border-color: var(--color-bg-primary);
 }
 
-/* Accented strokes */
+// Accented strokes
 .layout-multiple-columns .trends__item__sparkline path:last-child {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   stroke: var(--color-text-brand) !important;
 }
 
-/* Dropdown hovers */
+// Dropdown hovers
 .layout-multiple-columns .language-dropdown__dropdown__results__item:hover,
 .layout-multiple-columns .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
   color: var(--color-text-primary);
 }
 
-/* Accented border colors */
+// Accented border colors
 .layout-multiple-columns .notification.unread::before,
 .layout-multiple-columns .status__wrapper.unread::before {
   border-color: var(--color-text-brand);
   display: none;
 }
 
-/* Filtered post / Content warnings */
+// Filtered post / Content warnings
 body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
@@ -706,7 +707,7 @@ body .content-warning .link-button {
   white-space: nowrap;
 }
 
-/* New content warnings in 4.3.0.beta.1-mementomods-2024-08-23 */
+// New content warnings in 4.3.0.beta.1-mementomods-2024-08-23
 body .status:not(.status--in-thread) .content-warning {
   margin-bottom: var(--gap-default);
   margin-left: calc(var(--size-avatar) + var(--gap-default));
@@ -734,7 +735,7 @@ body .content-warning::before {
   display: none;
 }
 
-/* Fix hover/focus on article that has filtered banner */
+// Fix hover/focus on article that has filtered banner
 .layout-multiple-columns article:has(.status__wrapper--filtered):hover {
   background-color: transparent;
 }
@@ -766,13 +767,13 @@ body .content-warning::before {
   text-decoration: none;
 }
 
-/* Fix load more icon dimensions */
+// Fix load more icon dimensions
 .load-more .icon {
   height: 16px;
   width: 20px;
 }
 
-/* Unread message */
+// Unread message
 .layout-multiple-columns .notification-ungrouped--unread,
 .layout-multiple-columns .conversation--unread,
 .layout-multiple-columns .notification.unread:hover,
@@ -785,7 +786,7 @@ body .content-warning::before {
   background-color: transparent;
 }
 
-/* Things like notification status update text that should be dim */
+// Things like notification status update text that should be dim
 .layout-multiple-columns
   .notification
   .status-link.mention:not(.hashtag):not(.mention),
@@ -876,24 +877,24 @@ body .content-warning::before {
   color: var(--color-text-secondary);
 }
 
-/* Dim backgrounds */
+// Dim backgrounds
 .layout-multiple-columns .poll__chart {
   background-color: var(--color-text-secondary);
 }
 
-/* Lighter border colors */
+// Lighter border colors
 .layout-multiple-columns .report-dialog-modal .dialog-option .poll__input,
 .layout-multiple-columns .poll__input {
   border-color: var(--color-text-secondary);
 }
 
-/* Light grey things */
+// Light grey things
 .layout-multiple-columns .navigation-bar,
 .layout-multiple-columns .navigation-bar strong {
   color: var(--color-topaz);
 }
 
-/* CW button */
+// CW button
 .layout-multiple-columns
   .reply-indicator__content
   .status__content__spoiler-link,
@@ -902,7 +903,7 @@ body .content-warning::before {
   color: var(--color-text-tertiary);
   font-weight: var(--font-weight-semibold);
 
-  /* Need to override forced styles */
+  // Need to override forced styles
   margin-left: calc(var(--gap-default) / 2) !important;
   vertical-align: baseline;
 }
@@ -919,7 +920,7 @@ body .content-warning::before {
   color: var(--color-text-tertiary);
 }
 
-/* CW button in notifications */
+// CW button in notifications
 .layout-multiple-columns
   .notification
   .reply-indicator__content
@@ -949,7 +950,7 @@ body .content-warning::before {
   color: var(--color-text-secondary);
 }
 
-/* Light purple things */
+// Light purple things
 .layout-multiple-columns .announcements__pagination .icon-button:hover .icon,
 .layout-multiple-columns .server-banner__introduction,
 .layout-multiple-columns .account__header__tabs__name h1 small,
@@ -960,7 +961,7 @@ body .content-warning::before {
   color: var(--color-text-tertiary);
 }
 
-/* White things */
+// White things
 .layout-multiple-columns .compose-form__poll-wrapper select,
 .layout-multiple-columns .actions-modal ul li:not(:empty) a,
 .layout-multiple-columns .report-dialog-modal .status__content,
@@ -1015,19 +1016,19 @@ body .content-warning::before {
   color: var(--color-text-primary);
 }
 
-/* Account names */
+// Account names
 .layout-multiple-columns .status__info .display-name .display-name__account,
 .layout-multiple-columns .display-name__account {
   color: var(--color-text-secondary);
 }
 
-/* Main panel column */
+// Main panel column
 .layout-multiple-columns .columns-area__panels__main > div {
   border-left: 1px solid var(--color-border-primary);
   border-right: 1px solid var(--color-border-primary);
 }
 
-/* Status header */
+// Status header
 .layout-multiple-columns .status .status__info {
   align-items: flex-start;
   gap: var(--gap-default);
@@ -1037,14 +1038,14 @@ body .content-warning::before {
   padding-bottom: 0;
 }
 
-/* Status action bar */
+// Status action bar
 .layout-multiple-columns .status__action-bar {
   height: 27px;
   margin-top: 12px;
   max-height: 27px;
 }
 
-/* Display name */
+// Display name
 .layout-multiple-columns .status__info .status__display-name {
   align-items: flex-start;
   display: inline-flex;
@@ -1062,12 +1063,12 @@ body .content-warning::before {
   order: 3;
 }
 
-/* Visibility icon */
+// Visibility icon
 .layout-multiple-columns .status .status__visibility-icon {
   font-size: var(--font-size-mid);
 }
 
-/* Panels and things that should be transparent */
+// Panels and things that should be transparent
 .layout-multiple-columns .search-results__section__header,
 .layout-multiple-columns .explore__search-results,
 .layout-multiple-columns .status__wrapper-direct,
@@ -1114,21 +1115,21 @@ body.embed .detailed-status,
   background-color: transparent;
 }
 
-/* Avatar */
+// Avatar
 .account__avatar[style="width: 46px; height: 46px;"],
 .layout-multiple-columns .status__avatar {
-  /* Need to override inline styles */
+  // Need to override inline styles
   height: var(--size-avatar) !important;
   max-height: var(--size-avatar) !important;
   max-width: var(--size-avatar) !important;
   min-height: var(--size-avatar) !important;
   min-width: var(--size-avatar) !important;
 
-  /* Need to override inline styles */
+  // Need to override inline styles
   width: var(--size-avatar) !important;
 }
 
-/* Avatars */
+// Avatars
 .layout-multiple-columns .account-card__title__avatar .account__avatar,
 .layout-multiple-columns .account-card__title__avatar img,
 .layout-multiple-columns .account__avatar > img,
@@ -1138,7 +1139,7 @@ body.embed .detailed-status,
   box-shadow: rgb(255 255 255 / 0.03) 0 0 2px inset;
 }
 
-/* Things that should not have border */
+// Things that should not have border
 .layout-multiple-columns .column-inline-form,
 .layout-multiple-columns .column > .scrollable,
 .layout-multiple-columns .error-column,
@@ -1148,7 +1149,7 @@ body.embed .detailed-status,
   border: 0;
 }
 
-/* Nice active effect in the column header */
+// Nice active effect in the column header
 .layout-multiple-columns .column-header__wrapper.active {
   box-shadow: var(--active-header-box-shadow);
 }
@@ -1173,13 +1174,13 @@ body.embed .detailed-status,
     transform 200ms;
 }
 
-/* Toot hover effect */
+// Toot hover effect
 .layout-multiple-columns article:focus,
 .layout-multiple-columns article:hover {
   background-color: var(--color-light-shade);
 }
 
-/* Focusable toot and other hilighted items */
+// Focusable toot and other hilighted items
 .layout-multiple-columns
   .compose-form
   .autosuggest-textarea__suggestions__item.selected,
@@ -1196,7 +1197,7 @@ body.embed .detailed-status,
   background: var(--color-focusable-toot);
 }
 
-/* Search panel that opens when focusing Search or paste URL field */
+// Search panel that opens when focusing Search or paste URL field
 .layout-multiple-columns .explore__search-header .search__popout,
 .layout-multiple-columns .compose-form__poll-wrapper option,
 .layout-multiple-columns .search__popout,
@@ -1211,7 +1212,7 @@ body.embed .detailed-status,
   color: var(--color-text-primary);
 }
 
-/* Pill style tags */
+// Pill style tags
 .layout-multiple-columns .hashtag-bar a {
   background-color: var(--color-bg-tertiary);
   border-radius: 9999px;
@@ -1232,7 +1233,8 @@ body.embed .detailed-status,
 .layout-multiple-columns .hashtag-bar a:focus,
 .layout-multiple-columns .hashtag-bar a:hover {
   background-color: var(--color-text-brand);
-  /* It should be always light also on light mode, so not using variable here */
+
+  // It should be always light also on light mode, so not using variable here
   color: #f7f9f9;
 }
 
@@ -1241,7 +1243,7 @@ body.embed .detailed-status,
   text-decoration: none;
 }
 
-/* Status update tinted to right */
+// Status update tinted to right
 .layout-multiple-columns .status:not(.status--in-thread) .hashtag-bar,
 .layout-multiple-columns
   .status__content--collapsed
@@ -1254,13 +1256,13 @@ body.embed .detailed-status,
   padding-top: 0;
 }
 
-/* Translate link and other padding resets */
+// Translate link and other padding resets
 .layout-multiple-columns .conversation .attachment-list,
 .layout-multiple-columns .translate ~ .status__content__read-more-button {
   padding-left: 0;
 }
 
-/* Make sure read more/translate button is always aligned to center vertically and to left horizontally */
+// Make sure read more/translate button is always aligned to center vertically and to left horizontally
 .layout-multiple-columns .status__content__read-more-button {
   align-items: center;
   display: flex;
@@ -1268,7 +1270,7 @@ body.embed .detailed-status,
   margin-inline-start: 0;
 }
 
-/* Rtl version */
+// Rtl version
 [dir="rtl"] .layout-multiple-columns .status__action-bar,
 [dir="rtl"] .layout-multiple-columns .attachment-list,
 [dir="rtl"] .layout-multiple-columns .status__content__read-more-button,
@@ -1277,7 +1279,7 @@ body.embed .detailed-status,
   padding-right: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Reset padding from attachment-list on reply indicator */
+// Reset padding from attachment-list on reply indicator
 .layout-multiple-columns .reply-indicator .attachment-list {
   padding-left: 0;
 }
@@ -1293,7 +1295,7 @@ body.embed .detailed-status,
   pointer-events: none;
 }
 
-/* Grouped notification exceptions, pr30440 2024-07-11 */
+// Grouped notification exceptions, pr30440 2024-07-11
 .layout-multiple-columns .notification-ungrouped .status .hashtag-bar,
 .layout-multiple-columns .notification-ungrouped .status .status__content,
 .layout-multiple-columns .notification-ungrouped .status .status__action-bar {
@@ -1306,13 +1308,13 @@ body.embed .detailed-status,
   padding-left: calc(24px + var(--gap-default));
 }
 
-/* Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26 */
+// Fix aspect-ratio for some videos in mastodon v4.1.5-nightly-2023-07-26
 .layout-multiple-columns div[style*="aspect-ratio"]:not([class]) {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   aspect-ratio: unset !important;
 }
 
-/* Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727 */
+// Start: Experimental Threads-like media proportions, if the height is tall, show smaller media: https://mementomori.social/@rolle/111715197571142727
 .layout-multiple-columns .media-gallery__item.standalone img,
 .layout-multiple-columns .video-player .media-gallery__preview {
   object-fit: contain;
@@ -1331,7 +1333,7 @@ body.embed .detailed-status,
   width: unset !important;
 }
 
-/* When image is still loading up, reset width to 100%, Fixes #150 */
+// When image is still loading up, reset width to 100%, Fixes #150
 body.layout-multiple-columns canvas[class="media-gallery__preview"] {
   width: 100% !important;
 }
@@ -1392,13 +1394,13 @@ body.layout-multiple-columns canvas[class="media-gallery__preview"] {
   border-top-left-radius: 0;
 }
 
-/* End: Experimental Threads-like media proportions, if the height is tall, show smaller media */
+// End: Experimental Threads-like media proportions, if the height is tall, show smaller media
 .layout-multiple-columns .status .status-card + .more-from-author,
 .layout-multiple-columns .status .status-card {
   margin-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Detailed status update */
+// Detailed status update
 .layout-multiple-columns .detailed-status .status__content {
   font-size: var(--font-size-bigger);
   line-height: 1.4;
@@ -1440,19 +1442,19 @@ body.embed .detailed-status__favorites {
   font-weight: var(--font-weight-bold);
 }
 
-/* Fix alignment */
+// Fix alignment
 .layout-multiple-columns .detailed-status__link {
   top: 0;
 }
 
-/* Profile lock icon alignment fix */
+// Profile lock icon alignment fix
 .layout-multiple-columns .account__header__tabs__name h1 small {
   display: flex;
   gap: 4px;
   margin-top: 4px;
 }
 
-/* Textual labels for detailed metrics */
+// Textual labels for detailed metrics
 body.embed .detailed-status__link > .icon-reply + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-reply + span::after {
   color: var(--color-text-secondary);
@@ -1487,7 +1489,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* Icon buttons */
+// Icon buttons
 .layout-multiple-columns .icon-button {
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -1496,7 +1498,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   color: var(--color-text-secondary);
 }
 
-/* Hide/Show media button */
+// Hide/Show media button
 .layout-multiple-columns .spoiler-button.spoiler-button--minified > button {
   background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-badges);
@@ -1504,12 +1506,12 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   opacity: 0.5;
 }
 
-/* Alt badge */
+// Alt badge
 .layout-multiple-columns .media-gallery__item__badges > span {
   border-radius: var(--border-radius-badges);
 }
 
-/* Distance from the edge */
+// Distance from the edge
 .layout-multiple-columns .spoiler-button--minified {
   inset-inline-start: var(--badges-distance-from-edge);
   top: var(--badges-distance-from-edge);
@@ -1533,7 +1535,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   color: var(--color-text-brand);
 }
 
-/* Other general buttons */
+// Other general buttons
 .layout-multiple-columns .column-header__button.active:active,
 .column-header__button.active:focus,
 .layout-multiple-columns .column-header__button.active:hover {
@@ -1541,7 +1543,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   color: var(--color-text-primary);
 }
 
-/* Bars on panels */
+// Bars on panels
 .layout-multiple-columns .ui__header,
 .layout-multiple-columns .columns-area__panels__main > div.tabs-bar__wrapper,
 .layout-multiple-columns .tabs-bar__wrapper {
@@ -1560,20 +1562,20 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   }
 }
 
-/* Hidden things */
+// Hidden things
 .layout-multiple-columns
   .column-header
   .column-header__icon:not(.icon-user-plus):not(.icon-user-times) {
   display: none;
 }
 
-/* Column headers */
+// Column headers
 .layout-multiple-columns .column-header {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
 }
 
-/* Column sub-headers */
+// Column sub-headers
 .layout-multiple-columns .column-subheading {
   background-color: transparent;
   color: var(--color-text-primary);
@@ -1584,13 +1586,13 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   text-transform: unset;
 }
 
-/* "Your lists" view */
+// "Your lists" view
 .layout-multiple-columns .column-subheading ~ article {
   padding-left: var(--gap-default);
   padding-right: var(--gap-default);
 }
 
-/* Notifications */
+// Notifications
 .layout-multiple-columns .notification__message {
   display: grid;
   gap: var(--gap-default);
@@ -1598,20 +1600,20 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   height: calc(var(--gap-default) * 2);
 }
 
-/* Notification groups, pr30440 2024-07-11 */
+// Notification groups, pr30440 2024-07-11
 .layout-multiple-columns .notification-group {
   display: grid;
   gap: var(--gap-default);
   grid-template-columns: minmax(0, var(--size-avatar)) minmax(0, 1fr);
 }
 
-/* Make sure notification user is clickable */
+// Make sure notification user is clickable
 .layout-multiple-columns .notification__display-name {
   position: relative;
   z-index: 99;
 }
 
-/* Hack to display notification message title on one line */
+// Hack to display notification message title on one line
 .layout-multiple-columns .notification__message > span {
   display: block;
   margin-top: calc(var(--size-avatar-small) + 6px);
@@ -1625,7 +1627,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   white-space: nowrap;
 }
 
-/* Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications */
+// Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications
 @media (width <= 600px) {
   .layout-multiple-columns .notification .account__relationship > .button,
   .layout-multiple-columns .notification__report__actions .button {
@@ -1656,7 +1658,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__avatar-overlay-overlay
   .account__avatar,
 .layout-multiple-columns .notification .account__avatar-overlay-overlay {
-  /* Need to override inline styles */
+  // Need to override inline styles
   height: var(--size-avatar-small) !important;
   min-height: var(--size-avatar-small) !important;
   min-width: var(--size-avatar-small) !important;
@@ -1668,7 +1670,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   overflow: visible;
 }
 
-/* Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25 */
+// Fixes: User avatars in notifications are sometimes links to my profile instead of theirs #25
 .layout-multiple-columns
   .notification.notification-reblog
   .status__info
@@ -1688,7 +1690,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   pointer-events: none;
 }
 
-/* Hack to show follow notification more minimal way */
+// Hack to show follow notification more minimal way
 .layout-multiple-columns
   .notification.notification-admin-report
   .notification__report,
@@ -1706,7 +1708,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   top: calc(-1 * calc(var(--size-avatar-small) + var(--gap-default) + 4px));
 }
 
-/* Hack to show follow notification more minimal way */
+// Hack to show follow notification more minimal way
 .layout-multiple-columns .notification.notification-poll .display-name,
 .layout-multiple-columns .notification.notification-update .display-name__html,
 .layout-multiple-columns
@@ -1775,7 +1777,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* Minimal boost notification fix */
+// Minimal boost notification fix
 .layout-multiple-columns
   .notification.notification-reblog
   .notification__message
@@ -1783,7 +1785,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
 }
 
-/* Minimal follow notification fix */
+// Minimal follow notification fix
 .layout-multiple-columns
   .notification.notification-follow
   .notification__message
@@ -1808,7 +1810,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   top: 6px;
 }
 
-/* Minimal fav notification fix */
+// Minimal fav notification fix
 .layout-multiple-columns
   .notification.notification-favourite
   .notification__message
@@ -1816,7 +1818,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   margin-top: calc(var(--size-avatar-small) + calc(var(--gap-default) / 2));
 }
 
-/* If a status content is empty and there's only attachment, remove gap */
+// If a status content is empty and there's only attachment, remove gap
 .layout-multiple-columns
   .notification
   .status__content:has(.status__content__text:empty)
@@ -1824,7 +1826,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   margin-top: 0;
 }
 
-/* Less space before attachments if no status content */
+// Less space before attachments if no status content
 .layout-multiple-columns
   .status
   .status__content:has(.status__content__text:empty)
@@ -1867,7 +1869,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding-left: calc(var(--size-avatar) + var(--gap-default));
 }
 
-/* Admin reports and other admin notifications */
+// Admin reports and other admin notifications
 .layout-multiple-columns .notification-admin-report .notification__report {
   border-color: var(--color-border-primary);
   display: flex;
@@ -1892,7 +1894,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Revert hack for notification admin message that has no avatar visible */
+// Revert hack for notification admin message that has no avatar visible
 .layout-multiple-columns
   .notification-admin-report
   .notification__message
@@ -1902,13 +1904,13 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   overflow: visible;
 }
 
-/* Hide things in notifications */
+// Hide things in notifications
 .layout-multiple-columns .notification .status__relative-time,
 .layout-multiple-columns .notification .status__info::before {
   display: none;
 }
 
-/* Right side panel */
+// Right side panel
 .layout-multiple-columns .navigation-panel {
   box-sizing: border-box;
   margin-top: 0;
@@ -1917,7 +1919,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .navigation-panel hr {
-  /* Hide but reserve space */
+  // Hide but reserve space
   visibility: hidden;
 }
 
@@ -1926,20 +1928,20 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   height: 100%;
 }
 
-/* Attempt to hide scrollbars for .navigation-panel for Firefox */
+// Attempt to hide scrollbars for .navigation-panel for Firefox
 .dropdown-menu__container__list--scrollable,
 .layout-multiple-columns .navigation-panel {
   scrollbar-width: none;
 }
 
-/* Hide scrollbars for .navigation-panel for Chrome and Safari */
+// Hide scrollbars for .navigation-panel for Chrome and Safari
 .dropdown-menu__container__list--scrollable::-webkit-scrollbar,
 .layout-multiple-columns .navigation-panel::-webkit-scrollbar {
   display: none;
   width: 4px;
 }
 
-/* Columns */
+// Columns
 .layout-multiple-columns .column {
   border-right: 1px solid var(--color-border-primary);
   padding-left: 0;
@@ -1991,7 +1993,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-color: var(--color-column-link-hover);
 }
 
-/* Mobile devices */
+// Mobile devices
 @media (hover: none) {
   .layout-multiple-columns .notification__filter-bar button.active:hover,
   .layout-multiple-columns .account__section-headline a.active:hover {
@@ -1999,7 +2001,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   }
 }
 
-/* Notification filter bar */
+// Notification filter bar
 .layout-multiple-columns .notification__filter-bar {
   border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
@@ -2010,7 +2012,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   margin: 0;
 }
 
-/* Notification badge on side panel */
+// Notification badge on side panel
 .layout-multiple-columns .icon-with-badge__badge {
   border-radius: 50%;
   font-size: 11px;
@@ -2023,7 +2025,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   font-weight: var(--font-weight-bold);
 }
 
-/* Top panel */
+// Top panel
 .layout-multiple-columns .account__section-headline a.active::after,
 .layout-multiple-columns .account__section-headline button.active::after,
 .layout-multiple-columns .notification__filter-bar a.active::after,
@@ -2044,7 +2046,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   transform: translateX(-50%);
 }
 
-/* Notification icons */
+// Notification icons
 .layout-multiple-columns .account__section-headline a.active::before,
 .layout-multiple-columns .account__section-headline button.active::before,
 .layout-multiple-columns .notification__filter-bar a.active::before,
@@ -2112,7 +2114,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 24px;
 }
 
-/* Follow/unfollow button */
+// Follow/unfollow button
 .layout-multiple-columns .account__relationship .icon-button,
 .layout-multiple-columns .notification .account__relationship .icon-button {
   background-color: transparent;
@@ -2188,7 +2190,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   transform: translateY(-4px);
 }
 
-/* Emoji-mart search input */
+// Emoji-mart search input
 .layout-multiple-columns .emoji-mart-search-icon svg {
   fill: var(--color-border-primary);
   opacity: 1;
@@ -2225,13 +2227,13 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   opacity: 1;
 }
 
-/* Search icon fix for 4.4.0-alpha.1+mementomods-2024-12-15 changes */
+// Search icon fix for 4.4.0-alpha.1+mementomods-2024-12-15 changes
 .layout-multiple-columns .search__icon {
   right: 0;
   top: 0;
 }
 
-/* Search */
+// Search
 .layout-multiple-columns .search .search__icon .icon-search {
   background-image: var(--icon-search);
   background-position: center;
@@ -2269,14 +2271,14 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding: 0 20px;
 }
 
-/* Input texts */
+// Input texts
 .layout-multiple-columns .poll__option input[type="text"],
 .layout-multiple-columns input.setting-text:focus,
 .layout-multiple-columns .search__input:focus {
   color: var(--color-text-primary);
 }
 
-/* Poll input */
+// Poll input
 .layout-multiple-columns .poll__option input[type="text"] {
   background-color: transparent;
   border-color: var(--color-border-primary);
@@ -2286,7 +2288,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   border-color: var(--color-text-brand);
 }
 
-/* Placeholders */
+// Placeholders
 .layout-multiple-columns .poll__option input[type="text"]::placeholder,
 .layout-multiple-columns .search__input::placeholder,
 .layout-multiple-columns input::placeholder,
@@ -2295,7 +2297,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   opacity: 1;
 }
 
-/* Profile */
+// Profile
 .layout-multiple-columns .getting-started__trends h4,
 .layout-multiple-columns .account__header__bar {
   border-color: var(--color-border-primary);
@@ -2311,7 +2313,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding: 0;
 }
 
-/* New popout styles */
+// New popout styles
 .layout-multiple-columns .account__domain-pill__popout {
   border: 1px solid var(--color-bg-secondary);
   color: var(--color-text-tertiary);
@@ -2332,7 +2334,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding: 12px 10px;
 }
 
-/* Hide unnecessary header icon for minimalism */
+// Hide unnecessary header icon for minimalism
 .layout-multiple-columns .account__domain-pill__popout__header__icon {
   display: none;
 }
@@ -2342,7 +2344,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   line-height: 1.3;
 }
 
-/* Truncate too long links in the profile, like Nostr */
+// Truncate too long links in the profile, like Nostr
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2363,7 +2365,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   order: 2;
 }
 
-/* Recognize empty field and remove pipe */
+// Recognize empty field and remove pipe
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2379,7 +2381,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   order: 3;
 }
 
-/* Hide the character in between Joined label */
+// Hide the character in between Joined label
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2391,7 +2393,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* ...except on those that have label with GitHub, github, YouTube or similar */
+// ...except on those that have label with GitHub, github, YouTube or similar
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2428,12 +2430,12 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   ) {
   max-width: 50%;
 
-  /* Move to last */
+  // Move to last
   order: 9999;
   width: auto;
 }
 
-/* Hide labels that show "Website", "YouTube", etc. */
+// Hide labels that show "Website", "YouTube", etc.
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2472,7 +2474,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* Hide pipe after link icon and the link icon from the ones that already have an icon */
+// Hide pipe after link icon and the link icon from the ones that already have an icon
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2513,7 +2515,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   display: none;
 }
 
-/* If GitHub etc. move even further from links */
+// If GitHub etc. move even further from links
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2534,7 +2536,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
     dt[title="wordpress"],
     dt[title="fb"]
   ) {
-  /* Move to last-last */
+  // Move to last-last
   order: 99999;
 }
 
@@ -2738,7 +2740,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 18.5px;
 }
 
-/* Default link icon */
+// Default link icon
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2748,7 +2750,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 18.5px;
 }
 
-/* If the profile item has no link element, show just label icon */
+// If the profile item has no link element, show just label icon
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2758,7 +2760,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 18.5px;
 }
 
-/* Verified colors for Firefox before :has */
+// Verified colors for Firefox before :has
 .layout-multiple-columns .account__details .verified-badge a,
 .layout-multiple-columns
   .account__header__bar
@@ -2785,7 +2787,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Reset verified colors */
+// Reset verified colors
 .layout-multiple-columns .account__details .verified-badge a,
 .layout-multiple-columns
   .account__header__bar:has(.account__header__fields .verified)
@@ -2812,7 +2814,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   font-weight: var(--font-weight-regular);
 }
 
-/* Replace verified__mark */
+// Replace verified__mark
 .layout-multiple-columns
   .account__details
   .verified-badge
@@ -2876,7 +2878,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   order: 1;
 }
 
-/* Joined label */
+// Joined label
 .layout-multiple-columns
   .account__header__bio
   .account__header__fields
@@ -2959,10 +2961,10 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   background-color: transparent;
   border: 0;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   height: 90px !important;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: 90px !important;
 }
 
@@ -2975,12 +2977,12 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   width: 90px;
 }
 
-/* Follow/unfollow button */
+// Follow/unfollow button
 .layout-multiple-columns .button.button--with-bell {
   padding: 7px 18px;
 }
 
-/* Follow/unfollow button */
+// Follow/unfollow button
 body.embed .button.logo-button,
 .layout-multiple-columns .notification__report__actions .button,
 .layout-multiple-columns .column-inline-form button,
@@ -3007,7 +3009,7 @@ body.embed .button.logo-button,
   white-space: nowrap;
 }
 
-/* Dark button borders and other things that have borders all around */
+// Dark button borders and other things that have borders all around
 body.embed .button.logo-button,
 .layout-multiple-columns .notification__report__actions .button,
 .layout-multiple-columns .column-inline-form button,
@@ -3036,7 +3038,7 @@ body.embed .button.logo-button,
   width: 36px;
 }
 
-/* Copy-icon size in profile */
+// Copy-icon size in profile
 .layout-multiple-columns .account__header__buttons .icon-button svg {
   height: 18px;
   width: 18px;
@@ -3109,17 +3111,17 @@ body.embed .button.logo-button:hover,
   transform: translateX(-6px) translateY(2px);
 }
 
-/* Misc UI fixes */
+// Misc UI fixes
 .layout-multiple-columns .search__icon .icon.active {
   opacity: 1;
 }
 
-/* Explore -> For you shade in bio */
+// Explore -> For you shade in bio
 .layout-multiple-columns .scrollable .account-card__bio::after {
   background: linear-gradient(270deg, var(--color-bg-primary), transparent);
 }
 
-/* Empty column */
+// Empty column
 .layout-multiple-columns .empty-column-indicator {
   min-height: 120px;
 }
@@ -3145,19 +3147,18 @@ body.embed .button.logo-button:hover,
   display: none;
 }
 
-/* General fixes */
+// General fixes
 .layout-multiple-columns .account__header__bar .avatar {
   margin-left: 0 !important;
 }
 
-/* Fix for button line-height */
+// Fix for button line-height
 .layout-multiple-columns .button.logo-button {
   line-height: 22px;
 }
 
-/* Visual indicator about direct messages
-   @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031 */
-
+// Visual indicator about direct messages
+   // @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031
 .notification-ungrouped--direct,
 .layout-multiple-columns .detailed-status-direct {
   position: relative;
@@ -3167,7 +3168,8 @@ body.embed .button.logo-button:hover,
 .notification-ungrouped--mention.notification-ungrouped--direct::after {
   border-left: 20px solid transparent;
   border-top: 20px solid var(--color-text-brand);
-  /* Add a ribbon to the corner */
+
+  // Add a ribbon to the corner
   content: "";
   height: 0;
   position: absolute;
@@ -3180,12 +3182,12 @@ body.embed .button.logo-button:hover,
   top: -40px;
 }
 
-/* Private message conversations */
+// Private message conversations
 .layout-multiple-columns .conversation .status__action-bar {
   padding-left: 0;
 }
 
-/* Default buttons */
+// Default buttons
 .layout-multiple-columns .compose-form__buttons button,
 .layout-multiple-columns .button {
   border-bottom-left-radius: 9999px;
@@ -3194,7 +3196,7 @@ body.embed .button.logo-button:hover,
   border-top-right-radius: 9999px;
 }
 
-/* Compose hover and focus fix */
+// Compose hover and focus fix
 .layout-multiple-columns .report-dialog-modal__actions .button:hover,
 .layout-multiple-columns .server-banner .button,
 .layout-multiple-columns .sign-in-banner .button,
@@ -3206,7 +3208,7 @@ body.embed .button.logo-button:hover,
   transition: all 200ms;
 }
 
-/* Compose form */
+// Compose form
 .layout-multiple-columns .compose-panel .compose-form__highlightable,
 .layout-multiple-columns .compose-panel .compose-form {
   background-color: transparent;
@@ -3223,7 +3225,7 @@ body .compose-form .compose-form__uploads {
   padding-right: 0;
 }
 
-/* New compose form buttons from 4.3.0-alpha 2024-01-27 */
+// New compose form buttons from 4.3.0-alpha 2024-01-27
 .layout-multiple-columns .compose-form__dropdowns {
   gap: 10px;
 }
@@ -3250,7 +3252,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-brand);
 }
 
-/* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
+// Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button.warning,
 .layout-multiple-columns
   .compose-form__dropdowns
@@ -3277,7 +3279,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-brand);
 }
 
-/* Footer items */
+// Footer items
 .link-footer {
   position: relative;
   z-index: 5;
@@ -3288,7 +3290,7 @@ body .compose-form .compose-form__uploads {
   padding-bottom: 6px;
 }
 
-/* Add slight background color for the compose form */
+// Add slight background color for the compose form
 .layout-multiple-columns .compose-form__highlightable,
 .layout-multiple-columns
   .compose-form__highlightable
@@ -3301,7 +3303,7 @@ body .compose-form .compose-form__uploads {
   transition: all 200ms;
 }
 
-/* Smooth color transition on focus */
+// Smooth color transition on focus
 .layout-multiple-columns .compose-form__highlightable:focus-within,
 .layout-multiple-columns
   .compose-form
@@ -3318,7 +3320,7 @@ body .compose-form .compose-form__uploads {
   border-color: var(--color-bg-compose-form-focus);
 }
 
-/* Fixes bottom row padding when there's a background */
+// Fixes bottom row padding when there's a background
 .layout-multiple-columns
   .compose-form__highlightable
   .compose-form__buttons-wrapper,
@@ -3343,7 +3345,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-on-brand-base);
 }
 
-/* Tertiary button */
+// Tertiary button
 .layout-multiple-columns .button.button-tertiary {
   background-color: transparent !important;
   border: 1px solid var(--color-text-brand) !important;
@@ -3357,7 +3359,7 @@ body .compose-form .compose-form__uploads {
   border: 1px solid var(--color-text-brand);
 }
 
-/* Secondary button */
+// Secondary button
 .layout-multiple-columns .button.button-secondary {
   background-color: transparent !important;
   border: 1px solid var(--color-text-secondary);
@@ -3376,7 +3378,7 @@ body .compose-form .compose-form__uploads {
   border-color: var(--color-text-brand) !important;
   color: var(--color-bg-primary) !important;
 
-  /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
+  // This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has
   padding: 6px 17px;
 }
 
@@ -3387,10 +3389,11 @@ body .compose-form .compose-form__uploads {
 }
 
 .layout-multiple-columns .status__action-bar .icon-button {
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   height: 24px !important;
   position: relative;
-  /* It's inlined so we have to use !important */
+
+  // It's inlined so we have to use !important
   width: 30px !important;
 }
 
@@ -3400,17 +3403,17 @@ body .compose-form .compose-form__uploads {
   }
 
   .layout-multiple-columns .conversation .status__action-bar .icon-button {
-    /* It's inlined so we have to use !important */
+    // It's inlined so we have to use !important
     width: auto !important;
   }
 
-  /* Fix list links if they are too short */
+  // Fix list links if they are too short
   .layout-multiple-columns .list-panel .column-link {
     display: flex;
   }
 }
 
-/* New lists panel in v4.4.0-beta.1+mementomods-2025-06-14 */
+// New lists panel in v4.4.0-beta.1+mementomods-2025-06-14
 .layout-multiple-columns .navigation-panel__list-panel__header {
   .column-link {
     order: 1;
@@ -3423,7 +3426,7 @@ body .compose-form .compose-form__uploads {
   }
 }
 
-/* Replace bookmark icon */
+// Replace bookmark icon
 .layout-multiple-columns .status .icon-button:hover:focus .icon-bookmark,
 .layout-multiple-columns .status .icon-button:focus .icon-bookmark,
 .layout-multiple-columns .status .icon-button.active .icon-bookmark {
@@ -3434,30 +3437,28 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-bookmark-status-hover);
 }
 
-/* Replace the original icons (after 4.3.0)
--------------------------------------------
-
-/* Set size for the filter bar and profile icons */
-
+// Replace the original icons (after 4.3.0)
+// -------------------------------------------
+// /* Set size for the filter bar and profile icons
 .layout-multiple-columns .account__header__buttons .icon,
 .layout-multiple-columns .notification__filter-bar .icon {
   --size-icon: 20px;
 }
 
-/* Set size for the column link icons */
+// Set size for the column link icons
 .layout-multiple-columns .column-link .icon {
   --size-icon: 24px;
   height: 26px;
   width: 26px;
 }
 
-/* Set size for the status icons */
+// Set size for the status icons
 .layout-multiple-columns .detailed-status__action-bar .icon,
 .layout-multiple-columns .status__action-bar .icon {
   --size-icon: 19px;
 }
 
-/* General for all column icons */
+// General for all column icons
 .layout-multiple-columns
   .notification-group--favourite
   .notification__message
@@ -3515,7 +3516,7 @@ body .compose-form .compose-form__uploads {
   width: 18px;
 }
 
-/* Hide the original icon from behind */
+// Hide the original icon from behind
 .layout-multiple-columns .ui__navigation-bar__item[href="/home"] svg path,
 .layout-multiple-columns
   .ui__navigation-bar__item[href="/notifications"]
@@ -3571,7 +3572,7 @@ body .compose-form .compose-form__uploads {
   display: none;
 }
 
-/* ...except for these icons, we kinda like them as they are */
+// ...except for these icons, we kinda like them as they are
 .layout-multiple-columns .icon-user-plus.column-link__icon path,
 .layout-multiple-columns .icon.icon-undefined path,
 .layout-multiple-columns .icon.icon-users path,
@@ -3583,7 +3584,7 @@ body .compose-form .compose-form__uploads {
   display: block;
 }
 
-/* Home icon */
+// Home icon
 .layout-multiple-columns .ui__navigation-bar__item[href="/home"] .icon-home,
 .layout-multiple-columns .column-link .icon-home {
   background-image: var(--icon-home);
@@ -3628,7 +3629,7 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-cross-red);
 }
 
-/* Notifications icon */
+// Notifications icon
 .layout-multiple-columns .icon.icon-bell-o,
 .layout-multiple-columns .column-link .icon-bell {
   background-image: var(--icon-bell);
@@ -3638,7 +3639,7 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-bell-active);
 }
 
-/* Explore icon */
+// Explore icon
 .layout-multiple-columns
   .ui__navigation-bar__item[href="/explore"]
   .icon-explore,
@@ -3655,7 +3656,7 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-hashtag-active);
 }
 
-/* Live feeds icon */
+// Live feeds icon
 .layout-multiple-columns .column-link .icon-globe {
   background-image: var(--icon-globe);
 }
@@ -3664,7 +3665,7 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-globe-active);
 }
 
-/* Private mentions icon */
+// Private mentions icon
 .layout-multiple-columns .column-link .icon-at {
   background-image: var(--icon-direct-messages);
 }
@@ -3674,7 +3675,7 @@ body .compose-form .compose-form__uploads {
   transform: scale(1.15);
 }
 
-/* Bookmarks icon */
+// Bookmarks icon
 .layout-multiple-columns .column-link .icon-bookmarks {
   background-image: var(--icon-bookmark-column-link);
 }
@@ -3683,38 +3684,39 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-bookmark-column-link-active);
 }
 
-/* Preferences icon */
+// Preferences icon
 .layout-multiple-columns .column-link .icon-cog {
   --size-icon: 24px;
   background-image: var(--icon-sliders-contrast);
 }
 
-/* Settings icon */
+// Settings icon
 .layout-multiple-columns .column-header__button .icon-sliders {
   --size-icon: 20px;
   background-image: var(--icon-sliders);
 }
 
 .layout-multiple-columns .column-header__button.active .icon-sliders {
-  /* Use contrast icon */
+  // Use contrast icon
   background-image: var(--icon-sliders-contrast);
-  /* Disable rotate */
+
+  // Disable rotate
   transform: none;
 }
 
-/* Administration icon */
+// Administration icon
 .layout-multiple-columns .column-link .icon-tachometer {
   --size-icon: 24px;
   background-image: var(--icon-administration);
 }
 
-/* Moderation icon */
+// Moderation icon
 .layout-multiple-columns .column-link .icon-flag {
   --size-icon: 24px;
   background-image: var(--icon-moderation);
 }
 
-/* Replace retweet icon */
+// Replace retweet icon
 .layout-multiple-columns .notification__filter-bar .icon-retweet {
   background-image: var(--icon-boost-notification-filter-bar);
 }
@@ -3736,7 +3738,7 @@ body .compose-form .compose-form__uploads {
   background-repeat: no-repeat;
 }
 
-/* Replace notification retweet icon */
+// Replace notification retweet icon
 .layout-multiple-columns .notification-group--reblog .icon-repeat,
 .layout-multiple-columns .notification-reblog .icon-retweet {
   background-image: var(--icon-boost-notification-wrapper);
@@ -3756,8 +3758,8 @@ body .compose-form .compose-form__uploads {
   background-repeat: no-repeat;
 }
 
-/* Un-boost and un-bookmark styles */
-/* Mobile devices */
+// Un-boost and un-bookmark styles
+// Mobile devices
 .layout-multiple-columns button.icon-button:not(.active):focus .icon-retweet,
 .layout-multiple-columns button.icon-button:not(.active):hover .icon-retweet {
   animation: none;
@@ -3775,7 +3777,7 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-bookmark);
 }
 
-/* Un-boost and un-bookmark numbers on explore page */
+// Un-boost and un-bookmark numbers on explore page
 .layout-multiple-columns
   button.icon-button:not(.active):focus
   .icon-retweet
@@ -3787,13 +3789,13 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-secondary);
 }
 
-/* Replace bookmark icon */
+// Replace bookmark icon
 .layout-multiple-columns .detailed-status .icon-bookmark,
 .layout-multiple-columns .status .icon-bookmark {
   background-image: var(--icon-bookmark);
 }
 
-/* If a hover device */
+// If a hover device
 @media (hover: hover) {
   .layout-multiple-columns button.icon-button:not(.active):hover .icon-retweet,
   .layout-multiple-columns
@@ -3825,7 +3827,7 @@ body .compose-form .compose-form__uploads {
   color: var(--color-text-error);
 }
 
-/* Replace reply icon */
+// Replace reply icon
 .layout-multiple-columns .notification__filter-bar .icon-mail-reply,
 .layout-multiple-columns .notification__filter-bar .icon-reply,
 .layout-multiple-columns .notification__filter-bar .icon-reply-all {
@@ -3896,13 +3898,13 @@ body .compose-form .compose-form__uploads {
   background-image: var(--icon-reply-status-hover);
 }
 
-/* More icons */
+// More icons
 .layout-multiple-columns .icon-list-ul {
   background-image: var(--icon-list);
   top: 1px;
 }
 
-/* "More" icon */
+// "More" icon
 .layout-multiple-columns .icon-ellipsis-h {
   background-image: var(--icon-more-status-action-bar);
   background-position: center;
@@ -3916,7 +3918,7 @@ body .compose-form .compose-form__uploads {
   background-repeat: no-repeat;
 }
 
-/* Close icon */
+// Close icon
 .layout-multiple-columns .icon-close {
   background-image: var(--icon-close);
 }
@@ -3934,7 +3936,7 @@ body .compose-form .compose-form__uploads {
   opacity: 1;
 }
 
-/* iPad */
+// iPad
 @media screen and (width <= 889px) {
   .layout-multiple-columns .ui__header {
     border-bottom: 1px solid var(--color-border-primary);
@@ -3956,7 +3958,7 @@ body .compose-form .compose-form__uploads {
   transform: translateX(-6px);
 }
 
-/* Add border radius to media */
+// Add border radius to media
 .layout-multiple-columns .media-gallery,
 .layout-multiple-columns .audio-player,
 .layout-multiple-columns .video-player,
@@ -3967,7 +3969,7 @@ body .compose-form .compose-form__uploads {
   overflow: hidden;
 }
 
-/* Fix double border on media */
+// Fix double border on media
 .layout-multiple-columns
   .media-gallery
   .media-gallery__item
@@ -3975,12 +3977,12 @@ body .compose-form .compose-form__uploads {
   border: 0;
 }
 
-/* Exception for your own profile media gallery */
+// Exception for your own profile media gallery
 .layout-multiple-columns .account-gallery__container .media-gallery__gifv {
   border-radius: 0;
 }
 
-/* Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on) */
+// Hide autoplaying gifs in notifications (they get annoying if you have favs/boosts on)
 .layout-multiple-columns
   .notification.notification-reblog
   .media-gallery:has(.media-gallery__gifv.autoplay),
@@ -3993,46 +3995,46 @@ body .compose-form .compose-form__uploads {
   display: none;
 }
 
-/* More distinct focus color for accessibility, instead of just white */
+// More distinct focus color for accessibility, instead of just white
 .layout-multiple-columns input:focus-visible {
   outline-color: var(--color-text-brand);
   outline-style: solid;
 }
 
-/* Embeds outside Mastodon */
+// Embeds outside Mastodon
 body.embed .entry .detailed-status {
   backface-visibility: hidden;
   background-color: #00000059;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   border-radius: 10px !important;
   overflow: hidden;
 }
 
-/* Destructive colors (For you -suggestions, users when focused to the follow button */
+// Destructive colors (For you -suggestions, users when focused to the follow button
 .layout-multiple-columns .button.logo-button.button--destructive:active,
 .layout-multiple-columns .button.logo-button.button--destructive:focus {
   background-color: var(--color-text-error);
   border-color: var(--color-text-error);
 }
 
-/* Fix character counter color when it's over the limit */
+// Fix character counter color when it's over the limit
 .layout-multiple-columns .character-counter.character-counter--over {
   color: var(--color-text-error);
 }
 
-/* Show more in server banner */
+// Show more in server banner
 .layout-multiple-columns .server-banner__meta__column {
   max-width: 60%;
   width: unset;
 }
 
-/* Increase gap for server-banner__meta */
+// Increase gap for server-banner__meta
 .layout-multiple-columns .server-banner__meta {
   gap: 25px;
 }
 
-/* Native Mastodon 4.1.2-nightly threaded lines */
+// Native Mastodon 4.1.2-nightly threaded lines
 .layout-multiple-columns .status__line--first {
   height: calc(100% + var(--size-avatar));
 }
@@ -4041,7 +4043,7 @@ body.embed .entry .detailed-status {
   height: calc(100% + 32px);
 }
 
-/* Default lines when replying in real time */
+// Default lines when replying in real time
 .layout-multiple-columns
   div[tabindex="-1"]:has(.status--in-thread)
   .status--in-thread:not(.status--first-in-thread)
@@ -4049,7 +4051,7 @@ body.embed .entry .detailed-status {
   height: 0;
 }
 
-/* Hide line before first in thread */
+// Hide line before first in thread
 .layout-multiple-columns
   div[tabindex="-1"]:has(.status--in-thread)
   + div[tabindex="-1"]
@@ -4079,7 +4081,7 @@ body.embed .entry .detailed-status {
   border-top: 0;
 }
 
-/* Threaded line, actually */
+// Threaded line, actually
 .layout-multiple-columns .status__line {
   border-inline-start: 2px solid var(--color-border-primary);
 }
@@ -4088,7 +4090,7 @@ body.embed .entry .detailed-status {
   background-color: var(--color-border-primary);
 }
 
-/* Hide the "stub" from the first status line */
+// Hide the "stub" from the first status line
 div[tabindex="-1"]
   + div[tabindex="-1"]
   > .status__wrapper
@@ -4108,7 +4110,7 @@ div[tabindex="-1"]
   padding-left: 4px;
 }
 
-/* Scrollbars */
+// Scrollbars
 *::-webkit-scrollbar,
 .layout-multiple-columns .scrollable::-webkit-scrollbar,
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar,
@@ -4195,7 +4197,7 @@ div[tabindex="-1"]
   background-color: transparent;
 }
 
-/* Drawer scollbars */
+// Drawer scollbars
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb {
   background-color: var(--color-text-secondary);
   border: 0;
@@ -4221,7 +4223,7 @@ div[tabindex="-1"]
   background-color: var(--color-bg-tertiary);
 }
 
-/* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
+// New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16
 .layout-multiple-columns .onboarding__steps__item,
 .layout-multiple-columns .onboarding__link {
   background-color: var(--color-bg-tertiary);
@@ -4236,7 +4238,7 @@ div[tabindex="-1"]
   margin-bottom: 10px;
 }
 
-/* Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout */
+// Fixes for the design for v4.3.0-alpha.3-2024-03-22 with new popout layout
 .layout-multiple-columns .drawer__pager,
 .layout-multiple-columns .explore__search-results {
   border: 0;
@@ -4252,8 +4254,6 @@ div[tabindex="-1"]
   border-top: 0;
 }
 
-/*
- * Heart animation micro-interaction start
- * ---------------------------------------
- */
+ // Heart animation micro-interaction start
+ // ---------------------------------------
 

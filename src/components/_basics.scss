@@ -1,4 +1,4 @@
-/* Vars on iPad, landscape */
+// Vars on iPad, landscape
 @media (width >= 1175px) and (width <= 1260px) {
   :root {
     --width-main-panel: 500px;
@@ -7,7 +7,7 @@
   }
 }
 
-/* Vars in mobile */
+// Vars in mobile
 @media (width <= 500px) {
   :root {
     --font-size: 16px;
@@ -16,21 +16,21 @@
     --badges-distance-from-edge: 10px;
   }
 
-  /* Hide scrollbar on mobile, since we can't pick the handle anyway */
+  // Hide scrollbar on mobile, since we can't pick the handle anyway
   .layout-single-column::-webkit-scrollbar {
     display: none;
   }
 }
 
-/* Search popout offset */
+// Search popout offset
 .layout-single-column .search__popout,
 .layout-single-column .search-popout {
   left: calc(30px / 2);
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   max-width: calc(100% - 30px) !important;
 
-  /* It's inlined so we have to use !important */
+  // It's inlined so we have to use !important
   width: calc(100% - 30px) !important;
 }
 
@@ -44,7 +44,7 @@ body.layout-single-column {
   width: 100%;
 }
 
-/* Text color */
+// Text color
 .layout-single-column .account__header__tabs__name h1,
 .layout-single-column .account__header__bio .account__header__content,
 .layout-single-column .reply-indicator__content,
@@ -52,7 +52,7 @@ body.layout-single-column {
   color: var(--color-text-primary);
 }
 
-/* Link color variants */
+// Link color variants
 .layout-single-column .status-link.hashtag {
   color: var(--color-text-brand);
 }
@@ -65,7 +65,7 @@ body.layout-single-column {
   color: var(--color-text-brand);
 }
 
-/* Logo */
+// Logo
 .layout-single-column .ui__header__logo,
 .layout-single-column .column-link.column-link--logo {
   background-image: var(--logo);
@@ -82,12 +82,12 @@ body.layout-single-column {
   display: none;
 }
 
-/* Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417 */
+// Fixes a regression for 4.3.0-alpha.3-2024-04-06 caused by https://github.com/mastodon/mastodon/commit/4f068d4fcc4d134fcbd56faa8f39c608dd343417
 .layout-single-column .ui__header__logo {
   flex-grow: unset;
 }
 
-/* Things that should have the default font-size */
+// Things that should have the default font-size
 .layout-single-column .notification__message,
 .layout-single-column .status__content,
 .layout-single-column .account__header__tabs__name h1 small,
@@ -105,7 +105,7 @@ body.layout-single-column {
   line-height: var(--line-height);
 }
 
-/* Things that should have the mid font-size */
+// Things that should have the mid font-size
 .layout-single-column .account__header__extra__links,
 .layout-single-column
   .columns-area__panels__pane--compositional
@@ -124,17 +124,17 @@ body.layout-single-column {
   line-height: var(--line-height-mid);
 }
 
-/* Exceptions */
+// Exceptions
 .layout-single-column .account__header__content {
   line-height: 18px;
 }
 
-/* Things that will have even smaller font size */
+// Things that will have even smaller font size
 .layout-single-column .account__header__account-note label {
   font-size: var(--font-size-12);
 }
 
-/* Line heights */
+// Line heights
 .layout-single-column .status__content {
   line-height: var(--line-height);
 }
