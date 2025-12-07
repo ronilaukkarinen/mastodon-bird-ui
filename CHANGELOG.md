@@ -7,6 +7,7 @@ This is a major rewrite of the project architecture. The codebase has been compl
 * Add Parcel bundler for SCSS compilation
 * Add Browsersync for live development with CSS hot-reloading
 * Add npm scripts for development workflow (`npm run dev`, `npm run build`)
+* Add automatic version banner injection from package.json to built CSS
 
 #### Architecture
 
