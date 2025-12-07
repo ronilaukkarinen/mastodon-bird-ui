@@ -5,14 +5,14 @@
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Hide/Show media button */
 .layout-single-column .spoiler-button.spoiler-button--minified > button {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-badges);
-  color: var(--color-ghost-button-text);
+  color: var(--color-text-on-brand-base);
   opacity: 0.5;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .layout-single-column .icon-button:hover {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Other general buttons */
@@ -46,6 +46,6 @@
 .column-header__button.active:focus,
 .layout-single-column .column-header__button.active:hover {
   background-color: var(--color-focusable-toot);
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 

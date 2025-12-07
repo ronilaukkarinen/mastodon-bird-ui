@@ -30,7 +30,7 @@
 .layout-single-column .emoji-mart-search input,
 .layout-single-column .conversation,
 .layout-single-column .setting-text__wrapper {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 /* Change panel order */
@@ -93,12 +93,12 @@ body.embed .status__content a,
 .layout-single-column .status__content a,
 .layout-single-column .column-link--transparent.active,
 .layout-single-column .status__content__read-more-button {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Toggles */
 .layout-single-column .react-toggle .react-toggle-track {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 /* Accented background colors */
@@ -106,7 +106,7 @@ body.embed .status__content a,
 .layout-single-column .language-dropdown__dropdown__results__item.active,
 .layout-single-column .icon-with-badge__badge,
 .layout-single-column .button {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-text-brand);
 }
 
 .layout-single-column .block-modal__cancel-button,
@@ -114,7 +114,7 @@ body.embed .status__content a,
 .layout-single-column .confirmation-modal__secondary-button,
 .layout-single-column .mute-modal__cancel-button {
   background-color: transparent;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-mid);
 }
 
@@ -127,32 +127,32 @@ body.embed .status__content a,
 .layout-single-column .confirmation-modal__secondary-button:hover,
 .layout-single-column .mute-modal__cancel-button:hover {
   background-color: transparent;
-  color: var(--color-dark-electric-blue);
+  color: var(--color-text-tertiary);
 }
 
 .column-link--transparent .icon-with-badge__badge,
 .layout-single-column .icon-with-badge__badge {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-bg);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-bg-primary);
 }
 
 /* Accented strokes */
 .layout-single-column .trends__item__sparkline path:last-child {
   /* It's inlined so we have to use !important */
-  stroke: var(--color-accent) !important;
+  stroke: var(--color-text-brand) !important;
 }
 
 /* Dropdown hovers */
 .layout-single-column .language-dropdown__dropdown__results__item:hover,
 .layout-single-column .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Accented border colors */
 .layout-single-column .notification.unread::before,
 .layout-single-column .status__wrapper.unread::before {
-  border-color: var(--color-accent);
+  border-color: var(--color-text-brand);
   display: none;
 }
 
@@ -160,9 +160,9 @@ body.embed .status__content a,
 body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: flex;
   flex-wrap: nowrap;
   font-size: var(--font-size-mid);
@@ -182,9 +182,9 @@ body
   .spoiler-input__input,
 body .content-warning {
   background-color: var(--color-focusable-toot);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: grid;
   font-size: var(--font-size-mid);
   grid-template-columns: minmax(0, 3fr) minmax(88px, 1fr);
@@ -207,7 +207,7 @@ body
 
 body .content-warning .link-button {
   align-self: flex-start;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-mid);
   font-weight: var(--font-weight-semibold);
   justify-self: flex-end;
@@ -254,7 +254,7 @@ body .content-warning::before {
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-semibold);
   margin-left: auto;
   padding-bottom: 8px;
@@ -284,7 +284,7 @@ body .content-warning::before {
 .layout-single-column .notification.unread,
 .layout-single-column .status__wrapper.unread,
 body .notification-group.notification-group--unread {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
 }
 
 body .notification-group--unread::before,
@@ -378,18 +378,18 @@ body .notification-ungrouped--unread::before {
 .layout-single-column
   .privacy-dropdown__option:not(.active)
   .privacy-dropdown__option__content {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Dim backgrounds */
 .layout-single-column .poll__chart {
-  background-color: var(--color-dim);
+  background-color: var(--color-text-secondary);
 }
 
 /* Lighter border colors */
 .layout-single-column .report-dialog-modal .dialog-option .poll__input,
 .layout-single-column .poll__input {
-  border-color: var(--color-brand-mastodon-text-light);
+  border-color: var(--color-text-secondary);
 }
 
 /* Light grey things */
@@ -401,8 +401,8 @@ body .notification-ungrouped--unread::before {
 /* CW button */
 .layout-single-column .reply-indicator__content .status__content__spoiler-link,
 .layout-single-column .status__content__spoiler-link {
-  background-color: var(--color-dark);
-  color: var(--color-light-purple);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-tertiary);
   font-weight: var(--font-weight-semibold);
 
   /* Need to override forced styles */
@@ -418,8 +418,8 @@ body .notification-ungrouped--unread::before {
   .status__content__spoiler-link:hover,
 .layout-single-column .status__content .status__content__spoiler-link:focus,
 .layout-single-column .status__content .status__content__spoiler-link:hover {
-  background-color: var(--color-dark);
-  color: var(--color-lighter-purple);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-tertiary);
 }
 
 /* CW button in notifications */
@@ -428,8 +428,8 @@ body .notification-ungrouped--unread::before {
   .reply-indicator__content
   .status__content__spoiler-link,
 .layout-single-column .notification .status__content__spoiler-link {
-  background-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column
@@ -448,8 +448,8 @@ body .notification-ungrouped--unread::before {
   .notification
   .status__content
   .status__content__spoiler-link:hover {
-  background-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 /* Light purple things */
@@ -460,6 +460,6 @@ body .notification-ungrouped--unread::before {
 .layout-single-column .column-settings__section,
 .layout-single-column .setting-toggle__label,
 .layout-single-column .server-banner__number-label {
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
 }
 

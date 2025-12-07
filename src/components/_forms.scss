@@ -3,7 +3,7 @@
 .layout-single-column .list-editor input.setting-text,
 .layout-single-column .list-adder input.setting-text {
   background-color: transparent;
-  border-color: var(--color-black-coral);
+  border-color: var(--color-border-primary);
   height: 38px;
 }
 
@@ -21,13 +21,13 @@
 }
 
 .layout-single-column .embed-modal .embed-modal__container .embed-modal__html {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-single-column .embed-modal .embed-modal__container .embed-modal__html,
 .layout-single-column .list-editor__search .search__input {
   background-color: transparent;
-  border-color: var(--color-black-coral);
+  border-color: var(--color-border-primary);
   height: 38px;
 }
 
@@ -57,8 +57,8 @@
 }
 /* Composer form warnings */
 .layout-single-column .compose-form .compose-form__warning {
-  background-color: var(--color-light-purple);
-  color: var(--color-bg);
+  background-color: var(--color-text-tertiary);
+  color: var(--color-bg-primary);
 }
 
 /* Content warning placeholder */
@@ -66,6 +66,6 @@
   .compose-form
   .autosuggest-textarea__textarea::placeholder,
 .layout-single-column .compose-form .spoiler-input__input::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 

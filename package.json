@@ -1,6 +1,6 @@
 {
   "name": "mastodon-bird-ui",
-  "version": "4.0.0rc1",
+  "version": "4.0.0rc2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,6 +27,7 @@
     "prettier": "^3.6.2",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-csstree-validator": "^3.0.0",
     "stylelint-order": "^6.0.3"
   }

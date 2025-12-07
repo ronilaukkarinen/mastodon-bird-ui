@@ -35,8 +35,8 @@
 }
 
 body.layout-single-column {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 .layout-single-column .ui {
@@ -49,20 +49,20 @@ body.layout-single-column {
 .layout-single-column .account__header__bio .account__header__content,
 .layout-single-column .reply-indicator__content,
 .layout-single-column .status__content {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 
 /* Link color variants */
 .layout-single-column .status-link.hashtag {
-  color: var(--color-hashtag);
+  color: var(--color-text-brand);
 }
 
 .layout-single-column .status-link.mention:not(.hashtag) {
-  color: var(--color-mention);
+  color: var(--color-text-brand);
 }
 
 .layout-single-column .status-link.mention:not(.hashtag):not(.mention) {
-  color: var(--color-link);
+  color: var(--color-text-brand);
 }
 
 /* Logo */

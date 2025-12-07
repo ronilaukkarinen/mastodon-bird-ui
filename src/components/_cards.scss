@@ -4,13 +4,13 @@
 .layout-single-column .status-card:hover,
 .layout-single-column .status-card:focus {
   background-color: transparent;
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 /* URL preview card summary text */
 .layout-single-column .status-card .status-card__host,
 .layout-single-column .status-card .status-card__description {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* URL preview card box */
@@ -25,8 +25,8 @@
 
 /* Preview cards */
 .layout-single-column .status-card {
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
   transition:
     background-color 200ms,
@@ -60,7 +60,7 @@
 .layout-single-column a.status-card:focus .status-card__title,
 .layout-single-column a.status-card:hover .status-card__author,
 .layout-single-column a.status-card:hover .status-card__title {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 
 .layout-single-column .status-card a:active .status-card__host,
@@ -71,7 +71,7 @@
 .layout-single-column a.status-card:hover .status-card__host,
 .layout-single-column a.status-card:focus .status-card__description,
 .layout-single-column a.status-card:hover .status-card__description {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* New Quote Posts feature after v4.5.0.alpha.2-2025-08-24 */
@@ -88,17 +88,17 @@
 }
 
 .status__quote.status__quote--error {
-  --surface-border-color: var(--color-border);
+  --surface-border-color: var(--color-border-primary);
   background-color: var(--surface-border-color);
   border-color: var(--surface-border-color);
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   justify-content: center;
   min-height: 45px;
   text-align: center;
 }
 
 .status__quote.status__quote--error > span {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .status__quote:not(.status__quote--error) .status {
@@ -109,7 +109,7 @@
 .layout-single-column .dropdown-menu__item [aria-disabled="true"],
 .layout-single-column .dropdown-menu__item :disabled,
 .layout-single-column .dropdown-menu__item button:disabled {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 div[data-popper-placement] .reblog-button__item button:disabled {
@@ -174,7 +174,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
 }
 
 .layout-single-column a.status-card .status-card__title {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-semibold);
   line-height: 1.3;
@@ -186,7 +186,7 @@ div[data-popper-placement] .reblog-button__item button:disabled {
 }
 
 .layout-single-column .status-card.expanded .status-card__host {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   margin-bottom: 0;
   margin-top: 0;

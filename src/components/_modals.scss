@@ -2,14 +2,14 @@
 /* Modal overlay */
 .layout-single-column .modal-root__overlay {
   /* It's inlined so we have to use !important */
-  background-color: var(--color-modal-overlay) !important;
-  color: var(--color-light-text) !important;
+  background-color: var(--color-bg-overlay) !important;
+  color: var(--color-text-primary) !important;
 }
 
 .layout-single-column .modal-root__modal .display-name strong,
 .layout-single-column .modal-root__modal .status__content {
   /* It's inlined so we have to use !important */
-  color: var(--color-light-text) !important;
+  color: var(--color-text-primary) !important;
 }
 
 /* Hide footer buttons in modals */
@@ -36,7 +36,7 @@
 /* Improve modal icon size and accessibility */
 .layout-single-column .image-loader .icon,
 .layout-single-column .media-modal__navigation .icon {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   height: 32px;
   width: 32px;
 }

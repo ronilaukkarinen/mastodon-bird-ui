@@ -57,7 +57,7 @@
 .icon-button.star-icon.active,
 .notification-group--favourite .star-icon,
 .notification-favourite .star-icon {
-  color: var(--color-red);
+  color: var(--color-text-error);
 }
 
 .layout-single-column
@@ -205,7 +205,7 @@ body .columns-area__panels__pane {
 }
 
 body .ui__navigation-bar {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 .layout-single-column .ui__navigation-bar {
@@ -294,11 +294,11 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 @media (hover: hover) {
   .layout-single-column button.icon-button:not(.active):hover .icon-star ~ span,
   .layout-single-column button.icon-button:not(.active):hover .icon-star {
-    color: var(--color-yellow);
+    color: var(--color-text-warning);
   }
 
   .layout-single-column button.icon-button.active:hover .icon-star ~ span {
-    color: var(--color-dim);
+    color: var(--color-text-secondary);
   }
 }
 
@@ -321,12 +321,12 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 }
 
 .layout-single-column button.icon-button:hover .icon-star ~ span {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column button.icon-button.activate .icon-star ~ span,
 .layout-single-column button.icon-button.active .icon-star ~ span {
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
 }
 
 .layout-single-column .notification__filter-bar .icon-star,
@@ -347,7 +347,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
   background-color: unset !important;
   background-image: var(--icon-star-detailed-status-action-bar-active) !important;
   background-position: center;
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
   left: unset !important;
   position: relative;
   top: 0;
@@ -401,7 +401,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 
 .layout-single-column .detailed-status__action-bar button.icon-button.activate.star-icon::before,
 .layout-single-column .status__action-bar button.icon-button.activate.star-icon::before {
-  border: 0px solid var(--color-yellow);
+  border: 0px solid var(--color-text-warning);
   border-radius: 10em;
   content: '';
   height: 0em;
@@ -416,7 +416,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 .layout-single-column .icon-button.star-icon.active,
 .layout-single-column .notification-group--favourite .star-icon,
 .layout-single-column .notification-favourite .star-icon {
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
 }
 
 .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.deactivate:hover .icon-star,
@@ -425,7 +425,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 .layout-single-column .detailed-status button.icon-button.deactivate .icon-star,
 .layout-single-column .status button.icon-button.deactivate .icon-star {
   background-image: var(--icon-star-detailed-status-action-bar-hover) !important;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column .detailed-status__action-bar button.icon-button.star-icon.activate:hover .icon-star,
@@ -434,7 +434,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 .layout-single-column .detailed-status button.icon-button:hover .icon-star,
 .layout-single-column .status button.icon-button:hover .icon-star {
   background-image: var(--icon-star-detailed-status-action-bar-active) !important;
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
   position: relative;
   top: 0;
 }
@@ -442,7 +442,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 .layout-single-column .detailed-status__action-bar .icon-button:focus .icon-star,
 .layout-single-column .detailed-status button.icon-button:focus .icon-star,
 .layout-single-column .status button.icon-button:hover .icon-star {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column button:focus,
@@ -452,7 +452,7 @@ body.layout-single-column.scroll-down .tabs-bar__portal {
 
 .layout-single-column button:focus-visible,
 .layout-single-column .icon-button:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-text-brand);
 }
 
 .layout-single-column .search__popout__menu__item {

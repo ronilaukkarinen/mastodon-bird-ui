@@ -1,0 +1,29 @@
+/* Mastodon Bird UI base color palette */
+
+@mixin palette {
+  --color-black: #000;
+  --color-grey-950: #1e2028;
+  --color-grey-800: #2b2f3a;
+  --color-grey-700: #38384d;
+  --color-grey-600: #576078;
+  --color-grey-500: #717c9b;
+  --color-grey-400: #8b98a5;
+  --color-grey-300: #9baec8;
+  --color-grey-200: #b4b6cb;
+  --color-grey-100: #d8d9e3;
+  --color-grey-50: #f7f9f9;
+  --color-white: #fff;
+  --color-indigo-600: #6364ff;
+  --color-indigo-400: #858afa;
+  --color-indigo-300: #a5abfd;
+  --color-indigo-200: #c8cdfe;
+  --color-indigo-100: #e0e3ff;
+  --color-indigo-50: #f0f1ff;
+  --color-red-500: #f91880;
+  --color-red-600: #f91880;
+  --color-yellow-400: #ffac33;
+  --color-yellow-600: #ffac33;
+  --color-yellow-700: #e69500;
+  --color-green-400: #00ba7c;
+  --color-green-600: #00ba7c;
+}

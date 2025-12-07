@@ -2,12 +2,10 @@
   "defaultSeverity": "warning",
   "plugins": [
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties",
-    "stylelint-order",
-    "stylelint-csstree-validator"
+    "stylelint-order"
   ],
-  "extends": ["stylelint-config-standard"],
+  "extends": ["stylelint-config-standard-scss"],
   "rules": {
-    "csstree/validator": true,
     "declaration-block-single-line-max-declarations": 1,
     "order/order": [
       {
@@ -71,7 +69,7 @@
     "csstools/value-no-unknown-custom-properties": [
       true,
       {
-        "importFrom": ["layout-single-column.css"]
+        "importFrom": ["dist/layout-single-column.css"]
       }
     ],
     "rule-empty-line-before": [
@@ -115,7 +113,7 @@
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
     "media-feature-name-no-unknown": true,
-    "at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": true,
     "comment-no-empty": true,
     "no-duplicate-selectors": true,
     "no-empty-source": true,

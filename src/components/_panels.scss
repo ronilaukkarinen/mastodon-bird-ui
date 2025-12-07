@@ -47,20 +47,20 @@
 .layout-single-column .report-modal,
 .layout-single-column .announcements__root,
 .layout-single-column .column-header__collapsible-inner {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-  color: var(--color-light-text);
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
 }
 
 /* Setting boxes */
 .layout-single-column .column-header__collapsible-inner {
-  background-color: var(--color-bg);
-  border-color: var(--color-border);
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-border-primary);
 }
 
 /* Column-header border */
 .layout-single-column .column-header__collapsible {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
   border-right: 0;
 }
@@ -72,7 +72,7 @@
 
 /* Has dark 1px border */
 .layout-single-column .dismissable-banner {
-  border: 1px solid var(--color-dark);
+  border: 1px solid var(--color-bg-tertiary);
 }
 
 /* More subtle box-shadow for dropdown-menu */

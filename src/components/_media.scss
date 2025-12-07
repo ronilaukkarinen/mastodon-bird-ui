@@ -134,7 +134,7 @@ body.embed #mastodon-status {
 
 body.embed .detailed-status__meta,
 .layout-single-column .detailed-status__meta {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
 }
 
@@ -153,7 +153,7 @@ body.embed .detailed-status__favorites,
 
 body.embed .detailed-status__meta .animated-number,
 .layout-single-column .detailed-status__meta .animated-number {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -164,18 +164,18 @@ body.embed .detailed-status__reblogs,
 
 body.embed .detailed-status__reblogs,
 body.embed .detailed-status__favorites {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
 body.embed .activity-stream .entry {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 body.embed > .activity-stream {
   backface-visibility: hidden;
   background: #313543 !important;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -195,21 +195,21 @@ body.embed > .activity-stream {
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .fa-reply + span::after,
 .layout-single-column .detailed-status__link > .icon-reply + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Replies";
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .fa-retweet + span::after,
 .layout-single-column .detailed-status__link > .icon-retweet + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Boosts";
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .fa-star + span::after,
 .layout-single-column .detailed-status__link > .icon-star + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Favourites";
   font-weight: var(--font-weight-semibold);
 }

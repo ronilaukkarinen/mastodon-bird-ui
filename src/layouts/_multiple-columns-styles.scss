@@ -34,8 +34,8 @@
 }
 
 body.layout-multiple-columns {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .ui {
@@ -48,20 +48,20 @@ body.layout-multiple-columns {
 .layout-multiple-columns .account__header__bio .account__header__content,
 .layout-multiple-columns .reply-indicator__content,
 .layout-multiple-columns .status__content {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 
 /* Link color variants */
 .layout-multiple-columns .status-link.hashtag {
-  color: var(--color-hashtag);
+  color: var(--color-text-brand);
 }
 
 .layout-multiple-columns .status-link.mention:not(.hashtag) {
-  color: var(--color-mention);
+  color: var(--color-text-brand);
 }
 
 .layout-multiple-columns .status-link.mention:not(.hashtag):not(.mention) {
-  color: var(--color-link);
+  color: var(--color-text-brand);
 }
 
 /* Logo */
@@ -139,14 +139,14 @@ body.layout-multiple-columns {
 /* Modal overlay */
 .layout-multiple-columns .modal-root__overlay {
   /* It's inlined so we have to use !important */
-  background-color: var(--color-modal-overlay) !important;
-  color: var(--color-light-text) !important;
+  background-color: var(--color-bg-overlay) !important;
+  color: var(--color-text-primary) !important;
 }
 
 .layout-multiple-columns .modal-root__modal .display-name strong,
 .layout-multiple-columns .modal-root__modal .status__content {
   /* It's inlined so we have to use !important */
-  color: var(--color-light-text) !important;
+  color: var(--color-text-primary) !important;
 }
 
 /* Hide footer buttons in modals */
@@ -173,7 +173,7 @@ body.layout-multiple-columns {
 /* Improve modal icon size and accessibility */
 .layout-multiple-columns .image-loader .icon,
 .layout-multiple-columns .media-modal__navigation .icon {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   height: 32px;
   width: 32px;
 }
@@ -182,7 +182,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns .list-editor input.setting-text,
 .layout-multiple-columns .list-adder input.setting-text {
   background-color: transparent;
-  border-color: var(--color-black-coral);
+  border-color: var(--color-border-primary);
   height: 38px;
 }
 
@@ -202,7 +202,7 @@ body.layout-multiple-columns {
   .embed-modal
   .embed-modal__container
   .embed-modal__html {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns
@@ -211,7 +211,7 @@ body.layout-multiple-columns {
   .embed-modal__html,
 .layout-multiple-columns .list-editor__search .search__input {
   background-color: transparent;
-  border-color: var(--color-black-coral);
+  border-color: var(--color-border-primary);
   height: 38px;
 }
 
@@ -231,13 +231,13 @@ body.layout-multiple-columns {
 .layout-multiple-columns .status-card:hover,
 .layout-multiple-columns .status-card:focus {
   background-color: transparent;
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 /* URL preview card summary text */
 .layout-multiple-columns .status-card .status-card__host,
 .layout-multiple-columns .status-card .status-card__description {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* URL preview card box */
@@ -252,8 +252,8 @@ body.layout-multiple-columns {
 
 /* Preview cards */
 .layout-multiple-columns .status-card {
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
   transition:
     background-color 200ms,
@@ -289,7 +289,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card:hover .status-card__title,
 .layout-multiple-columns a.status-card:focus .status-card__description,
 .layout-multiple-columns a.status-card:hover .status-card__description {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .status-card a:active .status-card__host,
@@ -298,14 +298,14 @@ body.layout-multiple-columns {
 .layout-multiple-columns a.status-card:active .status-card__host,
 .layout-multiple-columns a.status-card:focus .status-card__host,
 .layout-multiple-columns a.status-card:hover .status-card__host {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Disabled quote post selection */
 .layout-multiple-column .dropdown-menu__item [aria-disabled="true"],
 .layout-multiple-column .dropdown-menu__item :disabled,
 .layout-multiple-column .dropdown-menu__item button:disabled {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Show minimal status card if there's no image */
@@ -340,7 +340,7 @@ body.layout-multiple-columns {
 }
 
 .layout-multiple-columns a.status-card .status-card__title {
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-semibold);
   line-height: 1.3;
@@ -352,7 +352,7 @@ body.layout-multiple-columns {
 }
 
 .layout-multiple-columns .status-card.expanded .status-card__host {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   margin-bottom: 0;
   margin-top: 0;
@@ -365,11 +365,11 @@ body.layout-multiple-columns {
 /* Announcements */
 .layout-multiple-columns .announcements__pagination .icon,
 .layout-multiple-columns .announcements__pagination {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-multiple-columns .announcements__pagination .icon-button:hover .icon {
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
 }
 
 /* Dark panels like modals and boxes */
@@ -423,20 +423,20 @@ body.layout-multiple-columns {
 .layout-multiple-columns .report-modal,
 .layout-multiple-columns .announcements__root,
 .layout-multiple-columns .column-header__collapsible-inner {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-  color: var(--color-light-text);
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
 }
 
 /* Setting boxes */
 .layout-multiple-columns .column-header__collapsible-inner {
-  background-color: var(--color-bg);
-  border-color: var(--color-border);
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-border-primary);
 }
 
 /* Column-header border */
 .layout-multiple-columns .column-header__collapsible {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-primary);
 }
 
 .layout-multiple-columns .column-header__collapsible,
@@ -446,7 +446,7 @@ body.layout-multiple-columns {
 
 /* Has dark 1px border */
 .layout-multiple-columns .dismissable-banner {
-  border: 1px solid var(--color-dark);
+  border: 1px solid var(--color-bg-tertiary);
 }
 
 /* More subtle box-shadow for dropdown-menu */
@@ -472,8 +472,8 @@ body.layout-multiple-columns {
 
 /* Composer form warnings */
 .layout-multiple-columns .compose-form .compose-form__warning {
-  background-color: var(--color-light-purple);
-  color: var(--color-bg);
+  background-color: var(--color-text-tertiary);
+  color: var(--color-bg-primary);
 }
 
 /* Content warning placeholder */
@@ -481,7 +481,7 @@ body.layout-multiple-columns {
   .compose-form
   .autosuggest-textarea__textarea::placeholder,
 .layout-multiple-columns .compose-form .spoiler-input__input::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Border colors */
@@ -515,7 +515,7 @@ body.layout-multiple-columns {
 .layout-multiple-columns .emoji-mart-search input,
 .layout-multiple-columns .conversation,
 .layout-multiple-columns .setting-text__wrapper {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 /* Change panel order */
@@ -582,14 +582,14 @@ body.embed .status__content a,
 .layout-multiple-columns .status__content a,
 .layout-multiple-columns .column-link--transparent.active,
 .layout-multiple-columns .status__content__read-more-button {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Toggles etc. */
 .layout-multiple-columns .search-results__header,
 .layout-multiple-columns .drawer__inner,
 .layout-multiple-columns .react-toggle .react-toggle-track {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 /* Accented background colors */
@@ -597,7 +597,7 @@ body.embed .status__content a,
 .layout-multiple-columns .language-dropdown__dropdown__results__item.active,
 .layout-multiple-columns .icon-with-badge__badge,
 .layout-multiple-columns .button {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-text-brand);
 }
 
 .layout-multiple-columns .block-modal__cancel-button,
@@ -605,7 +605,7 @@ body.embed .status__content a,
 .layout-multiple-columns .confirmation-modal__secondary-button,
 .layout-multiple-columns .mute-modal__cancel-button {
   background-color: transparent;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-mid);
 }
 
@@ -618,32 +618,32 @@ body.embed .status__content a,
 .layout-multiple-columns .confirmation-modal__secondary-button:hover,
 .layout-multiple-columns .mute-modal__cancel-button:hover {
   background-color: transparent;
-  color: var(--color-dark-electric-blue);
+  color: var(--color-text-tertiary);
 }
 
 .column-link--transparent .icon-with-badge__badge,
 .layout-multiple-columns .icon-with-badge__badge {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-bg);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-bg-primary);
 }
 
 /* Accented strokes */
 .layout-multiple-columns .trends__item__sparkline path:last-child {
   /* It's inlined so we have to use !important */
-  stroke: var(--color-accent) !important;
+  stroke: var(--color-text-brand) !important;
 }
 
 /* Dropdown hovers */
 .layout-multiple-columns .language-dropdown__dropdown__results__item:hover,
 .layout-multiple-columns .language-dropdown__dropdown__results__item:focus {
   background-color: var(--color-accent-dark-50);
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Accented border colors */
 .layout-multiple-columns .notification.unread::before,
 .layout-multiple-columns .status__wrapper.unread::before {
-  border-color: var(--color-accent);
+  border-color: var(--color-text-brand);
   display: none;
 }
 
@@ -651,9 +651,9 @@ body.embed .status__content a,
 body .status__wrapper.status__wrapper--filtered {
   align-items: center;
   background-color: var(--color-focusable-toot);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: flex;
   flex-wrap: nowrap;
   font-size: var(--font-size-mid);
@@ -673,9 +673,9 @@ body
   .spoiler-input__input,
 body .content-warning {
   background-color: var(--color-focusable-toot);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: grid;
   font-size: var(--font-size-mid);
   grid-template-columns: minmax(0, 3fr) minmax(88px, 1fr);
@@ -698,7 +698,7 @@ body
 
 body .content-warning .link-button {
   align-self: flex-start;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-mid);
   font-weight: var(--font-weight-semibold);
   justify-self: flex-end;
@@ -745,7 +745,7 @@ body .content-warning::before {
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-semibold);
   margin-left: auto;
   padding-bottom: 8px;
@@ -778,7 +778,7 @@ body .content-warning::before {
 .layout-multiple-columns .notification.unread:hover,
 .layout-multiple-columns .notification.unread,
 .layout-multiple-columns .status__wrapper.unread {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
 }
 
 .layout-multiple-columns .notification:hover .notification__message {
@@ -873,18 +873,18 @@ body .content-warning::before {
 .layout-multiple-columns
   .privacy-dropdown__option:not(.active)
   .privacy-dropdown__option__content {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Dim backgrounds */
 .layout-multiple-columns .poll__chart {
-  background-color: var(--color-dim);
+  background-color: var(--color-text-secondary);
 }
 
 /* Lighter border colors */
 .layout-multiple-columns .report-dialog-modal .dialog-option .poll__input,
 .layout-multiple-columns .poll__input {
-  border-color: var(--color-brand-mastodon-text-light);
+  border-color: var(--color-text-secondary);
 }
 
 /* Light grey things */
@@ -898,8 +898,8 @@ body .content-warning::before {
   .reply-indicator__content
   .status__content__spoiler-link,
 .layout-multiple-columns .status__content__spoiler-link {
-  background-color: var(--color-dark);
-  color: var(--color-light-purple);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-tertiary);
   font-weight: var(--font-weight-semibold);
 
   /* Need to override forced styles */
@@ -915,8 +915,8 @@ body .content-warning::before {
   .status__content__spoiler-link:hover,
 .layout-multiple-columns .status__content .status__content__spoiler-link:focus,
 .layout-multiple-columns .status__content .status__content__spoiler-link:hover {
-  background-color: var(--color-dark);
-  color: var(--color-lighter-purple);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-tertiary);
 }
 
 /* CW button in notifications */
@@ -925,8 +925,8 @@ body .content-warning::before {
   .reply-indicator__content
   .status__content__spoiler-link,
 .layout-multiple-columns .notification .status__content__spoiler-link {
-  background-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .layout-multiple-columns
@@ -945,8 +945,8 @@ body .content-warning::before {
   .notification
   .status__content
   .status__content__spoiler-link:hover {
-  background-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 /* Light purple things */
@@ -957,7 +957,7 @@ body .content-warning::before {
 .layout-multiple-columns .column-settings__section,
 .layout-multiple-columns .setting-toggle__label,
 .layout-multiple-columns .server-banner__number-label {
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
 }
 
 /* White things */
@@ -1007,24 +1007,24 @@ body .content-warning::before {
 .layout-multiple-columns .account__section-headline button.active,
 .layout-multiple-columns .notification__filter-bar a.active,
 .layout-multiple-columns .notification__filter-bar button.active {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .muted .status__info *,
 .layout-multiple-columns .muted .status__info .display-name * {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Account names */
 .layout-multiple-columns .status__info .display-name .display-name__account,
 .layout-multiple-columns .display-name__account {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Main panel column */
 .layout-multiple-columns .columns-area__panels__main > div {
-  border-left: 1px solid var(--color-border);
-  border-right: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border-primary);
+  border-right: 1px solid var(--color-border-primary);
 }
 
 /* Status header */
@@ -1201,21 +1201,21 @@ body.embed .detailed-status,
 .layout-multiple-columns .compose-form__poll-wrapper option,
 .layout-multiple-columns .search__popout,
 .layout-multiple-columns .search-popout {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .layout-multiple-columns .search__popout em,
 .layout-multiple-columns .search-popout em {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Pill style tags */
 .layout-multiple-columns .hashtag-bar a {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border-radius: 9999px;
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: inline-block;
   font-size: var(--font-size-smaller);
   font-weight: var(--font-weight-semibold);
@@ -1231,7 +1231,7 @@ body.embed .detailed-status,
 
 .layout-multiple-columns .hashtag-bar a:focus,
 .layout-multiple-columns .hashtag-bar a:hover {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-text-brand);
   /* It should be always light also on light mode, so not using variable here */
   color: #f7f9f9;
 }
@@ -1406,7 +1406,7 @@ body.layout-multiple-columns canvas[class="media-gallery__preview"] {
 
 body.embed .detailed-status__meta,
 .layout-multiple-columns .detailed-status__meta {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
 }
 
@@ -1425,7 +1425,7 @@ body.embed .detailed-status__favorites,
 
 body.embed .detailed-status__meta .animated-number,
 .layout-multiple-columns .detailed-status__meta .animated-number {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -1436,7 +1436,7 @@ body.embed .detailed-status__reblogs,
 
 body.embed .detailed-status__reblogs,
 body.embed .detailed-status__favorites {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -1455,21 +1455,21 @@ body.embed .detailed-status__favorites {
 /* Textual labels for detailed metrics */
 body.embed .detailed-status__link > .icon-reply + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-reply + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Replies";
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .icon-retweet + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-retweet + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Boosts";
   font-weight: var(--font-weight-semibold);
 }
 
 body.embed .detailed-status__link > .icon-star + span::after,
 .layout-multiple-columns .detailed-status__link > .icon-star + span::after {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   content: "Favourites";
   font-weight: var(--font-weight-semibold);
 }
@@ -1493,14 +1493,14 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Hide/Show media button */
 .layout-multiple-columns .spoiler-button.spoiler-button--minified > button {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-badges);
-  color: var(--color-ghost-button-text);
+  color: var(--color-text-on-brand-base);
   opacity: 0.5;
 }
 
@@ -1530,7 +1530,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .icon-button:hover {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Other general buttons */
@@ -1538,7 +1538,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .column-header__button.active:focus,
 .layout-multiple-columns .column-header__button.active:hover {
   background-color: var(--color-focusable-toot);
-  color: var(--color-fg);
+  color: var(--color-text-primary);
 }
 
 /* Bars on panels */
@@ -1547,7 +1547,8 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .tabs-bar__wrapper {
   backdrop-filter: blur(12px);
   background-color: var(--color-bg-75);
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
+  border-top: 0;
   padding: 0;
 }
 
@@ -1575,7 +1576,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 /* Column sub-headers */
 .layout-multiple-columns .column-subheading {
   background-color: transparent;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-bigger) !important;
   font-weight: var(--font-weight-bold) !important;
   padding-bottom: 12px !important;
@@ -1868,7 +1869,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Admin reports and other admin notifications */
 .layout-multiple-columns .notification-admin-report .notification__report {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
   display: flex;
   font-size: var(--font-size);
   gap: 16px;
@@ -1880,7 +1881,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns
   .notification-admin-report
   .notification__report__details {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
 }
 
@@ -1940,7 +1941,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Columns */
 .layout-multiple-columns .column {
-  border-right: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border-primary);
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -1950,7 +1951,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .column-subheading,
 .layout-multiple-columns .column-link {
   align-items: center;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   display: flex;
   font-size: var(--font-size);
   font-weight: var(--font-weight-semibold);
@@ -2001,7 +2002,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Notification filter bar */
 .layout-multiple-columns .notification__filter-bar {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
   border-right: 0;
 }
@@ -2019,7 +2020,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .column-link--transparent.active {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -2028,7 +2029,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .account__section-headline button.active::after,
 .layout-multiple-columns .notification__filter-bar a.active::after,
 .layout-multiple-columns .notification__filter-bar button.active::after {
-  background-color: var(--color-accent);
+  background-color: var(--color-text-brand);
   border: 0;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -2081,14 +2082,14 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .notification
   .notification__message
   .icon.icon-retweet {
-  color: var(--color-green);
+  color: var(--color-text-success);
   height: 24px;
   width: 24px;
 }
 
 .layout-multiple-columns .notification-group .icon-person-add,
 .layout-multiple-columns .notification .icon.icon-user-plus:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
 }
 
 .layout-multiple-columns
@@ -2098,16 +2099,16 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .notification
   .account__relationship
   .icon.icon-user-plus:not(.icon-link) {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-multiple-columns .notification .icon.icon-flag,
 .layout-multiple-columns .notification .icon.icon-tasks:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
 }
 
 .layout-multiple-columns .notification .icon.icon-home:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
   height: 24px;
   width: 24px;
 }
@@ -2119,7 +2120,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .notification .account__relationship .icon {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: 20px;
 }
 
@@ -2139,7 +2140,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__relationship
   .icon-button.active
   .icon {
-  color: var(--color-green);
+  color: var(--color-text-success);
   opacity: 0.75;
 }
 
@@ -2153,7 +2154,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__relationship
   .icon-button.active:hover
   .icon {
-  color: var(--color-red);
+  color: var(--color-text-error);
   opacity: 1;
 }
 
@@ -2178,7 +2179,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__relationship
   .icon-button:hover
   .icon {
-  color: var(--color-green);
+  color: var(--color-text-success);
   opacity: 1;
 }
 
@@ -2190,7 +2191,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* Emoji-mart search input */
 .layout-multiple-columns .emoji-mart-search-icon svg {
-  fill: var(--color-border);
+  fill: var(--color-border-primary);
   opacity: 1;
 }
 
@@ -2199,7 +2200,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   > input:focus-visible
   ~ .emoji-mart-search-icon
   svg {
-  fill: var(--color-accent);
+  fill: var(--color-text-brand);
 }
 
 .layout-multiple-columns .emoji-mart-search > input {
@@ -2211,14 +2212,14 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   textarea::placeholder,
 .layout-multiple-columns .report-dialog-modal__textarea::placeholder,
 .layout-multiple-columns .emoji-mart-search > input::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   opacity: 1;
 }
 
 .layout-multiple-columns .report-dialog-modal__textarea,
 .layout-multiple-columns .report-dialog-modal__textarea:focus,
 .layout-multiple-columns .emoji-mart-search > input:focus {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .emoji-mart-search-icon:disabled {
@@ -2260,10 +2261,10 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .search.active .search__input,
 .layout-multiple-columns input.setting-text,
 .layout-multiple-columns .search__input {
-  background-color: var(--color-mud);
-  border-color: var(--color-mud);
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-bg-secondary);
   border-radius: 32px;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   height: 42px;
   padding: 0 20px;
@@ -2273,17 +2274,17 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .poll__option input[type="text"],
 .layout-multiple-columns input.setting-text:focus,
 .layout-multiple-columns .search__input:focus {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Poll input */
 .layout-multiple-columns .poll__option input[type="text"] {
   background-color: transparent;
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 .layout-multiple-columns .poll__option input[type="text"]:focus {
-  border-color: var(--color-accent);
+  border-color: var(--color-text-brand);
 }
 
 /* Placeholders */
@@ -2291,20 +2292,20 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .search__input::placeholder,
 .layout-multiple-columns input::placeholder,
 .layout-multiple-columns input.setting-text::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   opacity: 1;
 }
 
 /* Profile */
 .layout-multiple-columns .getting-started__trends h4,
 .layout-multiple-columns .account__header__bar {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 .layout-multiple-columns .account__header__bio .account__header__fields {
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-default);
@@ -2313,8 +2314,8 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 /* New popout styles */
 .layout-multiple-columns .account__domain-pill__popout {
-  border: 1px solid var(--color-mud);
-  color: var(--color-light-purple);
+  border: 1px solid var(--color-bg-secondary);
+  color: var(--color-text-tertiary);
 }
 
 .layout-multiple-columns
@@ -2326,9 +2327,9 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 .layout-multiple-columns .account__domain-pill__popout__handle {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border: 0;
-  color: var(--color-accent);
+  color: var(--color-text-brand);
   padding: 12px 10px;
 }
 
@@ -2781,7 +2782,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__header__fields
   .verified
   dd {
-  color: var(--color-verified);
+  color: var(--color-text-success);
   font-weight: var(--font-weight-regular);
 }
 
@@ -2808,7 +2809,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   .account__header__fields
   .verified
   dd {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
   font-weight: var(--font-weight-regular);
 }
 
@@ -2905,7 +2906,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 
 .layout-multiple-columns .account__header__bio .account__header__fields dd,
 .layout-multiple-columns .account__header__bio .account__header__fields dt {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   text-transform: unset;
@@ -2914,7 +2915,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 .layout-multiple-columns .account__header__bio .account__header__fields dl {
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   display: inline-flex;
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
@@ -2996,7 +2997,7 @@ body.embed .button.logo-button,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-size: var(--font-size);
   max-width: 36vw;
   overflow: hidden;
@@ -3028,7 +3029,7 @@ body.embed .button.logo-button,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   display: inline-flex;
   height: 36px;
   justify-content: center;
@@ -3049,7 +3050,7 @@ body.embed .button.logo-button:hover,
   .account-card__actions__button
   button:hover,
 .layout-multiple-columns .account__header__buttons .icon-button.active {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .account__header__buttons .icon-button .icon-bell-o,
@@ -3116,7 +3117,7 @@ body.embed .button.logo-button:hover,
 
 /* Explore -> For you shade in bio */
 .layout-multiple-columns .scrollable .account-card__bio::after {
-  background: linear-gradient(270deg, var(--color-bg), transparent);
+  background: linear-gradient(270deg, var(--color-bg-primary), transparent);
 }
 
 /* Empty column */
@@ -3166,7 +3167,7 @@ body.embed .button.logo-button:hover,
 .notification-ungrouped--mention.notification-grouped--direct::after,
 .notification-ungrouped--mention.notification-ungrouped--direct::after {
   border-left: 20px solid transparent;
-  border-top: 20px solid var(--color-accent);
+  border-top: 20px solid var(--color-text-brand);
   /* Add a ribbon to the corner */
   content: "";
   height: 0;
@@ -3200,9 +3201,9 @@ body.embed .button.logo-button:hover,
 .layout-multiple-columns .sign-in-banner .button,
 .layout-multiple-columns .ui__header__links .button,
 .layout-multiple-columns .compose-form__publish-button-wrapper button {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
-  color: var(--color-button-text);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-text-brand);
+  color: var(--color-text-on-brand-base);
   transition: all 200ms;
 }
 
@@ -3240,14 +3241,14 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button {
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   padding: 0;
 }
 
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button.active,
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button:hover,
 .layout-multiple-columns .compose-form__dropdowns .dropdown-button:focus {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
@@ -3261,7 +3262,7 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns
   .compose-form__dropdowns
   .dropdown-button.warning:focus {
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
 }
 
 .layout-multiple-columns .compose-form__submit {
@@ -3274,7 +3275,7 @@ body .compose-form .compose-form__uploads {
 
 .layout-multiple-columns .compose-form__actions .icon-button.active {
   background-color: transparent;
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Footer items */
@@ -3338,43 +3339,43 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .ui__header__links .button:focus,
 .layout-multiple-columns .compose-form__publish-button-wrapper button:hover,
 .layout-multiple-columns .compose-form__publish-button-wrapper button:focus {
-  background-color: var(--color-brand-mastodon-links);
-  border-color: var(--color-brand-mastodon-links);
-  color: var(--color-button-text);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-text-brand);
+  color: var(--color-text-on-brand-base);
 }
 
 /* Tertiary button */
 .layout-multiple-columns .button.button-tertiary {
   background-color: transparent !important;
-  border: 1px solid var(--color-accent-dark) !important;
-  color: var(--color-ghost-button-text);
+  border: 1px solid var(--color-text-brand) !important;
+  color: var(--color-text-on-brand-base);
   padding: 6px 17px;
 }
 
 .layout-multiple-columns .button.button-tertiary:active,
 .layout-multiple-columns .button.button-tertiary:focus,
 .layout-multiple-columns .button.button-tertiary:hover {
-  border: 1px solid var(--color-accent-dark);
+  border: 1px solid var(--color-text-brand);
 }
 
 /* Secondary button */
 .layout-multiple-columns .button.button-secondary {
   background-color: transparent !important;
-  border: 1px solid var(--color-dim);
-  color: var(--color-dim);
+  border: 1px solid var(--color-text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .layout-multiple-columns .button.button-secondary:hover {
-  background-color: var(--color-light-text) !important;
-  border-color: var(--color-light-text);
-  color: var(--color-bg);
+  background-color: var(--color-text-primary) !important;
+  border-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
 }
 
 .layout-multiple-columns .button.button-tertiary:focus,
 .layout-multiple-columns .button.button-tertiary:hover {
-  background-color: var(--color-brand-mastodon-links) !important;
-  border-color: var(--color-brand-mastodon-links) !important;
-  color: var(--color-bg) !important;
+  background-color: var(--color-text-brand) !important;
+  border-color: var(--color-text-brand) !important;
+  color: var(--color-bg-primary) !important;
 
   /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
   padding: 6px 17px;
@@ -3784,7 +3785,7 @@ body .compose-form .compose-form__uploads {
   button.icon-button:not(.active):hover
   .icon-retweet
   ~ span {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Replace bookmark icon */
@@ -3800,7 +3801,7 @@ body .compose-form .compose-form__uploads {
     button.icon-button:not(.active):hover
     .icon-retweet
     ~ span {
-    color: var(--color-green);
+    color: var(--color-text-success);
   }
 
   .layout-multiple-columns
@@ -3817,12 +3818,12 @@ body .compose-form .compose-form__uploads {
 
 .layout-multiple-columns button.icon-button:hover .icon-retweet ~ span,
 .layout-multiple-columns button.icon-button.active .icon-retweet ~ span {
-  color: var(--color-green);
+  color: var(--color-text-success);
 }
 
 .layout-multiple-columns button.icon-button:hover .icon-star ~ span,
 .layout-multiple-columns button.icon-button.active .icon-star ~ span {
-  color: var(--color-red);
+  color: var(--color-text-error);
 }
 
 /* Replace reply icon */
@@ -3926,8 +3927,8 @@ body .compose-form .compose-form__uploads {
 }
 
 .layout-multiple-columns .relationship-tag {
-  background-color: var(--color-mud);
-  color: var(--color-light-text);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
   font-size: 11px;
   font-weight: var(--font-weight-semibold);
   line-height: 12px;
@@ -3937,7 +3938,7 @@ body .compose-form .compose-form__uploads {
 /* iPad */
 @media screen and (max-width: 889px) {
   .layout-multiple-columns .ui__header {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border-primary);
   }
 
   .layout-multiple-columns .ui::after {
@@ -3962,7 +3963,7 @@ body .compose-form .compose-form__uploads {
 .layout-multiple-columns .video-player,
 .layout-multiple-columns .media-gallery__gifv,
 .layout-multiple-columns .media-gallery__preview {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -3995,7 +3996,7 @@ body .compose-form .compose-form__uploads {
 
 /* More distinct focus color for accessibility, instead of just white */
 .layout-multiple-columns input:focus-visible {
-  outline-color: var(--color-accent);
+  outline-color: var(--color-text-brand);
   outline-style: solid;
 }
 
@@ -4012,13 +4013,13 @@ body.embed .entry .detailed-status {
 /* Destructive colors (For you -suggestions, users when focused to the follow button */
 .layout-multiple-columns .button.logo-button.button--destructive:active,
 .layout-multiple-columns .button.logo-button.button--destructive:focus {
-  background-color: var(--color-destructive);
-  border-color: var(--color-destructive);
+  background-color: var(--color-text-error);
+  border-color: var(--color-text-error);
 }
 
 /* Fix character counter color when it's over the limit */
 .layout-multiple-columns .character-counter.character-counter--over {
-  color: var(--color-destructive);
+  color: var(--color-text-error);
 }
 
 /* Show more in server banner */
@@ -4081,11 +4082,11 @@ body.embed .entry .detailed-status {
 
 /* Threaded line, actually */
 .layout-multiple-columns .status__line {
-  border-inline-start: 2px solid var(--color-thread-line);
+  border-inline-start: 2px solid var(--color-border-primary);
 }
 
 .layout-multiple-columns .status__line--full::before {
-  background-color: var(--color-thread-line);
+  background-color: var(--color-border-primary);
 }
 
 /* Hide the "stub" from the first status line */
@@ -4127,8 +4128,8 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-thumb,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb,
 .layout-multiple-columns::-webkit-scrollbar-thumb {
-  background-color: var(--color-border);
-  border: 0px solid var(--color-border);
+  background-color: var(--color-border-primary);
+  border: 0px solid var(--color-border-primary);
   border-radius: 50px;
 }
 
@@ -4139,7 +4140,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb:hover,
 .layout-multiple-columns::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-light-purple);
+  background-color: var(--color-text-tertiary);
 }
 
 *::-webkit-scrollbar-thumb:active,
@@ -4149,7 +4150,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-thumb:active,
 .layout-multiple-columns::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-black-coral);
+  background-color: var(--color-border-primary);
 }
 
 *::-webkit-scrollbar-track,
@@ -4159,8 +4160,8 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-track,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track,
 .layout-multiple-columns::-webkit-scrollbar-track {
-  background-color: var(--color-bg);
-  border: 0px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  border: 0px solid var(--color-border-primary);
   border-radius: 0;
 }
 
@@ -4171,7 +4172,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track:hover,
 .layout-multiple-columns::-webkit-scrollbar-track:hover {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 *::-webkit-scrollbar-track:active,
@@ -4181,7 +4182,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-track:active,
 .layout-multiple-columns .reply-indicator::-webkit-scrollbar-track:active,
 .layout-multiple-columns::-webkit-scrollbar-track:active {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 *::-webkit-scrollbar-corner,
@@ -4197,39 +4198,39 @@ div[tabindex="-1"]
 
 /* Drawer scollbars */
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb {
-  background-color: var(--color-dim);
+  background-color: var(--color-text-secondary);
   border: 0;
   border-radius: 50px;
 }
 
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-light-purple);
+  background-color: var(--color-text-tertiary);
 }
 
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-light-text);
+  background-color: var(--color-text-primary);
 }
 
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-track {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border: 0;
   border-radius: 0;
 }
 
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-track:hover,
 .layout-multiple-columns .drawer__inner::-webkit-scrollbar-track:active {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
 }
 
 /* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
 .layout-multiple-columns .onboarding__steps__item,
 .layout-multiple-columns .onboarding__link {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   margin-bottom: 10px;
 }
 
 .layout-multiple-columns .onboarding__steps__item__progress > svg > path {
-  fill: var(--color-dark);
+  fill: var(--color-bg-tertiary);
 }
 
 .layout-multiple-columns .onboarding__links > * {

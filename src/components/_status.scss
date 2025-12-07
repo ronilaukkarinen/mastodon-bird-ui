@@ -2,13 +2,13 @@
 /* Account names */
 .layout-single-column .status__info .display-name .display-name__account,
 .layout-single-column .display-name__account {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Main panel column */
 .layout-single-column .columns-area__panels__main > div {
-  border-left: 1px solid var(--color-border);
-  border-right: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border-primary);
+  border-right: 1px solid var(--color-border-primary);
 }
 
 /* Status header */
@@ -122,7 +122,7 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .account-card__title__avatar img,
 .layout-single-column .account__avatar > img,
 .layout-single-column .column > .scrollable .status__avatar img {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   border: 0;
   border-radius: 50%;
   box-shadow: rgb(255 255 255 / 3%) 0 0 2px inset;
@@ -189,21 +189,21 @@ body.embed .detailed-status__display-avatar > img,
 .layout-single-column .compose-form__poll-wrapper option,
 .layout-single-column .search__popout,
 .layout-single-column .search-popout {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-  color: var(--color-dim);
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column .search__popout em,
 .layout-single-column .search-popout em {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Pill style tags */
 .layout-single-column .hashtag-bar a {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border-radius: 9999px;
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   display: inline-block;
   font-size: var(--font-size-smaller);
   font-weight: var(--font-weight-semibold);
@@ -219,7 +219,7 @@ body.embed .detailed-status__display-avatar > img,
 
 .layout-single-column .hashtag-bar a:focus,
 .layout-single-column .hashtag-bar a:hover {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-text-brand);
 
   /* It should be always light also on light mode, so not using variable here */
   color: #f7f9f9;

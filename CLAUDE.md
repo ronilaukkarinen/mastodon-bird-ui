@@ -70,3 +70,4 @@ This theme targets Mastodon v4.6.0+ which uses a new semantic token system with 
 - Always add an empty line after headings
 - No formatting in CHANGELOG.md except `inline code` and when absolute necessary
 - Use * as bullets in CHANGELOG.md
+- No Claude watermark

@@ -1,3 +1,13 @@
+### 4.0.0rc2: 2025-12-07
+
+* Migrate to Mastodon v4.6.0+ semantic token system
+* Create `src/common/theme/` with `_base.scss`, `_dark.scss`, `_light.scss`, `_utils.scss`
+* Replace old custom CSS variables with Mastodon semantic tokens throughout codebase
+* Add support for `prefers-color-scheme` system theme preference
+* Add support for high contrast mode overrides
+* Fix unwanted `border-top` on `.tabs-bar__wrapper` introduced in Mastodon v4.6.0
+* Update stylelint config for SCSS support
+
 ### 4.0.0rc: 2025-11-30
 
 This is a major rewrite of the project architecture. The codebase has been completely modularized from 11,600+ lines of plain CSS into a structured SCSS architecture with proper build tooling. See [#172](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/172) for details.

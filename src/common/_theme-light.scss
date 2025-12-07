@@ -22,12 +22,12 @@ body.theme-mastodon-light.layout-single-column {
   --color-dark-electric-blue: #9088a6;
   --color-bg-75: #ffffffbf;
   --color-bg-90: #ffffffe6;
-  --color-accent: var(--color-accent-dark);
-  --color-ghost-button-text: var(--color-accent-dark);
+  --color-accent: var(--color-text-brand);
+  --color-ghost-button-text: var(--color-text-brand);
   --color-bg-compose-form: rgb(147 136 166 / 20%);
   --color-bg-compose-form-focus: rgb(147 136 166 / 30%);
-  --color-hashtag: var(--color-accent-dark);
-  --color-mention: var(--color-accent-dark);
+  --color-hashtag: var(--color-text-brand);
+  --color-mention: var(--color-text-brand);
 
   /* Misc */
   --compose-form-linear-gradient: linear-gradient(

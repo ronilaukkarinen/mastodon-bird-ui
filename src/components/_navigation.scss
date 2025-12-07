@@ -5,7 +5,8 @@
 .layout-single-column .tabs-bar__wrapper {
   backdrop-filter: blur(12px);
   background-color: var(--color-bg-75);
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
+  border-top: 0;
   padding: 0;
 }
 
@@ -44,7 +45,7 @@
 /* Column sub-headers */
 .layout-single-column .column-subheading {
   background-color: transparent;
-  color: var(--color-fg);
+  color: var(--color-text-primary);
   font-size: var(--font-size-bigger);
   font-weight: var(--font-weight-bold);
   text-transform: unset;
@@ -324,7 +325,7 @@
 
 /* Admin reports and other admin notifications */
 .layout-single-column .notification-admin-report .notification__report {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
   display: flex;
   font-size: var(--font-size);
   gap: 16px;
@@ -336,7 +337,7 @@
 .layout-single-column
   .notification-admin-report
   .notification__report__details {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
 }
 
@@ -394,7 +395,7 @@
 
 .layout-single-column .column-link {
   align-items: center;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   column-gap: 14px;
   font-size: var(--font-size-heading);
   overflow: visible;
@@ -439,7 +440,7 @@
 }
 
 .layout-single-column .column-link:focus-visible > span::before {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-text-brand);
 }
 
 .layout-single-column .column-link:focus-visible > span::before,
@@ -467,7 +468,7 @@
 
 /* Notification filter bar */
 .layout-single-column .notification__filter-bar {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border-primary);
   border-left: 0;
   border-right: 0;
 }
@@ -494,7 +495,7 @@
 }
 
 .layout-single-column .column-link--transparent.active {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -503,7 +504,7 @@
 .layout-single-column .account__section-headline button.active::after,
 .layout-single-column .notification__filter-bar a.active::after,
 .layout-single-column .notification__filter-bar button.active::after {
-  background-color: var(--color-accent);
+  background-color: var(--color-text-brand);
   border: 0;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
@@ -561,14 +562,14 @@
   .notification-group__icon
   .icon-repeat,
 .layout-single-column .notification .notification__message .icon.icon-retweet {
-  color: var(--color-green);
+  color: var(--color-text-success);
   height: 24px;
   width: 24px;
 }
 
 .layout-single-column .notification-group .icon-person-add,
 .layout-single-column .notification .icon.icon-user-plus:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
 }
 
 .layout-single-column
@@ -578,16 +579,16 @@
   .notification
   .account__relationship
   .icon.icon-user-plus:not(.icon-link) {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column .notification .icon.icon-flag,
 .layout-single-column .notification .icon.icon-tasks:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
 }
 
 .layout-single-column .notification .icon.icon-home:not(.icon-link) {
-  color: var(--color-accent-dark);
+  color: var(--color-text-brand);
   height: 24px;
   width: 24px;
 }
@@ -599,7 +600,7 @@
 }
 
 .layout-single-column .notification .account__relationship .icon {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: 20px;
 }
 
@@ -619,7 +620,7 @@
   .account__relationship
   .icon-button.active
   .icon {
-  color: var(--color-green);
+  color: var(--color-text-success);
   opacity: 0.75;
 }
 
@@ -630,7 +631,7 @@
   .account__relationship
   .icon-button.active:hover
   .icon {
-  color: var(--color-red);
+  color: var(--color-text-error);
   opacity: 1;
 }
 
@@ -652,7 +653,7 @@
   .account__relationship
   .icon-button:hover
   .icon {
-  color: var(--color-green);
+  color: var(--color-text-success);
   opacity: 1;
 }
 
@@ -664,7 +665,7 @@
 
 /* Emoji-mart search input */
 .layout-single-column .emoji-mart-search-icon svg {
-  fill: var(--color-border);
+  fill: var(--color-border-primary);
   opacity: 1;
 }
 
@@ -673,7 +674,7 @@
   > input:focus-visible
   ~ .emoji-mart-search-icon
   svg {
-  fill: var(--color-accent);
+  fill: var(--color-text-brand);
 }
 
 .layout-single-column .emoji-mart-search > input {
@@ -683,14 +684,14 @@
 .layout-single-column .compose-form__autosuggest-wrapper textarea::placeholder,
 .layout-single-column .report-dialog-modal__textarea::placeholder,
 .layout-single-column .emoji-mart-search > input::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   opacity: 1;
 }
 
 .layout-single-column .report-dialog-modal__textarea,
 .layout-single-column .report-dialog-modal__textarea:focus,
 .layout-single-column .emoji-mart-search > input:focus {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-single-column .emoji-mart-search-icon:disabled {
@@ -723,10 +724,10 @@
 .layout-single-column .search.active .search__input,
 .layout-single-column input.setting-text,
 .layout-single-column .search__input {
-  background-color: var(--color-mud);
-  border-color: var(--color-mud);
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-bg-secondary);
   border-radius: 32px;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   height: 42px;
   padding: 0 20px;
@@ -737,17 +738,17 @@
 .layout-single-column .poll__option input[type="text"],
 .layout-single-column input.setting-text:focus,
 .layout-single-column .search__input:focus {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 /* Poll input */
 .layout-single-column .poll__option input[type="text"] {
   background-color: transparent;
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 .layout-single-column .poll__option input[type="text"]:focus {
-  border-color: var(--color-accent);
+  border-color: var(--color-text-brand);
 }
 
 /* Placeholders */
@@ -755,20 +756,20 @@
 .layout-single-column .search__input::placeholder,
 .layout-single-column input::placeholder,
 .layout-single-column input.setting-text::placeholder {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   opacity: 1;
 }
 
 /* Profile */
 .layout-single-column .getting-started__trends h4,
 .layout-single-column .account__header__bar {
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
 }
 
 .layout-single-column .account__header__bio .account__header__fields {
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-default);
@@ -777,8 +778,8 @@
 
 /* New popout styles */
 .layout-single-column .account__domain-pill__popout {
-  border: 1px solid var(--color-mud);
-  color: var(--color-light-purple);
+  border: 1px solid var(--color-bg-secondary);
+  color: var(--color-text-tertiary);
 }
 
 .layout-single-column
@@ -790,9 +791,9 @@
 }
 
 .layout-single-column .account__domain-pill__popout__handle {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border: 0;
-  color: var(--color-accent);
+  color: var(--color-text-brand);
   padding: 12px 10px;
 }
 
@@ -1230,7 +1231,7 @@
   .account__header__fields
   .verified
   dd {
-  color: var(--color-verified);
+  color: var(--color-text-success);
   font-weight: var(--font-weight-regular);
 }
 
@@ -1257,7 +1258,7 @@
   .account__header__fields
   .verified
   dd {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
   font-weight: var(--font-weight-regular);
 }
 
@@ -1364,7 +1365,7 @@
 
 .layout-single-column .account__header__bio .account__header__fields dd,
 .layout-single-column .account__header__bio .account__header__fields dt {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   text-transform: unset;
@@ -1374,7 +1375,7 @@
   align-items: center;
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   display: inline-flex;
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
@@ -1439,7 +1440,7 @@ body.embed .button.logo-button,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   font-size: var(--font-size);
   max-width: 36vw;
   overflow: hidden;
@@ -1476,7 +1477,7 @@ body.embed .button.logo-button,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
   display: inline-flex;
   height: 36px;
   justify-content: center;
@@ -1497,7 +1498,7 @@ body.embed .button.logo-button:hover,
   .account-card__actions__button
   button:hover,
 .layout-single-column .account__header__buttons .icon-button.active {
-  color: var(--color-light-text);
+  color: var(--color-text-primary);
 }
 
 .layout-single-column .account__header__buttons .icon-button .icon-bell-o,
@@ -1593,7 +1594,7 @@ body.embed .button.logo-button:hover,
 
 /* Explore -> For you shade in bio */
 .layout-single-column .scrollable .account-card__bio::after {
-  background: linear-gradient(270deg, var(--color-bg), transparent);
+  background: linear-gradient(270deg, var(--color-bg-primary), transparent);
 }
 
 /* Empty column */
@@ -1643,7 +1644,7 @@ body.embed .button.logo-button:hover,
 .notification-ungrouped--mention.notification-grouped--direct::after,
 .notification-ungrouped--mention.notification-ungrouped--direct::after {
   border-left: 20px solid transparent;
-  border-top: 20px solid var(--color-accent);
+  border-top: 20px solid var(--color-text-brand);
 
   /* Add a ribbon to the corner */
   content: "";
@@ -1684,9 +1685,9 @@ body.embed .button.logo-button:hover,
 .layout-single-column .sign-in-banner .button,
 .layout-single-column .ui__header__links .button,
 .layout-single-column .compose-form__publish-button-wrapper button {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
-  color: var(--color-button-text);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-text-brand);
+  color: var(--color-text-on-brand-base);
   transition: all 200ms;
 }
 
@@ -1724,14 +1725,14 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .compose-form__dropdowns .dropdown-button {
   background-color: transparent;
   border: 0;
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
   padding: 0;
 }
 
 .layout-single-column .compose-form__dropdowns .dropdown-button.active,
 .layout-single-column .compose-form__dropdowns .dropdown-button:hover,
 .layout-single-column .compose-form__dropdowns .dropdown-button:focus {
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Override new warning button color (.dropdown-button.warning), v4.4.0-alpha.4+mementomods-2025-05-03 */
@@ -1739,7 +1740,7 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning.active,
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning:hover,
 .layout-single-column .compose-form__dropdowns .dropdown-button.warning:focus {
-  color: var(--color-yellow);
+  color: var(--color-text-warning);
 }
 
 .layout-single-column .compose-form__submit {
@@ -1752,7 +1753,7 @@ body .compose-form .compose-form__uploads {
 
 .layout-single-column .compose-form__actions .icon-button.active {
   background-color: transparent;
-  color: var(--color-accent);
+  color: var(--color-text-brand);
 }
 
 /* Footer items */
@@ -1820,43 +1821,43 @@ body .compose-form .compose-form__uploads {
 .layout-single-column .ui__header__links .button:focus,
 .layout-single-column .compose-form__publish-button-wrapper button:hover,
 .layout-single-column .compose-form__publish-button-wrapper button:focus {
-  background-color: var(--color-brand-mastodon-links);
-  border-color: var(--color-brand-mastodon-links);
-  color: var(--color-button-text);
+  background-color: var(--color-text-brand);
+  border-color: var(--color-text-brand);
+  color: var(--color-text-on-brand-base);
 }
 
 /* Tertiary button */
 .layout-single-column .button.button-tertiary {
   background-color: transparent !important;
-  border: 1px solid var(--color-accent-dark) !important;
-  color: var(--color-ghost-button-text);
+  border: 1px solid var(--color-text-brand) !important;
+  color: var(--color-text-on-brand-base);
   padding: 6px 17px;
 }
 
 .layout-single-column .button.button-tertiary:active,
 .layout-single-column .button.button-tertiary:focus,
 .layout-single-column .button.button-tertiary:hover {
-  border: 1px solid var(--color-accent-dark);
+  border: 1px solid var(--color-text-brand);
 }
 
 /* Secondary button */
 .layout-single-column .button.button-secondary {
   background-color: transparent;
-  border: 1px solid var(--color-dim);
-  color: var(--color-dim);
+  border: 1px solid var(--color-text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .layout-single-column .button.button-secondary:hover {
-  background-color: var(--color-light-text);
-  border-color: var(--color-light-text);
-  color: var(--color-bg);
+  background-color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
 }
 
 .layout-single-column .button.button-tertiary:focus,
 .layout-single-column .button.button-tertiary:hover {
-  background-color: var(--color-brand-mastodon-links) !important;
-  border-color: var(--color-brand-mastodon-links) !important;
-  color: var(--color-bg) !important;
+  background-color: var(--color-text-brand) !important;
+  border-color: var(--color-text-brand) !important;
+  color: var(--color-bg-primary) !important;
 
   /* This is actually wrong in Mastodon default UI as well, hover should not have padding but yet it has */
   padding: 6px 17px;
@@ -1972,26 +1973,26 @@ body .compose-form .compose-form__uploads {
   }
 
   .layout-single-column .navigation-panel__menu::-webkit-scrollbar-thumb {
-    background-color: var(--color-border);
-    border: 0 solid var(--color-border);
+    background-color: var(--color-border-primary);
+    border: 0 solid var(--color-border-primary);
     border-radius: 50px;
   }
 
   .layout-single-column .navigation-panel__menu::-webkit-scrollbar-track {
-    background-color: var(--color-bg);
-    border: 0 solid var(--color-border);
+    background-color: var(--color-bg-primary);
+    border: 0 solid var(--color-border-primary);
     border-radius: 0;
     margin-bottom: 40vh;
     margin-top: 40px;
   }
 
   .layout-single-column .navigation-panel__menu::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-black-coral);
+    background-color: var(--color-border-primary);
   }
 
   .layout-single-column
     .navigation-panel__menu::-webkit-scrollbar-thumb:active {
-    background-color: var(--color-light-purple);
+    background-color: var(--color-text-tertiary);
   }
 
   .layout-single-column .navigation-panel__menu::-webkit-scrollbar-corner {
@@ -2479,7 +2480,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
   button.icon-button:not(.active):hover
   .icon-retweet
   ~ span {
-  color: var(--color-dim);
+  color: var(--color-text-secondary);
 }
 
 /* Replace bookmark icon */
@@ -2495,7 +2496,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
     button.icon-button:not(.active):hover
     .icon-retweet
     ~ span {
-    color: var(--color-green);
+    color: var(--color-text-success);
   }
 
   .layout-single-column
@@ -2512,12 +2513,12 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 .layout-single-column button.icon-button:hover .icon-retweet ~ span,
 .layout-single-column button.icon-button.active .icon-retweet ~ span {
-  color: var(--color-green);
+  color: var(--color-text-success);
 }
 
 .layout-single-column button.icon-button:hover .icon-star ~ span,
 .layout-single-column button.icon-button.active .icon-star ~ span {
-  color: var(--color-red);
+  color: var(--color-text-error);
 }
 
 /* Replace reply icon */
@@ -2625,8 +2626,8 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 }
 
 .layout-single-column .relationship-tag {
-  background-color: var(--color-mud);
-  color: var(--color-light-text);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
   font-size: 11px;
   font-weight: var(--font-weight-semibold);
   line-height: 12px;
@@ -2649,7 +2650,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 .layout-single-column .video-player,
 .layout-single-column .media-gallery__gifv,
 .layout-single-column .media-gallery__preview {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-primary);
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -2679,7 +2680,7 @@ body .navigation-panel__legal .column-link[href="/about"] svg {
 
 /* More distinct focus color for accessibility, instead of just white */
 .layout-single-column input:focus-visible {
-  outline-color: var(--color-accent);
+  outline-color: var(--color-text-brand);
   outline-style: solid;
 }
 
@@ -2705,13 +2706,13 @@ body.embed .entry .detailed-status {
 /* Destructive colors (For you -suggestions, users when focused to the follow button */
 .layout-single-column .button.logo-button.button--destructive:active,
 .layout-single-column .button.logo-button.button--destructive:focus {
-  background-color: var(--color-destructive);
-  border-color: var(--color-destructive);
+  background-color: var(--color-text-error);
+  border-color: var(--color-text-error);
 }
 
 /* Fix character counter color when it's over the limit */
 .layout-single-column .character-counter.character-counter--over {
-  color: var(--color-destructive);
+  color: var(--color-text-error);
 }
 
 /* Show more in server banner */
@@ -2774,11 +2775,11 @@ body.embed .entry .detailed-status {
 
 /* Threaded line, actually */
 .layout-single-column .status__line {
-  border-inline-start: 2px solid var(--color-thread-line);
+  border-inline-start: 2px solid var(--color-border-primary);
 }
 
 .layout-single-column .status__line--full::before {
-  background-color: var(--color-thread-line);
+  background-color: var(--color-border-primary);
 }
 
 /* Hide the "stub" from the first status line */
@@ -2817,8 +2818,8 @@ div[tabindex="-1"]
 .layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-thumb,
 .layout-single-column .reply-indicator::-webkit-scrollbar-thumb,
 .layout-single-column::-webkit-scrollbar-thumb {
-  background-color: var(--color-border);
-  border: 0 solid var(--color-border);
+  background-color: var(--color-border-primary);
+  border: 0 solid var(--color-border-primary);
   border-radius: 50px;
 }
 
@@ -2828,7 +2829,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:hover,
 .layout-single-column .reply-indicator::-webkit-scrollbar-thumb:hover,
 .layout-single-column::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-light-purple);
+  background-color: var(--color-text-tertiary);
 }
 
 *::-webkit-scrollbar-thumb:active,
@@ -2837,7 +2838,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-thumb:active,
 .layout-single-column .reply-indicator::-webkit-scrollbar-thumb:active,
 .layout-single-column::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-black-coral);
+  background-color: var(--color-border-primary);
 }
 
 *::-webkit-scrollbar-track,
@@ -2845,8 +2846,8 @@ div[tabindex="-1"]
 .layout-single-column .autosuggest-textarea__textarea::-webkit-scrollbar-track,
 .layout-single-column .reply-indicator::-webkit-scrollbar-track,
 .layout-single-column::-webkit-scrollbar-track {
-  background-color: var(--color-bg);
-  border: 0 solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  border: 0 solid var(--color-border-primary);
   border-radius: 0;
 }
 
@@ -2855,7 +2856,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-track:hover,
 .layout-single-column .reply-indicator::-webkit-scrollbar-track:hover,
 .layout-single-column::-webkit-scrollbar-track:hover {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 .layout-single-column textarea::-webkit-scrollbar-track:active,
@@ -2863,7 +2864,7 @@ div[tabindex="-1"]
   .autosuggest-textarea__textarea::-webkit-scrollbar-track:active,
 .layout-single-column .reply-indicator::-webkit-scrollbar-track:active,
 .layout-single-column::-webkit-scrollbar-track:active {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
 }
 
 .layout-single-column .drawer__inner::-webkit-scrollbar-corner,
@@ -2876,39 +2877,39 @@ div[tabindex="-1"]
 
 /* Drawer scollbars */
 .layout-single-column .drawer__inner::-webkit-scrollbar-thumb {
-  background-color: var(--color-dim);
+  background-color: var(--color-text-secondary);
   border: 0;
   border-radius: 50px;
 }
 
 .layout-single-column .drawer__inner::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-light-purple);
+  background-color: var(--color-text-tertiary);
 }
 
 .layout-single-column .drawer__inner::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-light-text);
+  background-color: var(--color-text-primary);
 }
 
 .layout-single-column .drawer__inner::-webkit-scrollbar-track {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   border: 0;
   border-radius: 0;
 }
 
 .layout-single-column .drawer__inner::-webkit-scrollbar-track:hover,
 .layout-single-column .drawer__inner::-webkit-scrollbar-track:active {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
 }
 
 /* New onboarding in /start in v4.3.0-alpha.0+mementomods-2023-12-16 */
 .layout-single-column .onboarding__steps__item,
 .layout-single-column .onboarding__link {
-  background-color: var(--color-dark);
+  background-color: var(--color-bg-tertiary);
   margin-bottom: 10px;
 }
 
 .layout-single-column .onboarding__steps__item__progress > svg > path {
-  fill: var(--color-dark);
+  fill: var(--color-bg-tertiary);
 }
 
 .layout-single-column .onboarding__links > * {
@@ -2941,14 +2942,14 @@ div[tabindex="-1"]
 .layout-single-column
   .ui__header__links
   .button.button-secondary[href="/publish"] {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-text-brand);
   background-image: var(--icon-compose);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 22px;
   border: 0;
   box-sizing: border-box;
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
   height: 35px;
   width: 45px;
 }
@@ -2957,7 +2958,7 @@ div[tabindex="-1"]
   .ui__header__links
   .button.button-secondary[href="/publish"]:is(:hover, :focus, :active) {
   background-color: var(--color-accent-dark-50);
-  color: var(--color-light-purple);
+  color: var(--color-text-tertiary);
 }
 
 .layout-single-column
@@ -3021,7 +3022,7 @@ div[tabindex="-1"]
   }
 
   .layout-single-column .column-header__collapsible {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border-primary);
   }
 
   .layout-single-column .column-header__collapsible-inner {
@@ -3036,7 +3037,7 @@ div[tabindex="-1"]
 
 /* List panel */
 .layout-single-column .list-panel {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   margin: 0 0 5px;
   padding: 5px 9px 50px 36px;
   position: absolute;
