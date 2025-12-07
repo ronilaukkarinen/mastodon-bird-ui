@@ -7,7 +7,8 @@
     "dev": "npm-run-all --parallel watch sync",
     "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /bird-ui",
     "sync": "browser-sync start --config bs-config.js",
-    "build": "parcel build src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --no-source-maps",
+    "build": "parcel build src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --no-source-maps && npm run banner",
+    "banner": "for f in dist/*.css; do echo \"/* Mastodon Bird UI v$npm_package_version - https://github.com/ronilaukkarinen/mastodon-bird-ui */\" | cat - \"$f\" > temp && mv temp \"$f\"; done",
     "clean": "rm -rf dist .parcel-cache"
   },
   "author": "",
