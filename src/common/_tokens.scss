@@ -36,10 +36,10 @@ html {
 html:where(
   :not([data-user-theme='mastodon-light'], [data-user-theme='system'])
 ) {
-  color-scheme: dark;
-
   @include dark.tokens;
   @include utils.invert-on-dark;
+
+  color-scheme: dark;
 }
 
 html[data-user-theme='contrast'],
@@ -49,10 +49,10 @@ html[data-user-theme='contrast'] .theme-dark {
 
 .theme-light,
 html:where([data-user-theme='mastodon-light']) {
-  color-scheme: light;
-
   @include light.tokens;
   @include utils.invert-on-light;
+
+  color-scheme: light;
 }
 
 html[data-user-theme='mastodon-light'][data-user-contrast='increased'],

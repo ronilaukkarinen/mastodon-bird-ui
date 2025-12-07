@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 1175px) {
+@media (width <= 1175px) {
   .layout-single-column .columns-area__panels__main > div {
     border-right: 0;
   }

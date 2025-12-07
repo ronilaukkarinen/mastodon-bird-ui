@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"src/**/*.scss\"",
     "dev": "npm-run-all --parallel watch sync",
     "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /mastodon-bird-ui",
     "sync": "browser-sync start --config bs-config.js",

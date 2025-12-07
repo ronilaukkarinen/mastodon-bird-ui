@@ -56,7 +56,7 @@
   top: 0;
 }
 
-@media (min-width: 1175px) {
+@media (width >= 1175px) {
   .layout-single-column .columns-area__panels__main {
     max-width: calc(var(--width-main-panel) + calc(var(--gap-default) * 4));
     padding-left: calc(var(--gap-default) * 2);
@@ -462,4 +462,3 @@ body .notification-ungrouped--unread::before {
 .layout-single-column .server-banner__number-label {
   color: var(--color-text-tertiary);
 }
-

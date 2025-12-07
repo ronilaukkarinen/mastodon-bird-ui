@@ -1,5 +1,5 @@
 /* Vars on iPad, landscape */
-@media (min-width: 1175px) and (max-width: 1260px) {
+@media (1175px <= width <= 1260px) {
   :root {
     --width-main-panel: 500px;
     --width-side-panel: 265px;
@@ -7,7 +7,7 @@
 }
 
 /* Vars in mobile */
-@media (max-width: 500px) {
+@media (width <= 500px) {
   :root {
     --font-size: 16px;
     --line-height: 1.4;
@@ -545,7 +545,7 @@ body.layout-multiple-columns {
   margin-inline: 10px;
 }
 
-@media (min-width: 1175px) {
+@media (width >= 1175px) {
   .layout-multiple-columns .columns-area__panels__main {
     max-width: calc(var(--width-main-panel) + calc(var(--gap-default) * 4));
     padding-left: calc(var(--gap-default) * 2);
@@ -1552,7 +1552,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding: 0;
 }
 
-@media (min-width: 1175px) {
+@media (width >= 1175px) {
   .layout-multiple-columns .ui__header,
   .layout-multiple-columns .columns-area__panels__main > div.tabs-bar__wrapper,
   .layout-multiple-columns .tabs-bar__wrapper {
@@ -1626,7 +1626,7 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
 }
 
 /* Truncate too long unfollow buttons and texts beside it so they don't overlap in notifications */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .layout-multiple-columns .notification .account__relationship > .button,
   .layout-multiple-columns .notification__report__actions .button {
     max-width: 24vw;
@@ -1945,7 +1945,6 @@ body.embed .detailed-status__meta .detailed-status__link .icon-retweet,
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  width: var(--width-column);
 }
 
 .layout-multiple-columns .column-subheading,
@@ -3395,7 +3394,7 @@ body .compose-form .compose-form__uploads {
   width: 30px !important;
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (width >= 890px) {
   .layout-multiple-columns .status__action-bar .icon-button {
     position: relative;
   }
@@ -3936,7 +3935,7 @@ body .compose-form .compose-form__uploads {
 }
 
 /* iPad */
-@media screen and (max-width: 889px) {
+@media screen and (width <= 889px) {
   .layout-multiple-columns .ui__header {
     border-bottom: 1px solid var(--color-border-primary);
   }
