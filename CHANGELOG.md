@@ -7,6 +7,9 @@
 * Add support for high contrast mode overrides
 * Fix unwanted `border-top` on `.tabs-bar__wrapper` introduced in Mastodon v4.6.0
 * Update stylelint config for SCSS support
+* Add `scss/comment-no-loud` rule to enforce SCSS-style comments
+* Convert all CSS comments to SCSS comments
+* Add `lint:watch` to dev workflow for real-time linting
 
 ### 4.0.0rc: 2025-11-30
 
