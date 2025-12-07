@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"src/**/*.scss\"",
-    "dev": "npm-run-all --parallel watch sync",
+    "lint:watch": "onchange \"src/**/*.scss\" -- npm run lint",
+    "dev": "npm-run-all --parallel watch sync lint:watch",
     "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /mastodon-bird-ui",
     "sync": "browser-sync start --config bs-config.js",
     "build": "parcel build src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --no-source-maps && npm run banner",
@@ -21,6 +22,7 @@
     "@ronilaukkarinen/stylelint-value-no-unknown-custom-properties": "^4.0.1",
     "browser-sync": "^3.0.4",
     "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
     "parcel": "^2.16.1",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
