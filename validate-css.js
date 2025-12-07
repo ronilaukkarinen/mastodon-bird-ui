@@ -3,11 +3,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const cssFiles = fs.readdirSync('.').filter(file => file.endsWith('.css'));
+const distDir = './dist';
+const cssFiles = fs.readdirSync(distDir).filter(file => file.endsWith('.css'));
 let errorFound = false;
 
 cssFiles.forEach(file => {
-  const lines = fs.readFileSync(file, 'utf8').split('\n');
+  const filePath = path.join(distDir, file);
+  const lines = fs.readFileSync(filePath, 'utf8').split('\n');
   lines.forEach((line, index) => {
     // Check if the line ends with a comma and the next line starts with "{"
     const trimmedLine = line.trim();

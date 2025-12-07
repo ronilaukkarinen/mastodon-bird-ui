@@ -4,38 +4,31 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Test styles
-    runs-on: ubuntu-22.04
+    name: Lint and build
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout the repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Read .nvmrc
-      run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+      run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
       id: nvm
 
     - name: Setup node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v4
       with:
         node-version: '${{ steps.nvm.outputs.NVMRC }}'
+        cache: 'npm'
 
-    - name: Install stylelint packages
-      run: |
-        npm install --global \
-        stylelint@^15.2.0 \
-        stylelint-config-standard@^30.0.1 \
-        stylelint-order@^6.0.3 \
-        @ronilaukkarinen/stylelint-a11y@^1.2.7 \
-        @ronilaukkarinen/stylelint-declaration-strict-value@^1.9.2 \
-        @ronilaukkarinen/stylelint-value-no-unknown-custom-properties@^4.0.1 \
-        stylelint-config-recommended@^14.0.1 \
-        stylelint-csstree-validator@^3.0.0 \
-        postcss@8.4.21
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build CSS
+      run: npm run build
 
     - name: Run stylelint
-      run: |
-        npx stylelint *.css --max-warnings 0 --config .stylelintrc
+      run: npm run lint
 
     - name: Validate CSS syntax
       run: node validate-css.js
