@@ -10,12 +10,13 @@
 * Add `scss/comment-no-loud` rule to enforce SCSS-style comments
 * Convert all CSS comments to SCSS comments
 * Add `lint:watch` to dev workflow for real-time linting
+* Update GitHub workflow to use npm scripts and build process
 
 ### 4.0.0rc: 2025-11-30
 
 This is a major rewrite of the project architecture. The codebase has been completely modularized from 11,600+ lines of plain CSS into a structured SCSS architecture with proper build tooling. See [#172](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/172) for details.
 
-#### Build System
+#### Build system
 
 * Add Parcel bundler for SCSS compilation
 * Add Browsersync for live development with CSS hot-reloading
@@ -32,7 +33,7 @@ This is a major rewrite of the project architecture. The codebase has been compl
 * Extract CSS custom properties into dedicated `_variables.scss`
 * Maintain single-file CSS output in `dist/` for backward compatibility
 
-#### For Users
+#### For users
 
 * Installation method remains unchanged - copy CSS from `dist/` folder
 * Output CSS files are functionally identical to previous versions
