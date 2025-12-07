@@ -2,17 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with this repository.
 
-## Project Overview
+## Project overview
 
 Mastodon Bird UI is a CSS-only theme that transforms Mastodon's default UI to resemble Twitter/X's interface. It's maintained by @rolle@mementomori.social.
 
 ## Architecture
 
-- **Source**: `src/` - Modular SCSS files
-- **Output**: `dist/` - Compiled CSS (single-column and multiple-columns layouts)
-- **Build**: Parcel bundler compiles SCSS to CSS
+- `src/` - Modular SCSS source files
+- `dist/` - Compiled CSS (single-column and multiple-columns layouts)
+- Parcel bundler compiles SCSS to CSS
 
-### Directory Structure
+### Directory structure
 
 ```
 src/
@@ -31,7 +31,7 @@ src/
     └── _multiple-columns-styles.scss
 ```
 
-## Common Commands
+## Common commands
 
 ```bash
 npm install          # Install dependencies
@@ -40,14 +40,14 @@ npm run build        # Production build to dist/
 npm run clean        # Remove dist/ and .parcel-cache/
 ```
 
-## Development Workflow
+## Development workflow
 
 1. Run `npm run dev` to start Parcel + Browsersync
 2. Browsersync proxies a local Mastodon instance (configure in `bs-config.js`)
 3. Edit SCSS files in `src/`, changes appear instantly
 4. Production builds go to `dist/` with version banner from package.json
 
-## Key Guidelines
+## Key guidelines
 
 - Keep CSS-only output (no JavaScript runtime)
 - Maintain backward compatibility for users copying CSS to Custom CSS field
@@ -55,12 +55,18 @@ npm run clean        # Remove dist/ and .parcel-cache/
 - Test both single-column and multiple-columns layouts
 - Version is managed in `package.json` and auto-injected into built CSS
 
-## Mastodon Compatibility
+## Mastodon compatibility
 
 This theme targets Mastodon v4.6.0+ which uses a new semantic token system with CSS custom properties like `--color-text-primary`, `--color-bg-primary`, etc. Bird UI overrides these tokens.
 
-## Commits
+## Commits and code style
 
 - One logical change per commit
-- Keep commit messages concise (one line)
+- Keep commit messages concise (one line), use sentence case
 - Update CHANGELOG.md for user-facing changes
+- Use present tense in commits and CHANGELOG.md
+- Use sentence case for headings (not Title Case)
+- Never use bold text as headings, use proper heading levels instead
+- Always add an empty line after headings
+- No formatting in CHANGELOG.md except `inline code` and when absolute necessary
+- Use * as bullets in CHANGELOG.md

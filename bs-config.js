@@ -8,7 +8,7 @@ module.exports = {
   https: false,
   serveStatic: [
     {
-      route: '/bird-ui',
+      route: '/mastodon-bird-ui',
       dir: 'dist',
     },
   ],
@@ -18,8 +18,8 @@ module.exports = {
       fn: function (snippet, match) {
         // Inject both CSS files into the head
         const cssInjection = `
-    <link rel="stylesheet" href="/bird-ui/layout-single-column.css">
-    <link rel="stylesheet" href="/bird-ui/layout-multiple-columns.css">
+    <link rel="stylesheet" href="/mastodon-bird-ui/layout-single-column.css">
+    <link rel="stylesheet" href="/mastodon-bird-ui/layout-multiple-columns.css">
 `;
         return cssInjection + snippet + match;
       },
