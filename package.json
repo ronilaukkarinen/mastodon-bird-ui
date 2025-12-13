@@ -9,7 +9,11 @@
     "dev": "npm-run-all --parallel watch sync lint:watch",
     "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /mastodon-bird-ui",
     "sync": "browser-sync start --config bs-config.js",
-    "build": "parcel build src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --no-source-maps && npm run banner",
+    "build": "npm run build:custom-css",
+    "build:custom-css": "parcel build src/mastodon-bird-ui.scss --dist-dir dist --no-source-maps && npm run banner",
+    "build:mastodon-core": "npm run build:mastodon-core:copy && npm run build:mastodon-core:entry",
+    "build:mastodon-core:copy": "rm -rf dist/mastodon-core && mkdir -p dist/mastodon-core/mastodon-bird-ui && cp -r src/common src/components src/layouts dist/mastodon-core/mastodon-bird-ui/",
+    "build:mastodon-core:entry": "cp src/mastodon-bird-ui.scss dist/mastodon-core/ && sed -i 's|@use \"common/|@use \"mastodon-bird-ui/common/|g; s|@use \"components/|@use \"mastodon-bird-ui/components/|g; s|@use \"layouts/|@use \"mastodon-bird-ui/layouts/|g' dist/mastodon-core/mastodon-bird-ui.scss",
     "banner": "for f in dist/*.css; do echo \"/* Mastodon Bird UI v$npm_package_version - https://github.com/ronilaukkarinen/mastodon-bird-ui */\" | cat - \"$f\" > temp && mv temp \"$f\"; done",
     "clean": "rm -rf dist .parcel-cache"
   },
