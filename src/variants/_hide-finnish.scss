@@ -1,0 +1,10 @@
+// Mastodon Bird UI - Hide Finnish translate links
+// Hides translate button for Finnish language posts
+
+.status__content__text[lang='fi'].translate ~ .status__content__translate-button {
+  display: none;
+}
+
+.status__content__text[lang='fi'].translate ~ .status__content__read-more-button {
+  display: none;
+}

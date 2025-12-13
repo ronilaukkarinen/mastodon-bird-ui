@@ -1,0 +1,66 @@
+// Mastodon Bird UI - Accessible Plus variant
+// Even larger fonts and enhanced accessibility features
+
+@use 'accessible';
+
+body.theme-mastodon-bird-ui-accessible-plus {
+  // Define font sizes for elements where missing
+  [role='dialog'] textarea,
+  time:not(.invisible),
+  span:not(.invisible),
+  li:not(.invisible) {
+    font-size: var(--font-size);
+  }
+
+  article div,
+  .notification-group__main div {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
+
+  // Define headings with larger font sizes
+  .account__header__tabs__name {
+    font-size: var(--font-size-heading);
+  }
+}
+
+// Mobile: even larger fonts
+@media (width <= 700px) {
+  body.theme-mastodon-bird-ui-accessible-plus {
+    --font-size: 24px;
+    --line-height: 30px;
+  }
+}
+
+// Notification badge sizing
+.theme-mastodon-bird-ui-accessible-plus .icon-with-badge__badge {
+  font-size: 14px;
+  padding: 3px 6px;
+  top: -10px;
+}
+
+// Define smaller font sizes for specific elements
+.theme-mastodon-bird-ui-accessible-plus .account__domain-pill,
+.theme-mastodon-bird-ui-accessible-plus .navigation-bar .account__display-name .display-name__account,
+.theme-mastodon-bird-ui-accessible-plus .trends__item__name > span,
+.theme-mastodon-bird-ui-accessible-plus .account__header__account-note textarea,
+.theme-mastodon-bird-ui-accessible-plus .dropdown-button {
+  font-size: var(--font-size-smaller) !important;
+  line-height: 1.2;
+}
+
+// Keep footer version information smallest
+.theme-mastodon-bird-ui-accessible-plus .link-footer,
+.theme-mastodon-bird-ui-accessible-plus .link-footer * {
+  font-size: 15px !important;
+}
+
+// Define mid font sizes
+.theme-mastodon-bird-ui-accessible-plus .detailed-status__display-name,
+.theme-mastodon-bird-ui-accessible-plus .notification-group__main__header__label,
+.theme-mastodon-bird-ui-accessible-plus .account--minimal .account__display-name .display-name strong,
+.theme-mastodon-bird-ui-accessible-plus .account__header__content p,
+.theme-mastodon-bird-ui-accessible-plus .status__relative-time * {
+  font-size: var(--font-size-mid) !important;
+  line-height: var(--line-height-mid) !important;
+}
