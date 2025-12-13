@@ -17,6 +17,7 @@
 * Add `lint:watch` to dev workflow for real-time linting
 * Update GitHub workflow to use npm scripts and build process
 * Split CSS custom properties into modular files
+* Fixes to heart position
 
 ### 4.0.0rc: 2025-11-30
 

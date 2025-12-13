@@ -1,5 +1,6 @@
 // Browsersync configuration for proxying mastodon.test
 // This allows you to develop mastodon-bird-ui CSS while testing against your real Mastodon instance
+const variant = process.env.VARIANT || 'mastodon-bird-ui';
 
 module.exports = {
   proxy: 'https://mementomori.test',
@@ -18,7 +19,7 @@ module.exports = {
       fn: function (snippet, match) {
         // Inject CSS file into the head
         const cssInjection = `
-    <link rel="stylesheet" href="/mastodon-bird-ui/mastodon-bird-ui.css">
+    <link rel="stylesheet" href="/mastodon-bird-ui/${variant}.css">
 `;
         return cssInjection + snippet + match;
       },

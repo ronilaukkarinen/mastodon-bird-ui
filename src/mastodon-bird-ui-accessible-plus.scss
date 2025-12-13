@@ -1,0 +1,25 @@
+// Mastodon Bird UI - Accessible Plus (Ultra Accessible) variant
+// Even larger fonts and enhanced accessibility features
+@use "common/tokens";
+@use "common/variables";
+@use "common/typography";
+@use "common/layout";
+@use "common/effects";
+@use "common/icons";
+@use "common/theme-high-contrast";
+@use "common/theme-light";
+@use "components/basics";
+@use "components/modals";
+@use "components/forms";
+@use "components/cards";
+@use "components/announcements";
+@use "components/panels";
+@use "components/colors";
+@use "components/status";
+@use "components/media";
+@use "components/buttons";
+@use "components/navigation";
+@use "components/animations";
+@use "components/micro-interactions/heart";
+@use "layouts/advanced-web-interface";
+@use "variants/accessible-plus";

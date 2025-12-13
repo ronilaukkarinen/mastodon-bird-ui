@@ -69,7 +69,7 @@
     "csstools/value-no-unknown-custom-properties": [
       true,
       {
-        "importFrom": ["dist/layout-single-column.css"]
+        "importFrom": ["dist/mastodon-bird-ui.css"]
       }
     ],
     "rule-empty-line-before": [
