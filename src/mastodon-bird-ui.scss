@@ -1,0 +1,30 @@
+// Mastodon Bird UI - Unified theme
+// Supports both single-column and advanced web interface (multiple columns)
+
+// Import base variables and themes
+@use "common/tokens";
+@use "common/variables";
+@use "common/typography";
+@use "common/layout";
+@use "common/effects";
+@use "common/icons";
+@use "common/theme-high-contrast";
+@use "common/theme-light";
+
+// Import shared components (single-column layout)
+@use "components/basics";
+@use "components/modals";
+@use "components/forms";
+@use "components/cards";
+@use "components/announcements";
+@use "components/panels";
+@use "components/colors";
+@use "components/status";
+@use "components/media";
+@use "components/buttons";
+@use "components/navigation";
+@use "components/animations";
+@use "components/micro-interactions/heart";
+
+// Import advanced web interface (multiple columns) styles
+@use "layouts/advanced-web-interface";
