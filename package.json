@@ -7,7 +7,7 @@
     "lint": "stylelint \"src/**/*.scss\"",
     "lint:watch": "onchange \"src/**/*.scss\" -- npm run lint",
     "dev": "npm-run-all --parallel watch sync lint:watch",
-    "watch": "parcel watch src/layout-single-column.scss src/layout-multiple-columns.scss --dist-dir dist --public-url /mastodon-bird-ui",
+    "watch": "parcel watch src/mastodon-bird-ui.scss --dist-dir dist --public-url /mastodon-bird-ui",
     "sync": "browser-sync start --config bs-config.js",
     "build": "npm run build:custom-css",
     "build:custom-css": "parcel build src/mastodon-bird-ui.scss --dist-dir dist --no-source-maps && npm run banner",

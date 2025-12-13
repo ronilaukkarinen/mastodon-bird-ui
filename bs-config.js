@@ -16,10 +16,9 @@ module.exports = {
     rule: {
       match: /<\/head>/i,
       fn: function (snippet, match) {
-        // Inject both CSS files into the head
+        // Inject CSS file into the head
         const cssInjection = `
-    <link rel="stylesheet" href="/mastodon-bird-ui/layout-single-column.css">
-    <link rel="stylesheet" href="/mastodon-bird-ui/layout-multiple-columns.css">
+    <link rel="stylesheet" href="/mastodon-bird-ui/mastodon-bird-ui.css">
 `;
         return cssInjection + snippet + match;
       },
