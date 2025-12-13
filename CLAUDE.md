@@ -103,3 +103,4 @@ This theme targets Mastodon v4.6.0+ which uses a new semantic token system with 
 - No emojis in commits or code
 - Keep CHANGELOG.md date up to date when adding entries
 - Update README badge version when releasing
+- No empty lines after // comments in SCSS

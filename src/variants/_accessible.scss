@@ -1,8 +1,6 @@
 // Mastodon Bird UI - Accessible variant
 // Larger fonts and improved contrast for better readability
-
 body.theme-mastodon-bird-ui-accessible {
-  // Accessible color palette - higher contrast
   --color-accent: #0a9ff9;
   --color-accent-dark: #1a3ff9;
   --color-brand-mastodon-text-light: #fff;
@@ -40,9 +38,9 @@ body.theme-mastodon-bird-ui-accessible {
 }
 
 .theme-mastodon-bird-ui-accessible .media-gallery__alt__label {
+  border-radius: 8px;
   font-size: var(--font-size-smaller);
   padding: 8px 10px;
-  border-radius: 8px;
 }
 
 // Fix columns in content warnings with bigger fonts
@@ -68,7 +66,10 @@ body.theme-mastodon-bird-ui-accessible {
   display: none !important;
 }
 
-.theme-mastodon-bird-ui-accessible .status__info .display-name .display-name__account {
+.theme-mastodon-bird-ui-accessible
+  .status__info
+  .display-name
+  .display-name__account {
   opacity: 0.8;
 }
 
