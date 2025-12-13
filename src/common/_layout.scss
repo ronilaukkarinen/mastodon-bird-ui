@@ -1,0 +1,17 @@
+// Mastodon Bird UI layout variables
+
+:root {
+  // Grids and gaps
+  --gap-default: 12px;
+  --gap-column-link: 10px;
+
+  // Element sizes
+  --size-avatar: 48px;
+  --size-avatar-small: 32px;
+  --width-main-panel: 600px;
+  --width-side-panel: 260px;
+  --width-compose-panel: 350px;
+  --border-radius: 16px;
+  --border-radius-badges: 4px;
+  --badges-distance-from-edge: 12px;
+}

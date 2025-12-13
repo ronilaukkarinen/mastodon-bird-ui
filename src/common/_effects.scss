@@ -1,0 +1,19 @@
+// Mastodon Bird UI effects (gradients, shadows)
+
+:root {
+  --active-header-box-shadow: 0 1px 0 rgba(140, 141, 255, 30%);
+  --active-header-radial-gradient: radial-gradient(
+    ellipse,
+    rgba(99, 100, 255, 23%) 0,
+    rgba(99, 100, 255, 0%) 60%
+  );
+  --compose-form-linear-gradient: linear-gradient(
+    180deg,
+    rgba(30, 32, 40, 100%) 0%,
+    rgba(30, 32, 40, 100%) 53%,
+    rgba(30, 32, 40, 81.4%) 76%,
+    rgba(30, 32, 40, 70.8%) 87%,
+    rgba(30, 32, 40, 45.8%) 97%,
+    rgba(30, 32, 40, 0%) 100%
+  );
+}

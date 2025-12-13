@@ -1,4 +1,4 @@
-### 4.0.0rc2: 2025-12-07
+### 4.0.0rc2: 2025-12-13
 
 * Migrate to Mastodon v4.6.0+ semantic token system
 * Create `src/common/theme/` with `_base.scss`, `_dark.scss`, `_light.scss`, `_utils.scss`
@@ -11,6 +11,7 @@
 * Convert all CSS comments to SCSS comments
 * Add `lint:watch` to dev workflow for real-time linting
 * Update GitHub workflow to use npm scripts and build process
+* Split CSS custom properties into modular files
 
 ### 4.0.0rc: 2025-11-30
 
