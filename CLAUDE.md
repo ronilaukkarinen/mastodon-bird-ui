@@ -9,36 +9,65 @@ Mastodon Bird UI is a CSS-only theme that transforms Mastodon's default UI to re
 ## Architecture
 
 - `src/` - Modular SCSS source files
-- `dist/` - Compiled CSS (single-column and multiple-columns layouts)
+- `dist/` - Compiled CSS output
+- `scripts/` - Installation and utility scripts
 - Parcel bundler compiles SCSS to CSS
 
 ### Directory structure
 
 ```
 src/
-├── layout-single-column.scss      # Entry point for single column
-├── layout-multiple-columns.scss   # Entry point for multiple columns
+├── mastodon-bird-ui.scss          # Main entry point (both layouts)
+├── mastodon-bird-ui-stars.scss    # Stars animation variant
 ├── common/                        # Shared variables and themes
-│   ├── _variables.scss            # CSS custom properties
-│   ├── _theme-light.scss
-│   └── _theme-high-contrast.scss
+│   ├── _tokens.scss               # Mastodon semantic token overrides
+│   ├── _variables.scss            # Bird UI-specific colors
+│   ├── _typography.scss           # Font sizes and weights
+│   ├── _layout.scss               # Gaps, sizes, border-radius
+│   ├── _effects.scss              # Gradients, shadows
+│   ├── _icons.scss                # SVG icon data URIs
+│   └── theme/                     # Theme color definitions
 ├── components/                    # UI component styles
+│   ├── _basics.scss
 │   ├── _navigation.scss
 │   ├── _status.scss
-│   ├── _buttons.scss
-│   └── ...
-└── layouts/                       # Layout-specific styles
-    └── _multiple-columns-styles.scss
+│   └── micro-interactions/        # Heart/star animations
+├── layouts/                       # Layout-specific styles
+│   └── _advanced-web-interface.scss
+├── variants/                      # Theme variant overrides
+│   ├── _accessible.scss
+│   ├── _accessible-plus.scss
+│   ├── _hide-finnish.scss
+│   └── _hide-translate-links.scss
+└── themes/                        # Entry points for Mastodon core
+    └── mastodon-bird-ui*.scss
 ```
 
 ## Common commands
 
 ```bash
-npm install          # Install dependencies
-npm run dev          # Development mode with hot-reload (Browsersync)
-npm run build        # Production build to dist/
-npm run clean        # Remove dist/ and .parcel-cache/
+npm install              # Install dependencies
+npm run dev              # Development mode with hot-reload (Browsersync)
+npm run build            # Production build (alias for build:custom-css)
+npm run build:custom-css # Build CSS for Custom CSS field usage
+npm run build:mastodon-core  # Build SCSS for Mastodon core installation
+npm run clean            # Remove dist/ and .parcel-cache/
 ```
+
+## Installation methods
+
+### Custom CSS (for users)
+
+Copy contents of `dist/mastodon-bird-ui.css` to Mastodon Admin > Server settings > Appearance > Custom CSS
+
+### Mastodon core (for admins)
+
+```bash
+npm run build:mastodon-core
+./scripts/install-to-mastodon.sh --path /path/to/mastodon
+```
+
+This installs Bird UI as selectable themes in user preferences.
 
 ## Development workflow
 
