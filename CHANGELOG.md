@@ -3,6 +3,8 @@
 * Add unified `mastodon-bird-ui.scss` entry point for both layouts
 * Rename `_multiple-columns-styles.scss` to `_advanced-web-interface.scss`
 * Add `build:custom-css` and `build:mastodon-core` npm scripts
+* Add theme variants: accessible, accessible-plus, stars, hide-finnish, hide-translate-links
+* Add `scripts/install-to-mastodon.sh` for Mastodon core installation
 * Migrate to Mastodon v4.6.0+ semantic token system
 * Create `src/common/theme/` with `_base.scss`, `_dark.scss`, `_light.scss`, `_utils.scss`
 * Replace old custom CSS variables with Mastodon semantic tokens throughout codebase
