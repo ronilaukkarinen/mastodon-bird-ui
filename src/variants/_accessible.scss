@@ -1,0 +1,77 @@
+// Mastodon Bird UI - Accessible variant
+// Larger fonts and improved contrast for better readability
+
+body.theme-mastodon-bird-ui-accessible {
+  // Accessible color palette - higher contrast
+  --color-accent: #0a9ff9;
+  --color-accent-dark: #1a3ff9;
+  --color-brand-mastodon-text-light: #fff;
+  --color-brand-mastodon-links: #0a9ff9;
+  --color-hashtag: #ff66e3;
+  --color-link: #0a9ff9;
+  --color-mention: #0af9b5;
+  --color-dark: #1a1b36;
+  --color-bg: #000;
+  --color-bg-90: #000;
+  --color-bg-75: rgb(0 0 0 / 75%);
+  --color-mud: #333;
+  --color-dim: #fff;
+  --color-column-link-hover: rgb(255 255 255 / 21%);
+  --color-border: #343638;
+  --color-light-purple: #fff;
+  --color-thread-line: #979b9f;
+
+  // Larger font sizes for accessibility
+  --font-size: 18px;
+  --font-size-smaller: 18px;
+  --font-size-mid: 18px;
+  --font-size-bigger: 18px;
+  --font-size-12: 14px;
+  --font-size-heading: 20px;
+  --line-height: 24px;
+  --line-height-mid: 22px;
+}
+
+// Improve alt text readability
+.theme-mastodon-bird-ui-accessible .media-gallery__alt__popover p {
+  font-size: var(--font-size);
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.theme-mastodon-bird-ui-accessible .media-gallery__alt__label {
+  font-size: var(--font-size-smaller);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+// Fix columns in content warnings with bigger fonts
+.theme-mastodon-bird-ui-accessible
+  .columns-area__panels__pane--compositional
+  .compose-form
+  .spoiler-input__input,
+.theme-mastodon-bird-ui-accessible .content-warning {
+  grid-template-columns: minmax(0, 3fr) minmax(90px, 180px) !important;
+}
+
+// Show full name in status
+.theme-mastodon-bird-ui-accessible .status__info .display-name {
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.theme-mastodon-bird-ui-accessible .status__info {
+  justify-content: space-between !important;
+}
+
+.theme-mastodon-bird-ui-accessible .status__info::before {
+  display: none !important;
+}
+
+.theme-mastodon-bird-ui-accessible .status__info .display-name .display-name__account {
+  opacity: 0.8;
+}
+
+.theme-mastodon-bird-ui-accessible .status .status__info {
+  height: auto !important;
+}
