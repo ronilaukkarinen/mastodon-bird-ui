@@ -1383,6 +1383,7 @@
   padding: 0;
   width: 100%;
 }
+
 // Profile links end
 .layout-single-column .getting-started__trends h4 {
   border: 0;
@@ -1634,8 +1635,7 @@ body.embed .button.logo-button:hover,
 }
 
 // Visual indicator about direct messages
-   // @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031
-
+// @source https://github.com/mastodon/mastodon/issues/22158#issuecomment-1353661031
 .notification-ungrouped--direct,
 .layout-single-column .detailed-status-direct {
   position: relative;
@@ -2158,7 +2158,6 @@ body .compose-form .compose-form__uploads {
 // Replace the original icons (after 4.3.0)
 // -------------------------------------------
 // /* Set size for the filter bar and profile icons
-
 .layout-single-column .account__header__buttons .icon,
 .layout-single-column .notification__filter-bar .icon {
   --size-icon: 20px;
