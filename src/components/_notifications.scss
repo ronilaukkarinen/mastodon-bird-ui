@@ -183,10 +183,12 @@
     padding-left: calc(var(--size-avatar) + 2px);
   }
 
-  // Reply threads already get core's --thread-margin on the prepend
+  // In-thread reply prepends already get core's --thread-margin
   // (https://github.com/mastodon/mastodon/pull/39521), so drop our padding there
-  // to avoid doubling the indent.
-  .status__wrapper-reply .status__prepend {
+  // to avoid doubling the indent. Since #39554 core only adds that margin to
+  // .status__wrapper--in-thread replies, we must match the same scope, otherwise
+  // non-in-thread reply prepends lose both and hug the left edge.
+  .status__wrapper-reply.status__wrapper--in-thread .status__prepend {
     padding-left: 0;
   }
 
