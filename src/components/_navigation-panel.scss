@@ -19,9 +19,17 @@
   // Upstream PR mastodon#39145 wrapped each nav item in an <li>. Make the menu
   // a flex column so the items stack and CSS `order` works (used below to keep
   // More last).
+  //
+  // `flex: 1 1 auto` + `min-height: 0` + `overflow-y: auto` make the menu itself
+  // the scroll region (upstream's model), so when the list is taller than the
+  // viewport (e.g. the accessible theme at 200% zoom) the items below Bookmarks,
+  // Settings and More stay reachable by scrolling instead of being clipped.
   .navigation-panel__menu {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
     scrollbar-color: var(--color-border) transparent;
     scrollbar-width: thin;
   }

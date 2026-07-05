@@ -1,5 +1,6 @@
 ### [Unreleased]
 
+* Make the left navigation menu scroll so items below Bookmarks (Settings, More) stay reachable at high browser zoom with the accessible themes
 * Preserve other installed themes (like Tangerine) when installing Bird UI instead of rebuilding themes.yml from scratch
 * Fix the reply post indicator sticking to the left edge in non-thread replies (https://github.com/mastodon/mastodon/pull/39554)
 * Reset the status prepend padding only in reply threads, where Mastodon 4.7.0-alpha.1 adds a thread margin (https://github.com/mastodon/mastodon/pull/39521)
