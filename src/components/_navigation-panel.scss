@@ -8,13 +8,20 @@
   // become unreachable. Bound it to the viewport and let it scroll. overflow-y:
   // auto (not scroll) keeps the scrollbar hidden when the nav fits, so nothing
   // changes for users with the screen space; it only appears when actually needed.
-  .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
-    height: 100vh;
-    // Vertical scroll only. Without an explicit overflow-x, setting overflow-y
-    // makes the browser compute overflow-x to auto too, which adds an unwanted
-    // horizontal scrollbar from the column-link hover pills that extend sideways.
-    overflow-x: hidden;
-    overflow-y: auto;
+  // Desktop only. The single-column desktop layout has the fixed left sidebar
+  // that can outgrow the viewport at high zoom (e.g. the accessible themes at
+  // 300% zoom), so bound it and let it scroll. Mobile (<= 759px) is a separate
+  // full-screen drawer that scrolls on its own; applying this there makes it
+  // overflow, so keep it out of the mobile breakpoint entirely.
+  @media screen and (width >= 760px) {
+    .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+      height: 100dvh;
+      // Vertical scroll only; an explicit overflow-x stops the browser turning
+      // overflow-x into auto, which would add a horizontal scrollbar from the
+      // column-link hover pills that extend sideways.
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
   }
 
   // Right side panel
