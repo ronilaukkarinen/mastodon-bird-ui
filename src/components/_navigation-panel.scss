@@ -10,6 +10,10 @@
   // changes for users with the screen space; it only appears when actually needed.
   .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
     height: 100vh;
+    // Vertical scroll only. Without an explicit overflow-x, setting overflow-y
+    // makes the browser compute overflow-x to auto too, which adds an unwanted
+    // horizontal scrollbar from the column-link hover pills that extend sideways.
+    overflow-x: hidden;
     overflow-y: auto;
   }
 
