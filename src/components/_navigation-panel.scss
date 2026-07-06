@@ -1,6 +1,18 @@
 // Navigation panel, column links, notification filter bar, badges
 .layout-single-column,
 .layout-multiple-columns {
+  // The navigation pane is position: fixed but its inner wrapper is not always
+  // height-bounded (notably at very high browser zoom on low-resolution screens,
+  // where the layout collapses to the narrow breakpoint), so the nav overflows
+  // the viewport with no way to scroll and items below Bookmarks (Settings, More)
+  // become unreachable. Bound it to the viewport and let it scroll. overflow-y:
+  // auto (not scroll) keeps the scrollbar hidden when the nav fits, so nothing
+  // changes for users with the screen space; it only appears when actually needed.
+  .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
   // Right side panel
   .navigation-panel {
     box-sizing: border-box;
