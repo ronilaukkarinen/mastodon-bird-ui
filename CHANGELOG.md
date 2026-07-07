@@ -1,5 +1,6 @@
 ### [Unreleased]
 
+* Fix the compact navigation font size (17px) on screens below 1080px height being overridden by the 18px desktop rule
 * Keep the mobile navigation bar above the slideout pane so the hamburger menu is no longer covered
 * Pad the mobile navigation links so their labels are not tight against the edge
 * Make the left navigation scroll so items below Bookmarks (Settings, More) stay reachable at high browser zoom, including extreme zoom on low-resolution screens with the accessible themes

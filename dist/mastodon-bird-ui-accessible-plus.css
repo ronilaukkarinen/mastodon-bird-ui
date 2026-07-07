@@ -3983,7 +3983,7 @@ body.layout-single-column, body.layout-multiple-columns {
 }
 
 @media screen and (height < 1080px) {
-  .layout-single-column .column-link, .layout-multiple-columns .column-link {
+  .layout-single-column .navigation-panel .column-link, .layout-multiple-columns .navigation-panel .column-link {
     --gap-column-link: 7px;
     font-size: 17px;
   }
