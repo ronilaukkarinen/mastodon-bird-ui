@@ -1,5 +1,6 @@
 ### [Unreleased]
 
+* Fix the column-link hover pill being clipped on its inline-start edge on large screens by restoring overflow visible on the navigation pane, where the scroll fix was never needed
 * Fix the compact navigation font size (17px) on screens below 1080px height being overridden by the 18px desktop rule
 * Keep the mobile navigation bar above the slideout pane so the hamburger menu is no longer covered
 * Pad the mobile navigation links so their labels are not tight against the edge

@@ -1,4 +1,5 @@
 /* Mastodon Bird UI v4.0.0 - https://github.com/ronilaukkarinen/mastodon-bird-ui */
+/* Mastodon Bird UI v4.0.0 - https://github.com/ronilaukkarinen/mastodon-bird-ui */
 :root {
   --color-text-primary: #fff;
   --color-text-secondary: #717c9b;
@@ -1464,6 +1465,12 @@ body.layout-single-column, body.layout-multiple-columns {
   min-height: 0;
   display: flex;
   overflow-y: auto;
+}
+
+@media screen and (width >= 760px) and (height >= 800px) {
+  .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner, .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel, .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel__menu, .layout-multiple-columns .columns-area__panels__pane--navigational .columns-area__panels__pane__inner, .layout-multiple-columns .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel, .layout-multiple-columns .columns-area__panels__pane--navigational .columns-area__panels__pane__inner .navigation-panel__menu {
+    overflow: visible;
+  }
 }
 
 .layout-single-column .navigation-panel__menu::-webkit-scrollbar {
