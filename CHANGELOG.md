@@ -1,3 +1,7 @@
+### [Unreleased]
+
+* Show the media modal counters in white like the icons beside them
+
 ### 4.0.1rc1: 2026-08-23
 
 * Redesign the media modal footer to match the status action bar (#195)

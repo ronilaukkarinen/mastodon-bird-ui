@@ -56,7 +56,10 @@
     width: 18px;
   }
 
+  // The counter inherits the button colour, which does not resolve to the
+  // on-media white here, so it reads dimmer than the icon beside it
   .media-modal__overlay .picture-in-picture__footer .icon-button__counter {
+    color: var(--color-text-on-media);
     font-size: 13px;
     font-weight: var(--font-weight-semibold);
   }
