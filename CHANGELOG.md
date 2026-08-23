@@ -1,5 +1,6 @@
 ### [Unreleased]
 
+* Redesign the media modal footer to match the status action bar (#195)
 * Add spacing between account badges so Muted is not flush against them
 * Fix lists overlapping the trends section on short viewports (#193)
 * Fix the More icon missing from the navigation panel
