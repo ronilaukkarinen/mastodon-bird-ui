@@ -2379,7 +2379,10 @@ body.layout-single-column, body.layout-multiple-columns {
 }
 
 .layout-single-column ._comp_account_header__badges, .layout-multiple-columns ._comp_account_header__badges {
+  flex-wrap: wrap;
+  gap: 4px 6px;
   margin-bottom: 16px;
+  display: flex;
 }
 
 .layout-single-column ._comp_account_header__displayNameWrapper:has([class*="_comp_account_header__badges"]), .layout-multiple-columns ._comp_account_header__displayNameWrapper:has([class*="_comp_account_header__badges"]) {

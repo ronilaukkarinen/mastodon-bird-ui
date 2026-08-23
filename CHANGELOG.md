@@ -1,5 +1,6 @@
 ### [Unreleased]
 
+* Add spacing between account badges so Muted is not flush against them
 * Fix lists overlapping the trends section on short viewports (#193)
 * Fix the More icon missing from the navigation panel
 * Fix the column-link hover pill being clipped on its inline-start edge on large screens by restoring overflow visible on the navigation pane, where the scroll fix was never needed
