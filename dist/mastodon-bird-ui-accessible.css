@@ -3923,6 +3923,14 @@ body.layout-single-column, body.layout-multiple-columns {
   top: 100%;
 }
 
+.layout-single-column .navigation-panel__list-panel__items, .layout-multiple-columns .navigation-panel__list-panel__items {
+  background-color: var(--color-bg);
+}
+
+.layout-single-column .navigation-panel__list-panel__items .column-link:not(:last-child), .layout-multiple-columns .navigation-panel__list-panel__items .column-link:not(:last-child) {
+  padding-bottom: 0;
+}
+
 .layout-single-column .lists__item__title span, .layout-multiple-columns .lists__item__title span {
   color: var(--color-fg);
 }
