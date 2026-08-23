@@ -1,4 +1,4 @@
-### [Unreleased]
+### 4.0.1rc1: 2026-08-23
 
 * Redesign the media modal footer to match the status action bar (#195)
 * Add spacing between account badges so Muted is not flush against them
